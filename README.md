@@ -9,7 +9,7 @@ Upon executing the program in Firestorm's directory, the contents of the followi
 
 es (Spanish) -> Catalan (usually "ca")
 
-fr (French) -> French Canadian (usually "fr_ca")
+fr (French) -> Canadian French (usually "fr_ca")
 
 [TODO] ru (Russian) -> Ukrainian (usually "uk")
 
