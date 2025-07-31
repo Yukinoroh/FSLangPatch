@@ -8,7 +8,9 @@ This is a patch system for translations not accepted by the Phoenix Firestorm Vi
 Upon executing the program in Firestorm's directory, the contents of the following directories will be replaced by an appropriate translation, so far:
 
 es (Spanish) -> Catalan (usually "ca")
+
 fr (French) -> French Canadian (usually "fr_ca")
+
 [TODO] ru (Russian) -> Ukrainian (usually "uk")
 
 
@@ -19,7 +21,9 @@ Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equ
 A l'execució del programari, es substituiran per una traducció apropiada el contingut de les carpetes següents, fins ara:
 
 es (castellà) -> català (normalment "ca")
+
 fr (francès) -> francès canadenc (normalment "fr_ca")
+
 [TODO] ru (rus) -> ukraïnès (normalment "uk")
 
 
@@ -30,5 +34,7 @@ Ceci est un système correctif pour les traductions pas encore acceptées par l'
 À l'exécution du programme, le contenu des répertoires suivants sera remplacé par une traduction appropriée, jusqu'ici:
 
 es (espagnol) -> catalan (normalement "ca")
+
 fr (français) -> français canadien (normalement "fr_ca")
+
 [TODO] ru (russe) -> ukrainien (normalement "uk")
