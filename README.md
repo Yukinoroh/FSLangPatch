@@ -1,9 +1,7 @@
 # FSLangPatch
 Phoenix Firestorm Viewer Language Patches
 
-El catalâ segueix | Le français suit
-
-===[en]===
+El català segueix | Le français suit
 
 This is a patch system for translations not accepted by the Phoenix Firestorm Viewer project team.
 
@@ -12,6 +10,7 @@ Upon executing the program in Firestorm's directory, the contents of the followi
 es (Spanish) -> Catalan (usually "ca")
 fr (French) -> French Canadian (usually "fr_ca")
 [TODO] ru (Russian) -> Ukrainian (usually "uk")
+
 
 ===[ca]===
 
@@ -22,6 +21,7 @@ A l'execució del programari, es substituiran per una traducció apropiada el co
 es (castellà) -> català (normalment "ca")
 fr (francès) -> francès canadenc (normalment "fr_ca")
 [TODO] ru (rus) -> ukraïnès (normalment "uk")
+
 
 ===[fr]===
 
