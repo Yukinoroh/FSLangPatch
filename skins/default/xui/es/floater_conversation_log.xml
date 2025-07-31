@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<floater name="floater_conversation_log" title="Historial de les converses">
-	<panel name="buttons_panel">
-		<filter_editor label="Filtrar les persones" name="people_filter_input"/>
-		<menu_button name="conversations_gear_btn" tool_tip="Accions sobre la persona o el grup seleccionat"/>
-		<menu_button name="conversation_view_btn" tool_tip="Opcions de visualització/d'ordenació"/>
-	</panel>
-</floater>
