@@ -18,7 +18,7 @@ fr_ca (French Canadian)
 
 Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer.
 
-A l'execució del programari, les idiomes següens seràn afegides::
+A l'execució del programari, les idiomes següens seràn afegides:
 
 ca (català)
 
