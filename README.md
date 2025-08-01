@@ -11,7 +11,7 @@ es (Spanish) -> Catalan (usually "ca")
 
 fr (French) -> Canadian French (usually "fr_ca")
 
-[TODO] ru (Russian) -> Ukrainian (usually "uk")
+[TODO] ru (Russian) -> Ukrainian (usually "ua")
 
 
 ===[ca]===
@@ -24,7 +24,7 @@ es (castellà) -> català (normalment "ca")
 
 fr (francès) -> francès canadenc (normalment "fr_ca")
 
-[TODO] ru (rus) -> ukraïnès (normalment "uk")
+[TODO] ru (rus) -> ukraïnès (normalment "ua")
 
 
 ===[fr]===
@@ -37,4 +37,4 @@ es (espagnol) -> catalan (normalement "ca")
 
 fr (français) -> français canadien (normalement "fr_ca")
 
-[TODO] ru (russe) -> ukrainien (normalement "uk")
+[TODO] ru (russe) -> ukrainien (normalement "ua")
