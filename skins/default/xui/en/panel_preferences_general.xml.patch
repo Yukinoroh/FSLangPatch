@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel>
+    <combo_box>
+        <combo_box.item
+         enabled="true"
+         label="Català (Catalan) - Beta"
+         name="Catalan"
+         value="ca" />
+        <combo_box.item
+         enabled="true"
+         label="Français canadien (French)"
+         name="Canadian_French"
+         value="fr_CA" />
+        <combo_box.item
+         enabled="true"
+         label="Українська мова (Ukrainian)"
+         name="Ukrainian"
+         value="uk" />
+    </combo_box>
+</panel>
