@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<llsd xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="llsd.xsd">
+<map>
+    <key>FSEnabledLanguages</key>
+    <map>
+      <key>Comment</key>
+      <string>Languages that are enabled and can be used in this install.</string>
+      <key>Persist</key>
+      <integer>0</integer>
+      <key>Type</key>
+      <string>LLSD</string>
+      <key>Value</key>
+      <array>
+        <string>az</string>
+        <string>ca</string>
+        <string>de</string>
+        <string>en</string>
+        <string>es</string>
+        <string>fr</string>
+        <string>fr_CA</string>
+        <string>it</string>
+        <string>ja</string>
+        <string>pl</string>
+        <string>ru</string>
+        <string>uk</string>
+        <string>zh</string>
+      </array>
+    </map>
+  </map>
+</llsd>
