@@ -61,6 +61,7 @@ if osname == "Windows":
 	fs_path="C:\\Program Files\\Firestorm-Releasex64"
 elif osname == "Linux":
 	fs_path="/home/"+os.environ.get('USER', os.environ.get('USERNAME'))+"/"  # File chooser needs "/" to go into the folder.
+#TODO Mac?
 
 # Prompts user for a folder
 message="Choose Firestorm main folder"
