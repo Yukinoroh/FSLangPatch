@@ -10,7 +10,7 @@ Upon executing the program in Firestorm's directory, the following languages wil
 ca (Catalan)
 
 fr_CA (Canadian French)
-(Unlike with European French, the use of English loanwowards is frowned upon by both language users and standardization body. This variety of French also prefers capitalized accentuated letters.)
+(Unlike with European French, the use of English loanwowards is frowned upon by both language users and standardization body, and there are recommanded neologisms even for the advanced technical vocabulary. This variety of French also prefers capitalized accentuated letters.)
 
 uk (Ukrainian)
 
@@ -24,7 +24,7 @@ A l'execució del programari, les idiomes següens seràn afegides:
 ca (català)
 
 fr_CA (francès canadenc)
-(A diferència del francès europeu, els parlants i l'òrgan regulador desaconsellen l'ús d'anglicismes. Aquesta varietat també prefereix les majúscules accentuades.)
+(A diferència del francès europeu, els parlants i l'òrgan regulador desaconsellen l'ús d'anglicismes, i existeixen neologismes fins i tot per a vocabulari tècnic avançat. Aquesta varietat també prefereix les majúscules accentuades.)
 
 uk (ucraïnès)
 
@@ -38,7 +38,7 @@ Ceci est un système correctif pour les traductions pas encore acceptées par l'
 ca (catalan)
 
 fr_CA (français canadien)
-(Contrairement au français européen, l'usage d'anglicismes est découragé par les locuteurs et l'organisme de réglementation. Cette variété préfère aussi les lettres majuscules accentuées.)
+(Contrairement au français européen, l'usage d'anglicismes est découragé par les locuteurs et l'organisme de réglementation, et il existe des néologismes même pour le vocabulaire tehcnique avancé. Cette variété préfère aussi les lettres majuscules accentuées.)
 
 uk (ukrainien)
 
@@ -52,8 +52,7 @@ uk (ukrainien)
 ca (каталонська)
 
 fr_CA (канадська французька)
-(На відміну від європейської французької мови, використання англійських запозичених слів не схвалюється як користувачами мови, так і органами стандартизації. Цей різновид французької також надає перевагу великим літерам з акцентом.
-)
+(На відміну від європейської французької мови, використання англійських запозичених слів не схвалюється як користувачами мови, так і органами стандартизації, і існують рекомендовані неологізми навіть для складної технічної лексики. Цей різновид французької також надає перевагу написанню з великої літери з акцентом.)
 
 uk (Українська мова)
 
