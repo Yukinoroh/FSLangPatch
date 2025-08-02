@@ -1,7 +1,7 @@
 # FSLangPatch
-Phoenix Firestorm Viewer Language Patches
+El català segueix | Le français suit | Далі йде українська мова
 
-El català segueix | Le français suit
+===[English]===
 
 This is a patch system for translations not accepted by the Phoenix Firestorm Viewer project team.
 
@@ -9,12 +9,12 @@ Upon executing the program in Firestorm's directory, the following languages wil
 
 ca (Catalan)
 
-fr_ca (French Canadian)
+fr_CA (Canadian French)
 
-[TODO] ua (Ukrainian)
+uk (Ukrainian)
 
 
-===[ca]===
+===[Català]===
 
 Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer.
 
@@ -22,12 +22,12 @@ A l'execució del programari, les idiomes següens seràn afegides:
 
 ca (català)
 
-fr_ca (francès canadenc)
+fr_CA (francès canadenc)
 
-[TODO] ua (ucraïnès)
+uk (ucraïnès)
 
 
-===[fr]===
+===[Français canadien]===
 
 Ceci est un système correctif pour les traductions pas encore acceptées par l'équipe de Phoenix Firestorm Viewer.
 
@@ -35,6 +35,20 @@ Ceci est un système correctif pour les traductions pas encore acceptées par l'
 
 ca (catalan)
 
-fr_ca (français canadien)
+fr_CA (français canadien)
 
-[TODO] ua (ukrainien)
+uk (ukrainien)
+
+
+===[Українська мова]===
+
+Це система виправлень для перекладів, які не прийняті командою проекту Phoenix Firestorm Viewer.
+
+Після виконання програми в каталозі Firestorm будуть додані такі мови:
+
+ca (каталонська)
+
+fr_CA (канадська французька)
+
+uk (Українська мова)
+
