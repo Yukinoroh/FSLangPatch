@@ -25043,6 +25043,7 @@ Change of this parameter will affect the layout of buttons in notification toast
         <string>en</string>
         <string>es</string>
         <string>fr</string>
+        <string>fr_ca</string>
         <string>it</string>
         <string>ja</string>
         <string>pl</string>
