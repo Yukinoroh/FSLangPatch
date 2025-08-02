@@ -71,7 +71,7 @@ elif lang == "fr":
 	message="Choisissez le dossier principal de Firestorm"
 elif lang == "uk":
 	message="Виберіть головну папку Firestorm"
-#fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
+fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
 
 # Walks the current python folder to process changes
 process('.');
