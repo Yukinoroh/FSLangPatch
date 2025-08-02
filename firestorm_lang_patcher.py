@@ -57,7 +57,6 @@ lang=lang[0:before_underscore_pos:]
 
 # Gets default Firestorm installation path
 fs_path=""
-fs_path2=""
 if osname == "Windows":
 	fs_path="C:\\Program Files\\Firestorm-Releasex64"
 elif osname == "Linux":
