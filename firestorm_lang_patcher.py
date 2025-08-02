@@ -16,7 +16,7 @@ if osname == "Windows":
 elif osname == "Linux":
 	path="/home/"+os.environ.get('USER', os.environ.get('USERNAME'))+"/"
 
-# Prompts user for a foler
+# Prompts user for a folder
 message="Choose Firestorm main folder"
 if lang == "ca":
 	message="Tria la carpeta principal de Firestorm"
