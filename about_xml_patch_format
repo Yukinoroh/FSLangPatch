@@ -1,1 +1,31 @@
-You can only keep the parents of the elements you want to add; just add them at the same place as their siblings.
+El català segueix | Le français suit | Далі йде українська мова
+
+===[English]===
+
+The .xml.patch files allow patching non-translation files even if they have changed in a new viewer version.
+The missing XML tags will be added at the suitable place.
+
+When you craft your own .xml.patch files, or modify some of them, keep at least the tree above the elements you want to add, and the elements themselves. You don't even need to keep the sibiling elements.
+
+===[Català]===
+
+Els fitxers .xml.patch permeten corregir fitxers altres que auqells de traducció, fins i tot si van canviar en una versió nova.
+Les guies XML seràn afegides al llocapropiat.
+
+Quan fes fitxers .xml.patch nous, o en modifiques, guarda al menys l'arbre per sobre els elements vols afegir, i els elements mateixos. No has de guardar fins i tot els elements germans.
+
+===[Français]===
+
+Les fichiers .xml.patch permettent de corriger des fichiers autres que ceux de la traduction, même s'ils ont changé dans une nouvelle version.
+Les balises XML seront ajoutées à l'endroit approprié.
+
+Quand vous faites vos propres fichiers .xml.patch, ou en modifiez, gardez au moins l'arbre au-dessus des éléments que vous voulez ajouter, et les éléments eux-mêmes. Vous n'avez même pas à garder les éléments frères.
+
+===[Українська мова]===
+
+Файли .xml.patch дозволяють виправляти неперекладені файли, навіть якщо вони змінилися в новій версії переглядача.
+Відсутні XML-теги будуть додані у відповідне місце.
+
+Коли ви створюєте власні файли .xml.patch або змінюєте деякі з них, збережіть принаймні дерево над елементами, які ви хочете додати, та самі елементи. Вам навіть не потрібно зберігати споріднені елементи.
+
+
