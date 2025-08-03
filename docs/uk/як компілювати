@@ -1,0 +1,24 @@
+ПРИМІТКА: Вам не потрібно нічого компілювати, щоб встановити патч для Firestorm.
+Цей посібник призначений для тих, хто хоче розповсюджувати його.
+
+1. Встановлення необхідних пакетів
+==============================
+python3
+python3-plyer
+pip
+
+2. Підготовка середовища
+==================================
+Виконайте таку команду:
+pip install pyinstaller
+(встановить необхідні залежності)
+
+3. Компіляція
+=================================
+Виконайте таку команду:
+(у Linux) pyinstaller --collect-submodules plyer.platforms.linux --onefile firestorm_lang_patcher.py
+(у Windows) pyinstaller --collect-submodules plyer.platforms.win --onefile firestorm_lang_patcher.py
+(в OSX) pyinstaller --collect-submodules plyer.platforms.mac --onefile firestorm_lang_patcher.py
+
+Бінарний виконуваний файл буде знаходитися в папці ./dist; переконайтеся, що ви перемістили його туди, де знаходяться папки з патчами, інакше він не знайде нічого для патчу.
+Ви можете видалити папку ./build після завершення компіляції.
