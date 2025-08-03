@@ -1,0 +1,4 @@
+Els fitxers .xml.patch permeten corregir fitxers altres que auqells de traducció, fins i tot si van canviar en una versió nova.
+Les guies XML seràn afegides al llocapropiat.
+
+Quan fes fitxers .xml.patch nous, o en modifiques, guarda al menys l'arbre per sobre els elements vols afegir, i els elements mateixos. No has de guardar fins i tot els elements germans.
