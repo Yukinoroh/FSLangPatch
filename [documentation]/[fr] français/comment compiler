@@ -4,6 +4,7 @@ Ce guide est detiné aux personnes désirant redistribuer.
 1. Installation des paquetages requis
 ===============================
 python3
+python3-lxml (Parfois installé en même temps que python3)
 python3-plyer
 pip
 
