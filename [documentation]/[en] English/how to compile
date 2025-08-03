@@ -13,6 +13,8 @@ pip
 Run the following command:
 pip install pyinstaller
 (will install the required dependencies)
+Aditionally, in Windows, you will have to run this too:
+pip install pywin32
 
 3. Compiling
 ===============================
