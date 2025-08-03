@@ -1,9 +1,9 @@
 import shutil
 import os
 import platform
+import locale
 import plyer
 import plyer.platforms
-import locale
 from lxml import etree
 
 osname=platform.uname()[0]
