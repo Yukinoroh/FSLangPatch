@@ -53,9 +53,11 @@ def process(path):
 				source=subitem(path,onefile)
 				target=source[:-5:]
 				target=subitem(fs_path,target[2:-1:])
-				print("Patching or re-patching " + target + "...")
+#				print("Patching or re-patching " + target + "...")
+				log.write("Patching or re-patching " + target + "...\n")
 				if not os.path.exists(target):
-					print("   Does not exist; skipping.")
+#					print("   Does not exist; skipping.")
+					log.write("   Does not exist; skipping.\n")
 				else:
 					xmlroot_src = etree.parse(source).getroot()
 					xmltree_tgt = etree.parse(target)
@@ -76,7 +78,6 @@ def process(path):
 						# Parses the rest of the XML
 						with open(target, "ab") as f:
 							f.write(etree.tostring(xmltree_tgt, encoding="utf-8", xml_declaration=False))
-						print("   Done.")
 			# XML files
 			elif onefile.find(".xml") >= 0:
 				source=subitem(path,onefile)
@@ -84,13 +85,16 @@ def process(path):
 				target=subitem(target_dir,onefile)
 				if not os.path.exists(source+".patch"):
 					if os.path.exists(target):
-						print("Replacing " + target + "...")
+#						print("Replacing " + target + "...")
+						log.write("Replacing " + target + "...\n")
 						os.remove(target)
 					else:
 						if not os.path.exists(target_dir):
-							print("Adding " + target_dir + "...")
+#							print("Adding " + target_dir + "...")
+							log.write("Adding " + target_dir + "...\n")
 							os.mkdir(target_dir)
-						print("Adding " + target + "...")
+#						print("Adding " + target + "...")
+						log.write("Adding " + target + "...\n")
 					shutil.copy(source,target_dir)
 
 # Gets language 
@@ -117,25 +121,29 @@ elif lang == "uk":
 	message="Виберіть головну папку Firestorm"
 fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
 
+# Prepares log file
+log=open("./log.txt", "w")
+
 # Make sure this is a Firestorm installation
 if not os.path.exists(subitem(fs_path,"app_settings")) and not os.path.exists(subitem(fs_path,"skins")):
-	message="It does not seem to be a Firestorm folder."
+	message="This does not seem to be a Firestorm folder.\n"
 	if lang == "ca":
-		message="No sembla ser una carpeta de Firestorm."
+		message="Aquest no sembla ser una carpeta de Firestorm.\n"
 	elif lang == "fr":
-		message="Ça n'a pas l'air d'un dossier de Firestorm."
+		message="Ceci n'a pas l'air d'un dossier de Firestorm.\n"
 	elif lang == "uk":
-		message="Здається, це не папка Firestorm."
-	print(message)
+		message="Здається, це не папка Firestorm.\n"
+#	print(message)
+	log.write(message)
 elif not os.path.exists("./app_settings") and not os.path.exists("./skins"):
-	message="There seems to be nothing to patch."
+	message="There seems to be nothing to patch there.\n"
 	if lang == "ca":
-		message="No sembla haver-hi coses a corregir."
+		message="No sembla haver-hi res a corregir.\n"
 	elif lang == "fr":
-		message="Il se semble rien y avori à corriger."
+		message="Il semble n'y avoir rien à corriger.\n"
 	elif lang == "uk":
-		message="Здається, що нема чого латати."
-	print(message)
+		message="Здається, що нема чого латати.\n"
+	log.write(message)
 else:
 	# Walks the current python folder to process changes
 	process('.');
