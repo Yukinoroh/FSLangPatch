@@ -1,3 +1,6 @@
+NOTE: You don't absolutely need to compile the patching tool to patch Firestorm.
+You can use the binary in the release, or, if the binary does not work for you, you can install python and python3-plyer, and run the .py script.
+
 1. Installing required packages
 ===============================
 python3
