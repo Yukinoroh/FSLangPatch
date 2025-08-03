@@ -1,0 +1,24 @@
+NOTA: No s'ha de compilar qualsevol cosa per corregir Firestorm.
+Aquest guia es destina a les personnes que volen redistribuar.
+
+1. Instal·lació dels paquets requerits
+===============================
+python3
+python3-plyer
+pip
+
+2. Preparació de l'entorn
+===============================
+Executar la següent comanda:
+pip install pyinstaller
+(installera les dépendances requises)
+
+3. Compilació
+===============================
+Executar la següent comanda:
+(en Linux) pyinstaller --collect-submodules plyer.platforms.linux --onefile firestorm_lang_patcher.py
+(en Windows) pyinstaller --collect-submodules plyer.platforms.win --onefile firestorm_lang_patcher.py
+(en OSX) pyinstaller --collect-submodules plyer.platforms.mac --onefile firestorm_lang_patcher.py
+
+L'executable binari serà dins de ./dist ; assegurar-se de moure'l a on són les carpetes de correció, sinó no trobarà res per corregir.
+També es pot suprimir la carpeta ./build després d'acabar la copilació.
