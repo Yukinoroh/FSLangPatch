@@ -5,7 +5,7 @@ El català segueix | Le français suit | Далі йде українська м
 
 This is a patch system for translations not accepted by the Phoenix Firestorm Viewer project team.
 
-Upon executing the program in Firestorm's directory, the following languages will be added:
+The program patches the viewer to add the following languages:
 
 ca (Catalan)
 
@@ -19,7 +19,7 @@ uk (Ukrainian)
 
 Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer.
 
-A l'execució del programari, les idiomes següens seràn afegides:
+El programari corrigeix el visor per afegir-hi les idiomes següents:
 
 ca (català)
 
@@ -33,7 +33,7 @@ uk (ucraïnès)
 
 Ceci est un système correctif pour les traductions pas encore acceptées par l'équipe de Phoenix Firestorm Viewer.
 
-À l'exécution du programme, les langues suivantes seront ajoutées:
+Le programme corrige le visualisateur afin d'y ajouter les langues suivantes:
 
 ca (catalan)
 
