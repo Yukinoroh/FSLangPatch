@@ -118,7 +118,7 @@ elif lang == "uk":
 fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
 
 # Make sure this is a Firestorm installation
-if not os.path.exists(subitem(fs_path,"app_settings")) or not os.path.exists(subitem(fs_path,"app_settings")):
+if not os.path.exists(subitem(fs_path,"app_settings")) and not os.path.exists(subitem(fs_path,"skins")):
 	message="It does not seem to be a Firestorm folder."
 	if lang == "ca":
 		message="No sembla ser una carpeta de Firestorm."
@@ -126,6 +126,15 @@ if not os.path.exists(subitem(fs_path,"app_settings")) or not os.path.exists(sub
 		message="Ça n'a pas l'air d'un dossier de Firestorm."
 	elif lang == "uk":
 		message="Здається, це не папка Firestorm."
+	print(message)
+elif not os.path.exists("./app_settings") and not os.path.exists("./skins"):
+	message="There seems to be nothing to patch."
+	if lang == "ca":
+		message="No sembla haver-hi coses a corregir."
+	elif lang == "fr":
+		message="Il se semble rien y avori à corriger."
+	elif lang == "uk":
+		message="Здається, що нема чого латати."
 	print(message)
 else:
 	# Walks the current python folder to process changes
