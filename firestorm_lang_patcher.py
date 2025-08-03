@@ -1,10 +1,12 @@
 import shutil
 import os
+import platform
 import plyer
 import plyer.platforms
 from lxml import etree
 
-osname=os.uname()[0]
+osname=platform.uname()[0]
+#osname=os.uname()[0]
 
 def subitem(somepath,add):
 	if osname == "Windows":
