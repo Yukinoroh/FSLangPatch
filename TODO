@@ -1,3 +1,3 @@
-- Add translated language list patches
-- Need to check how to package python3 environment, and python3-plyer
-- Add languages in alphabetical order
+- Update translated language list in every FS official language
+- Package python3 environment, and python3-plyer
+? Put languages in alphabetical order
