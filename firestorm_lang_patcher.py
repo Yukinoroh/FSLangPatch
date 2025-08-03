@@ -81,7 +81,7 @@ def process(path):
 				source=subitem(path,onefile)
 				target_dir=subitem(fs_path,path[2::])
 				target=subitem(target_dir,onefile)
-				if not os.path.exists(source+".patch"):	# TODO (remove if we don't use patches) Will not replace files if there is a patch
+				if not os.path.exists(source+".patch"):
 					if os.path.exists(target):
 						print("Replacing " + target + "...")
 						os.remove(target)
