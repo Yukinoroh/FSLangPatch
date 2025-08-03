@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <panel>
-    <combo_box>
+    <combo_box
+     control_name="Language"
+     follows="left|top"
+     height="23"
+     layout="topleft"
+     left="30"
+     max_chars="135"
+     name="language_combobox"
+     width="150">
         <combo_box.item
          enabled="true"
          label="Català (Catalan) - Beta"
