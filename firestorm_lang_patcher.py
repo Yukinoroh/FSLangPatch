@@ -74,7 +74,7 @@ def process(path):
 							f.write(doctype)
 						# Parses the rest of the XML
 						with open(target, "ab") as f:
-							f.write(etree.tostring(xmltree_tgt, encoding=xmltree_tgt.docinfo.encoding, xml_declaration=False))
+							f.write(etree.tostring(xmltree_tgt, encoding="utf-8", xml_declaration=False))
 						print("   Done.")
 			# XML files
 			elif onefile.find(".xml") >= 0:
