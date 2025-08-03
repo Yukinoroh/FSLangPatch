@@ -16,9 +16,9 @@ pip install pyinstaller
 3. Compiling
 ===============================
 Run the following command:
-(Linux) pyinstaller --collect-submodules plyer.platforms.linux --onefile firestorm_lang_patcher.py
-(Windows) pyinstaller --collect-submodules plyer.platforms.win --onefile firestorm_lang_patcher.py
-(OSX) pyinstaller --collect-submodules plyer.platforms.mac --onefile firestorm_lang_patcher.py
+(in Linux) pyinstaller --collect-submodules plyer.platforms.linux --onefile firestorm_lang_patcher.py
+(in Windows) pyinstaller --collect-submodules plyer.platforms.win --onefile firestorm_lang_patcher.py
+(in OSX) pyinstaller --collect-submodules plyer.platforms.mac --onefile firestorm_lang_patcher.py
 
 Binary executable will be in ./dist ; make sure to move it where the patch folders are, otherwise it will find nothing to patch.
 You can delete the ./build folder after compiling.
