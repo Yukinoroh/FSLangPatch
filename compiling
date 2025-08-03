@@ -1,16 +1,16 @@
-Required packages
+1. Installing required packages
 ===============================
 python3
 python3-plyer
 pip
 
-Prepare compiling environment
+2. Preparing environment
 ===============================
 Run the following command:
 pip install pyinstaller
 (will install the required dependencies)
 
-Compiling
+3. Compiling
 ===============================
 Run the following command:
 (Linux) pyinstaller --collect-submodules plyer.platforms.linux --onefile firestorm_lang_patcher.py
