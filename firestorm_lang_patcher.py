@@ -1,6 +1,7 @@
 import shutil
 import os
 import plyer
+import plyer.platforms
 from lxml import etree
 
 osname=os.uname()[0]
@@ -116,6 +117,16 @@ elif lang == "uk":
 	message="Виберіть головну папку Firestorm"
 fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
 
-# Walks the current python folder to process changes
-process('.');
-
+# Make sure this is a Firestorm installation
+if not os.path.exists(subitem(fs_path,"app_settings")) or not os.path.exists(subitem(fs_path,"app_settings")):
+	message="It does not seem to be a Firestorm folder."
+	if lang == "ca":
+		message="No sembla ser una carpeta de Firestorm."
+	elif lang == "fr":
+		message="Ça n'a pas l'air d'un dossier de Firestorm."
+	elif lang == "uk":
+		message="Здається, це не папка Firestorm."
+	print(message)
+else:
+	# Walks the current python folder to process changes
+	process('.');
