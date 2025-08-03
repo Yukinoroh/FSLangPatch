@@ -1,0 +1,4 @@
+The .xml.patch files allow patching non-translation files even if they have changed in a new viewer version.
+The missing XML tags will be added at the suitable place.
+
+When you craft your own .xml.patch files, or modify some of them, keep at least the tree above the elements you want to add, and the elements themselves. You don't even need to keep the sibiling elements.
