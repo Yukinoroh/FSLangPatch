@@ -20,5 +20,5 @@ Run the following command:
 (Windows) pyinstaller --collect-submodules plyer.platforms.win --onefile firestorm_lang_patcher.py
 (OSX) pyinstaller --collect-submodules plyer.platforms.mac --onefile firestorm_lang_patcher.py
 
-Binary executable will be in ./dist
+Binary executable will be in ./dist ; make sure to move it where the patch folders are, otherwise it will find nothing to patch.
 You can delete the ./build folder after compiling.
