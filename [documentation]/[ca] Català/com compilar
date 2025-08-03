@@ -4,6 +4,7 @@ Aquest guia es destina a les personnes que volen redistribuar.
 1. Instal·lació dels paquets requerits
 ===============================
 python3
+python3-lxml (A vegades instal·lat al mateix temps que python3)
 python3-plyer
 pip
 
