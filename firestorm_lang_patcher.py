@@ -3,6 +3,7 @@ import os
 import platform
 import plyer
 import plyer.platforms
+import locale
 from lxml import etree
 
 osname=platform.uname()[0]
@@ -101,7 +102,8 @@ def process(path):
 
 # Gets language 
 #lang=os.getenv('LANG')
-lang=os.environ['LANG']
+#lang=os.environ['LANG']
+lang=locale.getdefaultlocale()[0]
 print(lang)
 before_underscore_pos=lang.find('_')
 lang=lang[0:before_underscore_pos:]
