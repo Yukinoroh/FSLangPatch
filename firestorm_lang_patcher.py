@@ -100,7 +100,9 @@ def process(path):
 					shutil.copy(source,target_dir)
 
 # Gets language 
-lang=os.getenv('LANG')
+#lang=os.getenv('LANG')
+lang=os.environ['LANG']
+print(lang)
 before_underscore_pos=lang.find('_')
 lang=lang[0:before_underscore_pos:]
 
@@ -138,13 +140,13 @@ if not os.path.exists(subitem(fs_path,"app_settings")) and not os.path.exists(su
 #	print(message)
 	log.write(message)
 elif not os.path.exists("./app_settings") and not os.path.exists("./skins"):
-	message="There seems to be nothing to patch there.\n"
+	message="There seems to be no source patch.\n"
 	if lang == "ca":
-		message="No sembla haver-hi res a corregir.\n"
+		message="No sembla haver-hi cap font de correctiu.\n"
 	elif lang == "fr":
-		message="Il semble n'y avoir rien à corriger.\n"
+		message="Il semble n'y avoir aucune source de correctif.\n"
 	elif lang == "uk":
-		message="Здається, що нема чого латати.\n"
+		message="Здається, патча з вихідним кодом немає.\n"
 	log.write(message)
 else:
 	# Walks the current python folder to process changes
