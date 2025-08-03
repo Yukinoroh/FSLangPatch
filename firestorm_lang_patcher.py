@@ -1,7 +1,7 @@
 import shutil
 import os
 import plyer
-#TODO import xml.etree.ElementTree as ET
+from lxml import etree
 
 osname=os.uname()[0]
 
@@ -11,6 +11,37 @@ def subitem(somepath,add):
 	else:
 		somepath = somepath + "/" + add
 	return somepath
+
+def xmlprocess(source,target):
+	key_src = ""
+	key_tgt = ""
+	for child_src in source:
+		if child_src.tag == "key":	# Found a key on source side
+			key_src=child_src.text
+		else:	# Anything else than key on source side
+			intarget=0;
+			for child_tgt in target:
+				if key_src != "":	# Map mode
+					if child_tgt.tag == "key":	# Found a key on target side
+						if child_tgt.text == key_src:
+							key_tgt = key_src
+						# else, do nothing (keep looking)
+					elif key_tgt == key_src:	 # On an element following equal keys
+						key_src = ""
+						key_tgt = ""
+						intarget=1
+						xmlprocess(child_src,child_tgt)
+						break
+					# else: do nothing (on an element following unequal keys)
+				else:	# Other modes
+					# Needs to inspect elements if they are identical but have different number of elements (ex: top map) or if they contain the same text (ex: string)
+					if child_src.tag == child_tgt.tag and child_src.attrib == child_tgt.attrib and (len(child_src) != len(child_tgt) or child_src.text == child_tgt.text):
+						intarget=1;
+						xmlprocess(child_src,child_tgt)
+						break
+					# else: do nothing (on different element)
+			if not intarget:
+				target.append(child_src)
 
 def process(path):
 	for (path,folders,files) in os.walk(path, topdown=True):
@@ -25,15 +56,26 @@ def process(path):
 				if not os.path.exists(target):
 					print("   Does not exist; skipping.")
 				else:
-					None # TODO
-					# TODO xml parsing
-#					xmlroot_src = ET.parse(source).getroot()
-#					xmlroot_tgt = ET.parse(target).getroot()
-#					if xmlroot_src.tag != xmlroot_tgt.tag:
-#						print ("   Root element differs. Skipping.")
-#					else:
-#						xmlprocess(xmlroot_src,xmlroot_tgt)
-#						print("   Done.")
+					xmlroot_src = etree.parse(source).getroot()
+					xmltree_tgt = etree.parse(target)
+					xmlroot_tgt = xmltree_tgt.getroot()
+					if xmlroot_src.tag != xmlroot_tgt.tag:
+						print ("   Root element differs. Skipping.")
+					else:
+						xmlprocess(xmlroot_src,xmlroot_tgt)
+						# Writing the file
+						etree.indent(xmltree_tgt, space="\t")	# Because otherwise some indents do not work
+						# Copies doctype
+						doctype="";
+						with open(target, "r") as f:
+							doctype = f.readline()
+							f.close()
+						with open(target, "w") as f:
+							f.write(doctype)
+						# Parses the rest of the XML
+						with open(target, "ab") as f:
+							f.write(etree.tostring(xmltree_tgt, encoding=xmltree_tgt.docinfo.encoding, xml_declaration=False))
+						print("   Done.")
 			# XML files
 			elif onefile.find(".xml") >= 0:
 				source=subitem(path,onefile)
@@ -41,13 +83,13 @@ def process(path):
 				target=subitem(target_dir,onefile)
 				if not os.path.exists(source+".patch"):	# TODO (remove if we don't use patches) Will not replace files if there is a patch
 					if os.path.exists(target):
-#						print("Replacing " + target + "...")
+						print("Replacing " + target + "...")
 						os.remove(target)
 					else:
 						if not os.path.exists(target_dir):
 							print("Adding " + target_dir + "...")
 							os.mkdir(target_dir)
-#						print("Adding " + target + "...")
+						print("Adding " + target + "...")
 					shutil.copy(source,target_dir)
 
 # Gets language 
@@ -58,10 +100,11 @@ lang=lang[0:before_underscore_pos:]
 # Gets default Firestorm installation path
 fs_path=""
 if osname == "Windows":
-	fs_path="C:\\Program Files\\Firestorm-Releasex64"
+	fs_path="C:\\Program Files\\Firestorm-Releasex64\\"
 elif osname == "Linux":
 	fs_path="/home/"+os.environ.get('USER', os.environ.get('USERNAME'))+"/"  # File chooser needs "/" to go into the folder.
-#TODO Mac?
+elif osname == "Darwin":	# Mac
+	fs_path="/Applications/Firestorm-releasex64.app/Contents/Resources/"
 
 # Prompts user for a folder
 message="Choose Firestorm main folder"
