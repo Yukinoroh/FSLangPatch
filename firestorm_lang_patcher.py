@@ -7,7 +7,6 @@ import plyer.platforms
 from lxml import etree
 
 osname=platform.uname()[0]
-#osname=os.uname()[0]
 
 def subitem(somepath,add):
 	if osname == "Windows":
@@ -56,17 +55,39 @@ def process(path):
 				source=subitem(path,onefile)
 				target=source[:-5:]
 				target=subitem(fs_path,target[2:-1:])
-#				print("Patching or re-patching " + target + "...")
-				log.write("Patching or re-patching " + target + "...\n")
+				message="Patching "
+				if lang == "ca":
+					message="Aplicant un correctiu a "
+				elif lang == "fr":
+					message="Applique un correctif à "
+				elif lang == "uk":
+					message="латання "
+#				print(message + target + "...\n")
+				log.write(message + target + "...\n")
 				if not os.path.exists(target):
-#					print("   Does not exist; skipping.")
-					log.write("   Does not exist; skipping.\n")
+					message="   Does not exist; skipping.\n"
+					if lang == "ca":
+						message="   No existeix; el salto.\n"
+					elif lang == "fr":
+						message="   N'existe pas; je le saute.\n"
+					elif lang == "uk":
+						message="   Не існує; пропускається.\n"
+#					print(message)
+					log.write(message)
 				else:
 					xmlroot_src = etree.parse(source).getroot()
 					xmltree_tgt = etree.parse(target)
 					xmlroot_tgt = xmltree_tgt.getroot()
 					if xmlroot_src.tag != xmlroot_tgt.tag:
-						print ("   Root element differs. Skipping.")
+						message="   Root element differs; skipping.\n"
+						if lang == "ca":
+							message="   L'element arrel difereix; el salto.\n"
+						elif lang == "fr":
+							message="   L'élément racine diffère; je le saute.\n"
+						elif lang == "uk":
+							message="   Кореневий елемент відрізняється; пропуск.\n"
+#						print (message)
+						log.write(message)
 					else:
 						xmlprocess(xmlroot_src,xmlroot_tgt)
 						# Writing the file
@@ -75,7 +96,6 @@ def process(path):
 						doctype="";
 						with open(target, "r") as f:
 							doctype = f.readline()
-							f.close()
 						with open(target, "w") as f:
 							f.write(doctype)
 						# Parses the rest of the XML
@@ -88,23 +108,34 @@ def process(path):
 				target=subitem(target_dir,onefile)
 				if not os.path.exists(source+".patch"):
 					if os.path.exists(target):
-#						print("Replacing " + target + "...")
-						log.write("Replacing " + target + "...\n")
+						message="Replacing "
+						if lang == "ca":
+							message="Substituint "
+						elif lang == "fr":
+							message="Remplace "
+						elif lang == "uk":
+							message="Заміна "
+#						print(message + target + "...\n")
+						log.write(message + target + "...\n")
 						os.remove(target)
 					else:
+						message="Adding "
+						if lang == "ca":
+							message="Afegint "
+						elif lang == "fr":
+							message="Ajoute "
+						elif lang == "uk":
+							message="Додавання Uaaaa "
 						if not os.path.exists(target_dir):
-#							print("Adding " + target_dir + "...")
-							log.write("Adding " + target_dir + "...\n")
+#							print(message + target_dir + "...\n")
+							log.write(message + target_dir + "...\n")
 							os.mkdir(target_dir)
-#						print("Adding " + target + "...")
-						log.write("Adding " + target + "...\n")
+#						print(message + target + "...\n")
+						log.write(message + target + "...\n")
 					shutil.copy(source,target_dir)
 
 # Gets language 
-#lang=os.getenv('LANG')
-#lang=os.environ['LANG']
 lang=locale.getdefaultlocale()[0]
-print(lang)
 before_underscore_pos=lang.find('_')
 lang=lang[0:before_underscore_pos:]
 
