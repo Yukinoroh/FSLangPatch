@@ -13,6 +13,7 @@ fr_CA (French - Canadian written standard)
 
 uk (Ukrainian)
 
+
 ===[Català]===
 
 Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer.
