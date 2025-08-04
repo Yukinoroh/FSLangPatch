@@ -5,26 +5,23 @@ El català segueix | Le français suit | Далі йде українська м
 
 This is a patch system for translations not accepted by the Phoenix Firestorm Viewer project team.
 
-The program patches the viewer to add the following languages:
+The program patches the viewer by adding the following languages:
 
 ca (Catalan)
 
-fr_CA (Canadian French)
-(Unlike with European French, the use of English loanwowards is frowned upon by both language users and standardization body, and there are recommanded neologisms even for the technical terms used in Second Life. This variety of French also prefers capitalized accentuated letters.)
+fr_CA (French - Canadian written standard)
 
 uk (Ukrainian)
-
 
 ===[Català]===
 
 Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer.
 
-El programari corrigeix el visor per afegir-hi les idiomes següents:
+El programari corrigeix el visor afegint-hi les idiomes següents:
 
 ca (català)
 
-fr_CA (francès canadenc)
-(A diferència del francès europeu, els parlants i l'òrgan regulador desaconsellen l'ús d'anglicismes, i existeixen neologismes fins i tot per als termes tècnics utilitzats en Second Life. Aquesta varietat també prefereix les majúscules accentuades.)
+fr_CA (francès - estandard escrit canadenc)
 
 uk (ucraïnès)
 
@@ -33,12 +30,11 @@ uk (ucraïnès)
 
 Ceci est un système correctif pour les traductions pas encore acceptées par l'équipe de Phoenix Firestorm Viewer.
 
-Le programme corrige le visualisateur afin d'y ajouter les langues suivantes:
+Le programme corrige le visualisateur en y ajoutant les langues suivantes:
 
 ca (catalan)
 
-fr_CA (français canadien)
-(Contrairement au français européen, l'usage d'anglicismes est découragé par les locuteurs et l'organisme de réglementation, et il existe des néologismes même pour les termes techniques utilisés dans Second Life. Cette variété préfère aussi les lettres majuscules accentuées.)
+fr_CA (français - standard écrit canadien)
 
 uk (ukrainien)
 
@@ -51,8 +47,7 @@ uk (ukrainien)
 
 ca (каталонська)
 
-fr_CA (канадська французька)
-(На відміну від європейської французької мови, використання англійських запозичених слів не схвалюється як користувачами мови, так і органами стандартизації, і існують рекомендовані неологізми навіть для складної технічної лексики. Цей різновид французької також надає перевагу написанню з великої літери з акцентом.)
+fr_CA (Французько - канадський письмовий стандарт)
 
 uk (Українська мова)
 
