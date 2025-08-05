@@ -28,8 +28,8 @@ Add a <sort> tag after the last element one to add (it will not be added to the 
 [key] is the name of the attribute that contains text to be sorted. For the text between the tags, use "_text".
 [prepends] is a comma-separated list of key values whose element must not be sorted and be kept at the beginning of the list.
 
-Comments that contain a sibling element will also be sorted just like if that sibling was not commented.
-Comments that do not contain a sibling will be prepended.
+Comments that contain a sibling element will also be sorted just like if that element was not commented.
+Comments that do not contain a sibling element will be prepended.
 
 For example:
 
