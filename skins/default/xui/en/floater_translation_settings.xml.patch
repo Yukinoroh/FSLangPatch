@@ -18,5 +18,6 @@
    label="Français canadien (French)"
    name="Canadian_French"
    value="fr_CA" />
+  <sort key="label" prepends="System Default,English"/>
  </combo_box>
 </floater>
