@@ -24,6 +24,21 @@
          label="Українська мова (Ukrainian)"
          name="Ukrainian"
          value="uk" />
+        <combo_box.item
+         enabled="true"
+         label="Dansk (Danish) - Beta"
+         name="Danish"
+         value="da" />
+        <combo_box.item
+         enabled="true"
+         label="Português (Portuguese) - Beta"
+         name="Portugese"
+         value="pt" />
+        <combo_box.item
+         enabled="true"
+         label="Türkçe (Turkish) - Beta"
+         name="Turkish"
+         value="tr" />
         <sort key="label" prepends=""/>
     </combo_box>
 </panel>
