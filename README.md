@@ -8,9 +8,7 @@ This is a patch system for translations not accepted by the Phoenix Firestorm Vi
 The program patches the viewer by adding the following languages:
 
 ca (Catalan)
-
 fr_CA (French - Canadian written standard)
-
 uk (Ukrainian)
 
 
