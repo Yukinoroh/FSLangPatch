@@ -21,6 +21,8 @@ And reactivates the following beta languages:
 
 + tr (Turkish)
 
+After execution of the program, look at the log.txt file to make sure everything went well.
+
 ===[Català]===
 
 Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer.
@@ -40,6 +42,8 @@ I reactiva les idiomes beta següents:
 + pt (portuguès)
 
 + tr (turc)
+
+Després de l'execució del programari, mira el fitxer log.txt per comprovar que tot va anar bé.
 
 ===[Français canadien]===
 
@@ -61,6 +65,7 @@ Et réactives les langues beta suivantes:
 
 + tr (turc)
 
+Après l'exécution, regarder le fichier log.txt pour s'assurer que tout est bien allé.
 
 ===[Українська мова]===
 
@@ -82,3 +87,4 @@ Et réactives les langues beta suivantes:
 
 + tr (турецька)
 
+Після виконання програми перегляньте файл log.txt, щоб переконатися, що все пройшло добре.
