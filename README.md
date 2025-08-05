@@ -3,8 +3,7 @@ El català segueix | Le français suit | Далі йде українська м
 
 ===[English]===
 
-This is a patch system for translations not accepted by the Phoenix Firestorm Viewer project team,
-as well as the translations themselves.
+This is a patch system for translations not accepted by the Phoenix Firestorm Viewer project team, as well as the translations themselves.
 
 The program patches the viewer by adding the following languages:
 
@@ -26,8 +25,7 @@ After execution of the program, look at the log.txt file to make sure everything
 
 ===[Català]===
 
-Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer,
-així com les traduccions mateixes.
+Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer, així com les traduccions mateixes.
 
 El programari corrigeix el visor afegint-hi les idiomes següents:
 
@@ -49,8 +47,7 @@ Després de l'execució del programari, mira el fitxer log.txt per comprovar que
 
 ===[Français canadien]===
 
-Ceci est un système correctif pour les traductions pas encore acceptées par l'équipe de Phoenix Firestorm Viewer,
-ainsi que les traductions elles-mêmes.
+Ceci est un système correctif pour les traductions pas encore acceptées par l'équipe de Phoenix Firestorm Viewer, ainsi que les traductions elles-mêmes.
 
 Le programme corrige le visualisateur en y ajoutant les langues suivantes:
 
@@ -72,8 +69,7 @@ Après l'exécution, regarder le fichier log.txt pour s'assurer que tout est bie
 
 ===[Українська мова]===
 
-Це система виправлень для перекладів, які не прийняті командою проєкту Phoenix Firestorm Viewer,
-а також для самих перекладів.
+Це система виправлень для перекладів, які не прийняті командою проєкту Phoenix Firestorm Viewer, а також для самих перекладів.
 
 Після виконання програми в каталозі Firestorm будуть додані такі мови:
 
