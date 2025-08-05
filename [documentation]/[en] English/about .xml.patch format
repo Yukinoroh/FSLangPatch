@@ -8,14 +8,14 @@ Keep the whole tree above the elements you want to add, and the elements themsel
 
 
 === SORTING ELEMENTS ===
-If you want to order a list of elements, add a sort tag after the last one you add:
+If you want to order a list of elements, add a sort tag after the last one you add (it will not be added to the final XML).
 
-<sort key="[key]" prepends="[list of prepends]"/>
+<sort key="[key]" prepends="[prepends]"/>
    where:
 [key] is the name of the attribute that contains text to be sorted. (if you want to use text between the tags, use "_text")
-[list of prepends] is a comma-separated list of key values that must be ignored; the element they belong to will not be sorted and will be prepended at the beginning of the list.
+[prepends] is a comma-separated list of key values whose element must not be sorted and be kept at the beginning of the list.
 
-Comments that contain a sibling will also be sorted like if they were not commented;
+Comments that contain a sibling element will also be sorted just like if that sibling was not commented.
 Comments that do not contain a sibling will be prepended.
 
 For example:
@@ -31,6 +31,6 @@ For example:
 
 The above patch will:
 
-1) Add two "Català (Catalan)" and Français canadien (French)" combo box items;
-2) List unsorted "System Default" and "English" combo box items and the comments not containing any element;
+1) Add "Català (Catalan)" and "Français canadien (French)" combo box items;
+2) List unsorted "System Default" and "English" combo box items, as well as the comments not containing a combo box item;
 2) List sorted all other combo box items by their label, including those we added and those that are commented.
