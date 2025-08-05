@@ -9,30 +9,28 @@ Guardar sencer l'arbre per sobre els elements per afegir, i els elements mateixo
 === POSAR UN ELEMENT EN COMENTARI ===
 
 Inserir la versió en comentari de l'element; el progamari l'actualitzarà.
-
-Insérer la version en commentaires de l'élément, Le programme le mettra à jour.
-Tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
+Tots els elements corresponsals al lloc de l'arbre seràn actualitzats.
 
 
-=== SORTIR UN ÉLÉMENT D'UN COMMENTAIRE ===
+=== SORTIR UN ELEMENT D'UN COMENTARI ===
 
-Insérer la version hors commentaire de l'élément, Le programme le mettra à jour.
-Tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
+Inserir la versió fora de comentari de l'element; el programari l'actualitzarà.
+Tots els elements corresponsals al lloc de l'arbre seràn actualitzats.
 
 
-=== METTRE DES ÉLÉMENTS PAR ORDRE ALPHABÉTIQUE ===
+=== POSAR ELEMENTS EN ORDRE ALFABÈTIC ===
 
-Ajouter une balise <sort> après le dernier élément à ajouter (elle ne sera pas ajoutée au fichier XML final):
+Afegir una etiqueta <sort> després del última element per afegir (no serà afegida al fitxer XML final):
 
 <sort key="[key]" prepends="[prepends]"/>
-   où:
-[key] est le nom de l'attribut qui contient le texte à être mis en ordre alphabétique. Pour le texte entre les balises, utiliser "_text".
-[prepends] est une liste, séparée par des virgules, de valeurs "key" dont l'élément ne doit pas être mis par ordre alphabétique et doit être antéposé dans la liste.
+   on:
+[key] és el nom est le nom de l'atribut que conté el text per ser posat en ordre alfabètic. Pel text entre etiquetes, utilitzar "_text".
+[prepends] és una llista de valors "key", separats per comes, d'un element que no ha de ser posat en ordre alfabètic i ha de ser anteposat en la llista.
 
-Les commentaires qui contiennent un élément frère seront aussi mis par ordre alphabétique comme si cet élément n'était pas mis en commentaire.
-Les commentaires qui ne contiennent pas d'élément frère seront antéposés.
+Els comentaris que contenen un element germà seran també posats en ordre alfabètic com si aquest element no fos posat en comentari.
+Els comentaris que no contenen un element germà seran anteposats.
 
-Par exemple:
+Per exemple:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <floater>
@@ -43,8 +41,8 @@ Par exemple:
  </combo_box>
 </floater>
 
-Le correctif ci-desus:
+El correctiu a dalt:
 
-1) Ajoutera les «combo box item» "Català (Catalan)" et "Français canadien (French)";
-2) Fera une liste des «combo box item» "System Default" et "English", ainsi que les commentaires ne contenant pas de «combo box item»;
-3) Fera une liste par ordre alphabétique de tous les autres «combo box item» selon leur attribut «label», incluant ceux ajoutés et ceux en commentaire.
+1) Afegira els «combo box item» "Català (Catalan)" i "Français canadien (French)";
+2) Farà una llista dels «combo box item» "System Default" i "English", així com els comentaris que no contenen un «combo box item»;
+3) Farà una llista en ordre alfabètic de tots els altres «combo box item» segons el seu atribut «label», incloient-hi aquells afegits i aquells en comentari.
