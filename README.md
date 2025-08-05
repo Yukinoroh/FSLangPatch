@@ -21,7 +21,7 @@ And reactivates the following beta languages:
 
 + tr (Turkish)
 
-After execution of the program, look at the log.txt file to make sure everything went well.
+After execution of the program, please check the log.txt file to make sure everything went well.
 
 ===[Català]===
 
@@ -43,7 +43,7 @@ I reactiva les idiomes beta següents:
 
 + tr (turc)
 
-Després de l'execució del programari, mira el fitxer log.txt per comprovar que tot va anar bé.
+Després de l'execució del programari, revisa el fitxer log.txt per comprovar que tot va anar bé.
 
 ===[Français canadien]===
 
@@ -65,7 +65,7 @@ Et réactives les langues beta suivantes:
 
 + tr (turc)
 
-Après l'exécution, regarder le fichier log.txt pour s'assurer que tout est bien allé.
+Après l'exécution du programme, réviser le fichier log.txt pour s'assurer que tout est bien allé.
 
 ===[Українська мова]===
 
@@ -87,4 +87,4 @@ Après l'exécution, regarder le fichier log.txt pour s'assurer que tout est bie
 
 + tr (турецька)
 
-Після виконання програми перегляньте файл log.txt, щоб переконатися, що все пройшло добре.
+Після виконання програми, будь ласка, перевірте файл log.txt, щоб переконатися, що все пройшло добре.
