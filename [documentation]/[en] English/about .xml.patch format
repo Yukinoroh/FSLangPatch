@@ -7,36 +7,6 @@ The missing XML tags will be added at the suitable place.
 Keep the whole tree above the elements you want to add, and the elements themselves. You don't need to keep any sibiling element.
 
 
-=== REMOVING AN ELEMENT ===
-
-Insert the element and its replacement inside a <remove></remove> tag set, for example:
-
-<remove>
- <combo_box.item enabled="true" label="Español (Spanish) - Beta" name="Spanish" value="es"/>
-</remove
-
-Note that all matching elements at the tree location will be removed.
-
-
-=== REPLACING AN ELEMENT ===
-
-Insert the element and its replacement inside a <replace></replace> tag set, for example:
-
-<replace>
- <combo_box.item enabled="true" label="日本語 (Japanese) - Beta" name="(Japanese)" value="ja"/>
- <combo_box.item enabled="true" label="日本語 (Japanese)" name="(Japanese)" value="ja"/>
-</replace>
-
-Alternatively, you can use the remove method followed by the replacement:
-
-<remove>
- <combo_box.item enabled="true" label="日本語 (Japanese) - Beta" name="(Japanese)" value="ja"/>
-</remove>
-<combo_box.item enabled="true" label="日本語 (Japanese)" name="(Japanese)" value="ja"/>
-
-Note that all matching elements at the tree location will be replaced.
-
-
 === COMMENTING AN ELEMENT ===
 
 Insert commented version of the element. The program will update it.
@@ -52,6 +22,7 @@ Alternatively, you can use the replace or remove methods (see above).
 
 
 === SORTING ELEMENTS ===
+
 If you want to order a list of elements, add a sort tag after the last one you add (it will not be added to the final XML).
 
 <sort key="[key]" prepends="[prepends]"/>
@@ -78,3 +49,33 @@ The above patch will:
 1) Add "Català (Catalan)" and "Français canadien (French)" combo box items;
 2) List unsorted "System Default" and "English" combo box items, as well as the comments not containing a combo box item;
 2) List sorted all other combo box items by their label, including those we added and those that are commented.
+
+
+[TO BE IMPLEMENTED] === REMOVING AN ELEMENT ===
+
+Insert the element and its replacement inside a <remove></remove> tag set, for example:
+
+<remove>
+ <combo_box.item enabled="true" label="Español (Spanish) - Beta" name="Spanish" value="es"/>
+</remove
+
+Note that all matching elements at the tree location will be removed.
+
+
+[TO BE IMPLEMENTED] === REPLACING AN ELEMENT ===
+
+Insert the element and its replacement inside a <replace></replace> tag set, for example:
+
+<replace>
+ <combo_box.item enabled="true" label="日本語 (Japanese) - Beta" name="(Japanese)" value="ja"/>
+ <combo_box.item enabled="true" label="日本語 (Japanese)" name="(Japanese)" value="ja"/>
+</replace>
+
+Alternatively, you can use the remove method followed by the replacement:
+
+<remove>
+ <combo_box.item enabled="true" label="日本語 (Japanese) - Beta" name="(Japanese)" value="ja"/>
+</remove>
+<combo_box.item enabled="true" label="日本語 (Japanese)" name="(Japanese)" value="ja"/>
+
+Note that all matching elements at the tree location will be replaced.
