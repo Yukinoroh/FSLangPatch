@@ -1,5 +1,5 @@
-The .xml.patch files allow patching non-translation files even if they have changed in a new viewer version.
-The missing XML tags will be added at the suitable place.
+The .xml.patch file format is a XML file that tells what to patch in another XML file and how to perform it.
+Any missing XML tag will be added at the suitable place.
 
 
 === FORMATTING THE FILE ===
