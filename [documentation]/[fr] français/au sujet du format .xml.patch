@@ -8,13 +8,13 @@ Garder entier l'arbre situé au-dessus des éléments à ajouter, ainsi que les 
 
 === METRE UN ÉLÉMENT EN COMMENTAIRE ===
 
-Insérer la version en commentaires de l'élément, Le programme le mettra à jour.
+Insérer la version en commentaires de l'élément; le programme le mettra à jour.
 Remarquez que tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
 
 
 === SORTIR UN ÉLÉMENT D'UN COMMENTAIRE ===
 
-Insérer la version hors commentaire de l'élément, Le programme le mettra à jour.
+Insérer la version hors commentaire de l'élément; le programme le mettra à jour.
 Remarquez que tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
 
 
