@@ -1,4 +1,48 @@
 Les fichiers .xml.patch permettent de corriger des fichiers autres que ceux de la traduction, même s'ils ont changé dans une nouvelle version.
 Les balises XML seront ajoutées à l'endroit approprié.
 
-Quand vous faites vos propres fichiers .xml.patch, ou en modifiez, gardez au moins l'arbre au-dessus des éléments que vous voulez ajouter, et les éléments eux-mêmes. Vous n'avez même pas à garder les éléments frères.
+=== FORMATTAGE DU FICHIER ===
+
+Garder entier l'arbre situé au-dessus des éléments à ajouter, ainsi que les éléments eux-mêmes. Il n'est pas nécessaire de garder les éléments frères.
+
+
+=== METRE UN ÉLÉMENT EN COMMENTAIRE ===
+
+Insérer la version en commentaires de l'élément, Le programme le mettra à jour.
+Remarquez que tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
+
+
+=== SORTIR UN ÉLÉMENT D'UN COMMENTAIRE ===
+
+Insérer la version hors commentaire de l'élément, Le programme le mettra à jour.
+Remarquez que tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
+
+
+=== METTRE DES ÉLÉMENTS PAR ORDRE ALPHABÉTIQUE ===
+
+Ajouter une balise <sort> après le dernier élément à ajouter (elle ne sera pas ajoutée au fichier XML final):
+
+<sort key="[key]" prepends="[prepends]"/>
+   où:
+[key] est le nom de l'attribut qui contient le texte à être mis en ordre alphabétique. Pour le texte entre les balises, utiliser "_text".
+[prepends] est une liste, séparée par des virgules, de valeurs "key" dont l'élément ne doit pas être mis par ordre alphabétique et doit être antéposé dans la liste.
+
+Les commentaires qui contiennent un élément frère seront aussi mis par ordre alphabétique comme si cet élément n'était pas mis en commentaire.
+Les commentaires qui ne contiennent pas d'élément frère seront antéposés.
+
+Par exemple:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <combo_box.item label="Català (Catalan)" name="Catalan" value="ca" />
+  <combo_box.item label="Français canadien (French)" name="Canadian_French" value="fr_CA" />
+  <sort key="label" prepends="System Default,English"/>
+ </combo_box>
+</floater>
+
+Le correctif ci-desus:
+
+1) Ajoutera les «combo box item» "Català (Catalan)" et "Français canadien (French)";
+2) Fera une liste crue avec les «combo box item» "System Default" et "English", ainsi que les commentaires ne contenant pas de «combo box item»;
+3) Fera une liste par ordre alphabétique de tous les autres «combo box item» selon leur attribut «label», incluant ceux ajoutés et ceux en commentaire.
