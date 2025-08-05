@@ -10,13 +10,13 @@ Keep the whole tree above the elements to be added, and the elements themselves.
 === COMMENTING AN ELEMENT ===
 
 Insert commented version of the element; the program will update it.
-Note that all matching elements at the tree location will be updated.
+All matching elements at the tree location will be updated.
 
 
 === UNCOMMENTING AN ELEMENT ===
 
 Insert uncommented version of the element; the program will update it.
-Note that all matching elements at the tree location will be updated.
+All matching elements at the tree location will be updated.
 
 
 === SORTING ELEMENTS IN ALPHABETICAL ORDER ===
