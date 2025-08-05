@@ -1,5 +1,6 @@
-Els fitxers .xml.patch permeten corregir fitxers altres que auqells de traducció, fins i tot si van canviar en una versió nova.
-Les guies XML seràn afegides al lloc apropiat.
+Els fitxers .xml.patch són fitxers XML que indiquen qué corregir en un altre fitxer XML i com fer-ho.
+Qualsevol etiqueta XML que falta serà afegida al lloc apropiat.
+
 
 === FORMATATGE DEL FITXER ===
 
