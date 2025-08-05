@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<labels>
+	<label
+	 name="ca"
+	 value="Del sistema per defecte" />
+	<label
+	 name="fr_CA"
+	 value="Du système par défaut" />
+	<label
+	 name="uk"
+	 value="Мова системи" />
+    <sort key="name" prepends=""/>
+</labels>
