@@ -1,4 +1,4 @@
-The .xml.patch file format is a XML file that tells what to patch in another XML file and how to perform it.
+The .xml.patch files are XML files that tell what to patch in another XML file and how to perform it.
 Any missing XML tag will be added at the suitable place.
 
 
