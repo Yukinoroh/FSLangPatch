@@ -1,4 +1,4 @@
-The .xml.patch files are XML files that tell what to patch in another XML file and how to perform it.
+.xml.patch files are XML files that tell what to patch in another XML file and how to do it.
 Any missing XML tag in target file will be added at the suitable place.
 
 
