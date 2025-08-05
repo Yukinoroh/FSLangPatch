@@ -9,6 +9,9 @@
         <string>ca</string>
         <string>fr_CA</string>
         <string>uk</string>
+        <string>da</string>
+        <string>pt</string>
+        <string>tr</string>
 		<sort key="_text" prepends=""/>
       </array>
     </map>
