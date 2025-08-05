@@ -1,8 +1,11 @@
 The .xml.patch files allow patching non-translation files even if they have changed in a new viewer version.
 The missing XML tags will be added at the suitable place.
 
+
 === FORMATTING THE FILE ===
+
 Keep the whole tree above the elements you want to add, and the elements themselves. You don't need to keep any sibiling element.
+
 
 === SORTING ELEMENTS ===
 If you want to order a list of elements, add a sort tag after the last one you add:
