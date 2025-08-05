@@ -7,11 +7,19 @@ This is a patch system for translations not accepted by the Phoenix Firestorm Vi
 
 The program patches the viewer by adding the following languages:
 
-ca (Catalan)\n
-fr_CA (French - Canadian written standard)
++ ca (Catalan)
 
-uk (Ukrainian)
++ fr_CA (French - Canadian written standard)
 
++ uk (Ukrainian)
+
+And reactivates the following beta languages:
+
++ da (Danish)
+
++ pt (Portuguese)
+
++ tr (Turkish)
 
 ===[Català]===
 
@@ -25,6 +33,13 @@ fr_CA (francès - estandard escrit canadenc)
 
 uk (ucraïnès)
 
+I reactiva les idiomes beta següents:
+
++ da (danès)
+
++ pt (portuguès)
+
++ tr (turc)
 
 ===[Français canadien]===
 
@@ -38,6 +53,14 @@ fr_CA (français - standard écrit canadien)
 
 uk (ukrainien)
 
+Et réactives les langues beta suivantes:
+
++ da (danois)
+
++ pt (portuguais)
+
++ tr (turc)
+
 
 ===[Українська мова]===
 
@@ -50,4 +73,12 @@ ca (каталонська)
 fr_CA (Французько - канадський письмовий стандарт)
 
 uk (Українська мова)
+
+І повторно активує такі бета-мовні версії:
+
++ da (датська)
+
++ pt (португальська)
+
++ tr (турецька)
 
