@@ -4,7 +4,7 @@ The missing XML tags will be added at the suitable place.
 
 === FORMATTING THE FILE ===
 
-Keep the whole tree above the elements you want to add, and the elements themselves. You don't need to keep any sibiling element.
+Keep the whole tree above the elements to be added, and the elements themselves. You don't need to keep any sibiling element.
 
 
 === COMMENTING AN ELEMENT ===
