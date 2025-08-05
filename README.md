@@ -23,6 +23,8 @@ And reactivates the following beta languages:
 
 After execution of the program, please check the log.txt file to make sure everything went well.
 
+Aditionally, this tool can be used to patch or replace any XML file.
+
 ===[Català]===
 
 Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer, així com les traduccions mateixes.
@@ -44,6 +46,8 @@ I reactiva les idiomes beta següents:
 + tr (turc)
 
 Després de l'execució del programari, revisa el fitxer log.txt per comprovar que tot va anar bé.
+
+A més, aquesta eina pot ser utilitzada per corregir or substituir qualsevol fitxer XML.
 
 ===[Français canadien]===
 
@@ -67,6 +71,8 @@ Et réactives les langues beta suivantes:
 
 Après l'exécution du programme, réviser le fichier log.txt pour s'assurer que tout est bien allé.
 
+De plus, cet outil peut être utilisé pour corriger ou rempalcer n'importe quel fichier XML.
+
 ===[Українська мова]===
 
 Це система виправлень для перекладів, які не прийняті командою проєкту Phoenix Firestorm Viewer, а також для самих перекладів.
@@ -88,3 +94,5 @@ Après l'exécution du programme, réviser le fichier log.txt pour s'assurer que
 + tr (турецька)
 
 Після виконання програми, будь ласка, перевірте файл log.txt, щоб переконатися, що все пройшло добре.
+
+Крім того, цей інструмент можна використовувати для виправлення або заміни XML-файлу.
