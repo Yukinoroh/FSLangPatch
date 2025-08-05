@@ -27,11 +27,11 @@ Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equ
 
 El programari corrigeix el visor afegint-hi les idiomes següents:
 
-ca (català)
++ ca (català)
 
-fr_CA (francès - estandard escrit canadenc)
++ fr_CA (francès - estandard escrit canadenc)
 
-uk (ucraïnès)
++ uk (ucraïnès)
 
 I reactiva les idiomes beta següents:
 
@@ -47,11 +47,11 @@ Ceci est un système correctif pour les traductions pas encore acceptées par l'
 
 Le programme corrige le visualisateur en y ajoutant les langues suivantes:
 
-ca (catalan)
++ ca (catalan)
 
-fr_CA (français - standard écrit canadien)
++ fr_CA (français - standard écrit canadien)
 
-uk (ukrainien)
++ uk (ukrainien)
 
 Et réactives les langues beta suivantes:
 
@@ -68,11 +68,11 @@ Et réactives les langues beta suivantes:
 
 Після виконання програми в каталозі Firestorm будуть додані такі мови:
 
-ca (каталонська)
++ ca (каталонська)
 
-fr_CA (Французько - канадський письмовий стандарт)
++ fr_CA (Французько - канадський письмовий стандарт)
 
-uk (Українська мова)
++ uk (Українська мова)
 
 І повторно активує такі бета-мовні версії:
 
