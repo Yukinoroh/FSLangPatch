@@ -5,21 +5,52 @@ import locale
 import plyer
 import plyer.platforms
 from lxml import etree
+from lxml import objectify
 
 osname=platform.uname()[0]
+sort_key = ""
 
-def subitem(somepath,add):
+# Gets path of subitem
+def getpath(somepath,add):
 	if osname == "Windows":
 		somepath = somepath + "\\" + add
 	else:
 		somepath = somepath + "/" + add
 	return somepath
 
+# Custom get attribute function to deal "_text" key
+def getattrib(element,attrib):
+	if element.tag is etree.Comment:	# If element is a comment, we look inside.
+		element = get_element_inside_comment(element)
+	# Note: we're nost supposed to get a comment without an element here.
+	if attrib == "_text":
+		return element.text
+	else:
+		return element.attrib[attrib]
+
+#Returns element inside comment, or comment itself if there is no element inside.
+def get_element_inside_comment(comment):
+	try:
+		return etree.fromstring(comment.text)
+	except:	# No element inside: We just use the comment as is.
+		return comment
+
+def sortfunc(element):
+	return getattrib(element,sort_key)
+
+# Recursive XML parsing
 def xmlprocess(source,target):
 	key_src = ""
 	key_tgt = ""
+	sort = False
+	global sort_key
+	sort_prepends=[]
 	for child_src in source:
-		if child_src.tag == "key":	# Found a key on source side
+		if child_src.tag == "sort":		# We will sort all child_tgt
+			sort=True
+			sort_key=child_src.attrib['key']
+			sort_prepends=child_src.attrib['prepends'].split(',')
+		elif child_src.tag == "key":	# Found a key on source side
 			key_src=child_src.text
 		else:	# Anything else than key on source side
 			intarget=0;
@@ -45,16 +76,95 @@ def xmlprocess(source,target):
 					# else: do nothing (on different element)
 			if not intarget:
 				target.append(child_src)
+	if sort:
+		# Separates into two lists prepends and items to be sorted. First makes a copies of both, we will remove elements.
+		tosort = []
+		toprepend = []
+		for element in target:
+			temp_element = None
+			if element.tag is etree.Comment:					# If element is a comment, we look inside
+				temp_element = get_element_inside_comment(element)
+			else:
+				temp_element = element
+			# Temporary element may be a comment, an element extracted from a comment, or an element.
+			# Since it can be extracted from a comment, we have to add/remove the original element to the list whatever.
+			# Will prepend comments, elements with no key, and excludes.
+			if temp_element.tag is etree.Comment:
+				toprepend.append(element)
+			else:	# Not a comment
+				found = False
+				for sort_prepend in sort_prepends:
+					if getattrib(temp_element,sort_key) == sort_prepend:
+						toprepend.append(element)
+						found = True
+				if not found:	# Not found in list to prepend, so we must sort it.
+					tosort.append(element)
+		# Sorts the items to be sorted
+		tosort.sort(key=sortfunc)	# Note: sort_key should have been passed here but we can only pass one argument (the element); sort_key was made global as a hack
+		# Repopulates the list
+		target.clear()
+		for element in toprepend:
+			target.append(element)
+		for element in tosort:
+			target.append(element)
 
-def process(path):
-	for (path,folders,files) in os.walk(path, topdown=True):
+# Gets language 
+lang=locale.getdefaultlocale()[0]
+before_underscore_pos=lang.find('_')
+lang=lang[0:before_underscore_pos:]
+
+# Gets default Firestorm installation path
+fs_path=""
+if osname == "Windows":
+	fs_path="C:\\Program Files\\Firestorm-Releasex64\\"
+elif osname == "Linux":
+	fs_path="/home/"+os.environ.get('USER', os.environ.get('USERNAME'))+"/"  # File chooser needs "/" to go into the folder.
+elif osname == "Darwin":	# Mac
+	fs_path="/Applications/Firestorm-releasex64.app/Contents/Resources/"
+
+# Prompts user for a folder
+message="Choose Firestorm main folder"
+if lang == "ca":
+	message="Tria la carpeta principal de Firestorm"
+elif lang == "fr":
+	message="Choisissez le dossier principal de Firestorm"
+elif lang == "uk":
+	message="Виберіть головну папку Firestorm"
+fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
+
+# Prepares log file
+log=open("./log.txt", "w")
+
+# Make sure this is a Firestorm installation
+if not os.path.exists(getpath(fs_path,"app_settings")) and not os.path.exists(getpath(fs_path,"skins")):
+	message="This does not seem to be a Firestorm folder.\n"
+	if lang == "ca":
+		message="Aquest no sembla ser una carpeta de Firestorm.\n"
+	elif lang == "fr":
+		message="Ceci n'a pas l'air d'un dossier de Firestorm.\n"
+	elif lang == "uk":
+		message="Здається, це не папка Firestorm.\n"
+#	print(message)
+	log.write(message)
+elif not os.path.exists("./app_settings") and not os.path.exists("./skins"):
+	message="There seems to be no source patch.\n"
+	if lang == "ca":
+		message="No sembla haver-hi cap font de correctiu.\n"
+	elif lang == "fr":
+		message="Il semble n'y avoir aucune source de correctif.\n"
+	elif lang == "uk":
+		message="Здається, патча з вихідним кодом немає.\n"
+	log.write(message)
+else:
+	# Walks the current python folder to process changes
+	for (path,folders,files) in os.walk('.', topdown=True):
 		# Processing of files
 		for onefile in files:
 			# XML patches
 			if onefile.find(".xml.patch") >= 0:
-				source=subitem(path,onefile)
+				source=getpath(path,onefile)
 				target=source[:-5:]
-				target=subitem(fs_path,target[2:-1:])
+				target=getpath(fs_path,target[2:-1:])
 				message="Patching "
 				if lang == "ca":
 					message="Aplicant un correctiu a "
@@ -103,9 +213,9 @@ def process(path):
 							f.write(etree.tostring(xmltree_tgt, encoding="utf-8", xml_declaration=False))
 			# XML files
 			elif onefile.find(".xml") >= 0:
-				source=subitem(path,onefile)
-				target_dir=subitem(fs_path,path[2::])
-				target=subitem(target_dir,onefile)
+				source=getpath(path,onefile)
+				target_dir=getpath(fs_path,path[2::])
+				target=getpath(target_dir,onefile)
 				if not os.path.exists(source+".patch"):
 					if os.path.exists(target):
 						message="Replacing "
@@ -133,54 +243,3 @@ def process(path):
 #						print(message + target + "...\n")
 						log.write(message + target + "...\n")
 					shutil.copy(source,target_dir)
-
-# Gets language 
-lang=locale.getdefaultlocale()[0]
-before_underscore_pos=lang.find('_')
-lang=lang[0:before_underscore_pos:]
-
-# Gets default Firestorm installation path
-fs_path=""
-if osname == "Windows":
-	fs_path="C:\\Program Files\\Firestorm-Releasex64\\"
-elif osname == "Linux":
-	fs_path="/home/"+os.environ.get('USER', os.environ.get('USERNAME'))+"/"  # File chooser needs "/" to go into the folder.
-elif osname == "Darwin":	# Mac
-	fs_path="/Applications/Firestorm-releasex64.app/Contents/Resources/"
-
-# Prompts user for a folder
-message="Choose Firestorm main folder"
-if lang == "ca":
-	message="Tria la carpeta principal de Firestorm"
-elif lang == "fr":
-	message="Choisissez le dossier principal de Firestorm"
-elif lang == "uk":
-	message="Виберіть головну папку Firestorm"
-fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
-
-# Prepares log file
-log=open("./log.txt", "w")
-
-# Make sure this is a Firestorm installation
-if not os.path.exists(subitem(fs_path,"app_settings")) and not os.path.exists(subitem(fs_path,"skins")):
-	message="This does not seem to be a Firestorm folder.\n"
-	if lang == "ca":
-		message="Aquest no sembla ser una carpeta de Firestorm.\n"
-	elif lang == "fr":
-		message="Ceci n'a pas l'air d'un dossier de Firestorm.\n"
-	elif lang == "uk":
-		message="Здається, це не папка Firestorm.\n"
-#	print(message)
-	log.write(message)
-elif not os.path.exists("./app_settings") and not os.path.exists("./skins"):
-	message="There seems to be no source patch.\n"
-	if lang == "ca":
-		message="No sembla haver-hi cap font de correctiu.\n"
-	elif lang == "fr":
-		message="Il semble n'y avoir aucune source de correctif.\n"
-	elif lang == "uk":
-		message="Здається, патча з вихідним кодом немає.\n"
-	log.write(message)
-else:
-	# Walks the current python folder to process changes
-	process('.');
