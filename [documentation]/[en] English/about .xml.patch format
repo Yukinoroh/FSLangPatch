@@ -48,7 +48,7 @@ The above patch will:
 
 1) Add "Català (Catalan)" and "Français canadien (French)" combo box items;
 2) List unsorted "System Default" and "English" combo box items, as well as the comments not containing a combo box item;
-2) List sorted all other combo box items by their label, including those we added and those that are commented.
+3) List sorted all other combo box items by their label, including those we added and those that are commented.
 
 
 [TO BE IMPLEMENTED] === REMOVING AN ELEMENT ===
