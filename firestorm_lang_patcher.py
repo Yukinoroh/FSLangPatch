@@ -20,26 +20,28 @@ def getpath(somepath,add):
 
 # Custom get attribute function to deal "_text" key
 def getattrib(element,attrib):
-	if element.tag is etree.Comment:	# If element is a comment, we look inside.
-		element = get_element_inside_comment(element)
-	# Note: we're nost supposed to get a comment without an element here.
+	element = uncomment(element)	# Note: we're nost supposed to get a comment without an element inside here.
 	if attrib == "_text":
 		return element.text
 	else:
 		return element.attrib[attrib]
 
-#Returns element inside comment, or comment itself if there is no element inside.
-def get_element_inside_comment(comment):
-	try:
-		return etree.fromstring(comment.text)
-	except:	# No element inside: We just use the comment as is.
-		return comment
+#Returns element inside comment, or element itself if not a comment or comment has no element inside
+def uncomment(element):
+	if element.tag is etree.Comment:
+		try:
+			return etree.fromstring(element.text)
+		except:	# No element inside: We just use the comment as is.
+			return element
+	else:
+		return element
 
 def sortfunc(element):
 	return getattrib(element,sort_key)
 
 # Recursive XML parsing
 def xmlprocess(source,target):
+	identical = True
 	key_src = ""
 	key_tgt = ""
 	sort = False
@@ -64,28 +66,31 @@ def xmlprocess(source,target):
 						key_src = ""
 						key_tgt = ""
 						intarget=1
-						xmlprocess(child_src,child_tgt)
-						break
+						identical = xmlprocess(child_src,child_tgt)
+						#break	# Commented so that it replaces all occurences
 					# else: do nothing (on an element following unequal keys)
 				else:	# Other modes
+					temp_child_src = uncomment(child_src)
+					temp_child_tgt = uncomment(child_tgt)
 					# Needs to inspect elements if they are identical but have different number of elements (ex: top map) or if they contain the same text (ex: string)
-					if child_src.tag == child_tgt.tag and child_src.attrib == child_tgt.attrib and (len(child_src) != len(child_tgt) or child_src.text == child_tgt.text):
+					if temp_child_src.tag == temp_child_tgt.tag and temp_child_src.attrib == temp_child_tgt.attrib and (len(temp_child_src) != len(temp_child_tgt) or temp_child_src.text == temp_child_tgt.text):
 						intarget=1;
-						xmlprocess(child_src,child_tgt)
-						break
+						identical = xmlprocess(temp_child_src,temp_child_tgt)
+						# If elements are identical inside and only one side is commented, we have to update (either comment or uncomment)
+						if identical and ((temp_child_src != child_src and temp_child_tgt == child_tgt) or (temp_child_src == child_src and temp_child_tgt != child_tgt)):
+							target.replace(child_tgt,child_src)
+							identical = False
+						#break	# Commented so that it replaces all occurences
 					# else: do nothing (on different element)
 			if not intarget:
 				target.append(child_src)
+				identical = False
 	if sort:
 		# Separates into two lists prepends and items to be sorted. First makes a copies of both, we will remove elements.
 		tosort = []
 		toprepend = []
 		for element in target:
-			temp_element = None
-			if element.tag is etree.Comment:					# If element is a comment, we look inside
-				temp_element = get_element_inside_comment(element)
-			else:
-				temp_element = element
+			temp_element = uncomment(element)
 			# Temporary element may be a comment, an element extracted from a comment, or an element.
 			# Since it can be extracted from a comment, we have to add/remove the original element to the list whatever.
 			# Will prepend comments, elements with no key, and excludes.
@@ -101,12 +106,23 @@ def xmlprocess(source,target):
 					tosort.append(element)
 		# Sorts the items to be sorted
 		tosort.sort(key=sortfunc)	# Note: sort_key should have been passed here but we can only pass one argument (the element); sort_key was made global as a hack
+		# Takes a copy of the list to compare after sorting
+		targetcopy = []
+		for element in target:
+			targetcopy.append(element)
 		# Repopulates the list
 		target.clear()
 		for element in toprepend:
 			target.append(element)
 		for element in tosort:
 			target.append(element)
+		# Compares saved copy and repopulated list to check if identical
+		for index, element in enumerate(targetcopy):
+			if element != target[index]:
+				identical = False
+				break
+
+	return identical
 
 # Gets language 
 lang=locale.getdefaultlocale()[0]
