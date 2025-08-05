@@ -11,14 +11,12 @@ Keep the whole tree above the elements to be added, and the elements themselves.
 
 Insert commented version of the element. The program will update it.
 Note that all matching elements at the tree location will be updated.
-Alternatively, you can use the replace or remove methods (see above).
 
 
 === UNCOMMENTING AN ELEMENT ===
 
 Insert uncommented version of the element. The program will update it.
 Note that all matching elements at the tree location will be updated.
-Alternatively, you can use the replace or remove methods (see above).
 
 
 === SORTING ELEMENTS ===
@@ -49,33 +47,3 @@ The above patch will:
 1) Add "Català (Catalan)" and "Français canadien (French)" combo box items;
 2) List unsorted "System Default" and "English" combo box items, as well as the comments not containing a combo box item;
 3) List sorted all other combo box items by their label, including those we added and those that are commented.
-
-
-[TO BE IMPLEMENTED] === REMOVING AN ELEMENT ===
-
-Insert the element and its replacement inside a <remove></remove> tag set, for example:
-
-<remove>
- <combo_box.item enabled="true" label="Español (Spanish) - Beta" name="Spanish" value="es"/>
-</remove
-
-Note that all matching elements at the tree location will be removed.
-
-
-[TO BE IMPLEMENTED] === REPLACING AN ELEMENT ===
-
-Insert the element and its replacement inside a <replace></replace> tag set, for example:
-
-<replace>
- <combo_box.item enabled="true" label="日本語 (Japanese) - Beta" name="(Japanese)" value="ja"/>
- <combo_box.item enabled="true" label="日本語 (Japanese)" name="(Japanese)" value="ja"/>
-</replace>
-
-Alternatively, you can use the remove method followed by the replacement:
-
-<remove>
- <combo_box.item enabled="true" label="日本語 (Japanese) - Beta" name="(Japanese)" value="ja"/>
-</remove>
-<combo_box.item enabled="true" label="日本語 (Japanese)" name="(Japanese)" value="ja"/>
-
-Note that all matching elements at the tree location will be replaced.
