@@ -39,11 +39,6 @@ def uncomment(element):
 def sortfunc(element):
 	return getattrib(element,sort_key)
 
-# Print an error if both pathing methods are present
-def nobothmethods(xml,xmlpatch,log):
-	# TODO
-	None
-
 # Recursive XML parsing
 def xmlprocess(source,target):
 	identical = True
