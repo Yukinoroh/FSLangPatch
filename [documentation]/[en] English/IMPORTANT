@@ -1,0 +1,7 @@
+IMPORTANT
+
+The program will not patch a file if both the file and its .xml.patch are present in the folder.
+
+These two methods of patching are different. The former replaces the whole file as is, while the second describes how to patch it.
+
+There are no cases where both would be needed, so use one or the other, not both!
