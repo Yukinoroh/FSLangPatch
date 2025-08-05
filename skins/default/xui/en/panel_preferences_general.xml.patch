@@ -24,5 +24,6 @@
          label="Українська мова (Ukrainian)"
          name="Ukrainian"
          value="uk" />
+        <sort key="label" prepends=""/>
     </combo_box>
 </panel>
