@@ -21,7 +21,7 @@ Note that all matching elements at the tree location will be updated.
 
 === SORTING ELEMENTS IN ALPHABETICAL ORDER ===
 
-Add a <sort> tag after the last one you add (it will not be added to the final XML):
+Add a <sort> tag after the last element one to add (it will not be added to the final XML):
 
 <sort key="[key]" prepends="[prepends]"/>
    where:
