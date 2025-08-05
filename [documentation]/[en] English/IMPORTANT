@@ -1,6 +1,6 @@
 IMPORTANT
 
-The program will not patch a file if both the file and its .xml.patch are present in the folder.
+The program will not both replace and patch a file. In the patch folder, for each target file, please keep only either a .xml or .xml.patch.
 
 These two methods of patching are different. The former replaces the whole file as is, while the second describes how to patch it.
 
