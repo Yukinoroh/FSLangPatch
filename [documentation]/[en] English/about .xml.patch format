@@ -19,7 +19,7 @@ Insert uncommented version of the element. The program will update it.
 Note that all matching elements at the tree location will be updated.
 
 
-=== SORTING ELEMENTS ===
+=== SORTING ELEMENTS IN ALPHABETICAL ORDER ===
 
 If you want to order a list of elements, add a sort tag after the last one you add (it will not be added to the final XML).
 
