@@ -18,7 +18,7 @@ Insérer la version hors commentaire de l'élément; le programme le mettra à j
 Remarquez que tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
 
 
-=== METTRE DES ÉLÉMENTS PAR ORDRE ALPHABÉTIQUE ===
+=== METTRE DES ÉLÉMENTS EN ORDRE ALPHABÉTIQUE ===
 
 Ajouter une balise <sort> après le dernier élément à ajouter (elle ne sera pas ajoutée au fichier XML final):
 
