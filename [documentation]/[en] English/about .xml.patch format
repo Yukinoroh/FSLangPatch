@@ -1,4 +1,33 @@
 The .xml.patch files allow patching non-translation files even if they have changed in a new viewer version.
 The missing XML tags will be added at the suitable place.
 
-When you craft your own .xml.patch files, or modify some of them, keep at least the tree above the elements you want to add, and the elements themselves. You don't even need to keep the sibiling elements.
+=== FORMATTING THE FILE ===
+Keep the whole tree above the elements you want to add, and the elements themselves. You don't need to keep any sibiling element.
+
+=== SORTING ELEMENTS ===
+If you want to order a list of elements, add a sort tag after the last one you add:
+
+<sort key="[key]" prepends="[list of prepends]"/>
+   where:
+[key] is the name of the attribute that contains text to be sorted. (if you want to use text between the tags, use "_text")
+[list of prepends] is a comma-separated list of key values that must be ignored; the element they belong to will not be sorted and will be prepended at the beginning of the list.
+
+Comments that contain a sibling will also be sorted like if they were not commented;
+Comments that do not contain a sibling will be prepended.
+
+For example:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <combo_box.item label="Català (Catalan)" name="Catalan" value="ca" />
+  <combo_box.item label="Français canadien (French)" name="Canadian_French" value="fr_CA" />
+  <sort key="label" prepends="System Default,English"/>
+ </combo_box>
+</floater>
+
+The above patch will:
+
+1) Add two "Català (Catalan)" and Français canadien (French)" combo box items;
+2) List unsorted "System Default" and "English" combo box items and the comments not containing any element;
+2) List sorted all other combo box items by their label, including those we added and those that are commented.
