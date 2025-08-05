@@ -1,5 +1,6 @@
-Les fichiers .xml.patch permettent de corriger des fichiers autres que ceux de la traduction, même s'ils ont changé dans une nouvelle version.
-Les balises XML seront ajoutées à l'endroit approprié.
+Les fichiers .xml.patch sont des fichiers XML qui indiquent quoi corriger dans un autre fichier XML et comment le faire.
+Toute les balise XML manquante sera ajoutée à l'endroit approprié dans le fichier cible.
+
 
 === FORMATTAGE DU FICHIER ===
 
