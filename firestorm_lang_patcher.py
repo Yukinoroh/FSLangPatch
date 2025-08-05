@@ -39,6 +39,11 @@ def uncomment(element):
 def sortfunc(element):
 	return getattrib(element,sort_key)
 
+# Print an error if both pathing methods are present
+def nobothmethods(xml,xmlpatch,log):
+	# TODO
+	None
+
 # Recursive XML parsing
 def xmlprocess(source,target):
 	identical = True
@@ -116,7 +121,7 @@ def xmlprocess(source,target):
 			target.append(element)
 		for element in tosort:
 			target.append(element)
-		# Compares saved copy and repopulated list to check if identical
+		# Compares saved copy and repopulated list to check if they are identical
 		for index, element in enumerate(targetcopy):
 			if element != target[index]:
 				identical = False
@@ -151,7 +156,7 @@ fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
 # Prepares log file
 log=open("./log.txt", "w")
 
-# Make sure this is a Firestorm installation
+# Make sure target is a Firestorm installation
 if not os.path.exists(getpath(fs_path,"app_settings")) and not os.path.exists(getpath(fs_path,"skins")):
 	message="This does not seem to be a Firestorm folder.\n"
 	if lang == "ca":
@@ -162,6 +167,7 @@ if not os.path.exists(getpath(fs_path,"app_settings")) and not os.path.exists(ge
 		message="Здається, це не папка Firestorm.\n"
 #	print(message)
 	log.write(message)
+# Make sure there is something to do
 elif not os.path.exists("./app_settings") and not os.path.exists("./skins"):
 	message="There seems to be no source patch.\n"
 	if lang == "ca":
@@ -176,8 +182,28 @@ else:
 	for (path,folders,files) in os.walk('.', topdown=True):
 		# Processing of files
 		for onefile in files:
+			if onefile.endswith(".xml") and not onefile.endswith(".xml.patch") and os.path.exists(getpath(path,onefile)+".patch"): 	# File is .xml and there is a .xml.patch
+				message="WARNING: Will not replace/add the following file because its patch is also present next to it: "
+				if lang == "ca":
+					message="ALERTE: No es substituirà ni afegirà el fitxer següent perquè el seu correctiu també és present al seu costat: "
+				elif lang == "fr":
+					message="ALERTE: Ne remplacera ni n'ajoutera pas le fichier suivant car son correctif est aussi présent à ses côtés: "
+				elif lang == "uk":
+					message="ПОПЕРЕДЖЕННЯ: Наступний файл не буде замінено/додано, оскільки його патч також присутній поруч із ним: "
+				log.write(message + "\n")
+				log.write("   " + getpath(path,onefile) + "\n")
+			elif onefile.endswith(".xml.patch") and os.path.exists(getpath(path,onefile)[:-6:]):								# File is .xml.patch and there is a .xml
+				message="WARNING: Will not apply the following patch because the complete file is also present next to it: "
+				if lang == "ca":
+					message="ALERTA: No s'aplicarà el correctiu següent perquè el fitxer sencer també és present al seu costat: "
+				elif lang == "fr":
+					message="ALERTE: N'appliquera pas le correctif suivant car le fichier complet est aussi présent à ses côtés: "
+				elif lang == "uk":
+					message="ПОПЕРЕДЖЕННЯ: Наступний патч не застосовуватиметься, оскільки повний файл також присутній поруч із ним: "
+				log.write(message + "\n")
+				log.write("   " + getpath(path,onefile) + "\n")
 			# XML patches
-			if onefile.find(".xml.patch") >= 0:
+			elif onefile.endswith(".xml.patch"):
 				source=getpath(path,onefile)
 				target=source[:-5:]
 				target=getpath(fs_path,target[2:-1:])
@@ -228,34 +254,33 @@ else:
 						with open(target, "ab") as f:
 							f.write(etree.tostring(xmltree_tgt, encoding="utf-8", xml_declaration=False))
 			# XML files
-			elif onefile.find(".xml") >= 0:
+			elif onefile.endswith(".xml"):
 				source=getpath(path,onefile)
 				target_dir=getpath(fs_path,path[2::])
 				target=getpath(target_dir,onefile)
-				if not os.path.exists(source+".patch"):
-					if os.path.exists(target):
-						message="Replacing "
-						if lang == "ca":
-							message="Substituint "
-						elif lang == "fr":
-							message="Remplace "
-						elif lang == "uk":
-							message="Заміна "
+				if os.path.exists(target):
+					message="Replacing "
+					if lang == "ca":
+						message="Substituint "
+					elif lang == "fr":
+						message="Remplace "
+					elif lang == "uk":
+						message="Заміна "
 #						print(message + target + "...\n")
-						log.write(message + target + "...\n")
-						os.remove(target)
-					else:
-						message="Adding "
-						if lang == "ca":
-							message="Afegint "
-						elif lang == "fr":
-							message="Ajoute "
-						elif lang == "uk":
-							message="Додавання Uaaaa "
-						if not os.path.exists(target_dir):
+					log.write(message + target + "...\n")
+					os.remove(target)
+				else:
+					message="Adding "
+					if lang == "ca":
+						message="Afegint "
+					elif lang == "fr":
+						message="Ajoute "
+					elif lang == "uk":
+						message="Додавання Uaaaa "
+					if not os.path.exists(target_dir):
 #							print(message + target_dir + "...\n")
-							log.write(message + target_dir + "...\n")
-							os.mkdir(target_dir)
+						log.write(message + target_dir + "...\n")
+						os.mkdir(target_dir)
 #						print(message + target + "...\n")
-						log.write(message + target + "...\n")
-					shutil.copy(source,target_dir)
+					log.write(message + target + "...\n")
+				shutil.copy(source,target_dir)
