@@ -18,7 +18,7 @@ def getpath(somepath,add):
 		somepath = somepath + "/" + add
 	return somepath
 
-# Custom get attribute function to deal "_text" key
+# Custom get attribute function to deal with "_text" key
 def getattrib(element,attrib):
 	element = uncomment(element)	# Note: we're nost supposed to get a comment without an element inside here.
 	if attrib == "_text":
@@ -26,7 +26,7 @@ def getattrib(element,attrib):
 	else:
 		return element.attrib[attrib]
 
-#Returns element inside comment, or element itself if not a comment or comment has no element inside
+# Returns element inside comment, or element itself if not a comment or comment has no element inside
 def uncomment(element):
 	if element.tag is etree.Comment:
 		try:
@@ -36,6 +36,7 @@ def uncomment(element):
 	else:
 		return element
 
+# Custom sorting funcion
 def sortfunc(element):
 	return getattrib(element,sort_key)
 
