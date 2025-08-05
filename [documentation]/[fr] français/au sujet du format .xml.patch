@@ -25,7 +25,7 @@ Ajouter une balise <sort> après le dernier élément à ajouter (elle ne sera p
 <sort key="[key]" prepends="[prepends]"/>
    où:
 [key] est le nom de l'attribut qui contient le texte à être mis en ordre alphabétique. Pour le texte entre des balises, utiliser "_text".
-[prepends] est une liste, séparée par des virgules, de valeurs "key" dont l'élément ne doit pas être mis par ordre alphabétique et doit être antéposé dans la liste.
+[prepends] est une liste de valeurs "key", séparés par des virgules, dont l'élément ne doit pas être mis par ordre alphabétique et doit être antéposé dans la liste.
 
 Les commentaires qui contiennent un élément frère seront aussi mis par ordre alphabétique comme si cet élément n'était pas mis en commentaire.
 Les commentaires qui ne contiennent pas d'élément frère seront antéposés.
