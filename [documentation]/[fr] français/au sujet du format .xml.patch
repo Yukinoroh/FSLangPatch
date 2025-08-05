@@ -44,5 +44,5 @@ Par exemple:
 Le correctif ci-desus:
 
 1) Ajoutera les «combo box item» "Català (Catalan)" et "Français canadien (French)";
-2) Fera une liste crue avec les «combo box item» "System Default" et "English", ainsi que les commentaires ne contenant pas de «combo box item»;
+2) Fera une liste des «combo box item» "System Default" et "English", ainsi que les commentaires ne contenant pas de «combo box item»;
 3) Fera une liste par ordre alphabétique de tous les autres «combo box item» selon leur attribut «label», incluant ceux ajoutés et ceux en commentaire.
