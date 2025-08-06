@@ -11,8 +11,8 @@
 		<layout_stack name="bottom_bar_ls0">
 			<layout_panel name="lp1">
 				<layout_stack name="bottom_bar_ls1">
-					<layout_panel name="teleport_btn_lp"><button label="Téléporter" name="teleport_btn" tool_tip="Se téléporter à l'emplacement indiqué"/></layout_panel>
-					<layout_panel name="map_btn_lp"><button label="Carte" name="map_btn" tool_tip="Voir l'emplacement correspondant sur la carte"/></layout_panel>
+					<layout_panel name="teleport_btn_lp"><button label="S'y téléporter" name="teleport_btn" tool_tip="Se téléporter à l'emplacement indiqué"/></layout_panel>
+					<layout_panel name="map_btn_lp"><button label="Carte" name="map_btn" tool_tip="Montrer l'emplacement sur la carte"/></layout_panel>
 					<layout_panel name="edit_btn_lp"><button label="Modifier" name="edit_btn" tool_tip="Modifier ce repère"/></layout_panel>
 					<layout_panel name="overflow_btn_lp"><menu_button name="overflow_btn" tool_tip="Afficher plus d'options"/></layout_panel>
 				</layout_stack>

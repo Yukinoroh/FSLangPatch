@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<floater name="performance" title="Améliorer les performances graphiques">
+<floater name="performance" title="Améliorer le rendement graphique">
 	<floater.string name="frame_stats">
-		Images: [TOT_FRAME_TIME]ms - Scène:[SCENERY_FRAME_PCT]% Avatars:[AV_FRAME_PCT]% UI:[UI_FRAME_PCT]% Huds:[HUDS_FRAME_PCT]% Swap:[SWAP_FRAME_PCT]% Tâches:[IDLE_FRAME_PCT]%
+		Images: [TOT_FRAME_TIME]ms - Scène:[SCENERY_FRAME_PCT]% Avatars:[AV_FRAME_PCT]% Interface:[UI_FRAME_PCT]% Huds:[HUDS_FRAME_PCT]% Permutation:[SWAP_FRAME_PCT]% Tâches:[IDLE_FRAME_PCT]%
 	</floater.string>
 	<floater.string name="limit_fps">
-		FPS limité à: [FPSCAP] fps
+		Fréquence limitée à: [FPSCAP] fps
 	</floater.string>
 	<floater.string name="tuning_fps">
 		Objectif: [FPSTARGET] fps
@@ -13,10 +13,10 @@
 		En arrière-plan
 	</floater.string>
 	<floater.string name="info_waitforit">
-		Attendez 5 à 10 s pour voir les changements.
+		Attendre de 5 à 10 s pour voir les changements.
 	</floater.string>
 	<floater.string name="info_frozen">
-		Pause des statistiques lorsque la FPS est limitée ou en arrière-plan.
+		Pause des statistiques lorsque le FPS est limité ou en arrière-plan.
 	</floater.string>
 	<floater.string name="tot_av_template">
 		Total: [TOT_AV] ([TOT_AV_TIME]μs)
@@ -30,28 +30,28 @@
 				images par seconde
 			</text>
 			<text name="fps_warning">
-				Utilisateur limité @ 000FPS
+				Limité à 000 fps par l'utilisateur
 			</text>
 			<text name="fps_desc1_lbl">
-				Stats en pause si FPS limitée/en arrière-plan.
+				Stats en pause lorsque FPS limité/en arrière-plan.
 			</text>
 			<text name="frame_breakdown">
-				[----------------- Vous verrez ici l'analyse du cadre. -----------------]
+				[----------------- L'analyse détaillée des images sera ici. -----------------]
 			</text>
 		</panel>
 		<panel name="target_subpanel">
-			<text name="settings_lbl" tool_tip="Ajustement automatique des paramètres pour maintenir la fréquence d'images. Réglez la cible sur la fréquence d'images souhaitée et la visionneuse tentera de s'y conformer en modifiant dynamiquement vos paramètres.">
+			<text name="settings_lbl" tool_tip="Ajustement automatique des paramètres pour maintenir la fréquence d'images. Définir la fréquence d'images cible désirée et le visualiseur tentera de l'atteindre en ajustant dynamiquement les paramètres graphiques.">
 				Auto :
 			</text>
 			<text name="targetfps_desc">
 				Fréquence d'images cible (fps)
 			</text>
-			<spinner name="target_fps" tool_tip="FPS cible - Le niveau de FPS souhaité. Le visualisateur essaiera d'atteindre ce niveau en ajustant vos paramètres graphiques.." />
-			<button label="Lancer" label_selected="Stop" name="AutoTuneFPS" tool_tip="La visionneuse tentera d'ajuster les paramètres pour atteindre la FPS cible." width="72" />
-			<check_box label="Continu" name="AutoTuneContinuous" tool_tip="La visionneuse adaptera continuellement les paramètres pour atteindre l'objectif FPS jusqu'à ce qu'elle s'arrête, même avec le flotteur fermé. Lorsqu'il est désactivé, un clic sur le bouton Réglage auto ajustera les paramètres actuels puis s'arrêtera." width="64" />
-			<button name="PrefSaveButton" tool_tip="Sauvegarder les paramètres actuels par défaut pour une utilisation ultérieure."/>
-			<button name="PrefLoadButton" tool_tip="Charger un préréglage existant."/>
-			<button tool_tip="Rechargez les paramètres graphiques par défaut de votre ordinateur." name="Defaults"/>
+			<spinner name="target_fps" tool_tip="La fréquence d'images cible désirée. Le visualisateur tentera de l'atteindre en ajustant dynamiquement les paramètres graphiques." />
+			<button label="Lancer" label_selected="Arrêter" name="AutoTuneFPS" tool_tip="Le visualisateur tentera d'ajuster les paramètres pour atteindre la fréquence cible." width="72" />
+			<check_box label="Continu" name="AutoTuneContinuous" tool_tip="Le visualisateur adaptera continuellement les paramètres pour atteindre la fréquence cible, à moins qu'il y soit parvenu, et ce même avec cette fenêtre fermée. Quand cette option est désactivée, un clic sur le bouton «Réglage auto» ajustera les paramètres une seule fois." width="64" />
+			<button name="PrefSaveButton" tool_tip="Sauvegarder ces paramètres en tant que par défaut."/>
+			<button name="PrefLoadButton" tool_tip="Charger les paramètres par défaut."/>
+			<button tool_tip="Recharger les paramètres graphiques recommandés pour cet ordinateur." name="Defaults"/>
 			<text name="settings_desc">
 				Stratégie de réglage
 			</text>
@@ -79,9 +79,9 @@
 				Définir quels avatars sont entièrement affichés.
 			</text>
 			<text name="avatars_frme_pct_lbl">
-Temps
-Dessin
-Avatars
+Temps de
+rendu pour
+avatars
 			</text>
 		</panel>
 		<panel name="complexity_subpanel">
@@ -97,12 +97,12 @@ Avatars
 				Vos HUD actifs
 			</text>
 			<text name="huds_desc">
-				La suppress. des HUD inutiles peut améliorer la fluidité.
+				Enlever des HUD inutiles peut améliorer la fluidité.
 			</text>
 			<text name="huds_frme_pct_lbl">
-Temps
-Dessin
-HUDs
+Temps de
+rendu pour
+les HUD
 			</text>
 		</panel>
 	</panel>
