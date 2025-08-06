@@ -23,7 +23,7 @@ And reactivates the following beta languages:
 + tr (Turkish)
 
 The program asks user to indicate the location of the Firestorm installation, then adds/replaces some files, and patch some others.
-After execution of the program, the result of the patching can be checked in a log.txt file.
+After execution of the program, the result of the patching can be checked in the generated log.txt file.
 
 ===[Català]===
 
@@ -47,7 +47,7 @@ I reactiva les idiomes beta següents:
 + tr (turc)
 
 El programari demana a l'usuari indicar la ubicació de la instal·lació de Firestorm, després afegeix/substitueix alguns fitxers, i en corrigeix altres.
-Després de l'execuciéo del programari, és possible revisar el resultat de la instal·lació mirant el fitxer log.txt.
+Després de l'execuciéo del programari, és possible revisar el resultat de la instal·lació mirant el fitxer log.txt generat.
 
 ===[Français canadien]===
 
@@ -71,7 +71,7 @@ Et réactives les langues beta suivantes:
 + tr (turc)
 
 Le programme demande à l'utilisateur d'indiquer l'emplacement de l'installation de Firestorm, puis ajoute/remplace certains fichiers, et en corrige d'autres.
-Après l'exécution du programme, il est possible de réviser le résultat de l'installation en regardant le fichier log.txt.
+Après l'exécution du programme, il est possible de réviser le résultat de l'installation en regardant le fichier log.txt generé.
 
 ===[Українська мова]===
 
@@ -95,4 +95,4 @@ Après l'exécution du programme, il est possible de réviser le résultat de l'
 + tr (турецька мова)
 
 Програма просить користувача вказати місцезнаходження інсталяції Firestorm, потім додає/замінює деякі файли та виправляє деякі інші.
-Після виконання програми результат виправлення можна перевірити у файлі log.txt.
+Після виконання програми результат виправлення можна перевірити у згенерованому файлі log.txt.
