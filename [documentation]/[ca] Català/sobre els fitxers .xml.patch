@@ -1,10 +1,10 @@
 Els fitxers .xml.patch són fitxers XML que indiquen qué corregir en un altre fitxer XML i com fer-ho.
-Qualsevol etiqueta XML que falta serà afegida al lloc apropiat.
 
 
-=== FORMATATGE DEL FITXER ===
+=== AFEGIR (UN) ELEMENT(S) ===
 
-Guardar sencer l'arbre per sobre els elements per afegir, i els elements mateixos. No s'ha de guardar fins i tot els elements germans.
+Guardar sencer l'arbre per sobre l'/els element(s) i afegir-los en l'arbre, com si fos una versió simplificada del fitxer per corregir.
+No s'ha de guardar fins i tot els elements germans. Per defecte, els elements seran afegits al final, però és possible canviar això (mirar posar en ordre alfabètic a sota).
 
 
 === POSAR UN ELEMENT EN COMENTARI ===
