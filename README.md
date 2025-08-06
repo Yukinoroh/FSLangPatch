@@ -25,6 +25,8 @@ And reactivates the following beta languages:
 The program asks user to indicate the location of the Firestorm installation, then adds/replaces some files, and patch some others.
 After execution of the program, the result of the patching can be checked in the generated log.txt file.
 
+Running Firestorm again, the additional languages become available. (After selecting one, user needs to restart the viewer.)
+
 ===[Català]===
 
 Aquest és un sistema correctiu per a la interfície d'usuari del visor Phoenix Firestorm, així com algunes traduccions no oficials que venen amb él.
@@ -48,6 +50,8 @@ I reactiva les idiomes beta següents:
 
 El programari demana a l'usuari indicar la ubicació de la instal·lació de Firestorm, després afegeix/substitueix alguns fitxers, i en corrigeix altres.
 Després de l'execuciéo del programari, és possible revisar el resultat de la instal·lació mirant el fitxer log.txt generat.
+
+Executant Firestorm de nou, les idiomes adicionals esdevenen accessibles. (Després de n'haver triat una, l'usuari haurà de reiniciar el visor.)
 
 ===[Français canadien]===
 
@@ -73,6 +77,8 @@ Et réactives les langues beta suivantes:
 Le programme demande à l'utilisateur d'indiquer l'emplacement de l'installation de Firestorm, puis ajoute/remplace certains fichiers, et en corrige d'autres.
 Après l'exécution du programme, il est possible de réviser le résultat de l'installation en regardant le fichier log.txt generé.
 
+En exécutant Firestorm une nouvelle fois, les langues aditionnelles deviennent accessibles. (Après en avoir choici une, l'utilisateur devra redémarrer le visualisateur.)
+
 ===[Українська мова]===
 
 Це система патчів для інтерфейсу користувача переглядача Phoenix Firestorm, а також деякі неофіційні переклади.
@@ -96,3 +102,5 @@ Après l'exécution du programme, il est possible de réviser le résultat de l'
 
 Програма просить користувача вказати місцезнаходження інсталяції Firestorm, потім додає/замінює деякі файли та виправляє деякі інші.
 Після виконання програми результат виправлення можна перевірити у згенерованому файлі log.txt.
+
+Після повторного запуску Firestorm стають доступними додаткові мови. (Після вибору однієї користувачеві потрібно перезапустити програму перегляду.)
