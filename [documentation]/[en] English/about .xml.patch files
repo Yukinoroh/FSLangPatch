@@ -3,7 +3,7 @@
 
 === ADDING (AN) ELEMENT(S) ===
 
-Keep the whole tree above the element(s) and add the element(s) in the tree, just like if it was a stripped down version of the file to patch.
+Keep the whole tree above the element(s) and add the element(s) there, just like if it was a stripped down version of the file to patch.
 You don't even need to keep any sibiling element. By default, the program will add them at the end, but you can change that (see sorting below).
 
 
