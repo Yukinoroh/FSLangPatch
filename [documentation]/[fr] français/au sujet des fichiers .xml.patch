@@ -1,10 +1,10 @@
 Les fichiers .xml.patch sont des fichiers XML qui indiquent quoi corriger dans un autre fichier XML et comment le faire.
-Toute les balise XML manquante dans le fichier cible sera ajoutée à l'endroit approprié.
 
 
-=== FORMATTAGE DU FICHIER ===
+=== AJOUTER UN/DES ÉLÉMENT(S) ===
 
-Garder entier l'arbre situé au-dessus des éléments à ajouter, ainsi que les éléments eux-mêmes. Il n'est pas nécessaire de garder les éléments frères.
+Garder entier l'arbre situé au-dessous de l'/des élément(s) et les y ajouter, comme s'il s'agissait d'une version simplifiée du fichier à corriger.
+Il n'est même pas nécessaire de garder les éléments frères. Par défaut, les éléments seront ajoutés à la fin, mais il est possible de changer cela (voir mettre en ordre alphabétique ci-bas).
 
 
 === METRE UN ÉLÉMENT EN COMMENTAIRE ===
