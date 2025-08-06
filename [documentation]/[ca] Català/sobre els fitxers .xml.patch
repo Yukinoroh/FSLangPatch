@@ -3,7 +3,7 @@ Els fitxers .xml.patch són fitxers XML que indiquen qué corregir en un altre f
 
 === AFEGIR (UN) ELEMENT(S) ===
 
-Guardar sencer l'arbre per sobre l'/els element(s) i afegir-los en l'arbre, com si fos una versió simplificada del fitxer per corregir.
+Guardar sencer l'arbre per sobre l'/els element(s) i afegir-los-hi, com si es tractés d'una versió simplificada del fitxer per corregir.
 No s'ha de guardar fins i tot els elements germans. Per defecte, els elements seran afegits al final, però és possible canviar això (mirar posar en ordre alfabètic a sota).
 
 
