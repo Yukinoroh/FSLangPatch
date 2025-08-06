@@ -22,9 +22,8 @@ And reactivates the following beta languages:
 
 + tr (Turkish)
 
-After execution of the program, please check the log.txt file to make sure everything went well.
-
-Aditionally, this tool can be used to patch or replace any XML file.
+The program asks user to indicate the location of the Firestorm installation, then adds/replaces some files, and patch some others.
+After execution of the program, the result of the patching can be checked in a log.txt file.
 
 ===[Català]===
 
@@ -47,9 +46,8 @@ I reactiva les idiomes beta següents:
 
 + tr (turc)
 
-Després de l'execució del programari, revisa el fitxer log.txt per comprovar que tot va anar bé.
-
-A més, aquesta eina pot ser utilitzada per corregir or substituir qualsevol fitxer XML.
+El programari demana a l'usuari indicar la ubicació de la instal·lació de Firestorm, després afegeix/substitueix alguns fitxers, i en corrigeix altres.
+Després de l'execuciéo del programari, és possible revisar el resultat de la instal·lació mirant el fitxer log.txt.
 
 ===[Français canadien]===
 
@@ -72,9 +70,8 @@ Et réactives les langues beta suivantes:
 
 + tr (turc)
 
-Après l'exécution du programme, réviser le fichier log.txt pour s'assurer que tout est bien allé.
-
-De plus, cet outil peut être utilisé pour corriger ou rempalcer n'importe quel fichier XML.
+Le programme demande à l'utilisateur d'indiquer l'emplacement de l'installation de Firestorm, puis ajoute/remplace certains fichiers, et en corrige d'autres.
+Après l'exécution du programme, il est possible de réviser le résultat de l'installation en regardant le fichier log.txt.
 
 ===[Українська мова]===
 
@@ -97,6 +94,5 @@ De plus, cet outil peut être utilisé pour corriger ou rempalcer n'importe quel
 
 + tr (турецька мова)
 
-Після виконання програми, будь ласка, перевірте файл log.txt, щоб переконатися, що все пройшло добре.
-
-Крім того, цей інструмент можна використовувати для виправлення або заміни XML-файлу.
+Програма просить користувача вказати місцезнаходження інсталяції Firestorm, потім додає/замінює деякі файли та виправляє деякі інші.
+Після виконання програми результат виправлення можна перевірити у файлі log.txt.
