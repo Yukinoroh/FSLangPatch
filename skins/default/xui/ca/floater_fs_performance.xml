@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="performance" title="Millorar el rendiment gràfic">
+	<floater.string name="frame_stats">
+		Imatges: [TOT_FRAME_TIME]ms - Escena:[SCENERY_FRAME_PCT]% Avatars:[AV_FRAME_PCT]% UI:[UI_FRAME_PCT]% Huds:[HUDS_FRAME_PCT]% Permutació:[SWAP_FRAME_PCT]% Tasques:[IDLE_FRAME_PCT]%
+	</floater.string>
+	<floater.string name="limit_fps">
+		Freqüència limitada a: [FPSCAP] fps
+	</floater.string>
+	<floater.string name="tuning_fps">
+		Objectiu: [FPSTARGET] fps
+	</floater.string>
+	<floater.string name="focus_fps">
+		Al fons
+	</floater.string>
+	<floater.string name="info_waitforit">
+		Espera de 5 a 10 s per veure els canvis.
+	</floater.string>
+	<floater.string name="info_frozen">
+		Pause des statistiques lorsque le FPS est limité ou en arrière-plan.
+	</floater.string>
+	<floater.string name="tot_av_template">
+		Total: [TOT_AV] ([TOT_AV_TIME]μs)
+	</floater.string>
+	<floater.string name="tot_att_template">
+		Total: [TOT_ATT] ([TOT_ATT_TIME]μs)
+	</floater.string>
+	<panel name="panel_top">
+		<panel name="fps_subpanel">
+			<text name="fps_lbl">
+				imatges par segon
+			</text>
+			<text name="fps_warning">
+				Limitat a 000FPS per l'usuari
+			</text>
+			<text name="fps_desc1_lbl">
+				Stats en pausa quan FPS limitat/al fons
+			</text>
+			<text name="frame_breakdown">
+				[----------------- L'anàlisi detallada de les imatges serà aquí. -----------------]
+			</text>
+		</panel>
+		<panel name="target_subpanel">
+			<text name="settings_lbl" tool_tip="Ajustar la configuració automàticament per mantenir la freqüència d'imatges. Definir la freqüència d'imatges objectiu desitjada i el visor intentarà aconseguir-la ajustant dinàmicament els paràmetres gràfiques.">
+				Auto :
+			</text>
+			<text name="targetfps_desc">
+				Freqüència d'imatges objectiu (fps)
+			</text>
+			<spinner name="target_fps" tool_tip="La freqüència d'imatges objectiu desitjada. El visor intentarà aconseguir-la ajustant dinàmicament els paràmetres gràfiques." />
+			<button label="Iniciar" label_selected="Aturar" name="AutoTuneFPS" tool_tip="El visor intentarà ajustar els paràmetres per aconseguir la freqüència objectiu." width="72" />
+			<check_box label="Continu" name="AutoTuneContinuous" tool_tip="El visor ajustarà contínuament la configuració per assolir la freqüència objectiu, tret que ja l'hagi assolit, fins i tot amb aquesta finestra tancada. Quan està desactivat aquesta opció, si fas clic al botó «Ajust automàtic», la configuració només s'ajustarà una vegada." width="64" />
+			<button name="PrefSaveButton" tool_tip="Desar com a per defecte aquesta configuració."/>
+			<button name="PrefLoadButton" tool_tip="Carregar la configuració desada."/>
+			<button tool_tip="Recarregar els paràmetres gràfics recomanats per a aquest ordinador." name="Defaults"/>
+			<text name="settings_desc">
+				Estratègia d'afinació
+			</text>
+			<combo_box name="FSTuningFPSStrategy">
+				<combo_box.item label="Només els avatars" name="av_only" />
+				<combo_box.item label="Avatars i escena" name="av_and_scene" />
+			</combo_box>
+			<button name="target_btn" tool_tip="Modificar el comportament de l'estrategia de rafinació." />
+		</panel>
+	</panel>
+	<panel name="panel_performance_main">
+		<panel name="settings_subpanel">
+			<text name="settings_lbl">
+				Paràmetres gràfics
+			</text>
+			<text name="settings_desc">
+				Selecciona els paràmetres de distància, d'aigua, d'il·luminació, etc.
+			</text>
+		</panel>
+		<panel name="nearby_subpanel">
+			<text name="avatars_nearby_lbl">
+				Avatars a proximitat
+			</text>
+			<text name="avatars_nearby_desc">
+				Definir quins avatars es mostren completament
+			</text>
+			<text name="avatars_frme_pct_lbl">
+Temps de
+rendim.
+avatars
+			</text>
+		</panel>
+		<panel name="complexity_subpanel">
+			<text name="complexity_lbl">
+				Complexitat de l'avatar
+			</text>
+			<text name="complexity_info">
+				Sigues un bon ciutadà. Gestiona l'impacte del teu avatar.
+			</text>
+		</panel>
+		<panel name="huds_subpanel">
+			<text name="huds_lbl">
+				Els teus HUDs actius
+			</text>
+			<text name="huds_desc">
+				Treure els HUD innecessaris pot millorar la fluïdesa.
+			</text>
+			<text name="huds_frme_pct_lbl">
+Temps de
+rendim.
+per HUDs
+			</text>
+		</panel>
+	</panel>
+</floater>

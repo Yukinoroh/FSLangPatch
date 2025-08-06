@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_placedetails" title="Punt de referència">
+	<string name="title_place">Detalls de la ubicació</string>
+	<string name="title_remote_place">Detalls de la ubicació</string>
+	<string name="title_remote_place_detail">Detalls de la ubicació: [NAME]</string>
+	<string name="title_landmark">Punt de referència</string>
+	<string name="title_landmark_detail">Punt de referència : [NAME]</string>
+	<string name="title_create_landmark">Crear un punt de referència</string>
+	<string name="title_teleport_history_item">Historial de teleportació per: [NAME]</string>
+	<panel name="button_panel">
+		<layout_stack name="bottom_bar_ls0">
+			<layout_panel name="lp1">
+				<layout_stack name="bottom_bar_ls1">
+					<layout_panel name="teleport_btn_lp"><button label="Teleportar-s'hi" name="teleport_btn" tool_tip="Teleportar-se a la ubicació indicada"/></layout_panel>
+					<layout_panel name="map_btn_lp"><button label="Mapa" name="map_btn" tool_tip="Mostrar la ubicació sobre la mapa"/></layout_panel>
+					<layout_panel name="edit_btn_lp"><button label="Modificar" name="edit_btn" tool_tip="Modificar aquest punt de referència"/></layout_panel>
+					<layout_panel name="overflow_btn_lp"><menu_button name="overflow_btn" tool_tip="Mostrar més opcions"/></layout_panel>
+				</layout_stack>
+			</layout_panel>
+		</layout_stack>
+		<layout_stack name="bottom_bar_ls1">
+			<layout_panel name="lp2">
+				<layout_stack name="bottom_bar_close_ls3">
+					<layout_panel name="close_btn_lp"><button label="Tancar" name="close_btn"/></layout_panel>
+				</layout_stack>
+			</layout_panel>
+		</layout_stack>
+		<layout_stack name="bottom_bar_ls2">
+			<layout_panel name="save_btn_lp"><button label="Desar" name="save_btn"/></layout_panel>
+			<layout_panel name="cancel_btn_lp"><button label="Anul·lar" name="cancel_btn"/></layout_panel>
+		</layout_stack>
+	</panel>
+</floater>
