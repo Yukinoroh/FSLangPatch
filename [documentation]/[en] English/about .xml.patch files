@@ -1,10 +1,9 @@
 .xml.patch files are XML files that tell what to patch in another XML file and how to do it.
-Any missing XML tag in target file will be added at the suitable place.
 
+=== ADDING ELEMENTS ===
 
-=== FORMATTING THE FILE ===
-
-Keep the whole tree above the elements to be added, and the elements themselves. You don't need to keep any sibiling element.
+Keep the whole tree above the element(s) and add the element(s) in the tree, just like if it was a stripped down version of the file to patch.
+You don't even need to keep any sibiling element. By default, the program will add them at the end, but you can change that (see sorting below).
 
 
 === COMMENTING AN ELEMENT ===
