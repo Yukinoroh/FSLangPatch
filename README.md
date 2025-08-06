@@ -3,9 +3,10 @@ El català segueix | Le français suit | Далі йде українська м
 
 ===[English]===
 
-This is a patch system for translations not accepted by the Phoenix Firestorm Viewer project team, as well as the translations themselves.
+This is a patch system for the Phoenix Firestorm viewer user interface, as well as some unofficial translations.
+As their team does not accept additional translations for now, we have decided to host and develop them here, and allow people to easily patch their existing installations.
 
-The program patches the viewer by adding the following languages:
+Currently, our repository installs the following languages (some still only partially finished):
 
 + ca (Catalan)
 
@@ -27,9 +28,10 @@ Aditionally, this tool can be used to patch or replace any XML file.
 
 ===[Català]===
 
-Aquest és un sistema correctiu per a traduccions encara no accepdates per l'equip de Phoenix Firestorm Viewer, així com les traduccions mateixes.
+Aquest és un sistema correctiu per a la interfície d'usuari del visor Phoenix Firestorm, així com algunes traduccions no oficials que venen amb él.
+Ja que de moment el seu equip no accepta noves traduccions, vam decidir acomodar-les i desenvolupar-les aquí, i permetre a la gent corregir el seu programari instal·lat.
 
-El programari corrigeix el visor afegint-hi les idiomes següents:
+Actualment el nostre repositori instal·la els següents idiomes (alguns només estan parcialment completats):
 
 + ca (català)
 
@@ -51,9 +53,10 @@ A més, aquesta eina pot ser utilitzada per corregir or substituir qualsevol fit
 
 ===[Français canadien]===
 
-Ceci est un système correctif pour les traductions pas encore acceptées par l'équipe de Phoenix Firestorm Viewer, ainsi que les traductions elles-mêmes.
+Ceci est un système correctif pour l'interface utilisateur du visualisateur Phoenix Firestorm, ainsi que quelques traductions non officielles qui vont avec.
+Puisque pour le moement leur équipe n'accepte pas de nouvelles traductions, nous avons décidé de les héberger ici, et de permettre aux gens de corriger leur programme installé.
 
-Le programme corrige le visualisateur en y ajoutant les langues suivantes:
+À l'heure actuelle, notre dépôt installe les langues suivantes (quelques unes seulement partiellement terminées):
 
 + ca (catalan)
 
@@ -75,9 +78,10 @@ De plus, cet outil peut être utilisé pour corriger ou rempalcer n'importe quel
 
 ===[Українська мова]===
 
-Це система виправлень для перекладів, які не прийняті командою проєкту Phoenix Firestorm Viewer, а також для самих перекладів.
+Це система патчів для інтерфейсу користувача переглядача Phoenix Firestorm, а також деякі неофіційні переклади.
+Оскільки їхня команда наразі не приймає додаткові переклади, ми вирішили розмістити та розробити їх тут, щоб дозволити людям легко оновлювати свої існуючі інсталяції.
 
-Після виконання програми в каталозі Firestorm будуть додані такі мови:
+Наразі наш репозиторій встановлює такі мови (деякі з них ще лише частково завершені):
 
 + ca (каталонська мова)
 
