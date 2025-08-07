@@ -1,172 +1,172 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <panel label="Firestorm" name="firestorm">
-	<panel.string name="BeamsOffLabel">=== OFF ===</panel.string>
-	<string name="EmbeddedItemNotSet">Non défini</string>
-	<string name="EmbeddedItemNotAvailable">Non disponible</string>
-	<string name="EmbeddedItemNotLoggedIn">Non connecté</string>
-	<tab_container label="Préférences de Firestorm" name="tabs">
-		<panel label="Extras" name="tab-extras">
-			<check_box name="checkMiscRLVa" label="Autoriser les contrôles de viewer scripté à distance (RLVa)"/>
-			<text name="textMiscRLVaRestart">(Redémarrage requis)</text>
-			<check_box label="Toujours assigner les objets rezzés au groupe du terrain, si possible" name="grouplandrez" tool_tip="Assigne les objets posés au sol au groupe propriétaire du terrain si vous appartenez à celui-ci, même s'il n'est pas actif."/>
-			<check_box label="Créer un effet de particules lorsque les scripts communiquent" name="EffectScriptChatParticles" tool_tip="Activer cette option affichera un petit nuage tournoyant autour de l'objet qui communique"/>
-			<check_box label="Désactiver la balise de suivi lorsque vous vous approchez de la personne concernée (&lt;= 3m)" name="FSDisableAvatarTrackerAtCloseIn" tool_tip="Activer cette option désactivera automatiquement la balise de suivi automatiquement lorsque vous vous approcherez de la personne (&lt;= 3m par défaut)"/>
-			<check_box label="Règle l'animation bento d'inactivité" name="play_default_bento_idle_animation_toggle" tool_tip="Si cette option est activée, le visualiseur exécutera une animation bento par défaut, de priorité 0, qui place les mains, les ailes, la bouche et la queue dans une position naturelle lorsqu'aucune autre animation bento n'est en cours."/>
-			<check_box label="Désactiver l'écran de chargement à la connexion" name="login_screen_toggle" tool_tip="Désactive l'écran de chargement à la connexion"/>
-			<check_box label="Désactiver l'écran de chargement à la déconnexion" name="logout_screen_toggle" tool_tip="Désactive l'écran de chargement à la déconnexion"/>
-			<check_box label="Activer la distance d'affichage par paliers" name="FSRenderFarClipStepping" tool_tip="Si activé, Firestorm utilisera une distance d'affichage progressive par paliers après une téléportation"/>
-			<slider name="progressive_draw_distance_interval" tool_tip="Intervalle entre chaque incrémentation de la distance d'affichage (en secondes)"/>
-			<check_box name="UseLSLBridge" label="Activer le Bridge LSL" tool_tip="Porter un objet scripté afin d'activer certaines fonctionnalités avancées"/>
-			<combo_box name="UseLSLFlightAssist" tool_tip="Active les fonctionnalités d'aide au vol et de lévitation à haute altitude">
-				<combo_box.item label="Aide au vol : Désactivée" name="flight_disabled"/>
-				<combo_box.item label="Aide au vol : Boost actif" name="flight_mild"/>
-				<combo_box.item label="Aide au vol : Boost amplifié" name="flight_moderate"/>
-				<combo_box.item label="Aide au vol : Pleine puissance" name="flight_strong"/>
+	<panel.string name="BeamsOffLabel">=== APAGAT ===</panel.string>
+	<string name="EmbeddedItemNotSet">No definit</string>
+	<string name="EmbeddedItemNotAvailable">No disponible</string>
+	<string name="EmbeddedItemNotLoggedIn">No connectat</string>
+	<tab_container label="Preferències de Firestorm" name="tabs">
+		<panel label="Extres" name="tab-extras">
+			<check_box name="checkMiscRLVa" label="Permet els controls de visor amb script a distància (RLVa)"/>
+			<text name="textMiscRLVaRestart">(Cal reiniciar)</text>
+			<check_box label="Assigna sempre els objectes ressejats al grup del terreny, si és possible" name="grouplandrez" tool_tip="Assigna els objectes posats a terra al grup propietari del terreny si hi pertanys, encara que no estigui actiu."/>
+			<check_box label="Crea un efecte de partícules quan els scripts es comuniquen" name="EffectScriptChatParticles" tool_tip="Activar aquesta opció mostrarà un petit núvol giratori al voltant de l'objecte que es comunica"/>
+			<check_box label="Desactiva la balisa de seguiment quan t'apropis a la persona afectada (&lt;= 3m)" name="FSDisableAvatarTrackerAtCloseIn" tool_tip="Activar aquesta opció desactivarà automàticament la balisa de seguiment quan t'apropis a la persona (&lt;= 3m per defecte)"/>
+			<check_box label="Reprodueix l'animació bento d'inactivitat" name="play_default_bento_idle_animation_toggle" tool_tip="Si aquesta opció està activada, el visor executarà una animació bento per defecte, de prioritat 0, que col·loca les mans, les ales, la boca i la cua en una posició natural quan cap altra animació bento està en curs."/>
+			<check_box label="Desactiva la pantalla de càrrega en connectar" name="login_screen_toggle" tool_tip="Desactiva la pantalla de càrrega en connectar"/>
+			<check_box label="Desactiva la pantalla de càrrega en desconnectar" name="logout_screen_toggle" tool_tip="Desactiva la pantalla de càrrega en desconnectar"/>
+			<check_box label="Activa la distància de visió per esgraons" name="FSRenderFarClipStepping" tool_tip="Si està activat, Firestorm utilitzarà una distància de visió progressiva per esgraons després d'una teletransportació"/>
+			<slider name="progressive_draw_distance_interval" tool_tip="Interval entre cada increment de la distància de visió (en segons)"/>
+			<check_box name="UseLSLBridge" label="Activa el Pont LSL" tool_tip="Porta un objecte amb script per activar algunes funcionalitats avançades"/>
+			<combo_box name="UseLSLFlightAssist" tool_tip="Activa les funcionalitats d'ajuda de vol i de levitació a gran altitud">
+				<combo_box.item label="Ajuda de vol: Desactivada" name="flight_disabled"/>
+				<combo_box.item label="Ajuda de vol: Boost actiu" name="flight_mild"/>
+				<combo_box.item label="Ajuda de vol: Boost amplificat" name="flight_moderate"/>
+				<combo_box.item label="Ajuda de vol: Potència màxima" name="flight_strong"/>
 			</combo_box>
-			<slider name="manual_environment_change_transition_period" label="Durée de transition de l'environnement :" tool_tip="Intervalle de transition en secondes entre des environnements. Zéro veut dire instantané."/>
-			<check_box name="EnvironmentPersistAcrossLogin" label="Persistance des réglages d'environnement entre deux sessions" tool_tip="Reprend les réglages actuels d'environnement lors de la prochaine connexion."/>
-			<check_box name="FSRepeatedEnvTogglesShared" label="La répétition des raccourcis clavier de l'environnement rétablit l'environnement partagé" tool_tip="Permet à des combinaisons de touches répétées (par exemple ctrl+shift+y) d'alterner entre le préréglage demandé &amp; l'environnement partagé"/>
+			<slider name="manual_environment_change_transition_period" label="Durada de la transició de l'entorn:" tool_tip="Interval de transició en segons entre entorns. Zero significa instantani."/>
+			<check_box name="EnvironmentPersistAcrossLogin" label="Persistència de la configuració d'entorn entre sessions" tool_tip="Reprèn la configuració actual d'entorn en la pròxima connexió."/>
+			<check_box name="FSRepeatedEnvTogglesShared" label="La repetició de les dreceres de teclat de l'entorn restableix l'entorn compartit" tool_tip="Permet que combinacions de tecles repetides (per exemple, ctrl+maj+y) alternin entre el preajustament demanat i l'entorn compartit"/>
 		</panel>
-		<panel label="Protection" name="ProtectionTab">
-			<check_box label="Empêcher de s'asseoir sur les objets par clic simple" name="FSBlockClickSit"/>
-			<check_box label="Permettre aux scripts d'afficher la carte (llMapDestination)" name="ScriptsCanShowUI"/>
-			<text name="revokepermissions_txt">Révoquer les permissions :</text>
+		<panel label="Protecció" name="ProtectionTab">
+			<check_box label="Evita seure als objectes amb un sol clic" name="FSBlockClickSit"/>
+			<check_box label="Permet als scripts mostrar el mapa (llMapDestination)" name="ScriptsCanShowUI"/>
+			<text name="revokepermissions_txt">Revoca els permisos:</text>
 			<radio_group name="FSRevokePerms">
-				<radio_item label="Jamais (Comportement par défaut)" name="never_radio"/>
-				<radio_item label="Révoquer s'asseoir" name="sit_radio"/>
-				<radio_item label="Révoquer se lever" name="stand_radio"/>
-				<radio_item label="Révoquer s'asseoir et se lever" name="sitnstand_radio"/>
+				<radio_item label="Mai (Comportament per defecte)" name="never_radio"/>
+				<radio_item label="Revoca en seure" name="sit_radio"/>
+				<radio_item label="Revoca en aixecar-se" name="stand_radio"/>
+				<radio_item label="Revoca en seure i aixecar-se" name="sitnstand_radio"/>
 			</radio_group>
-			<text name="SurfaceAreaThreshholdLabel">Protection contre les textures énormes :</text>
-			<check_box label="Seuil avant de masquer les objets possédant une texture trop grande :" width="400" name="RenderVolumeSAProtection" tool_tip="Activer cette option masquera automatiquement les objets possédant une texture et possédant une trop grande surface. (5000m² par défaut)"/>
-			<check_box label="Activer l'antispam" name="UseAntiSpam"/>
-			<check_box label="Activer l'antispam pour vos objets" name="FSUseAntiSpamMine" tool_tip="Cela applique la protection antispam aux objets qui vous apartiennent."/>
-			<text name="AntiSpamText1">Lignes max. dans un message :</text>
-			<spinner name="_NACL_AntiSpamNewlines" tool_tip="Nombre de lignes maximum autorisées dans un message (70 par défaut)"/>
-			<text name="AntiSpamText2">Evènements max. par émetteur :</text>
-			<spinner name="_NACL_AntiSpamAmount" tool_tip="Nombre maximum d'évènement similaires à accepter provenant du même émetteur (10 par défaut)"/>
-			<text name="AntiSpamText3">Multiplicateur pour l'audio :</text>
-			<spinner name="_NACL_AntiSpamSoundMulti" tool_tip="Multiplicateur du précédent réglage pour les requêtes audio (6 par défaut)"/>
-			<text name="AntiSpamText4">Pour le préchargement audio :</text>
-			<spinner name="_NACL_AntiSpamSoundPreloadMulti" tool_tip="Multiplicateur d'évènements autorisés pour les requêtes de préchargement audio (6 par défaut)"/>
-			<button name="AntiSpamUnblock" label="Vider la liste de spammeurs"/>
-			<check_box label="Seuil de confirmation avant paiement :" width="240" name="FSConfirmPayments" tool_tip="Afficher une fenêtre de confirmation avant de verser une somme à un résident supérieure au seuil indiqué. Pour toujours avoir une confirmation, réglez le seuil à 0."/>
-			<spinner name="FSPaymentConfirmationThreshold" tool_tip="Afficher une fenêtre de confirmation avant de verser une somme à un résident supérieure au seuil indiqué. Pour toujours avoir une confirmation, réglez le seuil à 0."/>
+			<text name="SurfaceAreaThreshholdLabel">Protecció contra textures enormes:</text>
+			<check_box label="Llindar abans d'amagar objectes amb una textura massa gran:" width="400" name="RenderVolumeSAProtection" tool_tip="Activar aquesta opció amagarà automàticament els objectes amb una textura que tingui una superfície massa gran (5000 m² per defecte)."/>
+			<check_box label="Activa l'AntiSpam" name="UseAntiSpam"/>
+			<check_box label="Activa l'AntiSpam per als teus objectes" name="FSUseAntiSpamMine" tool_tip="Això aplica la protecció AntiSpam als objectes que et pertanyen."/>
+			<text name="AntiSpamText1">Línies màx. en un missatge:</text>
+			<spinner name="_NACL_AntiSpamNewlines" tool_tip="Nombre de línies màxim permeses en un missatge (70 per defecte)"/>
+			<text name="AntiSpamText2">Esdeveniments màx. per emissor:</text>
+			<spinner name="_NACL_AntiSpamAmount" tool_tip="Nombre màxim d'esdeveniments similars a acceptar provinents del mateix emissor (10 per defecte)"/>
+			<text name="AntiSpamText3">Multiplicador per a l'àudio:</text>
+			<spinner name="_NACL_AntiSpamSoundMulti" tool_tip="Multiplicador de l'ajustament anterior per a les sol·licituds d'àudio (6 per defecte)"/>
+			<text name="AntiSpamText4">Per a la precàrrega d'àudio:</text>
+			<spinner name="_NACL_AntiSpamSoundPreloadMulti" tool_tip="Multiplicador d'esdeveniments permesos per a les sol·licituds de precàrrega d'àudio (6 per defecte)"/>
+			<button name="AntiSpamUnblock" label="Buida la llista de spammers"/>
+			<check_box label="Llindar de confirmació abans del pagament:" width="240" name="FSConfirmPayments" tool_tip="Mostra una finestra de confirmació abans de pagar una suma a un resident superior al llindar indicat. Per tenir sempre una confirmació, ajusta el llindar a 0."/>
+			<spinner name="FSPaymentConfirmationThreshold" tool_tip="Mostra una finestra de confirmació abans de pagar una suma a un resident superior al llindar indicat. Per tenir sempre una confirmació, ajusta el llindar a 0."/>
 		</panel>
 		<panel label="Avatar" name="firestorm_avatar">
-			<text name="HeadMovement">Inclinaison maximum de la tête de mon avatar qui suit ma souris (0 = aucun mouvement) :</text>
-			<slider label="Inclinaison verticale :" tool_tip="Inclinaison verticale maximum de la tête de mon avatar en degrés" name="PitchFromMousePositionSlider"/>
-			<text name="PitchFromMousePositionText">degrés</text>
-			<slider label="Inclinaison horizontale :" tool_tip="Inclinaison horizontale maximum de la tête de mon avatar en degrés" name="YawFromMousePositionSlider"/>
-			<text name="YawFromMousePositionText">degrés</text>
-			<text name="note_lookat">Les paramètres de LookAt sont dans l’onglet Confidentialité </text>
-			<check_box label="Désactiver les mouvements aléatoires des yeux de l'avatar" name="FSStaticEyes"/>
-			<text name="BeamPrefs">Aspect du faisceau de sélection</text>
-			<button name="BeamColor_delete" label="Supprimer" width="75" tool_tip="Supprimer ce préréglage"/>
-			<combo_box name="BeamColor_combo" tool_tip="Sélectionnez la couleur du faisceau de sélection" left_delta="80" width="160" />
-			<button name="BeamColor_new" label="Nouveau.." tool_tip="Créer un nouveau préréglage de couleurs"/>
-			<button name="BeamColor_refresh" label="Actualiser" tool_tip="Actualiser la liste des préréglages"/>
-			<slider name="FSMaxBeamsPerSecond" label="Fréquence :" tool_tip="Fréquence d'actualisation du faisceau par seconde. 40 par défaut"/>
-			<check_box label="Activer le faisceau de sélection" name="SLPartBeam"/>
-			<check_box label="Communiquer la sélection au chat" name="FSParticleChat" tool_tip="Communique les données sur la sélection (l'heure de début et de fin, et les coordonnées globales) au canal de discussion 9000."/>
-			<combo_box name="FSBeamShape_combo" tool_tip="Sélectionnez la forme du faisceau de sélection"/>
-			<button name="delete_beam" label="Supprimer" width="75" tool_tip="Supprimer cette forme"/>
-			<button name="custom_beam_btn" label="Nouvelle.." tool_tip="Créer une nouvelle forme de faisceau"/>
-			<button name="refresh_beams" label="Actualiser" tool_tip="Actualiser la liste des formes"/>
-			<slider name="FSBeamShapeScale" label="Echelle :" tool_tip="Modifier l'échelle de la forme utilisée" label_width="50" width="200"/>
-			<text name="BridgeProtocols">Intégration de protocoles externes au Bridge LSL :</text>
-			<check_box label="Autoriser OpenCollar à activer ou désactiver l'AO intégré" name="BridgeIntegrationOC"/>
-			<check_box label="Autoriser LockMeister à activer ou désactiver l'AO intégré" name="BridgeIntegrationLM"/>
+			<text name="HeadMovement">Inclinació màxima del cap del meu avatar que segueix el meu ratolí (0 = cap moviment):</text>
+			<slider label="Inclinació vertical:" tool_tip="Inclinació vertical màxima del cap del meu avatar en graus" name="PitchFromMousePositionSlider"/>
+			<text name="PitchFromMousePositionText">graus</text>
+			<slider label="Inclinació horitzontal:" tool_tip="Inclinació horitzontal màxima del cap del meu avatar en graus" name="YawFromMousePositionSlider"/>
+			<text name="YawFromMousePositionText">graus</text>
+			<text name="note_lookat">Els paràmetres de LookAt són a la pestanya de Privadesa</text>
+			<check_box label="Desactiva els moviments aleatoris dels ulls de l'avatar" name="FSStaticEyes"/>
+			<text name="BeamPrefs">Aspecte del feix de selecció</text>
+			<button name="BeamColor_delete" label="Suprimeix" width="75" tool_tip="Suprimeix aquest preajustament"/>
+			<combo_box name="BeamColor_combo" tool_tip="Selecciona el color del feix de selecció" left_delta="80" width="160" />
+			<button name="BeamColor_new" label="Nou..." tool_tip="Crea un nou preajustament de colors"/>
+			<button name="BeamColor_refresh" label="Actualitza" tool_tip="Actualitza la llista de preajustaments"/>
+			<slider name="FSMaxBeamsPerSecond" label="Freqüència:" tool_tip="Freqüència d'actualització del feix per segon. 40 per defecte"/>
+			<check_box label="Activa el feix de selecció" name="SLPartBeam"/>
+			<check_box label="Comunica la selecció al xat" name="FSParticleChat" tool_tip="Comunica les dades sobre la selecció (l'hora d'inici i de fi, i les coordenades globals) al canal de xat 9000."/>
+			<combo_box name="FSBeamShape_combo" tool_tip="Selecciona la forma del feix de selecció"/>
+			<button name="delete_beam" label="Suprimeix" width="75" tool_tip="Suprimeix aquesta forma"/>
+			<button name="custom_beam_btn" label="Nova..." tool_tip="Crea una nova forma de feix"/>
+			<button name="refresh_beams" label="Actualitza" tool_tip="Actualitza la llista de formes"/>
+			<slider name="FSBeamShapeScale" label="Escala:" tool_tip="Modifica l'escala de la forma utilitzada" label_width="50" width="200"/>
+			<text name="BridgeProtocols">Integració de protocols externs al Pont LSL:</text>
+			<check_box label="Permet a OpenCollar activar o desactivar l'AO integrat" name="BridgeIntegrationOC"/>
+			<check_box label="Permet a LockMeister activar o desactivar l'AO integrat" name="BridgeIntegrationLM"/>
 		</panel>
-		<panel label="Construction 1" name="BuildTab">
-			<text name="text_box_objprams">Dimensions par défaut</text>
-			<text name="text_box_objprams2">Paramètres</text>
-			<text name="text_box_objprams3">Texture</text>
+		<panel label="Construcció 1" name="BuildTab">
+			<text name="text_box_objprams">Dimensions per defecte</text>
+			<text name="text_box_objprams2">Paràmetres</text>
+			<text name="text_box_objprams3">Textura</text>
 			<spinner label="X" name="X size"/>
 			<spinner label="Y" name="Y size"/>
 			<spinner label="Z" name="Z size"/>
-			<check_box label="Fantôme" name="FSBuildPrefs_PhantomToggle"/>
-			<check_box label="Physique" name="FSBuildPrefs_PhysicalToggle"/>
-			<check_box label="Temporaire" name="FSBuildPrefs_TemporaryToggle"/>
+			<check_box label="Fantasma" name="FSBuildPrefs_PhantomToggle"/>
+			<check_box label="Físic" name="FSBuildPrefs_PhysicalToggle"/>
+			<check_box label="Temporal" name="FSBuildPrefs_TemporaryToggle"/>
 			<combo_box name="material">
-				<combo_item name="Stone" label="Pierre"/>
-				<combo_item name="Metal" label="Métal"/>
-				<combo_item name="Glass" label="Verre"/>
-				<combo_item name="Wood" label="Bois"/>
-				<combo_item name="Flesh" label="Chair"/>
-				<combo_item name="Plastic" label="Plastique"/>
-				<combo_item name="Rubber" label="Caoutchouc"/>
+				<combo_item name="Stone" label="Pedra"/>
+				<combo_item name="Metal" label="Metall"/>
+				<combo_item name="Glass" label="Vidre"/>
+				<combo_item name="Wood" label="Fusta"/>
+				<combo_item name="Flesh" label="Carn"/>
+				<combo_item name="Plastic" label="Plàstic"/>
+				<combo_item name="Rubber" label="Goma"/>
 			</combo_box>
-			<texture_picker label="Texture" name="texture control" tool_tip="Cliquer pour sélectionner une image"/>
-			<color_swatch label="Couleur" name="colorswatch" tool_tip="Cliquer pour ouvrir le sélecteur de couleurs"/>
-			<spinner label="Alpha" name="alpha"/>
-			<spinner label="Lueur" name="glow"/>
-			<check_box label="Lumière max." name="EmFBToggle"/>
-			<combo_box name="combobox shininess" tool_tip="Définir à quel niveau faire reluire l'objet">
-				<combo_item name="None" label="Aucune"/>
-				<combo_item name="Low" label="Faible"/>
-				<combo_item name="Medium" label="Moyen"/>
-				<combo_item name="High" label="Haut"/>
+			<texture_picker label="Textura" name="texture control" tool_tip="Fes clic per seleccionar una imatge"/>
+			<color_swatch label="Color" name="colorswatch" tool_tip="Fes clic per obrir el selector de colors"/>
+			<spinner label="Alfa" name="alpha"/>
+			<spinner label="Lluentor" name="glow"/>
+			<check_box label="Llum màx." name="EmFBToggle"/>
+			<combo_box name="combobox shininess" tool_tip="Defineix a quin nivell ha de lluir l'objecte">
+				<combo_item name="None" label="Cap"/>
+				<combo_item name="Low" label="Baix"/>
+				<combo_item name="Medium" label="Mitjà"/>
+				<combo_item name="High" label="Alt"/>
 			</combo_box>
-			<check_box name="FSBuildPrefs_EmbedItem" label="Intégrer un objet dans le nouveau prim"/>
-			<fs_embedded_item_drop_target name="embed_item" tool_tip="Glissez un objet ici.">Glissez un objet ici.</fs_embedded_item_drop_target>
-			<text name="build_item_add_disp_rect_txt">Actuellement : [ITEM]</text>
-			<text name="text_box_pivotpoint">Point de pivot</text>
-			<check_box label="Axe sur prim racine" tool_tip="Par défaut l'axe est centré sur le centre de gravité d'un ensemble lié. Si activé, l'axe sera affiché sur le prim racine de l'ensemble lié." name="FSBuildPrefsActualRoot_toggle"/>
+			<check_box name="FSBuildPrefs_EmbedItem" label="Incrusta un objecte al nou prim"/>
+			<fs_embedded_item_drop_target name="embed_item" tool_tip="Arrossega un objecte aquí.">Arrossega un objecte aquí.</fs_embedded_item_drop_target>
+			<text name="build_item_add_disp_rect_txt">Actualment: [ITEM]</text>
+			<text name="text_box_pivotpoint">Punt de pivot</text>
+			<check_box label="Eix al prim arrel" tool_tip="Per defecte, l'eix està centrat en el centre de gravetat d'un conjunt enllaçat. Si està activat, l'eix es mostrarà al prim arrel del conjunt enllaçat." name="FSBuildPrefsActualRoot_toggle"/>
 			<spinner label="Pos. X" name="X pos"/>
 			<spinner label="Pos. Y" name="Y pos"/>
 			<spinner label="Pos. Z" name="Z pos"/>
-			<check_box label="Valeurs en %" tool_tip="Par défaut, tout est en pourcentages et chaque axe est fixé à 50" name="FSPivotPercToggle"/>
-			<button label="Permissions de création par défaut" name="fs_default_creation_permissions"/>
-			<text name="text_box_scripting_font" width="155">Police de l'éditeur de script :</text>
-			<combo_box name="FSScriptingFontName" tool_tip="Nom de la police utilisée dans l'éditeur de script LSL" />
-			<combo_box name="FSScriptingFontSize" tool_tip="Taille de la police utilisée dans l'éditeur de script LSL">
-				<combo_item name="Small" label="Petite"/>
-				<combo_item name="Medium" label="Moyenne"/>
-				<combo_item name="Large" label="Grande"/>
+			<check_box label="Valors en %" tool_tip="Per defecte, tot està en percentatges i cada eix està fixat a 50" name="FSPivotPercToggle"/>
+			<button label="Permisos de creació per defecte" name="fs_default_creation_permissions"/>
+			<text name="text_box_scripting_font" width="155">Font de l'editor de scripts:</text>
+			<combo_box name="FSScriptingFontName" tool_tip="Nom de la font utilitzada a l'editor de scripts LSL" />
+			<combo_box name="FSScriptingFontSize" tool_tip="Mida de la font utilitzada a l'editor de scripts LSL">
+				<combo_item name="Small" label="Petita"/>
+				<combo_item name="Medium" label="Mitjana"/>
+				<combo_item name="Large" label="Gran"/>
 			</combo_box>
-			<check_box label="Activer le préprocesseur LSL" tool_tip="Quand coché, le préprocesseur LSL est activé." name="preproc_checkbox"/>
-			<check_box label="Optimiser" tool_tip="Quand coché, le préprocesseur LSL optimisera la place que prennent les scripts." name="preprocoptimizer_checkbox"/>
-			<check_box label="Condition switch()" left_delta="80" tool_tip="Quand coché, le préprocesseur LSL permettra l'utilisation de la condition switch() pour le contrôle de flux de scripts." name="preprocswitch_checkbox"/>
-			<check_box label="Simplifications de listes" left_delta="120" tool_tip="Quand coché, le préprocesseur LSL permettra l'utilisation d'extensions de syntaxe pour la manipulation de listes." name="preproclazy_checkbox"/>
-			<check_box label="#includes depuis le disque" left_delta="150" tool_tip="Quand coché, le préprocesseur LSL permettra à la commande #include de pointer vers des fichiers de votre disque dur." name="preprocinclude_checkbox"/>
-			<text name="lslpreprocinclude_textbox">Chemin d'inclusion du préprocesseur :</text>
-			<button label="Parcourir" label_selected="Parcourir" name="SetPreprocInclude"/>
-			<text name="externaleditor_textbox">Éditeur externe :</text>
-			<button label="Parcourir" label_selected="Parcourir" name="SetExternalEditor"/>
+			<check_box label="Activa el preprocessador LSL" tool_tip="Quan està marcat, el preprocessador LSL està activat." name="preproc_checkbox"/>
+			<check_box label="Optimitza" tool_tip="Quan està marcat, el preprocessador LSL optimitzarà l'espai que ocupen els scripts." name="preprocoptimizer_checkbox"/>
+			<check_box label="Condició switch()" left_delta="80" tool_tip="Quan està marcat, el preprocessador LSL permetrà l'ús de la condició switch() per al control de flux de scripts." name="preprocswitch_checkbox"/>
+			<check_box label="Simplificacions de llistes" left_delta="120" tool_tip="Quan està marcat, el preprocessador LSL permetrà l'ús d'extensions de sintaxi per a la manipulació de llistes." name="preproclazy_checkbox"/>
+			<check_box label="#includes des del disc" left_delta="150" tool_tip="Quan està marcat, el preprocessador LSL permetrà que l'ordre #include apunti a fitxers del teu disc dur." name="preprocinclude_checkbox"/>
+			<text name="lslpreprocinclude_textbox">Camí d'inclusió del preprocessador:</text>
+			<button label="Navega" label_selected="Navega" name="SetPreprocInclude"/>
+			<text name="externaleditor_textbox">Editor extern:</text>
+			<button label="Navega" label_selected="Navega" name="SetExternalEditor"/>
 		</panel>
-		<panel label="Construction 2" name="BuildTab2">
-			<check_box label="Contours lumineux des prims sélectionnées" tool_tip="Quand décoché, les contours jaunes/bleus ne seront pas affichés, améliorant les performances quand un grand nombre de prims est sélectionné." name="FSBuildPrefsRenderHighlight_toggle"/>
-			<check_box label="Afficher les limites de la parcellle sélectionnée" name="RenderParcelSelection"/>
-			<check_box label="Afficher la limite maximale en hauteur pour construire" name="FSRenderParcelSelectionToMaxBuildHeight"/>
-			<check_box label="Limiter la distance de sélection (mètres) :" width="280" name="LimitSelectDistance"/>
-			<spinner name="MaxSelectDistance" tool_tip="Distance maximale autorisée de sélection (en mètres depuis l'avatar [Par défaut : 128.000]"/>
-			<check_box label="Limiter la distance de déplacement (mètres) :" width="280" name="LimitDragDistance"/>
-			<spinner name="MaxDragDistance" tool_tip="Distance maximale autorisée pour un déplacement unique (mètres depuis le point de départ) [Par défaut : 48.000]"/>
-			<text name="RotationStepText1" left="23" width="260">Contraindre les rotations à des multiples de :</text>
-			<spinner name="RotationStep" width="45" tool_tip="Toutes les rotations via l'outil de rotation sont contraintes à des multiples du nombre indiqué (1.0 par défaut)"/>
-			<text name="RotationStepText2">degrés si 'Fixer sur la grille' est inactif</text>
-			<check_box name="FSUnlinkConfirmEnabled" width="400" label="Confirmation de suppression de lien si l'ensemble possède au moins"/>
-			<text name="MinObjectsForUnlinkConfirmText2">objets</text>
-			<check_box label="Utiliser l'ancien fonctionnement de 'Mettre cet objet en vente'" tool_tip="Activer cette option sauvegardera directement les informations de vente de l'objet au lieu de nécessiter une confirmation." name="FSCommitForSaleOnChange_toggle"/>
-			<check_box label="Sauvegarder les scripts édités depuis l'inventaire en Mono" tool_tip="Activer cette option sauvegardera directement les scripts situés dans l'inventaire en Mono au lieu de LSL." name="FSSaveInventoryScriptsAsMono_toggle"/>
-			<check_box label="Sauvegarder les textures sur le disque dur au format PNG au lieu de TGA" tool_tip="Utilisé dans l'aperçu de texture et dans le menu contextuel de l'inventaire." name="FSTextureDefaultSaveAsFormat"/>
-			<check_box label="Utiliser Ctrl+clic pour attraper et déplacer des objets" tool_tip="Quand coché, vous pourrez attraper et déplacer des objets en utilisant la souris et la touche Ctrl." name="FSEnableGrab"/>
-			<check_box label="Déplacer les textures directement en maintenant Shift-Clic en mode construction" tool_tip="Activer cette option vous permettra de faire glisser la texture sur la face de l'objet en mode de construction" name="FSExperimentalDragTexture"/>
-			<check_box label="Prévisualiser les animations sur son avatar pendant le téléchargement sur le serveur" tool_tip="Si activé, vous pouvez prévisualiser les animations sur votre propre avatar pendant le téléchargement sur le serveur" name="FSUploadAnimationOnOwnAvatar"/>
-			<check_box label="Toujours développer les informations détaillées de la prévisualisation de l'animation" tool_tip="Développer par défaut les informations détaillées sur l'animation dans le flotteur de l'aperçu de l'animation" name="FSAnimationPreviewExpanded"/>
-			<check_box label="Active les informations détaillées pour les script" tool_tip="Activée, ajoute aux informations de base sur les scripts des détails utiles aux créateurs" name="FSScriptInfoExtended"/>
-			<check_box label="Points d'attachement alphabétiques dans les menus &quot;Attacher à&quot; (redémarrage requis)" tool_tip="Si cette option est activée, la liste des points d'attachement dans les menus 'Attacher à' sera triée par ordre alphabétique." name="FSSortAttachmentSpotsAlphabetically"/>
-			<check_box label="Nouveau module de texture Firestorm dans la fenêtre d'outils (nécessite un redémarrage)" tool_tip="Si cette option est activée, les outils d'édition de textures utiliseront le flux de travail amélioré de FS et permettront l'édition de textures Blinn-Phong et PBR." name="FSUseNewTexturePanel"/>
+		<panel label="Construcció 2" name="BuildTab2">
+			<check_box label="Contorns lluminosos dels prims seleccionats" tool_tip="Quan està desmarcat, els contorns grocs/blaus no es mostraran, millorant el rendiment quan un gran nombre de prims està seleccionat." name="FSBuildPrefsRenderHighlight_toggle"/>
+			<check_box label="Mostra els límits de la parcel·la seleccionada" name="RenderParcelSelection"/>
+			<check_box label="Mostra el límit màxim d'alçada per construir" name="FSRenderParcelSelectionToMaxBuildHeight"/>
+			<check_box label="Limita la distància de selecció (metres):" width="280" name="LimitSelectDistance"/>
+			<spinner name="MaxSelectDistance" tool_tip="Distància màxima permesa de selecció (en metres des de l'avatar [Per defecte: 128.000])"/>
+			<check_box label="Limita la distància de desplaçament (metres):" width="280" name="LimitDragDistance"/>
+			<spinner name="MaxDragDistance" tool_tip="Distància màxima permesa per a un desplaçament únic (metres des del punt de partida) [Per defecte: 48.000]"/>
+			<text name="RotationStepText1" left="23" width="260">Restringeix les rotacions a múltiples de:</text>
+			<spinner name="RotationStep" width="45" tool_tip="Totes les rotacions mitjançant l'eina de rotació estan restringides a múltiples del nombre indicat (1.0 per defecte)"/>
+			<text name="RotationStepText2">graus si 'Fixa a la graella' està inactiu</text>
+			<check_box name="FSUnlinkConfirmEnabled" width="400" label="Confirmació de supressió d'enllaç si el conjunt té almenys"/>
+			<text name="MinObjectsForUnlinkConfirmText2">objectes</text>
+			<check_box label="Utilitza l'antic funcionament de 'Posa aquest objecte a la venda'" tool_tip="Activar aquesta opció desarà directament la informació de venda de l'objecte en lloc de necessitar una confirmació." name="FSCommitForSaleOnChange_toggle"/>
+			<check_box label="Desa els scripts editats des de l'inventari en Mono" tool_tip="Activar aquesta opció desarà directament els scripts situats a l'inventari en Mono en lloc de LSL." name="FSSaveInventoryScriptsAsMono_toggle"/>
+			<check_box label="Desa les textures al disc dur en format PNG en lloc de TGA" tool_tip="S'utilitza en la previsualització de textura i en el menú contextual de l'inventari." name="FSTextureDefaultSaveAsFormat"/>
+			<check_box label="Utilitza Ctrl+clic per agafar i desplaçar objectes" tool_tip="Quan estigui marcat, podràs agafar i desplaçar objectes utilitzant el ratolí i la tecla Ctrl." name="FSEnableGrab"/>
+			<check_box label="Desplaça les textures directament mantenint Maj+Clic en mode construcció" tool_tip="Activar aquesta opció et permetrà arrossegar la textura sobre la cara de l'objecte en mode de construcció" name="FSExperimentalDragTexture"/>
+			<check_box label="Previsualitza les animacions al teu avatar durant la pujada al servidor" tool_tip="Si està activat, pots previsualitzar les animacions al teu propi avatar durant la pujada al servidor" name="FSUploadAnimationOnOwnAvatar"/>
+			<check_box label="Expandeix sempre la informació detallada de la previsualització de l'animació" tool_tip="Expandeix per defecte la informació detallada sobre l'animació al panell de previsualització de l'animació" name="FSAnimationPreviewExpanded"/>
+			<check_box label="Activa la informació detallada per als scripts" tool_tip="Activada, afegeix a la informació bàsica sobre els scripts detalls útils per als creadors" name="FSScriptInfoExtended"/>
+			<check_box label="Punts d'adjunció alfabètics als menús &quot;Adjunta a&quot; (cal reiniciar)" tool_tip="Si aquesta opció està activada, la llista de punts d'adjunció als menús 'Adjunta a' s'ordenarà alfabèticament." name="FSSortAttachmentSpotsAlphabetically"/>
+			<check_box label="Nou mòdul de textura de Firestorm a la finestra d'eines (cal reiniciar)" tool_tip="Si aquesta opció està activada, les eines d'edició de textures utilitzaran el flux de treball millorat de FS i permetran l'edició de textures Blinn-Phong i PBR." name="FSUseNewTexturePanel"/>
 		</panel>
-		<panel label="Chargements" name="UploadsTab">
-			<text name="title">Dossiers de destination pour les chargements :</text>
+		<panel label="Pujades" name="UploadsTab">
+			<text name="title">Carpetes de destinació per a les pujades:</text>
 			<text name="title_sounds">Sons</text>
-			<text name="title_models">Modèles</text>
-			<text name="upload_help">Pour changer le dossier de destination, cliquez droit dessus dans l'inventaire et sélectionnez
-"Par défaut pour"
+			<text name="title_models">Models</text>
+			<text name="upload_help">Per canviar la carpeta de destinació, fes clic dret a sobre a l'inventari i selecciona
+"Per defecte per a"
 			</text>
-			<button name="reset_default_folders" label="Réinitialiser les dossiers par défaut"/>
+			<button name="reset_default_folders" label="Reinicia les carpetes per defecte"/>
 		</panel>
 	</tab_container>
 </panel>
