@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
 	<string name="SECOND_LIFE_GRID">
 		Graella de Second Life
@@ -1202,7 +1202,7 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Si autoritzeu l'accés al vostre compte, també autoritzeu l'objecte a:
 	</string>
 	<string name="ScriptTakeMoney">
-		Debitar els vostres Linden dollars (L$)
+		Fer dèbit als vostres Linden dollars (L$)
 	</string>
 	<string name="ActOnControlInputs">
 		Utilitzar les vostres tecles de control
@@ -1856,21 +1856,21 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 	<string name="Clothing" value=" Roba,"/>
 	<string name="Gestures" value=" Gestos,"/>
 	<string name="Landmarks" value=" Punts de referència,"/>
-	<string name="Materials" value=" Materials,"/>
+	<string name="Materials" value=" Materials," />
 	<string name="Notecards" value=" Notes,"/>
 	<string name="Objects" value=" Objectes,"/>
 	<string name="Scripts" value=" Scripts,"/>
 	<string name="Sounds" value=" Sons,"/>
 	<string name="Textures" value=" Textures,"/>
-	<string name="Settings" value=" Paràmetres,"/>
+	<string name="Settings" value=" Paràmetres," />
 	<string name="Snapshots" value=" Fotos,"/>
-	<string name="Folders" value=" Carpetes,"/>
+	<string name="Folders" value=" Carpetes," />
 	<string name="No Filters" value="Sense "/>
 	<string name="Since Logoff" value="des de la desconnexió"/>
-	<string name="Modifiable" value="Modificable"/>
-	<string name="Copyable" value="Copiable"/>
-	<string name="Transferable" value="Transferible"/>
-	<string name="PermissionsFilter" value=" - Només [PERMISSIONS]"/>
+	<string name="Modifiable" value="Modificable" />
+	<string name="Copyable" value="Copiable" />
+	<string name="Transferable" value="Transferible" />
+	<string name="PermissionsFilter" value=" - Només [PERMISSIONS]" />
 	<string name="InvFolder My Inventory">
 		El meu inventari
 	</string>
@@ -3098,8 +3098,8 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 	<string name=".">
 		.
 	</string>
-	<string name="'">
-		'
+	<string name="&apos;">
+		&apos;
 	</string>
 	<string name="---">
 		---
@@ -5237,10 +5237,10 @@ de l'informe d'infracció
 		/apagar
 	</string>
 	<string name="/kmb">
-		/quenofariem
+		/queNoFariem
 	</string>
 	<string name="/muscle">
-		/mostrarmusculs
+		/mostrarMusculs
 	</string>
 	<string name="/no">
 		/no
@@ -5895,7 +5895,7 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Preferències ràpides
 	</string>
 	<string name="Command_AO_Label">
-		Anul·lació d'animacions
+		Substitució d'animacions
 	</string>
 	<string name="Command_Webbrowser_Label">
 		Navegador web
@@ -6403,7 +6403,7 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		BLOQUEJADA
 	</string>
 	<string name="Contrib_Experiences_Tab">
-		CONTRIBUIDOR
+		CONTRIBUÏDOR
 	</string>
 	<string name="Admin_Experiences_Tab">
 		ADMIN
@@ -7141,3 +7141,4 @@ La vostra posició actual: [AVATAR_POS]
 		S'han processat amb èxit [COUNT] entrades.
 	</string>
 </strings>
+
