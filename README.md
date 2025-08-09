@@ -56,7 +56,7 @@ Executant Firestorm de nou, les idiomes adicionals esdevenen accessibles. (Despr
 ===[Français canadien]===
 
 Ceci est un système correctif pour l'interface utilisateur du visualisateur Phoenix Firestorm, ainsi que quelques traductions non officielles qui vont avec.
-Puisque pour le moement leur équipe n'accepte pas de nouvelles traductions, nous avons décidé de les héberger ici, et de permettre aux gens de corriger leur programme installé.
+Puisque pour le moment leur équipe n'accepte pas de nouvelles traductions, nous avons décidé de les héberger ici, et de permettre aux gens de corriger leur programme installé.
 
 À l'heure actuelle, notre dépôt installe les langues suivantes (quelques unes seulement partiellement terminées):
 
