@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Moviment i càmera" name="move_panel">
+	<tab_container label="Moviment i càmera" name="tabs">
+		<panel label="Càmera" name="tab-view">
+			<slider label="Angle de visió" name="camera_fov"/>
+			<slider label="Distància" name="camera_offset_scale"/>
+			<slider label="Transició" name="camera_transition_time"/>
+			<slider label="Fluïdesa" name="camera_position_smoothing"/>
+			<check_box label="Desactiva les restriccions de límit d'allunyament del zoom" name="DisableCameraConstraints" tool_tip="Activa aquesta opció per permetre a la càmera allunyar el zoom més enllà de les seves limitacions"/>
+			<check_box label="Desactiva la roda del ratolí per ajustar el nivell del zoom" name="FSDisableMouseWheelCameraZoom"/>
+			<text left="55" name="heading2">Posicionament automàtic per a:</text>
+			<check_box label="Construir / Modificar" left_delta="5" name="edit_camera_movement" tool_tip="Posiciona automàticament la càmera quan entres i surts del mode de construcció"/>
+			<check_box label="Modificar l'aparença" width="150" left_delta="15" name="appearance_camera_movement" tool_tip="Gira la càmera de cara quan modifiquis la teva forma"/>
+			<check_box label="Indicadors visuals" name="FSAppearanceShowHints" tool_tip="Activa o desactiva els indicadors visuals que mostren les parts del teu avatar que s'estan modificant."/>
+			<check_box label="Fer clic al teu avatar no afecta la càmera" name="clickonavatarkeepscamera" tool_tip="Activar aquesta opció evita que la càmera es reiniciï quan fas clic al teu avatar."/>
+			<check_box label="Reinicia la càmera després d'una teletransportació a la regió" name="FSResetCameraOnTP" tool_tip="Activar aquesta opció reiniciarà el nivell de zoom de la càmera després d'una teletransportació dins d'una mateixa regió."/>
+			<check_box label="Reposiciona la càmera durant els desplaçaments de l'avatar" name="FSResetCameraOnMovement"/>
+			<check_box label="Gira l'avatar quan reinicio la càmera" name="resetviewturnsavatar" tool_tip="Activar aquesta opció no mourà la càmera sinó que girarà el teu avatar en la seva direcció quan reiniciïs la càmera amb la tecla ESC."/>
+			<check_box label="Permet a la càmera travessar objectes" name="ignorecameraconstraints" tool_tip="Ignora els moviments de càmera que el simulador efectua quan aquesta s'apropa massa als objectes."/>
+			<text name="ignorecameraconstraints_requires_restart">(Cal reiniciar)</text>
+			<check_box label="Mostra sempre la finestra de controls de la càmera de manera opaca" name="FSAlwaysOpaqueCameraControls"/>
+			<check_box label="Torna a mostrar després d'una teletransportació els objectes temporalment ocults." name="FSTempDerenderUntilTeleport" tool_tip="Activada, els objectes temporalment ocults ho restaran fins a la pròxima teletransportació. Desactivada, restaran ocults fins al final de la sessió o fins que es tornin a mostrar manualment a la finestra de la llista negra d'elements."/>
+		</panel>
+		<panel label="Vista subjectiva" name="tab-mouselook">
+			<check_box label="Activa la vista subjectiva" name="EnableMouselook" tool_tip="Permet una vista en primera persona i un control de la càmera amb el ratolí"/>
+			<check_box label="Mostra el meu avatar en vista subjectiva" name="first_person_avatar_visible"/>
+			<check_box label="Mostra la interfície d'usuari en vista subjectiva" name="first_person_ui_visible"/>
+			<check_box label="No amaguis les finestres de converses i del radar en vista subjectiva" name="FSShowConvoAndRadarInML"/>
+			<check_box label="Activa els menús contextuals en vista subjectiva" name="FSEnableRightclickMenuInMouselook" tool_tip="Mostra els menús contextuals en vista subjectiva amb la combinació de tecles ALT + clic dret"/>
+			<check_box label="Surt de la vista subjectiva amb la roda del ratolí" name="FSScrollWheelExitsMouselook" tool_tip="Activar aquesta opció et permetrà sortir de la vista subjectiva fent girar la roda del ratolí cap avall"/>
+			<check_box label="Mostra els consells de la vista subjectiva" name="mouselook_instructions_visible" tool_tip="Mostra els consells de la vista subjectiva"/>
+			<check_box label="Mostra el cursor en vista subjectiva" name="ShowCrosshairs" tool_tip="Mostra el cursor al mig de la pantalla en vista subjectiva"/>
+			<check_box label="Activa les funcionalitats de combat" name="FSMouselookCombatFeatures"/>
+			<check_box label="Activa el seguiment d'objectiu" name="ExodusMouselookIFF"/>
+			<slider label="Distància (m):" name="ExodusMouselookIFFRange"/>
+			<text name="Mouse Sensitivity">Sensibilitat del ratolí:</text>
+			<check_box label="Inverteix l'eix vertical" name="invert_mouse"/>
+		</panel>
+		<panel label="Moviment" name="tab-movement">
+			<check_box label="Les fletxes de direcció sempre mouen el meu avatar" name="arrow_keys_move_avatar_check" tool_tip="S'aplica només al camp d'escriptura del Xat local situat a la part inferior del visor, i no a la pestanya de Xat local a les Converses."/>
+			<check_box label="Prémer les tecles alfabètiques de moviment (WASD) mou el meu avatar" name="LetterKeysAffectsMovementNotFocusChatBar"/>
+			<check_box label="Doble pressió sobre una tecla de direcció per córrer" name="tap_tap_hold_to_run"/>
+			<check_box label="Enlairar-se / Aterrar mantenint les tecles de Salt / Ajupir-se" name="automatic_fly"/>
+			<check_box label="Queda't ajupit fins que m'aixequi" name="crouch_toggle_mode"/>
+			<check_box label="Desactiva la temporització de l'animació abans del salt i en aterrar" name="FSIgnoreFinishAnimation"/>
+			<check_box label="No et giris quan caminis cap enrere" name="FSDisableTurningAroundWhenWalkingBackwards" tool_tip="Evita que el teu avatar es giri per mirar la càmera quan camines cap enrere. Aquesta opció només afecta la teva visió i no és compatible amb els AOs."/>
+			<check_box label="Gira l'avatar cap a l'objecte que selecciona" name="FSTurnAvatarToSelectedObject" tool_tip="Gira el teu avatar de cara a l'objecte que estàs seleccionant."/>
+			<slider label="Velocitat de rotació de l'avatar" name="av_turn_spd" tool_tip="Modifica la velocitat a la qual el teu avatar respon a la rotació. 0-100 en percentatge estimat de la velocitat de rotació màxima. Els valors alts donaran resultats bruscos i entretallats."/>
+			<text name="Region_Crossing_Movement_Label" width="290">Previsió de moviment si es canvia de regió:</text>
+			<radio_group name="Region_Crossing_Movement" left_pad="1">
+				<radio_item label="Il·limitat" name="move_predict" width="65" />
+				<radio_item label="Atura't si l'error és massa gran" name="move_stop" width="100"/>
+			</radio_group>
+			<text name="movelock_lbl">Si l'ancoratge del Pont LSL està actiu...</text>
+			<check_box label="Reactiva l'ancoratge després d'una teletransportació" name="RelockMoveLockAfterRegionChange"/>
+			<check_box label="Desactiva/Reactiva l'ancoratge quan em moc" name="RelockMoveLockAfterMovement"/>
+			<text name="single_click_action_lbl" width="190">Clic simple sobre el terreny:</text>
+			<combo_box name="single_click_action_combo">
+				<combo_box.item label="Cap acció" name="0"/>
+				<combo_box.item label="Mou-te al lloc" name="1"/>
+			</combo_box>
+			<text name="double_click_action_lbl" width="190">Doble clic sobre el terreny:</text>
+			<combo_box name="double_click_action_combo">
+				<combo_box.item label="Cap acció" name="0"/>
+				<combo_box.item label="Mou-te al lloc" name="1"/>
+				<combo_box.item label="Teletransporta't al lloc" name="2"/>
+			</combo_box>
+			<check_box label="Permet el doble clic en objectes amb script" name="FSAllowDoubleClickOnScriptedObjects"/>
+			<button label="Config. del comandament" name="joystick_setup_button"/>
+		</panel>
+		<panel label="Teletransportacions" name="tab-teleports">
+			<check_box label="Reprodueix un efecte de so durant les teletransportacions" name="PlayTeleportSound"/>
+			<check_box label="Vola sempre després d'una teletransportació" name="FSFlyAfterTeleport"/>
+			<check_box label="Mostra sempre el botó Cancel·la a les pantalles de teletransportació" name="FSAlwaysShowTPCancel" tool_tip="Mostra sempre el botó Cancel·la durant les teletransportacions encara que la regió indiqui que no es pot cancel·lar. Aquest paràmetre pot ser ignorat per les opcions de RestrainedLoveAPI."/>
+			<check_box label="Desactiva les balises de teletransportació" name="tp_beam_toggle" tool_tip="Desactiva el punt de referència visual després d'una teletransportació."/>
+			<check_box label="Desactiva les pantalles de teletransportació" name="tp_screen_toggle" tool_tip="Desactiva la pantalla negra de teletransportació durant les teletransportacions."/>
+			<check_box label="No tanquis el mapa durant una teletransportació" name="FSDoNotHideMapOnTeleport" tool_tip="Desactiva el tancament automàtic del mapa durant una teletransportació."/>
+			<check_box label="Mantingues 'Mostra només amics' activat després d'una teletransportació." name="FSRenderFriendsOnlyPersistsTP" tool_tip="Desactiva l'anul·lació automàtica de la funció 'Mostra només amics' (per defecte: desactivat)"/>
+			<check_box label="Indica l'SLURL de la regió des de la qual t'has teletransportat." name="FSShowBackSLURL"/>
+		</panel>
+		<panel label="Mapa i Minimapa" name="tab-maps">
+			<text name="minimap_options_label">Opcions del Minimapa:</text>
+			<check_box label="Activa la rotació del minimapa" name="minimaprotate" tool_tip="Gira el minimapa en la direcció cap a on mira l'avatar."/>
+			<text name="netmap_double_click_action_lbl" width="155">Doble clic al Minimapa:</text>
+			<combo_box name="netmap_double_click_action_combo">
+				<combo_box.item label="Cap acció" name="0"/>
+				<combo_box.item label="Obre el mapa" name="1"/>
+				<combo_box.item label="Teletransporta't al lloc" name="2"/>
+			</combo_box>
+			<slider label="Mida del punt:" label_width="155" name="FSMinimapPickScale" tool_tip="Defineix el radi del punt dibuixat pel cursor del ratolí al minimapa"/>
+			<text name="world_map_options_label">Opcions del mapa del món:</text>
+			<check_box label="Suprimeix els punts de referència duplicats al mapa del món" name="WorldmapFilterDuplicateLandmarks" tool_tip="Processa els duplicats de la llista de punts de referència abans de mostrar-los al mapa."/>
+			<check_box label="Mostra informació addicional sobre la regió al mapa del món" name="FSAdvancedWorldmapRegionInfo" tool_tip="Mostra el nombre de residents presents a la regió així com la seva classificació."/>
+			<check_box label="Mostra les coordenades globals al mapa del món" name="FSShowRegionGridCoordinates" tool_tip="Mostra les coordenades de les regions al mapa."/>
+			<check_box label="Activa la teletransportació per doble clic al mapa del món" name="FSWorldMapDoubleclickTeleport" tool_tip="Activa la teletransportació en fer doble clic al mapa."/>
+		</panel>
+	</tab_container>
+</panel>

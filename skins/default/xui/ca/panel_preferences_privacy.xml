@@ -8,7 +8,7 @@
 			<panel.string name="log_in_to_change">Connecta't per modificar</panel.string>
 			<button label="Esborra l'historial" tool_tip="Esborra l'historial de cerca i de teletransportació, així com la memòria cau del web i de les textures" name="clear_webcache"/>
 			<text name="cache_size_label">(Ubicacions, imatges, internet, cerques)</text>
-			<check_box label="Mostra la informació del meu perfil als resultats de la cerca" name="online_searchresults"/>
+			<check_box label="Mostra la meva informació de perfil als resultats de la cerca" name="online_searchresults"/>
 			<check_box label="Només els meus amics i grups saben que estic connectat" name="online_visibility"/>
 			<check_box label="Només els meus amics i grups em poden trucar o enviar missatges instantanis" name="voice_call_friends_only_check"/>
 			<check_box label="Mostra les invitacions de grups dels quals ja formes part" name="FSShowJoinedGroupInvitations"/>
@@ -18,7 +18,7 @@
 			<check_box label="Accepta automàticament els objectes nous" name="Auto_Accept_New_Inventory"/>
 			<check_box label="Registra automàticament els objectes acceptats al xat local" name="FSLogAutoAcceptInventoryToChat"/>
 			<check_box label="Mostra la notificació de nou inventari encara que l'acceptació automàtica estigui activada" name="FSShowAutoAcceptInventoryInNotifications"/>
-			<check_box label="Utilitza els missatges originals d'acceptació i refús de transferència d'objecte" name="FSUseLegacyInventoryAcceptMessages" tool_tip="Si està activat, el Visor només acceptarà o rebutjarà missatges després de prémer el botó corresponent. Si està desactivat, el missatge d'acceptació s'enviarà automàticament tan aviat com es rebi l'oferta de transferència. Aquesta opció no té efecte si les ofertes de transferència s'accepten automàticament."/>
+			<check_box label="Utilitza els missatges originals d'acceptació i refús de transferència d'objecte" name="FSUseLegacyInventoryAcceptMessages" tool_tip="Si està activat, el Visor només acceptarà o rebutjarà els missatges després de prémer el botó corresponent. Si està desactivat, el missatge d'acceptació s'enviarà automàticament tan aviat com es rebi l'oferta de transferència. Aquesta opció no té efecte si les ofertes de transferència s'accepten automàticament."/>
 			<check_box label="Mostra automàticament els objectes nous acceptats a l'inventari" name="Show_In_Inventory"/>
 			<check_box label="Mostra automàticament les notes, textures, punts de referència, després d'acceptar-los" name="Show_New_Inventory"/>
 			<check_box label="Mostra automàticament les fotos a l'inventari després de pujar-les" name="FSOpenInventoryAfterSnapshot"/>
@@ -53,7 +53,7 @@
 			<check_box label="Dibuixa una línia fins al punt de mira" name="ExodusLookAtLines" tool_tip="Mostra una línia des de l'avatar fins al seu punt de mira"/>
 			<text name="mylookat">El meu punt de mira:</text>
 			<check_box label="No revelis el meu punt de mira als altres" name="privatelookat" tool_tip="Evita que altres persones sàpiguen on mires"/>
-			<check_box label="No comuniquis cap punt de mira, ni a tu mateix" name="privateLocalLookat" tool_tip="Evita que el cap del teu avatar es mogui per mirar cap a on mires. Aquest moviment del cap no és necessàriament visible per als altres, estigui activada o no aquesta opció"/>
+			<check_box label="No comuniquis cap punt de mira, ni a tu mateix" name="privateLocalLookat" tool_tip="Evita que el cap del teu avatar es mogui per mirar cap a l'indret que mires. Aquest moviment del cap no és necessàriament visible per als altres, estigui activada o no aquesta opció"/>
 			<check_box label="No comuniquis les meves indicacions de selecció d'objectiu" name="privatepointat" tool_tip="Evita que el punt de selecció sigui visible per als altres"/>
 			<check_box label="Distància límit des del cap:" name="LimitLookAt" tool_tip="Limita el punt de mira a una distància fixa del teu avatar, indicant així la direcció de la mirada però no el seu objectiu." width="250"/>
 		</panel>
@@ -62,7 +62,7 @@
 			<text name="text_box3">Resposta auto. en mode 'No molestar':</text>
 			<text name="autorespond_response_label">Resposta auto. a tots els residents quan estic en mode 'Resposta automàtica':</text>
 			<text name="autorespond_nf_response_label">Resposta auto. quan estic en mode 'Resposta automàtica a desconeguts':</text>
-			<check_box label="Envia una resposta automàtica quan estic Absent:" name="send_away_av_response" tool_tip="Envia el text de sota quan algú inicia una conversa privada mentre estàs absent."/>
+			<check_box label="Envia una resposta automàtica quan estic Absent:" name="send_away_av_response" tool_tip="Envia el text de sota quan algú comença una conversa privada quan estàs absent."/>
 			<check_box label="Envia una resposta automàtica a les persones ignorades:" name="send_muted_av_response" tool_tip="Envia el text de sota quan una persona ignorada t'envia un missatge privat."/>
 		</panel>
 		<panel label="Respostes auto. 2" name="tab-autoresponse-2">
