@@ -1,7 +1,4 @@
 # FSLangPatch
-
-WARNING: As of 2025/08/09, patching only works once. Please do not run it twice on the same installation. I am working on a fix. -- Yukinoroh.
-
 El català segueix | Le français suit | Далі йде українська мова
 
 ===[English]===
