@@ -107,12 +107,12 @@ def xmlprocess(source,target):
 					tosort.append(element)
 		# Sorts the items to be sorted
 		tosort.sort(key=sortfunc)	# Note: sort_key should have been passed here but we can only pass one argument (the element); sort_key was made global as a hack
-		# Takes a copy of the list to compare after sorting
+		# Empties the list while taking a copy of it to compare
 		targetcopy = []
 		for element in target:
 			targetcopy.append(element)
+			target.remove(element)
 		# Repopulates the list
-		target.clear()
 		for element in toprepend:
 			target.append(element)
 		for element in tosort:
@@ -147,13 +147,26 @@ elif lang == "fr":
 	message="Choisissez le dossier principal de Firestorm"
 elif lang == "uk":
 	message="Виберіть головну папку Firestorm"
-fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)[0]
+fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)
+if fs_path != None:
+	fs_path=fs_path_temp[0]
 
 # Prepares log file
 log=open("./log.txt", "w")
 
+# Make sure we have a target directory (user hasn't clicked cancel)
+if fs_path == None:
+	message="Patching canceled by user.\n"
+	if lang == "ca":
+		message="Correcció anul·lada per l'usuari.\n"
+	elif lang == "fr":
+		message="Correction annulée par l'utilisateur..\n"
+	elif lang == "uk":
+		message="Виправлення скасовано користувачем.\n"
+#	print(message)
+	log.write(message)
 # Make sure target is a Firestorm installation
-if not os.path.exists(getpath(fs_path,"app_settings")) and not os.path.exists(getpath(fs_path,"skins")):
+elif not os.path.exists(getpath(fs_path,"app_settings")) and not os.path.exists(getpath(fs_path,"skins")):
 	message="This does not seem to be a Firestorm folder.\n"
 	if lang == "ca":
 		message="Aquest no sembla ser una carpeta de Firestorm.\n"
@@ -280,3 +293,4 @@ else:
 #						print(message + target + "...\n")
 					log.write(message + target + "...\n")
 				shutil.copy(source,target_dir)
+log.close()
