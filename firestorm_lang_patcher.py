@@ -54,17 +54,16 @@ def xmlprocess(source,target):
 			sort_key=child_src.attrib['key']
 			sort_prepends=child_src.attrib['prepends'].split(',')
 		elif child_src.tag == "key":	# Found a key on source side
-			key_src=child_src.text
+			key_src = child_src.text
 		else:	# Anything else than key on source side
 			intarget=0;
 			for child_tgt in target:
 				if key_src != "":	# Map mode
 					if child_tgt.tag == "key":	# Found a key on target side
-						if child_tgt.text == key_src:
+						if child_tgt.text == key_src:	# Same as source key
 							key_tgt = key_src
 						# else, do nothing (keep looking)
 					elif key_tgt == key_src:	 # On an element following equal keys
-						key_src = ""
 						key_tgt = ""
 						intarget=1
 						identical = xmlprocess(child_src,child_tgt)
@@ -86,6 +85,7 @@ def xmlprocess(source,target):
 			if not intarget:
 				target.append(child_src)
 				identical = False
+			key_src = ""
 	if sort:
 		# Separates into two lists prepends and items to be sorted. First makes a copies of both, we will remove elements.
 		tosort = []
@@ -149,7 +149,7 @@ elif lang == "uk":
 	message="Виберіть головну папку Firestorm"
 fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)
 if fs_path != None:
-	fs_path=fs_path_temp[0]
+	fs_path = fs_path[0]
 
 # Prepares log file
 log=open("./log.txt", "w")
