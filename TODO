@@ -1,6 +1,6 @@
-- Update translated language list in every FS official language
 - Package python3 environment, and python3-plyer
-   v in Linux
-   - in Windows
-   - in OSX
-? Put languages in alphabetical order
+   - in Linux (Yukinoroh Kamachi)
+   - in Windows (Lazy Sausage)
+   - in OSX (looking for someone that can do it)
+? Update translated language list in every FS official language
+- Add feature to provide proper fallbacks for language variety translations (like Kansai Japanese (ja_KS) would default to ja, not en)
