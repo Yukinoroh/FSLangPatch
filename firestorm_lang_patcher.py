@@ -12,10 +12,18 @@ sort_key = ""
 
 # Gets path of subitem
 def getpath(somepath,add):
-	if osname == "Windows":
-		somepath = somepath + "\\" + add
-	else:
-		somepath = somepath + "/" + add
+	# Cleans additional path elements
+	if ((osname == "Windows" and add.startswith(".")) or add.startswith(".")):
+		add = add[1::]
+	if ((osname == "Windows" and add.startswith("\\")) or add.startswith("/")):
+		add = add[1::]
+	if ((osname == "Windows" and add.endswith("\\")) or add.endswith("/")):
+		add = add[:-2:]
+	if add != "":
+		if osname == "Windows":
+			somepath = somepath + "\\" + add
+		else:
+			somepath = somepath + "/" + add
 	return somepath
 
 # Custom get attribute function to deal with "_text" key
@@ -39,6 +47,50 @@ def uncomment(element):
 # Custom sorting funcion
 def sortfunc(element):
 	return getattrib(element,sort_key)
+
+# Tries to copy a file; returns true if source exists, false otherwise.
+def trytocopy(source_dir, onefile, target_dir, overwrite, makelink, log):
+	target = getpath(target_dir,onefile)
+	source = getpath(source_dir,onefile)
+	if not os.path.exists(source):
+		return False
+	else:
+		if os.path.exists(target):
+			if (overwrite):
+				message="Replacing "
+				if lang == "ca":
+					message="Substituint "
+				elif lang == "fr":
+					message="Remplace "
+				elif lang == "uk":
+					message="Заміна "
+		#		print(message + target + " ...\n")
+				log.write(message + target + " ...\n")
+				os.remove(target)
+				if (makelink):
+					os.symlink(source,target)
+				else:
+					shutil.copy(source,target_dir)
+			# else: will do nothing (keep original file)
+		else:
+			message="Adding "
+			if lang == "ca":
+				message="Afegint "
+			elif lang == "fr":
+				message="Ajoute "
+			elif lang == "uk":
+				message="Додавання Uaaaa "
+			if not os.path.exists(target_dir):
+	#			print(message + target_dir + " ...\n")
+				log.write(message + target_dir + " ...\n")
+				os.mkdir(target_dir)
+	#		print(message + target + " ...\n")
+			log.write(message + target + " ...\n")
+			if (makelink):
+				os.symlink(source,target)
+			else:
+				shutil.copy(source,target_dir)
+		return True
 
 # Recursive XML parsing
 def xmlprocess(source,target):
@@ -125,12 +177,12 @@ def xmlprocess(source,target):
 
 	return identical
 
-# Gets language 
+# Gets system language 
 lang=locale.getdefaultlocale()[0]
 before_underscore_pos=lang.find('_')
 lang=lang[0:before_underscore_pos:]
 
-# Gets default Firestorm installation path
+# Gets possible desired Firestorm installation path (or near it)
 fs_path=""
 if osname == "Windows":
 	fs_path="C:\\Program Files\\Firestorm-Releasex64\\"
@@ -187,9 +239,60 @@ elif not os.path.exists("./app_settings") and not os.path.exists("./skins"):
 		message="Здається, патча з вихідним кодом немає.\n"
 	log.write(message)
 else:
+	varietylang = ""
+	varietylang_path = ""
+	varietylang_parent = ""
 	# Walks the current python folder to process changes
 	for (path,folders,files) in os.walk('.', topdown=True):
-		# Processing of files
+		# Checks if we just walked out of a variety language path.
+		# Note: we meed to check a walk outs before a walks in to properly walk out of fr_CA when we have just walked in fr_CA_PIRATE, for example.
+		if varietylang != "" and (not path.startswith(varietylang_path) or path.startswith(varietylang_path + "_")):
+			varietylang = ""
+			varietylang_path = ""
+			varietylang_parent = ""
+		# Checks if we just walked in a variety language path
+		if varietylang == "":
+			curfolder = ""
+			if osname == "Windows":
+				curfolder = path[path.rfind("\\")+1:]
+			else:
+				curfolder = path[path.rfind("/")+1:]
+			if (curfolder != "app_settings" and curfolder.find("_") >= 1):	# Will skip "app_settings" but also "" because the result will be -1
+				varietylang = curfolder
+				varietylang_path = path
+				if osname == "Windows":
+					varietylang_parent = path[:path.rfind("\\")]
+				else:
+					varietylang_parent = path[:path.rfind("/")]
+
+				# We have a language variety. Copies fallback for this variety.
+				# Will copy recursively from closest to furthest parent, but will not overwrite, so closest parent (or original file) will have priority.
+				fallbacklang = varietylang
+				underscorepos = fallbacklang.rfind("_")
+				while underscorepos >= 1:	# Note: fisrt position would not help much because there would be no fallback (ex: "_KS" -> "")
+					fallbacklang = fallbacklang[:underscorepos]
+
+					copysrc_dir = getpath(fs_path,varietylang_parent)
+					copysrc_dir = getpath(copysrc_dir,fallbacklang)
+					addpath = path.replace(varietylang_path,"")	# ex: "./skins/default/xui/fr_CA_PIRATE/widgets" -> "_CA_PIRATE/widgets";  		"./skins/default/xui/fr_CA_PIRATE" -> "_CA_PIRATE"
+					if osname == "Windows":
+						addpath = addpath[addpath.find("\\")::] # ex: "_CA_PIRATE/widgets" -> "/widgets"; 		"_CA_PIRATE" -> "/"
+					else:
+						addpath = addpath[addpath.find("/")::]
+					copysrc_dir = getpath(copysrc_dir,addpath)
+
+					for (path2,folders2,files2) in os.walk(copysrc_dir, topdown=True):
+						copytgt_dir = getpath(fs_path,path)
+						addpath = path2.replace(copysrc_dir,"")	# ex: "/home/something/firestorm/skins/default/xui/fr_CA/widgets" -> "/widgets";
+						copytgt_dir = getpath(copytgt_dir,addpath)
+						for onefile in files2:
+							if osname == "Linux":
+								trytocopy(path2, onefile, copytgt_dir, False, True, log)
+							else:
+								trytocopy(path2, onefile, copytgt_dir, False, False, log)
+
+					underscorepos = fallbacklang.rfind("_")
+
 		for onefile in files:
 			if onefile.endswith(".xml") and not onefile.endswith(".xml.patch") and os.path.exists(getpath(path,onefile)+".patch"): 	# File is .xml and there is a .xml.patch
 				message="WARNING: Will not replace/add the following file because its patch is also present next to it: "
@@ -214,8 +317,7 @@ else:
 			# XML patches
 			elif onefile.endswith(".xml.patch"):
 				source=getpath(path,onefile)
-				target=source[:-5:]
-				target=getpath(fs_path,target[2:-1:])
+				target=getpath(fs_path,source[:-6:])
 				message="Patching "
 				if lang == "ca":
 					message="Aplicant un correctiu a "
@@ -223,8 +325,9 @@ else:
 					message="Applique un correctif à "
 				elif lang == "uk":
 					message="латання "
-#				print(message + target + "...\n")
-				log.write(message + target + "...\n")
+#				print(message + target + " ...\n")
+				log.write(message + target + " ...\n")
+				# If target does not exist...
 				if not os.path.exists(target):
 					message="   Does not exist; skipping.\n"
 					if lang == "ca":
@@ -264,33 +367,5 @@ else:
 							f.write(etree.tostring(xmltree_tgt, encoding="utf-8", xml_declaration=False))
 			# XML files
 			elif onefile.endswith(".xml"):
-				source=getpath(path,onefile)
-				target_dir=getpath(fs_path,path[2::])
-				target=getpath(target_dir,onefile)
-				if os.path.exists(target):
-					message="Replacing "
-					if lang == "ca":
-						message="Substituint "
-					elif lang == "fr":
-						message="Remplace "
-					elif lang == "uk":
-						message="Заміна "
-#						print(message + target + "...\n")
-					log.write(message + target + "...\n")
-					os.remove(target)
-				else:
-					message="Adding "
-					if lang == "ca":
-						message="Afegint "
-					elif lang == "fr":
-						message="Ajoute "
-					elif lang == "uk":
-						message="Додавання Uaaaa "
-					if not os.path.exists(target_dir):
-#							print(message + target_dir + "...\n")
-						log.write(message + target_dir + "...\n")
-						os.mkdir(target_dir)
-#						print(message + target + "...\n")
-					log.write(message + target + "...\n")
-				shutil.copy(source,target_dir)
+				trytocopy(path, onefile, getpath(fs_path,path), True, False, log)	# Will replace original files
 log.close()
