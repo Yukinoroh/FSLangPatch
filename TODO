@@ -2,8 +2,5 @@
    - in Linux (Yukinoroh Kamachi)
    - in Windows (Lazy Sausage)
    - in OSX (looking for someone that can do it!!!)
+- Check if Firestorm in Windows and Mac recognizes file symbolic links; in the affirmative, for language variety fallback translations, use symbolic links.
 ? Update translated language list in every FS official language
-- Add feature to provide proper fallbacks for language variety translations (like Kansai Japanese (ja_KS) would default to ja, not en):
-    * preferably use file links, check if FS supports them in Linux (OK), Windows; otherwise copy files. Python doc says link creating does not work in Mac.
-    * files would be fetched recursively (ex: ja_KS_KYOTO -> ja_KS -> ja)
-    * .xml.patch would first try to fetch a default file before giving up;
