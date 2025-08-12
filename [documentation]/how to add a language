@@ -38,16 +38,16 @@ Some of the xml files are rather large and to keep up with any updates FS does t
 that allows to only specify what to add and where. There are four of them.
 
 1) app_settings/settings.xml.patch :
-   Add the language or language variety before the sort tag.
+   Add the language or language variety inside the <array></array> element, anywhere before the sort element.
 
 2) skins/default/default_languages.xml.patch :
-   Add the language or language variety before the sort tag.
+   Add the language or language variety inside the <labels></labels> element, anywhere before the sort element.
 
 3) skins/default/xui/en/floater_translation_settings.xml.patch :
-   Add the language or language variety before the sort tag.
+   Add the language or language variety inside the <combo_box></combo box> element, anywhere before the sort element.
 
 4) skins/default/xui/en/panel_preferences_general.xml.patch :
-   Add the language or language variety before the sort tag.
+   Add the language or language variety inside the <combo_box></combo box> element, anywhere before the sort element.
 
 
 == ADDING THE TRANSLATIONS THEMSELVES ===
