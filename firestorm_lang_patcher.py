@@ -245,7 +245,7 @@ else:
 	# Walks the current python folder to process changes
 	for (path,folders,files) in os.walk('.', topdown=True):
 		# Checks if we just walked out of a variety language path.
-		# Note: we meed to check a walk outs before a walks in to properly walk out of fr_CA when we have just walked in fr_CA_PIRATE, for example.
+		# Note: we need to check walk outs before walks in to properly walk out of fr_CA when we have just walked in fr_CA_PIRATE, for example.
 		if varietylang != "" and (not path.startswith(varietylang_path) or path.startswith(varietylang_path + "_")):
 			varietylang = ""
 			varietylang_path = ""
