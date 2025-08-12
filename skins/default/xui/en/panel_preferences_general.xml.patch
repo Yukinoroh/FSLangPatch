@@ -1,44 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <panel>
-    <combo_box
-     control_name="Language"
-     follows="left|top"
-     height="23"
-     layout="topleft"
-     left="30"
-     max_chars="135"
-     name="language_combobox"
-     width="150">
-        <combo_box.item
-         enabled="true"
-         label="Català (Catalan) - Beta"
-         name="Catalan"
-         value="ca" />
-        <combo_box.item
-         enabled="true"
-         label="Français canadien (French)"
-         name="Canadian_French"
-         value="fr_CA" />
-        <combo_box.item
-         enabled="true"
-         label="Українська мова (Ukrainian)"
-         name="Ukrainian"
-         value="uk" />
-        <combo_box.item
-         enabled="true"
-         label="Dansk (Danish) - Beta"
-         name="Danish"
-         value="da" />
-        <combo_box.item
-         enabled="true"
-         label="Português (Portuguese) - Beta"
-         name="Portugese"
-         value="pt" />
-        <combo_box.item
-         enabled="true"
-         label="Türkçe (Turkish) - Beta"
-         name="Turkish"
-         value="tr" />
-        <sort key="label" prepends=""/>
-    </combo_box>
+  <combo_box control_name="Language" follows="left|top" height="23" layout="topleft" left="30" max_chars="135" name="language_combobox" width="150">
+    <combo_box.item enabled="true" label="Català (Catalan) - Beta" name="Catalan" value="ca" />
+    <combo_box.item enabled="true" label="Français canadien (French)" name="Canadian_French" value="fr_CA" />
+    <combo_box.item enabled="true" label="Українська мова (Ukrainian)" name="Ukrainian" value="uk" />
+    <combo_box.item enabled="true" label="Dansk (Danish) - Beta" name="Danish" value="da" />
+    <combo_box.item enabled="true" label="Português (Portuguese) - Beta" name="Portugese" value="pt" />
+    <combo_box.item enabled="true" label="Türkçe (Turkish) - Beta" name="Turkish" value="tr" />
+    <sort key="label" prepends=""/>
+  </combo_box>
 </panel>
