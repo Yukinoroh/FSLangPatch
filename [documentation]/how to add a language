@@ -24,23 +24,25 @@ Missing translations from base languages will default to English as per Firestor
 
 === ADDING A LANGUAGE OR LANGUAGE VARIETY ===
 
-There are four .xml.patch files to modify:
-1) In app_settings/settings.xml.patch :
+Some of the xml files are rather large and to keep up with any updates FS does to them, we have created a .xml.patch format,
+that allows to only specify what to add and where. There are four of them.
+
+1) app_settings/settings.xml.patch :
    Add the language or language variety before the sort tag.
 
-2) In skins/default/default_languages.xml.patch :
+2) skins/default/default_languages.xml.patch :
    Add the language or language variety before the sort tag.
 
-3) In skins/default/xui/en/floater_translation_settings.xml.patch :
+3) skins/default/xui/en/floater_translation_settings.xml.patch :
    Add the language or language variety before the sort tag.
 
-4) In skins/default/xui/en/panel_preferences_general.xml.patch :
+4) skins/default/xui/en/panel_preferences_general.xml.patch :
    Add the language or language variety before the sort tag.
 
 
 == ADDING THE TRANSLATIONS THEMSELVES ===
 
-Add them in folders named with their ISO 639 code (see above) or combination of ISO 639, variety and subvarieties.
+Add the xml files in in folders named with their ISO 639 code (see above) or combination of ISO 639, variety and subvarieties.
 The folders must be inside the "xui" folders, under each of the skin you want to translate.
 It is a good idea to at least provide most of translations for "default" and "firestorm" skins:
 
