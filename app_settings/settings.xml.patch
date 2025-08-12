@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
-<llsd xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="llsd.xsd">
+<llsd xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="llsd.xsd">
   <map>
     <key>FSEnabledLanguages</key>
     <map>
@@ -8,6 +7,7 @@
       <array>
         <string>ca</string>
         <string>fr_CA</string>
+        <string>fr_CA_PIRATE</string>
         <string>uk</string>
         <string>da</string>
         <string>pt</string>
