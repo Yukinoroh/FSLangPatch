@@ -48,6 +48,21 @@ def uncomment(element):
 def sortfunc(element):
 	return getattrib(element,sort_key)
 
+# Symlinks one file to another and returns translated message
+def makelink_func(source, target, message):
+	if lang == "ca":
+		message = message + "amb enllaç "
+	elif lang == "fr":
+		message = message + "avec lien "
+	elif lang == "uk":
+		message = message + "з посиланням "
+	else:
+		message = message + "with link "
+	if os.path.islink(source):	# Avoids creating symlink to symlink.
+		source = os.readlink(source)
+	os.symlink(source,target)
+	return message
+
 # Tries to copy a file; returns true if source exists, false otherwise.
 def trytocopy(source_dir, onefile, target_dir, overwrite, makelink, log):
 	target = getpath(target_dir,onefile)
@@ -57,39 +72,43 @@ def trytocopy(source_dir, onefile, target_dir, overwrite, makelink, log):
 	else:
 		if os.path.exists(target):
 			if (overwrite):
-				message="Replacing "
+				message = ""
 				if lang == "ca":
-					message="Substituint "
+					message = message + "Substituint "
 				elif lang == "fr":
-					message="Remplace "
+					message = message + "Remplace "
 				elif lang == "uk":
-					message="Заміна "
+					message = message + "Заміна "
+				else:
+					message = "Replacing "
+				if (makelink):
+					message = message + makelink_func(source, target, message)
+				else:
+					shutil.copy(source,target_dir)
 		#		print(message + target + " ...\n")
 				log.write(message + target + " ...\n")
 				os.remove(target)
-				if (makelink):
-					os.symlink(source,target)
-				else:
-					shutil.copy(source,target_dir)
 			# else: will do nothing (keep original file)
 		else:
-			message="Adding "
+			message = ""
 			if lang == "ca":
-				message="Afegint "
+				message = message + "Afegint "
 			elif lang == "fr":
-				message="Ajoute "
+				message = message + "Ajoute "
 			elif lang == "uk":
-				message="Додавання Uaaaa "
+				message = message + "Додавання Uaaaa "
+			else:
+				message = message + "Adding "
 			if not os.path.exists(target_dir):
 	#			print(message + target_dir + " ...\n")
 				log.write(message + target_dir + " ...\n")
 				os.mkdir(target_dir)
-	#		print(message + target + " ...\n")
-			log.write(message + target + " ...\n")
 			if (makelink):
-				os.symlink(source,target)
+				message = message + makelink_func(source, target, message)
 			else:
 				shutil.copy(source,target_dir)
+	#		print(message + target + " ...\n")
+			log.write(message + target + " ...\n")
 		return True
 
 # Recursive XML parsing
@@ -108,7 +127,7 @@ def xmlprocess(source,target):
 		elif child_src.tag == "key":	# Found a key on source side
 			key_src = child_src.text
 		else:	# Anything else than key on source side
-			intarget=0;
+			intarget = 0;
 			for child_tgt in target:
 				if key_src != "":	# Map mode
 					if child_tgt.tag == "key":	# Found a key on target side
@@ -117,7 +136,7 @@ def xmlprocess(source,target):
 						# else, do nothing (keep looking)
 					elif key_tgt == key_src:	 # On an element following equal keys
 						key_tgt = ""
-						intarget=1
+						intarget = 1
 						identical = xmlprocess(child_src,child_tgt)
 						#break	# Commented so that it replaces all occurences
 					# else: do nothing (on an element following unequal keys)
@@ -126,7 +145,7 @@ def xmlprocess(source,target):
 					temp_child_tgt = uncomment(child_tgt)
 					# Needs to inspect elements if they are identical but have different number of elements (ex: top map) or if they contain the same text (ex: string)
 					if temp_child_src.tag == temp_child_tgt.tag and temp_child_src.attrib == temp_child_tgt.attrib and (len(temp_child_src) != len(temp_child_tgt) or temp_child_src.text == temp_child_tgt.text):
-						intarget=1;
+						intarget = 1;
 						identical = xmlprocess(temp_child_src,temp_child_tgt)
 						# If elements are identical inside and only one side is commented, we have to update (either comment or uncomment)
 						if identical and ((temp_child_src != child_src and temp_child_tgt == child_tgt) or (temp_child_src == child_src and temp_child_tgt != child_tgt)):
@@ -192,13 +211,13 @@ elif osname == "Darwin":	# Mac
 	fs_path="/Applications/Firestorm-releasex64.app/Contents/Resources/"
 
 # Prompts user for a folder
-message="Choose Firestorm main folder"
+message = "Choose Firestorm main folder"
 if lang == "ca":
-	message="Tria la carpeta principal de Firestorm"
+	message = "Tria la carpeta principal de Firestorm"
 elif lang == "fr":
-	message="Choisissez le dossier principal de Firestorm"
+	message = "Choisissez le dossier principal de Firestorm"
 elif lang == "uk":
-	message="Виберіть головну папку Firestorm"
+	message = "Виберіть головну папку Firestorm"
 fs_path=plyer.filechooser.choose_dir(path=fs_path,title=message)
 if fs_path != None:
 	fs_path = fs_path[0]
@@ -208,35 +227,35 @@ log=open("./log.txt", "w")
 
 # Make sure we have a target directory (user hasn't clicked cancel)
 if fs_path == None:
-	message="Patching canceled by user.\n"
+	message = "Patching canceled by user.\n"
 	if lang == "ca":
-		message="Correcció anul·lada per l'usuari.\n"
+		message = "Correcció anul·lada per l'usuari.\n"
 	elif lang == "fr":
-		message="Correction annulée par l'utilisateur..\n"
+		message = "Correction annulée par l'utilisateur..\n"
 	elif lang == "uk":
-		message="Виправлення скасовано користувачем.\n"
+		message = "Виправлення скасовано користувачем.\n"
 #	print(message)
 	log.write(message)
 # Make sure target is a Firestorm installation
 elif not os.path.exists(getpath(fs_path,"app_settings")) and not os.path.exists(getpath(fs_path,"skins")):
-	message="This does not seem to be a Firestorm folder.\n"
+	message = "This does not seem to be a Firestorm folder.\n"
 	if lang == "ca":
-		message="Aquest no sembla ser una carpeta de Firestorm.\n"
+		message = "Aquest no sembla ser una carpeta de Firestorm.\n"
 	elif lang == "fr":
-		message="Ceci n'a pas l'air d'un dossier de Firestorm.\n"
+		message = "Ceci n'a pas l'air d'un dossier de Firestorm.\n"
 	elif lang == "uk":
-		message="Здається, це не папка Firestorm.\n"
+		message = "Здається, це не папка Firestorm.\n"
 #	print(message)
 	log.write(message)
 # Make sure there is something to do
 elif not os.path.exists("./app_settings") and not os.path.exists("./skins"):
-	message="There seems to be no source patch.\n"
+	message = "There seems to be no source patch.\n"
 	if lang == "ca":
-		message="No sembla haver-hi cap font de correctiu.\n"
+		message = "No sembla haver-hi cap font de correctiu.\n"
 	elif lang == "fr":
-		message="Il semble n'y avoir aucune source de correctif.\n"
+		message = "Il semble n'y avoir aucune source de correctif.\n"
 	elif lang == "uk":
-		message="Здається, патча з вихідним кодом немає.\n"
+		message = "Здається, патча з вихідним кодом немає.\n"
 	log.write(message)
 else:
 	varietylang = ""
@@ -297,65 +316,70 @@ else:
 
 		for onefile in files:
 			if onefile.endswith(".xml") and not onefile.endswith(".xml.patch") and os.path.exists(getpath(path,onefile)+".patch"): 	# File is .xml and there is a .xml.patch
-				message="WARNING: Will not replace/add the following file because its patch is also present next to it: "
+				message = "WARNING: Will not replace/add the following file because its patch is also present next to it: "
 				if lang == "ca":
-					message="ALERTE: No es substituirà ni afegirà el fitxer següent perquè el seu correctiu també és present al seu costat: "
+					message = "ALERTE: No es substituirà ni afegirà el fitxer següent perquè el seu correctiu també és present al seu costat: "
 				elif lang == "fr":
-					message="ALERTE: Ne remplacera ni n'ajoutera pas le fichier suivant car son correctif est aussi présent à ses côtés: "
+					message = "ALERTE: Ne remplacera ni n'ajoutera pas le fichier suivant car son correctif est aussi présent à ses côtés: "
 				elif lang == "uk":
-					message="ПОПЕРЕДЖЕННЯ: Наступний файл не буде замінено/додано, оскільки його патч також присутній поруч із ним: "
+					message = "ПОПЕРЕДЖЕННЯ: Наступний файл не буде замінено/додано, оскільки його патч також присутній поруч із ним: "
 				log.write(message + "\n")
 				log.write("   " + getpath(path,onefile) + "\n")
 			elif onefile.endswith(".xml.patch") and os.path.exists(getpath(path,onefile)[:-6:]):								# File is .xml.patch and there is a .xml
-				message="WARNING: Will not apply the following patch because the complete file is also present next to it: "
+				message = "WARNING: Will not apply the following patch because the complete file is also present next to it: "
 				if lang == "ca":
-					message="ALERTA: No s'aplicarà el correctiu següent perquè el fitxer sencer també és present al seu costat: "
+					message = "ALERTA: No s'aplicarà el correctiu següent perquè el fitxer sencer també és present al seu costat: "
 				elif lang == "fr":
-					message="ALERTE: N'appliquera pas le correctif suivant car le fichier complet est aussi présent à ses côtés: "
+					message = "ALERTE: N'appliquera pas le correctif suivant car le fichier complet est aussi présent à ses côtés: "
 				elif lang == "uk":
-					message="ПОПЕРЕДЖЕННЯ: Наступний патч не застосовуватиметься, оскільки повний файл також присутній поруч із ним: "
+					message = "ПОПЕРЕДЖЕННЯ: Наступний патч не застосовуватиметься, оскільки повний файл також присутній поруч із ним: "
 				log.write(message + "\n")
 				log.write("   " + getpath(path,onefile) + "\n")
 			# XML patches
 			elif onefile.endswith(".xml.patch"):
-				source=getpath(path,onefile)
-				target=getpath(fs_path,source[:-6:])
-				message="Patching "
+				source = getpath(path,onefile)
+				target_dir = getpath(fs_path,path)
+				target = getpath(fs_path,source[:-6:])
+				message = "Patching "
 				if lang == "ca":
-					message="Aplicant un correctiu a "
+					message = "Aplicant un correctiu a "
 				elif lang == "fr":
-					message="Applique un correctif à "
+					message = "Applique un correctif à "
 				elif lang == "uk":
-					message="латання "
+					message = "латання "
 #				print(message + target + " ...\n")
 				log.write(message + target + " ...\n")
 				# If target does not exist...
 				if not os.path.exists(target):
-					message="   Does not exist; skipping.\n"
+					message = "   Does not exist; skipping.\n"
 					if lang == "ca":
-						message="   No existeix; el salto.\n"
+						message = "   No existeix; el salto.\n"
 					elif lang == "fr":
-						message="   N'existe pas; je le saute.\n"
+						message = "   N'existe pas; je le saute.\n"
 					elif lang == "uk":
-						message="   Не існує; пропускається.\n"
+						message = "   Не існує; пропускається.\n"
 #					print(message)
 					log.write(message)
-				else:
+				else:	# Target exists
 					xmlroot_src = etree.parse(source).getroot()
 					xmltree_tgt = etree.parse(target)
 					xmlroot_tgt = xmltree_tgt.getroot()
 					if xmlroot_src.tag != xmlroot_tgt.tag:
-						message="   Root element differs; skipping.\n"
+						message = "   Root element differs; skipping.\n"
 						if lang == "ca":
-							message="   L'element arrel difereix; el salto.\n"
+							message = "   L'element arrel difereix; el salto.\n"
 						elif lang == "fr":
-							message="   L'élément racine diffère; je le saute.\n"
+							message = "   L'élément racine diffère; je le saute.\n"
 						elif lang == "uk":
-							message="   Кореневий елемент відрізняється; пропуск.\n"
+							message = "   Кореневий елемент відрізняється; пропуск.\n"
 #						print (message)
 						log.write(message)
-					else:
-						xmlprocess(xmlroot_src,xmlroot_tgt)
+					elif (not xmlprocess(xmlroot_src,xmlroot_tgt)):	# Root element is the same, and we have changed something
+						# If what we have is a symbolic link, we need to copy the original file before patching it, otherwise original file will be patched.
+						if os.path.islink(target):
+							linksrc = os.readlink(target)
+							os.remove(target)
+							shutil.copy(linksrc, target_dir)
 						# Writing the file
 						etree.indent(xmltree_tgt, space="\t")	# Because otherwise some indents do not work
 						# Copies doctype
