@@ -21,13 +21,13 @@ Before being patched, any missing language variety translation file will be fetc
 In the above example, missing translation files from "fr_CA_PIRATE_BLACK" would be taken from "fr_CA_PIRATE", if still missing, from "fr_CA", and if still missing, from "fr".
 Also, parents are always treated first. To summarize:
 
-1) "fr" will be patched (overriding);
-2) "fr_CA" will be completed from "fr" (not overriding);
-2) "fr_CA" will be patched (overriding);
-3) "fr_CA_PIRATE" will be completed from "fr_CA", then from "fr" (not overriding);
-4) "fr_CA_PIRATE" will be patched (overriding);
-5) "fr_CA_PIRATE_BLACK" will be completed from "fr_CA_PIRATE", then from "fr_CA", then from "fr" (not overriding);
-6) "fr_CA_PIRATE_BLACK" will be patched (overriding).
+1) Firestorm "fr" will be patched from our installation (overriding);
+2) Firestorm "fr_CA" will be completed from Firestorm "fr" (not overriding);
+2) Firestorm "fr_CA" will be patched from our installation (overriding);
+3) Firestorm "fr_CA_PIRATE" will be completed from Firestorm "fr_CA", then from Firestorm "fr" (not overriding);
+4) Firestorm "fr_CA_PIRATE" will be patched from our installation (overriding);
+5) Firestorm "fr_CA_PIRATE_BLACK" will be completed from Firestorm "fr_CA_PIRATE", then from Firestorm "fr_CA", then from Firestorm "fr" (not overriding);
+6) Firestorm "fr_CA_PIRATE_BLACK" will be patched from our installation (overriding).
 
 Missing translations from base languages will default to English as per Firestorm's coding, but there might be glitches, so be careful!
 
