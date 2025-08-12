@@ -1,0 +1,55 @@
+Before beginning, please look up the ISO 639 (Set 1) two-letter language code:
+https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
+Language codes are NOT ALWAYS THE SAME AS COUNTRY CODES. Make sure to use language code, not country!
+
+
+=== LANGUAGE VARIETIES ===
+
+Our system supports language varieties.
+To specify a variety, add _ followed by country code.
+
+For example, Australian English is "en_AU".
+
+Our system even supports subvarieties, without any limit!
+
+For example, Valencian variety of Catalan would be "ca_ES_VALENCIAN" (ca = Catalan, ES = Spain);
+Australian Pirate English would be "en_AU_PIRATE";
+Black Pirate Canadian French would be "fr_CA_PIRATE_BLACK".
+
+Any missing file in language variety translations will be automatically added from its direct parent.
+In the above example, missing translation files from "fr_CA_PIRATE_BLACK" would be taken from "fr_CA_PIRATE", if still missing, from "fr_CA", and if still missing, from "fr".
+
+Missing translations from base languages will default to English as per Firestorm's coding, but there might be glitches, so be careful!
+
+
+=== ADDING A LANGUAGE OR LANGUAGE VARIETY ===
+
+There are four .xml.patch files to modify:
+1) In app_settings/settings.xml.patch :
+   Add the language or language variety before the sort tag.
+
+2) In skins/default/default_languages.xml.patch :
+   Add the language or language variety before the sort tag.
+
+3) In skins/default/xui/en/floater_translation_settings.xml.patch :
+   Add the language or language variety before the sort tag.
+
+4) In skins/default/xui/en/panel_preferences_general.xml.patch :
+   Add the language or language variety before the sort tag.
+
+
+== ADDING THE TRANSLATIONS THEMSELVES ===
+
+Add them in folders named with their ISO 639 code (see above) or combination of ISO 639, variety and subvarieties.
+The folders must be inside the "xui" folders, under each of the skin you want to translate.
+It is a good idea to at least provide most of translations for "default" and "firestorm" skins:
+
+skins/default/xui
+skins/firestorm/xui
+
+For example, Mexico Spanish translations would be located in :
+
+skins/default/xui/es_MX
+skins/firestorm/xui/es_MX
+
+
