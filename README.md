@@ -25,7 +25,7 @@ And reactivates the following beta languages:
 The program asks user to indicate the location of the Firestorm installation, then adds/replaces some files, and patch some others.
 After execution of the program, the result of the patching can be checked in the generated log.txt file.
 
-Running Firestorm again, the additional languages become available. (After selecting one, user needs to restart the viewer.)
+By running Firestorm again after the patching, the additional languages become available. (After selecting one, user needs to restart the viewer.)
 
 ===[Català]===
 
@@ -103,4 +103,4 @@ En exécutant Firestorm une nouvelle fois, les langues aditionnelles deviennent 
 Програма просить користувача вказати місцезнаходження інсталяції Firestorm, потім додає/замінює деякі файли та виправляє деякі інші.
 Після виконання програми результат виправлення можна перевірити у згенерованому файлі log.txt.
 
-Після повторного запуску Firestorm стають доступними додаткові мови. (Після вибору однієї користувачеві потрібно перезапустити програму перегляду.)
+Після оновлення виправлення, якщо знову запустити Firestorm, додаткові мови стануть доступними. (Після вибору однієї з них користувачеві потрібно перезапустити програму перегляду.)
