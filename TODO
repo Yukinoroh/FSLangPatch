@@ -2,6 +2,6 @@
    - in Linux (Yukinoroh Kamachi)
    - in Windows (Lazy Sausage)
    - in OSX (looking for someone that can do it!!!)
-- Check if Firestorm in Windows and Mac recognizes file symbolic links; in the affirmative, for language variety fallback translations, use symbolic links.
+- Check if Firestorm in Mac recognizes file symbolic links; in the affirmative, for language variety fallback translations, use symbolic links.
 - Rework .xml.patch format to <add></add> and <remove></remove> tags
 ? Update translated language list in every FS official language
