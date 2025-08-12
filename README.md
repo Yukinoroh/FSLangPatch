@@ -27,7 +27,7 @@ And reactivates the following beta languages:
 
 + tr (Turkish)
 
-We welcome any contribution, new translation, even language variety, and even if they are partial.
+We welcome any contribution, new translation, of even a language variety, and even if it is partial.
 For information on how to add a language, look at "how to add a language" in the [documentation] folder.
 
 ===[Català]===
@@ -56,7 +56,7 @@ I reactiva les idiomes beta següents:
 
 + tr (turc)
 
-Apreciem qualsevol contribució, nova traducció, fins i tot varietat d'idioma, i fins i tot que siguin parcials.
+Apreciem qualsevol contribució, nova traducció, fins i tot d'una varietat d'idioma, i fins i tot que sigui parcial.
 Per a informació sobre com afegir una idioma, llegir el fitxer "how to add a language" (de moment només en anglès) en la carpeta [documentation].
 
 ===[Français canadien]===
@@ -85,7 +85,7 @@ Après l'exécution du programme, il est possible de réviser le résultat de l'
 
 En exécutant Firestorm une nouvelle fois, les langues aditionnelles deviennent accessibles. (Après en avoir choici une, l'utilisateur devra redémarrer le visualisateur.)
 
-Nous apprécions toute contribution, nouvelle traduction, même variété de langue, et même si elles sont partielles.
+Nous apprécions toute contribution, nouvelle traduction, même d'une variété de langue, et même si elle est partielle.
 Pour de l'information sur comment ajouter une langue, lire le fichier "how to add a language" (seulement en anglais pour le moment) dans le dossier [documentation].
 
 ===[Українська мова]===
@@ -114,5 +114,5 @@ Pour de l'information sur comment ajouter une langue, lire le fichier "how to ad
 
 + tr (турецька мова)
 
-Ми вітаємо будь-який внесок, новий переклад, навіть мовну різноманітність, і навіть якщо вони часткові.
+Ми вітаємо будь-який внесок, новий переклад, навіть мовного різноманіття, і навіть якщо він частковий.
 Щоб дізнатися, як додати мову, прочитайте розділ «how to add a language» (поки що лише англійською мовою) в папці [documentation].
