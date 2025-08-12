@@ -5,12 +5,12 @@ Language codes are NOT ALWAYS THE SAME AS COUNTRY CODES. Make sure to use langua
 
 === LANGUAGE VARIETIES ===
 
-Our system supports language varieties.
+Language varieties are supported.
 To specify a variety, add _ followed by country code.
 
 For example, Australian English is "en_AU".
 
-Our system even supports subvarieties, without any limit!
+Even subvarieties are supported, without any limit!
 
 For example, Valencian variety of Catalan would be "ca_ES_VALENCIAN" (ca = Catalan, ES = Spain);
 Black Pirate Canadian French would be "fr_CA_PIRATE_BLACK".
