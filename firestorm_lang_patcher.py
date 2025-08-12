@@ -286,6 +286,8 @@ else:
 						addpath = path2.replace(copysrc_dir,"")	# ex: "/home/something/firestorm/skins/default/xui/fr_CA/widgets" -> "/widgets";
 						copytgt_dir = getpath(copytgt_dir,addpath)
 						for onefile in files2:
+							# In Linux, ask OS to make symbolic links instead of copying files - FS sees the target properly.
+							# The same trick does not work in Windows. TODO - need to check in Mac.
 							if osname == "Linux":
 								trytocopy(path2, onefile, copytgt_dir, False, True, log)
 							else:
