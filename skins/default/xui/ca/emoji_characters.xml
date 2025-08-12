@@ -370,7 +370,7 @@
 			<string>🤣</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cargol:ar-se_de_riure_per_terra:</string>
+				<string>:cargolar-se_de_riure_per_terra:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1644,7 +1644,7 @@
 			<string>💩</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pila:_de_caca:</string>
+				<string>:pila_de_caca:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1748,7 +1748,7 @@
 			<string>😺</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_que_somriu:</string>
+				<string>:gat_que_somriu:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1761,7 +1761,7 @@
 			<string>😸</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_que_somriu_amb_ulls_rients:</string>
+				<string>:gat_que_somriu_amb_ulls_rients:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1774,7 +1774,7 @@
 			<string>😹</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_que_plora_de_riure:</string>
+				<string>:gat_que_plora_de_riure:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1787,7 +1787,7 @@
 			<string>😻</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_somrient_amb_ulls_de_cor:</string>
+				<string>:gat_somrient_amb_ulls_de_cor:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1800,7 +1800,7 @@
 			<string>😼</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_amb_somriure_murri:</string>
+				<string>:gat_amb_somriure_murri:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1813,7 +1813,7 @@
 			<string>😽</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_que_fa_un_petó:</string>
+				<string>:gat_que_fa_un_petó:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1826,7 +1826,7 @@
 			<string>🙀</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_fatigat:</string>
+				<string>:gat_fatigat:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1839,7 +1839,7 @@
 			<string>😿</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_que_plora:</string>
+				<string>:gat_que_plora:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1852,7 +1852,7 @@
 			<string>😾</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gat:_enrabiat:</string>
+				<string>:gat_enrabiat:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1865,7 +1865,7 @@
 			<string>🙈</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:mico:_que_no_veu_res:</string>
+				<string>:mico_que_no_veu_res:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1878,7 +1878,7 @@
 			<string>🙉</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:mico:_que_no_sent_res:</string>
+				<string>:mico_que_no_sent_res:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1891,7 +1891,7 @@
 			<string>🙊</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:mico:_que_no_diu_res:</string>
+				<string>:mico_que_no_diu_res:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1917,7 +1917,7 @@
 			<string>💘</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_amb_fletxa:</string>
+				<string>:cor_amb_fletxa:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1930,7 +1930,7 @@
 			<string>💝</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_amb_cinta:</string>
+				<string>:cor_amb_cinta:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1943,7 +1943,7 @@
 			<string>💖</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_brillant:</string>
+				<string>:cor_brillant:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1956,7 +1956,7 @@
 			<string>💗</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_creixent:</string>
+				<string>:cor_creixent:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1969,7 +1969,7 @@
 			<string>💓</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_bategant:</string>
+				<string>:cor_bategant:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -1982,7 +1982,7 @@
 			<string>💞</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:s_que_giren:</string>
+				<string>:cors_que_giren:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2021,7 +2021,7 @@
 			<string>❣</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_amb_signe_d'exclamació:</string>
+				<string>:cor_amb_signe_d'exclamació:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2034,7 +2034,7 @@
 			<string>💔</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_trencat:</string>
+				<string>:cor_trencat:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2047,7 +2047,7 @@
 			<string>❤</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_vermell:</string>
+				<string>:cor_vermell:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2060,7 +2060,7 @@
 			<string>🩷</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_rosa:</string>
+				<string>:cor_rosa:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2073,7 +2073,7 @@
 			<string>🧡</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_taronja:</string>
+				<string>:cor_taronja:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2086,7 +2086,7 @@
 			<string>💛</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_groc:</string>
+				<string>:cor_groc:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2099,7 +2099,7 @@
 			<string>💚</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_verd:</string>
+				<string>:cor_verd:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2112,7 +2112,7 @@
 			<string>💙</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_blau:</string>
+				<string>:cor_blau:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2125,7 +2125,7 @@
 			<string>🩵</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_blau_clar:</string>
+				<string>:cor_blau_clar:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2138,7 +2138,7 @@
 			<string>💜</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_lila:</string>
+				<string>:cor_lila:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2151,7 +2151,7 @@
 			<string>🤎</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_marró:</string>
+				<string>:cor_marró:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2164,7 +2164,7 @@
 			<string>🖤</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_negre:</string>
+				<string>:cor_negre:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2177,7 +2177,7 @@
 			<string>🩶</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_gris:</string>
+				<string>:cor_gris:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2190,7 +2190,7 @@
 			<string>🤍</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cor:_blanc:</string>
+				<string>:cor_blanc:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2372,7 +2372,7 @@
 			<string>👋</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:sal:utació_amb_la_mà:</string>
+				<string>:salutació_amb_la_mà:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2424,7 +2424,7 @@
 			<string>🖖</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:sal:utació_vulcaniana:</string>
+				<string>:salutació_vulcaniana:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2554,7 +2554,7 @@
 			<string>✌</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:v_de_la_victòria:</string>
+				<string>:V_de_la_victòria:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2853,7 +2853,7 @@
 			<string>🤲</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:lmells_junts_cap_amunt:</string>
+				<string>:palmells_junts_cap_amunt:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -2957,7 +2957,7 @@
 			<string>🦿</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cama:_mecànica:</string>
+				<string>:cama_mecànica:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -3100,7 +3100,7 @@
 			<string>👀</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:ull:s:</string>
+				<string>:ulls:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -3659,7 +3659,7 @@
 			<string>🤱</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:all:etament:</string>
+				<string>:alletament:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -3685,7 +3685,7 @@
 			<string>🎅</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:re_Noel:</string>
+				<string>:pare_Noel:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -4309,7 +4309,7 @@
 			<string>💑</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:rella_amb_cor:</string>
+				<string>:parella_amb_cor:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5245,7 +5245,7 @@
 			<string>🐼</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:nda:</string>
+				<string>:panda:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5336,7 +5336,7 @@
 			<string>🦃</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gall:_dindi:</string>
+				<string>:gall_dindi:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5349,7 +5349,7 @@
 			<string>🐔</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gall:ina:</string>
+				<string>:gallina:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5375,7 +5375,7 @@
 			<string>🐣</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pollet:_sortint_de_l'ou:</string>
+				<string>:pollet_sortint_de_l'ou:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5531,7 +5531,7 @@
 			<string>🦩</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:flam:enc:</string>
+				<string>:flamenc:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5544,7 +5544,7 @@
 			<string>🦚</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:ó:</string>
+				<string>:paó:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5609,7 +5609,7 @@
 			<string>🐊</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:coco:dril:</string>
+				<string>:cocodril:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5713,7 +5713,7 @@
 			<string>🐳</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:balena:_que_treu_un_doll_d'aigua:</string>
+				<string>:balena_que_treu_un_doll_d'aigua:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5752,7 +5752,7 @@
 			<string>🦭</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:foc:a:</string>
+				<string>:foca:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5882,7 +5882,7 @@
 			<string>🦋</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:pallona:</string>
+				<string>:papallona:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -5973,7 +5973,7 @@
 			<string>🪳</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:nderola:</string>
+				<string>:panderola:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -6285,7 +6285,7 @@
 			<string>🌴</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:lmera:</string>
+				<string>:palmera:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -6714,7 +6714,7 @@
 			<string>🥔</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:tata:</string>
+				<string>:patata:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -6727,7 +6727,7 @@
 			<string>🥕</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:stanaga:</string>
+				<string>:pastanaga:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -6740,7 +6740,7 @@
 			<string>🌽</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pa:notxa_de_blat_de_moro:</string>
+				<string>:panotxa_de_blat_de_moro:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -7546,7 +7546,7 @@
 			<string>🥠</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:galeta:_de_la_sort:</string>
+				<string>:galeta_de_la_sort:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -7637,7 +7637,7 @@
 			<string>🍦</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:gelat:_italià:</string>
+				<string>:gelat_italià:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -7806,7 +7806,7 @@
 			<string>🍯</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pot:_de_mel:</string>
+				<string>:pot_de_mel:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -8170,7 +8170,7 @@
 			<string>🌍</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:globus:_terraqüi_girat_cap_a_Àfrica_i_Europa:</string>
+				<string>:globus_terraqüi_girat_cap_a_Àfrica_i_Europa:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -8183,7 +8183,7 @@
 			<string>🌎</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:globus:_terraqüi_girat_cap_a_les_Àmèriques:</string>
+				<string>:globus_terraqüi_girat_cap_a_les_Àmèriques:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -8196,7 +8196,7 @@
 			<string>🌏</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:globus:_terraqüi_girat_cap_a_Àsia_i_Austràlia:</string>
+				<string>:globus_terraqüi_girat_cap_a_Àsia_i_Austràlia:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -8209,7 +8209,7 @@
 			<string>🌐</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:globus:_amb_meridians:</string>
+				<string>:globus_amb_meridians:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -8261,7 +8261,7 @@
 			<string>🏔</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:muntanya:_nevada:</string>
+				<string>:muntanya_nevada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -8482,7 +8482,7 @@
 			<string>🏚</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:casa:_abandonada:</string>
+				<string>:casa_abandonada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -8664,7 +8664,7 @@
 			<string>🏯</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:castell:_japonès:</string>
+				<string>:castell_japonès:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -8872,7 +8872,7 @@
 			<string>🌄</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:sol:_naixent_darrere_les_muntanyes:</string>
+				<string>:sol_naixent_darrere_les_muntanyes:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -9353,7 +9353,7 @@
 			<string>🛻</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pic:k-up:</string>
+				<string>:pick-up:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -9444,7 +9444,7 @@
 			<string>🦽</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cadira:_de_rodes_manual:</string>
+				<string>:cadira_de_rodes_manual:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -9457,7 +9457,7 @@
 			<string>🦼</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cadira:_de_rodes_motoritzada:</string>
+				<string>:cadira_de_rodes_motoritzada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -10094,7 +10094,7 @@
 			<string>🛻</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pic:k-up:</string>
+				<string>:pick-up:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -10185,7 +10185,7 @@
 			<string>🦽</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cadira:_de_rodes_manual:</string>
+				<string>:cadira_de_rodes_manual:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -10198,7 +10198,7 @@
 			<string>🦼</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:cadira:_de_rodes_motoritzada:</string>
+				<string>:cadira_de_rodes_motoritzada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -11381,7 +11381,7 @@
 			<string>🌠</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:estel:_fugaç:</string>
+				<string>:estel_fugaç:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -11940,7 +11940,7 @@
 			<string>🧧</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:sobre:_vermell:</string>
+				<string>:sobre_vermell:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -11979,7 +11979,7 @@
 			<string>🎗</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:llaç:_commemoratiu:</string>
+				<string>:llaç_commemoratiu:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -11992,7 +11992,7 @@
 			<string>🎟</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:tiquet:_d'entrada:</string>
+				<string>:tiquet_d'entrada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -12395,7 +12395,7 @@
 			<string>🎽</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:samarreta:_de_córrer:</string>
+				<string>:samarreta_de_córrer:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -13591,7 +13591,7 @@
 			<string>🎵</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:nota:_musical:</string>
+				<string>:nota_musical:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -13617,7 +13617,7 @@
 			<string>🎙</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:micròfon:_d'estudi:</string>
+				<string>:micròfon_d'estudi:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -13838,7 +13838,7 @@
 			<string>📱</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:telèfon:_mòbil:</string>
+				<string>:telèfon_mòbil:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -14306,7 +14306,7 @@
 			<string>📔</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:llibreta:_amb_coberta:</string>
+				<string>:llibreta_amb_coberta:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -14423,7 +14423,7 @@
 			<string>📃</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:pàgina:_cargolada:</string>
+				<string>:pàgina_cargolada:</string>
 			</array>
 				<key>Categories</key>
 			<array>
@@ -14709,7 +14709,7 @@
 			<string>📤</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:bústia:_de_sortida:</string>
+				<string>:bústia_de_sortida:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -14748,7 +14748,7 @@
 			<string>📫</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:bústia:_tancada_amb_bandera_aixecada:</string>
+				<string>:bústia_tancada_amb_bandera_aixecada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -14761,7 +14761,7 @@
 			<string>📪</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:bústia:_tancada_amb_bandera_baixada:</string>
+				<string>:bústia_tancada_amb_bandera_baixada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -14774,7 +14774,7 @@
 			<string>📬</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:bústia:_oberta_amb_bandera_aixecada:</string>
+				<string>:bústia_oberta_amb_bandera_aixecada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -14787,7 +14787,7 @@
 			<string>📭</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:bústia:_oberta_amb_bandera_baixada:</string>
+				<string>:bústia_oberta_amb_bandera_baixada:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -15177,7 +15177,7 @@
 			<string>🗃</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:arxivador:_de_fitxes:</string>
+				<string>:arxivador_de_fitxes:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -16932,7 +16932,7 @@
 			<string>✝</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:creu:_llatina:</string>
+				<string>:creu_llatina:</string>
 			</array>
 			<key>Categories</key>
 			<array>
@@ -16945,7 +16945,7 @@
 			<string>☦</string>
 			<key>ShortCodes</key>
 			<array>
-				<string>:creu:_ortodoxa:</string>
+				<string>:creu_ortodoxa:</string>
 			</array>
 			<key>Categories</key>
 			<array>
