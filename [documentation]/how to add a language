@@ -19,7 +19,7 @@ And you don't have to provide all translation files. Here's why.
 
 Before being patched, any missing language variety translation file will be fetched from its closest parent to its furthest, with preference on proximity.
 In the above example, missing translation files from "fr_CA_PIRATE_BLACK" would be taken from "fr_CA_PIRATE", if still missing, from "fr_CA", and if still missing, from "fr".
-Also, parents are always treated first. To summarize:
+Also, parents are always treated first. To summarize, things happen in this order:
 
 1) Firestorm "fr" will be patched from our installation (overriding);
 2) Firestorm "fr_CA" will be completed from Firestorm "fr" (not overriding);
