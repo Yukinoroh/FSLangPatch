@@ -37,7 +37,7 @@ process(){
 	addpath=${PWD/$diffsrc_root/}
 	for files in $(ls -Q)
 	do
-		if [ "$files" != "" ] && ( [ ${files//.xml/} != $files ] )
+		if [ "$files" != "" ] && ( [ ${files//.xml/} != $files ] || [ ${files//.html/} != $files ] )
 		then
 			diffsrc=$diffsrc_root''$addpath'/'$files
 			difftgt=$difftgt_root''$addpath'/'$files
@@ -47,7 +47,11 @@ process(){
 			then
 #				echo 'Make diff '$diffsrc $difftgt' > '$difflog
 				diff $diffsrc $difftgt > $difflog
-			# If file does not exist, we copy it whole
+				if ! test -s $difflog	# Deletes empty diffs
+				then
+					rm $difflog
+				fi
+			# If file does not exist, we copy it whole (not diff)
 			else
 #				echo 'Copy '$diffsrc $difflog_dir
 				cp $diffsrc $difflog_dir
