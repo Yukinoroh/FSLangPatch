@@ -57,7 +57,6 @@ process(){
 }
 
 
-
 if [ "$diffsrc_root" == "" ] || [ "$difftgt_root" == "" ] || [ "$difflog_root" == "" ]
 then
 	echo "Wrong parameters. Please use <dif source path> <diff target path> <diff log path>"
