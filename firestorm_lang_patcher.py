@@ -49,15 +49,16 @@ def sortfunc(element):
 	return getattrib(element,sort_key)
 
 # Symlinks one file to another and returns translated message
-def makelink_func(source, target, message):
+def makelink_func(source, target):
+	message = ""
 	if lang == "ca":
-		message = message + "amb enllaç "
+		message = "amb enllaç "
 	elif lang == "fr":
-		message = message + "avec lien "
+		message = "avec lien "
 	elif lang == "uk":
-		message = message + "з посиланням "
+		message = "з посиланням "
 	else:
-		message = message + "with link "
+		message = "with link "
 	if os.path.islink(source):	# Avoids creating symlink to symlink.
 		source = os.readlink(source)
 	os.symlink(source,target)
@@ -81,13 +82,13 @@ def trytocopy(source_dir, onefile, target_dir, overwrite, makelink, log):
 					message = message + "Заміна "
 				else:
 					message = "Replacing "
+				os.remove(target)
 				if (makelink):
-					message = message + makelink_func(source, target, message)
+					message = message + makelink_func(source, target)
 				else:
 					shutil.copy(source,target_dir)
 		#		print(message + target + " ...\n")
 				log.write(message + target + " ...\n")
-				os.remove(target)
 			# else: will do nothing (keep original file)
 		else:
 			message = ""
@@ -104,7 +105,7 @@ def trytocopy(source_dir, onefile, target_dir, overwrite, makelink, log):
 				log.write(message + target_dir + " ...\n")
 				os.mkdir(target_dir)
 			if (makelink):
-				message = message + makelink_func(source, target, message)
+				message = message + makelink_func(source, target)
 			else:
 				shutil.copy(source,target_dir)
 	#		print(message + target + " ...\n")
