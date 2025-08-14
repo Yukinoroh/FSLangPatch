@@ -22,6 +22,7 @@ Remarquez que tous les éléments correspondants à l'endroit de l'arbre seront 
 === METTRE DES ÉLÉMENTS EN ORDRE ALPHABÉTIQUE ===
 
 Ajouter une balise <sort>. Elle n'a pas besoin d'être à la fin, mais puisque le tri est effectué sur tous les éléments après que les changements sont terminés, il est recommandé de le faire.
+ATTENTION: Seulement utiliser cette fonction lorsque tous les éléments frères sont de même nature (ils ont la même balise et leur clé de tri est disponible), sinon vous pourriez obtenir des résultats étranges ou le programme pourrait se terminer anormalement.
 
 <sort key="[key]" prepends="[prepends]"/>
    où:
