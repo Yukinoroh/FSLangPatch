@@ -21,12 +21,12 @@ All matching elements at the tree location will be updated.
 
 === SORTING ELEMENTS IN ALPHABETICAL ORDER ===
 
-Add a <sort> tag after the last element one to add (it will not be added to the final XML):
+Insert a <sort> tag. It does not need to be at the end, but since it is run on all elements after all changes are done, it is adviseable to do so.
 
 <sort key="[key]" prepends="[prepends]"/>
    where:
 [key] is the name of the attribute that contains text to be sorted. For the text between the tags, use "_text".
-[prepends] is a comma-separated list of key values of an element that must not be sorted and be kept at the beginning of the list.
+[prepends] is a comma-separated list of key values of an element that must not be sorted and be kept at the beginning.
 
 Comments that contain a sibling element will also be sorted just like if that element was not commented.
 Comments that do not contain a sibling element will be prepended.
