@@ -21,7 +21,7 @@
 
 === СОРТУВАННЯ ЕЛЕМЕНТІВ В АЛФАВІТНОМУ ПОРЯДКУ ===
 
-Додайте тег <sort> після останнього елемента, який потрібно додати (він не буде додано до остаточного XML):
+Insert a <sort> tag. It does not need to be at the end, but since it is run on all elements after all changes are done, it is adviseable to do so.
 
 <sort key="[key]" prepends="[prepends]"/>
    де:
