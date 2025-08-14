@@ -21,7 +21,7 @@
 
 === СОРТУВАННЯ ЕЛЕМЕНТІВ В АЛФАВІТНОМУ ПОРЯДКУ ===
 
-Insert a <sort> tag. It does not need to be at the end, but since it is run on all elements after all changes are done, it is adviseable to do so.
+Вставте тег <sort>. Він не обов'язково має бути в кінці, але оскільки сортування виконується для всіх елементів після внесення всіх змін, рекомендується це зробити.
 
 <sort key="[key]" prepends="[prepends]"/>
    де:
