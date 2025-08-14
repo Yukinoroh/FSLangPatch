@@ -21,7 +21,7 @@ All matching elements at the tree location will be updated.
 
 === SORTING ELEMENTS IN ALPHABETICAL ORDER ===
 
-Insert a <sort> tag. It does not need to be at the end, but since it is run on all elements after all changes are done, it is adviseable to do so.
+Insert a <sort> tag. It does not need to be at the end, but since sorting is run on all elements after all changes are done, it is adviseable to do so.
 
 <sort key="[key]" prepends="[prepends]"/>
    where:
