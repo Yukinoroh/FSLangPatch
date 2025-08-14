@@ -21,7 +21,7 @@ Tots els elements corresponsals al lloc de l'arbre seràn actualitzats.
 
 === POSAR ELEMENTS EN ORDRE ALFABÈTIC ===
 
-Afegir una etiqueta <sort> després del última element per afegir (no serà afegida al fitxer XML final):
+Afegir una etiqueta <sort>. No ha de ser al final, però ja que la classificació es fa sobre tots els elements després que els canvis siguin acabats, es recomana fer-ho.
 
 <sort key="[key]" prepends="[prepends]"/>
    on:
