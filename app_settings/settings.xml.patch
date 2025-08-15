@@ -5,13 +5,16 @@
     <map>
       <key>Value</key>
       <array>
-        <string>ca</string>
-        <string>fr_CA</string>
-        <string>uk</string>
-        <string>da</string>
-        <string>pt</string>
-        <string>tr</string>
-		<sort key="_text" prepends=""/>
+	    <append>
+	      <string>ca</string>
+	      <string>fr_CA</string>
+	      <string>fr_CA_PIRATE</string>
+	      <string>uk</string>
+	      <string>da</string>
+	      <string>pt</string>
+	      <string>tr</string>
+		</append>
+	    <sort key="_text" prepends=""/>
       </array>
     </map>
   </map>
