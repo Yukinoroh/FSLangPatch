@@ -4,7 +4,6 @@
     <append>
       <combo_box.item label="Català (Catalan)" name="Catalan" value="ca" />
       <combo_box.item label="Français canadien (French)" name="Canadian_French" value="fr_CA" />
-      <combo_box.item label="Français canadien pirate (French)" name="Canadian_French_Pirate" value="fr_CA_PIRATE" />
     </append>
     <sort key="label" prepends="System Default,English"/>
   </combo_box>
