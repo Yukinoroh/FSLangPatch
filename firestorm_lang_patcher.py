@@ -4,7 +4,6 @@ import platform
 import locale
 import plyer
 import plyer.platforms
-import re
 from lxml import etree
 from lxml import objectify
 
