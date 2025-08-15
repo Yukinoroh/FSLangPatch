@@ -30,9 +30,6 @@ sinon vous pourriez obtenir des résultats étranges ou le programme pourrait se
 [key] est le nom de l'attribut qui contient le texte à être mis en ordre alphabétique. Pour le texte entre des balises, utiliser "_text".
 [prepends] est une liste de valeurs "key", séparés par des virgules, d'un élément qui ne doit pas être mis par ordre alphabétique et doit être antéposé dans la liste.
 
-Les commentaires qui contiennent un élément frère seront aussi mis en ordre alphabétique comme si cet élément n'était pas mis en commentaire.
-Les commentaires qui ne contiennent pas d'élément frère seront antéposés.
-
 Par exemple:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -49,3 +46,8 @@ Le correctif ci-desus:
 1) Ajoutera les «combo box item» "Català (Catalan)" et "Français canadien (French)";
 2) Fera une liste des «combo box item» "System Default" et "English", ainsi que les commentaires ne contenant pas de «combo box item»;
 3) Fera une liste en ordre alphabétique de tous les autres «combo box item» selon leur attribut «label», incluant ceux ajoutés et ceux en commentaire.
+
+Avertissements :
+- Les commentaires contenant un seul élément seront traités (tri/antéposition) comme s'ils n'étaient pas commentés. Les autres commentaires seront automatiquement antéposés.
+- Les éléments sans attribut ni clé seront automatiquement antéposés.
+- Les éléments antéposés apparaîtront dans l'ordre du document d'origine.
