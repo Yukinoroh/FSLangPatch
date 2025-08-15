@@ -1,25 +1,128 @@
 .xml.patch files are XML files that tell what to patch in another XML file and how to do it.
 
+Before beginning, please make sure to:
+- Keep one tree per file;
+- Keep all relevant parent elements as is, up to the root element;
+- For clarity and to allow faster processing, do not include any sibling element that does not need to be fixed nor contains nothing to fix.
+
+All tags introduced in this document can contain one or more elements, even part(s) of a tree.
+
+
+=== REMOVING (AN) ELEMENT(S) ===
+
+Inside a tree identical as in the file to patch, place the element(s) between <remove></remove> tags:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Unneeded 1" name="Unneeded 1" value="un1" />
+  </remove>
+ </combo_box>
+</floater>
+
+Note: that ALL matching (sets of) element(s) at the tree location will be removed, as well as inside ALL matching parent elements at the tree location.
+
 
 === ADDING (AN) ELEMENT(S) ===
 
-Keep the whole tree above the element(s) and add the element(s) there, just like if it was a stripped down version of the file to patch.
-You don't even need to keep any sibiling element. By default, the program will add them at the end, but you can change that (see sorting below).
+- BEFORE (AN) EXISTING ELEMENT(S):
+Inside a tree identical as in the file to patch, first remove the existing element(s), and then place between <insert></insert> tags,
+the element(s) to add then followed by the element(s) you just removed:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Four" name="Four" value="4" />
+  </remove>
+  <insert>
+    <combo_box.item label="Three Point Five" name="ThreePFive" value="3p5" />
+    <combo_box.item label="Four" name="Four" value="4" />
+  </insert>
+ </combo_box>
+</floater>
+
+Note: Note that this will add the element(s) before ALL matching elements at the tree location, as well as inside ALL matching parent elements at the tree location.
+Note: Any <insert></insert> tags not directly preceded by <remove></remove> will fail. Instead of using consecutive <insert></insert> tags, group everything in just one.
+Note: If instead you need to sort in alphabetical order, you can just add the element(s) AT THE END and use a sort tag (see SORTING ELEMENTS IN ALPHABETICAL ORDER)
+
+- AFTER (AN) EXISTING ELEMENT(S):
+Inside a tree identical as in the file to patch, first remove the existing element(s), and then place between <insert></insert> tags,
+the element(s) you just removed followed by the element(s) to add:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Four" name="Four" value="4" />
+  </remove>
+  <insert>
+    <combo_box.item label="Four" name="Four" value="4" />
+    <combo_box.item label="Four Point Five" name="FourPFive" value="4p5" />
+  </insert>
+ </combo_box>
+</floater>
+
+Note: This will add the element(s) after ALL matching elements at the tree location, as well as inside ALL matching parent elements at the tree location.
+Note: Any <insert></insert> tags not directly preceded by <remove></remove> will fail. Instead of using consecutive <insert></insert> tags, group everything in just one.
+Note: If instead you need to sort in alphabetical order, you can just add the element(s) AT THE END and use a sort tag (see SORTING ELEMENTS)
+
+- AT THE BEGINNING:
+Inside a tree identical as in the file to patch, place the element(s) between <prepend></prepend> tags:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <prepend>
+    <combo_box.item label="New Head Element" name="NewHead" value="NH" />
+  </prepend>
+ </combo_box>
+</floater>
+
+Note: This will append the element(s) inside ALL matching parent elements at the tree location.
+
+- AT THE END:
+Inside a tree identical as in the file to patch, place the element(s) between <append></append> tags:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <append>
+    <combo_box.item label="New Tail Element" name="NewTAIL" value="NT" />
+  </append>
+ </combo_box>
+</floater>
+
+Note: This will append the element(s) inside ALL matching parent elements at the tree location.
 
 
-=== COMMENTING AN ELEMENT ===
+=== REPLACING (AN) ELEMENT(S) ===
 
-Insert commented version of the element; the program will update it.
-All matching elements at the tree location will be updated.
+Inside a tree identical as in the file to patch, first remove the element(s) (see REMOVING (AN) ELEMENT(S)), then add their new version:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Old Element" name="OldElem" value="OE" />
+  </remove>
+  <insert>
+    <combo_box.item label="New Element" name="NewElem" value="NE" />
+  </insert>
+ </combo_box>
+</floater>
+
+Note: This will replace ALL matching elements at the tree location, as well as inside ALL matching parent elements at the tree location.
+Note: Any <insert></insert> tags not directly preceded by <remove></remove> will fail. Instead of using consecutive <insert></insert> tags, group everything in just one.
 
 
-=== UNCOMMENTING AN ELEMENT ===
+=== COMMENTING/UNCOMMENTING (AN) ELEMENT(S) ===
 
-Insert uncommented version of the element; the program will update it.
-All matching elements at the tree location will be updated.
+Use the REPLACING (AN) ELEMENT(S) method above.
 
 
-=== SORTING ELEMENTS IN ALPHABETICAL ORDER ===
+=== SORTING ELEMENTS ===
 
 Insert a <sort> tag. It does not need to be at the end, but since sorting is run on all elements after all changes are done, it is adviseable to do so.
 WARNING: Only use this feature when all sibling elements are of the same nature (they have the same tag and their sort key is available), otherwise you might end up with weird results or the program migth crash.
