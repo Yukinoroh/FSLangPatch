@@ -4,6 +4,7 @@ import platform
 import locale
 import plyer
 import plyer.platforms
+import re
 from lxml import etree
 from lxml import objectify
 
@@ -28,20 +29,30 @@ def getpath(somepath,add):
 
 # Custom get attribute function to deal with "_text" key
 def getattrib(element,attrib):
-	element = uncomment(element)	# Note: we're nost supposed to get a comment without an element inside here.
+	element = uncomment(element)
 	if attrib == "_text":
 		return element.text
 	else:
-		return element.attrib[attrib]
+		try:
+			return element.attrib[attrib]
+		except: # No attributes or no attributes with this name
+			return ""
 
 # Returns element inside comment, or element itself if not a comment or comment has no element inside
 def uncomment(element):
 	if element.tag is etree.Comment:
 		try:
 			return etree.fromstring(element.text)
-		except:	# No element inside: We just use the comment as is.
-			return element
-	else:
+		except: # Not a single element inside
+			try:
+				# Could be a list of elements. Try to generate it.
+				newtext = element.text.strip(" \n\t")
+				newtext = "<FSLPelemlist>" + newtext + "</FSLPelemlist>"
+				newelem = etree.fromstring(newtext)
+				return newelem
+			except:	# No hope
+				return element
+	else:	# Not a comment
 		return element
 
 # Custom sorting funcion
@@ -112,6 +123,30 @@ def trytocopy(source_dir, onefile, target_dir, overwrite, makelink, log):
 			log.write(message + target + " ...\n")
 		return True
 
+# Compares two XML elements
+def elem_identical(one,two):
+	identical = True
+	if one.tag == two.tag and one.attrib == two.attrib:
+		if len(one) == len(two):
+			if len(one) > 0:	# Both have same non-zero number of children: need to inspect children
+				for index in range(len(one)):
+					indentical = elem_identical(one[index],two[index])
+			# If both have no child, we need to compare text
+			elif one.text != two.text:
+				oneinside = uncomment(one)
+				twoinside = uncomment(two)
+				if one != oneinside and two != twoinside and len(oneinside) == len(twoinside): # Both contain same number of XML elements
+					identical = elem_identical(oneinside,twoinside)					
+				else:	# Either contains no valid XML, or contain a different number of XML elements
+					identical = False
+			# else: Both have no child and text matches; still identical.
+		else:	# Different number of elements
+			identical = False
+	else: # Basic properties not the same
+		identical = False
+
+	return identical
+
 # Recursive XML parsing
 def xmlprocess(source,target):
 	identical = True
@@ -120,56 +155,81 @@ def xmlprocess(source,target):
 	sort = False
 	global sort_key
 	sort_prepends=[]
+	removed_positions = []
 	for child_src in source:
-		if child_src.tag == "sort":		# We will sort all child_tgt
-			sort=True
-			sort_key=child_src.attrib['key']
-			sort_prepends=child_src.attrib['prepends'].split(',')
-		elif child_src.tag == "key":	# Found a key on source side
-			key_src = child_src.text
-		else:	# Anything else than key on source side
-			intarget = 0;
-			for child_tgt in target:
-				if key_src != "":	# Map mode
-					if child_tgt.tag == "key":	# Found a key on target side
-						if child_tgt.text == key_src:	# Same as source key
-							key_tgt = key_src
-						# else, do nothing (keep looking)
-					elif key_tgt == key_src:	 # On an element following equal keys
-						key_tgt = ""
-						intarget = 1
+		if child_src.tag == "remove":
+			index1 = 0
+			while index1 <= (len(target) - len(child_src)):
+				# Builds a list of the same size as what is inside the remove tags
+				templist = []
+				for index2 in range(len(child_src)):
+					templist.append(target[index1+index2])
+				# Compares both lists to see if we have to remove.
+				remove = True
+				for index2 in range(len(templist)):
+					remove &= elem_identical(templist[index2],child_src[index2])
+					if not remove:
+						break
+				# Removes, if needed.
+				if remove:
+					for index2 in range(len(templist)):
+						target.remove(templist[index2])
+						identical = False
+					removed_positions.append(index1)
+					index1 = index1 - 1
+				index1 = index1 + 1
+		else: # Any other tag than "remove" will clear the removed positions (done at the end of this block)
+			if child_src.tag == "append":
+				for append_src in child_src:
+					target.append(append_src)
+					identical = False
+			elif child_src.tag == "prepend":
+				for prepend_src in child_src:
+					target.insert(0,prepend_src)
+					identical = False
+			elif child_src.tag == "insert":
+				for index1 in removed_positions:
+					for index2 in range(len(child_src)):
+						target.insert(index1+index2,child_src[index2])
+						identical = False
+			elif child_src.tag == "sort":
+				sort=True
+				sort_key=child_src.attrib['key']
+				sort_prepends=child_src.attrib['prepends'].split(',')
+			elif child_src.tag == "key":	# Found a key on source side
+				key_src = child_src.text
+			elif len(child_src) > 0: 	# Source element with any other tag has children: we need to find the same element on target side before diving in it.
+				for child_tgt in target:
+					if key_src != "":	# Map mode
+						if child_tgt.tag == "key":	# Found a key on target side
+							if child_tgt.text == key_src:	# Same as source key
+								key_tgt = key_src
+							# else, do nothing (keep looking)
+						elif key_tgt == key_src:	 # On an element following equal keys
+							key_tgt = ""
+							identical = xmlprocess(child_src,child_tgt)
+						# else: do nothing (on an element following unequal keys)
+					# Other modes: Process elements if they seem identical
+					elif child_src.tag == child_tgt.tag and child_src.attrib == child_tgt.attrib:
 						identical = xmlprocess(child_src,child_tgt)
-						#break	# Commented so that it replaces all occurences
-					# else: do nothing (on an element following unequal keys)
-				else:	# Other modes
-					temp_child_src = uncomment(child_src)
-					temp_child_tgt = uncomment(child_tgt)
-					# Needs to inspect elements if they are identical but have different number of elements (ex: top map) or if they contain the same text (ex: string)
-					if temp_child_src.tag == temp_child_tgt.tag and temp_child_src.attrib == temp_child_tgt.attrib and (len(temp_child_src) != len(temp_child_tgt) or temp_child_src.text == temp_child_tgt.text):
-						intarget = 1;
-						identical = xmlprocess(temp_child_src,temp_child_tgt)
-						# If elements are identical inside and only one side is commented, we have to update (either comment or uncomment)
-						if identical and ((temp_child_src != child_src and temp_child_tgt == child_tgt) or (temp_child_src == child_src and temp_child_tgt != child_tgt)):
-							target.replace(child_tgt,child_src)
-							identical = False
-						#break	# Commented so that it replaces all occurences
-					# else: do nothing (on different element)
-			if not intarget:
-				target.append(child_src)
-				identical = False
-			key_src = ""
+					# else: do nothing (on a different element)
+				key_src = ""
+
+			removed_positions = []
 	if sort:
 		# Separates into two lists prepends and items to be sorted. First makes a copies of both, we will remove elements.
 		tosort = []
 		toprepend = []
 		for element in target:
 			temp_element = uncomment(element)
-			# Temporary element may be a comment, an element extracted from a comment, or an element.
-			# Since it can be extracted from a comment, we have to add/remove the original element to the list whatever.
-			# Will prepend comments, elements with no key, and excludes.
-			if temp_element.tag is etree.Comment:
+			# Temporary element can be:
+			# - A single element (extracted from a comment or not)
+			# - An element list (in the form of an FSLPelemlist element)
+			# - A hopeless comment, is to say a comment that we could not convert into either of the two cases above
+			# Hopeless comments, element lists, elements with no attributes, elements with no key, and excludes will be prepended in the order they appear.
+			if temp_element.tag is etree.Comment or temp_element.tag == "FSLPelemlist" or getattrib(temp_element,sort_key) == "":
 				toprepend.append(element)
-			else:	# Not a comment
+			else:	# Single element with a valid key«
 				found = False
 				for sort_prepend in sort_prepends:
 					if getattrib(temp_element,sort_key) == sort_prepend:
