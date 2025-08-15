@@ -30,9 +30,6 @@ sinó es podria obtenir resultats estranys o el programari podria acabar anormal
 [key] és el nom est le nom de l'atribut que conté el text per ser posat en ordre alfabètic. Pel text entre etiquetes, utilitzar "_text".
 [prepends] és una llista de valors "key", separats per comes, d'un element que no ha de ser posat en ordre alfabètic i ha de ser anteposat en la llista.
 
-Els comentaris que contenen un element germà seran també posats en ordre alfabètic com si aquest element no fos posat en comentari.
-Els comentaris que no contenen un element germà seran anteposats.
-
 Per exemple:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -49,3 +46,8 @@ El correctiu a dalt:
 1) Afegira els «combo box item» "Català (Catalan)" i "Français canadien (French)";
 2) Farà una llista dels «combo box item» "System Default" i "English", així com els comentaris que no contenen un «combo box item»;
 3) Farà una llista en ordre alfabètic de tots els altres «combo box item» segons el seu atribut «label», incloient-hi aquells afegits i aquells en comentari.
+
+Avís:
+- Els comentaris que contenen un sol element seran tractats (classificació/anteposició) com si no fossin posats en comentari. Els altres comentaris seran automaticament anteposats.
+- Els elements sense atribut ni clau seran automaticament anteposats.
+- Els elements anteposats es mostraran en l'ordre del document d'origen.
