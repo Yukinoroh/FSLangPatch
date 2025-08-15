@@ -228,7 +228,7 @@ def xmlprocess(source,target):
 			# Hopeless comments, element lists, elements with no attributes, elements with no key, and excludes will be prepended in the order they appear.
 			if temp_element.tag is etree.Comment or temp_element.tag == "FSLPelemlist" or getattrib(temp_element,sort_key) == "":
 				toprepend.append(element)
-			else:	# Single element with a valid key«
+			else:	# Single element with a valid key
 				found = False
 				for sort_prepend in sort_prepends:
 					if getattrib(temp_element,sort_key) == sort_prepend:
