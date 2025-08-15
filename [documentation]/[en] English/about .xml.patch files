@@ -29,9 +29,6 @@ WARNING: Only use this feature when all sibling elements are of the same nature 
 [key] is the name of the attribute that contains text to be sorted. For the text between the tags, use "_text".
 [prepends] is a comma-separated list of key values of an element that must not be sorted and be kept at the beginning.
 
-Comments that contain a sibling element will also be sorted just like if that element was not commented.
-Comments that do not contain a sibling element will be prepended.
-
 For example:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -48,3 +45,8 @@ The above patch will:
 1) Add "Català (Catalan)" and "Français canadien (French)" combo box items;
 2) List "System Default" and "English" combo box items, as well as the comments not containing a combo box item;
 3) Sort and list all other combo box items by their "label" attribute, including those we added and those that are commented.
+
+Caveats:
+- Comments that contain exactly one element will be treated (sort/prepend) just like if they were not commented. The other comments will be automatically prepended.
+- Elements with no attributes or no key will be automatically prepended.
+- Prepends will appear in the order of the original document.
