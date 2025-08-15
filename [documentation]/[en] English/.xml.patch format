@@ -21,7 +21,7 @@ Inside a tree identical as in the file to patch, place the element(s) between <r
  </combo_box>
 </floater>
 
-Note: that ALL matching (sets of) element(s) at the tree location will be removed, as well as inside ALL matching parent elements at the tree location.
+Note: ALL matching (sets of) element(s) at the tree location will be removed, as well as inside ALL matching parent elements at the tree location.
 
 
 === ADDING (AN) ELEMENT(S) ===
