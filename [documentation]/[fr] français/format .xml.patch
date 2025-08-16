@@ -26,7 +26,7 @@ Note: TOUS les éléments ou ensembles d'éléments correspondants dans l'emplac
 
 === AJOUTER UN/DES ÉLÉMENT(S) ===
 
-- AVANT UN/DES ÉLÉMENT(S) EXISTANT(S):
+* AVANT UN/DES ÉLÉMENT(S) EXISTANT(S):
 Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) existants, puis placer entre des balises <insert></instert>,
 l'/les élément(s) à ajouter puis l'/les élément(s) supprimé(s):
 
@@ -47,7 +47,7 @@ Note: Ceci ajoutera l'/les élément(s) avant TOUS les éléments correspondants
 Note: Toute paire de balises <insert></insert> non précédée directement par <remove></remove> ne fera rien. Au lieu d'enchaîner les <insert></insert>, regrouper le tout sous une seule paire.
 Note: Si vous voulez plutôt mettre par ordre alphabétique, simplement ajouter les éléments À LA FIN et utiliser une balise de tri (voir METTRE EN ORDRE ALPHABÉTIQUE).
 
-- APRÈS UN/DES ÉLÉMENT(S) EXISTANT(S):
+* APRÈS UN/DES ÉLÉMENT(S) EXISTANT(S):
 Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) existants, puis placer entre des balises <insert></instert>,
 l'/les élément(s) supprimé(s) puis l'/les élément(s) à ajouter:
 
@@ -68,7 +68,7 @@ Note: Ceci ajoutera l'/les élément(s) après TOUS les éléments correspondant
 Note: Toute paire de balises <insert></insert> non précédée directement par <remove></remove> ne fera rien. Au lieu d'enchaîner les <insert></insert>, regrouper le tout sous une seule paire.
 Note: Si vous voulez plutôt mettre par ordre alphabétique, simplement ajouter les éléments À LA FIN et utiliser une balise de tri (voir METTRE EN ORDRE ALPHABÉTIQUE).
 
-- AU DÉBUT:
+* AU DÉBUT:
 Dans un arbre identique à celui dans le fichier à corriger, placer l'/les élément(s) entre des balises <prepend></prepend>:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -82,7 +82,7 @@ Dans un arbre identique à celui dans le fichier à corriger, placer l'/les él�
 
 Note: Ceci antéposera l'/les élément(s) sous TOUS les éléments parents correspondants dans l'emplacement de l'arbre.
 
-- AT THE END:
+* À LA FIN:
 Dans un arbre identique à celui dans le fichier à corriger, placer l'/les élément(s) entre des balises <append></append>:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -150,7 +150,7 @@ Le correctif ci-desus:
 2) Fera une liste des «combo box item» "System Default" et "English", ainsi que les commentaires ne contenant pas de «combo box item»;
 3) Fera une liste en ordre alphabétique de tous les autres «combo box item» selon leur attribut «label», incluant ceux ajoutés et ceux en commentaire.
 
-Avertissements :
-- Les commentaires contenant un seul élément seront traités (tri/antéposition) comme s'ils n'étaient pas commentés. Les autres commentaires seront automatiquement antéposés.
-- Les éléments sans attribut ni clé seront automatiquement antéposés.
-- Les éléments antéposés apparaîtront dans l'ordre du document d'origine.
+Attention:
+* Les commentaires contenant un seul élément seront traités (tri/antéposition) comme s'ils n'étaient pas commentés. Les autres commentaires seront automatiquement antéposés.
+* Les éléments sans attribut ni clé seront automatiquement antéposés.
+* Les éléments antéposés apparaîtront dans l'ordre du document d'origine.
