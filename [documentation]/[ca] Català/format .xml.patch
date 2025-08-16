@@ -1,22 +1,129 @@
 Els fitxers .xml.patch són fitxers XML que indiquen qué corregir en un altre fitxer XML i com fer-ho.
 
+Abans de començar, assegurar-se de:
+* Guardar només un sol arbre per fitxer;
+* Guardar tots els elements pares tal quals, fins a l'element arrel;
+* Per a la craritat i permetre un tractament més ràpid, no incloure cap element germà que no necessita ser corregit ni conté res per corregir.
 
-=== AFEGIR (UN) ELEMENT(S) ===
-
-Guardar sencer l'arbre per sobre l'/els element(s) i afegir-los-hi, com si es tractés d'una versió simplificada del fitxer per corregir.
-No s'ha de guardar fins i tot els elements germans. Per defecte, els elements seran afegits al final, però és possible canviar això (mirar posar en ordre alfabètic a sota).
-
-
-=== POSAR UN ELEMENT EN COMENTARI ===
-
-Inserir la versió en comentari de l'element; el progamari l'actualitzarà.
-Tots els elements corresponsals al lloc de l'arbre seràn actualitzats.
+Totes les etiquetes introduïtes en aquest document poden contenir un o més elements, fins i tot parts d'un arbre.
 
 
-=== SORTIR UN ELEMENT D'UN COMENTARI ===
+=== SUPRIMIR UN(S) ELEMENT(S) ===
 
-Inserir la versió fora de comentari de l'element; el programari l'actualitzarà.
-Tots els elements corresponsals al lloc de l'arbre seràn actualitzats.
+En un arbre idèntic al del fitxer per corregir, posar l'/els element(s) entre unes etiquetes <remove></remove>:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Unneeded 1" name="Unneeded 1" value="un1" />
+  </remove>
+ </combo_box>
+</floater>
+
+Nota: TOTS els elements o conjunts d'elements corresponsals en la ubicació de l'abre seran suprimits, així com sota de TOTS els elements pares corresponsals.
+
+
+=== AFEGIR UN(S) ELEMENT(S) ===
+
+* ABANS D'UN(S) ELEMENT(S) EXISTANT(S):
+En un arbre idèntic al del fitxer per corregir, primer suprimir l'/els element(s) existants, i posar entre unes etiquetes <insert></instert>,
+l'/els element(s) per afegir seguit(s) per l'/pels element(s) suprimit(s):
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Four" name="Four" value="4" />
+  </remove>
+  <insert>
+    <combo_box.item label="Three Point Five" name="ThreePFive" value="3p5" />
+    <combo_box.item label="Four" name="Four" value="4" />
+  </insert>
+ </combo_box>
+</floater>
+
+Nota: Això afegirà l'/els element(s) abans de TOTS els elements corresponsals en la ubicació de l'abrre, així com sota de TOTS els elements pares corresponsals.
+Nota: Tot parell d'etiquetes <insert></insert> no precidit directament per <remove></remove> no farà res. En comptes d'encadenar els <insert></insert>, agrupar-los tots sota un sol parell.
+Nota: Si en comptes d'això voleu posar en ordre aflabètic, simplement afegir els elemetns AL FINAL i fer servir una etiqueta d'ordenació (veure POSAR EN ORDRE ALFABÈTIC).
+
+
+Si vous voulez plutôt mettre par ordre alphabétique, simplement ajouter les éléments À LA FIN et utiliser une balise de tri (voir METTRE EN ORDRE ALPHABÉTIQUE).
+
+* DESPRÉS D'UN(S) ELEMENT(S) EXISTANT(S):
+En un arbre idèntic al del fitxer per corregir, primer suprimir l'/els element(s) existants, i posar entre unes etiquetes <insert></instert>,
+l'/els element(s) suprimit(s) seguit(s) per l'/pels element(s) per afegir:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Four" name="Four" value="4" />
+  </remove>
+  <insert>
+    <combo_box.item label="Four" name="Four" value="4" />
+    <combo_box.item label="Four Point Five" name="FourPFive" value="4p5" />
+  </insert>
+ </combo_box>
+</floater>
+
+Nota: Això afegirà l'/els element(s) després de TOTS els elements corresponsals en la ubicació de l'abrre, així com sota de TOTS els elements pares corresponsals.
+Nota: Tot parell d'etiquetes <insert></insert> no precidit directament per <remove></remove> no farà res. En comptes d'encadenar els <insert></insert>, agrupar-los tots sota un sol parell.
+Nota: Si en comptes d'això voleu posar en ordre aflabètic, simplement afegir els elemetns AL FINAL i fer servir una etiqueta d'ordenació (veure POSAR EN ORDRE ALFABÈTIC).
+
+* AL PRINCIPI:
+En un arbre idèntic al del fitxer per corregir, posar l'/els element(s) entre unes etiquetes <prepend></prepend>:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <prepend>
+    <combo_box.item label="New Head Element" name="NewHead" value="NH" />
+  </prepend>
+ </combo_box>
+</floater>
+
+Nota: Aixó preposicionarà l'/els element(s) sota de TOS els elements pares corresponsals en la ubicació de l'arbre.
+
+* AL FINAL:
+
+En un arbre idèntic al del fitxer per corregir, posar l'/els element(s) entre unes etiquetes <append></append>:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <append>
+    <combo_box.item label="New Tail Element" name="NewTAIL" value="NT" />
+  </append>
+ </combo_box>
+</floater>
+
+Nota: Aixó posposarà l'/els element(s) sota de TOS els elements pares corresponsals en la ubicació de l'arbre.
+
+
+=== SUBSTITUIR UN(S) ELEMENT(S) ===
+
+En un arbre idèntic al del fitxer per corregir, primer suprimir l'/els element(s) (veure SUPRIMIR UN(S) ELEMENT(S)), i afegir-ne la nova versió::
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Old Element" name="OldElem" value="OE" />
+  </remove>
+  <insert>
+    <combo_box.item label="New Element" name="NewElem" value="NE" />
+  </insert>
+ </combo_box>
+</floater>
+
+Nota: Aixó substituirà TOTS els elements corresponsals en la ubicació de l'arbre, aixó com sota de TOTS els elements pares corresponsals en la ubicació de l'arbre.
+Nota: Tot parell d'etiquetes <insert></insert> no precidit directament per <remove></remove> no farà res. En comptes d'encadenar els <insert></insert>, agrupar-los tots sota un sol parell.
+
+
+=== POSAR EN COMENTARI UN(S) ELEMENT(S) O TREURE'N ===
+
+Fer servir el mètode SUBSTITUIR UN/UN ELEMENT(S) esmentat anteriorment.
 
 
 === POSAR EN ORDRE ALFABÈTIC ===
@@ -27,7 +134,7 @@ sinó es podria obtenir resultats estranys o el programari podria acabar anormal
 
 <sort key="[key]" prepends="[prepends]"/>
    on:
-[key] és el nom est le nom de l'atribut que conté el text per ser posat en ordre alfabètic. Pel text entre etiquetes, utilitzar "_text".
+[key] és el nom est le nom de l'atribut que conté el text per ser posat en ordre alfabètic. Pel text entre unes etiquetes, utilitzar "_text".
 [prepends] és una llista de valors "key", separats per comes, d'un element que no ha de ser posat en ordre alfabètic i ha de ser anteposat en la llista.
 
 Per exemple:
