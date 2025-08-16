@@ -19,7 +19,7 @@ Inserir la versió fora de comentari de l'element; el programari l'actualitzarà
 Tots els elements corresponsals al lloc de l'arbre seràn actualitzats.
 
 
-=== POSAR ELEMENTS EN ORDRE ALFABÈTIC ===
+=== POSAR EN ORDRE ALFABÈTIC ===
 
 Afegir una etiqueta <sort>. No ha de ser al final, però ja que la classificació es fa sobre tots els elements després que els canvis siguin acabats, es recomana fer-ho.
 PRECAUCIÓ: només fer servir aquesta funcionalitat quan tots els elements germans són de mateixa natura (tenen la mateixa etiqueta i la sva clau de classificació és disponible),
