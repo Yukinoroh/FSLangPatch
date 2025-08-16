@@ -1,9 +1,9 @@
 .xml.patch files are XML files that tell what to patch in another XML file and how to do it.
 
 Before beginning, please make sure to:
-- Keep one tree per file;
-- Keep all relevant parent elements as is, up to the root element;
-- For clarity and to allow faster processing, do not include any sibling element that does not need to be fixed nor contains nothing to fix.
+* Keep one tree per file;
+* Keep all relevant parent elements as is, up to the root element;
+* For clarity and to allow faster processing, do not include any sibling element that does not need to be fixed nor contains nothing to fix.
 
 All tags introduced in this document can contain one or more elements, even part(s) of a tree.
 
@@ -26,7 +26,7 @@ Note: ALL matching elements or sets of elements at the tree location will be rem
 
 === ADDING (AN) ELEMENT(S) ===
 
-- BEFORE (AN) EXISTING ELEMENT(S):
+* BEFORE (AN) EXISTING ELEMENT(S):
 Inside a tree identical as in the file to patch, first remove the existing element(s), and then place between <insert></insert> tags,
 the element(s) to add then followed by the element(s) you just removed:
 
@@ -47,7 +47,7 @@ Note: This will add the element(s) before ALL matching elements at the tree loca
 Note: Any <insert></insert> tags not directly preceded by <remove></remove> will not do anything. Instead of using consecutive <insert></insert> tags, group everything in just one.
 Note: If instead you need to sort in alphabetical order, you can just add the element(s) AT THE END and use a sort tag (see SORTING ELEMENTS IN ALPHABETICAL ORDER)
 
-- AFTER (AN) EXISTING ELEMENT(S):
+* AFTER (AN) EXISTING ELEMENT(S):
 Inside a tree identical as in the file to patch, first remove the existing element(s), and then place between <insert></insert> tags,
 the element(s) you just removed followed by the element(s) to add:
 
@@ -68,7 +68,7 @@ Note: This will add the element(s) after ALL matching elements at the tree locat
 Note: Any <insert></insert> tags not directly preceded by <remove></remove> will not do anything. Instead of using consecutive <insert></insert> tags, group everything in just one.
 Note: If instead you need to sort in alphabetical order, you can just add the element(s) AT THE END and use a sort tag (see SORTING ELEMENTS)
 
-- AT THE BEGINNING:
+* AT THE BEGINNING:
 Inside a tree identical as in the file to patch, place the element(s) between <prepend></prepend> tags:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -150,6 +150,6 @@ The above patch will:
 3) Sort and list all other combo box items by their "label" attribute, including those we added and those that are commented.
 
 Caveats:
-- Comments that contain exactly one element will be treated (sort/prepend) just like if they were not commented. The other comments will be automatically prepended.
-- Elements with no attributes or no key will be automatically prepended.
-- Prepends will appear in the order of the original document.
+* Comments that contain exactly one element will be treated (sort/prepend) just like if they were not commented. The other comments will be automatically prepended.
+* Elements with no attributes or no key will be automatically prepended.
+* Prepends will appear in the order of the original document.
