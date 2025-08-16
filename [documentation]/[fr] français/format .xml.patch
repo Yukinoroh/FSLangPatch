@@ -28,7 +28,7 @@ Note: TOUS les éléments ou ensembles d'éléments correspondants dans l'emplac
 
 * AVANT UN/DES ÉLÉMENT(S) EXISTANT(S):
 Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) existants, puis placer entre des balises <insert></instert>,
-l'/les élément(s) à ajouter puis l'/les élément(s) supprimé(s):
+l'/les élément(s) à ajouter suivi(s) de l'/des élément(s) supprimé(s):
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <floater>
@@ -49,7 +49,7 @@ Note: Si vous voulez plutôt mettre par ordre alphabétique, simplement ajouter 
 
 * APRÈS UN/DES ÉLÉMENT(S) EXISTANT(S):
 Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) existants, puis placer entre des balises <insert></instert>,
-l'/les élément(s) supprimé(s) puis l'/les élément(s) à ajouter:
+l'/les élément(s) supprimé(s) suivi(s) de l'/les élément(s) à ajouter:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <floater>
