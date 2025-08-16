@@ -99,7 +99,7 @@ Note: Ceci postposera l'/les élément(s) sous TOUS les éléments parents corre
 
 === REMPLACER UN/DES ÉLÉMENT(S) ===
 
-Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) à supprimer (voir SUPPRIMER UN/DES ÉLÉMENT(S)), puis ajouter leur nouvelle version:
+Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) (voir SUPPRIMER UN/DES ÉLÉMENT(S)), puis en ajouter la nouvelle version:
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <floater>
