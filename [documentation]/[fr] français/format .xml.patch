@@ -117,7 +117,7 @@ Note: Ceci remplacera TOUS les éléments correspondants dans l'emplacement de l
 Note: Toute paire de balises <insert></insert> non précédée directement par <remove></remove> ne fera rien. Au lieu d'enchaîner les <insert></insert>, regrouper le tout sous une seule paire.
 
 
-=== METTRE EN COMMENTAIRE UN/DES ÉLÉMENT(S) OU EN ENLEVER D'UN COMMENTAIRE ===
+=== METTRE EN COMMENTAIRE UN/DES ÉLÉMENT(S) OU EN ENLEVER ===
 
 Utiliser la méthode REMPLACER UN/DES ÉLÉMENT(S) ci-dessus.
 
