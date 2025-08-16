@@ -114,7 +114,7 @@ Inside a tree identical as in the file to patch, first remove the element(s) (se
 </floater>
 
 Note: This will replace ALL matching elements at the tree location, as well as inside ALL matching parent elements at the tree location.
-Note: Any <insert></insert> tags not directly preceded by <remove></remove> will fail. Instead of using consecutive <insert></insert> tags, group everything in just one.
+Note: Any <insert></insert> tags not directly preceded by <remove></remove> will not do anything. Instead of using consecutive <insert></insert> tags, group everything in just one.
 
 
 === COMMENTING/UNCOMMENTING (AN) ELEMENT(S) ===
