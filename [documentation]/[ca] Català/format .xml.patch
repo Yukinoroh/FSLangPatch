@@ -155,6 +155,6 @@ El correctiu a dalt:
 3) Farà una llista en ordre alfabètic de tots els altres «combo box item» segons el seu atribut «label», incloient-hi aquells afegits i aquells en comentari.
 
 Avís:
-- Els comentaris que contenen un sol element seran tractats (classificació/anteposició) com si no fossin posats en comentari. Els altres comentaris seran automaticament anteposats.
-- Els elements sense atribut ni clau seran automaticament anteposats.
-- Els elements anteposats es mostraran en l'ordre del document d'origen.
+* Els comentaris que contenen un sol element seran tractats (classificació/anteposició) com si no fossin posats en comentari. Els altres comentaris seran automaticament anteposats.
+* Els elements sense atribut ni clau seran automaticament anteposats.
+* Els elements anteposats es mostraran en l'ordre del document d'origen.
