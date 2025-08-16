@@ -1,25 +1,128 @@
 Les fichiers .xml.patch sont des fichiers XML qui indiquent quoi corriger dans un autre fichier XML et comment le faire.
 
+Avant de commencer, s'assurer de:
+- Ne garder qu'un seul arbre par fichier;
+- Garder tous les éléments parents tel quels, jusqu'à l'élément racine;
+- Pour clarité et permettre un traitement plus rapide, n'inclure aucun élément frère qui n'a pas besoin d'être corrigé ni ne contien rien à corriger.
+
+Toutes les balises intoduites dans ce document peuvent contenir un ou plusieurs éléments, même des parties d'un arbre.
+
+
+=== SUPPRIMER UN/DES ÉLÉMENT(S) ===
+
+Dans un arbre identique à celui dans le fichier à corriger, placer l'/les élément(s) entre des balises <remove></remove>:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Unneeded 1" name="Unneeded 1" value="un1" />
+  </remove>
+ </combo_box>
+</floater>
+
+Note: TOUS les éléments ou ensembles d'éléments correspondants dans l'emplacement de l'arbre seront supprimés, ainsi que sous TOUS les éléments parents correspondants.
+
 
 === AJOUTER UN/DES ÉLÉMENT(S) ===
 
-Garder entier l'arbre situé au-dessous de l'/des élément(s) et les y ajouter, comme s'il s'agissait d'une version simplifiée du fichier à corriger.
-Il n'est même pas nécessaire de garder les éléments frères. Par défaut, les éléments seront ajoutés à la fin, mais il est possible de changer cela (voir mettre en ordre alphabétique ci-bas).
+- AVANT UN/DES ÉLÉMENT(S) EXISTANT(S):
+Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) existants, puis placer entre des balises <insert></instert>,
+l'/les élément(s) à ajouter puis l'/les élément(s) supprimé(s):
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Four" name="Four" value="4" />
+  </remove>
+  <insert>
+    <combo_box.item label="Three Point Five" name="ThreePFive" value="3p5" />
+    <combo_box.item label="Four" name="Four" value="4" />
+  </insert>
+ </combo_box>
+</floater>
+
+Note: Ceci ajoutera l'/les élément(s) avant TOUS les éléments correspondants dans l'emplacement de l'arbre, ainsi que sous TOUS les éléments parents correspondants.
+Note: Toute paire de balises <insert></insert> non précédée directement par <remove></remove> ne fera rien. Au lieu d'enchaîner les <insert></insert>, regrouper le tout sous une seule paire.
+Note: Si vous voulez plutôt mettre par ordre alphabétique, simplement ajouter les éléments À LA FIN et utiliser une balise de tri (voir METTRE EN ORDRE ALPHABÉTIQUE).
+
+- APRÈS UN/DES ÉLÉMENT(S) EXISTANT(S):
+Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) existants, puis placer entre des balises <insert></instert>,
+l'/les élément(s) supprimé(s) puis l'/les élément(s) à ajouter:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Four" name="Four" value="4" />
+  </remove>
+  <insert>
+    <combo_box.item label="Four" name="Four" value="4" />
+    <combo_box.item label="Four Point Five" name="FourPFive" value="4p5" />
+  </insert>
+ </combo_box>
+</floater>
+
+Note: Ceci ajoutera l'/les élément(s) après TOUS les éléments correspondants dans l'emplacement de l'arbre, ainsi que sous TOUS les éléments parents correspondants.
+Note: Toute paire de balises <insert></insert> non précédée directement par <remove></remove> ne fera rien. Au lieu d'enchaîner les <insert></insert>, regrouper le tout sous une seule paire.
+Note: Si vous voulez plutôt mettre par ordre alphabétique, simplement ajouter les éléments À LA FIN et utiliser une balise de tri (voir METTRE EN ORDRE ALPHABÉTIQUE).
+
+- AU DÉBUT:
+Dans un arbre identique à celui dans le fichier à corriger, placer l'/les élément(s) entre des balises <prepend></prepend>:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <prepend>
+    <combo_box.item label="New Head Element" name="NewHead" value="NH" />
+  </prepend>
+ </combo_box>
+</floater>
+
+Note: Ceci antéposera l'/les élément(s) sous TOUS les éléments parents correspondants dans l'emplacement de l'arbre.
+
+- AT THE END:
+Dans un arbre identique à celui dans le fichier à corriger, placer l'/les élément(s) entre des balises <append></append>:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <append>
+    <combo_box.item label="New Tail Element" name="NewTAIL" value="NT" />
+  </append>
+ </combo_box>
+</floater>
+
+Note: Ceci postposera l'/les élément(s) sous TOUS les éléments parents correspondants dans l'emplacement de l'arbre.
 
 
-=== METRE UN ÉLÉMENT EN COMMENTAIRE ===
+=== REMPLACER UN/DES ÉLÉMENT(S) ===
 
-Insérer la version en commentaires de l'élément; le programme le mettra à jour.
-Remarquez que tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
+Dans un arbre identique à celui dans le fichier à corriger, supprimer tout d'abord l'/les élément(s) à supprimer (voir SUPPRIMER UN/DES ÉLÉMENT(S)), puis ajouter leur nouvelle version:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater>
+ <combo_box allow_text_entry="true" follows="left|top" height="23" left_pad="10" max_chars="135" mouse_opaque="true" name="translate_language_combo" top_delta="-5" width="190">
+  <remove>
+    <combo_box.item label="Old Element" name="OldElem" value="OE" />
+  </remove>
+  <insert>
+    <combo_box.item label="New Element" name="NewElem" value="NE" />
+  </insert>
+ </combo_box>
+</floater>
+
+Note: Ceci remplacera TOUS les éléments correspondants dans l'emplacement de l'arbre, ainsi que sous TOUS les éléments parents correspondants dans l'emplacement de l'arbre.
+Note: Toute paire de balises <insert></insert> non précédée directement par <remove></remove> ne fera rien. Au lieu d'enchaîner les <insert></insert>, regrouper le tout sous une seule paire.
 
 
-=== SORTIR UN ÉLÉMENT D'UN COMMENTAIRE ===
+=== METTRE EN COMMENTAIRE UN/DES ÉLÉMENT(S) OU EN ENLEVER D'UN COMMENTAIRE ===
 
-Insérer la version hors commentaire de l'élément; le programme le mettra à jour.
-Remarquez que tous les éléments correspondants à l'endroit de l'arbre seront mis à jour.
+Utiliser la méthode REMPLACER UN/DES ÉLÉMENT(S) ci-dessus.
 
 
-=== METTRE DES ÉLÉMENTS EN ORDRE ALPHABÉTIQUE ===
+=== METTRE EN ORDRE ALPHABÉTIQUE ===
 
 Ajouter une balise <sort>. Elle n'a pas besoin d'être à la fin, mais puisque le tri est effectué sur tous les éléments après que les changements sont terminés, il est recommandé de le faire.
 ATTENTION: Seulement utiliser cette fonctionnalité lorsque tous les éléments frères sont de même nature (ils ont la même balise et leur clé de tri est disponible),
