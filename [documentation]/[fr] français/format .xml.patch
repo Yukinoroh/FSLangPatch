@@ -1,9 +1,9 @@
 Les fichiers .xml.patch sont des fichiers XML qui indiquent quoi corriger dans un autre fichier XML et comment le faire.
 
 Avant de commencer, s'assurer de:
-- Ne garder qu'un seul arbre par fichier;
-- Garder tous les éléments parents tel quels, jusqu'à l'élément racine;
-- Pour clarité et permettre un traitement plus rapide, n'inclure aucun élément frère qui n'a pas besoin d'être corrigé ni ne contien rien à corriger.
+* Ne garder qu'un seul arbre par fichier;
+* Garder tous les éléments parents tel quels, jusqu'à l'élément racine;
+* Pour clarité et permettre un traitement plus rapide, n'inclure aucun élément frère qui n'a pas besoin d'être corrigé ni ne contien rien à corriger.
 
 Toutes les balises intoduites dans ce document peuvent contenir un ou plusieurs éléments, même des parties d'un arbre.
 
