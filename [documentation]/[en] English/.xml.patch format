@@ -21,7 +21,7 @@ Inside a tree identical as in the file to patch, place the element(s) between <r
  </combo_box>
 </floater>
 
-Note: ALL matching elements or element sets at the tree location will be removed.
+Note: ALL matching (sets of) element(s) at the tree location will be removed, as well as inside ALL matching parent elements at the tree location.
 
 
 === ADDING (AN) ELEMENT(S) ===
@@ -43,7 +43,7 @@ the element(s) to add then followed by the element(s) you just removed:
  </combo_box>
 </floater>
 
-Note: Note that this will add the element(s) before ALL matching elements at the tree location.
+Note: This will add the element(s) before ALL matching elements at the tree location, as well as inside ALL matching parent elements at the tree location.
 Note: Any <insert></insert> tags not directly preceded by <remove></remove> will fail. Instead of using consecutive <insert></insert> tags, group everything in just one.
 Note: If instead you need to sort in alphabetical order, you can just add the element(s) AT THE END and use a sort tag (see SORTING ELEMENTS IN ALPHABETICAL ORDER)
 
@@ -64,7 +64,7 @@ the element(s) you just removed followed by the element(s) to add:
  </combo_box>
 </floater>
 
-Note: This will add the element(s) after ALL matching elements at the tree location.
+Note: This will add the element(s) after ALL matching elements at the tree location, as well as inside ALL matching parent elements at the tree location.
 Note: Any <insert></insert> tags not directly preceded by <remove></remove> will fail. Instead of using consecutive <insert></insert> tags, group everything in just one.
 Note: If instead you need to sort in alphabetical order, you can just add the element(s) AT THE END and use a sort tag (see SORTING ELEMENTS)
 
@@ -113,7 +113,7 @@ Inside a tree identical as in the file to patch, first remove the element(s) (se
  </combo_box>
 </floater>
 
-Note: This will replace ALL matching elements at the tree location.
+Note: This will replace ALL matching elements at the tree location, as well as inside ALL matching parent elements at the tree location.
 Note: Any <insert></insert> tags not directly preceded by <remove></remove> will fail. Instead of using consecutive <insert></insert> tags, group everything in just one.
 
 
