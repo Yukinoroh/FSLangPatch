@@ -8,6 +8,8 @@ addpath=""
 IFS=\"
 
 process(){
+	mode=$1
+
 	# Runs all folders
 	local folders
 	local addpath
@@ -21,7 +23,7 @@ process(){
 			then
 				mkdir $difflog_root''$addpath'/'$folders
 			fi
-			process
+			process $mode
 			cd ..
 			# If folder is empty, we can delete it.
 			if [ -z "$( ls -A $difflog_root''$addpath'/'$folders )" ]
@@ -45,16 +47,24 @@ process(){
 			difflog=$difflog_dir'/'$files'.diff'
 			if test -f $difftgt
 			then
-#				echo 'Make diff '$diffsrc $difftgt' > '$difflog
-				diff $diffsrc $difftgt > $difflog
-				if ! test -s $difflog	# Deletes empty diffs
+				if [ "$mode" == "report deleted files and diff" ]	# Target exists and we are asked to diff
 				then
-					rm $difflog
+	#				echo 'Make diff '$diffsrc $difftgt' > '$difflog
+					diff $diffsrc $difftgt > $difflog
+					if ! test -s $difflog	# Deletes empty diffs
+					then
+						rm $difflog
+					fi
 				fi
-			# If file does not exist, we copy it whole (not diff)
-			else
-#				echo 'Copy '$diffsrc $difflog_dir
-				cp $diffsrc $difflog_dir
+				# else: target exists but we don't diff, so do nothing.
+			else	# Target exists
+				if [ "$mode" == "report deleted files and diff" ]
+				then
+					touch $difflog_dir'/'MAYBE_REMOVE_''$files
+				else
+	#				echo 'Copy '$diffsrc $difflog_dir
+					cp $diffsrc $difflog_dir
+				fi
 			fi
 		fi
 	done
@@ -70,6 +80,16 @@ else
 	cd $difflog_root
 	difflog_root=$PWD
 
+	# First we run source, which is the older version, and compare with target, the newer.
+	# If files were deleted, we will touch a dummy file to notify.
 	cd $diffsrc_root
-	process
+	process "report deleted files and diff"
+
+	# Switch source and target around to check for added files in target (No need to diff because it has been done already).
+	# If files were added, we will copy them.
+	difftemp_root=$diffsrc_root
+	diffsrc_root=$difftgt_root
+	difftgt_root=$difftemp_root
+	cd $diffsrc_root
+	process "prepare added files"
 fi
