@@ -1410,9 +1410,22 @@ Vols suprimir aquests articles de debò?
 		Almenys un dels objectes que has seleccionat està bloquejat.
 
 Estàs segur que vols suprimir aquests objectes?
+		
+			<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteNoCopy">
+		Com a mínim un dels objectes que has seleccionat no es pot copiar.
+
+Estàs segur que vols suprimir aquests objectes?
 		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
-		<notification name="ConfirmObjectDeleteLockNoCopy">
+	<notification name="ConfirmObjectDeleteNoOwn">
+		Com a mínim un dels elements que has seleccionat no et pertany.
+
+Estàs segur que vols suprimir aquests elements?
+		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteLockNoCopy">
 		Almenys un dels objectes està bloquejat.
 Almenys un dels objectes no es pot copiar.
 
@@ -1677,7 +1690,7 @@ La textura del terreny [TEXTURE_NUM] és massa voluminosa ([TEXTURE_SIZE_X] X [T
 Reemplaça la textura [TEXTURE_NUM] amb una imatge de 24 bits, [MAX_SIZE]x[MAX_SIZE] o més petita, i després torna a fer clic a 'Aplica'.
 	</notification>
 	<notification name="RawUploadStarted">
-		La càrrega ha començat. Trigarà un o dos minuts,
+		La càrrega ha començat. Trigará un o dos minuts,
 depenent de la teva velocitat de connexió.
 	</notification>
 	<notification name="ConfirmBakeTerrain">
@@ -1910,12 +1923,12 @@ Totes les invitacions de grup seran ara rebutjades automàticament. No se't noti
 	</notification>
 	<notification name="GroupLimitInfo">
 		Els residents amb una subscripció bàsica es poden inscriure a un màxim de [MAX_BASIC] grups.
-Les subscripcions Premium permeten fins a [MAX_PREMIUM]. [https://secondlife.com/my/account/membership.php? Més informació o actualitza]
+Les subscripcions premium permeten fins a [MAX_PREMIUM]. [https://secondlife.com/my/account/membership.php? Més informació o actualitza]
 		<usetemplate name="okbutton" yestext="Tanca"/>
 	</notification>
 	<notification name="GroupLimitInfoPlus">
 		Els residents amb una subscripció bàsica es poden inscriure a un màxim de [MAX_BASIC] grups.
-Les subscripcions Premium permeten fins a [MAX_PREMIUM]. Les subscripcions Premium Plus permeten
+Les subscripcions premium permeten fins a [MAX_PREMIUM]. Les subscripcions Premium Plus permeten
 fins a [MAX_PREMIUM_PLUS]. [https://secondlife.com/my/account/membership.php? Més informació o actualitza]
 		<usetemplate name="okbutton" yestext="Tanca"/>
 	</notification>
@@ -2078,7 +2091,7 @@ Vols continuar?
 	<notification label="Modifica l'accés a un domini Linden" name="ChangeLindenAccess">
 		Estàs a punt de modificar la llista d'accés a un domini pertanyent als Linden (continent, zona per a adolescents, orientació, etc.).
 
-Aquesta acció és delicada i només s'ha de fer per invocar el "hack" que autoritza que objectes/L$ siguin transferits dins/fora de la graella.
+Aquesta acció és delicada i només s'ha de fer per invocar el hack que autoritza que objectes/L$ siguin transferits dins/fora de la graella.
 Aquesta acció modificarà milers de regions i serà difícil de pair per al servidor.
 		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
@@ -4175,7 +4188,7 @@ Vols continuar?
 Si continues trobant problemes, si us plau, consulta el [SUPPORT_SITE].
 	</global>
 	<global name="UnsupportedGLRequirements">
-		Sembla que no tens el maquinari necessari per utilitzar [APP_NAME]. [APP_NAME] requereix una targeta gràfica OpenGL amb suport per a multitexturització. Si tens una targeta així, assegura't que també tinguis els controladors més recents per a la targeta, així com els Service Packs i els pedaços per al teu sistema operatiu.
+		Sembla que no tens el maquinari necessari per utilitzar [APP_NAME]. [APP_NAME] requereix una targeta gràfica OpenGL amb suport per a multitexturització. Si tens una targeta així, assegura't que també tinguis els controladors més recents per a la targeta, així com els service packs i els pedaços per al teu sistema operatiu.
 
 Si encara tens problemes, si us plau, consulta la pàgina [SUPPORT_SITE].
 	</global>
@@ -5544,7 +5557,7 @@ Vols continuar?
 		<usetemplate ignoretext="Consells per a la sonda de reflexió" name="okcancelignore" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
 	<notification name="AutoAdjustHDRSky">
-		Estàs modificant un cel no HDR que ha estat convertit automàticament a HDR. Per suprimir l'HDR i el mapatge de tons, ajusta l'Ambient de la sonda de reflexió a zero.
+		Estàs modificant un cel no HDR que ha estat convertit automàticament a HDR. Per suprimir l'HDR i el mapeig de tons, ajusta l'Ambient de la sonda de reflexió a zero.
 		<usetemplate ignoretext="Advertència sobre l'ajust del cel HDR" name="okignore" yestext="D'acord"/>
 	</notification>
 	<notification name="GLTFOpenSelection">

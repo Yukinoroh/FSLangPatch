@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<panel name="panel_login">
+	<layout_stack name="ui_stack">
+		<layout_panel name="ui_container">
+			<combo_box label="Nom d'usuari" name="username_combo" tool_tip="El nom d'usuari que vau triar en registrar-vos, per exemple, 'joanpi12' o 'Brillantor Estel·lar'"/>
+			<line_editor label="Contrasenya" name="password_edit"/>
+			<combo_box label="Inicia a" name="start_location_combo">
+				<combo_box.item label="La meva última ubicació" name="MyLastLocation"/>
+				<combo_box.item label="La meva llar" name="MyHome"/>
+			</combo_box>
+			<button label="Inicia la sessió" name="connect_btn"/>
+			<text name="forgot_password_text">
+				Has oblidat la contrasenya?
+			</text>
+			<combo_box label="Tria la graella" name="server_combo"/>
+			<text name="sign_up_text">
+				Registra't
+			</text>
+			<check_box label="Recorda'm" name="remember_name" tool_tip="Podeu fer que s'oblidi un usuari des d'Avatar > Preferències > Avançat > Noms d'usuari recordats."/>
+			<check_box label="Recorda la contrasenya" name="remember_password"/>
+		</layout_panel>
+	</layout_stack>
+</panel>

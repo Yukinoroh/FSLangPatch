@@ -2,46 +2,46 @@
 <panel label="Textura" name="Texture">
 	<panel.string name="paste_error_face_selection_mismatch">Quan es copien diverses cares, l'objecte de destinació ha de tenir el mateix nombre de cares seleccionades.</panel.string>
 	<panel.string name="paste_error_object_face_count_mismatch">Quan es copien totes les cares d'un objecte, l'objecte de destinació ha de tenir el mateix nombre de cares.</panel.string>
-	<panel.string name="paste_error_inventory_not_found">Una o més textures no s'han trobat a l'inventari.</panel.string>
+	<panel.string name="paste_error_inventory_not_found">No s'ha trobat una o més textures a l'inventari.</panel.string>
 	<panel.string name="paste_options">Copia els paràmetres de les textures al porta-retalls</panel.string>
 	<text name="color label">
 		Color
 	</text>
-	<color_swatch label="" name="colorswatch" tool_tip="Fes clic per obrir el selector de colors"/>
+	<color_swatch label="" name="colorswatch" tool_tip="Clica per obrir el selector de colors"/>
 	<text name="color trans">
 		Transparència
 	</text>
 	<text name="glow label">
-		Lluentor
+		Brillantor
 	</text>
 	<check_box label="Lluminós" name="checkbox fullbright"/>
 	<check_box label="Oculta l'aigua" name="checkbox_hide_water"/>
-	<button name="copy_face_btn" tool_tip="Copia els paràmetres de la textura al porta-retalls"/>
-	<button name="paste_face_btn" tool_tip="Enganxa els paràmetres de la textura des del porta-retalls"/>
+	<button name="copy_face_btn" tool_tip="Copia els paràmetres de les textures al porta-retalls"/>
+	<button name="paste_face_btn" tool_tip="Enganxa els paràmetres de les textures des del porta-retalls"/>
 	<combo_box name="combobox matmedia">
 		<combo_box.item label="Materials" name="Materials"/>
-		<combo_box.item label="Mèdia" name="Media"/>
+		<combo_box.item label="Multimèdia" name="Media"/>
 	</combo_box>
 	<radio_group name="radio_material_type">
 		<radio_item label="Textura (difusa)" name="Texture (diffuse)" value="0"/>
 		<radio_item label="Relleu (normal)" name="Bumpiness (normal)" value="1"/>
-		<radio_item label="Brillantor (especular)" name="Shininess (specular)" value="2"/>
+		<radio_item label="Lluïssor (especular)" name="Shininess (specular)" value="2"/>
 	</radio_group>
 	<check_box initial_value="false" label="Bloqueja la repetició" name="checkbox_sync_settings" tool_tip="L'ajustament dels mapes es fa simultàniament"/>
-	<texture_picker label="Textura" name="texture control" tool_tip="Fes clic per seleccionar una imatge."/>
+	<texture_picker label="Textura" name="texture control" tool_tip="Clica per seleccionar una imatge."/>
 	<text name="label alphamode">
 		Mode alfa
 	</text>
 	<combo_box name="combobox alphamode">
 		<combo_box.item label="Cap" name="None"/>
 		<combo_box.item label="Mescla alfa" name="Alpha blending"/>
-		<combo_box.item label="Emmascarament alfa" name="Alpha masking"/>
+		<combo_box.item label="Màscara alfa" name="Alpha masking"/>
 		<combo_box.item label="Màscara emissiva" name="Emissive mask"/>
 	</combo_box>
 	<text name="label maskcutoff">
 		Tall de la màscara
 	</text>
-	<texture_picker label="Textura" name="bumpytexture control" tool_tip="Fes clic per seleccionar una imatge."/>
+	<texture_picker label="Textura" name="bumpytexture control" tool_tip="Clica per seleccionar una imatge."/>
 	<text name="label bumpiness">
 		Relleu
 	</text>
@@ -49,25 +49,25 @@
 		<combo_box.item label="Cap" name="None"/>
 		<combo_box.item label="Lluminositat" name="Brightness"/>
 		<combo_box.item label="Foscor" name="Darkness"/>
-		<combo_box.item label="gra de fusta" name="woodgrain"/>
-		<combo_box.item label="escorça" name="bark"/>
-		<combo_box.item label="maons" name="bricks"/>
-		<combo_box.item label="tauler d'escacs" name="checker"/>
-		<combo_box.item label="formigó" name="concrete"/>
-		<combo_box.item label="rajola crostosa" name="crustytile"/>
-		<combo_box.item label="pedra tallada" name="cutstone"/>
-		<combo_box.item label="discos" name="discs"/>
-		<combo_box.item label="grava" name="gravel"/>
-		<combo_box.item label="placa de Petri" name="petridish"/>
-		<combo_box.item label="revestiment" name="siding"/>
-		<combo_box.item label="rajola de pedra" name="stonetile"/>
-		<combo_box.item label="estuc" name="stucco"/>
-		<combo_box.item label="ventoses" name="suction"/>
-		<combo_box.item label="teixit" name="weave"/>
+		<combo_box.item label="Beta de fusta" name="woodgrain"/>
+		<combo_box.item label="Escorça" name="bark"/>
+		<combo_box.item label="Maons" name="bricks"/>
+		<combo_box.item label="Escaquer" name="checker"/>
+		<combo_box.item label="Formigó" name="concrete"/>
+		<combo_box.item label="Rajola crostosa" name="crustytile"/>
+		<combo_box.item label="Pedra picada" name="cutstone"/>
+		<combo_box.item label="Discos" name="discs"/>
+		<combo_box.item label="Grava" name="gravel"/>
+		<combo_box.item label="Placa de Petri" name="petridish"/>
+		<combo_box.item label="Revestiment" name="siding"/>
+		<combo_box.item label="Rajola de pedra" name="stonetile"/>
+		<combo_box.item label="Estuc" name="stucco"/>
+		<combo_box.item label="Ventoses" name="suction"/>
+		<combo_box.item label="Teixit" name="weave"/>
 	</combo_box>
-	<texture_picker label="Textura" name="shinytexture control" tool_tip="Fes clic per seleccionar una imatge."/>
+	<texture_picker label="Textura" name="shinytexture control" tool_tip="Clica per seleccionar una imatge."/>
 	<text name="label shininess">
-		Brillantor
+		Lluïssor
 	</text>
 	<combo_box name="combobox shininess">
 		<combo_box.item label="Cap" name="None"/>
@@ -76,7 +76,7 @@
 		<combo_box.item label="Alta" name="High"/>
 	</combo_box>
 	<text name="label glossiness">
-		Lluïssor
+		Poli
 	</text>
 	<text name="label environment">
 		Entorn
@@ -84,39 +84,39 @@
 	<text name="label shinycolor">
 		Color
 	</text>
-	<color_swatch label="" name="shinycolorswatch" tool_tip="Fes clic per obrir el selector de colors"/>
+	<color_swatch label="" name="shinycolorswatch" tool_tip="Clica per obrir el selector de colors"/>
 	<text name="media_info">
-		L'URL del mèdia triat, si escau, es col·loca aquí.
+		La URL del multimèdia escollit, si escau, es col·loca aquí.
 	</text>
-	<button label="Tria..." name="add_media" tool_tip="Afegeix un mèdia"/>
-	<button label="Suprimeix" name="delete_media" tool_tip="Suprimeix aquesta textura de mèdia"/>
-	<button label="Alinea" label_selected="Alinea el mèdia" name="button align" tool_tip="Ajusta la textura del mèdia (la càrrega ha d'acabar primer)"/>
+	<button label="Tria..." name="add_media" tool_tip="Afegeix un multimèdia"/>
+	<button label="Suprimeix" name="delete_media" tool_tip="Suprimeix aquesta textura multimèdia"/>
+	<button label="Alinea" label_selected="Alinea el multimèdia" name="button align" tool_tip="Ajusta la textura multimèdia (la càrrega ha d'acabar primer)"/>
 	<text name="tex gen">
 		Aplicació
 	</text>
 	<combo_box name="combobox texgen">
 		<combo_box.item label="Per defecte" name="Default"/>
-		<combo_box.item label="Planar" name="Planar"/>
+		<combo_box.item label="Pla" name="Planar"/>
 	</combo_box>
 	<spinner label="Escala horitzontal" name="TexScaleU"/>
 	<spinner label="Escala vertical" name="TexScaleV"/>
 	<spinner label="Repeticions per metre" name="rptctrl"/>
 	<spinner label="Graus de rotació" name="TexRot"/>
-	<spinner label="Desplaçament horitzontal" name="TexOffsetU"/>
-	<spinner label="Desplaçament vertical" name="TexOffsetV"/>
+	<spinner label="Decalatge horitzontal" name="TexOffsetU"/>
+	<spinner label="Decalatge vertical" name="TexOffsetV"/>
 	<spinner label="Escala horitzontal" name="bumpyScaleU"/>
 	<spinner label="Escala vertical" name="bumpyScaleV"/>
 	<spinner label="Graus de rotació" name="bumpyRot"/>
-	<spinner label="Desplaçament horitzontal" name="bumpyOffsetU"/>
-	<spinner label="Desplaçament vertical" name="bumpyOffsetV"/>
+	<spinner label="Decalatge horitzontal" name="bumpyOffsetU"/>
+	<spinner label="Decalatge vertical" name="bumpyOffsetV"/>
 	<spinner label="Escala horitzontal" name="shinyScaleU"/>
 	<spinner label="Escala vertical" name="shinyScaleV"/>
 	<spinner label="Graus de rotació" name="shinyRot"/>
-	<spinner label="Desplaçament horitzontal" name="shinyOffsetU"/>
-	<spinner label="Desplaçament vertical" name="shinyOffsetV"/>
-	<check_box initial_value="false" label="Alinea les cares Planar" name="checkbox planar align" tool_tip="Alinea les textures a totes les cares seleccionades amb l'última cara seleccionada. Es requereix l'aplicació de la textura Planar."/>
+	<spinner label="Decalatge horitzontal" name="shinyOffsetU"/>
+	<spinner label="Decalatge vertical" name="shinyOffsetV"/>
+	<check_box initial_value="false" label="Alinea les cares del pla" name="checkbox planar align" tool_tip="Alinea les textures a totes les cares seleccionades amb la darrera cara seleccionada. Cal aplicar la textura de pla."/>
 	<button label="Alinea" label_selected="Alinea les capes de textura actuals" name="button align textures" tool_tip="Alinea les capes de textura actuals"/>
-	<button label="Troba totes" name="btn_select_same_diff" tool_tip="Selecciona totes les cares que tinguin la mateixa textura difusa que aquesta"/>
-	<button label="Troba totes" name="btn_select_same_norm" tool_tip="Selecciona totes les cares que tinguin la mateixa normal que aquesta"/>
-	<button label="Troba totes" name="btn_select_same_spec" tool_tip="Selecciona totes les cares que tinguin la mateixa especular que aquesta"/>
+	<button label="Troba-les totes" name="btn_select_same_diff" tool_tip="Selecciona totes les cares que tinguin la mateixa textura difusa que aquesta"/>
+	<button label="Troba-les totes" name="btn_select_same_norm" tool_tip="Selecciona totes les cares que tinguin la mateixa normal que aquesta"/>
+	<button label="Troba-les totes" name="btn_select_same_spec" tool_tip="Selecciona totes les cares que tinguin la mateixa especular que aquesta"/>
 </panel>

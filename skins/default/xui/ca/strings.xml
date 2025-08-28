@@ -4840,10 +4840,6 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 	<string name="inventory_folder_offered-im">
 		S'ha ofert la carpeta de l'inventari [ITEM_NAME]
 	</string>
-	<string name="bot_warning">
-		Esteu xatejant amb un bot, [NAME]. No compartiu informació personal.
-Més informació a https://second.life/scripted-agents.
-	</string>
 	<string name="inventory_item_offered_rlv">
 		Article d'inventari ofert a [NAME]
 	</string>

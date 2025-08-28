@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="toolbox floater" width="296" short_title="Eines de construcció">
+	<floater.string name="grid_screen_text">Pantalla</floater.string>
+	<floater.string name="grid_local_text">Local</floater.string>
+	<floater.string name="grid_world_text">Món</floater.string>
+	<floater.string name="grid_reference_text">Referència</floater.string>
+	<floater.string name="grid_attachment_text">Adjunt</floater.string>
+	<floater.string name="status_rotate">Arrossega les bandes de color per girar l'objecte</floater.string>
+	<floater.string name="status_scale">Fes clic i arrossega per estirar el costat seleccionat</floater.string>
+	<floater.string name="status_move">Arrossega per moure. Maj+arrossega per copiar</floater.string>
+	<floater.string name="status_modifyland">Fes clic i mantén premut per modificar el terreny</floater.string>
+	<floater.string name="status_camera">Fes clic i arrossega per moure la càmera</floater.string>
+	<floater.string name="status_grab">Arrossega per moure, Ctrl per aixecar, Ctrl+Maj per girar</floater.string>
+	<floater.string name="status_place">Fes clic per construir</floater.string>
+	<floater.string name="status_selectland">Fes clic i arrossega per seleccionar el terreny</floater.string>
+	<floater.string name="status_selectcount">Seleccionats: [OBJ_COUNT]             Impacte (LI): [LAND_IMPACT]</floater.string>
+	<floater.string name="status_remaining_capacity">Capacitat restant [LAND_CAPACITY]          .</floater.string>
+	<floater.string name="link_number">Número d'enllaç:</floater.string>
+	<floater.string name="selected_faces">Cara:</floater.string>
+	<button name="button focus" tool_tip="Enfoca"/>
+	<button name="button move" tool_tip="Mou"/>
+	<button name="button edit" tool_tip="Edita"/>
+	<button name="button create" tool_tip="Crea"/>
+	<button name="button land" tool_tip="Terreny"/>
+	<text name="text status">Arrossega per moure. Maj+arrossega per copiar</text>
+	<radio_group name="focus_radio_group">
+		<radio_item label="Zoom" name="radio zoom"/>
+		<radio_item label="Òrbita (Ctrl)" name="radio orbit"/>
+		<radio_item label="Panoràmica (Ctrl+Maj)" name="radio pan"/>
+	</radio_group>
+	<radio_group name="move_radio_group">
+		<radio_item label="Mou" name="radio move"/>
+		<radio_item label="Aixeca (Ctrl)" name="radio lift"/>
+		<radio_item label="Gira (Ctrl+Maj)" name="radio spin"/>
+	</radio_group>
+	<radio_group name="edit_radio_group">
+		<radio_item label="Mou" name="radio position"/>
+		<radio_item label="Gira (Ctrl)" name="radio rotate"/>
+		<radio_item label="Estira (Ctrl+Maj)" name="radio stretch"/>
+		<radio_item label="Selecciona la cara" name="radio select face"/>
+		<radio_item label="Alinea" name="radio align"/>
+	</radio_group>
+	<check_box label="Edita Enllaços" name="checkbox edit linked parts"/>
+	<button name="prev_part_btn" tool_tip="Selecciona la part enllaçada anterior"/>
+	<button name="next_part_btn" tool_tip="Selecciona la següent part enllaçada"/>
+	<button label="Enllaça" name="link_btn"/>
+	<button label="Desenllaça" name="unlink_btn"/>
+	<combo_box name="combobox grid mode" tool_tip="Selecciona el tipus de regla de la graella per col·locar l'objecte">
+		<combo_box.item label="Món" name="World"/>
+		<combo_box.item label="Local" name="Local"/>
+		<combo_box.item label="Punt de referència" name="Reference"/>
+	</combo_box>
+	<check_box label="Estira les dues bandes" name="checkbox uniform"/>
+	<check_box label="Estira les textures" name="checkbox stretch textures"/>
+	<check_box label="Ajusta" name="checkbox snap to grid"/>
+	<check_box label="Edició des de l'arrel" name="checkbox actual root"/>
+	<check_box label="Mostra la selecció" name="checkbox show highlight"/>
+	<check_box label="Reflexió" name="checkbox select probes"/>
+	<button name="Options..." tool_tip="Mostra la configuració de la graella"/>
+	<button name="ToolCube" tool_tip="Caixa"/>
+	<button name="ToolPrism" tool_tip="Prisma"/>
+	<button name="ToolPyramid" tool_tip="Piràmide"/>
+	<button name="ToolTetrahedron" tool_tip="Tetraedre"/>
+	<button name="ToolCylinder" tool_tip="Cilindre"/>
+	<button name="ToolHemiCylinder" tool_tip="Semicilindre"/>
+	<button name="ToolCone" tool_tip="Con"/>
+	<button name="ToolHemiCone" tool_tip="Semicon"/>
+	<button name="ToolSphere" tool_tip="Pilota"/>
+	<button name="ToolHemiSphere" tool_tip="Semisfera"/>
+	<button name="ToolTorus" tool_tip="Tor"/>
+	<button name="ToolTube" tool_tip="Tub"/>
+	<button name="ToolRing" tool_tip="Anell"/>
+	<button name="ToolTree" tool_tip="Arbre"/>
+	<button name="ToolGrass" tool_tip="Herba"/>
+	<check_box label="Conserva Selecció" name="checkbox sticky"/>
+	<check_box label="Copia la selecció" name="checkbox copy selection"/>
+	<check_box label="Copia el centre" name="checkbox copy centers"/>
+	<check_box label="Copia les rotacions" name="checkbox copy rotates"/>
+	<radio_group name="land_radio_group">
+		<radio_item label="Selecciona el terreny" name="radio select land"/>
+		<radio_item label="Anivella" name="radio flatten"/>
+		<radio_item label="Eleva" name="radio raise"/>
+		<radio_item label="Abaixa" name="radio lower"/>
+		<radio_item label="Suavitza" name="radio smooth"/>
+		<radio_item label="Aspera" name="radio noise"/>
+		<radio_item label="Reverteix" name="radio revert"/>
+	</radio_group>
+	<text name="Bulldozer:">Bulldozer:</text>
+	<text name="Dozer Size:">Mida</text>
+	<text name="Strength:">Força</text>
+	<button label="Aplica" label_selected="Aplica" name="button apply to selection" tool_tip="Modifica el terreny seleccionat"/>
+	<text name="link_num_obj_count" tool_tip="El número d'unió pot ser inexacte." width="160">[DESC] [NUM]</text>
+	<text name="selection_empty" width="120">No s'ha seleccionat res.</text>
+	<text name="remaining_capacity">[CAPACITY_STRING] [secondlife:///app/openfloater/object_weights Més detalls]</text>
+	<tab_container name="Object Info Tabs">
+	   <panel label="General" name="General">
+			<panel.string name="text deed continued">Transfereix</panel.string>
+			<panel.string name="text deed">Transfereix</panel.string>
+			<panel.string name="text modify info 1">Pots modificar aquest objecte</panel.string>
+			<panel.string name="text modify info 2">Pots modificar aquests objectes</panel.string>
+			<panel.string name="text modify info 3">No pots modificar aquest objecte</panel.string>
+			<panel.string name="text modify info 4">No pots modificar aquests objectes</panel.string>
+			<panel.string name="text modify info 5">No pots modificar aquest objecte a través de la frontera de la regió</panel.string>
+			<panel.string name="text modify info 6">No pots modificar aquests objectes a través de la frontera de la regió</panel.string>
+				<panel.string name="text modify warning">Has de seleccionar tot l'objecte per establir el permís</panel.string>
+	<panel.string name="Cost Default">Preu: L$</panel.string>
+	<panel.string name="Cost Total">Total: L$</panel.string>
+	<panel.string name="Cost Per Unit">Preu: L$</panel.string>
+	<panel.string name="Cost Mixed">Preu mixt</panel.string>
+	<panel.string name="Sale Mixed">Venda mixta</panel.string>
+	<panel.string name="multiple selection">Selecció múltiple</panel.string>
+	<text name="Name:">Nom:</text>
+	<line_editor name="Object Name" tool_tip="El nom està limitat a 63 caràcters. Els noms més llargs es tallen. Els noms només poden contenir caràcters imprimibles del joc de caràcters ASCII-7 (no estès), excepte la barra vertical '|'."/>
+	<text name="Description:">Descripció:</text>
+	<line_editor name="Object Description" tool_tip="Quan la gent té activat 'Mostrar consells flotants sobre tots els objectes' a la configuració del visor, veurà la descripció de qualsevol objecte sota el punter del ratolí. La descripció està limitada a 127 bytes, qualsevol cadena més llarga es truncarà."/>
+	<text name="Creator:">Creador:</text>
+	<text name="Owner:">Propietari:</text>
+	<text name="Last Owner:">Últim Amo:</text>
+	<text name="Group:">Grup:</text>
+	<button name="button set group" tool_tip="Tria un grup per enviar-li els permisos d'accés a l'objecte"/>
+	<check_box label="Comparteix" name="checkbox share with group" tool_tip="Permet a tots els membres del grup seleccionat obtenir els permisos que has establert per a aquest objecte. Per activar les restriccions de rol, cal fer una cessió."/>
+	<button label="Transfereix" label_selected="Transfereix" name="button deed" tool_tip="Com a resultat de la transferència, l'objecte es lliura al grup, i els seus permisos correspondran als del propietari següent. L'objecte transferit al grup pot ser cedit per un oficial del grup."/>
+	<text name="label click action">En fer clic:</text>
+	<combo_box name="clickaction" tool_tip="L'acció de clic et permet interactuar amb un objecte amb un sol clic del botó esquerre del ratolí. Cada acció té un cursor especial que indica què fa. Algunes accions tenen requisits per funcionar. Per exemple, 'Tocar' i 'Pagar' requereixen scripts.">
+		<combo_box.item label="Tocar (per defecte)" name="Touch/grab(default)"/>
+		<combo_box.item label="Seure a l'objecte" name="Sitonobject"/>
+		<combo_box.item label="Comprar l'objecte" name="Buyobject"/>
+		<combo_box.item label="Pagar a l'objecte" name="Payobject"/>
+		<combo_box.item label="Obrir" name="Open"/>
+		<combo_box.item label="Zoom" name="Zoom"/>
+		<combo_box.item label="Ignora l'objecte" name="Ignoreobject" value="Ignora" />
+		<combo_box.item label="Cap" name="None"/>
+	</combo_box>
+	<check_box label="A la venda:" name="checkbox for sale" tool_tip="Permet a la gent comprar aquest objecte, el seu contingut o una còpia al món pel preu especificat."/>
+	<combo_box name="sale type" tool_tip="Selecciona si el comprador rebrà una còpia de l'article, una còpia del contingut o l'article mateix.">
+		<combo_box.item name="Copy" label="Còpia"/>
+		<combo_box.item name="Contents" label="Contingut"/>
+		<combo_box.item name="Original" label="Original"/>
+	</combo_box>
+	<spinner name="Edit Cost" label="Preu: L$" tool_tip="Cost de l'objecte."/>
+	<button label="Aplica" name="button mark for sale" tool_tip="Marca/actualitza l'objecte(s) per a la venda."/>
+	<button label="CopiaClaus" name="btnCopyKeys" tool_tip="Copia al porta-retalls la clau arrel dels objectes seleccionats. Majúscules copia totes les claus dels objectes seleccionats."/>
+	<check_box label="Mostra a la cerca" name="search_check" tool_tip="Mostra l'objecte als resultats de la cerca"/>
+	<panel name="perms_build">
+		<text name="perm_modify">Pots modificar aquest objecte</text>
+		<text name="Anyone can:">Qualsevol pot:</text>
+		<check_box label="Moure" name="checkbox allow everyone move" width="95" tool_tip="Qualsevol pot moure l'objecte."/>
+		<check_box label="Copiar" name="checkbox allow everyone copy" width="95" tool_tip="Qualsevol pot agafar una còpia de l'objecte. L'objecte i tot el seu contingut han de tenir permisos de còpia i transferència."/>
+		<check_box label="Exportar" name="checkbox allow export" tool_tip="Qualsevol pot exportar aquest objecte."/>
+		<text name="Next owner can:">El propietari següent pot:</text>
+		<check_box label="Modificar" name="checkbox next owner can modify" width="95" tool_tip="El propietari següent pot editar propietats com el nom o l'escala d'aquest objecte."/>
+		<check_box label="Copiar" name="checkbox next owner can copy" width="95" tool_tip="El propietari següent pot fer un nombre il·limitat de còpies d'aquest objecte. Les còpies contenen informació sobre el creador i mai no poden ser més permissives que l'element que es copia."/>
+		<check_box label="Transferir" name="checkbox next owner can transfer" tool_tip="El propietari següent pot regalar o revendre l'objecte"/>
+	</panel>
+	<panel border="false" follows="left|top" layout="topleft" mouse_opaque="false"  name="pathfinding_attrs_panel" left="0" top_pad="0" height="25" width="290">
+      <text type="string" follows="left|top" name="pathfinding_attributes_label" top_pad="4" width="150"  left="10">
+		  Atributs de cerca de camins</text>
+      <text type="string" follows="left|top" text_color="EmphasisColor" name="pathfinding_attributes_value" width="130" word_wrap="false" left_pad="0"> </text>
+    </panel>
+   </panel>
+	   <panel label="Objecte" name="Object">
+		<panel.string name="paste_position">Enganxa la posició\n[VALUE]</panel.string>
+		<panel.string name="paste_size">Enganxa la mida\n[VALUE]</panel.string>
+		<panel.string name="paste_rotation">Enganxa la rotació\n[VALUE]</panel.string>
+		<check_box label="Bloquejat" name="checkbox locked" tool_tip="Evita el moviment o la supressió de l'objecte. Aquesta funció sol ser útil durant la construcció per evitar canvis no desitjats."/>
+		<check_box label="Físic" name="Physical Checkbox Ctrl" tool_tip="Permet empènyer l'objecte. També, l'objecte serà afectat per la gravetat."/>
+		<check_box label="Temporal" name="Temporary Checkbox Ctrl" tool_tip="Provoca la supressió automàtica de l'objecte un minut després de la seva creació."/>
+		<check_box label="Fantasma" name="Phantom Checkbox Ctrl" tool_tip="Evita la col·lisió de l'objecte amb altres objectes o avatars."/>
+		<text name="label position">Posició (metres)</text>
+		<button name="copy_pos_btn" label="C" tool_tip="Copia la posició"/>
+			<button name="paste_pos_btn" label="E" tool_tip="Enganxa la posició"/>
+	<button name="paste_pos_clip_btn" label="e" tool_tip="Enganxa la posició des del porta-retalls"/>
+	<text name="label size">
+		Mida (metres)
+	</text>
+	<button name="copy_size_btn" label="C" tool_tip="Copia la mida"/>
+	<button name="paste_size_btn" label="E" tool_tip="Enganxa la mida"/>
+	<button name="paste_size_clip_btn" label="e" tool_tip="Enganxa la mida des del porta-retalls"/>
+	<text name="label rotation">
+		Rotació (graus)
+	</text>
+	<button name="copy_rot_btn" label="C" tool_tip="Copia la rotació"/>
+	<button name="paste_rot_btn" label="E" tool_tip="Enganxa la rotació"/>
+	<button name="paste_rot_clip_btn" label="e" tool_tip="Enganxa la rotació des del porta-retalls"/>
+	<button label="Copia" name="copy_params_btn" tool_tip="Copia els paràmetres al porta-retalls"/>
+	<button label="Enganxa" name="paste_params_btn" tool_tip="Enganxa els paràmetres des del porta-retalls"/>
+	<combo_box name="comboBaseType">
+		<combo_box.item label="Caixa" name="Box"/>
+		<combo_box.item label="Cilindre" name="Cylinder"/>
+		<combo_box.item label="Prisma" name="Prism"/>
+		<combo_box.item label="Pilota" name="Sphere"/>
+		<combo_box.item label="Tor" name="Torus"/>
+		<combo_box.item label="Tub" name="Tube"/>
+		<combo_box.item label="Anell" name="Ring"/>
+		<combo_box.item label="Esculpit" name="Sculpted"/>
+		<combo_item name="PathLineProfileHalfCircle" label="Línia-&gt;Semicercle"/>
+		<combo_item name="PathCircleProfileHalfCircle" label="Cercle-&gt;Semicercle"/>
+		<combo_item name="PathCircle2ProfileSquare" label="Cercle2-&gt;Quadrat"/>
+		<combo_item name="PathCircle2ProfileTriangle" label="Cercle2-&gt;Triangle"/>
+		<combo_item name="PathCircle2ProfileCircle" label="Cercle2-&gt;Cercle"/>
+		<combo_item name="PathCircle2ProfileHalfCircle" label="Cercle2-&gt;Semicercle"/>
+		<combo_item name="PathTestProfileSquare" label="Prova-&gt;Quadrat"/>
+		<combo_item name="PathTestProfileTriangle" label="Prova-&gt;Triangle"/>
+		<combo_item name="PathTestProfileCircle" label="Pas-&gt;Línia"/>
+		<combo_item name="PathTestProfileHalfCircle" label="Prova-&gt;Semicercle"/>
+		<combo_item name="Path33Profile0" label="33-&gt;Cercle"/>
+		<combo_item name="Path33Profile1" label="33-&gt;Quadrat"/>
+		<combo_item name="Path33Profile2" label="33-&gt;Triangle"/>
+		<combo_item name="Path33Profile5" label="33-&gt;Semicercle"/>
+	</combo_box>
+	<text name="text cut">
+		Tall (inici/fi)
+	</text>
+	<spinner label="I" name="cut begin"/>
+	<spinner label="F" name="cut end"/>
+	<text name="text hollow">
+		Buit
+	</text>
+	<text name="text skew">
+		Espiral
+	</text>
+	<text name="Hollow Shape">
+		Forma del buit
+	</text>
+	<combo_box name="hole">
+		<combo_box.item label="Per defecte" name="Default"/>
+		<combo_box.item label="Cercle" name="Circle"/>
+		<combo_box.item label="Quadrat" name="Square"/>
+		<combo_box.item label="Triangle" name="Triangle"/>
+	</combo_box>
+	<text name="text twist">
+		Torsió
+	</text>
+	<spinner label="I" name="Twist Begin"/>
+	<spinner label="F" name="Twist End"/>
+	<text name="scale_taper">
+		Con
+	</text>
+	<text name="scale_hole">
+		Mida del forat
+	</text>
+	<spinner label="X" name="Taper Scale X"/>
+	<spinner label="Y" name="Taper Scale Y"/>
+	<text name="text topshear">
+		Cisellament superior
+	</text>
+	<spinner label="X" name="Shear X"/>
+	<spinner label="Y" name="Shear Y"/>
+	<text name="advanced_cut">
+		Tall des del centre
+	</text>
+	<text name="advanced_dimple">
+		Clot (inici/fi)
+	</text>
+	<text name="advanced_slice">
+		Secció (inici/fi)
+	</text>
+	<spinner label="I" name="Path Limit Begin"/>
+	<spinner label="F" name="Path Limit End"/>
+	<text name="text taper2" tool_tip="No funciona amb tots els tipus de prims">
+		Con cònic
+	</text>
+	<spinner label="X" name="Taper X"/>
+	<spinner label="Y" name="Taper Y"/>
+	<text name="text radius delta">
+		Radi
+	</text>
+	<text name="text revolutions">
+		Revolucions
+	</text>
+	<texture_picker label="Textura esculpida" name="sculpt texture control" tool_tip="Fes clic per seleccionar una imatge"/>
+	<check_box label="Mirall" name="sculpt mirror control" tool_tip="Reflecteix especularment per l'eix X"/>
+	<check_box label="Invertit" name="sculpt invert control" tool_tip="Inverteix les normals del prim, girant-lo de dins a fora"/>
+	<text name="label sculpt type">
+		Tipus d'unió
+	</text>
+	<combo_box name="sculpt type control" tool_tip="L'opció 'Cap' ha estat eliminada perquè és idèntica a 'Pla'.">
+		<combo_box.item label="Pilota" name="Sphere"/>
+		<combo_box.item label="Tor" name="Torus"/>
+		<combo_box.item label="Pla / Cap" name="Plane"/>
+		<combo_box.item label="Cilindre" name="Cylinder"/>
+	</combo_box>
+	<text name="mesh_info_label" width="120">
+		Informació de la Malla:
+	</text>
+	<text name="lod_label" value="LOD:"/>
+	<text name="lod_num_tris" value="Triangles"/>
+	<text name="mesh_lod_label">
+Alt:
+Mitjà:
+Baix:
+Més baix:
+	</text>
+	<combo_box name="LOD_show_combo">
+		<combo_box.item label="Per defecte" name="Default"/>
+		<combo_box.item label="Alt" name="High"/>
+		<combo_box.item label="Mitjà" name="Medium"/>
+		<combo_box.item label="Baix" name="Low"/>
+		<combo_box.item label="Més baix/Impostor" name="Lowest/Imposter"/>
+	</combo_box>
+	<text name="ObjectLODbehaviourLabel" value="Comportament del LOD de l'objecte:"/>
+	<text name="object_radius" value="Radi:"/>
+	<text name="LOD_swap_factors_label" value="Factors de LOD"/>
+	<text name="LOD_swap_defaults_label" value="PerDefecte" tool_tip="El valor del factor de LOD per defecte que aplicaran la majoria de visors."/>
+	<text name="LOD_swap_usr_label" tool_tip="La teva configuració actual, extreta de RenderVolumeLODFactor" value="Teu"/>
+	<text name="LOD_swap_label" value="Intercanvi de LOD" width="65"/>
+	<string name="ll_lod_tooltip_msg">Visor de Second Life de Linden Lab per defecte ([FACTOR])</string>
+	<text name="LOD_swap_ll_default" value="LL" width="25"/>
+	<string name="fs_lod_tooltip_msg">[APPNAME] per defecte ([FACTOR])</string>
+	<text name="LOD_swap_usr_current" tool_tip="El teu coeficient de LOD actual"/>
+	<text name="LOD_swap_LOD_Change_label">
+Alt ↔ Mit.
+st. ↔ Lín.
+Bx. ↔ M.Bx.
+	</text>
+	<text name="LODSwapTableDscriptionsText" tool_tip="Recomanació. Els creadors haurien d'assegurar un bon comportament del LOD per a la configuració per defecte de tots els visors.">
+		Aquesta taula mostra els límits de canvi de LOD en metres des de la càmera.
+	</text>
+	</panel>
+	   <panel label="Qualitats" name="Features">
+		<panel.string name="None">Cap</panel.string>
+		<panel.string name="Prim">Primitiu</panel.string>
+		<panel.string name="Convex Hull">Coberta convexa</panel.string>
+		<text name="select_single">Selecciona només un primitiu per canviar les qualitats de l'objecte.</text>
+		<text name="edit_object" color="EmphasisColor">.       Canvia les qualitats de l'objecte . </text>
+		<check_box label="Malla animada" name="Animated Mesh Checkbox Ctrl" tool_tip="Permet animar objectes de malla 'rigged' de forma independent."/>
+		<check_box label="Flexibilitat" name="Flexible1D Checkbox Ctrl" tool_tip="L'objecte es pot doblegar per l'eix Z (configuració del costat del client)."/>
+		<spinner label="Suavitat" name="FlexNumSections"/>
+		<spinner label="Gravetat" name="FlexGravity"/>
+		<spinner label="Fricció" name="FlexFriction"/>
+		<spinner label="Vent" name="FlexWind"/>
+		<spinner label="Tensió" name="FlexTension"/>
+		<spinner label="Força X" name="FlexForceX"/>
+		<spinner label="Força Y" name="FlexForceY"/>
+		<spinner label="Força Z" name="FlexForceZ"/>
+		<check_box label="Llum" name="Light Checkbox Ctrl" tool_tip="L'objecte emetrà llum."/>
+		<color_swatch name="colorswatch" tool_tip="Fes clic per obrir el selector de colors"/>
+		<texture_picker name="light texture control" tool_tip="Fes clic per seleccionar una imatge projectada (només funciona amb el renderitzador diferit activat)."/>
+		<spinner label="Intensitat" name="Light Intensity"/>
+		<spinner label="Angle" name="Light FOV"/>
+		<spinner label="Radi" name="Light Radius"/>
+		<spinner label="Focus" name="Light Focus"/>
+		<spinner label="Atenuació" name="Light Falloff"/>
+		<spinner label="Ambient" name="Light Ambiance"/>
+		
+		<check_box label="Reflexions" name="Reflection Probe" tool_tip=
+		"Ajusta com els objectes dins d'aquest volum reben reflexions quan PBR està habilitat." />
+		<combo_box name="Probe Volume Type" tool_tip="Trieu el volum d'influència"/>
+		<combo_box.item label="Pilota" name="Sphere" value="Pilota"/>
+	    <combo_box.item  label="Caixa" name="Box" value="Caixa"/>
+       
+         <check_box height="16" label="Dynamic" layout="topleft" follows="left|top" left="10" name="Probe Dynamic" tool_tip=
+         "Quan està activat, els avatars apareixeran en reflexions dins del volum d'influència." top_delta="19" width="60" />
+          <text  type="string" length="1" follows="left|top" height="10" layout="topleft" left="10" name="Probe Update Label" text_readonly_color="LabelDisabledColor" top_delta="0" width="100">
+			   Probe Update
+          </text>
+          <combo_box  height="19" top_delta="0" left="144" follows="left|top"  name="Probe Update Type" tool_tip=
+          "Quan està activat, els avatars apareixeran en reflexions dins d'això. Determina com s'actualitza la sonda. Les actualitzacions estàtiques són les més lentes i sense avatars. Les actualitzacions dinàmiques són més freqüents, amb els avatars visibles a les sondes. Mirall (Entorn) converteix aquesta sonda en una sonda projectada planar en temps real que només reflecteix l'entorn, però no calcula l'ambient. Mirall (Tot) és similar a Mirall (Entorn), però reflecteix partícules i avatars.  volum d'influència de la sonda"  width="140">
+            <combo_box.item label="Static"  name="Static" value="Static" />
+            <combo_box.item label="Dynamic" name="Dynamic" value="Dynamic"/>
+            <combo_box.item label="Mirror (Environment)" name="Mirror" value="Mirror"/>
+            <combo_box.item label="Mirror (Everything)" name="Dynamic Mirror" value="Dynamic Mirror"/>
+          </combo_box>
+         <spinner top_pad="0" decimal_digits="3" follows="left|top" height="16" increment="0.05" initial_value="0" label=
+         "Ambient" label_width="55" left="10" max_val="100" min_val="0" mouse_opaque="true" name="Probe Ambiance" width="120" />
+         <spinner top_delta="0" decimal_digits="3" follows="left|top" height="16" increment="0.05" initial_value="0" label=
+         "A prop del clip" label_width="55" left="144" max_val="1024" min_val="0" mouse_opaque="true" name="Probe Near Clip" width="120" />
+		 <text name="label physicsshapetype" width="140">
+			Tipus de forma física:
+		</text>
+		<combo_box name="Physics Shape Type Combo Ctrl" tool_tip="Selecciona el tipus de forma física"/>
+		<button name="PhysicsViewToggle" tool_tip="Activa la visualització de la física en mode d'edició."/>
+		<combo_box name="material">
+			<combo_box.item label="Pedra" name="Stone"/>
+			<combo_box.item label="Metall" name="Metal"/>
+			<combo_box.item label="Vidre" name="Glass"/>
+			<combo_box.item label="Fusta" name="Wood"/>
+			<combo_box.item label="Carn" name="Flesh"/>
+			<combo_box.item label="Plàstic" name="Plastic"/>
+			<combo_box.item label="Goma" name="Rubber"/>
+		</combo_box>
+		<spinner label="Gravetat" name="Physics Gravity"/>
+		<spinner label="Fricció" name="Physics Friction"/>
+		<spinner label="Densitat" name="Physics Density"/>
+		<spinner label="Restitució" name="Physics Restitution"/>
+	</panel>
+<!--	
+      <FS:Zi> switchable edit texture/materials panel
+        <panel
+         label="Texture"
+         help_topic="toolbox_texture_tab"
+         name="Texture">
+         filename="panel_tools_texture.xml">
+	   </panel>
+      no cal ja que esta en "panel_tools_texture.xml"
+      
+	   <panel label="Textura" name="Texture">
+		<panel.string name="string repeats per meter">Repeticions per metre</panel.string>
+		<panel.string name="string repeats per face">Repeticions per cara</panel.string>
+		<texture_picker label="Textura" name="texture control" tool_tip="Fes clic per seleccionar una imatge"/>
+		<color_swatch label="Color" name="colorswatch" tool_tip="Fes clic per seleccionar un color"/>
+		<text name="color trans">
+			Transparència %
+		</text>
+		<text name="glow label">
+			Brillantor
+		</text>
+		<text name="tex gen">
+			Aplicació
+		</text>
+		<combo_box name="combobox texgen">
+			<combo_box.item label="Per defecte" name="Default"/>
+			<combo_box.item label="Plana" name="Planar"/>
+		</combo_box>
+		<text name="label shininess">
+			Lluentor
+		</text>
+		<combo_box name="combobox shininess">
+			<combo_box.item label="Cap" name="None"/>
+			<combo_box.item label="Baixa" name="Low"/>
+			<combo_box.item label="Mitjana" name="Medium"/>
+			<combo_box.item label="Alta" name="High"/>
+		</combo_box>
+		<text name="label bumpiness">
+			Relleu
+		</text>
+		<combo_box name="combobox bumpiness">
+			<combo_box.item label="Cap" name="None"/>
+			<combo_box.item label="Brillantor" name="Brightness"/>
+			<combo_box.item label="Foscor" name="Darkness"/>
+			<combo_box.item label="Veta de fusta" name="woodgrain"/>
+			<combo_box.item label="Escorça" name="bark"/>
+			<combo_box.item label="Maons" name="bricks"/>
+			<combo_box.item label="Tauler d'escacs" name="checker"/>
+			<combo_box.item label="Formigó" name="concrete"/>
+			<combo_box.item label="Rajola vella" name="crustytile"/>
+			<combo_box.item label="Pedra tallada" name="cutstone"/>
+			<combo_box.item label="Discs" name="discs"/>
+			<combo_box.item label="Grava" name="gravel"/>
+			<combo_box.item label="Placa de Petri" name="petridish"/>
+			<combo_box.item label="Revestiment" name="siding"/>
+			<combo_box.item label="Rajola de pedra" name="stonetile"/>
+			<combo_box.item label="Estuc" name="stucco"/>
+			<combo_box.item label="Ventosa" name="suction"/>
+			<combo_box.item label="Teixit" name="weave"/>
+		</combo_box>
+		<spinner label="Horitzontal (U)" name="TexScaleU"/>
+		<check_box label="Inverteix" name="checkbox flip s"/>
+		<spinner label="Vertical (V)" name="TexScaleV"/>
+		<check_box label="Inverteix" name="checkbox flip t"/>
+		<spinner label="Rotació ˚" name="TexRot"/>
+		<button label="Aplica" label_selected="Aplica" name="button apply"/>
+		<text name="tex offset">
+			Desplaçament de la textura
+		</text>
+		<spinner label="Horitzontal (U)" name="TexOffsetU"/>
+		<spinner label="Vertical (V)" name="TexOffsetV"/>
+		<panel name="Add_Media">
+			<text name="media_tex">
+				Mèdia
+			</text>
+			<button name="add_media" tool_tip="Afegeix mèdia"/>
+			<button name="delete_media" tool_tip="Suprimeix la textura de mèdia"/>
+			<button name="edit_media" tool_tip="Edita el mèdia"/>
+			<button label="Alinea" label_selected="Alinea el mèdia" name="button align" tool_tip="Escala la textura de mèdia (primer cal carregar-la)"/>
+		</panel>
+     </panel>
+-->		
+	    <panel label="Contingut" name="Contents">
+		<button label="Nou Script" label_selected="Nou Script" name="button new script"/>
+		<button label="Permisos" name="button permissions"/>
+		<button label="Actualitza" name="button refresh" width="100"/>
+		<button label="ReiniciScripts" name="btn_reset_scripts" width="100"/>
+	</panel>
+   </tab_container>
+	<panel name="land info panel">
+		<text name="label_parcel_info">
+			Informació de la parcel·la
+		</text>
+		<text name="label_area_price">
+			Preu: L$[PRICE] per [AREA] m²
+		</text>
+		<text name="label_area">
+			Àrea: [AREA] m²
+		</text>
+		<button label="Quant al terreny" label_selected="Quant al terreny" name="button about land"/>
+		<check_box label="Mostra els propietaris" name="checkbox show owners" tool_tip="Color de la parcel·la segons el tipus de propietat: &#10;&#10;Verd = el teu terreny &#10;Blau cel = terreny del teu grup &#10;Vermell = terreny d'altri &#10;Groc = a la venda &#10;Porpra = en subhasta &#10;Gris = públic"/>
+		<text name="label_parcel_modify">
+			Modificació de la parcel·la
+		</text>
+		<button label="Divideix" label_selected="Divideix" name="button subdivide land"/>
+		<button label="Uneix" label_selected="Uneix" name="button join land"/>
+		<text name="label_parcel_trans">
+			Accions amb el terreny
+		</text>
+		<button label="Compra el terreny" label_selected="Compra el terreny" name="button buy land"/>
+		<button label="Abandona Terreny" label_selected="Abandona el terreny" name="button abandon land"/>
+	</panel>
+</floater>
+
+
+            

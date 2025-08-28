@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<floater name="floaterbulkperms" title="MODIFICAR ELS DRETS RELATIUS AL CONTINGUT">
+<floater name="floaterbulkperms" legacy_header_height="18" width="415" title=
+"MODIFICAR ELS DRETS RELATIUS AL CONTINGUT">
 	<floater.string name="nothing_to_modify_text">
 		La selecció no conté cap element modificable.
 	</floater.string>
@@ -33,23 +34,30 @@
 	<icon name="icon_setting" tool_tip="Paràmetres de medi ambient"/>
 	<button label="Marcar-ho tot" label_selected="Tot" name="check_all"/>
 	<button label="Esborrar-ho tot" label_selected="Cap" name="check_none"/>
-	<text name="newperms">
-		Modificar els drets relatius al contingut i substituir per
+	<text name="newperms" width="415">
+		Modificar els drets i substituir per:
+		
 	</text>
 	<text name="GroupLabel">
 		Grup :
+		
+		
 	</text>
-	<check_box label="Compartir" name="share_with_group" tool_tip="Autoritzar tots els membres grup escollit a compartir els teus drets d'edició per a aquest objecte. Per habilitar les restriccions de rol, primer has de fer clic a Permetre."/>
+	<check_box label="Compartir" name="share_with_group" height="17" tool_tip="Autoritzar tots els membres grup escollit a compartir els teus drets d'edició per a aquest objecte. Per habilitar les restriccions de rol, primer has de fer clic a Permetre."/>
 	<text name="AnyoneLabel">
 		Qualsevol :
+		
+		
 	</text>
-	<check_box label="Copiar" name="everyone_copy" tool_tip="Qualsevol podra fer-se una còpia de l'objecte. L'objecte i tot el seu contingut han d'estar autoritzats per a la seva còpia i transferència."/>
-	<text name="NextOwnerLabel">
-		Proper propr. :
+	<check_box label="Copiar" name="everyone_copy" height="17" tool_tip="Qualsevol podra fer-se una còpia de l'objecte. L'objecte i tot el seu contingut han d'estar autoritzats per a la seva còpia i transferència."/>
+	<text name="NextOwnerLabel" width="415">
+		Proper propietari :
+		
+		
 	</text>
-	<check_box label="Modificar" name="next_owner_modify" tool_tip="El proper propietari podra canviar propietats com ara el nom de l'objecte o la seva escala."/>
-	<check_box label="Copiar" name="next_owner_copy" tool_tip="El proper propietari podra fer còpies il·limitades d'aquest objecte. Les còpies conservaran les informacions sobre el creador i mai no podran ser més permissives que el seu objecte d'origen directe."/>
-	<check_box initial_value="true" label="Transferir" name="next_owner_transfer" tool_tip="El proper proprietari podrà donar o revendre aquest objecte."/>
+	<check_box label="Modificar" name="next_owner_modify" height="17" tool_tip="El proper propietari podra canviar propietats com ara el nom de l'objecte o la seva escala."/>
+	<check_box label="Copiar" name="next_owner_copy" height="18" tool_tip="El proper propietari podra fer còpies il·limitades d'aquest objecte. Les còpies conservaran les informacions sobre el creador i mai no podran ser més permissives que el seu objecte d'origen directe."/>
+	<check_box initial_value="true" label="Transferir" name="next_owner_transfer" height="19" tool_tip="El proper proprietari podrà donar o revendre aquest objecte."/>
 	<button label="OK" name="ok"/>
 	<button label="Aplicar" name="apply"/>
 	<button label="Anul·lar" name="close"/>
