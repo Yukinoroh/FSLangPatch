@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="Outfits">
+	<accordion name="outfits_accordion">
+		<no_matched_tabs_text name="no_matched_outfits_msg" value="No heu trobat el que necessitàveu? Feu servir la [secondlife:///app/search/all/[SEARCH_TERM] cerca]."/>
+		<no_visible_tabs_text name="no_outfits_msg" value="Encara no teniu cap conjunt. Feu servir la [secondlife:///app/search/all/ cerca]."/>
+	</accordion>
+	<panel name="bottom_panel">
+		<menu_button name="options_gear_btn" tool_tip="Mostra més opcions"/>
+		<text name="OutfitcountText" width="130">
+			[COUNT] conjunts
+		</text>
+		<text name="avatar_complexity_label">
+			Complexitat: [WEIGHT]
+		</text>
+		<button name="trash_btn" tool_tip="Suprimeix el conjunt seleccionat"/>
+	</panel>
+</panel>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_outfit_snapshot_inventory">
+    <text name="title">
+        Inventari
+    </text>
+    <text name="hint_lbl">
+Pujar una imatge al vostre inventari costa L$[UPLOAD_COST].
+
+La tarifa depèn del nivell de subscripció. Els nivells més alts tenen tarifes més baixes.
+    </text>
+    <button label="Cancel·la" name="cancel_btn"/>
+    <button label="Desa" name="save_btn"/>
+</panel>

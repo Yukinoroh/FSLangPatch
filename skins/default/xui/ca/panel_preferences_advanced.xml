@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<panel label="Avançat" name="advanced">
+	<panel.string name="middle_mouse">
+		Botó central del ratolí
+	</panel.string>
+	<check_box label="Permet l'execució de diversos clients" name="allow_multiple_viewer_check"/>
+	<check_box label="Permet la selecció de la xarxa a l'inici de sessió (No totes les xarxes són compatibles amb el Firestorm)" name="show_grid_selection_check"/>
+	<check_box label="Mostra el menú Avançat (Feu-lo servir sota la vostra responsabilitat!)" name="show_advanced_menu_check"/>
+	<check_box label="Mostra el menú de Desenvolupador (Feu-lo servir sota la vostra responsabilitat!)" name="show_develop_menu_check"/>
+	<check_box label="Inhabilita la detecció de la VRAM per sondeig WMI en sistemes Windows" name="FSDisableWMIProbing"/>
+	<check_box label="Mostra la cerca al menú" name="show_search_menu_check"/>
+	   <!-- Ansa: Timesteps are currently disabled in the viewer
+    <check_box
+     control_name="UseAnimationTimeSteps"
+     tool_tip="This setting may reduce render load for distant avatars but, may also cause their animations to play at incorrect speeds"
+     follows="top|left"
+     height="15"
+     label="Enable the use of animation timesteps (experimental)"
+     layout="topleft"
+     left="30"
+     name="UseAnimationTimeSteps"
+     top_pad="5"
+     width="237"/>
+    -->
+	
+	
+	<text name="BackgroundYieldTimeText">
+		Quantitat de temps en mil·lisegons que es cedeix a altres programes per cada fotograma quan el [APP_NAME] no està en primer pla (per defecte: 40; 1 segon = 1000 mil·lisegons):
+	</text>
+	<button label="Permisos de creació per defecte" name="default_creation_permissions" />
+	<button label="Restableix tots els paràmetres" label_selected="Restableix tots els paràmetres..." name="clear_settings"/>
+</panel>

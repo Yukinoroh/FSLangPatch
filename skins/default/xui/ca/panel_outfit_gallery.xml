@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="Outfit Gallery">
+  <string name="outfit_photo_string">Foto del conjunt "[OUTFIT_NAME]"</string>
+  <string name="no_outfits_msg">Encara no teniu cap conjunt. Proveu la [secondlife:///app/search/all/ Cerca]</string>
+  <string name="no_matched_outfits_msg">No heu trobat el que buscàveu? Proveu la [secondlife:///app/search/all/[SEARCH_TERM] Cerca].</string>
+  <text name="no_outfits_txt">Cercant...</text>
+  <panel name="bottom_panel">
+    <menu_button tool_tip="Mostra més opcions" name="options_gear_btn"/>
+      <text name="OutfitcountText" width="130">
+        [COUNT]
+      </text>
+      <text name="avatar_complexity_label" width="150">
+        Complexitat: [WEIGHT]
+      </text>
+      <button name="trash_btn" tool_tip="Suprimeix el conjunt seleccionat" />
+    </panel>
+</panel>
+
+
+

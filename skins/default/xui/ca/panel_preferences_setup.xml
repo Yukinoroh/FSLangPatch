@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Xarxa i fitxers" name="Input panel">
+	<tab_container name="tabs">
+		<panel label="Connexió" name="tab-conn">
+			<text name="Maximum bandwidth">
+				Amplada de banda màxima ([https://wiki.firestormviewer.org/fs_speedtest Necessiteu pistes?] (en anglès)):
+			</text>
+			<text name="text_box2">Kbps</text>
+			<text name="NetworkPrefText1">Wi-Fi</text>
+			<text name="NetworkPrefText2">DSL</text>
+			<text name="NetworkPrefText3">
+				Cable
+			</text>
+			<text name="NetworkPrefText4">
+				Pot causar problemes
+			</text>
+			<check_box label="Port personalitzat" name="connection_port_enabled"/>
+			<spinner label="Número de port:" name="connection_port"/>
+			<text name="Web:">
+				Navegador web:
+			</text>
+			<radio_group name="preferred_browser_behavior">
+				<radio_item label="Fes servir el meu navegador (Chrome, Firefox, IE) per a tots els enllaços" name="new_external" tool_tip="Fes servir el navegador per defecte del sistema per als enllaços. No es recomana en mode de pantalla completa." />
+				<radio_item label="Fes servir el navegador integrat només per a enllaços de Second Life" name="new_internal" tool_tip="Fes servir el navegador integrat només per a enllaços de Second Life" />
+				<radio_item label="Fes servir el navegador integrat per a tots els enllaços" name="new_internal_all" />
+			</radio_group>
+			<text name="numberwebfloaters_label">
+				Nombre màxim de finestres del navegador:
+			</text>
+			<combo_box tool_tip="Nombre màxim de finestres del navegador que es poden obrir" name="web_number_combobox">
+				<combo_box.item label="Sense límit" name="web_unlimited"/>
+				<combo_box.item label="Una finestra" name="web_1"/>
+				<combo_box.item label="Cinc finestres" name="web_5"/>
+				<combo_box.item label="Deu finestres" name="web_10"/>
+			</combo_box>
+			<button label="Neteja la memòria cau del navegador" name="ClearWebBrowserCache" width="195"/>
+			<check_box label="Accepta les galetes (cookies)" name="cookies_enabled"/>
+			<check_box label="Habilita el Javascript" name="browser_javascript_enabled"/>
+			<check_box label="Habilita les finestres emergents multimèdia" name="media_popup_enabled"/>
+			<button label="Configuració del proxy" label_selected="Configuració del proxy" name="set_proxy"/>
+			<text name="home_page_label_l">
+				Pàgina d'inici del navegador:
+			</text>
+		</panel>
+		<panel label="Directoris" name="tab-dir">
+			<text name="cache_size_label_l">
+				Mida de la memòria cau de textures ([https://wiki.firestormviewer.org/cache Necessiteu pistes?] (en anglès)):
+			</text>
+			<text name="text_box5">
+				MB
+			</text>
+			<text name="asset_cache_size_label_l">
+				Mida de la memòria cau d'actius:
+			</text>
+			<text name="asset_text_box5">
+				MB
+			</text>
+			<button label="Neteja la memòria cau de l'inventari" name="ClearInventoryCache" left="380" width="150"/>
+			<text name="Cache location">
+				Ubicació de la memòria cau:
+			</text>
+			<button label="Obre" label_selected="Obre" width="60" name="open_cache"/>
+			<button label="Estableix" label_selected="Estableix" width="50" name="set_cache"/>
+			<button label="Restableix" label_selected="Restableix" width="50" name="reset_cache"/>
+			<button label="Neteja" label_selected="Neteja" width="60" name="clear_cache"/>
+			<text name="Sound Cache location">
+				Ubicació de la memòria cau de so:
+			</text>
+			<button label="Obre" label_selected="Obre" width="60" name="open_sound_cache"/>
+			<button label="Estableix" label_selected="Estableix" width="50" name="set_sound_cache"/>
+			<button label="Restableix" label_selected="Restableix" width="50" name="reset_sound_cache"/>
+			<check_box label="En sortir, no suprimeixis de la memòria cau els fitxers DSF desempaquetats (sons)" tool_tip="AVÍS: En activar aquesta funció, els fitxers de la memòria cau de so no se suprimiran, la qual cosa pot provocar que el directori de la memòria cau s'ompli ràpidament i disminueixi l'espai de disc a l'ordinador. Per defecte, aquesta funció està inhabilitada." name="keep_unpacked_cache"/>
+			<text name="log_path_desc">
+				Ubicació dels registres de xat:
+			</text>
+			<button label="Obre" label_selected="Obre" width="60" name="open_log_path_button-panelsetup"/>
+			<button label="Estableix" label_selected="Estableix" width="50" name="log_path_button-panelsetup"/>
+			<button label="Restableix" label_selected="Restableix" name="reset_logpath"/>
+			<button label="Registres d'errors" label_selected="Registres d'errors" name="browse_crashlogs"/>
+			<button label="Carpeta de configuració" label_selected="Carpeta de configuració" name="browse_settingsdir"/>
+		</panel>
+	</tab_container>
+</panel>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="navigation_bar">
+	<layout_stack name="navigation_favorites_bar_visibility_stack">
+		<layout_panel name="navigation_bar_visibility_panel">
+			<layout_stack name="location_search_layout">
+				<layout_panel name="navigation_buttons_visibility_panel">
+					<pull_button name="back_btn" tool_tip="Torna a la ubicació anterior"/>
+					<pull_button name="forward_btn" tool_tip="Vés a la ubicació següent"/>
+					<button name="home_btn" tool_tip="Teleporta't a casa"/>
+					<button name="About_Land" label="Terreny" tool_tip="Obre la finestra d'informació de la parcel·la"/>
+					<button name="PersonalLighting" label="Llum" tool_tip="Obre la finestra d'Il·luminació personal"/>
+				</layout_panel>
+				<layout_panel name="location_bar_visibility_panel">
+					<location_input label="Ubicació" name="location_combo"/>
+				</layout_panel>
+				<layout_panel name="search_bar_visibility_panel">
+					<search_combo_box label="Cerca" name="search_combo_box" tool_tip="Cerca">
+						<combo_editor label="Cerca (MetaVerse)" name="search_combo_editor"/>
+					</search_combo_box>
+				</layout_panel>
+			</layout_stack>
+		</layout_panel>
+		<layout_panel name="favorites_bar_visibility_panel">
+			<favorites_bar name="favorite" tool_tip="Arrossegueu aquí una adreça d'interès per a accedir ràpidament als vostres llocs preferits!">
+				<label name="favorites_bar_label" tool_tip="Arrossegueu aquí una adreça d'interès per a accedir ràpidament als vostres llocs preferits!">
+					Adreces d'interès preferides
+				</label>
+				<chevron_button name="more_btn" tool_tip="Mostra'n més a 'Preferits'"/>
+			</favorites_bar>
+		</layout_panel>
+	</layout_stack>
+</panel>

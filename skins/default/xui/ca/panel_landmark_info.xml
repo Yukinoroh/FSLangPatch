@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="landmark_info">
+        <string name="title_create_landmark" value="Crea una adreça d'interès"/>
+        <string name="title_edit_landmark" value="Edita l'adreça d'interès"/>
+        <string name="title_landmark" value="Adreça d'interès"/>
+        <string name="not_available" value="(desconegut)"/>
+        <string name="unknown" value="(desconegut)"/>
+        <string name="public" value="(públic)"/>
+        <string name="server_update_text">
+                Cal una actualització del servidor perquè la informació estigui disponible.
+        </string>
+        <string name="server_error_text">
+                La informació sobre aquest lloc no està disponible en aquests moments. Torneu-ho a provar més tard.
+        </string>
+        <string name="server_forbidden_text">
+                La informació sobre aquest lloc no està disponible perquè no teniu permís per a veure-la. Contacteu amb el propietari de la parcel·la per a saber quins són els vostres drets.
+        </string>
+        <string name="acquired_date">
+                [wkday,datetime,slt], [day,datetime,slt] [mth,datetime,slt] [year,datetime,slt] [hour,datetime,slt]:[min,datetime,slt]:[second,datetime,slt]
+        </string>
+        <string name="information_text">
+                Trànsit: [TRAFFIC] Superfície: [AREA] m²
+        </string>
+        <layout_stack name="place_info_sidetray_main">
+                <layout_panel name="header_container">
+                        <button name="back_btn" tool_tip="Enrere"/>
+                        <text name="title" value="Perfil del lloc"/>
+                </layout_panel>
+                <layout_panel name="place_info_content">
+                        <text name="parcel_title" value="Exemple de parcel·la, nom llarg"/>
+                        <text name="region_title">
+                                Regió: [REGIONNAMEPOS]
+                        </text>
+                        <text name="maturity_value" value="desconegut" width="70"/>
+                        <text name="parcel_owner_label" value="Propietari:" width="70" />
+                        <text name="parcel_owner" value="desconegut"/>
+                        <panel name="description_panel">
+                                <expandable_text name="description" value="(s'està carregant...)"/>
+                        </panel>
+                        <panel name="landmark_info_panel">
+                                <text name="owner_label" value="Propietari:" width="70"/>
+                                <text name="creator_label" value="Creador:" width="70"/>
+                                <text name="created_label" value="Creat el:"/>
+                                <text name="information_label" value="Informació:"/>
+                        </panel>
+                        <panel name="landmark_edit_panel">
+                                <text name="title_label" value="Títol:"/>
+                                <text name="notes_label" value="Les meves notes:"/>
+                                <text name="folder_label" value="Ubicació:"/>
+                                <button label="Edita" name="edit_btn" tool_tip="Edita la informació de l'adreça d'interès"/>
+                        </panel>
+                </layout_panel>
+        </layout_stack>
+</panel>

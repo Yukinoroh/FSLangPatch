@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Seguretat" name="Media Settings Security">
+	<check_box initial_value="false" label="Permet l'accés només als URL de la llista blanca" name="whitelist_enable"/>
+	<text name="home_url_fails_some_items_in_whitelist">
+		Els elements que no són adequats per a la pàgina d'inici estan marcats amb el símbol:
+	</text>
+	<button label="Afegeix" name="whitelist_add"/>
+	<button label="Suprimeix" name="whitelist_del"/>
+	<text name="home_url_fails_whitelist">
+		Atenció! La pàgina d'inici especificada a la pestanya «General» no és a la llista blanca. No estarà disponible fins que no s'hi afegeixi una entrada correcta.
+	</text>
+</panel>
