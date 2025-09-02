@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Self Pie">
+	<menu_item_call label="Seure" name="Sit Down Here"/>
+	<menu_item_call label="Aixecar-se" name="Stand Up"/>
+	<context_menu label="Treu" name="Take Off &gt;">
+		<context_menu label="Roba" name="Clothes &gt;">
+			<menu_item_call label="Camisa" name="Shirt"/>
+			<menu_item_call label="Pantalons" name="Pants"/>
+			<menu_item_call label="Faldilla" name="Skirt"/>
+			<menu_item_call label="Sabates" name="Shoes"/>
+			<menu_item_call label="Mitjons" name="Socks"/>
+			<menu_item_call label="Jaqueta" name="Jacket"/>
+			<menu_item_call label="Guants" name="Gloves"/>
+			<menu_item_call label="Samarreta interior" name="Self Undershirt"/>
+			<menu_item_call label="Calçotets" name="Self Underpants"/>
+			<menu_item_call label="Tatuatge" name="Self Tattoo"/>
+			<menu_item_call label="Física" name="Self Physics"/>
+			<menu_item_call label="Alfa" name="Self Alpha"/>
+			<menu_item_call label="Tota" name="All Clothes"/>
+		</context_menu>
+		<context_menu label="HUD" name="Object Detach HUD"/>
+		<context_menu label="Treu..." name="Object Detach"/>
+		<menu_item_call label="Treu-ho tot" name="Detach All"/>
+	</context_menu>
+	<context_menu label="Aparença" name="AppearanceSubmenu">
+		<menu_item_call label="Porto posat..." name="NowWearing"/>
+		<menu_item_call label="Conjunts" name="Chenge Outfit"/>
+		<menu_item_call label="Edita la forma" name="Edit My Shape"/>
+		<menu_item_call label="Edita el conjunt" name="Edit Outfit Parts"/>
+		<menu_item_call label="Alçada flotant" name="Hover Height"/>
+		<menu_item_call label="Reinicia l'esquelet" name="Reset Skeleton"/>
+		<menu_item_call label="Reinicia esquelet i animacions" name="Reset Skeleton And Animations"/>
+		<menu_item_call label="Reinicia el LOD del mesh" name="Reset Mesh LOD"/>
+	</context_menu>
+	<context_menu label="Comunitat" name="CommunitySubmenu">
+		<menu_item_call label="Amics..." name="Friends..."/>
+		<menu_item_call label="Grups..." name="Groups..."/>
+		<menu_item_call label="Perfil..." name="Profile..."/>
+	</context_menu>
+	<menu_item_call label="Info dels scripts" name="ScriptInfo"/>
+	<menu_item_call label="Depuració (Textures)..." name="Debug..."/>
+	<menu_item_call label="Refresca la textura" name="Texture Refresh"/>
+	<menu_item_call label="Dump XML" name="Dump XML"/>
+	<menu_item_call label="Bloca l'emissor de partícules" name="Mute Particle"/>
+	<menu_item_call label="Mostra el perfil" name="show_avatar_profile"/>
+</context_menu>

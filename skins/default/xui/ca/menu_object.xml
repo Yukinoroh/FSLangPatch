@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Object Pie">
+	<menu_item_call label="Toca" name="Object Touch">
+		<menu_item_call.on_enable name="EnableTouch" parameter="Toca"/>
+	</menu_item_call>
+	<menu_item_call label="Edita..." name="Edit..."/>
+	<menu_item_call label="Construeix" name="Build"/>
+	<menu_item_call label="Obre" name="Open"/>
+	<menu_item_call label="Seu" name="Object Sit"/>
+	<menu_item_call label="Aixeca't" name="Object Stand Up"/>
+	<context_menu label="Objecte" name="Object Features">
+<menu_item_call label="Perfil" name="Object Inspect"/>
+		<menu_item_call label="Inspecciona" name="Object_Inspect_Floater"/>
+		<menu_item_call label="Info dels scripts" name="ScriptInfo"/>
+		<menu_item_call label="Enllaça" name="Object Link"/>
+		<menu_item_call label="Desenllaça" name="Object Unlink"/>
+		<menu_item_check label="Edita les parts enllaçades" name="Object Edit Linked Parts"/>
+		<menu_item_call label="Compila (Mono)" name="Mono"/>
+		<menu_item_call label="Compila (LSL)" name="LSL"/>
+		<menu_item_call label="Reinicia els scripts" name="Object Reset Scripts"/>
+		<menu_item_call label="Activa els scripts" name="Object Set Scripts to Running"/>
+		<menu_item_call label="Desactiva els scripts" name="Object Set Scripts to Not Running"/>
+		<menu_item_call label="Elimina els scripts" name="Remove Scripts From Selection"/>
+</context_menu>
+	<menu_item_call label="Apropa" name="Zoom In"/>
+	<menu_item_call label="Mostra en conjunts enllaçats" name="show_in_linksets"/>
+	<menu_item_call label="Mostra en personatges" name="show_in_characters"/>
+	<context_menu label="Posa't..." name="Put On">
+		<menu_item_call label="Posa't" name="Wear"/>
+		<menu_item_call label="Afegeix" name="Add"/>
+		<context_menu label="Adjunta" name="Object Attach"/>
+		<context_menu label="Adjunta al HUD" name="Object Attach HUD"/>
+	</context_menu>
+	<context_menu label="Gestiona" name="Remove">
+		<menu_item_call label="Denuncia..." name="Report Abuse..."/>
+		<menu_item_call label="Bloca" name="Object Mute"/>
+		<menu_item_call label="Desbloca" name="Object Unmute"/>
+</context_menu>
+	<menu_item_call label="Refresca la textura" name="Texture Refresh"/>
+	<menu_item_call label="No renderis" name="Derender"/>
+	<menu_item_call label="No renderis (permanent)" name="DerenderPermanent"/>
+	<menu_item_call label="Retorna..." name="Return..."/>
+	<menu_item_call label="Agafa" name="Pie Object Take"/>
+	<menu_item_call label="Agafa una còpia" name="Take Copy"/>
+	<menu_item_call label="Paga..." name="Pay..."/>
+	<menu_item_call label="Compra..." name="Buy..."/>
+	<context_menu label="Exporta com a" name="Export Menu">
+		<menu_item_call label="Còpia de seguretat" name="Backup"/>
+		<menu_item_call label="Collada" name="Collada"/>
+	</context_menu>
+	<menu_item_call label="Elimina" name="Delete"/>
+	<menu_item_call label="Bloca l'emissor de partícules" name="Mute Particle"/>
+	<menu_item_call label="Dump XML" name="Dump XML"/>
+	<menu_item_call label="Reinicia l'esquelet" name="Reset Skeleton"/>
+</context_menu>

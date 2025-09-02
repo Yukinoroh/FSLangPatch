@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<context_menu name="Friends Popup">
+	<menu_item_call label="Mostra el perfil" name="show_agent" />
+	<menu_item_call label="Envia MI" name="send_im" />
+	<menu_item_call label="Mostra l'historial del xat" name="chat_history" />
+	<menu_item_call label="Afegeix a un grup" name="Add to Set" />
+	<menu_item_call label="Apropa a l'amic" name="zoom_agent" />
+	<menu_item_call label="Teletransporta a l'amic" name="teleportto_agent" />
+	<menu_item_call label="Ofereix teletransport" name="offer_teleport" />
+	<menu_item_call label="Demana teletransport" name="request_teleport" />
+	<menu_item_call label="Paga" name="pay" />
+	<menu_item_call label="Segueix l'amic" name="track_agent" />
+	<menu_item_call label="Elimina d'amics" name="remove_friend" />
+	<menu_item_call label="Copia el nom" name="url_copy_label" />
+	<menu_item_call label="Copia l'URL" name="url_copy" />
+	<menu name="options" label="Opcions...">
+		<menu_item_check label="Mostra la columna: Nom d'usuari" name="show_username" />
+		<menu_item_check label="Mostra la columna: Nom públic" name="show_displayname" />
+		<menu_item_check label="Mostra la columna: Nom complet" name="show_fullname" />
+		<menu_item_check label="Mostra la columna de permisos" name="show_permissions" />
+		<menu_item_check label="Ordena per: Nom d'usuari" name="sort_by_username" />
+		<menu_item_check label="Ordena per: Nom públic" name="sort_by_displayname" />
+		<menu_item_check label="Nom complet com a: Nom d'usuari (Nom públic)" name="format_username_displayname" />
+		<menu_item_check label="Nom complet com a: Nom públic (Nom d'usuari)" name="format_displayname_username" />
+		<menu_item_check label="Mostra el filtre de cerca" name="friend_filter" />
+	</menu>
+	<menu_item_check label="Estat en línia per a amics" name="GlobalOnlineStatusToggle" />
+</context_menu>

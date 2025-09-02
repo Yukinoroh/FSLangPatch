@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="menu_inventory_add">
+	<menu label="Puja" name="upload">
+		<menu_item_call label="Textura (L$[COST])..." name="Upload Image"/>
+		<menu_item_call label="So (L$[COST])..." name="Upload Sound"/>
+		<menu_item_call label="Animació (L$[COST])..." name="Upload Animation"/>
+		<menu_item_call label="Model de malla (mesh)..." name="Upload Model"/>
+		<menu_item_call label="Pujada massiva..." name="Bulk Upload"/>
+		<menu_item_call label="Importa un conjunt enllaçat (linkset)..." name="import linkset"/>
+	</menu>
+	<menu_item_call label="Carpeta nova" name="New Folder"/>
+	<menu_item_call label="Script nou" name="New Script"/>
+	<menu_item_call label="Nota nova" name="New Note"/>
+	<menu_item_call label="Gest nou" name="New Gesture"/>
+	<menu label="Roba nova" name="New Clothes">
+		<menu_item_call label="Camisa nova" name="New Shirt"/>
+		<menu_item_call label="Pantalons nous" name="New Pants"/>
+		<menu_item_call label="Sabates noves" name="New Shoes"/>
+		<menu_item_call label="Mitjons nous" name="New Socks"/>
+		<menu_item_call label="Jaqueta nova" name="New Jacket"/>
+		<menu_item_call label="Faldilla nova" name="New Skirt"/>
+		<menu_item_call label="Guants nous" name="New Gloves"/>
+		<menu_item_call label="Samarreta interior nova" name="New Undershirt"/>
+		<menu_item_call label="Calçotets nous" name="New Underpants"/>
+		<menu_item_call label="Alfa nova" name="New Alpha"/>
+		<menu_item_call label="Tatuatge nou" name="New Tattoo"/>
+		<menu_item_call label="Universal nou" name="New Universal"/>
+		<menu_item_call label="Física nova" name="New Physics"/>
+	</menu>
+	<menu label="Part del cos nova" name="New Body Parts">
+		<menu_item_call label="Forma nova" name="New Shape"/>
+		<menu_item_call label="Pell nova" name="New Skin"/>
+		<menu_item_call label="Cabells nous" name="New Hair"/>
+		<menu_item_call label="Ulls nous" name="New Eyes"/>
+	</menu>
+	<menu label="Paràmetres nous" name="New Settings">
+		<menu_item_call label="Cel nou" name="New Sky"/>
+		<menu_item_call label="Aigua nova" name="New Water"/>
+		<menu_item_call label="Cicle de dia nou" name="New Day Cycle"/>
+	</menu>
+	<menu_item_call label="Botiga..." name="Shop" />
+</menu>

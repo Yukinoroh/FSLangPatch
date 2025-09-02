@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Gallery">
+	<menu_item_call label="Comparteix" name="Share"/>
+	<menu_item_call label="Buida la paperera" name="Empty Trash"/>
+	<menu_item_call label="Buida 'Objectes perduts'" name="Empty Lost And Found"/>
+	<menu_item_call label="Teletransporta't" name="Landmark Open"/>
+	<menu_item_call label="Reemplaça el conjunt actual" name="Replace Outfit"/>
+	<menu_item_call label="Afegeix al conjunt actual" name="Add To Outfit"/>
+	<menu_item_call label="Treu del conjunt actual" name="Remove From Outfit"/>
+	<menu_item_call label="Copia la llista de conjunts al porta-retalls" name="Copy outfit list to clipboard"/>
+	<menu_item_call label="Troba l'original" name="Find Original"/>
+	<menu_item_call label="Purga l'element" name="Purge Item"/>
+	<menu_item_call label="Restaura l'element" name="Restore Item"/>
+	<menu_item_call label="Obre" name="Open"/>
+	<menu_item_call label="Obre l'original" name="Open Original"/>
+	<menu_item_call label="Propietats" name="Properties"/>
+	<menu_item_call label="Miniatura..." name="thumbnail"/>
+	<menu_item_call label="Copia l'UUID de l'element" name="Copy Asset UUID"/>
+	<menu_item_call label="Obre" name="open_in_current_window"/>
+	<menu_item_call label="Obre en una finestra nova" name="open_in_new_window"/>
+	<menu_item_call label="Reanomena" name="Rename"/>
+	<menu_item_call label="Retalla" name="Cut"/>
+	<menu_item_call label="Copia" name="Copy"/>
+	<menu_item_call label="Enganxa" name="Paste"/>
+	<menu_item_call label="Enganxa com a enllaç" name="Paste As Link"/>
+	<menu_item_call label="Reemplaça els enllaços" name="Replace Links"/>
+	<menu_item_call label="Elimina" name="Delete"/>
+	<menu_item_call label="Elimina la carpeta de sistema" name="Delete System Folder"/>
+	<menu_item_call label="Reprodueix" name="Sound Play"/>
+	<menu_item_call label="Copia el SLurl" name="url_copy"/>
+	<menu_item_call label="Informació del lloc d'interès" name="About Landmark"/>
+	<menu_item_call label="Mostra al mapa" name="show_on_map"/>
+	<menu_item_call label="Reprodueix (en línia)" name="Animation Play"/>
+	<menu_item_call label="Reprodueix (localment)" name="Animation Audition"/>
+	<menu_item_call label="Envia un missatge instantani" name="Send Instant Message"/>
+	<menu_item_call label="Ofereix teletransport..." name="Offer Teleport..."/>
+	<menu_item_call label="Demana teletransport..." name="Request Teleport..."/>
+	<menu_item_call label="Activa" name="Activate"/>
+	<menu_item_call label="Desactiva" name="Deactivate"/>
+	<menu_item_call label="Desa" name="Save As"/>
+	<menu_item_call label="Desa la selecció" name="Save Selected As"/>
+	<menu_item_call label="Posa't" name="Wearable And Object Wear"/>
+	<menu label="Adjunta a" name="Attach To"/>
+	<menu label="Adjunta al HUD" name="Attach To HUD"/>
+	<menu_item_call label="Toca" name="Attachment Touch" />
+	<menu_item_call label="Edita" name="Wearable Edit"/>
+	<menu_item_call label="Afegeix" name="Wearable Add"/>
+	<menu_item_call label="Treu-te'l" name="Detach From Yourself"/>
+	<menu_item_call label="Treu" name="Take Off"/>
+	<menu_item_call label="Aplica només a mi" name="Settings Apply Local"/>
+	<menu_item_call label="Aplica a la parcel·la" name="Settings Apply Parcel"/>
+	<menu_item_call label="Carpeta nova a partir de la selecció" name="New folder from selected"/>
+	<menu_item_call label="Desagrupa els elements de la carpeta" name="Ungroup folder items"/>
+	<menu label="Usa per defecte per a" name="upload_def">
+		<menu_item_call label="Pujades d'imatges" name="Image uploads"/>
+		<menu_item_call label="Pujades de sons" name="Sound uploads"/>
+		<menu_item_call label="Pujades d'animacions" name="Animation uploads"/>
+		<menu_item_call label="Pujades de models" name="Model uploads"/>
+	</menu>
+	<menu_item_call label="Copia a l'anunci del Marketplace" name="Marketplace Copy"/>
+	<menu_item_call label="Mou a l'anunci del Marketplace" name="Marketplace Move"/>
+	<menu_item_call label="--cap opció--" name="--no options--"/>
+</context_menu>

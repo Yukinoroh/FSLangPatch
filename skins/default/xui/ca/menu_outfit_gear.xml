@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="Gear Outfit">
+	<menu_item_call label="Reemplaça el conjunt actual" name="wear"/>
+	<menu_item_call label="Afegeix al conjunt actual" name="wear_add"/>
+	<menu_item_call label="Elimina del conjunt actual" name="take_off"/>
+	<menu_item_call label="Puja una foto (L$[UPLOAD_COST])" name="upload_photo"/>
+	<menu_item_call label="Selecciona una foto" name="select_photo"/>
+	<menu_item_call label="Fes una instantània" name="take_snapshot"/>
+	<menu_item_call label="Elimina la foto" name="remove_photo"/>
+	<context_menu label="Roba nova" name="New Clothes">
+		<menu_item_call label="Camisa nova" name="New Shirt"/>
+		<menu_item_call label="Pantalons nous" name="New Pants"/>
+		<menu_item_call label="Sabates noves" name="New Shoes"/>
+		<menu_item_call label="Mitjons nous" name="New Socks"/>
+		<menu_item_call label="Jaqueta nova" name="New Jacket"/>
+		<menu_item_call label="Faldilla nova" name="New Skirt"/>
+		<menu_item_call label="Guants nous" name="New Gloves"/>
+		<menu_item_call label="Samarreta interior nova" name="New Undershirt"/>
+		<menu_item_call label="Calçotets nous" name="New Underpants"/>
+		<menu_item_call label="Alfa nova" name="New Alpha"/>
+		<menu_item_call label="Física nova" name="New Physics"/>
+		<menu_item_call label="Tatuatge nou" name="New Tattoo"/>
+		<menu_item_call label="Universal nou" name="New Universal"/>
+	</context_menu>
+	<context_menu label="Parts del cos noves" name="New Body Parts">
+		<menu_item_call label="Forma nova" name="New Shape"/>
+		<menu_item_call label="Pell nova" name="New Skin"/>
+		<menu_item_call label="Cabells nous" name="New Hair"/>
+		<menu_item_call label="Ulls nous" name="New Eyes"/>
+	</context_menu>
+	<menu_item_call label="Desplega totes les carpetes" name="expand"/>
+	<menu_item_call label="Plega totes les carpetes" name="collapse"/>
+	<menu_item_call label="Reanomena el conjunt" name="rename"/>
+	<menu_item_call label="Elimina el conjunt" name="delete_outfit"/>
+	<menu_item_check label="Ordena sempre les carpetes per nom" name="sort_folders_by_name"/>
+</toggleable_menu>

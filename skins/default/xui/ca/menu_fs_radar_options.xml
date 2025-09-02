@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="menu_group_plus">
+	<menu_item_check label="Mostra el minimapa sobre el radar" name="ShowRadarMinimap"/>
+	<menu_item_check label="Limita els resultats per distància" name="LimitRadarByRange"/>
+	<menu_item_check label="Mostra els avatars blocats" name="FSRadarShowMutedAndDerendered"/>
+	<context_menu label="Format del nom al radar" name="radarNameFormat">
+		<menu_item_check label="Nom públic" name="radarFmtDN"/>
+		<menu_item_check label="Nom d'usuari" name="radarFmtUN"/>
+		<menu_item_check label="Nom públic (Nom d'usuari)" name="radarFmtDNUN"/>
+		<menu_item_check label="Nom d'usuari (Nom públic)" name="radarFmtUNDN"/>
+	</context_menu>
+	<context_menu label="Columnes visibles" name="visible_columns">
+		<menu_item_check label="Veu" name="voice_level"/>
+		<menu_item_check label="A la mateixa regió" name="in_region"/>
+		<menu_item_check label="Indicador d'escriptura" name="typing_status"/>
+		<menu_item_check label="Estat (assegut)" name="sitting_status"/>
+		<menu_item_check label="Informació de pagament" name="flags"/>
+		<menu_item_check label="Notes" name="has_notes"/>
+		<menu_item_check label="Edat" name="age"/>
+		<menu_item_check label="Vist per últim cop" name="seen"/>
+	</context_menu>
+	<menu_item_check label="Aplica colors als noms segons la distància" name="radarColorNamesBasedOnDistance"/>
+	<context_menu label="Notifica a..." name="report_to_menu">
+		<menu_item_check label="Xat local" name="radar_nearby_chat"/>
+		<menu_item_check label="Finestra emergent" name="radar_nearby_chat"/>
+	</context_menu>
+	<menu_item_check label="Anells de xat local" name="MiniMapChatRing"/>
+	<menu_item_check label="Notifica en entrar al radi de renderització" name="RadarReportDrawRangeEnter"/>
+	<menu_item_check label="Notifica en sortir del radi de renderització" name="RadarReportDrawRangeLeave"/>
+	<menu_item_check label="Notifica en entrar al radi de xat" name="RadarReportChatRangeEnter"/>
+	<menu_item_check label="Notifica en sortir del radi de xat" name="RadarReportChatRangeLeave"/>
+	<menu_item_check label="Notifica en entrar a la regió" name="RadarReportSimRangeEnter"/>
+	<menu_item_check label="Notifica en sortir de la regió" name="RadarReportSimRangeLeave"/>
+	<menu_item_check label="Alerta per edat de l'avatar" name="RadarReportAgeAlert"/>
+	<menu_item_check label="Alerta d'entrada per script" name="RadarEnterChannelAlert"/>
+	<menu_item_check label="Alerta de sortida per script" name="RadarLeaveChannelAlert"/>
+	<menu_item_check label="Millora el radar amb el pont LSL" name="FSRadarEnhanceByBridge"/>
+	<menu_item_call label="Mostra la llista de blocats" name="show_blocked_list"/>
+</toggleable_menu>

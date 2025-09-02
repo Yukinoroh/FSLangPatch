@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="menu_view_default">
+	<menu_item_check label="Ordena per nom" name="sort_by_name"/>
+	<menu_item_check label="Ordena per més recent" name="sort_by_recent"/>         
+	<menu_item_check label="Ordena sempre les carpetes per nom" name="sort_folders_by_name"/>
+	<menu_item_check label="Posa les carpetes del sistema a dalt" name="sort_system_folders_to_top"/>
+	<menu_item_check label="Vista de llista" name="list_view"/>
+	<menu_item_check label="Vista de galeria" name="gallery_view"/>
+	<menu_item_check label="Vista combinada" name="combination_view"/>
+	<menu_item_check label="Paràmetres de l'inventari..." name="inv_settings"/>
+</toggleable_menu>
