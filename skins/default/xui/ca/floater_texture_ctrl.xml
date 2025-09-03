@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="texture picker" title="Tria: Textura" min_height="350">
+
+	<floater.string name="choose_picture">
+		Fes clic per triar una imatge
+	</floater.string>
+	<floater.string name="pick title">
+		Tria:
+	</floater.string>
+	<text name="Multiple">
+		Múltiples textures
+	</text>
+
+	<radio_group name="mode_selection" left="7">
+		<radio_item label="Inv." name="inventory"/>
+		<radio_item label="Loc." name="local"/>
+		<radio_item label="Cuita" name="bake"/>
+	</radio_group>
+	<text name="size_lbl">
+Mida:
+[DIMENSIONS]
+	</text>
+
+	<button label="Per defecte" label_selected="Per defecte" name="Default"/>
+	<button label="En blanc" label_selected="En blanc" name="Blank"/>
+	<button label="Transparent" label_selected="Transparent" name="Transparent" tool_tip="Nota: Si se selecciona una textura transparent o una altra textura amb transparència parcial, la llum no es projectarà."/>
+	<button label="Cap" label_selected="Cap" name="None"/>
+	<text name="preview_disabled" value="Previsualització desactivada"/>
+
+	<filter_editor label="Filtra les textures" name="inventory search editor"/>
+	<check_box initial_value="false" label="Mostra les carpetes" name="show_folders_check"/>
+	<button label="Afegeix" label_selected="Afegeix" name="l_add_btn"/>
+	<button label="Elimina" label_selected="Elimina" name="l_rem_btn"/>
+	<button label="Puja" label_selected="Puja" name="l_upl_btn"/>
+	<scroll_list name="l_name_list">
+		<column label="Nom" name="unit_name"/>
+		<column label="ID" name="unit_id_HIDDEN"/>
+	</scroll_list>
+
+	<combo_box name="l_bake_use_texture_combo_box" tool_tip="Tria una textura">
+		<combo_box.item label="Cap" name="None"/>
+		<combo_box.item label="CAP" name="BAKED_HEAD"/>
+		<combo_box.item label="PART SUPERIOR" name="BAKED_UPPER"/>
+		<combo_box.item label="PART INFERIOR" name="BAKED_LOWER"/>
+		<combo_box.item label="ULLS" name="BAKED_EYES"/>
+		<combo_box.item label="FALDILLA" name="BAKED_SKIRT"/>
+		<combo_box.item label="CABELLS" name="BAKED_HAIR"/>
+		<combo_box.item label="BRAÇ" name="BAKED_LEFTARM"/>
+		<combo_box.item label="CAMBA" name="BAKED_LEFTLEG"/>
+		<combo_box.item label="AUX1" name="BAKED_AUX1"/>
+		<combo_box.item label="AUX2" name="BAKED_AUX2"/>
+		<combo_box.item label="AUX3" name="BAKED_AUX3"/>
+	</combo_box>
+	<check_box label="Amaga la regió de la malla base" name="hide_base_mesh_region"/>
+
+	<line_editor name="TextureKey" tool_tip="Clau de la textura (UUID)"/>
+	<button name="TextureKeyApply" label="Aplica l'UUID" width="100" tool_tip="Aplica aquest UUID"/>
+	<button label="Tria" label_selected="Tria" name="Вибрати" left="150"/>
+	<button label="Cancel·la" label_selected="Cancel·la" name="Cancel"/>
+	<check_box initial_value="true" label="Aplica-ho immediatament" name="apply_immediate_check" width="200"/>
+</floater>

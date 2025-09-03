@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater height="680" name="floater_script_colors" title="Paràmetres de l'editor de scripts" width="330">
+	<text name="color_pickers_label" width="200">
+		Tria els colors que prefereixis:
+	</text>
+	<text name="text_label" width="100">
+		Text
+	</text>
+	<text name="cursor_label" width="100">
+		Cursor
+	</text>
+	<text name="background_label" width="100">
+		Fons
+	</text>
+	<text name="section_label" width="100">
+		Seccions
+	</text>
+	<text name="datatype_label" width="100">
+		Tipus de dades
+	</text>
+	<text name="event_label" width="100">
+		Esdeveniments
+	</text>
+	<text name="comment_label" width="100">
+		Comentari
+	</text>
+	<text name="function_label" width="100">
+		Funció
+	</text>
+	<text name="string_literal_label" width="100">
+		Cadena literal
+	</text>
+	<text name="constant_label" width="100">
+		Constant
+	</text>
+	<text name="i_constant_label" width="100">
+		Constant entera
+	</text>
+	<text name="s_constant_label" width="100">
+		Constant de cadena
+	</text>
+	<text name="f_constant_label" width="100">
+		Constant flotant
+	</text>
+	<text name="c_constant_label" width="100">
+		Connexió
+	</text>
+	<text name="flow_control_label" width="100">
+		Control de flux
+	</text>
+	<text name="preprocessor_label" width="100">
+		Preprocessador
+	</text>
+	<text name="prefs_label" width="250">
+		Paràmetres de l'editor de scripts:
+		</text>
+	<check_box name="convert_tabs_to_spaces_checkbox" width="200" label="Reemplaça els tabuladors per espais" />
+	<check_box label="Activa el preprocessador LSL" tool_tip="Si aquesta casella està marcada, el preprocessador LSL està activat." name="preproc_checkbox" />
+	<check_box label="Optimitzador de scripts" tool_tip="Si aquesta casella està marcada, el preprocessador LSL optimitza l'espai utilitzat per l'script." name="preprocoptimizer_checkbox" />
+	<check_box label="Sentència switch()" tool_tip="Si aquesta casella està marcada, el preprocessador LSL permetrà l'ús de la sentència switch() per al control de flux dels scripts." name="preprocswitch_checkbox" />
+	<check_box label="Llistes 'lazy'" tool_tip="Si aquesta casella està marcada, el preprocessador LSL permetrà extensions de sintaxi per a la manipulació de llistes." name="preproclazy_checkbox" />
+	<check_box label="#includes des del disc local" tool_tip="Si aquesta casella està marcada, el preprocessador LSL permetrà que les sentències #include facin referència a fitxers del teu disc local." name="preprocinclude_checkbox" />
+	<text name="lslpreprocinclude_textbox" width="256">
+		Ruta d'inclusió del preprocessador:
+	</text>
+	<button label="..." label_selected="Navega" name="SetPreprocInclude" width="30" />
+	<text name="advanced_label" width="150">
+		Paràmetres avançats:
+		</text>
+	<check_box name="FSllOwnerSayToScriptDebugWindow_checkbox" width="200" label="Dirigeix llOwnerSay a la finestra de depuració de l'script" />
+	<check_box name="FSScriptEditorRecompileButton_checkbox" width="200" label="Botó de recompilació (útil per a #include)" />
+
+	<button name="close_btn" width="100" label="D'acord" />
+</floater>

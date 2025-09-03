@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_pathfinding_characters" title="Personatges amb cerca de camins">
+	<floater.string name="messaging_get_inprogress">
+		Consultant els personatges amb cerca de camins...
+	</floater.string>
+	<floater.string name="messaging_get_error">
+		S'ha produït un error en consultar els personatges amb cerca de camins.
+	</floater.string>
+	<floater.string name="messaging_complete_none_found">
+		No s'han trobat personatges amb cerca de camins.
+	</floater.string>
+	<floater.string name="messaging_complete_available">
+		Personatges seleccionats: [NUM_SELECTED] de [NUM_TOTAL].
+	</floater.string>
+	<floater.string name="messaging_not_enabled">
+		La cerca de camins no està habilitada en aquesta regió.
+	</floater.string>
+	<floater.string name="character_cpu_time">
+		[CPU_TIME] µs
+	</floater.string>
+	<floater.string name="character_owner_loading">
+		[S'està carregant]
+	</floater.string>
+	<floater.string name="character_owner_unknown">
+		[Desconegut]
+	</floater.string>
+	<floater.string name="character_owner_group">
+		[grup]
+	</floater.string>
+	<panel name="pathfinding_chars_main">
+		<scroll_list name="objects_scroll_list">
+			<scroll_list.columns label="Nom" name="name"/>
+			<scroll_list.columns label="Descripció" name="description"/>
+			<scroll_list.columns label="Propietari" name="owner"/>
+			<scroll_list.columns label="CPU" name="cpu_time"/>
+			<scroll_list.columns label="Altitud" name="altitude"/>
+		</scroll_list>
+		<text name="messaging_status">
+			Personatges:
+		</text>
+		<button label="Actualitza la llista" name="refresh_objects_list"/>
+		<button label="Selecciona-ho tot" name="select_all_objects"/>
+		<button label="No seleccionis res" name="select_none_objects"/>
+	</panel>
+	<panel name="pathfinding_chars_actions">
+		<text name="actions_label">
+			Accions per als personatges seleccionats:
+		</text>
+		<check_box label="Mostra el senyal lluminós" name="show_beacon"/>
+		<check_box label="Mostra la càpsula física" name="show_physics_capsule"/>
+		<button label="Agafa" name="take_objects"/>
+		<button label="Fes-ne una còpia" name="take_copy_objects"/>
+		<button label="Teleporta-m'hi" name="teleport_me_to_object" tool_tip="Només es permet si se selecciona un únic personatge."/>
+		<button label="Retorna" name="return_objects"/>
+		<button label="Suprimeix" name="delete_objects"/>
+	</panel>
+</floater>

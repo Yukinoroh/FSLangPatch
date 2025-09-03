@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_fs_search" title="Cerca de Firestorm">
+	<floater.string name="string.location">
+		Lloc: [LOCATION]
+	</floater.string>
+	<floater.string name="string.traffic">
+		Trànsit: [DWELL]
+	</floater.string>
+	<floater.string name="string.area">
+		Àrea: [AREA]
+	</floater.string>
+	<floater.string name="string.members">
+		Membres: [MEMBER_COUNT]
+	</floater.string>
+	<floater.string name="string.founder">
+		Fundador: [FOUNDER]
+	</floater.string>
+	<floater.string name="string.age">
+		Edat: [AGE]
+	</floater.string>
+	<floater.string name="string.listing_price">
+		Cost: [LISTING_PRICE]
+	</floater.string>
+	<floater.string name="string.duration">
+		Durada: [DURATION]
+	</floater.string>
+	<floater.string name="string.covercharge">
+		Quota d'entrada: [COVERCHARGE]
+	</floater.string>
+	<tab_container name="ls_tabs">
+		<panel label="Web" name="panel_ls_web" />
+		<panel label="Gent" name="panel_ls_people" />
+		<panel label="Grups" name="panel_ls_groups" />
+		<panel label="Llocs" name="panel_ls_places" />
+		<panel label="Venda de terrenys" name="panel_ls_land" />
+		<panel label="Esdeveniments" name="panel_ls_events" />
+		<panel label="Anuncis" name="panel_ls_classifieds" />
+	</tab_container>
+	<panel name="panel_ls_details">
+		<text_editor name="title" value="Nom no definit" />
+		<text_editor name="aux1" value="Camp d'informació auxiliar 1" />
+		<text_editor name="aux2" value="Camp d'informació auxiliar 2" />
+		<text_editor name="location" value="Informació del lloc" />
+		<text_editor name="desc" value="Obres aquesta porta amb la clau de la imaginació. Més enllà hi ha una altra dimensió: una dimensió de so, una dimensió de visió, una dimensió de la ment. Et mous cap a una terra d'ombres i substància, de coses i idees; acabes de creuar a La Dimensió Desconeguda. El que estàs a punt de veure és real, les parts del procés judicial a la pantalla no són actors, són ciutadans reals que, després de presentar demandes en un tribunal real de reclamacions de menor quantia, van ser persuadits de retirar les seves demandes i permetre que es resolguessin aquí, en aquest fòrum... al Tribunal Popular."/>
+		<button label="Perfil" name="people_profile_btn" />
+		<button label="MI" name="people_message_btn" />
+		<button label="Afegeix com a amic" name="people_friend_btn" />
+		<button label="Perfil" name="group_profile_btn" />
+		<button label="Xat" name="group_message_btn" />
+		<button label="Uneix-te" name="group_join_btn" />
+		<button label="Teleporta" name="teleport_btn" />
+		<button label="Al mapa" name="map_btn" />
+		<button label="Recorda-m'ho" name="event_reminder_btn" />
+	</panel>
+</floater>

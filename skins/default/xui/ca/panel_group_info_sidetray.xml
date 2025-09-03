@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Perfil del grup" name="GroupInfo">
+	<panel.string name="default_needs_apply_text">
+		Hi ha canvis sense desar
+	</panel.string>
+	<panel.string name="want_apply_text">
+		Vols desar aquests canvis?
+	</panel.string>
+	<panel.string name="group_join_btn">
+		Uneix-t'hi (L$[AMOUNT])
+	</panel.string>
+	<panel.string name="group_join_free">
+		Gratuït
+	</panel.string>
+
+	<layout_stack name="group_info_sidetray_main">
+		<layout_panel name="header_container">
+
+	<panel name="group_info_top">
+		<text_editor name="group_name" value="(S'està carregant...)"/>
+		<line_editor label="Introdueix aquí el nom del nou grup" name="group_name_editor"/>
+	</panel>
+
+		</layout_panel>
+		<layout_panel name="group_info_content">
+
+	<layout_stack name="layout">
+		<layout_panel name="group_accordions">
+			<accordion name="groups_accordion">
+				<accordion_tab name="group_general_tab" title="General"/>
+				<accordion_tab name="group_roles_tab" title="Rols"/>
+				<accordion_tab name="group_notices_tab" title="Avisos"/>
+				<accordion_tab name="group_land_tab" title="Terreny/Actius"/>
+				<accordion_tab name="group_experiences_tab" title="Experiències"/>
+			</accordion>
+		</layout_panel>
+	</layout_stack>
+	<layout_stack name="button_row_ls">
+		<layout_panel name="btn_chat_lp">
+			<button label="Xat" name="btn_chat"/>
+		</layout_panel>
+		<layout_panel name="call_btn_lp">
+			<button label="Truca al grup" name="btn_call" tool_tip="Truca a aquest grup"/>
+		</layout_panel>
+		<layout_panel name="btn_apply_lp">
+			<button label="Desa" label_selected="Desa" name="btn_apply"/>
+			<button label="Crea un grup" name="btn_create" tool_tip="Crea un nou grup"/>
+		</layout_panel>
+	</layout_stack>
+
+		</layout_panel>
+	</layout_stack>
+</panel>

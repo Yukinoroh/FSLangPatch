@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Terreny i L$" name="land_money_tab">
+	<panel.string name="help_text">
+		Es mostrarà un avís si el terreny total en ús supera la contribució total.
+	</panel.string>
+	<panel.string name="cant_view_group_land_text">
+		No tens permís per veure els terrenys del grup
+	</panel.string>
+	<panel.string name="epmty_view_group_land_text">
+		No hi ha dades
+	</panel.string>
+	<panel.string name="cant_view_group_accounting_text">
+		No tens permís per veure la comptabilitat del grup
+	</panel.string>
+	<panel.string name="loading_txt">
+		S'està carregant...
+	</panel.string>
+	<panel.string name="land_contrib_error">
+		No s'ha pogut establir la teva contribució de terreny
+	</panel.string>
+	<scroll_list name="group_parcel_list">
+		<scroll_list.columns label="Parcel·la" name="name"/>
+		<scroll_list.columns label="Regió" name="location"/>
+		<scroll_list.columns label="Tipus" name="type"/>
+		<scroll_list.columns label="Àrea" name="area"/>
+		<scroll_list.columns label="Ocult" name="hidden"/>
+	</scroll_list>
+	<button label="Mapa" label_selected="Mapa" name="map_button"/>
+	<text name="total_land_in_use_label">
+		En ús:
+	</text>
+	<text name="land_available_label">
+		Disponible:
+	</text>
+	<text name="total_contributed_land_label">
+		Contribució total:
+	</text>
+	<text name="your_contribution_label">
+		La teva contribució:
+	</text>
+	<text name="your_contribution_max_value">
+		(màxim: [AMOUNT])
+	</text>
+	<text name="group_money_heading">
+		L$ del grup
+	</text>
+	<text name="group_over_limit_text">
+		Cal augmentar el crèdit d'ús de les parcel·les.
+	</text>
+	<tab_container name="group_money_tab_container">
+		<panel label="Planificació" name="group_money_planning_tab">
+			<text_editor name="group_money_planning_text">
+				S'està carregant...
+			</text_editor>
+		</panel>
+		<panel label="Detalls" name="group_money_details_tab">
+			<text_editor name="group_money_details_text">
+				S'està carregant...
+			</text_editor>
+			<button name="earlier_details_button" tool_tip="Més antic"/>
+			<button name="later_details_button" tool_tip="Més recent"/>
+		</panel>
+		<panel label="Vendes" name="group_money_sales_tab">
+			<text_editor name="group_money_sales_text">
+				S'està carregant...
+			</text_editor>
+			<button name="earlier_sales_button" tool_tip="Més antic"/>
+			<button name="later_sales_button" tool_tip="Més recent"/>
+		</panel>
+	</tab_container>
+</panel>

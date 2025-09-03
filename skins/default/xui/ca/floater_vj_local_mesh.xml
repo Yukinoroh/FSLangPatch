@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="Local Mesh" title="Malla local">
+  <tab_container name="local_mesh_tabs">
+    <panel name="local_mesh_assets_panel"
+      label="Actius de la malla local"
+      title="Actius de la malla local">
+      <fs_scroll_list name="l_name_list">
+        <column name="unit_status" label="Estat"/>
+        <column name="unit_name" label="Nom"/>
+        <column name="unit_lods" label="LODs"/>
+        <column name="unit_objects" label="Objectes"/>
+        <column name="unit_id_HIDDEN" label="ID"/>
+      </fs_scroll_list>
+    </panel>
+    <panel name="logs_panel" label="Registre"/>
+    <panel name="local_mesh_settings_panel" label="Configuració">
+      <check_box name="local_mesh_scale_use_meters"
+        label="Assumeix que l'escala s'especifica en metres."
+        tool_tip="Ignora les unitats d'escala en centímetres utilitzades per eines com Maya" />
+      <text name="lod_suffix_label">
+        Sufixos de LOD:
+      </text>
+      <combo_box name="lod_suffix_combo"
+        tool_tip="Tria un estàndard o edita-ho manualment... || SL per defecte - (Més baix com a LOD0, Alt sense sufix). || Motor de jocs - Unity/UE5, etc. || Noms de LOD - Noms de LOD en anglès, (Més baix='LOWEST', Alt='HIGH').">
+        <combo_item name="choose_one">Actual</combo_item>
+        <combo_item name="suff_sl">SL Estàndard</combo_item>
+        <combo_item name="suff_unity">Estàndard de motor de jocs</combo_item>
+        <combo_item name="suff_descriptive">Noms de LOD</combo_item>
+      </combo_box>
+      <text name="suf_lowest_lab">
+        Més baix:
+      </text>
+      <line_editor name="suf_lowest"
+        tool_tip="Sufix utilitzat per identificar el fitxer amb el LOD més baix al disc i els models dins del fitxer."/>
+      <text name="suf_low_lab">
+        Baix:
+      </text>
+      <line_editor name="suf_low"
+        tool_tip="Sufix utilitzat per identificar el fitxer amb el LOD baix al disc i els models dins del fitxer."/>
+      <text name="suf_medium_lab">
+        Mitjà:
+      </text>
+      <line_editor name="suf_medium"
+        tool_tip="Sufix utilitzat per identificar el fitxer amb el LOD mitjà al disc i els models dins del fitxer."/>
+      <text name="suf_high_lab">
+        Alt:
+      </text>
+      <line_editor name="suf_high"
+        tool_tip="Sufix utilitzat per identificar el fitxer amb el LOD alt al disc i els models dins del fitxer."/>
+      <text name="suf_physics_lab">
+        Física:
+      </text>
+      <line_editor name="suf_physics"
+        tool_tip="Sufix utilitzat per identificar el fitxer de física al disc i els models dins del fitxer."/>
+    </panel>
+  </tab_container>
+  <button name="btn_apply" label="Aplica"/>
+  <button name="btn_add" label="Afegeix"/>
+  <button name="btn_remove" label="Elimina"/>
+  <button name="btn_reload" label="Recarrega"/>
+  <button name="btn_clear" label="Neteja"/>
+  <button name="btn_rez" label="Crea la selecció (Rez)"
+    tool_tip="Crea una malla donant al món i omple-la amb la malla local seleccionada. Això crearà un objecte buit al món."/>
+</floater>

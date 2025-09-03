@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="gesture_preview">
+	<floater.string name="step_anim">
+		Reprodueix l'animació:
+	</floater.string>
+	<floater.string name="step_sound">
+		Reprodueix el so:
+	</floater.string>
+	<floater.string name="step_chat">
+		Digues al xat:
+	</floater.string>
+	<floater.string name="step_wait">
+		Espera:
+	</floater.string>
+	<floater.string name="stop_txt">
+		Atura
+	</floater.string>
+	<floater.string name="preview_txt">
+		Previsualitza
+	</floater.string>
+	<floater.string name="none_text">
+		- Cap -
+	</floater.string>
+	<floater.string name="Title">
+		Gest: [NAME]
+	</floater.string>
+	<text name="desc_label">
+		Descripció:
+	</text>
+	<text name="trigger_label">
+		Activador:
+	</text>
+	<text name="replace_text" tool_tip="Reemplaça el text de l'activador per aquestes paraules. Per exemple, si l'activador és 'hola' i el text de reemplaçament és 'bon dia', en escriure 'volia dir hola' al xat, apareixerà 'volia dir bon dia' juntament amb el gest.">
+		Reemplaça per:
+	</text>
+	<line_editor name="replace_editor" tool_tip="Reemplaça el text de l'activador per aquestes paraules. Per exemple, si l'activador és 'hola' i el text de reemplaçament és 'bon dia', en escriure 'volia dir hola' al xat, apareixerà 'volia dir bon dia' juntament amb el gest."/>
+	<text name="key_label">
+		Drecera de teclat:
+	</text>
+	<combo_box label="Cap" name="modifier_combo"/>
+	<combo_box label="Cap" name="key_combo"/>
+	<text name="library_label">
+		Biblioteca:
+	</text>
+	<scroll_list name="library_list">
+		<scroll_list.rows name="action_animation" value="Animació"/>
+		<scroll_list.rows name="action_sound" value="So"/>
+		<scroll_list.rows name="action_chat" value="Xat"/>
+		<scroll_list.rows name="action_wait" value="Espera"/>
+	</scroll_list>
+	<button label="Afegeix &gt;&gt;" name="add_btn"/>
+	<text name="steps_label">
+		Passos:
+	</text>
+	<button label="Amunt" name="up_btn"/>
+	<button label="Avall" name="down_btn"/>
+	<button label="Suprimeix" name="delete_btn"/>
+	<text name="options_text">
+		(Opcions)
+	</text>
+	<radio_group name="animation_trigger_type">
+		<radio_item label="Inicia" name="start"/>
+		<radio_item label="Atura" name="stop"/>
+	</radio_group>
+	<check_box label="fins que l'animació acabi" name="wait_anim_check"/>
+	<check_box label="temps en segons:" name="wait_time_check"/>
+	<text name="help_label">
+		Tots els passos s'executen alhora, tret que hi afegeixis passos d'espera.
+	</text>
+	<check_box label="Actiu" name="active_check" tool_tip="Els gestos actius es poden invocar escrivint els seus activadors al xat o prement les seves dreceres de teclat. Un gest sol tornar-se inactiu si hi ha un conflicte de tecles."/>
+	<button label="Previsualitza" name="preview_btn"/>
+	<button label="Desa" name="save_btn"/>
+</floater>

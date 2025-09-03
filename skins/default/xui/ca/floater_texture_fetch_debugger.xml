@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="TexFetchDebugger" title="Depuració de la recuperació de textures">
+	<text name="total_num_fetched_label">
+		1, Nombre total de textures recuperades: [NUM]
+	</text>
+	<text name="total_num_fetching_requests_label">
+		2, Nombre total de sol·licituds: [NUM]
+	</text>
+	<text name="total_num_cache_hits_label">
+		3, Nombre total d'encerts de la cau: [NUM]
+	</text>
+	<text name="total_num_visible_tex_label">
+		4, Nombre total de textures visibles: [NUM]
+	</text>
+	<text name="total_num_visible_tex_fetch_req_label">
+		5, Nombre total de sol·licituds de textures visibles: [NUM]
+	</text>
+	<text name="total_fetched_data_label">
+		6, Dades totals: [SIZE1] KB, dades descodificades: [SIZE2] KB, [PIXEL] Mpixels
+	</text>
+	<text name="total_fetched_vis_data_label">
+		7, Dades visibles totals: [SIZE1] KB, dades descodificades: [SIZE2] KB
+	</text>
+	<text name="total_fetched_rendered_data_label">
+		8, Dades renderitzades totals: [SIZE1] KB, dades descodificades: [SIZE2] KB, [PIXEL] Mpixels
+	</text>
+	<text name="total_time_cache_read_label">
+		9, Temps total de lectura de la cau: [TIME] s
+	</text>
+	<text name="total_time_cache_write_label">
+		10, Temps total d'escriptura a la cau: [TIME] s
+	</text>
+	<text name="total_time_decode_label">
+		11, Temps total de descodificació: [TIME] s
+	</text>
+	<text name="total_time_gl_label">
+		12, Temps total de creació de textures: [TIME] s
+	</text>
+	<text name="total_time_http_label">
+		13, Temps total de recuperació HTTP: [TIME] s
+	</text>
+	<text name="total_time_fetch_label">
+		14, Temps total de recuperació completa: [TIME] s
+	</text>
+	<text name="total_time_refetch_vis_cache_label">
+		15, Torna a recuperar de la cau, temps: [TIME] s, recuperat: [SIZE] KB, [PIXEL] Mpixels
+	</text>
+	<text name="total_time_refetch_all_cache_label">
+		16, Torna a recuperar tot de la cau, temps: [TIME] s, recuperat: [SIZE] KB, [PIXEL] Mpixels
+	</text>
+	<text name="total_time_refetch_vis_http_label">
+		17, Torna a recuperar de l'HTTP, temps: [TIME] s, recuperat: [SIZE] KB, [PIXEL] Mpixels
+	</text>
+	<text name="total_time_refetch_all_http_label">
+		18, Torna a recuperar tot de l'HTTP, temps: [TIME] s, recuperat: [SIZE] KB, [PIXEL] Mpixels
+	</text>
+	<spinner label="19, Ràtio tèxel/píxel:" name="texel_pixel_ratio"/>
+	<text name="texture_source_label">
+		20, Origen de les textures:
+	</text>
+	<radio_group name="texture_source">
+		<radio_item label="Cau + HTTP" name="0"/>
+		<radio_item label="Només HTTP" name="1"/>
+	</radio_group>
+	<button label="Inicia" name="start_btn"/>
+	<button label="Reinicia" name="clear_btn"/>
+	<button label="Tanca" name="close_btn"/>
+	<button label="Reinicia el temps de recuperació" name="reset_time_btn"/>
+	<button label="Lectura de cau" name="cacheread_btn"/>
+	<button label="Escriptura a la cau" name="cachewrite_btn"/>
+	<button label="HTTP" name="http_btn"/>
+	<button label="Descodifica" name="decode_btn"/>
+	<button label="Textura GL" name="gl_btn"/>
+	<button label="Torna a recuperar de la cau" name="refetchviscache_btn"/>
+	<button label="Torna a recuperar tot de la cau" name="refetchallcache_btn"/>
+	<button label="Torna a recuperar de l'HTTP" name="refetchvishttp_btn"/>
+	<button label="Torna a recuperar tot de l'HTTP" name="refetchallhttp_btn"/>
+</floater>

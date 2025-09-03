@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="panel_classified_info">
+	<panel.string name="type_mature">
+		Contingut moderat
+	</panel.string>
+	<panel.string name="type_pg">
+		Contingut general
+	</panel.string>
+	<panel.string name="l$_price">
+		L$[PRICE]
+	</panel.string>
+	<panel.string name="click_through_text_fmt">
+		Teleporta [TELEPORT], mapa [MAP], perfil [PROFILE]
+	</panel.string>
+	<panel.string name="date_fmt">
+		[day,datetime,slt]/[mthnum,datetime,slt]/[year,datetime,slt]
+	</panel.string>
+	<panel.string name="auto_renew_on">
+		Activat
+	</panel.string>
+	<panel.string name="auto_renew_off">
+		Desactivat
+	</panel.string>
+	<text name="title" value="Informació de l'anunci"/>
+	<scroll_container name="profile_scroll">
+		<panel name="scroll_content_panel">
+			<text_editor name="classified_name" value="[nom]"/>
+			<text name="classified_location_label" value="Lloc:"/>
+			<text_editor name="classified_location" value="[S'està carregant...]"/>
+			<text name="content_type_label" value="Tipus de contingut:"/>
+			<text_editor name="content_type" value="[tipus de contingut]"/>
+			<text name="category_label" value="Categoria:"/>
+			<text_editor name="category" value="[categoria]"/>
+			<text name="creation_date_label" value="Data de creació:"/>
+			<text_editor name="creation_date" tool_tip="Data de creació" value="[data]"/>
+			<text name="price_for_listing_label" value="Preu de publicació:"/>
+			<text_editor name="price_for_listing" tool_tip="Preu de publicació." value="[preu]"/>
+			<layout_stack name="descr_stack">
+				<layout_panel name="clickthrough_layout_panel">
+					<text name="click_through_label" value="'Clics':"/>
+					<text_editor name="click_through_text" tool_tip="Informació dels 'clics'" value="[clics]"/>
+				</layout_panel>
+				<layout_panel name="price_layout_panel">
+					<text name="auto_renew_label" value="Renovació automàtica:"/>
+					<text name="auto_renew" value="Activat"/>
+				</layout_panel>
+				<layout_panel name="descr_layout_panel">
+					<text name="classified_desc_label" value="Descripció:"/>
+					<text_editor name="classified_desc" value="[descripció]"/>
+				</layout_panel>
+			</layout_stack>
+		</panel>
+	</scroll_container>
+	<panel name="buttons">
+		<layout_stack name="layout_stack1">
+			<layout_panel name="layout_panel1">
+				<button label="Teleporta" name="teleport_btn"/>
+			</layout_panel>
+			<layout_panel name="show_on_map_btn_lp">
+				<button label="Mapa" name="show_on_map_btn"/>
+			</layout_panel>
+			<layout_panel name="edit_btn_lp">
+				<button label="Edita" name="edit_btn"/>
+			</layout_panel>
+		</layout_stack>
+	</panel>
+</panel>

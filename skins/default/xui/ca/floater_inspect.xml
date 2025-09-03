@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="inspect" title="Inspecció d'objectes">
+    <floater.string name="timeStamp">
+        [wkday,datetime,slt], [day,datetime,slt] [mth,datetime,slt] [year,datetime,slt] [hour,datetime,slt]:[min,datetime,slt]:[second,datetime,slt]
+    </floater.string>
+    <floater.string name="Group">
+        (Grup)
+    </floater.string>
+    <floater.string name="stats_list">
+        Estadístiques totals:
+
+[NUM_OBJECTS] objectes, [NUM_PRIMS]
+
+Cares: [NUM_FACES]
+Visibles: [NUM_VISIBLE_FACES]
+Vèrtexs: [NUM_VERTICES]
+Triangles: [NUM_TRIANGLES]
+Complex.: [COMPLEXITY]
+
+Textures: [NUM_TEXTURES]
+TMem: [TEXTURE_MEMORY] KB
+VRAM: [VRAM_USAGE] KB
+    </floater.string>
+
+    <text_editor name="linksetstats_text" value="(S'està carregant...)"/>
+    <scroll_list name="object_list" tool_tip="Seleccionar un objecte d'aquesta llista el ressaltarà al món">
+        <scroll_list.columns label="Nom de l'objecte" name="object_name" />
+        <scroll_list.columns label="Descripció" name="description" />
+        <scroll_list.columns label="Nom del propietari" name="owner_name" />
+        <scroll_list.columns label="Nom del creador" name="creator_name" />
+        <scroll_list.columns label="Cares" name="facecount"/>
+        <scroll_list.columns label="Vèrtexs" name="vertexcount" />
+        <scroll_list.columns label="Triangles" name="trianglecount"/>
+        <scroll_list.columns label="TMem" name="tramcount"/>
+        <scroll_list.columns label="VRAM" name="vramcount"/>
+        <scroll_list.columns label="Data de creació" name="creation_date"/>
+    </scroll_list>
+    <button label="Perfil del propietari..." name="button owner"
+     tool_tip="Mostra el perfil del propietari de l'objecte ressaltat"/>
+    <button label="Perfil del creador..." name="button creator" tool_tip="Mostra el perfil del creador de l'objecte ressaltat"/>
+    <menu_button name="options_btn" tool_tip="Opcions"/>
+</floater>

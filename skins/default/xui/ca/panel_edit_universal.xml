@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="edit_universal_panel">
+  <scroll_container name="avatar_universal_scroll">
+    <panel name="avatar_universal_color_panel">
+     <texture_picker label="Tatuatge del cap" name="Head Universal Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge superior" name="Upper Universal Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge inferior" name="Lower Universal Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge de la faldilla" name="Skirt Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge dels cabells" name="Hair Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge dels ulls" name="Eyes Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge del braç" name="Left Arm Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge de la cama" name="Left Leg Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge Aux1" name="Aux1 Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge Aux2" name="Aux2 Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <texture_picker label="Tatuatge Aux3" name="Aux3 Tattoo" tool_tip="Fes clic per triar una imatge"/>
+     <color_swatch label="Color/Tint" name="Color/Tint" tool_tip="Fes clic per triar un color"/>
+    </panel>
+  </scroll_container>
+</panel>

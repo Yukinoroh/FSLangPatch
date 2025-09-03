@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Post-Process Floater" title="Paràmetres de postprocessament">
+	<tab_container name="Post-Process Tabs">
+		<panel label="Filtre de color" name="wmiColorFilterPanel">
+			<check_box label="Act." name="wmiColorFilterToggle"/>
+			<text name="wmiColorFilterBrightnessText">
+				Brillantor
+			</text>
+			<text name="wmiColorFilterSaturationText">
+				Saturació
+			</text>
+			<text name="wmiColorFilterContrastText">
+				Contrast
+			</text>
+			<text name="wmiColorFilterBaseText">
+				Color base del contrast
+			</text>
+			<slider label="R" name="wmiColorFilterBaseR"/>
+			<slider label="G" name="wmiColorFilterBaseG"/>
+			<slider label="B" name="wmiColorFilterBaseB"/>
+			<slider label="I" name="wmiColorFilterBaseI"/>
+		</panel>
+		<panel label="Visió nocturna" name="wmiNightVisionPanel">
+			<check_box label="Act." name="wmiNightVisionToggle"/>
+			<text name="wmiNightVisionBrightMultText">
+				Multiplicador de brillantor
+			</text>
+			<text name="wmiNightVisionNoiseSizeText">
+				Mida del soroll
+			</text>
+			<text name="wmiNightVisionNoiseStrengthText">
+				Intensitat del soroll
+			</text>
+		</panel>
+		<panel label="Resplendor" name="wmiBloomPanel">
+			<check_box label="Act." name="wmiBloomToggle"/>
+			<text name="wmiBloomExtractText">
+				Llindar d'extracció
+			</text>
+			<text name="wmiBloomSizeText">
+				Mida de la resplendor
+			</text>
+			<text name="wmiBloomStrengthText">
+				Intensitat de la resplendor
+			</text>
+		</panel>
+		<panel label="Extres" name="Extras">
+			<button label="Carrega l'efecte" label_selected="Carrega l'efecte" name="PPLoadEffect" width="120"/>
+			<button label="Desa l'efecte" label_selected="Desa l'efecte" name="PPSaveEffect" width="120"/>
+			<combo_box left_delta="130" name="PPEffectsCombo"/>
+			<line_editor label="Nom de l'efecte" name="PPEffectNameEditor"/>
+		</panel>
+	</tab_container>
+</floater>

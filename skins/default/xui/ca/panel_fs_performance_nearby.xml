@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="panel_performance_nearby">
+	<text name="back_lbl">Enrere</text>
+	<text name="av_nearby_title">Avatars propers</text>
+	<text name="tot_av_count">Total: 50 (120000.10µs)</text>
+	<text name="av_nearby_desc">Amaga els avatars més complexos per millorar el rendiment.</text>
+	<slider name="IndirectMaxComplexity" label="Complexitat màxima (K)" tool_tip="Controla quan un avatar visualment complex es mostra com a impostor (silueta)."/>
+	<slider name="FSRenderAvatarMaxART" label="Temps màx. de renderització (µs)" tool_tip="Controla quan es considera que un avatar visualment complex triga massa a renderitzar-se. (unitat: microsegons)"/>
+	<text name="FSRenderAvatarMaxARTText">il·limit.</text>
+	<name_list name="nearby_list">
+		<name_list.columns name="art_visual" tool_tip="Histograma que mostra el temps de renderització actual (inclòs l'autoajustament) com a % del més lent."/>
+		<name_list.columns name="art_value" label="Temps (µs)" tool_tip="Temps de renderització de l'avatar. El temps real que es triga a dibuixar aquest avatar abans de qualsevol autoajustament (en microsegons)."/>
+		<name_list.columns name="complex_value" label="ARC" tool_tip="Complexitat (ARC) basada en les regles estàndard."/>
+		<name_list.columns name="state" tool_tip="Mostra qualsevol ajustament. I=Impostor, S=sense ombra."/>
+		<name_list.columns name="name" label="Nom" />
+	</name_list>
+	<text name="av_nearby_desc2">
+		Pots fer clic dret en un avatar al món per controlar-ne la renderització.
+	</text>
+	<text name="av_nearby_desc3">
+		Nota: Fes servir la pestanya Complexitat de l'avatar per veure com afectes als altres.
+	</text>
+	<check_box label="Mostra sempre els amics amb el màxim detall" name="display_friends"/>
+	<button label="Excepcions..." name="exceptions_btn"/>
+	<check_box label="Amaga completament els avatars" name="hide_avatars"/>
+	<text name="name_tags_textbox">Etiquetes de nom:</text>
+	<radio_group name="name_tag_mode">
+		<radio_item label="Desc." name="radio"/>
+		<radio_item label="Act." name="radio2"/>
+		<radio_item label="Mostra-les breument" name="radio3"/>
+	</radio_group>
+</panel>

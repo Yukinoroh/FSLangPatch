@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Convida al grup" name="invite_panel">
+	<panel.string name="confirm_invite_owner_str">
+		Estàs segur/a que vols seleccionar nous propietaris per al grup? Aquesta acció no es pot desfer!
+	</panel.string>
+	<panel.string name="loading">
+		(S'està carregant...)
+	</panel.string>
+	<panel.string name="already_in_group">
+		Alguns dels residents que has seleccionat ja són al grup i no han estat convidats.
+	</panel.string>
+	<panel.string name="invite_selection_too_large">
+		No s'han enviat les invitacions: hi ha massa residents seleccionats. Les invitacions estan limitades a 100 usuaris per sol·licitud.
+	</panel.string>
+	<text name="help_text">
+		Pots convidar diversos residents al grup. Fes clic a 'Tria els residents'.
+	</text>
+	<button label="Tria els residents" name="add_button"/>
+	<name_list name="invitee_list" tool_tip="Per a una selecció múltiple, mantingues premuda la tecla CTRL mentre fas clic als noms dels residents"/>
+	<button label="Treu de la llista" name="remove_button" tool_tip="Treu els residents seleccionats de la llista de convidats"/>
+	<text name="role_text">
+		Tria un rol:
+	</text>
+	<combo_box name="role_name" tool_tip="Tria un rol de la llista per assignar-lo als membres"/>
+	<button label="Convida" name="invite_button"/>
+	<button label="Cancel·la" name="cancel_button"/>
+	<string name="GroupInvitation">
+		Invitació a un grup
+	</string>
+</panel>

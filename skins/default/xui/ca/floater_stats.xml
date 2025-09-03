@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Statistics" title="Estadístiques">
+	<scroll_container name="statistics_scroll">
+		<container_view name="statistics_view">
+			<stat_view label="Bàsic" name="basic">
+				<stat_bar label="Fotogrames/s" name="fps"/>
+				<stat_bar name="frame_mean" label="Fotograma (mitjana)"/>
+				<stat_bar name="frame_median" label="Fotograma (mediana)"/>
+				<stat_bar name="framet_jitter" label="Fluctuació (jitter)"/>
+				<stat_bar label="Ample de banda" name="bandwidth"/>
+				<stat_bar label="Pèrdua de paquets" name="packet_loss"/>
+				<stat_bar label="Ping" name="ping"/>
+			</stat_view>
+			<stat_view label="Avançat" name="advanced">
+				<stat_view label="Renderització" name="render">
+					<stat_bar label="Triangles per fotograma" name="ktrisframe"/>
+					<stat_bar label="Triangles per segon" name="ktrissec"/>
+					<stat_bar label="Objectes totals" name="objs"/>
+					<stat_bar label="Objectes nous" name="newobjs"/>
+					<stat_bar label="Taxa d'encerts de la cau d'objectes" name="object_cache_hits"/>
+				</stat_view>
+				<stat_view label="Textura" name="texture">
+					<stat_bar label="Taxa d'encerts de la cau" name="texture_cache_hits"/>
+					<stat_bar label="Latència de lectura de la cau" name="texture_cache_read_latency"/>
+					<stat_bar label="Quantitat" name="numimagesstat"/>
+					<stat_bar label="Imatges en cru (raw)" name="numrawimagesstat"/>
+					<stat_bar label="Memòria GL" name="gltexmemstat"/>
+					<stat_bar label="Memòria formatada" name="formattedmemstat"/>
+					<stat_bar label="Memòria en cru (raw)" name="rawmemstat"/>
+					<stat_bar label="Límit de memòria" name="glboundmemstat"/>
+				</stat_view>
+				<stat_view label="Xarxa" name="network">
+					<stat_bar label="Paquets d'entrada" name="packetsinstat"/>
+					<stat_bar label="Paquets de sortida" name="packetsoutstat"/>
+					<stat_bar label="Objectes" name="objectkbitstat"/>
+					<stat_bar label="Textura" name="texturekbitstat"/>
+					<stat_bar label="Actius" name="assetkbitstat"/>
+					<stat_bar label="Capes" name="layerskbitstat"/>
+					<stat_bar label="Entrada real" name="actualinkbitstat"/>
+					<stat_bar label="Sortida real" name="actualoutkbitstat"/>
+				</stat_view>
+			</stat_view>
+			<stat_view label="Simulador" name="sim">
+				<stat_bar label="Dilatació del temps" name="simtimedilation"/>
+				<stat_bar label="FPS de la simulació" name="simfps"/>
+				<stat_bar label="FPS de la física" name="simphysicsfps"/>
+				<stat_view label="Detalls de la física" name="physicsdetail">
+					<stat_bar label="Tasques de física fixades (pinned)" name="physicspinnedtasks"/>
+					<stat_bar label="Tasques de física amb baix LOD" name="physicslodtasks"/>
+					<stat_bar label="Memòria de física assignada" name="physicsmemoryallocated"/>
+				</stat_view>
+				<stat_bar label="Actualitzacions d'agent/s" name="simagentups"/>
+				<stat_bar label="Agents principals" name="simmainagents"/>
+				<stat_bar label="Agents secundaris" name="simchildagents"/>
+				<stat_bar label="Objectes" name="simobjects"/>
+				<stat_bar label="Objectes actius" name="simactiveobjects"/>
+				<stat_bar label="Scripts actius" name="simactivescripts"/>
+				<stat_bar label="% de scripts executats" name="simpctscriptsrun"/>
+				<stat_bar label="Esdeveniments de script/s" name="simscripteps"/>
+				<stat_view label="Cerca de camins (Pathfinding)" name="simpathfinding">
+					<stat_bar label="Temps de pas de la IA (ms)" name="simsimaistepmsec"/>
+					<stat_bar label="Passos de silueta omesos" name="simsimskippedsilhouettesteps"/>
+					<stat_bar label="% de personatges actualitzats" name="simsimpctsteppedcharacters"/>
+				</stat_view>
+				<stat_bar label="Paquets d'entrada/s" name="siminpps"/>
+				<stat_bar label="Paquets de sortida/s" name="simoutpps"/>
+				<stat_bar label="Descàrregues pendents" name="simpendingdownloads"/>
+				<stat_bar label="Càrregues pendents" name="simpendinguploads"/>
+				<stat_bar label="Total de bytes sense confirmació" name="simtotalunackedbytes"/>
+				<stat_view label="Temps (ms)" name="simperf">
+					<stat_bar label="Temps total del fotograma" name="simframemsec"/>
+					<stat_bar label="Temps de xarxa" name="simnetmsec"/>
+					<stat_bar label="Temps de física" name="simsimphysicsmsec"/>
+					<stat_bar label="Temps de simulació" name="simsimothermsec"/>
+					<stat_bar label="Temps d'agent" name="simagentmsec"/>
+					<stat_bar label="Temps d'imatges" name="simimagesmsec"/>
+					<stat_bar label="Temps de script" name="simscriptmsec"/>
+					<stat_bar label="Temps de reserva" name="simsparemsec"/>
+					<stat_view label="Detalls del temps (ms)" name="timedetails">
+						<stat_bar label="Pas de física" name="simsimphysicsstepmsec"/>
+						<stat_bar label="Actualització de formes físiques" name="simsimphysicsshapeupdatemsec"/>
+						<stat_bar label="Altres de física" name="simsimphysicsothermsec"/>
+						<stat_bar label="Temps d'espera (sleep)" name="simsleepmsec"/>
+						<stat_bar label="Temps d'E/S (pump IO)" name="simpumpiomsec"/>
+					</stat_view>
+				</stat_view>
+			</stat_view>
+		</container_view>
+	</scroll_container>
+</floater>

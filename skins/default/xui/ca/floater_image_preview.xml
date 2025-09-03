@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Image Preview" title="Previsualització d'imatge">
+	<string name="with_alpha" value="amb alfa"/>
+	<string name="no_alpha" value="sense alfa"/>
+	<text name="name_label">
+		Nom:
+	</text>
+	<text name="description_label">
+		Descripció:
+	</text>
+	<text name="preview_label">
+		Mostra com:
+	</text>
+	<combo_box label="Tipus de roba" name="clothing_type_combo">
+		<item label="Imatge" name="Image" value="Imatge"/>
+		<item label="Cabells" name="Hair" value="Cabells"/>
+		<item label="Cap femení" name="FemaleHead" value="Cap femení"/>
+		<item label="Part superior del cos femení" name="FemaleUpperBody" value="Part superior del cos femení"/>
+		<item label="Part inferior del cos femení" name="FemaleLowerBody" value="Part inferior del cos femení"/>
+		<item label="Cap masculí" name="MaleHead" value="Cap masculí"/>
+		<item label="Part superior del cos masculí" name="MaleUpperBody" value="Part superior del cos masculí"/>
+		<item label="Part inferior del cos masculí" name="MaleLowerBody" value="Part inferior del cos masculí"/>
+		<item label="Faldilla" name="Skirt" value="Faldilla"/>
+		<item label="Prim esculpit" name="SculptedPrim" value="Prim esculpit"/>
+	</combo_box>
+	<panel name="image_alpha_warning">
+		<check_box label="El canal alfa buit s'eliminarà" name="strip_alpha_check"/>
+	</panel>
+	<text name="bad_image_text">
+		No es pot llegir la imatge.
+Prova a desar la imatge com un fitxer TGA (Targa) de 24 bits.
+	</text>
+	<text name="uploaded_size_text">
+		Mida de càrrega: [X_RES]x[Y_RES], [ALPHA]
+	</text>
+	<check_box label="Fes servir la compressió sense pèrdues" name="lossless_check"/>
+	<check_box name="temp_check" label="Temporal (gratuït)" tool_tip="Estableix l'actiu com a temporal, la qual cosa significa que és gratuït, però només dura un curt període de temps abans de deixar d'existir."/>
+	<button label="Cancel·la" name="cancel_btn"/>
+	<button label="Puja (L$[AMOUNT])" name="ok_btn"/>
+	<text name="info_text" value="= aquí anirà el text d'informació sobre la tarifa de càrrega ="/>
+</floater>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="friends">
+	<layout_stack name="ls_friend_list">
+		<layout_panel name="lp_search">
+			<filter_editor label="Filtra els amics" name="friend_filter_input"/>
+		</layout_panel>
+		<layout_panel name="lp_friend_list">
+			<fs_scroll_list name="friend_list">
+				<fs_scroll_list.column name="icon_online_status" tool_tip="Estat de connexió"/>
+				<fs_scroll_list.column label="Nom d'usuari" name="user_name" tool_tip="Nom d'usuari"/>
+				<fs_scroll_list.column label="Nom públic" name="display_name" tool_tip="Nom públic"/>
+				<fs_scroll_list.column label="Nom complet" name="full_name" tool_tip="Nom complet de l'usuari"/>
+				<fs_scroll_list.column name="icon_visible_online" tool_tip="El teu amic et pot veure connectat/da"/>
+				<fs_scroll_list.column name="icon_visible_map" tool_tip="El teu amic et pot localitzar al mapa del món"/>
+				<fs_scroll_list.column name="icon_edit_mine" tool_tip="El teu amic pot editar, suprimir o agafar els teus objectes"/>
+				<fs_scroll_list.column name="icon_visible_map_theirs" tool_tip="El pots localitzar al mapa"/>
+				<fs_scroll_list.column name="icon_edit_theirs" tool_tip="Pots editar, suprimir o agafar els objectes del teu amic"/>
+			</fs_scroll_list>
+		</layout_panel>
+	</layout_stack>
+	<button label="MI/Trucada" name="im_btn" tool_tip="Envia un missatge instantani (MI)"/>
+	<button label="Perfil" name="profile_btn" tool_tip="Mostra el perfil"/>
+	<button label="Teleporta..." name="offer_teleport_btn" tool_tip="Ofereix al teu amic teleportar-se fins a la teva posició"/>
+	<button label="Mapa..." name="map_btn" tool_tip="Mostra la localització del teu amic al mapa del món"/>
+	<button label="Paga..." name="pay_btn" tool_t_tip="Dóna diners (L$)"/>
+	<button label="Elimina..." name="remove_btn" tool_tip="Elimina aquesta persona de la teva llista d'amics"/>
+	<button label="Afegeix..." name="add_btn" tool_tip="Ofereix la teva amistat a un resident"/>
+	<text name="friend_count">
+	Amics: [COUNT]
+	</text>
+</panel>

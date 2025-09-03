@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_radar">
+	<string name="TypingColumnIcon" value="radarbox_p"/>
+	<string name="MiniMapToolTipMsg" value="[REGION] (Doble clic per obrir el mapa)"/>
+	<string name="AltMiniMapToolTipMsg" value="[REGION] (Doble clic per obrir el mapa)"/>
+	<string name="avatar_name_count" value="Nom [[TOTAL]/[IN_REGION]/[IN_CHAT_RANGE]]"/>
+	<panel name="nearby_panel">
+		<panel name="nearby_buttons_panel">
+			<filter_editor label="Filtra la gent" name="nearby_filter_input"/>
+			<button name="gear_btn" tool_tip="Accions per a l'usuari seleccionat"/>
+			<menu_button name="options_btn" tool_tip="Opcions del radar"/>
+			<button name="add_friend_btn" tool_tip="Afegeix com a amic"/>
+		</panel>
+		<layout_stack name="radar_outer_ls">
+			<layout_panel name="radar_upper_layout">
+				<layout_stack name="radar_ls">
+					<layout_panel name="radarlayout">
+						<radar_list name="radar_list">
+							<radar_list.columns label="Nom" name="name" tool_tip="[TOTAL] avatars, [IN_REGION] en aquesta regió, [IN_CHAT_RANGE] a l'abast del xat"/>
+							<radar_list.columns name="voice_level" tool_tip="Està parlant"/>
+							<radar_list.columns name="in_region" tool_tip="És en aquesta regió"/>
+							<radar_list.columns name="typing_status" tool_tip="Està escrivint"/>
+							<radar_list.columns name="sitting_status" tool_tip="Està assegut/da"/>
+							<radar_list.columns name="flags" tool_tip="Informació de pagament"/>
+							<radar_list.columns name="has_notes" tool_tip="Notes de l'avatar"/>
+							<radar_list.columns label="Edat" name="age"/>
+							<radar_list.columns label="Temps" name="seen"/>
+							<radar_list.columns label="Distància" name="range"/>
+						</radar_list>
+					</layout_panel>
+				</layout_stack>
+			</layout_panel>
+			<layout_panel name="radar_lower_layout">
+				<slider label="Distància (m):" name="NearMeRange" />
+			</layout_panel>
+		</layout_stack>
+	</panel>
+</panel>
