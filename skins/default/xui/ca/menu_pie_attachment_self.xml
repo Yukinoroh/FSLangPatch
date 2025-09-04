@@ -3,34 +3,34 @@
     <pie_slice label="Perfil..." name="Profile..."/>
     <pie_slice label="Deixa anar" name="Drop"/>
     <pie_menu name="Attachment Pie More" label="Més &gt;">
-        <pie_slice label="Refresca la textura" name="Texture Refresh"/>
-        <pie_slice label="Info dels scripts" name="ScriptInfo"/>
+        <pie_slice label="Refresca" name="Texture Refresh"/>
+        <pie_slice label="InfoScripts" name="ScriptInfo"/>
         <pie_slice label="Tocar" name="Attachment Object Touch"/>
-        <pie_menu name="DerenderMenu" label="No renderis &gt;">
-            <pie_slice label="Temporalment" name="Derender"/>
-            <pie_slice label="Permanentment" name="DerenderPermanent"/>
+        <pie_menu name="DerenderMenu" label="Derender &gt;">
+            <pie_slice label="Temporal" name="Derender"/>
+            <pie_slice label="Fixa" name="DerenderPermanent"/>
         </pie_menu>
-        <pie_menu name="ExportMenu" label="Exporta com a &gt;">
-            <pie_slice label="Còpia de seguretat" name="Backup"/>
+        <pie_menu name="ExportMenu" label="Exporta &gt;">
+            <pie_slice label="oxp" name="Backup"/>
             <pie_slice label="Collada" name="Collada"/>
         </pie_menu>
         <pie_slice label="Inspecciona" name="Avatar Inspect"/>
         <pie_slice label="Depuració..." name="Debug..."/>
     </pie_menu>
     <pie_slice label="Seure" name="Sit Down Here"/>
-    <pie_slice label="Aixecar-se" name="Stand Up"/>
+    <pie_slice label="Aixecat" name="Stand Up"/>
     <pie_slice label="Treu" name="Detach"/>
     <pie_slice label="Gestos..." name="Gestures"/>
     <pie_menu label="Aparença &gt;" name="Appearance &gt;">
         <pie_slice label="Forma" name="Edit My Shape"/>
         <pie_menu name="ResetMenu" label="Reinicia &gt;">
-            <pie_slice label="Esq. i animacions" name="Reset Skeleton And Animations"/>
+            <pie_slice label="Animacions" name="Reset Skeleton And Animations"/>
             <pie_slice label="Esquelet" name="Reset Skeleton"/>
             <pie_slice label="Mesh LOD" name="Reset Mesh LOD"/>
         </pie_menu>
         <pie_slice label="Conjunt" name="Edit My Outfit"/>
         <pie_slice label="Dump XML" name="Dump XML"/>
-        <pie_slice label="Alçada flotant" name="Hover Height"/>
+        <pie_slice label="AlçadaFlotant" name="Hover Height"/>
     </pie_menu>
     <pie_slice label="Edita..." name="Edit..."/>
 </pie_menu>

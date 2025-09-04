@@ -1603,10 +1603,10 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Cap
 	</string>
 	<string name="BodyPartsLeftArm">
-		Braç esquerre
+		Braç esquer
 	</string>
 	<string name="BodyPartsLeftLeg">
-		Cama esquerra
+		Cama esquer
 	</string>
 	<string name="BodyPartsTorso">
 		Tors
@@ -2022,22 +2022,22 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Crani
 	</string>
 	<string name="Left Shoulder">
-		Espatlla esquerra
+		Espatlla E
 	</string>
 	<string name="Right Shoulder">
-		Espatlla dreta
+		Espatlla D
 	</string>
 	<string name="Left Hand">
-		Mà esquerra
+		Mà E
 	</string>
 	<string name="Right Hand">
-		Mà dreta
+		Mà D
 	</string>
 	<string name="Left Foot">
-		Peu esquerre
+		Peu E
 	</string>
 	<string name="Right Foot">
-		Peu dret
+		Peu D
 	</string>
 	<string name="Spine">
 		Columna
@@ -2052,16 +2052,16 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Barbeta
 	</string>
 	<string name="Left Ear">
-		Orella esquerra
+		Oïda esquer
 	</string>
 	<string name="Right Ear">
-		Orella dreta
+		Oïda dreta
 	</string>
 	<string name="Left Eyeball">
-		Globus ocular esquerre
+		Ull esquer
 	</string>
 	<string name="Right Eyeball">
-		Globus ocular dret
+		Ull dret
 	</string>
 	<string name="Nose">
 		Nas
@@ -2079,7 +2079,7 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Avantbraç E
 	</string>
 	<string name="Right Hip">
-		Maluc dret
+		Maluc D
 	</string>
 	<string name="R Upper Leg">
 		Cuixa D
@@ -2088,7 +2088,7 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Cama D
 	</string>
 	<string name="Left Hip">
-		Maluc esquerre
+		Maluc E
 	</string>
 	<string name="L Upper Leg">
 		Cuixa E
@@ -2100,16 +2100,16 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Estómac
 	</string>
 	<string name="Left Pec">
-		Pectoral esquerre
+		Pit esquer
 	</string>
 	<string name="Right Pec">
-		Pectoral dret
+		Pit dret
 	</string>
 	<string name="Neck">
 		Coll
 	</string>
 	<string name="Avatar Center">
-		Centre de l'avatar
+		Centre
 	</string>
 	<string name="Left Ring Finger">
 		Dit anular esquerre
@@ -2534,22 +2534,22 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Crani
 	</string>
 	<string name="ATTACH_LSHOULDER">
-		Espatlla esquerra
+		Espatlla E
 	</string>
 	<string name="ATTACH_RSHOULDER">
-		Espatlla dreta
-	</string>
+		Espatlla D
+	</string>Y
 	<string name="ATTACH_LHAND">
-		Mà esquerra
+		Mà E
 	</string>
 	<string name="ATTACH_RHAND">
-		Mà dreta
+		Mà D
 	</string>
 	<string name="ATTACH_LFOOT">
-		Peu esquerre
+		Peu E
 	</string>
 	<string name="ATTACH_RFOOT">
-		Peu dret
+		Peu D
 	</string>
 	<string name="ATTACH_BACK">
 		Columna vertebral
@@ -2585,37 +2585,37 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Avantbraç dret
 	</string>
 	<string name="ATTACH_LUARM">
-		Braç esquerre
+		Braç esquer
 	</string>
 	<string name="ATTACH_LLARM">
-		Avantbraç esquerre
+		Avantbraç E
 	</string>
 	<string name="ATTACH_RHIP">
-		Maluc dret
+		Maluc D
 	</string>
 	<string name="ATTACH_RULEG">
-		Cuixa dreta
+		Cuixa E
 	</string>
 	<string name="ATTACH_RLLEG">
 		Cama dreta
 	</string>
 	<string name="ATTACH_LHIP">
-		Maluc esquerre
+		Maluc E
 	</string>
 	<string name="ATTACH_LULEG">
-		Cuixa esquerra
+		Cuixa E
 	</string>
 	<string name="ATTACH_LLLEG">
-		Cama esquerra
+		Cama esquer
 	</string>
 	<string name="ATTACH_BELLY">
 		Ventre
 	</string>
 	<string name="ATTACH_LEFT_PEC">
-		Pectorals esquerres
+		Pit esquer
 	</string>
 	<string name="ATTACH_RIGHT_PEC">
-		Pectorals drets
+		Pit dret
 	</string>
 	<string name="ATTACH_HUD_CENTER_2">
 		HUD centre 2
