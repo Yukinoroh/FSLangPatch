@@ -8,36 +8,36 @@
     <pie_slice label="Ves a" name="Go to"/>
     <pie_slice label="Denuncia..." name="abuse"/>
     <pie_menu label="Afegeix &gt;" name="add_avatar">
-        <pie_slice label="A amics" name="Add Friend"/>
-        <pie_slice label="A un grup" name="Add to set"/>
+        <pie_slice label="a Amics" name="Add Friend"/>
+        <pie_slice label="a Cercle" name="Add to set"/>
     </pie_menu>
     <pie_slice label="Paga..." name="Pay..."/>
     <pie_menu name="Avatar Pie More 1" label="Més &gt;">
-        <pie_slice label="Gela..." name="Freeze..."/>
-        <pie_slice label="Dona targeta de visita" name="Give Calling Card"/>
-        <pie_slice label="A un grup" name="Group Invite..."/>
+        <pie_slice label="Congela" name="Freeze..."/>
+        <pie_slice label="Targeta" name="Give Calling Card"/>
+        <pie_slice label="Convida" name="Group Invite..."/>
         <pie_slice label="Expulsa..." name="Eject..."/>
         <pie_menu name="Avatar Pie More 2" label="Més &gt;">
             <pie_slice label="Depuració..." name="Debug..."/>
-            <pie_slice label="Info dels scripts" name="ScriptInfo"/>
+            <pie_slice label="InfoScripts" name="ScriptInfo"/>
             <pie_slice label="Truca" name="Call"/>
             <pie_slice label="Apropa" name="Zoom In"/>
             <pie_slice label="Refresca la textura" name="Texture Refresh"/>
             <pie_menu name="ResetMenu" label="Reinicia &gt;">
-                <pie_slice label="Esq. i animacions" name="Reset Skeleton And Animations"/>
+                <pie_slice label="Animacions" name="Reset Skeleton And Animations"/>
                 <pie_slice label="Esquelet" name="Reset Skeleton"/>
-                <pie_slice label="Mesh LOD" name="Reset Mesh LOD"/>
+                <pie_slice label="MeshLOD" name="Reset Mesh LOD"/>
             </pie_menu>
-            <pie_slice label="Dump XML" name="Dump XML"/>
+            <pie_slice label="DumpXML" name="Dump XML"/>
             <pie_menu name="RenderMenu" label="Renderitza &gt;">
-                <pie_slice name="RenderNormally" label="Normalment"/>
+                <pie_slice name="RenderNormally" label="Normal"/>
                 <pie_slice name="DoNotRender" label="Mai"/>
                 <pie_slice name="AlwaysRenderFully" label="Sempre"/>
             </pie_menu>
         </pie_menu>
-        <pie_menu name="DerenderMenu" label="No renderis &gt;">
-            <pie_slice label="Permanentment" name="DerenderPermanent"/>
-            <pie_slice label="Temporalment" name="Derender"/>
+        <pie_menu name="DerenderMenu" label="Derender &gt;">
+            <pie_slice label="Permanent" name="DerenderPermanent"/>
+            <pie_slice label="Temporal" name="Derender"/>
         </pie_menu>
     </pie_menu>
     <pie_slice label="MI" name="Send IM..."/>

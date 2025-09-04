@@ -90,8 +90,8 @@
 	
 	<pie_slice label="Paga..." name="Pay..."/>
 <pie_menu label="Més &gt;" name="Object Pie More 1">
-		<pie_slice label="Elimina" name="Delete"/>
-		<pie_slice label="Posa't" name="Wear"/>
+		<pie_slice label="Eesbora" name="Delete"/>
+		<pie_slice label="Posa-te'l" name="Wear"/>
 		<pie_slice label="Fer còpia" name="Take Copy"/>
 		<pie_menu label="Fica'l Hud &gt;" name="Pie Object Attach HUD" />
 		<pie_menu label="Adjunta &gt;" name="Pie Object Attach">
