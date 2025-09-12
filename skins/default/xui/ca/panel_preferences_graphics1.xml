@@ -2,7 +2,7 @@
 <panel label="Visualització" name="Display panel">
 	<tab_container label="Paràmetres de visualització" name="tabs">
 		<panel label="General" name="General">
-			<text name="preset_label">Preconfiguració utilitzada: </text>
+			<text name="preset_label">Preconfiguració: </text>
 			<text name="preset_text">
 				(Cap)
 			</text>
@@ -16,7 +16,7 @@
 			<text name="ShadersText">Shaders:</text>
 			<check_box label="Transparència de l'aigua" name="TransparentWater"/>
 			<check_box label="Oclusió ambiental" name="UseSSAO"/>
-			<check_box label="Reflexos en espai de pantalla (SSR)" name="ScreenSpaceReflections"/>
+			<check_box label="Reflexos en l'espai (SSR)" name="ScreenSpaceReflections"/>
 			<check_box label="Miralls" name="Mirrors"/>
 			<text name="shadows_label">Ombres:</text>
 			<combo_box name="ShadowDetail">
@@ -42,7 +42,7 @@
 				<combo_box.item label="Escena completa" name="3"/>
 			</combo_box>
 			<text width="185" name="local lights_label" tool_tip="Afecta el nombre de fonts de llum. Cal reiniciar per canviar el mode.">
-				Il·luminació puntual (cal reiniciar):
+				Il·luminació (cal reiniciar):
 			</text>
 			<combo_box name="LocalLightsDetail">
 				<combo_box.item label="Totes (per defecte)" name="3"/>
@@ -59,7 +59,7 @@
 				<combo_box.item label="2048" name="3"/>
 			</combo_box>
 			<text name="HeroProbeUpdateText">
-				Ritme d'actualització del mirall:
+				Actualització del mirall:
 			</text>
 			<combo_box name="HeroProbeUpdateRate">
 				<combo_box.item label="Cada fotograma" name="0"/>
@@ -75,16 +75,16 @@
 				Visualització d'avatars
 			</text>
 			<combo_box name="AvatarComplexityMode">
-				<combo_box.item label="Límit per complexitat" name="0"/>
-				<combo_box.item label="Mostra sempre els amics" name="1"/>
-				<combo_box.item label="Mostra només els amics" name="2"/>
+				<combo_box.item label="Per complexitat" name="0"/>
+				<combo_box.item label="Amb els amics" name="1"/>
+				<combo_box.item label="Només els amics" name="2"/>
 			</combo_box>
 			<slider label="Complexitat màxima" name="IndirectMaxComplexity"/>
 			<slider label="Màxim d'avatars 3D" name="IndirectMaxNonImpostors"/>
-			<slider label="Qualitat de postprocessament" name="RenderPostProcess"/>
+			<slider label="Qualitat Postprocessament" name="RenderPostProcess"/>
 			<text name="PostProcessText">Baixa</text>
-			<slider label="Màx. de llums properes" name="MaxLights"/>
-			<slider label="Propietats físiques dels avatars" name="AvatarPhysicsDetail"/>
+			<slider label="Màxim de llums properes" name="MaxLights"/>
+			<slider label="Propietats dels avatars" name="AvatarPhysicsDetail"/>
 			<slider label="Exposició" name="RenderExposure"/>
 			<text name="MeshDetailText">Factors de detall per distància:</text>
 			<slider label="  Objectes i sculpts" name="ObjectMeshDetail"/>
@@ -94,14 +94,14 @@
 			<slider label="  Terreny" name="TerrainMeshDetail"/>
 			<slider label="  Cel" name="SkyMeshDetail"/>
 			<text name="Presets_Label">
-				Preconfiguracions
+				Configuració
 			</text>
-			<button left="270" label="Desa" name="PrefSaveButton"/>
+			<button left="290" label="Desa" name="PrefSaveButton"/>
 			<button left_pad="5" label="Carrega" name="PrefLoadButton"/>
 			<button left_pad="5" label="Suprimeix" name="PrefDeleteButton"/>
-			<button tool_tip="Restaura els valors per defecte." name="Defaults"/>
+			<button left="518" tool_tip="Restaura els valors per defecte." name="Defaults"/>
 		</panel>
-		<panel label="Paràmetres de maquinari" name="Hardware Settings">
+		<panel label="Paràmetres Maquinari" name="Hardware Settings">
 			<check_box label="Filtratge anisotròpic (més lent si s'activa)" name="ani"/>
 			<check_box label="Activa la compressió de textures sense pèrdua (cal reiniciar)" name="texture compression" tool_tip="Activar la compressió de textures a la memòria gràfica permet carregar textures de resolució superior i suportar un nombre més gran de textures pel mateix cost de memòria."/>
 			<check_box label="Activa el suport per a pantalles HiDPI (només macOS; cal reiniciar)" name="use HiDPI" tool_tip="Activa l'OpenGL per a la visualització d'alta resolució."/>
@@ -121,7 +121,7 @@
 				<combo_box.item label="Alta" name="High"/>
 				<combo_box.item label="Ultra" name="Ultra"/>
 			</combo_box>
-			<check_box label="Limita la VRAM utilitzada per a textures (MB)" name="FSLimitTextureVRAMUsage" tool_tip="Limita la quantitat de VRAM utilitzada per a les textures. L'ús total pot ser superior, ja que altres elements també fan servir VRAM."/>
+			<check_box label="Limita la VRAM per a textures (MB)" name="FSLimitTextureVRAMUsage" tool_tip="Limita la quantitat de VRAM utilitzada per a les textures. L'ús total pot ser superior, ja que altres elements també fan servir VRAM."/>
 			<slider name="RenderMaxVRAMBudget" tool_tip="Quantitat màxima de VRAM en megabytes utilitzada per a les textures."/>
 			<text name="advanced_settings">
 				Paràmetres avançats (cal reiniciar):
@@ -132,7 +132,7 @@ Ignora la VRAM detectada a la vostra GPU.
 Això no ha d'incloure la VRAM 'compartida' que forma part de la RAM del sistema.
 Si no enteneu la distinció, no toqueu aquest control."/>
 			<text name="automatic_texture_downscale_settings">
-				Reducció automàtica de la mida de les textures:
+				Reducció automàtica de la mida de textures:
 			</text>
 			<text name="TextureDiscardBackgroundedTime_label" tool_tip="Redueix la mida de les textures després d'un cert nombre de segons quan la finestra no està activa.">
 				En segon pla (0 per desactivar)
@@ -150,17 +150,19 @@ Si no enteneu la distinció, no toqueu aquest control."/>
 			</text>
 		</panel>
 		<panel label="Renderització" name="Rendering">
-			<text name="World Updating">Actualització del món:</text>
-			<check_box label="Congela les actualitzacions del món (ho posa tot en pausa)" tool_tip="Marqueu aquesta opció per congelar totes les actualitzacions del món - Això aturarà totes les accions visuals però no afectarà les converses de xat o de veu" name="WorldPause"/>
+			<text name="World Updating">
+				Actualització del món:
+			</text>
+			<check_box top_pad="2" label="Congela les actualitzacions del món (ho posa tot en pausa)" tool_tip="Marqueu aquesta opció per congelar totes les actualitzacions del món - Això aturarà totes les accions visuals però no afectarà les converses de xat o de veu" name="WorldPause"/>
 			<check_box label="Limita els fotogrames per segon" name="FSLimitFramerate" tool_tip="Limita la taxa de refresc a un valor definit per l'usuari. Pot reduir el consum d'energia i l'escalfor de la GPU/CPU."/>
 			<check_box label="Limita la taxa de refresc a la freqüència del monitor (VSync)" name="vsync" tool_tip="Sincronitza la freqüència de fotogrames amb la de refresc del monitor, la qual cosa pot provocar un augment del lag i imatges entretallades."/>
 			<text name="Texture Rendering">Renderització de textures:</text>
 			<text name="FSRestrictMaxTextureSize">
-				Limita la resolució màxima de les textures a:
+				Limita la resolució de les textures a:
 			</text>
 			<combo_box tool_tip="Defineix la resolució màxima de visualització de les textures al món. Això permet mostrar més textures abans de superar la memòria de textures disponible i obtenir textures borroses." name="FSRestrictMaxTexturePixels"/>
 			<text name="TextureDetailLabel">
-				Qualitat màx. de les textures:
+				Qualitat Textures:
 			</text>
 			<combo_box name="TextureDetail" tool_tip="Qualitat de càrrega de les textures, afecta el paràmetre TextureDiscardLevel">
 				<combo_box.item label="Normal" name="0"/>
@@ -181,10 +183,10 @@ Si no enteneu la distinció, no toqueu aquest control."/>
 			<slider width="480" label_width="340" label="Temporització de la memòria cau del món:" tool_tip="Retard en segons per a la càrrega de la memòria cau del món abans de connectar-vos (6 segons per defecte)" name="PrecachingDelay"/>
 			<text name="PrecachingDelayText" left_delta="480">s.</text>
 			<slider width="480" label_width="340" label="Qualitat de les ombres:" tool_tip="Qualitat de les ombres (1 per defecte)" name="ShadowResolution"/>
-			<slider width="480" label_width="340" label="Mida de renderització de les textures del terreny (cal reiniciar):" name="RenderTerrainScale" tool_tip="Determina la mida de renderització de les textures del terreny - un valor més baix és més comprimit (requereix reiniciar)"/>
+			<slider width="480" label_width="340" label="Renderització de textures del terreny (cal reiniciar):" name="RenderTerrainScale" tool_tip="Determina la mida de renderització de les textures del terreny - un valor més baix és més comprimit (requereix reiniciar)"/>
 			<slider label="Millora de la nitidesa:" name="RenderSharpness"/>
 			<text name="ReflectionProbeCount">
-				Màx. de sondes de reflexió:
+				Sondes de reflexió:
 			</text>
 			<combo_box name="ProbeCount">
 				<combo_box.item label="Cap" name="1"/>
@@ -196,7 +198,7 @@ Si no enteneu la distinció, no toqueu aquest control."/>
 			<text name="TonemapTypeText">
 				Mapatge de tons:
 			</text>
-			<slider label="Mescla de mapatge de tons:" tool_tip="Mescla de colors lineals i colors mapats" name="TonemapMix"/>
+			<slider label="MesclaMapatgeTons:" tool_tip="Mescla de colors lineals i colors mapats" name="TonemapMix"/>
 		</panel>
 		<panel label="Profunditat de camp" name="DOF panel">
 			<check_box label="Activa la profunditat de camp (desenfocarà la vista excepte al punt de focus de la càmera)" name="UseDoF"/>
@@ -205,7 +207,7 @@ Si no enteneu la distinció, no toqueu aquest control."/>
 			<slider label="Índex d'obertura:" name="CameraFNum" tool_tip="Índex d'obertura de la càmera per a efectes de profunditat"/>
 			<slider label="Distància focal:" name="CameraFocal" tool_tip="Distància focal de la càmera per a efectes de profunditat (en mil·límetres)"/>
 			<slider label="Angle de camp:" name="Camera FOV" tool_tip="Angle de camp vertical de la càmera per a efectes de profunditat (en graus)"/>
-			<slider label="Dinamisme de les transicions:" name="CameraFocusTrans" tool_tip="Temps necessari per canviar l'efecte de profunditat durant un moviment de càmera"/>
+			<slider label="Temps de les transicions:" name="CameraFocusTrans" tool_tip="Temps necessari per canviar l'efecte de profunditat durant un moviment de càmera (dinamisme)"/>
 			<slider label="Qualitat del renderitzat del desenfocament:" name="CameraDoFResScale" tool_tip="Defineix la qualitat del desenfocament i el rendiment de la renderització. (Com més alt, millor qualitat; com més baix, millor rendiment)"/>
 		</panel>
 	</tab_container>
