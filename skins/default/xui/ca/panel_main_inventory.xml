@@ -1,66 +1,80 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <panel label="Inventari" name="main inventory panel">
-	<panel.string name="ItemcountFetching">
-		Recuperant [ITEM_COUNT] articles i [CATEGORY_COUNT] carpetes... [FILTER]
-	</panel.string>
-	<panel.string name="ItemcountCompleted">
-		[ITEM_COUNT] articles i [CATEGORY_COUNT] carpetes [FILTER]
-	</panel.string>
-	<panel.string name="ItemcountUnknown">
-		Recuperant [ITEM_COUNT] articles i [CATEGORY_COUNT] carpetes [FILTER]
-	</panel.string>
-	<text name="ItemcountText">
-		Articles:
-	</text>
-	<filter_editor label="Filtre" name="inventory search editor" tool_tip="Escriviu una o més paraules per a cercar. Feu servir '+' per a separar-les"/>
-	<button name="collapse_btn" label="Plega"/>
-	<button name="expand_btn" label="Desplega" />
-	<text name="filter_label" width="60" value="Filtre:"/>
-	<combo_box name="filter_combo_box">
-		<combo_box.item value="filter_type_all" label="Tots els tipus" />
-		<combo_box.item value="filter_type_animations" label="Animacions" />
-		<combo_box.item value="filter_type_calling_cards" label="Targetes de visita" />
-		<combo_box.item value="filter_type_clothing" label="Roba / Parts del cos" />
-		<combo_box.item value="filter_type_gestures" label="Gestos" />
-		<combo_box.item value="filter_type_landmarks" label="Adreces d'interès" />
-		<combo_box.item value="filter_type_notecards" label="Notes" />
-		<combo_box.item value="filter_type_objects" label="Objectes" />
-		<combo_box.item value="filter_type_scripts" label="Scripts" />
-		<combo_box.item value="filter_type_sounds" label="Sons" />
-		<combo_box.item value="filter_type_textures" label="Textures" />
-		<combo_box.item value="filter_type_snapshots" label="Instantànies" />
-		<combo_box.item value="filter_type_meshes" label="Malla" />
-		<combo_box.item value="filter_type_settings" label="Configuració" />
-		<combo_box.item value="filter_type_custom" label="Altres..." />
-	</combo_box>
-	<tab_container name="inventory filter tabs">
-		<inventory_panel label="Inventari" name="All Items"/>
-		<recent_inventory_panel label="Recents" name="Recent Items"/>
-		<worn_inventory_panel label="Portant" name="Worn Items"/>
-	</tab_container>
+	<panel.string name="ItemcountFetching">S'estan recuperant [ITEM_COUNT] objectes... [FILTER]</panel.string>
+	<panel.string name="ItemcountCompleted">[ITEM_COUNT] objectes [FILTER]</panel.string>
+	<panel.string name="ItemcountUnknown">[ITEM_COUNT] objectes extrets [FILTER]</panel.string>
+	<panel.string name="inventory_title">Inventari</panel.string>
+	<panel.string name="default_mode_btn">Mode_Multicarpeta</panel.string>
+    <panel.string name="single_folder_mode_btn">Mode_carpeta_única</panel.string>
+	<layout_stack name="top_stack">
+		<layout_panel name="nav_buttons">
+			<button name="back_btn" tool_tip="Enrere"/>
+			<button name="forward_btn" tool_tip="Endavant"/>
+			<button name="up_btn" tool_tip="Nivell superior"/>
+		</layout_panel>
+		<layout_panel name="filter_panel">
+			<filter_editor label="Filtra l'inventari" name="inventory search editor" tool_tip="Escriu una o més paraules per cercar, separades per '+' "/>
+		</layout_panel>
+	</layout_stack>
+	<layout_stack name="ctrl_stack">
+		<layout_panel name="collapse_expand_buttons">
+			<button name="collapse_btn" label="Contrau"/>
+			<button name="expand_btn" label="Expandeix"/>
+		</layout_panel>
+		<layout_panel name="filter_ctrls">
+			<text name="filter_label" value="Filtra:"/>
+			<combo_box name="filter_combo_box">
+				<combo_box.item value="filter_type_all" label="Tot"/>
+				<combo_box.item value="filter_type_animations" label="Animacions"/>
+				<combo_box.item value="filter_type_calling_cards" label="Targetes de visita"/>
+				<combo_box.item value="filter_type_clothing" label="Roba / Parts del cos"/>
+				<combo_box.item value="filter_type_gestures" label="Gestos"/>
+				<combo_box.item value="filter_type_landmarks" label="Punts de referència"/>
+				<combo_box.item value="filter_type_notecards" label="Notes"/>
+				<combo_box.item value="filter_type_objects" label="Objectes"/>
+				<combo_box.item value="filter_type_scripts" label="Scripts"/>
+				<combo_box.item value="filter_type_sounds" label="Sons"/>
+				<combo_box.item value="filter_type_textures" label="Textures"/>
+				<combo_box.item value="filter_type_snapshots" label="Fotos"/>
+				<combo_box.item value="filter_type_materials" label="Materials" />
+				<combo_box.item value="filter_type_settings" label="Paràmetres" />
+				<combo_box.item value="filter_type_folders" label="Carpetes" />
+				<combo_box.item value="filter_type_coalesced" label="Només objectes agrupats"/>
+				<combo_box.item value="filter_type_custom" label="Personalitzat..."/>
+			</combo_box>
+			<menu_button name="options_visibility_btn" tool_tip="Mostra els paràmetres de visibilitat dels resultats de la cerca"/>
+		</layout_panel>
+	</layout_stack>
+	<panel name="default_inventory_panel">
+		<tab_container name="inventory filter tabs">
+			<inventory_panel label="Inventari" name="All Items" sort_order_setting="InventorySortOrder"/>
+			<recent_inventory_panel label="Recents" sort_order_setting="RecentItemsSortOrder" name="Recent Items"/>
+			<worn_inventory_panel label="Portat" name="Worn Items"/>
+		</tab_container>
+	</panel>
 	<panel name="bottom_panel">
 		<panel name="options_gear_btn_panel">
-			<menu_button name="options_gear_btn" tool_tip="Mostra més opcions"/>
+			<menu_button tool_tip="Mostra opcions addicionals" name="options_gear_btn"/>
 		</panel>
 		<panel name="add_btn_panel">
-			<button name="add_btn" tool_tip="Afegeix un article nou"/>
+			<button name="add_btn" tool_tip="Crea un objecte nou"/>
 		</panel>
 		<panel name="new_inventory_panel">
-			<button name="new_inv_btn" tool_tip="Finestra d'inventari addicional"/>
+			<button name="new_inv_btn" tool_tip="Afegeix una finestra d'inventari"/>
 		</panel>
-		<panel name="collapse_panel">
-			<button label="Plega" name="collapse_btn" tool_tip="Plega totes les carpetes" />
+		<panel name="show_filters_panel">
+			<button name="show_filters_inv_btn" tool_tip="Mostra els filtres - Mostra el menú lateral de filtres quan se selecciona. Es ressalta quan un filtre està actiu."/>
 		</panel>
-		<panel name="expand_panel">
-			<button label="Desplega" name="expand_btn" tool_tip="Desplega totes les carpetes" />
+		<panel name="view_mode_panel">
+			<button name="view_mode_btn" tool_tip="Canvia entre vistes"/>
 		</panel>
 		<panel name="dummy_panel">
-			<text name="ItemcountText">
-				Articles
+			<text name="ItemcountText" tool_tip="Objectes [ITEMS], carpetes [CATEGORIES]">
+				Objectes
 			</text>
 		</panel>
 		<panel name="trash_btn_panel">
-			<dnd_button name="trash_btn" tool_tip="Suprimeix l'article seleccionat"/>
+			<dnd_button name="trash_btn" tool_tip="Suprimeix l'objecte seleccionat"/>
 		</panel>
 	</panel>
 </panel>

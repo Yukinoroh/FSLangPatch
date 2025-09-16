@@ -64,7 +64,7 @@
 			<text name="show_stream_metadata_text">Mostra el títol de la música que es reprodueix:</text>
 			<radio_group name="show_stream_metadata">
 				<radio_item label="Cap" name="radio_off" width="80"/>
-				<radio_item label="Notificació" name="radio_toasts" width="80"/>
+				<radio_item label="Avís" name="radio_toasts" width="80"/>
 				<radio_item label="Xat local" name="radio_chat"/>
 			</radio_group>
 			<check_box name="StreamMetadataAnnounceToChat" label="Comunica el nom del títol al canal:" width="250"/>
@@ -293,7 +293,7 @@ Introdueix el seu UUID o passa el ratolí per sobre del camp per veure'n el valo
 			<button name="Prev_UISndInvalidOp" label="▶" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndInvalidOp" label="↻" tool_tip="Reinicia."/>
 			<check_box label="Activa" name="PlayModeUISndInvalidOp"/>
-			<text tool_tip="UUID del so reproduït quan s'activa o desactiva l'ancoratge de l'avatar." width="180" name="textFSMovelockToggle">Activa/Desactiva l'ancoratge:</text>
+			<text tool_tip="UUID del so reproduït quan s'activa o desactiva l'ancoratge de l'avatar." width="180" name="textFSMovelockToggle">Ancoratge:</text>
 			<button name="Prev_UISndMovelockToggle" label="▶" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndMovelockToggle" label="↻" tool_tip="Reinicia."/>
 			<check_box label="Activa" name="PlayModeUISndMovelockToggle"/>
@@ -305,12 +305,13 @@ Introdueix el seu UUID o passa el ratolí per sobre del camp per veure'n el valo
 			<button name="Prev_UISndTrackerBeacon" label="▶" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndTrackerBeacon" label="↻" tool_tip="Reinicia."/>
 			<check_box label="Activa" name="PlayModeUISndTrackerBeacon"/>
+			
 			<text tool_tip="UUID del so emès quan el micròfon s'encén o s'apaga." name="textFSMicToggle">
 				Commutació del micro:
 			</text>
 			<button name="Prev_UISndMicToggle" label="P" tool_tip="Previsualització d'aquest so."/>
 			<button name="Def_UISndMicToggle" label="D" tool_tip="Restaura l'UUID per defecte."/>
-			<check_box label="Reprodueix aquest so" name="PlayModeUISndMicToggle"/>
+			<check_box label="Escolta" name="PlayModeUISndMicToggle"/>
 			<text tool_tip="UUID del so reproduït quan apareix l'alerta de reinici de la regió." width="180" name="textFSRestart">Reinici de regió:</text>
 			<button name="Prev_UISndRestart" label="▶" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndRestart" label="↻" tool_tip="Reinicia."/>
