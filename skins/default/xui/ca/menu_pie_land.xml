@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<pie_menu name="Land Pie">
+    <pie_slice label="Info Terreny..." name="Place Information..." />
+    <pie_slice label=" Construeix" name="Create" />
+    <pie_slice label="Cap aquí" name="Go Here" />
+    <pie_slice label="Seu aquí" name="Sit Here" />
+    <pie_slice label="SilenciaPartícules" name="Mute Particle" />
+    <pie_slice label="Passa" name="Land Buy Pass Pie" />
+    <pie_slice label="EditaTerreny" name="Edit Terrain" />
+    <pie_slice label="Compra" name="Land Buy Pie" />
+</pie_menu>
