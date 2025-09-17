@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<floater name="Inventory Finder" title="Elements recents de l'inventari">
+<floater name="Inventory Finder" title="Elements recents de l'inventari" width="180">
 	<check_box label="Animació" name="check_animation"/>
 	<check_box label="Targetes de visita" name="check_calling_card"/>
 	<check_box label="Roba" name="check_clothing"/>
@@ -19,6 +19,29 @@
 	<check_box label="Cop." name="check_copy"/>
 	<check_box label="Trans." name="check_transfer"/>
 	<check_box label="Mostra les carpetes" name="check_show_empty"/>
+	<check_box label="Sol fusionat" name="check_only_coalesced"/>
+    
+    <combo_box      
+     follows="left|top"
+     height="23"
+     layout="topleft"
+     left="8"
+     top_pad="6"
+     tool_tip="Filtra els objectes enllaçats"
+     name="inventory_filter_show_links_combo"
+     width="170">
+       <combo_box.item name="show_links"
+                       label="Mostra els enllaços"
+                       value="0"/>
+       <combo_box.item name="show_links_only"
+                       label="Mostra sol enllaços"
+                       value="2"/>
+       <combo_box.item name="hide_links"
+                       label="Amaga els enllaços"
+                       value="1"/>
+</combo_box>
+	
+	
 	<check_box label="Creat per mi" name="check_created_by_me"/>
 	<check_box label="Creat per altres" name="check_created_by_others"/>
 	<check_box label="Des de la desconnexió" name="check_since_logoff"/>
