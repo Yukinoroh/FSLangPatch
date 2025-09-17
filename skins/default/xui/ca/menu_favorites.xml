@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="Popup">
+	<menu_item_call label="Teleporta" name="Teleport To Landmark"/>
+	<menu_item_call label="Mostra al mapa" name="Show On Map"/>
+	<menu_item_call label="Mostra/Modifica la referència" name="Landmark Open"/>
+	<menu_item_call label="Mou a Punts de referència" name="Move to Landmarks"/>
+    <menu_item_call label="Copia la SLurl" name="Copy slurl"/>
+	<menu_item_call label="Crea una Selecció"  name="create_pick"/>
+    <menu_item_call label="Copia" name="Landmark Copy"/>
+	<menu_item_call label="Enganxa" name="Landmark Paste"/>
+	<menu_item_call label="Canvia el nom" name="rename"/>
+   	<menu_item_call label="Suprimeix" name="Delete"/>
+</menu>

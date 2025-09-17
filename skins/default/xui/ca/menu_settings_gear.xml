@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="menu_settings_gear">
+	<menu_item_call label="Modifica" name="edit_settings"/>
+	<menu_item_call label="Aplica-ho només a mi" name="Settings Apply Local"/>
+	<menu_item_call label="Aplica-ho a la parcel·la" name="Settings Apply Parcel"/>
+	<menu_item_call label="Aplica-ho a la regió" name="Settings Apply Region"/>
+	<menu_item_call label="Copia" name="copy_settings"/>
+	<menu_item_call label="Enganxa" name="paste_settings"/>
+	<menu_item_call label="Copia l'UUID" name="copy_uuid"/>
+</toggleable_menu>

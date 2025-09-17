@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="menu_ladmark_gear">
+	<menu_item_call label="Teleporta" name="teleport"/>
+	<menu_item_call label="Mostra al mapa" name="show_on_map"/>
+	<menu_item_call label="Compartir" name="share"/>
+    <menu_item_call label="Més informació" name="more_info"/>
+    <menu_item_call label="Mou a Punts de referència" name="Move to Landmarks"/>
+    <menu_item_call label="Mou a Preferits" name="Move to Favorites"/>
+	<menu_item_call label="Restaura l'objecte" name="restore_item"/>
+	<menu_item_call label="Retalla" name="cut"/>
+	<menu_item_call label="Copia la referència" name="copy_landmark"/>
+	<menu_item_call label="Copia la SLurl" name="copy_slurl"/>
+	<menu_item_call label="Enganxa" name="paste"/>
+	<menu_item_call label="Reanomena" name="rename"/>
+	<menu_item_call label="Suprimeix" name="delete"/>
+	<menu_item_call label="Crea un favorit" name="create_pick"/>
+</toggleable_menu>
