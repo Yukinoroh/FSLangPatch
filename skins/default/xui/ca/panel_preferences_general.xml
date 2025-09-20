@@ -14,7 +14,7 @@
 		<combo_box.item label="日本語 (Japonès) - Beta" name="(Japanese)"/>
 	</combo_box>
 	<text name="language_textbox2">(Cal reiniciar)</text>
-	<check_box label="Mostra la introducció de text IME" name="use_ime" tool_tip="Fes servir l'editor de mètodes d'entrada internacional (IME), necessari només per a llengües específiques com el japonès, el xinès, etc." />
+	<check_box label="Editor de text IME" name="use_ime" tool_tip="Fes servir l'editor de mètodes d'entrada internacional (IME), necessari només per a llengües específiques com el japonès, el xinès, etc." />
 	<text name="maturity_desired_prompt">Accedeix al contingut classificat:</text>
 	<combo_box name="maturity_desired_combobox">
 		<combo_box.item label="General, Moderat i Adult" name="Desired_Adult"/>
@@ -27,14 +27,14 @@
 		<combo_box.item label="Casa" name="MyHome"/>
 	</combo_box>
 	<check_box label="Mostra-ho en connectar" name="show_location_checkbox"/>
-	<text name="name_tags_textbox">Mostra el nom de visualització:</text>
+	<text name="name_tags_textbox">Mostra el nom de Avatar:</text>
 	<radio_group name="Name_Tag_Preference">
 		<radio_item label="No" name="radio"/>
 		<radio_item label="Sí" name="radio2"/>
 		<radio_item label="Breument" name="radio3"/>
 	</radio_group>
-	<text name="RenderNameShowTime_LabelPrefix">(</text>
-	<text name="RenderNameShowTime_LabelSuffix">segons)</text>
+	<text name="RenderNameShowTime_LabelPrefix">(  </text>
+	<text name="RenderNameShowTime_LabelSuffix"> Segons )</text>
 	<check_box label="El meu nom" name="show_my_name_checkbox1"/>
 	<check_box label="Noms d'usuari" name="show_slids" tool_tip="Mostra el nom d'usuari, com ara joanpere123"/>
 	<check_box label="Títols de grup" name="show_all_title_checkbox1" tool_tip="Mostra el títol del grup, com ara Oficial o Membre"/>
@@ -43,13 +43,13 @@
 	<check_box label="Noms heretats en lloc de noms d'usuari" name="FSshow_legacyun" tool_tip="Mostra el nom heretat (Nom Cognom) en lloc del nom d'usuari (nom.cognom)"/>
 	<check_box label="Ressalta els amics" name="show_friends" tool_tip="Mostra els noms dels teus amics ressaltats."/>
 	<check_box label="Suprimeix 'Resident' del nom" name="legacy_trim_check" tool_tip="Suprimeix 'Resident' del nom"/>
-	<check_box label="Posició fixa de les etiquetes" name="FSLegacyNametagPosition" tool_tip="Si està activat, l'etiqueta del nom es mantindrà fixa a la ubicació de l'avatar i no seguirà els moviments del seu cap."/>
+	<check_box label="Fixa les etiquetes" name="FSLegacyNametagPosition" tool_tip="Si està activat, l'etiqueta del nom es mantindrà fixa a la ubicació de l'avatar i no seguirà els moviments del seu cap."/>
 	<check_box label="Mode de resposta automàtica al nom" name="FSShowAutorespondInNameTag" tool_tip="Mostrarà si teniu un missatge de resposta automàtica al vostre propi nom."/>
 	<check_box label="Mostra la complexitat de l'avatar" name="FSTagShowARW" tool_tip="Si està activat, l'etiqueta del nom mostrarà la complexitat de l'avatar."/>
 	<check_box label="Només si és massa complex" name="FSTagShowTooComplexOnlyARW" tool_tip="Si està activat, l'etiqueta del nom només mostrarà la complexitat de l'avatar si és massa complex i es mostra com un JellyDoll."/>
 	<check_box label="Mostra la meva complexitat" name="FSTagShowOwnARW" tool_tip="Si està activat, la teva etiqueta de nom mostrarà la complexitat del teu avatar."/>
-	<text name="title_afk_text">Absent després de:</text>
-	<text name="title_afk_quit_text">Desconnecta després d'estar absent:</text>
+	<text width="280" name="title_afk_text">Absent després de:</text>
+	<text width="260" name="title_afk_quit_text">Desconnecta quan s'està absent:</text>
 	<combo_box label="Temps d'inactivitat:" name="afk">
 		<combo_box.item label="2 minuts" name="item0"/>
 		<combo_box.item label="5 minuts" name="item1"/>
