@@ -3,53 +3,53 @@
 	<panel.string name="middle_mouse">Botó central del ratolí</panel.string>
 	<tab_container label="Preferències de Firestorm" name="tabs">
 		<panel label="General" name="Media Sounds Panel">
-			<slider label="Volum principal" name="System Volume"/>
+			<slider label="Volum Mestre:" name="System Volume"/>
 			<check_box label="Silencia en minimitzar" name="mute_when_minimized"/>
-			<slider label="Interfície" name="UI Volume"/>
-			<slider label="Ambient" name="Wind Volume"/>
-			<check_box name="collisions_audio_play_btn" tool_tip="Activa aquesta opció per sentir els sons produïts per les col·lisions" label="Activa els sons de les col·lisions"/>
-			<slider label="Efectes de so" name="SFX Volume"/>
+			<slider label="Interfície;" name="UI Volume"/>
+			<slider label="Ambient:" name="Wind Volume"/>
+			<check_box name="collisions_audio_play_btn" tool_tip="Activa aquesta opció per sentir els sons produïts per les col·lisions" label="Activa els sons de col·lisions"/>
+			<slider label="Efectes de so:" name="SFX Volume"/>
 			<check_box name="gesture_audio_play_btn" tool_tip="Activa aquesta opció per sentir els sons produïts pels gestos dels residents" label="Activa els sons dels gestos"/>
-			<slider label="Música" name="Music Volume"/>
+			<slider label="Música:" name="Music Volume"/>
 			<check_box label="Actiu" name="enable_music"/>
-			<slider label="Mèdia" name="Media Volume"/>
+			<slider label="Mèdia:" name="Media Volume"/>
 			<check_box label="Actiu" name="enable_media"/>
-			<slider label="Xat de veu" name="Voice Volume"/>
+			<slider label="Xat de veu:" name="Voice Volume"/>
 			<check_box label="Actiu" name="enable_voice_check_volume"/>
-			<text name="Listen media from">
-				Escolta mèdia i sons des de:
+			<text name="Listen media from" width="200">
+				Escolta Mèdia i Sons des de:
 			</text>
 			<radio_group name="media_ear_location">
 				<radio_item label="Posició de la càmera" name="0"/>
-				<radio_item label="Posició de l'avatar" name="1"/>
+				<radio_item label="Posició de l'avatar" name="1" left_pad="35"/>
 			</radio_group>
 			<text name="auto_unmute_label">Reactiva el so després d'una teletransportació:</text>
 			<check_box name="FSAutoUnmuteAmbient" label="Ambient" tool_tip="Reactivació automàtica dels sons d'ambient després d'una teletransportació si el so està silenciat (per defecte: desactivat)."/>
 			<check_box name="FSAutoUnmuteSounds" label="Efectes de so" tool_tip="Reactivació automàtica dels efectes de so després d'una teletransportació si el so està silenciat (per defecte: desactivat)"/>
-			<text name="friends_logon_sounds_label">Reprodueix un so quan els meus amics:</text>
+			<text name="friends_logon_sounds_label" width="450">Reprodueix un so quan els meus amics o amigues:</text>
 			<check_box name="friends_notify_online_sound" label="Es connecten" width="110"/>
 			<check_box name="friends_notify_offline_sound" label="Es desconnecten"/>
-			<text name="money_change_threshold_label" tool_tip="Reprodueix un so quan una transacció és superior a l'import definit aquí." width="330">Llindar en L$ de l'avís sonor per a les transaccions:</text>
+			<text name="money_change_threshold_label" tool_tip="Reprodueix un so quan una transacció és superior a l'import definit aquí." width="350">Llindar en L$ de l'avís sonor per a les transaccions:</text>
 			<panel name="output_device_settings_panel">
 				<panel.string name="output_default_text">Dispositiu per defecte</panel.string>
 				<panel.string name="output_no_device">Cap dispositiu disponible</panel.string>
 				<panel.string name="output_name_no_device">Dispositiu desconegut</panel.string>
 				<panel.string name="output_device_unavailable">Dispositiu no disponible</panel.string>
-				<text name="output_label" width="130">Dispositiu de sortida:</text>
+				<text name="output_label" width="150">Dispositiu de sortida:</text>
 			</panel>
 		</panel>
 		<panel label="Mèdia" name="Media Media Panel">
-			<text name="media_autoplay_label" width="130">Reproducció automàtica:</text>
-			<combo_box name="media_auto_play_combo">
+			<text name="media_autoplay_label" width="200">Reproducció automàtica:</text>
+			<combo_box name="media_auto_play_combo" width="120">
 				<item label="Desactivada" name="autoplay_disabled"/>
 				<item label="Activada" name="autoplay_enabled"/>
 			</combo_box>
 			<check_box name="media_allowscript_btn" tool_tip="Activar aquesta opció permet als objectes controlar les teves connexions multimèdia" label="Permet als scripts reproduir un mèdia"/>
 			<check_box name="media_show_on_others_btn" tool_tip="Permet que el mèdia portat pels residents propers es reprodueixi" label="Reprodueix el mèdia portat pels residents"/>
 			<check_box name="media_filter" tool_tip="Activa aquesta opció per establir una restricció sobre el domini del mèdia permès o no" label="Activa un filtre de mèdia per domini"/>
-			<button label="Gestiona els dominis permesos" name="edit_media_lists_button"/>
+			<button label="Gestiona els dominis permesos" name="edit_media_lists_button" width="220"/>
 			<text name="Media Rolloff">Distància d'activació de l'atenuació sonora:</text>
-			<slider label="Comença a suavitzar-se a:" name="MediaRollOffMin" tool_tip="Distància a partir de la qual els continguts d'àudio esdevenen menys forts."/>
+			<slider label="Inici suavització:" name="MediaRollOffMin" tool_tip="Distància a partir de la qual els continguts d'àudio esdevenen menys forts."/>
 			<text name="MinMeters">metres</text>
 			<slider label="Silenciós a:" name="MediaRollOffMax" tool_tip="Distància a la qual el contingut ja no se sentirà."/>
 			<text name="MaxMeters">metres</text>
@@ -89,55 +89,55 @@
 			<check_box label="Parla prement la tecla:" name="push_to_talk_toggle_check" tool_tip="Activar aquesta opció activarà el micro només després de prémer la tecla corresponent. Per tornar a silenciar, només cal tornar a prémer la tecla. Si l'opció està desactivada,"/>
 			<check_box tool_tip="Control automàtic del guany" label="Control automàtic del guany" name="voice_automatic_gain_control"/>
 			<check_box tool_tip="Supressió de l'eco" label="Supressió de l'eco" name="enable_echo_cancellation"/>
-			<text name="noise_suppression_label">
+			<text name="noise_suppression_label" width="150">
 				Reducció del soroll:
 			</text>
-			<combo_box name="noise_suppression_combo">
+			<combo_box name="noise_suppression_combo" width="110">
 				<item label="Desactivada" name="noise_suppression_none"/>
 				<item label="Baixa" name="noise_suppression_low"/>
 				<item label="Moderada" name="noise_suppression_moderate"/>
 				<item label="Alta" name="noise_suppression_high"/>
 				<item label="Màxima" name="noise_suppression_max"/>
 			</combo_box>
-			<button label="Paràmetres del Maquinari d'àudio" name="device_settings_btn"/>
+			<button label="Paràmetres del Maquinari d'àudio:" name="device_settings_btn" width="250"/>
 		</panel>
 		<panel label="Sons 1" name="UI Sounds tab 1">
 			<text name="textFSExplanation_tab1">Aquí pots modificar cada so produït per la interfície i decidir si vols activar-lo o no.
 Introdueix el seu UUID o passa el ratolí per sobre del camp per veure'n el valor per defecte.</text>
 			<text tool_tip="UUID del so reproduït per defecte per a les alertes de Firestorm." name="textFSSndAlert">Alerta per defecte:</text>
-			<button name="Prev_UISndAlert" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndAlert" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndAlert" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndAlert"/>
+			<check_box label="Actiu" name="PlayModeUISndAlert"/>
 			<text tool_tip="UUID del so reproduït en una pulsació de tecla no vàlida." name="textFSBadKeystroke">Pulsació no vàlida:</text>
-			<button name="Prev_UISndBadKeystroke" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndBadKeystroke" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndBadKeystroke" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndBadKeystroke"/>
+			<check_box label="Actiu" name="PlayModeUISndBadKeystroke"/>
 			<text tool_tip="UUID del so reproduït en fer clic amb el ratolí." name="textFSClick">Clic del ratolí:</text>
-			<button name="Prev_UISndClick" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndClick" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndClick" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndClick"/>
+			<check_box label="Actiu" name="PlayModeUISndClick"/>
 			<text tool_tip="UUID del so reproduït en deixar anar el clic del ratolí." name="textFSClickRelease">Deixar anar el clic:</text>
-			<button name="Prev_UISndClickRelease" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndClickRelease" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndClickRelease" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndClickRelease"/>
+			<check_box label="Actiu" name="PlayModeUISndClickRelease"/>
 			<text tool_tip="UUID del so reproduït quan un avatar femení pateix danys." name="textFSHealthReductionF">Danys femenins:</text>
-			<button name="Prev_UISndHealthReductionF" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndHealthReductionF" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndHealthReductionF" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndHealthReductionF"/>
+			<check_box label="Actiu" name="PlayModeUISndHealthReductionF"/>
 			<text tool_tip="UUID del so reproduït quan un avatar masculí pateix danys." name="textFSHealthReductionM">Danys masculins:</text>
-			<button name="Prev_UISndHealthReductionM" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndHealthReductionM" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndHealthReductionM" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndHealthReductionM"/>
+			<check_box label="Actiu" name="PlayModeUISndHealthReductionM"/>
 			<text tool_tip="UUID del so reproduït en cas de despesa de diners." name="textFSMoneyChangeDown">Despesa de diners:</text>
-			<button name="Prev_UISndMoneyChangeDown" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndMoneyChangeDown" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndMoneyChangeDown" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndMoneyChangeDown"/>
+			<check_box label="Actiu" name="PlayModeUISndMoneyChangeDown"/>
 			<text tool_tip="UUID del so reproduït en cas de guany de diners." name="textFSMoneyChangeUp">Guany de diners:</text>
-			<button name="Prev_UISndMoneyChangeUp" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndMoneyChangeUp" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndMoneyChangeUp" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndMoneyChangeUp"/>
+			<check_box label="Actiu" name="PlayModeUISndMoneyChangeUp"/>
 			<text tool_tip="UUID del so reproduït en arribar un nou IM. Aquest paràmetre és comú amb Converses &gt; Notificacions &gt; 'Anuncis en rebre un missatge nou: IMs'." name="textFSNewIncomingIMSession">IM entrant:</text>
-			<button name="Prev_UISndNewIncomingIMSession" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndNewIncomingIMSession" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndNewIncomingIMSession" label="↻" tool_tip="Reinicia."/>
 			<combo_box name="PlayModeUISndNewIncomingIMSession">
 				<combo_box.item label="Sessió nova" name="1"/>
@@ -146,7 +146,7 @@ Introdueix el seu UUID o passa el ratolí per sobre del camp per veure'n el valo
 				<combo_box.item label="Desactiva" name="0"/>
 			</combo_box>
 			<text tool_tip="UUID del so reproduït en arribar un nou missatge de grup. Aquest paràmetre és comú amb Converses &gt; Notificacions &gt; 'Anuncis en rebre un missatge nou: Converses de grups'." name="textFSNewGroupIncomingIMSession">IM de grup entrant:</text>
-			<button name="Prev_UISndNewIncomingGroupIMSession" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndNewIncomingGroupIMSession" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndNewIncomingGroupIMSession" label="↻" tool_tip="Reinicia."/>
 			<combo_box name="PlayModeUISndNewIncomingGroupIMSession">
 				<combo_box.item label="Sessió nova" name="1"/>
@@ -155,7 +155,7 @@ Introdueix el seu UUID o passa el ratolí per sobre del camp per veure'n el valo
 				<combo_box.item label="Desactiva" name="0"/>
 			</combo_box>
 			<text tool_tip="UUID del so reproduït en arribar un nou missatge de conferència." name="textFSNewConferenceIncomingIMSession">Conferències:</text>
-			<button name="Prev_UISndNewIncomingConfIMSession" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndNewIncomingConfIMSession" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndNewIncomingConfIMSession" label="↻" tool_tip="Reinicia."/>
 			<combo_box name="PlayModeUISndNewIncomingConfIMSession">
 				<combo_box.item label="Sessió nova" name="1"/>
@@ -164,162 +164,170 @@ Introdueix el seu UUID o passa el ratolí per sobre del camp per veure'n el valo
 				<combo_box.item label="Desactiva" name="0"/>
 			</combo_box>
 			<text tool_tip="UUID del so reproduït en iniciar un nou IM." name="textFSStartIM">Obertura d'IM:</text>
-			<button name="Prev_UISndStartIM" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndStartIM" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndStartIM" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndStartIM"/>
+			<check_box label="Actiu" name="PlayModeUISndStartIM"/>
 			<text tool_tip="UUID del so reproduït en crear un nou objecte." name="textFSObjectCreate">Creació d'objecte:</text>
-			<button name="Prev_UISndObjectCreate" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndObjectCreate" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndObjectCreate" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndObjectCreate"/>
+			<check_box label="Actiu" name="PlayModeUISndObjectCreate"/>
 			<text tool_tip="UUID del so reproduït en suprimir un objecte." name="textFSObjectDelete">Supressió d'objecte:</text>
-			<button name="Prev_UISndObjectDelete" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndObjectDelete" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndObjectDelete" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndObjectDelete"/>
+			<check_box label="Actiu" name="PlayModeUISndObjectDelete"/>
 			<text tool_tip="UUID del so reproduït quan un objecte és 'ressejat'." name="textFSObjectRezIn">Resseig d'un objecte:</text>
-			<button name="Prev_UISndObjectRezIn" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndObjectRezIn" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndObjectRezIn" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndObjectRezIn"/>
+			<check_box label="Actiu" name="PlayModeUISndObjectRezIn"/>
 			<text tool_tip="UUID del so reproduït quan es recull un objecte." name="textFSObjectRezOut">Objecte recollit:</text>
-			<button name="Prev_UISndObjectRezOut" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndObjectRezOut" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndObjectRezOut" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndObjectRezOut"/>
+			<check_box label="Actiu" name="PlayModeUISndObjectRezOut"/>
 			<text tool_tip="UUID del so reproduït en fer una foto. Aquest paràmetre és comú amb 'Fotos silencioses' del menú 'Avançat'." name="textFSSnapshot">Fer una foto:</text>
-			<button name="Prev_UISndSnapshot" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndSnapshot" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndSnapshot" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Desactiva" name="QuietSnapshotsToDiskCheckBox"/>
+			<check_box label="Actiu" name="QuietSnapshotsToDiskCheckBox"/>
+		    <text name="textFSTeleportOut" tool_tip="UUID de so reproduït en teletransportar-se. Aquesta configuració es comparteix amb Moure i veure &gt; Moviment &gt; 'Reprodueix efecte de so en teletransportar-se">Teletransportació:</text>
+			<button name="Prev_UISndTeleportOut" label="P" tool_tip="Reprodueix aquest so."/>
+			<button name="Def_UISndTeleportOut" label="↻" tool_tip="Reinicia."/>
+			<check_box label="Actiu" name="PlayModeUISndTeleportOut"/>
 		</panel>
 		<panel label="Sons 2" name="UI Sounds tab 2">
 			<text name="textFSExplanation_tab2">Aquí pots modificar cada so produït per la interfície i decidir si vols activar-lo.</text>
 			<text tool_tip="UUID del so reproduït durant una teletransportació. Aquest paràmetre és comú amb Moviment i Càmera &gt; Teletransportacions &gt; 'Reproduir una animació sonora en les teletransportacions'." name="textFSTeleportOut">Teletransportació:</text>
-			<button name="Prev_UISndTeleportOut" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndTeleportOut" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndTeleportOut" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndTeleportOut"/>
+			<check_box label="Actiu" name="PlayModeUISndTeleportOut"/>
 			<text tool_tip="UUID del so reproduït en aparèixer el menú circular." width="180" name="textFSPieMenuAppear">Aparició menú circular:</text>
-			<button name="Prev_UISndPieMenuAppear" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuAppear" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuAppear" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuAppear"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuAppear"/>
 			<text tool_tip="UUID del so reproduït en desaparèixer el menú circular." width="180" name="textFSPieMenuHide">Desaparició menú circular:</text>
-			<button name="Prev_UISndPieMenuHide" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuHide" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuHide" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuHide"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuHide"/>
 			<text tool_tip="UUID del so reproduït en seleccionar la casella 1 del menú circular." width="180" name="textFSPieMenuSliceHighlight0">Menú circular opció 1:</text>
-			<button name="Prev_UISndPieMenuSliceHighlight0" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuSliceHighlight0" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuSliceHighlight0" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuSliceHighlight0"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuSliceHighlight0"/>
 			<text tool_tip="UUID del so reproduït en seleccionar la casella 2 del menú circular." width="180" name="textFSPieMenuSliceHighlight1">Menú circular opció 2:</text>
-			<button name="Prev_UISndPieMenuSliceHighlight1" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuSliceHighlight1" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuSliceHighlight1" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuSliceHighlight1"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuSliceHighlight1"/>
 			<text tool_tip="UUID del so reproduït en seleccionar la casella 3 del menú circular." width="180" name="textFSPieMenuSliceHighlight2">Menú circular opció 3:</text>
-			<button name="Prev_UISndPieMenuSliceHighlight2" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuSliceHighlight2" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuSliceHighlight2" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuSliceHighlight2"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuSliceHighlight2"/>
 			<text tool_tip="UUID del so reproduït en seleccionar la casella 4 del menú circular." width="180" name="textFSPieMenuSliceHighlight3">Menú circular opció 4:</text>
-			<button name="Prev_UISndPieMenuSliceHighlight3" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuSliceHighlight3" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuSliceHighlight3" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuSliceHighlight3"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuSliceHighlight3"/>
 			<text tool_tip="UUID del so reproduït en seleccionar la casella 5 del menú circular." width="180" name="textFSPieMenuSliceHighlight4">Menú circular opció 5:</text>
-			<button name="Prev_UISndPieMenuSliceHighlight4" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuSliceHighlight4" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuSliceHighlight4" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuSliceHighlight4"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuSliceHighlight4"/>
 			<text tool_tip="UUID del so reproduït en seleccionar la casella 6 del menú circular." width="180" name="textFSPieMenuSliceHighlight5">Menú circular opció 6:</text>
-			<button name="Prev_UISndPieMenuSliceHighlight5" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuSliceHighlight5" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuSliceHighlight5" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuSliceHighlight5"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuSliceHighlight5"/>
 			<text tool_tip="UUID del so reproduït en seleccionar la casella 7 del menú circular." width="180" name="textFSPieMenuSliceHighlight6">Menú circular opció 7:</text>
-			<button name="Prev_UISndPieMenuSliceHighlight6" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuSliceHighlight6" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuSliceHighlight6" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuSliceHighlight6"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuSliceHighlight6"/>
 			<text tool_tip="UUID del so reproduït en seleccionar la casella 8 del menú circular." width="180" name="textFSPieMenuSliceHighlight7">Menú circular opció 8:</text>
-			<button name="Prev_UISndPieMenuSliceHighlight7" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndPieMenuSliceHighlight7" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndPieMenuSliceHighlight7" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndPieMenuSliceHighlight7"/>
+			<check_box label="Actiu" name="PlayModeUISndPieMenuSliceHighlight7"/>
 			<text tool_tip="UUID del so reproduït quan es comença a escriure un missatge. Aquest paràmetre és comú amb Converses &gt; Escriptura &gt; 'Reproduir els sons del teclat quan les persones properes escriuen'." width="180" name="textFSTyping">Escriptura de missatge:</text>
-			<button name="Prev_UISndTyping" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndTyping" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndTyping" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="FSPlayTypingSoundCheckBox"/>
+			<check_box label="Actiu" name="FSPlayTypingSoundCheckBox"/>
 			<text tool_tip="UUID del so reproduït en tancar una finestra." width="180" name="textFSWindowClose">Tancament de finestra:</text>
-			<button name="Prev_UISndWindowClose" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndWindowClose" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndWindowClose" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndWindowClose"/>
+			<check_box label="Actiu" name="PlayModeUISndWindowClose"/>
 			<text tool_tip="UUID del so reproduït en obrir una finestra." width="180" name="textFSWindowOpen">Obertura de finestra:</text>
-			<button name="Prev_UISndWindowOpen" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndWindowOpen" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndWindowOpen" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndWindowOpen"/>
+			<check_box label="Actiu" name="PlayModeUISndWindowOpen"/>
 			<text tool_tip="UUID del so reproduït quan un script obre una finestra de diàleg de script." width="180" name="textFSScriptFloaterOpen">Diàleg de script:</text>
-			<button name="Prev_UISndScriptFloaterOpen" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndScriptFloaterOpen" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndScriptFloaterOpen" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndScriptFloaterOpen"/>
+			<check_box label="Actiu" name="PlayModeUISndScriptFloaterOpen"/>
 			<text tool_tip="UUID del so reproduït quan un amic es connecta." width="180" name="textFSFriendOnline">Un amic es connecta:</text>
-			<button name="Prev_UISndFriendOnline" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndFriendOnline" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndFriendOnline" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndFriendOnline"/>
+			<check_box label="Actiu" name="PlayModeUISndFriendOnline"/>
 			<text tool_tip="UUID del so reproduït quan un amic es desconnecta." width="180" name="textFSFriendOffline">Un amic es desconnecta:</text>
-			<button name="Prev_UISndFriendOffline" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndFriendOffline" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndFriendOffline" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndFriendOffline"/>
+			<check_box label="Actiu" name="PlayModeUISndFriendOffline"/>
 			<text tool_tip="UUID del so reproduït en una sol·licitud d'amistat." width="180" name="textFSFriendshipOffer">Proposta d’amistat:</text>
-			<button name="Prev_UISndFriendshipOffer" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndFriendshipOffer" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndFriendshipOffer" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndFriendshipOffer"/>
+			<check_box label="Actiu" name="PlayModeUISndFriendshipOffer"/>
+		    <text tool_tip="UUID de so reproduït en l'oferta de teletransport." width="180" name="textFSTeleportOffer">Proposta d’amistat:</text>
+			<button name="Prev_UISndTeleportOffer" label="P" tool_tip="Reprodueix aquest so."/>
+			<button name="Def_UISndTeleportOffer" label="↻" tool_tip="Reinicia."/>
+			<check_box label="Actiu" name="PlayModeUISndTeleportOffer"/>		
 		</panel>
 		<panel label="Sons 3" name="UI Sounds tab 3">
 			<text name="textFSExplanation_tab3">Aquí pots modificar cada so produït per la interfície i decidir si vols activar-lo.</text>
 			<text tool_tip="UUID del so reproduït quan es proposa una teletransportació." width="180" name="textFSTeleportOffer">Proposta de TP:</text>
-			<button name="Prev_UISndTeleportOffer" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndTeleportOffer" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndTeleportOffer" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndTeleportOffer"/>
+			<check_box label="Actiu" name="PlayModeUISndTeleportOffer"/>
 			<text tool_tip="UUID del so reproduït quan es proposa un objecte d'inventari." width="180" name="textFSInventoryOffer">Oferta d'inventari:</text>
-			<button name="Prev_UISndInventoryOffer" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndInventoryOffer" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndInventoryOffer" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndInventoryOffer"/>
+			<check_box label="Actiu" name="PlayModeUISndInventoryOffer"/>
 			<text tool_tip="UUID del so reproduït en arribar una trucada de veu." width="180" name="textFSIncomingVoiceCall">Trucada de veu:</text>
-			<button name="Prev_UISndIncomingVoiceCall" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndIncomingVoiceCall" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndIncomingVoiceCall" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndIncomingVoiceCall"/>
+			<check_box label="Actiu" name="PlayModeUISndIncomingVoiceCall"/>
 			<text tool_tip="UUID del so reproduït durant una invitació de grup." width="180" name="textFSGroupInvitation">Invitació de grup:</text>
-			<button name="Prev_UISndGroupInvitation" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndGroupInvitation" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndGroupInvitation" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndGroupInvitation"/>
+			<check_box label="Actiu" name="PlayModeUISndGroupInvitation"/>
 			<text tool_tip="UUID del so reproduït durant un avís de grup." width="180" name="textFSGroupNotice">Avisos de grup:</text>
-			<button name="Prev_UISndGroupNotice" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndGroupNotice" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndGroupNotice" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndGroupNotice"/>
+			<check_box label="Actiu" name="PlayModeUISndGroupNotice"/>
 			<text tool_tip="UUID del so reproduït durant una notificació de nova experiència." width="180" name="textFSQuestionExperience">Nova experiència:</text>
-			<button name="Prev_UISndQuestionExperience" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndQuestionExperience" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndQuestionExperience" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndQuestionExperience"/>
+			<check_box label="Actiu" name="PlayModeUISndQuestionExperience"/>
 			<text tool_tip="UUID del so reproduït durant una operació no vàlida." width="180" name="textFSInvalidOp">Operació no vàlida:</text>
-			<button name="Prev_UISndInvalidOp" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndInvalidOp" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndInvalidOp" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndInvalidOp"/>
+			<check_box label="Actiu" name="PlayModeUISndInvalidOp"/>
 			<text tool_tip="UUID del so reproduït quan s'activa o desactiva l'ancoratge de l'avatar." width="180" name="textFSMovelockToggle">Ancoratge:</text>
-			<button name="Prev_UISndMovelockToggle" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndMovelockToggle" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndMovelockToggle" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndMovelockToggle"/>
+			<check_box label="Actiu" name="PlayModeUISndMovelockToggle"/>
 			<text tool_tip="UUID del so reproduït per als sorolls de passes. Requereix un reinici per ser efectiu." width="180" name="textFSFootsteps">Sorolls de passes:</text>
-			<button name="Prev_UISndFootsteps" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndFootsteps" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndFootsteps" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndFootsteps"/>
+			<check_box label="Actiu" name="PlayModeUISndFootsteps"/>
 			<text tool_tip="UUID del so reproduït quan la balisa de detecció està activa. El so és més freqüent a mesura que l'avatar s'apropa a la destinació." width="180" name="textFSTrackerBeacon">Balisa de detecció:</text>
-			<button name="Prev_UISndTrackerBeacon" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndTrackerBeacon" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndTrackerBeacon" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndTrackerBeacon"/>
+			<check_box label="Actiu" name="PlayModeUISndTrackerBeacon"/>
 			
-			<text tool_tip="UUID del so emès quan el micròfon s'encén o s'apaga." name="textFSMicToggle">
+			<text tool_tip="UUID del so emès quan el micròfon s'encén o s'apaga." name="textFSMicToggle" width="180">
 				Commutació del micro:
 			</text>
 			<button name="Prev_UISndMicToggle" label="P" tool_tip="Previsualització d'aquest so."/>
 			<button name="Def_UISndMicToggle" label="D" tool_tip="Restaura l'UUID per defecte."/>
-			<check_box label="Escolta" name="PlayModeUISndMicToggle"/>
+			<check_box label="Actiu" name="PlayModeUISndMicToggle"/>
 			<text tool_tip="UUID del so reproduït quan apareix l'alerta de reinici de la regió." width="180" name="textFSRestart">Reinici de regió:</text>
-			<button name="Prev_UISndRestart" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndRestart" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndRestart" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndRestart"/>
+			<check_box label="Actiu" name="PlayModeUISndRestart"/>
 			<text tool_tip="UUID del so reproduït quan apareix l'alerta de reinici de la regió (OpenSim)." name="textFSRestartOpenSim" width="180">Reinici de regió (OpenSim):</text>
-			<button name="Prev_UISndRestartOpenSim" label="▶" tool_tip="Reprodueix aquest so."/>
+			<button name="Prev_UISndRestartOpenSim" label="P" tool_tip="Reprodueix aquest so."/>
 			<button name="Def_UISndRestartOpenSim" label="↻" tool_tip="Reinicia."/>
-			<check_box label="Activa" name="PlayModeUISndRestartOpenSim"/>
+			<check_box label="Actiu" name="PlayModeUISndRestartOpenSim"/>
 		</panel>
 	</tab_container>
 </panel>

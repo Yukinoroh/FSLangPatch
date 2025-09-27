@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <panel name="general_panel" label="General">
 	<text name="language_textbox">Llengua:</text>
-	<combo_box name="language_combobox">
+	<combo_box name="language_combobox" width="200">
 		<combo_box.item label="English (Anglès)" name="English"/>
 		<combo_box.item label="Azərbaycanca (Àzeri)" name="Azerbaijani"/>
 		<combo_box.item label="Català" name="Catalan"/>
@@ -12,10 +12,11 @@
 		<combo_box.item label="Polski (Polonès)" name="Polish"/>
 		<combo_box.item label="Русский (Rus)" name="Russian"/>
 		<combo_box.item label="日本語 (Japonès) - Beta" name="(Japanese)"/>
+		<combo_box.item label="正體中文 (Xinès Tradicional)" name="Traditional Chinese"/>
 	</combo_box>
-	<text name="language_textbox2">(Cal reiniciar)</text>
-	<check_box label="Editor de text IME" name="use_ime" tool_tip="Fes servir l'editor de mètodes d'entrada internacional (IME), necessari només per a llengües específiques com el japonès, el xinès, etc." />
-	<text name="maturity_desired_prompt">Accedeix al contingut classificat:</text>
+	<text name="language_textbox2" width="100">(Cal reiniciar)</text>
+	<check_box label="Editor de text IME" name="use_ime" left_pad="1" tool_tip="Fes servir l'editor de mètodes d'entrada internacional (IME), necessari només per a llengües específiques com el japonès, el xinès, etc." />
+	<text name="maturity_desired_prompt" width="240">Accedeix al contingut classificat:</text>
 	<combo_box name="maturity_desired_combobox">
 		<combo_box.item label="General, Moderat i Adult" name="Desired_Adult"/>
 		<combo_box.item label="General i Moderat" name="Desired_Mature"/>

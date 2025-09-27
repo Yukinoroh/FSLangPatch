@@ -2,14 +2,14 @@
 <panel label="Xat/IM" name="chat">
 	<tab_container label="Configuració de Firestorm" name="tabs">
 		<panel label="Visuals" name="ChatVisuals">
-			<text name="console_font_size">
+			<text name="console_font_size" width="210">
 				Mida de la lletra de la consola:
 			</text>
-			<radio_group name="chat_console_font_size">
-				<radio_item label="Mini" name="consradio" />
+			<radio_group name="chat_console_font_size" left_delta="210">
+				<radio_item label="Petita" name="consradio" />
 				<radio_item label="Mitjana" name="consradio2"/>
 				<radio_item label="Gran" name="consradio3"/>
-				<radio_item label="Enorme" name="consradio4"/>
+				<radio_item label="Molt Gran" name="consradio4" left_delta="60"/>
 			</radio_group>
 			<check_box label="Mostra les animacions de l'Avatar (Per exemple, cridant)" name="play_avatar_animations"/>
 			
@@ -24,16 +24,16 @@
 			<check_box label="Mostra l'indicador d'escriptura a les bombolles sobre els avatars" name="bubble_text_typing"/>
 			<check_box label="Mostra l'indicador d'escriptura a l'etiqueta de nom sobre els avatars" name="FSShowTypingStateInNameTag"/>
 			<check_box label="Mostra els segons a l'historial del xat [HH:MM:SS]" name="FSSecondsinChatTimestamps"/>
-			<text name="show_timestamps_label" width="150">
+			<text name="show_timestamps_label" width="120">
 				Mostra l'hora a:
 			</text>
 			<check_box label="Xat local" name="show_timestamps_nearby_chat" width="95"/>
-			<check_box label="IM" name="show_timestamps_im" width="75"/>
-			<check_box label="Historials de xat i IM" name="show_timestamps_transcripts"/>
+			<check_box label="IM" name="show_timestamps_im" width="50"/>
+			<check_box label="Historials de xat i IM" name="show_timestamps_transcripts" left_pad="2"/>
 			<check_box name="FSShowOnscreenConsole" label="Mostra la consola de xat" tool_tip="Mostra/Amaga el text de la consola de xat quan no es mostra la finestra Converses"/>
 			<check_box name="FSConsoleClassicDrawMode" label="Usa la consola clàssica" tool_tip="Aquesta opció mostra el fons de la consola com un sol bloc gran sota totes les línies de text, amb l'amplada de la més llarga."/>
 			<check_box name="ChatFullWidth" label="Usa l'amplada completa de la pantalla"/>
-			<spinner label="Reduir passats" name="fade_chat_time" label_width="100" width="140"/>
+			<spinner label="Reduir passats:" name="fade_chat_time" label_width="130" width="150"/>
 			<text name="text_box4">
 				(Segons)
 			</text>
@@ -42,14 +42,14 @@
 			</text>
 		</panel>
 		<panel label="Finestres de xat" name="ChatWindows">
-			<text name="font_size" width="150">
+			<text name="font_size" width="250">
 				Tipus de lletra de la finestra de xat:
 			</text>
-			<radio_group name="chat_font_size">
-				<radio_item label="Mini" width="100" name="radio"/>
+			<radio_group name="chat_font_size" left_delta="240">
+				<radio_item label="Petita" name="radio"/>
 				<radio_item label="Mitjana" name="radio2"/>
 				<radio_item label="Gran" name="radio3"/>
-				<radio_item label="Enorme" name="radio4"/>
+				<radio_item label="Molt Gran" name="radio4" left_delta="55"/>
 			</radio_group>
 			<check_box name="IMShowNamesForP2PConv" label="Mostra els noms als IM oberts" />
 			<check_box label="Usa l'estil V1 per a les capçaleres de xat" name="plain_text_chat_history" />
@@ -176,7 +176,7 @@
 	
 	<check_box label="Envia els IM al meu correu electrònic quan estigui desconnectat/da ([EMAIL])" name="send_im_to_email"/>
 	<text name="email_settings">[https://accounts.secondlife.com/change_email Obre la configuració de correu per als xats fora de línia]</text>
-	<text name="email_settings_login_to_change">Inicia sessió per canviar la configuració dels missatges per correu electrònic fora de línia</text>
+	<text name="email_settings_login_to_change" width="600">:Inicia Sessió per canviar la Configuració de Missatges per Correu fora de línia:</text>
 	
 	
 	<check_box name="FSShowIMInChatHistory" label="Mostra els IM a la finestra del xat local"/>
@@ -187,7 +187,7 @@
 	<spinner tool_tip="0.25-1.0, 0.25 per a una atenuació forta, 1 per desactivar-la" name="FSIMChatHistoryFade"/>
 	<check_box name="FSShowMessageCountInWindowTitle" label="Mostra el recompte de missatges no llegits al títol de la finestra Firestorm"/>
 	<check_box name="FSAnnounceIncomingIM" label="Avisa'm dels nous IM tan bon punt el remitent comenci a escriure"/>
-	<check_box name="FSIMChatFlashOnFriendStatusChange" label="Fes pampalluguejar pestanyes d'IM quan Amics Connectin/Desconnectin "/>
+	<check_box name="FSIMChatFlashOnFriendStatusChange" label="Fes pampalluguejar pestanyes d'IM quan Amics/gues Connectin/Desconnectin "/>
 	<check_box name="FSNotifyNearbyChatFlash" label="Fes pampalluguejar la pestanya del xat local en rebre missatges" tool_tip="Fa pampalluguejar la pestanya del xat local en rebre nous missatges. Requereix que la pestanya del xat local estigui acoblada a la finestra de converses."/>
 	<check_box name="FSNotifyIMFlash" label="Fes pampalluguejar les pestanyes d'IM en rebre missatges" tool_tip="Fa pampalluguejar la pestanya d'IM en rebre nous missatges. Requereix que la pestanya de l'IM estigui acoblada a la finestra de converses."/>
 	<check_box name="FSReportMutedGroupChat" label="Informa al xat local dels xats de grup silenciats"/>
@@ -268,7 +268,7 @@
 		Amplada de banda (kbps)
 	</text>
 	<text name="FSCmdLineCopyCam_txt">
-		Copia Posició Càmera al Porta-retalls
+		Copia lloc Càmera a PortaRetalls
 	</text>
 	<text name="FSCmdLineAO_txt">
 		Activa/desactiva l'AO (on/off)

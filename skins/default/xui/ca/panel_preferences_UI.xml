@@ -31,7 +31,7 @@
         <slider name="FSHudTextFadeDistance" label="Distància d'atenuació del text flotant (m):" tool_tip="Estableix la distància a la qual el text flotant comença a atenuar-se" label_width="285" width="529"/>
         <slider name="FSHudTextFadeRange" label="Rang d'atenuació del text flotant (m):" tool_tip="Estableix el rang necessari perquè el text flotant passi de totalment visible a totalment invisible" label_width="285" width="529 "/>
         <check_box name="FSHudTextUseHoverHighlight" label="Ressalta el text flotant en passar per sobre:" tool_tip="Quan es passa el ratolí per sobre d'un objecte, ressalta el text flotant (hovertext) portant-lo al primer pla i desactivant-ne l'alfa."/>
-         <text name="FSHudTextShowBackgroundLabel">
+         <text name="FSHudTextShowBackgroundLabel" width="216">
 			 Mostra el fons del text flotant:
          </text>
         <combo_box name="FSHudTextShowBackgroundDropdown" tool_tip="Mostra un fons negre/blanc darrere del text flotant (hovertext) per fer-lo més llegible. L'opacitat es pot modificar a Colors > Diversos.">
@@ -41,25 +41,25 @@
         </combo_box>
     </panel>
     <panel label="Superposició 2D" name="ui-2d-overlay">
-        <text name="UI Size:" width="240">Escala de la interfície d'usuari (pot ser problemàtica) :</text>
+        <text name="UI Size:" Width="304">Escala Interfície Usuari(pot fer nyap):</text>
         <slider name="ui_scale_slider" width="200"/>
         <text name="HUD Size:" width="130">
             Escala del HUD:
         </text>
         <text name="ScriptDialogsPerObjectLabel" width="185">
-            Diàlegs de script per objecte:
+            Diàlegs de Script:
         </text>
-        <combo_box name="ScriptDialogPerObjectDropdown">
-            <combo_box.item label="Un per objecte" name="ScriptDialogOption_0" />
-            <combo_box.item label="Un per objecte i canal" name="ScriptDialogOption_1" />
-            <combo_box.item label="Un per canal (adjuntant)" name="ScriptDialogOption_2" />
-            <combo_box.item label="Un per canal (mostrant)" name="ScriptDialogOption_3" />
+        <combo_box name="ScriptDialogPerObjectDropdown" width="138">
+            <combo_box.item label="Un per Objecte" name="ScriptDialogOption_0" />
+            <combo_box.item label="Un per Objecte i canal" name="ScriptDialogOption_1" />
+            <combo_box.item label="Un per Canal(adjuntant)" name="ScriptDialogOption_2" />
+            <combo_box.item label="Un per Canal(mostrant)" name="ScriptDialogOption_3" />
             <combo_box.item label="Il·limitat (mostrant)" name="ScriptDialogOption_4" />
             <combo_box.item label="Il·limitat" name="ScriptDialogOption_5" />
         </combo_box>
-        <check_box label="Treu el botó &quot;Bloqueja&quot;" name="FSRemoveScriptBlockButton" />
-        <text name="ScriptDialogsPositionLabel" width="185">
-            Posició dels diàlegs de script:
+        <check_box label="Treu botó &quot;Bloqueja&quot;" name="FSRemoveScriptBlockButton" />
+        <text name="ScriptDialogsPositionLabel" width="186">
+            Posició Diàleg de Script:
         </text>
         <combo_box name="ScriptDialogsPositionDropdown" tool_tip="Trieu a quina part de la pantalla es mostraran els diàlegs de script">
             <combo_box.item label="Acoblat a la safata d'icones" name="ScriptDialogPositionOption_1" />
@@ -69,17 +69,17 @@
             <combo_box.item label="A baix a la dreta" name="ScriptDialogPositionOption_5" />
         </combo_box>
         <check_box label="Diàlegs animats" name="FSAnimatedScriptDialogs" tool_tip="Mostra una animació de diàleg en obrir-se (es desplega de dalt a baix)" />
-        <slider label="Files visibles al diàleg de script:" label_width="200" name="FSRowsPerScriptDialog" tool_tip="Nombre màxim de files que es mostraran simultàniament en un diàleg de script." />
+        <slider label="Files visibles al diàleg de script:" label_width="280" name="FSRowsPerScriptDialog" tool_tip="Nombre màxim de files que es mostraran simultàniament en un diàleg de script." />
         <check_box label="Usa el menú circular" name="UsePieMenu" tool_tip="Usa l'estil V1 del menú circular en fer clic dret sobre objectes, avatars i el terreny" />
         <check_box label="Animació del text" name="PieMenuPopupFontEffect" tool_tip="Inclou el text del menú circular com a part de l'animació quan s'obre." />
         <check_box label="Activa l'ombra de l'anell exterior" name="PieMenuOuterRingShade" tool_tip="Permet una ombra addicional a l'anell exterior que ajuda a visualitzar els submenús." />
         <text name="ShowGroupNoticesTopRightLabel" width="180">
-           Posició d'avisos i IM:
+           Posició dreta d'avisos i IM:
         </text>
         <radio_group name="ShowGroupNoticesTopRight" width="210"
          tool_tip="Trieu on es mostraran a la pantalla els avisos de grup i les icones d'IM." >
-           <radio_item label="A baix a la dreta" name="radio" width="100" />
-           <radio_item label="A dalt a la dreta" name="radio1" width="100" />
+           <radio_item label="A baix" name="radio" width="100" />
+           <radio_item label="A dalt" name="radio1" width="100" />
         </radio_group>
         <text name="GroupTopRightRequiresRestart" left_delta="270" width="150">
            (Cal reiniciar)
@@ -87,20 +87,20 @@
         <check_box label="Amaga les icones de xat de grup i IM" name="FSDisableIMChiclets" tool_tip="Treu les icones de missatges instantanis i xats de grup (les converses es continuaran mostrant)." />
         <check_box label="Usa la llista antiga per a les Notificacions." name="FSLegacyNotificationWell" tool_tip="Si està marcat, Firestorm utilitzarà la visualització de llista antiga per a les notificacions desades." width="320" />
         <text name="FSLegacyNotificationWellRequiresRestart" width="150">(Cal reiniciar)</text>
-        <check_box label="Canvia la mida automàticament de les llistes de Converses i Notificacions" name="FSLegacyNotificationWellAutoResize" tool_tip="Si està marcat, Firestorm sempre canviarà automàticament la mida de les llistes de Converses i Notificacions antigues en afegir o treure elements."/>
+        <check_box label="Canvia la mida automàticament de llistes de Converses i Notificacions" name="FSLegacyNotificationWellAutoResize" tool_tip="Si està marcat, Firestorm sempre canviarà automàticament la mida de les llistes de Converses i Notificacions antigues en afegir o treure elements."/>
         <check_box label="Reassigna les tecles de drecera ja en ús (només a Linux, cal reiniciar)" name="FSRemapLinuxShortcuts" tool_tip="Si està activat, les tecles de drecera ja utilitzades pel sistema operatiu Linux (p. ex., CTRL-ALT-Fx) es reassignen." />
         <check_box label="Evita que la finestra d'estadístiques agafi el focus" name="FSStatisticsNoFocus"
         tool_tip="Si està activat, la finestra d'estadístiques mai no agafarà el focus en tancar una altra finestra (accions com canviar la disposició del gràfic encara són possibles)."
         width="256" />
         <check_box label="Mostra les miniatures dels articles d'inventari als consells flotants" name="FSShowInventoryThumbnailTooltips" tool_tip="Si aquesta opció està activada, en passar el ratolí per sobre d'elements d'inventari que continguin una miniatura, aquesta es mostrarà en un consell flotant."/>
-        <slider label="Retard en mostrar el consell flotant:" tool_tip="Retard en mostrar les miniatures dels elements d'inventari als consells flotants" name="FSInventoryThumbnailTooltipsDelay"/>
+        <slider label="Retard Veure ConsellFlotant:" tool_tip="Retard en mostrar les miniatures dels elements d'inventari als consells flotants" name="FSInventoryThumbnailTooltipsDelay"/>
         <text name="FSInventoryThumbnailTooltipsDelayText">
 			sec
         </text>
-        <slider label="Nombre de pampallugues de la pestanya d'IM:" name="ButtonsFlashCount" />
-        <slider label="Freqüència de pampalluga de la pestanya d'IM:" tool_tip="Freqüència amb què pampalluguegen les pestanyes de missatges instantanis:" name="ButtonFlashRate" />
+        <slider label="Pampallugues Pestanya d'IM:" name="ButtonsFlashCount" />
+        <slider label="Freqüència Pampallugues:" tool_tip="Freqüència amb què pampalluguegen les pestanyes de missatges instantanis:" name="ButtonFlashRate" />
         <text name="ButtonFlashRateText">
-            vegades
+            cops
         </text>
     </panel>
 	<panel label="Barres superiors" name="UI-interface-top-bars" >
@@ -117,11 +117,11 @@
 		<check_box label="Mostra la ubicació a la barra de menú" name="ShowMenuBarLocation"/>
 		<check_box label="Mostra la cerca a la barra de menú" name="show_search_menu_check"/>
 		<check_box label="Mostra el saldo actual de L$" name="FSShowCurrencyBalanceInStatusbar"/>
-		<check_box label="Activa els menús emergents del ratolí a les icones de la barra de menú" name="FSStatusBarMenuButtonPopupOnRollover" width="270" />
-		<text name="statusbar_timeformat_textbox" width="100">
+		<check_box label="Activa menús emergents de ratolí a les icones de la barra de menú" name="FSStatusBarMenuButtonPopupOnRollover" width="270" />
+		<text name="statusbar_timeformat_textbox" width="144">
 			Format de l'hora:
 		</text>
-		<combo_box name="FSStatusBarTimeFormat" tool_tip="Tria el format de l'hora utilitzat a la barra de menú principal." width="250">
+		<combo_box name="FSStatusBarTimeFormat" tool_tip="Tria el format de l'hora utilitzat a la barra de menú principal." left_pad="30" Width="306">
 			<combo_box.item label="Idioma per defecte" name="Language"/>
 			<combo_box.item label="12 Hores" name="12_Hour"/>
 			<combo_box.item label="12 Hores amb Segons" name="12_Hour_Seconds"/>
@@ -132,7 +132,7 @@
 			<combo_box.item label="24 Hores amb Zona Horària" name="24_Hour_TZ"/>
 			<combo_box.item label="24 Hores amb Segons i Zona Horària" name="24_Hour_TZ_Seconds"/>
 		</combo_box>
-		<text name="navfav_textbox">
+		<text name="navfav_textbox"  width="320">
 		Barra de navegació i adreces d'interès:
 		</text>
 
@@ -147,8 +147,8 @@
         <check_box label="Obre finestres d'estil [SHORT_VIEWER_GENERATION] per a 'Amics' i 'Grups'" name="FSUseV2Friends" tool_tip="Quan activeu aquesta opció, amics/grups s'obriran en finestres; altrament, es farà a Contactes." />
         <check_box label="Usa la finestra de propietats d'objecte antiga" name="FSUseLegacyObjectProperties" tool_tip="Si està activat, en obrir les propietats d'un objecte s'utilitzarà la finestra de propietats antiga."/>
         <check_box label="Usa la finestra de càmera petita" name="FSUseSmallCameraFloater" tool_tip="Si està activat, s'utilitzarà la finestra de càmera més petita i antiga sense controls de configuració de la càmera."/>
-        <text name="standalone_textbox">
-            Usa finestres separades per a:
+        <text name="standalone_textbox" width="264">
+            Us de finestres separades per a:
         </text>
         <check_box name="FSUseStandaloneGroupFloater" label="Perfils de grup" tool_tip="Si està activat, els perfils de grup es mostraran en una finestra separada" />
         <check_box name="FSUseStandaloneTeleportHistoryFloater" label="Historial de teletransports" tool_tip="Si està activat, l'historial de teletransports es mostrarà en una finestra separada" />
@@ -162,7 +162,7 @@
         <text name="textFriendlistOptions">
             Configuració de la llista de contactes:
         </text>
-        <text name="textFriendlistColumns" width="113">
+        <text name="textFriendlistColumns" width="128">
             Columna del nom:
         </text>
         <check_box width="80" label="Usuari" name="FSFriendListColumnShowUserName" tool_tip="La columna del nom mostra només el nom d'usuari." />
@@ -193,8 +193,8 @@
         <check_box label="Permet termes de cerca separats a cada pestanya d'inventari" name="FSSplitInventorySearchOverTabs" tool_tip="Permet termes de cerca separats a cada pestanya d'inventari" />
     </panel>
     <panel label="Avisos (Toasts)" name="UI-toasts-tab">
-        <text name="ToastSettings" width="450">
-            Configuració de la visualització d'avisos (finestres emergents, consola, toasts):
+        <text name="ToastSettings" width="592">
+            Configuració d'Avisos (finestres emergents, consola, toasts):
         </text>
         <slider label="Espai inferior dels avisos:" tool_tip="Espai entre l'avís més baix i la part inferior de la IU:" name="ToastSpace" />
         <text name="ToastSpaceText">
@@ -212,7 +212,7 @@
         <text name="NearbyToastLifetimeText">
             segons
         </text>
-        <slider label="Desplaçament Z dels avisos de xat:" tool_tip="Desplaçament en l'eix Z per als avisos del xat local" name="FSNearbyChatToastsOffset" />
+        <slider label="Desplaçament Z d'avisos de xat:" tool_tip="Desplaçament en l'eix Z per als avisos del xat local" name="FSNearbyChatToastsOffset" />
         <text name="FSNearbyChatToastsOffsetText">
             píxels
         </text>
@@ -236,17 +236,20 @@
         <text name="OverflowToastHeightText">
             píxels
         </text>
-        <slider label="Amplada de la consola de xat local:" tool_tip="Amplada de la consola de xat local" name="NearbyToastWidth" />
+        <slider label="Amplada de Consola de Xat Local:" tool_tip="Amplada de la consola de xat local" name="NearbyToastWidth" />
         <text name="NearbyToastWidthText" left_delta="470">%</text>
         <check_box label="Mostra els avisos davant d'altres finestres" name="FSShowToastsInFront" />
         <check_box label="Usa la nova notificació de reinici de regió" name="FSUseNewRegionRestartNotification" />
         <check_box label="No sacsejar la pantalla en rebre un avís de reinici de regió" name="FSNoScreenShakeOnRegionRestart" />
-        <check_box label="Informa del reinici de la regió al canal:" width="245" name="FSReportRegionRestartToChat" />
+        <check_box label="Informa Reinici Regió al Canal:" width="245" name="FSReportRegionRestartToChat" />
     </panel>
     <panel label="Tipus de lletra" name="UI-font-tab">
         <text name="tooltip_textbox1">
-           Esquema de tipus de lletra:
+           Tipus de lletra:
         </text>
+        <combo_box left_pad="25" name="Fontsettingsfile">
+           
+        </combo_box>
         <text name="tooltip_textbox2" width="150">
            (Cal reiniciar)
         </text>
@@ -265,17 +268,17 @@ Per defecte 0. Valors més alts poden causar errors.
 [VIEWER_GENERATION] per defecte 0. V1 per defecte 2.
         </text>
         <text name="Label_FolderItemViewHeight">
-           Alçada dels elements:
+           Alçada d'elements:
         </text>
         <text name="Label_FolderItemViewHeight_Scale">
           píxels (cal reiniciar)
 [VIEWER_GENERATION] per defecte 20. V1 per defecte 18.
         </text>
-        <text name="text_box_notecard_font" width="120">
-          Tipus de lletra de les Targetes:
+        <text name="text_box_notecard_font" Width="176">
+          Lletra Targetes:
         </text>
         <combo_box name="FSNotecardFontName" tool_tip="Nom del tipus de lletra utilitzat a l'editor de targetes"/>
-        <combo_box name="FSNotecardFontSize" tool_tip="Mida del tipus de lletra utilitzat a l'editor de targetes">
+        <combo_box name="FSNotecardFontSize" tool_tip="Mida del tipus de lletra utilitzat a l'editor de targetes" Width="144">
              <combo_item name="Monospace" label="Monoespaiada"/>
              <combo_item name="Scripting" label="Escriptura de codi"/>
              <combo_item name="Cascadia" label="Cascadia"/>
@@ -283,8 +286,8 @@ Per defecte 0. Valors més alts poden causar errors.
              <combo_item name="Medium" label="Mitjana"/>
              <combo_item name="Large" label="Gran"/>
         </combo_box>
-        <text name="emoji_font_settings_label">
-				Configuració de la font dels emojis: (Cal reiniciar per obtenir l'efecte complet)
+        <text name="emoji_font_settings_label" Width="368" >
+				Configuració de Font d'Emojis: (Cal reiniciar)
 			</text>
 			<check_box label="Mostrar emojis en monocrom :" name="FSUseBWEmojis"/>
 			<check_box label="Fes servir el bonic botó d'Emoji :" name="FSUsePrettyEmojiButton"/>

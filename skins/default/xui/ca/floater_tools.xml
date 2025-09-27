@@ -133,7 +133,7 @@
 	</combo_box>
 	<check_box label="A la venda:" name="checkbox for sale" tool_tip="Permet a la gent comprar aquest objecte, el seu contingut o una còpia al món pel preu especificat."/>
 	<combo_box name="sale type" tool_tip="Selecciona si el comprador rebrà una còpia de l'article, una còpia del contingut o l'article mateix.">
-		<combo_box.item name="Copy" label="Còpia"/>
+		<combo_box.item name="Copy" label="Copia"/>
 		<combo_box.item name="Contents" label="Contingut"/>
 		<combo_box.item name="Original" label="Original"/>
 	</combo_box>

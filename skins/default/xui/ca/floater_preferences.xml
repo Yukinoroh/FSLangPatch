@@ -20,7 +20,7 @@
 		<panel label="Avançat" name="advanced1"/>
 		<panel label="Interfície" name="ui"/>
 		<panel label="Temes" name="skins"/>
-		<panel label="Còpia de seguretat" name="backup"/>
+		<panel label="Copia de seguretat" name="backup"/>
 		<panel label="Errors" name="crashreports"/>
 		<panel label="Firestorm" name="firestorm"/>
 		<panel label="Opensim" name="opensim"/>

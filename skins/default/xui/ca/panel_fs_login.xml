@@ -28,10 +28,16 @@
 			</combo_box>
 		</layout_panel>
 		<layout_panel name="grid_panel">
-			<text name="grid_login_text">
+			 <text name="grid_builder_text" Width="272">
+				 + Feu clic per afegir més graelles
+			 </text>
+			 <text name="grid_login_text">
 				Connecta a la xarxa:
-			</text>
+			 </text>
 		</layout_panel>
+		
+		
+		
 		<layout_panel name="links_login_panel">
 			<text name="create_new_account_text">
 				Crea un compte

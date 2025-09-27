@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="Popup">
+	<menu_item_call label="Crea un anunci" name="Marketplace Create Listing"/>
+	<menu_item_call label="Associa un anunci" name="Marketplace Associate Listing"/>
+	<menu_item_call label="Obté (actualitza) l'anunci" name="Marketplace Get Listing"/>
+	<menu_item_call label="Comprova si hi ha errors" name="Marketplace Check Listing"/>
+	<menu_item_call label="Edita l'anunci" name="Marketplace Edit Listing"/>
+	<menu_item_call label="Publica" name="Marketplace List"/>
+	<menu_item_call label="Anul·la la publicació" name="Marketplace Unlist"/>
+	<menu_item_call label="Activa" name="Marketplace Activate"/>
+	<menu_item_call label="Desactiva" name="Marketplace Deactivate"/>
+	<menu_item_call label="Comparteix" name="Share"/>
+	<menu_item_call label="Obre" name="Task Open"/>
+	<menu_item_call label="Reprodueix" name="Task Play"/>
+	<menu_item_call label="Propietats" name="Task Properties"/>
+	<menu_item_call label="Reanomena" name="Task Rename"/>
+	<menu_item_call label="Suprimeix" name="Task Remove"/>
+	<menu_item_call label="Buida la paperera" name="Empty Trash"/>
+	<menu_item_call label="Buida els objectes perduts" name="Empty Lost And Found"/>
+	<menu_item_call label="Nova carpeta" name="New Folder"/>
+	<menu_item_call label="Nou script" name="New Script"/>
+	<menu_item_call label="Nova nota" name="New Notecard"/>
+	<menu_item_call label="Nou gest" name="New Gesture"/>
+	<menu label="Roba nova" name="New Clothes">
+		<menu_item_call label="Nova camisa" name="New Shirt"/>
+		<menu_item_call label="Nous pantalons" name="New Pants"/>
+		<menu_item_call label="Noves sabates" name="New Shoes"/>
+		<menu_item_call label="Nous mitjons" name="New Socks"/>
+		<menu_item_call label="Nova jaqueta" name="New Jacket"/>
+		<menu_item_call label="Nova faldilla" name="New Skirt"/>
+		<menu_item_call label="Nous guants" name="New Gloves"/>
+		<menu_item_call label="Nova samarreta interior" name="New Undershirt"/>
+		<menu_item_call label="Nous calçotets" name="New Underpants"/>
+		<menu_item_call label="Nova capa alfa" name="New Alpha"/>
+		<menu_item_call label="Nou tatuatge" name="New Tattoo"/>
+		<menu_item_call label="Nova física" name="New Physics"/>
+		<menu_item_call label="Nou universal" name="New Universal"/>
+	</menu>
+	<menu label="Parts del cos noves" name="New Body Parts">
+		<menu_item_call label="Nova forma" name="New Shape"/>
+		<menu_item_call label="Nova pell" name="New Skin"/>
+		<menu_item_call label="Nous cabells" name="New Hair"/>
+		<menu_item_call label="Nous ulls" name="New Eyes"/>
+	</menu>
+	<menu_item_call label="Obre en una pestanya nova" name="OpenInNewTab"/>
+	<menu_item_call label="Teletransporta't" name="Landmark Teleport"/>
+	<menu_item_call label="Reprodueix localment" name="Animation Play"/>
+	<menu_item_call label="Quant a" name="About Landmark"/>
+	<menu_item_call label="Reprodueix al món" name="Sound Play"/>
+	<menu_item_call label="Copia l'actiu UUID" name="Copy Asset UUID"/>
+	<menu_item_call label="Copia SLurl" name="Copy SLurl"/>
+	<menu_item_call label="Copia el nom" name="Copy Name"/>
+	<menu_item_call label="Copia el camí" name="Copy Path"/>
+	<menu_item_call label="Troba l'original" name="Find Original"/>
+	<menu_item_call label="Substitueix els enllaços" name="Replace Links"/>
+	<menu_item_call label="Purga l'element" name="Purge Item"/>
+	<menu_item_call label="Treu els enllaços trencats" name="Remove Broken Links"/>
+	<menu_item_call label="Buida la carpeta" name="Empty Folder"/>
+	<menu_item_call label="Obre tots els elements de la carpeta" name="Open All Items In Folder"/>
+	<menu_item_call label="Troba tots els enllaços" name="Find All Links"/>
+	<menu_item_call label="Teletransporta't a l'objecte" name="TeleportToObject"/>
+	<menu_item_call label="Desa les textures com a" name="Save Texture As"/>
+	<menu_item_call label="Talla" name="Cut"/>
+	<menu_item_call label="Copia" name="Copy"/>
+	<menu_item_call label="Enganxa" name="Paste"/>
+	<menu_item_call label="Enganxa com a enllaç" name="Paste As Link"/>
+	<menu_item_call label="Suprimeix" name="Delete"/>
+	<menu_item_call label="Canvia el nom de la carpeta" name="Rename Folder"/>
+	<menu_item_call label="Edita la nota" name="Edit Notecard"/>
+	<menu_item_call label="Visualitza el perfil" name="View Profile"/>
+	<menu_item_call label="Visualitza la informació del grup" name="Group Info"/>
+	<menu_item_call label="Envia un IM" name="Send Instant Message"/>
+	<menu_item_call label="Ofereix teletransport" name="Offer Teleport..."/>
+	<menu_item_call label="Demana teletransport" name="Request Teleport..."/>
+	<menu_item_call label="Comença un xat de conferència" name="Conference Chat"/>
+	<menu_item_call label="Activa" name="Activate"/>
+	<menu_item_call label="Desactiva" name="Deactivate"/>
+	<menu_item_call label="Desa com a" name="Save As"/>
+	<menu_item_call label="Desa el seleccionat com a" name="Save Selected As"/>
+	<menu_item_call label="Porta" name="Wearable And Object Wear"/>
+	<menu_item_call label="Afegeix" name="Wearable Add"/>
+	<menu label="Adjunta a" name="Attach To"/>
+	<menu label="Adjunta al HUD" name="Attach To HUD"/>
+	<menu_item_call label="Toca" name="Attachment Touch"/>
+	<menu_item_call label="Edita" name="Wearable Edit"/>
+	<menu_item_call label="Actualitza la textura" name="Texture Refresh Attachment"/>
+	<menu_item_call label="Desprèn de tu mateix" name="Detach From Yourself"/>
+	<menu_item_call label="Treu-te" name="Take Off"/>
+	<menu_item_call name="Settings Apply Local" label="Aplica'm només a mi"/>
+	<menu_item_call name="Settings Apply" label="Aplica a tothom"/>
+	<menu_item_call name="Settings Remove Local" label="Treu només de mi"/>
+	<menu_item_call name="Settings Remove" label="Treu de tothom"/>
+</menu>

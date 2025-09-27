@@ -9,9 +9,9 @@
 	<spinner label="Eix X" name="JoystickAxis1"/>
 	<spinner label="Eix Y" name="JoystickAxis2"/>
 	<spinner label="Eix Z" name="JoystickAxis0"/>
-	<spinner label="Eix de capcineig (pitch)" name="JoystickAxis4"/>
-	<spinner label="Eix de guinyada (yaw)" name="JoystickAxis5"/>
-	<spinner label="Eix de guerxament (roll)" name="JoystickAxis3"/>
+	<spinner label="EixCapcineig" name="JoystickAxis4"/> <!--"Eix de capcineig (pitch)"--> 
+	<spinner label="EixGuinyada" name="JoystickAxis5"/>  <!--"Eix de guinyada (yaw)"--> 
+	<spinner label="EixGuerxament" name="JoystickAxis3"/>  <!--Eix de guerxament (roll)"-->  
 	<spinner label="Eix de zoom" name="JoystickAxis6"/>
 	<check_box label="Zoom" name="ZoomDirect"/>
 	<check_box label="Cursor 3D" name="Cursor3D" left="320" />
@@ -20,8 +20,8 @@
 		Modes de control:
 	</text>
 	<check_box label="Avatar" name="JoystickAvatarEnabled"/>
-	<check_box label="Construcció" name="JoystickBuildEnabled"/>
-	<check_box label="Càmera de vol" name="JoystickFlycamEnabled"/>
+	<check_box label="Crear" name="JoystickBuildEnabled"/>
+	<check_box label="CàmeraVol" name="JoystickFlycamEnabled"/>
 	<text name="joystick_monitor_label">
 		Monitor del joystick
 	</text>
@@ -79,13 +79,13 @@
 		Escala Z
 	</text>
 	<text name="PitchScale">
-		Escala de capcineig
+		Escala Capcineig
 	</text>
 	<text name="YawScale">
-		Escala de guinyada
+		Escala de Guinyada
 	</text>
 	<text name="RollScale">
-		Escala de guerxament
+		Escala Guerxament
 	</text>
 	<text name="XDeadZone">
 		Zona morta X
@@ -97,24 +97,24 @@
 		Zona morta Z
 	</text>
 	<text name="PitchDeadZone">
-		Zona morta de capcineig
+		ZonaMortaCapcineig
 	</text>
 	<text name="YawDeadZone">
-		Zona morta de guinyada
+		ZonaMortaGuinyada
 	</text>
-	<text name="RollDeadZone">
-		Zona morta de guerxament
+	<text name="RollDeadZone" width="160" >
+		ZonaMortaGuerxament
 	</text>
-	<text name="Fathering">
-		Suavitzat
+	<text name="Feathering">
+		Suavitzat:
 	</text>
 	<text name="ZoomScale2">
-		Escala de zoom
+		Escala de Zoom
 	</text>
 	<text name="ZoomDeadZone">
-		Zona morta de zoom
+		Zona morta de Zoom
 	</text>
-	<button label="Valors per defecte per a SpaceNavigator" name="SpaceNavigatorDefaults"/>
+	<button label="Valors per defecte per a SpaceNavigator" name="SpaceNavigatorDefaults" width="280" />
 	<button label="D'acord" label_selected="D'acord" name="ok_btn"/>
 	<button label="Cancel·la" label_selected="Cancel·la" name="cancel_btn"/>
 </floater>

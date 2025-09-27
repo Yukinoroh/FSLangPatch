@@ -101,7 +101,7 @@
 			</panel>
 			<check_box label="A la venda" name="checkbox for sale" tool_tip="Permet a la gent comprar aquest objecte, el seu contingut o copiar-lo a Second Life per un preu determinat."/>
 			<combo_box name="sale type" tool_tip="Indiqueu si el comprador rebrà una còpia, una còpia del contingut o l'article en si.">
-				<combo_box.item label="Còpia" name="Copy"/>
+				<combo_box.item label="Copia" name="Copy"/>
 				<combo_box.item label="Contingut" name="Contents"/>
 				<combo_box.item label="Original" name="Original"/>
 			</combo_box>

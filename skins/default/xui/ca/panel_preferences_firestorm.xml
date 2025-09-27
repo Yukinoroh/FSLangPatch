@@ -41,20 +41,20 @@
 			<check_box label="Llindar abans d'amagar objectes amb una textura massa gran:" width="400" name="RenderVolumeSAProtection" tool_tip="Activar aquesta opció amagarà automàticament els objectes amb una textura que tingui una superfície massa gran (5000 m² per defecte)."/>
 			<check_box label="Activa l'AntiSpam" name="UseAntiSpam"/>
 			<check_box label="Activa l'AntiSpam per als teus objectes" name="FSUseAntiSpamMine" tool_tip="Això aplica la protecció AntiSpam als objectes que et pertanyen."/>
-			<text name="AntiSpamText1">Línies màx. en un missatge:</text>
+			<text name="AntiSpamText1">Màxim de Línies per Missatge:</text>
 			<spinner name="_NACL_AntiSpamNewlines" tool_tip="Nombre de línies màxim permeses en un missatge (70 per defecte)"/>
-			<text name="AntiSpamText2">Esdeveniments màx. per emissor:</text>
+			<text name="AntiSpamText2">Màxim Esdeveniments per Emissor:</text>
 			<spinner name="_NACL_AntiSpamAmount" tool_tip="Nombre màxim d'esdeveniments similars a acceptar provinents del mateix emissor (10 per defecte)"/>
 			<text name="AntiSpamText3">Multiplicador per a l'àudio:</text>
 			<spinner name="_NACL_AntiSpamSoundMulti" tool_tip="Multiplicador de l'ajustament anterior per a les sol·licituds d'àudio (6 per defecte)"/>
 			<text name="AntiSpamText4">Per a la precàrrega d'àudio:</text>
 			<spinner name="_NACL_AntiSpamSoundPreloadMulti" tool_tip="Multiplicador d'esdeveniments permesos per a les sol·licituds de precàrrega d'àudio (6 per defecte)"/>
 			<button name="AntiSpamUnblock" label="Buida la llista de spammers"/>
-			<check_box label="Llindar de confirmació abans del pagament:" width="240" name="FSConfirmPayments" tool_tip="Mostra una finestra de confirmació abans de pagar una suma a un resident superior al llindar indicat. Per tenir sempre una confirmació, ajusta el llindar a 0."/>
-			<spinner name="FSPaymentConfirmationThreshold" tool_tip="Mostra una finestra de confirmació abans de pagar una suma a un resident superior al llindar indicat. Per tenir sempre una confirmació, ajusta el llindar a 0."/>
+			<check_box label="Llindar Confirmació abans de Pagament:" width="240" name="FSConfirmPayments" tool_tip="Mostra una finestra de confirmació abans de pagar una suma a un resident superior al llindar indicat. Per tenir sempre una confirmació, ajusta el llindar a 0."/>
+			<spinner name="FSPaymentConfirmationThreshold" left_pad="20" tool_tip="Mostra una finestra de confirmació abans de pagar una suma a un resident superior al llindar indicat. Per tenir sempre una confirmació, ajusta el llindar a 0."/>
 		</panel>
 		<panel label="Avatar" name="firestorm_avatar">
-			<text name="HeadMovement">Inclinació màxima del cap del meu avatar que segueix el meu ratolí (0 = cap moviment):</text>
+			<text name="HeadMovement">Inclinació màxima del cap de l'Avatar que segueix el meu ratolí (0 = cap moviment):</text>
 			<slider label="Inclinació vertical:" tool_tip="Inclinació vertical màxima del cap del meu avatar en graus" name="PitchFromMousePositionSlider"/>
 			<text name="PitchFromMousePositionText">graus</text>
 			<slider label="Inclinació horitzontal:" tool_tip="Inclinació horitzontal màxima del cap del meu avatar en graus" name="YawFromMousePositionSlider"/>
@@ -127,8 +127,8 @@
 			</combo_box>
 			<check_box label="Activa el preprocessador LSL" tool_tip="Quan està marcat, el preprocessador LSL està activat." name="preproc_checkbox"/>
 			<check_box label="Optimitza" tool_tip="Quan està marcat, el preprocessador LSL optimitzarà l'espai que ocupen els scripts." name="preprocoptimizer_checkbox"/>
-			<check_box label="Condició switch()" left_delta="80" tool_tip="Quan està marcat, el preprocessador LSL permetrà l'ús de la condició switch() per al control de flux de scripts." name="preprocswitch_checkbox"/>
-			<check_box label="Simplificacions de llistes" left_delta="120" tool_tip="Quan està marcat, el preprocessador LSL permetrà l'ús d'extensions de sintaxi per a la manipulació de llistes." name="preproclazy_checkbox"/>
+			<check_box label="Condició Switch()" left_delta="80" tool_tip="Quan està marcat, el preprocessador LSL permetrà l'ús de la condició switch() per al control de flux de scripts." name="preprocswitch_checkbox"/>
+			<check_box label="Simplificar Llistes" left_delta="120" tool_tip="Quan està marcat, el preprocessador LSL permetrà l'ús d'extensions de sintaxi per a la manipulació de llistes." name="preproclazy_checkbox"/>
 			<check_box label="#includes des del disc" left_delta="150" tool_tip="Quan està marcat, el preprocessador LSL permetrà que l'ordre #include apunti a fitxers del teu disc dur." name="preprocinclude_checkbox"/>
 			<text name="lslpreprocinclude_textbox">Camí d'inclusió del preprocessador:</text>
 			<button label="Navega" label_selected="Navega" name="SetPreprocInclude"/>
@@ -141,11 +141,11 @@
 			<check_box label="Mostra el límit màxim d'alçada per construir" name="FSRenderParcelSelectionToMaxBuildHeight"/>
 			<check_box label="Limita la distància de selecció (metres):" width="280" name="LimitSelectDistance"/>
 			<spinner name="MaxSelectDistance" tool_tip="Distància màxima permesa de selecció (en metres des de l'avatar [Per defecte: 128.000])"/>
-			<check_box label="Limita la distància de desplaçament (metres):" width="280" name="LimitDragDistance"/>
+			<check_box label="Limita Distància de Desplaçament (metres):" width="280" name="LimitDragDistance"/>
 			<spinner name="MaxDragDistance" tool_tip="Distància màxima permesa per a un desplaçament únic (metres des del punt de partida) [Per defecte: 48.000]"/>
 			<text name="RotationStepText1" left="23" width="260">Restringeix les rotacions a múltiples de:</text>
 			<spinner name="RotationStep" width="45" tool_tip="Totes les rotacions mitjançant l'eina de rotació estan restringides a múltiples del nombre indicat (1.0 per defecte)"/>
-			<text name="RotationStepText2">graus si 'Fixa a la graella' està inactiu</text>
+			<text name="RotationStepText2">Graus si 'Fixa a la graella' inactiu</text>
 			<check_box name="FSUnlinkConfirmEnabled" width="400" label="Confirmació de supressió d'enllaç si el conjunt té almenys"/>
 			<text name="MinObjectsForUnlinkConfirmText2">objectes</text>
 			<check_box label="Utilitza l'antic funcionament de 'Posa aquest objecte a la venda'" tool_tip="Activar aquesta opció desarà directament la informació de venda de l'objecte en lloc de necessitar una confirmació." name="FSCommitForSaleOnChange_toggle"/>
@@ -163,8 +163,9 @@
 			<text name="title">Carpetes de destinació per a les pujades:</text>
 			<text name="title_sounds">Sons</text>
 			<text name="title_models">Models</text>
-			<text name="upload_help">Per canviar la carpeta de destinació, fes clic dret a sobre a l'inventari i selecciona
-"Per defecte per a"
+			<text name="upload_help" Width="860" >Per canviar Carpeta Destinació, fes clic dret a sobre a l'inventari i selecciona
+" "
+"Per defecte per a:"
 			</text>
 			<button name="reset_default_folders" label="Reinicia les carpetes per defecte"/>
 		</panel>

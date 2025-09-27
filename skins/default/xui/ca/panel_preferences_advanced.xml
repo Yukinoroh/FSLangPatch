@@ -4,11 +4,12 @@
 		Botó central del ratolí
 	</panel.string>
 	<check_box label="Permet l'execució de diversos clients" name="allow_multiple_viewer_check"/>
-	<check_box label="Permet la selecció de la xarxa a l'inici de sessió (No totes les xarxes són compatibles amb el Firestorm)" name="show_grid_selection_check"/>
-	<check_box label="Mostra el menú Avançat (Feu-lo servir sota la vostra responsabilitat!)" name="show_advanced_menu_check"/>
-	<check_box label="Mostra el menú de Desenvolupador (Feu-lo servir sota la vostra responsabilitat!)" name="show_develop_menu_check"/>
+	<check_box label="Selecció de Xarxa a l'Inici de Sessió (No totes són compatibles)" name="show_grid_selection_check"/>
+	<check_box label="Mostra el menú Avançat (Utilitza-ho sota la teva responsabilitat!)" name="show_advanced_menu_check"/>
+	<check_box label="Mostra el menú Desenvolupador (Utilitza-ho sota la teva responsabilitat!)" name="show_develop_menu_check"/>
 	<check_box label="Inhabilita la detecció de la VRAM per sondeig WMI en sistemes Windows" name="FSDisableWMIProbing"/>
 	<check_box label="Mostra la cerca al menú" name="show_search_menu_check"/>
+	 
 	   <!-- Ansa: Timesteps are currently disabled in the viewer
     <check_box
      control_name="UseAnimationTimeSteps"
@@ -27,6 +28,22 @@
 	<text name="BackgroundYieldTimeText">
 		Quantitat de temps en mil·lisegons que es cedeix a altres programes per cada fotograma quan el [APP_NAME] no està en primer pla (per defecte: 40; 1 segon = 1000 mil·lisegons):
 	</text>
-	<button label="Permisos de creació per defecte" name="default_creation_permissions" />
+	
+	<slider
+     can_edit_text="true"
+     control_name="BackgroundYieldTime"
+     decimal_digits="0"
+     follows="top|left"
+     layout="topleft"
+     height="15"
+     increment="10"
+     initial_value="40"
+     left="30"
+     max_val="1000"
+     min_val="0"
+     name="BackgroundYieldTime"
+     top_delta="45"
+     width="250" />
+	
 	<button label="Restableix tots els paràmetres" label_selected="Restableix tots els paràmetres..." name="clear_settings"/>
 </panel>
