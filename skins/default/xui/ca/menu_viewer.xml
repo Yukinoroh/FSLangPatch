@@ -148,6 +148,35 @@
 			<menu_item_call label="Aigües..." name="WL Bulk Import Water"/>
 		</menu>
 	</menu>
+	<!-- <menu label="Положення сонця" name="Environment Settings">
+			<menu_item_check label="Восход" name="Схід сонця"/>
+			<menu_item_check label="Полудень" name="Noon"/>
+			<menu_item_check label="Zakat" name="Sunset"/>
+			<menu_item_check label="Північ" name="Midnight"/>
+			<menu_item_check label="Час острова" name="Revert to Region Default"/>
+		</menu>
+		<menu label="Редактор навколишнього середовища" name="Environment Editor">
+			<menu_item_call label="Параметри середовища..." name="Environment Settings"/>
+			<menu name="Water Presets" label="Предустановлення води">
+				<menu_item_call label="Нова попередня установка..." name="new_water_preset"/>
+				<menu_item_call label="Редагувати попереднє встановлення..." name="edit_water_preset"/>
+				<menu_item_call label="Видалити попереднє встановлення..." name="delete_water_preset"/>
+			</menu>
+			<menu name="Sky Presets" label="Sky Presets">
+				<menu_item_call label="Нова попередня установка..." name="new_sky_preset"/>
+				<menu_item_call label="Редагувати попереднє встановлення..." name="edit_sky_preset"/>
+				<menu_item_call label="Видалити попереднє встановлення..." name="delete_sky_preset"/>
+			</menu>
+			<menu name="Day Presets" label="Предустановлення дня">
+				<menu_item_call label="Нова попередня установка..." name="new_day_preset"/>
+				<menu_item_call label="Редагувати попереднє встановлення..." name="edit_day_preset"/>
+				<menu_item_call label="Видалити попереднє встановлення..." name="delete_day_preset"/>
+			</menu>
+		</menu> -->
+
+	
+	
+	
 	<menu name="photo_and_video" label="Foto i Vídeo">
 		<menu_item_call label="Eines de foto" name="phototools_item_call"/>
 		<menu_item_call label="Eines de càmera" name="cameratools_item_call"/>
@@ -269,8 +298,61 @@
 		<menu_item_call label="Horari de classes de Firestorm" name="Firestorm Classes Schedule"/>
 		<menu_item_call label="Calendari d'esdeveniments de Firestorm" name="Firestorm Events Calendar"/>
 		<menu_item_check label="Com fer..." name="How To"/>
+		<!--       <menu_item_call
+         label="Second Life Help"
+         name="Second Life Help">
+             <menu_item_call.on_click
+             function="PromptShowURL"
+             name="script_library_url"
+             parameter="WebLaunchExternalTarget,https://support.secondlife.com/" />
+        </menu_item_call>-->
 		<menu_item_call label="Ajuda de [CURRENT_GRID]" name="current_grid_help"/>
 		<menu_item_call label="Quant a [CURRENT_GRID]" name="current_grid_about"/>
+		<!--        <menu_item_call
+         label="Tutorial"
+         name="Tutorial">
+            <menu_item_call.on_click
+             function="Floater.Show"
+             parameter="hud" />
+        </menu_item_call>
+		<menu_item_separator/>
+        <menu_item_call
+             label="Knowledge Base"
+             name="Knowledge Base">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+            parameter="http://community.secondlife.com/t5/English-Knowledge-Base/Second-Life-User-s-Guide/ta-p/1244857"/>
+        </menu_item_call>
+        <menu_item_call
+             label="Wiki"
+             name="Wiki">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="http://wiki.secondlife.com"/>
+        </menu_item_call>
+        <menu_item_call
+             label="Community Forums"
+             name="Community Forums">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="http://community.secondlife.com/t5/Forums/ct-p/Forums"/>
+        </menu_item_call>         
+        <menu_item_call
+             label="Support portal"
+             name="Support portal">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="https://support.secondlife.com/"/>         
+        </menu_item_call>
+        <menu_item_separator/>
+        <menu_item_call
+             label="[SECOND_LIFE] Blogs"
+             name="Second Life Blogs">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="https://community.secondlife.com/news/"/>
+        </menu_item_call>-->
+		
 		<menu_item_call label="Estat de la graella" name="Grid Status"/>
 		<menu_item_call label="Informa d'un abús" name="Report Abuse"/>
 		<menu_item_call label="Informa d'un error" name="Report Bug"/>
@@ -293,7 +375,7 @@
 		</menu>
 		<menu_item_check label="Permet el xat OOC (Fora de Rol)" name="Allow OOC Chat"/>
 		<menu_item_check label="Mostra el xat filtrat" name="Show Filtered Chat"/>
-		<menu_item_check label="Mostra 'Escrivint' al xat redirigit" name="Show Redirected Chat Typing"/>
+		<menu_item_check label="Mostra 'Escribint' al xat redirigit" name="Show Redirected Chat Typing"/>
 		<menu_item_check label="Divideix el xat redirigit llarg" name="Split Long Redirected Chat"/>
 		<menu_item_check label="Permet adjunts temporals" name="Allow Temporary Attachments"/>
 		<menu_item_check label="Prohibeix donar a la carpeta #RLV" name="Forbid Give to #RLV"/>
@@ -476,7 +558,7 @@
 			<menu_item_check label="Completa" name="Full"/>
 		</menu>
 	</menu>
-	<menu label="Renderització" name="Render">
+	<menu label="Renderització" name="Rendering">
 		<menu_item_check label="Eixos" name="Axes"/>
 		<menu_item_check label="Base tangent" name="Tangent Basis"/>
 		<menu_item_check label="Informació de la textura seleccionada" name="Selected Texture Info Basis"/>
@@ -538,14 +620,14 @@
 		<menu_item_call label="Bolca el SelectMgr" name="Dump SelectMgr"/>
 		<menu_item_call label="Bolca l'inventari" name="Dump Inventory"/>
 		<menu_item_call label="Bolca els temporitzadors" name="Dump Timers"/>
-		<menu_item_call label="Bolca el Focus Holder" name="Dump Focus Holder"/>
+		<menu_item_call label="Bolca el focus holder" name="Dump Focus Holder"/>
 		<menu_item_call label="Imprimeix la informació de l'objecte seleccionat" name="Print Selected Object Info"/>
 		<menu_item_call label="Imprimeix la informació de l'agent" name="Print Agent Info"/>
 		<menu_item_check label="Doble clic - Autopilot" name="Double-ClickAuto-Pilot"/>
 		<menu_item_check label="Doble clic - Teletransport" name="DoubleClick Teleport"/>
 		<menu_item_check label="Depuració del SelectMgr" name="Debug SelectMgr"/>
-		<menu_item_check label="Depuració de Clics" name="Debug Clicks"/>
-		<menu_item_check label="Depuració de Vistes" name="Debug Views"/>
+		<menu_item_check label="Depuració de clics" name="Debug Clicks"/>
+		<menu_item_check label="Depuració de vistes" name="Debug Views"/>
 		<menu_item_check label="Depuració de noms d'eines" name="Debug Name Tooltips"/>
 		<menu_item_check label="Depuració d'esdeveniments del ratolí" name="Debug Mouse Events"/>
 		<menu_item_check label="Depuració de tecles" name="Debug Keys"/>
@@ -603,7 +685,7 @@
 	<menu_item_call label="Comprimeix les imatges" name="Compress Images"/>
 	<menu_item_call label="Prova de compressió de fitxers" name="Compress File Test"/>
 	<menu_item_call label="Activa el detector visual de fuites" name="Enable Visual Leak Detector"/>
-	<menu_item_check label="Emet un Minidump en la depuració" name="Output Debug Minidump"/>
+	<menu_item_check label="Emet un minidump en la depuració" name="Output Debug Minidump"/>
 	<menu_item_check label="Finestra de consola en el proper inici" name="Console Window"/>
 	<menu label="Estableix el nivell de registre" name="Set Logging Level">
 		<menu_item_check label="Depuració" name="Debug"/>
@@ -655,7 +737,7 @@
 		</menu>
 		<menu label="Ajuda" name="DeprecatedHelp">
 			<menu_item_call label="Blog oficial de Linden" name="Official Linden Blog"/>
-			<menu_item_call label="Portal d'scripting" name="Scripting Portal"/>
+			<menu_item_call label="Portal de scripting" name="Scripting Portal"/>
 			<menu label="Informe d'errors" name="Bug Reporting">
 				<menu_item_call label="Seguiment públic de problemes" name="Public Issue Tracker"/>
 				<menu_item_call label="Ajuda del seguiment públic de problemes" name="Publc Issue Tracker Help"/>

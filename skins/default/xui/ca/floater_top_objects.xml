@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="top_objects" title="Objectes principals" min_width="800">
+	<floater.string name="top_scripts_title">
+		Scripts principals
+	</floater.string>
+	<floater.string name="top_scripts_text">
+		[COUNT] scripts que sumen un temps de [TIME] ms i ocupen [MEMORY] KB
+	</floater.string>
+	<floater.string name="scripts_score_label">
+		Temps
+	</floater.string>
+	<floater.string name="top_colliders_title">
+		Col·lisionadors principals
+	</floater.string>
+	<floater.string name="top_colliders_text">
+		[COUNT] objectes principals que són possibles col·lisionadors
+	</floater.string>
+	<floater.string name="colliders_score_label">
+		Puntuació
+	</floater.string>
+	<floater.string name="none_descriptor">
+		No se n'ha trobat cap.
+	</floater.string>
+	<floater.string name="URLs">
+		URL
+	</floater.string>
+	<floater.string name="memory">
+		Memòria (KB)
+	</floater.string>
+	<text name="title_text">
+		S'està carregant...
+	</text>
+	<scroll_list name="objects_list">
+		<scroll_list.columns label="Puntuació" name="score"/>
+		<scroll_list.columns label="Nom" name="name"/>
+		<scroll_list.columns label="Propietari" name="owner"/>
+		<scroll_list.columns label="Lloc" name="location"/>
+		<scroll_list.columns label="Parcel·la" name="parcel"/>
+		<scroll_list.columns label="Temps" name="time"/>
+		<scroll_list.columns label="URL" name="URLs"/>
+		<scroll_list.columns label="Memòria (KB)" name="memory"/>
+	</scroll_list>
+	<text name="id_text">
+		ID de l'objecte:
+	</text>
+	<button label="Mostra el senyal lluminós" name="show_beacon_btn"/>
+	<text name="obj_name_text">
+		Nom de l'objecte:
+	</text>
+	<button label="Filtra" name="filter_object_btn"/>
+	<text name="owner_name_text">
+		Propietari:
+	</text>
+	<button label="Filtra" name="filter_owner_btn"/>
+	<text name="parcel_name_text">
+		Parcel·la:
+	</text>
+	<button label="Filtra" name="filter_parcel_btn"/>
+	<button label="Actualitza" name="refresh_btn" />
+	<button label="Retorna la selecció" name="return_selected_btn" width="120" />
+	<button label="Retorna-ho tot" name="return_all_btn" />
+	<button label="Teleporta-m'hi" name="teleport_to_btn" />
+	<button label="Perfil" name="profile_btn" />
+	<button label="Info. dels scripts" name="script_info_btn" />
+	<button label="Expulsa" name="estate_kick_btn" />
+</floater>

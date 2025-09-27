@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="Creació de grup" name="GroupCreation">
+  <panel.string name="current_membership">
+    (Les teves afiliacions)
+  </panel.string>
+  <panel name="group_info_top">
+    <text name="group_name_label">
+    Nom del grup:
+    </text>
+    <line_editor label="Introdueix el nom del nou grup" name="group_name_editor" />
+  </panel>
+  <scroll_container name="content_scroll_container">
+    <panel name="content_panel">
+      <layout_stack name="layout">
+        <layout_panel name="group_info">
+          <panel name="group_info_top2">
+            <texture_picker name="insignia" tool_tip="Fes clic per triar una imatge"/>
+            <text_editor name="charter">
+              Estatuts del grup
+            </text_editor>
+          </panel>
+          <panel name="preferences_container">
+            <check_box label="Qualsevol s'hi pot unir" name="open_enrollement"
+              tool_tip="Estableix si aquest grup permet que nous membres s'hi uneixin senza invitació."/>
+            <check_box label="Quota d'inscripció" name="check_enrollment_fee"
+              tool_tip="Estableix si es requereix una quota per unir-se al grup"/>
+            <spinner name="spin_enrollment_fee" tool_tip="Els nous membres han de pagar aquesta quota per unir-se al grup si la casella de quota d'inscripció està marcada."/>
+            <combo_box name="group_mature_check" tool_tip="Les qualificacions de maduresa defineixen el tipus de contingut i comportament permesos al grup.">
+              <combo_item name="select_mature" value="Tria">
+               - Tria una qualificació de maduresa -
+              </combo_item>
+              <combo_box.item label="Moderat" name="mature" />
+              <combo_box.item label="General" name="pg" />
+            </combo_box>
+          </panel>
+        </layout_panel>
+        <layout_panel name="create_info">
+          <text name="fee_information">
+            La quota per crear un grup depèn del teu nivell d'afiliació. [https://secondlife.com/my/account/membership.php Més informació]
+          </text>
+        </layout_panel>
+        <layout_panel name="create_actions" >
+          <layout_stack name="button_row_ls" >
+            <layout_panel name="layout_crt">
+              <button label="Crea el grup per L$ [COST]" name="btn_create" tool_tip="Crea un nou grup"/>
+              <button name="back" label="Cancel·la"/>
+            </layout_panel>
+          </layout_stack>
+          <text name="info_deletion">
+            Nota: un grup amb menys de 2 membres es dissol al cap de 48 hores!
+          </text>
+        </layout_panel>
+      </layout_stack>
+    </panel>
+  </scroll_container>
+</panel>

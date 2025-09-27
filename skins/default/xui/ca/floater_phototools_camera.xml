@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater width="285" title="Eines de la Càmera" name="phototools_camera_floater" >
+	<floater.string name="rotate_tooltip">
+		Gira la càmera al voltant del focus
+	</floater.string>
+	<floater.string name="zoom_tooltip">
+		Apropa/allunya la càmera cap al focus
+	</floater.string>
+	<floater.string name="move_tooltip">
+		Mou la càmera amunt i avall, a esquerra i dreta
+	</floater.string>
+	<floater.string name="free_mode_title">
+		Vista de l'Objecte
+	</floater.string>
+	<string name="inactive_combo_text">Prova una configuració predefinida</string>
+	<tab_container name="tabs">
+		<panel name="P_Cam_Controls_1" label="Controls 1">
+			<panel name="cameracontrolspanel">
+				<panel name="controls1">
+					<panel name="preset_views_list">
+						<panel_camera_item name="front_view">
+							<panel_camera_item.text name="front_view_text">
+								Vista frontal
+							</panel_camera_item.text>
+						</panel_camera_item>
+						<panel_camera_item name="group_view">
+							<panel_camera_item.text name="side_view_text">
+								Vista lateral
+							</panel_camera_item.text>
+						</panel_camera_item>
+						<panel_camera_item name="rear_view">
+							<panel_camera_item.text name="rear_view_text">
+								Vista posterior
+							</panel_camera_item.text>
+						</panel_camera_item>
+						<combo_box name="preset_combo">
+							<combo_box.item label="Usa una config. predefinida" name="Use preset"/>
+						</combo_box>
+						<button name="gear_btn" tool_tip="Reinicia la Càmera"/>
+						<button label="Posició..." name="camera_position_btn"/>
+					</panel>
+					<panel name="camera_modes_list">
+						<panel_camera_item name="object_view">
+							<panel_camera_item.text name="object_view_text">
+								Vista de l'objecte
+							</panel_camera_item.text>
+						</panel_camera_item>
+						<panel_camera_item name="mouselook_view">
+							<panel_camera_item.text name="mouselook_view_text">
+								Vista Mouselook
+							</panel_camera_item.text>
+						</panel_camera_item>
+					</panel>
+					<panel name="zoom">
+						<joystick_rotate name="cam_rotate_stick" tool_tip="Orbita la càmera al voltant del focus"/>
+						<slider_bar name="zoom_slider" tool_tip="Això només mou la càmera. NOTA: Això no és un zoom de càmera! No afecta l'angle de visió. Utilitza el control lliscant 'Angle de visió' per a un zoom real."/>
+						<joystick_track name="cam_track_stick" tool_tip="Mou la càmera amunt i avall, a esquerra i dreta."/>
+					</panel>
+				</panel>
+
+				<panel name="buttons">
+					<button name="presets_btn" tool_tip="Vistes predefinides"/>
+					<button name="pan_btn" tool_tip="Òrbita Zoom Panorama"/>
+					<button name="avatarview_btn" tool_tip="Modes de Càmera"/>
+					<button name="store_camera_view_btn" tool_tip="Desa la vista de càmera actual"/>
+					<button name="load_camera_view_btn" tool_tip="Carrega la vista de càmera desada" />
+				</panel>
+			</panel>
+
+			<panel name="P_Cam_Mov_Settings">
+				<text name="T_Cam_Mov_Settings">
+					Configuració del moviment de la càmera
+				</text>
+			</panel>
+
+			<panel name="P_Zoom">
+				<text name="T_Zoom" tool_tip="En termes reals, aquesta és la funció de zoom. Canviarà el camp de visió al visor. És el mateix que prémer Ctrl+0 o Ctrl+8. NOTA: Això no funcionarà si teniu activada la flycam (3D SpacenNavigator).">
+					Angle de visió
+				</text>
+				<button name="Reset_Camera_Angle" label="R" tool_tip="Reinicia al valor per defecte."/>
+				<text name="T_Zoom_Speed" tool_tip="Controla la rapidesa amb què la càmera s'apropa i s'allunya. Valors més alts resulten en un zoom més lent i suau.">
+					Vel. zoom
+				</text>
+				<button name="Reset_Zoom_Time" label="R" tool_tip="Reinicia al valor per defecte."/>
+				<text name="T_Camera_Lag" tool_tip="Controla el retard de la càmera respecte al moviment de l'avatar (0 = cap, 30 = velocitat de l'avatar).">
+					Retard
+				</text>
+				<button name="Reset_Camera_Lag" label="R" tool_tip="Reinicia al valor per defecte."/>
+				<text name="T_Camera_Offset" tool_tip="Controla quant es desplaça la càmera respecte al punt de vista per defecte.">
+					Desplaçament
+				</text>
+				<button name="Reset_Camera_Offset" label="R" tool_tip="Reinicia al valor per defecte."/>
+				<text name="T_Camera_Smoothing" tool_tip="Controla la suavitat amb què la càmera accelera i es deté. Valors més alts donen un moviment més suau (i una mica més lent).">
+					Suavitat
+				</text>
+				<button name="Reset_Camera_Smoothing" label="R" tool_tip="Reinicia al valor per defecte."/>
+			</panel>
+		</panel>
+
+		<panel name="P_Cam_Controls_2" label="Controls 2" >
+			<panel name="P_Mouse_Movement">
+				<text name="T_Mouse_Movement">
+					Configuració del moviment del ratolí
+				</text>
+			</panel>
+
+			<panel name="P_Mouse_Movement_Settings">
+				<text name="T_Mouse_Sensitivity" left="5" width="110" tool_tip="Controla la sensibilitat del ratolí en el mode Mouselook.">Sensibilitat
+				</text>
+				<button name="Reset_Mouse_Sensitivity" label="R" tool_tip="Reinicia al valor per defecte."/>
+				<check_box name="first_person_avatar_visible" label="Mostra l'avatar en Mouselook"
+				 tool_tip="Mostra el vostre avatar i els adjunts per sota del coll en mode Mouselook (Vista en primera persona). Per defecte: DESACTIVAT." />
+				<check_box name="MouseSmooth" label="Moviments suaus en Mouselook" tool_tip="Suavitza el moviment del ratolí en el mode Mouselook (Vista en primera persona)."/>
+			</panel>
+
+			<panel name="P_Additional_Camera_Options">
+				<text name="T_Additional_Camera_Options" width="240">
+					Opcions addicionals de la càmera
+				</text>
+			</panel>
+
+			<panel name="P_Add_Cam_Opt_Settings">
+				<check_box name="clickonavatarkeepscamera" label="Conserva la posició de la càmera"
+				 tool_tip="Normalment, en fer clic en un avatar es reinicia la posició de la càmera. Aquesta opció elimina aquest comportament."/>
+				<check_box name="FSResetCameraOnTP" label="Reinicia la posició de la càmera després del teletransport"
+				 tool_tip="Normalment, la posició de la càmera es reinicia en teletransportar-se (dins d'una regió). Aquesta opció evita aquest comportament."/>
+				<check_box name="disableminzoomdist" label="Desactiva la distància mínima de zoom"
+				 tool_tip="Desactiva la limitació de la distància més propera de la càmera a un objecte."/>
+				<check_box name="ignorecameraconstraints" label="Moviment de càmera sense restriccions"
+				 tool_tip="Ignora les col·lisions de la càmera amb els objectes. CAL REINICIAR!"/>
+				<check_box name="resetcameraonmovement"
+				 label="Reinicia la càmera en moure's"
+				 tool_tip="Reinicia la càmera a la posició per defecte quan l'avatar es mou"/>
+			</panel>
+		</panel>
+
+		<panel name="P_3D_Mouse" label="Ratolí 3D">
+			<panel name="P_3D_Mouse_Settings1" >
+				<slider name="FlycamAxisScale1b" label="Esquerra/Dreta" tool_tip="Ajusta la sensibilitat del moviment Esquerra/Dreta. Si teniu dificultats per moure-us amb precisió, utilitzeu valors d'escala més baixos."/>
+				<slider name="FlycamAxisScale2b" label="Amunt/Avall" tool_tip="Ajusta la sensibilitat del moviment Amunt/Avall. Si teniu dificultats per moure-us amb precisió, utilitzeu valors d'escala més baixos."/>
+				<slider name="FlycamAxisScale0b" label="Endavant/Enrere" tool_tip="Ajusta la sensibilitat del moviment Endavant/Enrere. Si teniu dificultats per moure-us amb precisió, utilitzeu valors d'escala més baixos."/>
+				<slider name="FlycamAxisScale4" label="Capcineig" tool_tip="Ajusta la sensibilitat del capcineig. Si teniu dificultats per moure-us amb precisió, utilitzeu valors d'escala més baixos."/>
+				<slider name="FlycamAxisScale5" label="Guinyada" tool_tip="Ajusta la sensibilitat de la guinyada. Si teniu dificultats per moure-us amb precisió, utilitzeu valors d'escala més baixos."/>
+				<slider name="FlycamAxisScale3" label="Balanceig" tool_tip="Ajusta la sensibilitat del balanceig. Si teniu dificultats per moure-us amb precisió, utilitzeu valors d'escala més baixos."/>
+				<slider name="FlycamAxisScale6" label="Zoom" tool_tip="Ajusta la sensibilitat de la velocitat de zoom. Si teniu dificultats per moure-us amb precisió, utilitzeu valors d'escala més baixos."/>
+				<slider name="FlycamFeathering" label="Suavitat" tool_tip="Posar el control lliscant a la dreta del tot farà que la càmera sigui molt àgil, donant un control total amb el joystick. Posar-lo a l'esquerra del tot la farà molt inerta, com si la càmera fos pesada."/>
+			</panel>
+
+			<panel name="P_3D_Mouse_Settings2">
+				<spinner name="JoystickAxis6" label="Assignació de l'eix de zoom"
+				 tool_tip="Controla a quin eix del ratolí s'assigna la funció de zoom."/>
+				<check_box name="enable_joystick" label="Activa el Ratolí 3D" left="5"
+				 tool_tip="Això activa el Ratolí 3D."/>
+				<check_box name="CB_Zoom_Control" label="Control de zoom (vegeu el consell!)" left="5"
+				 tool_tip="Perquè el control de zoom funcioni, heu d'establir l' 'Assignació de l'eix de zoom' per sobre de '4'."/>
+				<check_box name="CB_Auto_Leveling" label="Anivellament automàtic (evita el balanceig)" left="5"/>
+				<check_box name="CB_3D_Mouse_Avatar" label="Mou l'avatar amb el ratolí 3D" left="5"/>
+				<check_box name="CB_3D_Mouse_Build" label="Mou objectes amb el ratolí 3D (construcció)"
+				 tool_tip="Usa el ratolí 3D per moure objectes durant la creació i l'edició."
+				 left="5"/>
+			</panel>
+		</panel>
+	</tab_container>
+</floater>

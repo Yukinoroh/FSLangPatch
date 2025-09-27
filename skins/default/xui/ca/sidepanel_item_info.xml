@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="item properties" title="Perfil de l&apos;objecte">
+	<panel.string name="loading_experience">
+		(carregant)
+	</panel.string>
+	<panel.string name="unknown">
+		(desconegut)
+	</panel.string>
+	<panel.string name="unknown_multiple">
+		(valor desconegut o valors múltiples)
+	</panel.string>
+	<panel.string name="public">
+		(públic)
+	</panel.string>
+	<panel.string name="you_can">
+		Podeu:
+	</panel.string>
+	<panel.string name="owner_can">
+		El propietari pot:
+	</panel.string>
+	<panel.string name="origin_inventory">
+		(inventari)
+	</panel.string>
+	<panel.string name="origin_inworld">
+		(a Second Life)
+	</panel.string>
+	<layout_stack name="main_stack">
+		<layout_panel name="layout_item_name">
+			<line_editor name="LabelItemName" tool_tip="El nom està limitat a 63 caràcters. Els noms de prims més llargs s'escurcen. Els noms només poden contenir caràcters imprimibles del joc de caràcters ASCII-7 (no estès), a excepció de la barra vertical '|'."/>
+		</layout_panel>
+		<layout_panel name="layout_item_details">
+			<text name="LabelOwnerTitle">
+				Propietari:
+			</text>
+			<text name="LabelCreatorTitle">
+				Creador:
+			</text>
+			<text name="LabelAcquiredTitle">
+				Adquirit el:
+			</text>
+			<button label="Foto..." name="change_thumbnail_btn" />
+		</layout_panel>
+		<layout_panel name="layout_item_description">
+			<text name="LabelItemDescTitle">
+				Descripció:
+			</text>
+			<text_editor name="LabelItemDesc" tool_tip="Quan els usuaris hagin seleccionat 'Mostra les indicacions sobre tots els objectes' a la configuració del visor, veuran la descripció de l'objecte per a qualsevol objecte que estigui sota el punter del ratolí. La descripció de l'objecte està limitada a 127 bytes. Qualsevol cadena de caràcters més llarga serà truncada." />
+			<text name="LabelItemExperienceTitle">
+				Experiència:
+			</text>
+		</layout_panel>
+		<layout_panel name="layout_item_permissions_sale">
+			<text name="perm_modify">
+				Permisos
+			</text>
+			<text name="you_perm_modify">
+				Podeu:
+			</text>
+			<check_box label="Modificar" name="CheckOwnerModify"/>
+			<check_box label="Copiar" name="CheckOwnerCopy"/>
+			<check_box label="Transferir" name="CheckOwnerTransfer"/>
+			<text name="AnyoneLabel">
+				Qualsevol:
+			</text>
+			<check_box label="Copiar" name="CheckEveryoneCopy" tool_tip="Tothom pot agafar una còpia de l'objecte. L'objecte i tot el seu contingut han de tenir permís per ser copiats i transferits."/>
+			<text name="GroupLabel">
+				Grup:
+			</text>
+			<check_box label="Compartir" name="CheckShareWithGroup" tool_tip="Permet a tots els membres del grup escollit compartir els vostres drets de modificació per a aquest objecte. Per activar les restriccions de rol, primer heu de clicar a Cedir."/>
+			<text name="NextOwnerLabel">
+				Propietari següent:
+			</text>
+			<check_box label="Modificar" name="CheckNextOwnerModify" tool_tip="El propietari següent pot modificar propietats com ara l'etiqueta de l'element o l'escala d'aquest objecte."/>
+			<check_box label="Copiar" name="CheckNextOwnerCopy" tool_tip="El propietari següent pot fer còpies il·limitades d'aquest objecte. Les còpies conserven la informació del creador i mai no poden ser més permissives que l'element que es copia."/>
+			<check_box label="Transferir" name="CheckNextOwnerTransfer" tool_tip="El propietari següent pot regalar o revendre aquest objecte."/>
+
+			<check_box label="A la venda" name="CheckPurchase" tool_tip="Permet a la gent comprar aquest objecte, el seu contingut o copiar-lo a Second Life per un preu determinat."/>
+			<combo_box name="ComboBoxSaleType" tool_tip="Indiqueu si el comprador rebrà una còpia, una còpia del contingut o l'article en si.">
+				<combo_box.item label="Copiar" name="Copy"/>
+				<combo_box.item label="Contingut" name="Contents"/>
+				<combo_box.item label="Original" name="Original"/>
+			</combo_box>
+			<spinner label="Preu: L$" name="Edit Cost" tool_tip="Cost de l&apos;objecte."/>
+		</layout_panel>
+	</layout_stack>
+</panel>

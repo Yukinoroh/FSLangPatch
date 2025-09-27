@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<floater name="floaterland" title="À propos du terrain">
+<floater name="floaterland" title="Sobre el terreny">
 	<floater.string name="Hours">
-		[HOURS] h.
+		[HOURS] h
 	</floater.string>
 	<floater.string name="Hour">
 		h
@@ -13,10 +13,10 @@
 		min
 	</floater.string>
 	<floater.string name="Seconds">
-		[SECONDS] s
+		[SECONDS] s
 	</floater.string>
 	<floater.string name="Remaining">
-		restant
+		restants
 	</floater.string>
 	<floater.string name="Always">
 		Sempre
@@ -24,7 +24,7 @@
 	<tab_container name="landtab" tab_min_width="60">
 		<panel label="General" name="land_general_panel">
 			<panel.string name="new users only">
-				Només nou residents
+				Només per a residents nous
 			</panel.string>
 			<panel.string name="anyone">
 				Tothom
@@ -36,19 +36,19 @@
 				[AREA] m²
 			</panel.string>
 			<panel.string name="auction_id_text">
-				Codi de la subhasta : [ID]
+				Codi de la subhasta: [ID]
 			</panel.string>
 			<panel.string name="need_tier_to_modify">
-				Per modificar aquest terreny, has d'aprovar-ne la compra.
+				Per modificar aquest terreny, heu d'aprovar la vostra compra.
 			</panel.string>
 			<panel.string name="group_owned_text">
-				(propietari del grup)
+				(propietat del grup)
 			</panel.string>
 			<panel.string name="profile_text">
 				Perfil
 			</panel.string>
 			<panel.string name="info_text">
-				Infos
+				Informació
 			</panel.string>
 			<panel.string name="public_text">
 				(públic)
@@ -57,152 +57,152 @@
 				(cap)
 			</panel.string>
 			<panel.string name="sale_pending_text">
-				(venda en curs)
+				(venda pendent)
 			</panel.string>
 			<panel.string name="no_selection_text">
-				Cap terreny seleccionat.
+				No hi ha cap parcel·la seleccionada.
 			</panel.string>
 			<panel.string name="time_stamp_template">
 				[wkday,datetime,slt] [day,datetime,slt] [mth,datetime,slt] [year,datetime,slt] [hour,datetime,slt]:[min,datetime,slt]:[second,datetime,slt]
 			</panel.string>
 			<text name="Name:">
-				Nom :
+				Nom:
 			</text>
 			<text name="UUID:">
-				ID de terreny :
+				ID del terreny:
 			</text>
 			<text name="Description:">
-				Descripció :
+				Descripció:
 			</text>
 			<text name="LandType">
-				Tipus :
+				Tipus:
 			</text>
 			<text name="LandTypeText">
-				Continent / Homestead
+				Continent / Finca
 			</text>
 			<text name="ContentRating">
-				Categoria :
+				Classificació:
 			</text>
 			<text name="ContentRatingText">
 				Adult
 			</text>
 			<text name="Owner:">
-				Propietari :
+				Propietari:
 			</text>
 			<text name="Group:">
-				Grup :
+				Grup:
 			</text>
-			<button label="Triar" label_selected="Definir..." name="Set..."/>
-			<check_box label="Autoritzar la cessió al grup" name="check deed" tool_tip="Un oficial del grup pot cedir aquest terreny a aquest grup, de manera que se'n faci carrèc dins de l'assignació de terrenys al grup."/>
-			<button label="Cedir" label_selected="Cedir..." name="Deed..." tool_tip="Només pots cedir el terreny si tens un rol d'oficial en el grup seleccionat."/>
-			<check_box label="El propietari contribueix cedint terrenys" name="check contrib" tool_tip="Quan es transfereix un terreny al grup, l'antic propietari també fa una donació suficient de terreny."/>
+			<button label="Tria" label_selected="Defineix..." name="Set..."/>
+			<check_box label="Permet la cessió al grup" name="check deed" tool_tip="Un oficial del grup pot cedir aquest terreny a aquest grup, perquè sigui cobert per l'assignació de terrenys del grup."/>
+			<button label="Cedeix" label_selected="Cedeix..." name="Deed..." tool_tip="Només podeu cedir el terreny si teniu un rol d'oficial al grup seleccionat."/>
+			<check_box label="El propietari hi contribueix cedint terreny" name="check contrib" tool_tip="Quan un terreny es cedeix al grup, l'antic propietari també fa una donació de terreny suficient."/>
 			<text name="For Sale:">
-				En venda :
+				A la venda:
 			</text>
 			<text name="Not for sale.">
-				No en venda
+				No està a la venda
 			</text>
 			<text name="For Sale: Price L$[PRICE].">
-				Preu : [PRICE] L$ ([PRICE_PER_SQM] L$/m²)
+				Preu: [PRICE] L$ ([PRICE_PER_SQM] L$/m²)
 			</text>
 			<text name="SalePending"/>
-			<button label="Vendre el terreny" label_selected="Vendre el terreny..." name="Sell Land..."/>
+			<button label="Ven el terreny" label_selected="Ven el terreny..." name="Sell Land..."/>
 			<text name="For sale to">
-				En venda a : [BUYER]
+				A la venda a: [BUYER]
 			</text>
 			<text name="Sell with landowners objects in parcel.">
-				Objectes inclosos en la venda
+				Objectes inclosos a la venda
 			</text>
 			<text name="Selling with no objects in parcel.">
-				Objectes no inclosos en la venda
+				Objectes no inclosos a la venda
 			</text>
-			<button label="Anul·lar la venda del terreny" label_selected="Anul·lar la venda del terreny" name="Cancel Land Sale"/>
+			<button label="Cancel·la la venda del terreny" label_selected="Cancel·la la venda del terreny" name="Cancel Land Sale"/>
 			<text name="Claimed:">
-				Adquirit :
+				Adquirit:
 			</text>
 			<text name="DateClaimText">
-				Tue Aug 15 13:47:25 2006
+				Dm Ag 15 13:47:25 2006
 			</text>
 			<text name="PriceLabel">
-				Superfície :
+				Superfície:
 			</text>
 			<text name="PriceText">
-				4 048 m²
+				4.048 m²
 			</text>
 			<text name="Traffic:">
-				Trànsit :
+				Trànsit:
 			</text>
 			<text name="DwellText">
 				Carregant...
 			</text>
-			<button label="Comprar el terreny" label_selected="Comprar el terreny..." left_delta="60" name="Buy Land..." width="125"/>
+			<button label="Compra el terreny" label_selected="Compra el terreny..." left_delta="60" name="Buy Land..." width="125"/>
 			<button label="Venda Linden" label_selected="Venda Linden..." name="Linden Sale..." tool_tip="El terreny ha de ser propietat d'un resident, tenir un contingut definit i no estar en subhasta."/>
-			<button label="Infos sobre els scripts" name="Scripts..." width="110"/>
-			<button label="Comprar per al grup" label_selected="Comprar per al grup..." name="Buy For Group..."/>
-			<button label="Comprar un passi" label_selected="Comprar un passi..." left_delta="-127" name="Buy Pass..." tool_tip="Un passi et dóna accés temporal a aquest terreny." width="125"/>
-			<button label="Abandonar el terreny" label_selected="Abandonar el terreny..." name="Abandon Land..."/>
-			<button label="Recuperar el terreny" label_selected="Recuperar el terreny..." name="Reclaim Land..."/>
+			<button label="Informació dels scripts" name="Scripts..." width="110"/>
+			<button label="Compra per al grup" label_selected="Compra per al grup..." name="Buy For Group..."/>
+			<button label="Compra una passada" label_selected="Compra una passada..." left_delta="-127" name="Buy Pass..." tool_tip="Una passada us dona accés temporal a aquest terreny." width="125"/>
+			<button label="Abandona el terreny" label_selected="Abandona el terreny..." name="Abandon Land..."/>
+			<button label="Recupera el terreny" label_selected="Recupera el terreny..." name="Reclaim Land..."/>
 		</panel>
-		<panel label="Règlement" name="land_covenant_panel">
+		<panel label="Normativa" name="land_covenant_panel">
 			<panel.string name="can_resell">
-				El terreny comprat en aquesta regió pot ser revendut.
+				El terreny comprat en aquesta regió es pot revendre.
 			</panel.string>
 			<panel.string name="can_not_resell">
-				El terreny comprat en aquesta regió no pot ser revendut.
+				El terreny comprat en aquesta regió no es pot revendre.
 			</panel.string>
 			<panel.string name="can_change">
-				El terreny comprat en aquesta regió pot ser fusionat o dividit.
+				El terreny comprat en aquesta regió es pot fusionar o dividir.
 			</panel.string>
 			<panel.string name="can_not_change">
-				El terreny comprat en aquesta regió no pot ser fusionat o dividit.
+				El terreny comprat en aquesta regió no es pot fusionar ni dividir.
 			</panel.string>
 			<text name="estate_section_lbl">
-				Domini :
+				Finca:
 			</text>
 			<text name="estate_name_text">
 				continent
 			</text>
 			<text name="estate_owner_lbl">
-				Propietari :
+				Propietari:
 			</text>
 			<text name="estate_owner_text">
 				(cap)
 			</text>
 			<text_editor name="covenant_editor">
-				No hi ha cap regulació per aquest domini.
+				No hi ha cap normativa per a aquesta finca.
 			</text_editor>
 			<text name="covenant_timestamp_text">
-				Last Modified Wed Dec 31 16:00:00 1969
+				Darrera modificació dc des 31 16:00:00 1969
 			</text>
 			<text name="region_section_lbl">
-				Regió :
+				Regió:
 			</text>
 			<text name="region_name_text">
 				EricaVille
 			</text>
 			<text name="region_landtype_lbl">
-				Tipus :
+				Tipus:
 			</text>
 			<text name="region_landtype_text">
-				Continent / Homestead
+				Continent / Finca
 			</text>
 			<text name="region_maturity_lbl">
-				Categoria :
+				Classificació:
 			</text>
 			<text name="region_maturity_text">
 				Adult
 			</text>
 			<text name="resellable_lbl">
-				Revendre :
+				Revenda:
 			</text>
 			<text name="resellable_clause">
-				El terreny en aquesta regió no pot ser revendut.
+				El terreny en aquesta regió no es pot revendre.
 			</text>
 			<text name="changeable_lbl">
-				Subdividir :
+				Subdivisió:
 			</text>
 			<text name="changeable_clause">
-				El terreny en aquesta regió no pot ser fusionat/dividit.
+				El terreny en aquesta regió no es pot fusionar/dividir.
 			</text>
 		</panel>
 		<panel label="Objectes" name="land_objects_panel">
@@ -210,67 +210,67 @@
 				[COUNT] de [MAX] ([AVAILABLE] disponibles)
 			</panel.string>
 			<panel.string name="objects_deleted_text">
-				[COUNT] de [MAX] ([DELETED] seran suprimits)
+				[COUNT] de [MAX] ([DELETED] se suprimiran)
 			</panel.string>
 			<text name="parcel_object_bonus">
-				Factor bonus d'objectes : [BONUS]
+				Factor de bonificació d'objectes: [BONUS]
 			</text>
 			<text name="Simulator primitive usage:">
-				Capacitat de la regió :
+				Capacitat de la regió:
 			</text>
 			<text name="objects_available">
 				[COUNT] de [MAX] ([AVAILABLE] disponibles)
 			</text>
 			<text name="Primitives parcel supports:">
-				Capacitat del terreny :
+				Capacitat de la parcel·la:
 			</text>
 			<text name="Primitives on parcel:">
-				Impacte en el terrany :
+				Impacte a la parcel·la:
 			</text>
 			<text name="Owned by parcel owner:">
-				Pertanyent al propietari :
+				Propietat del propietari:
 			</text>
-			<button label="Mostrar" label_selected="Mostrar" name="ShowOwner"/>
-			<button label="Retornar" label_selected="Retornar..." name="ReturnOwner..." tool_tip="Retornar els objectes als seus propietaris."/>
+			<button label="Mostra" label_selected="Mostra" name="ShowOwner"/>
+			<button label="Retorna" label_selected="Retorna..." name="ReturnOwner..." tool_tip="Retorna els objectes als seus propietaris."/>
 			<text name="Set to group:">
-				Donats al grup :
+				Cedits al grup:
 			</text>
-			<button label="Mostrar" label_selected="Mostrar" name="ShowGroup"/>
-			<button label="Retornar" label_selected="Retornar..." name="ReturnGroup..." tool_tip="Renvoyer les objets à leurs propriétaires."/>
+			<button label="Mostra" label_selected="Mostra" name="ShowGroup"/>
+			<button label="Retorna" label_selected="Retorna..." name="ReturnGroup..." tool_tip="Retorna els objectes als seus propietaris."/>
 			<text name="Owned by others:">
-				Pertanyent a altres :
+				Propietat d'altres:
 			</text>
-			<button label="Afficher" label_selected="Afficher" name="ShowOther"/>
-			<button label="Retornar" label_selected="Retornar..." name="ReturnOther..." tool_tip="Renvoyer les objets à leurs propriétaires."/>
+			<button label="Mostra" label_selected="Mostra" name="ShowOther"/>
+			<button label="Retorna" label_selected="Retorna..." name="ReturnOther..." tool_tip="Retorna els objectes als seus propietaris."/>
 			<text name="Selected / sat upon:">
-				Seleccionats/on algú està assegut :
+				Seleccionats/on hi ha algú assegut:
 			</text>
 			<text name="Autoreturn">
-				Devolució automàtica dels objectes d'altres residents (en minuts; 0 perr desactivar) :
+				Retorn automàtic d'objectes d'altres residents (minuts, 0 per desactivar):
 			</text>
 			<line_editor name="clean other time"/>
 			<text name="Object Owners:">
-				Propietaris :
+				Propietaris:
 			</text>
-			<button label="Actualitzar" label_selected="Actualitzar" name="Refresh List" tool_tip="Actualitzar la llista dels objectes"/>
-			<button label="Devolució d'objectes" label_selected="Retornar els objectes..." name="Return objects..."/>
-			<name_list label="Més recents" name="owner list">
+			<button label="Refresca" label_selected="Refresca" name="Refresh List" tool_tip="Actualitza la llista d'objectes"/>
+			<button label="Retorna els objectes" label_selected="Retorna els objectes..." name="Return objects..."/>
+			<name_list label="Més recent" name="owner list">
 				<name_list.columns label="Tipus" name="type"/>
 				<name_list.columns label="Nom" name="name"/>
-				<name_list.columns label="Nbre" name="count"/>
-				<name_list.columns label="Més recents" name="mostrecent"/>
+				<name_list.columns label="Núm." name="count"/>
+				<name_list.columns label="Més recent" name="mostrecent"/>
 			</name_list>
 		</panel>
 		<panel label="Opcions" name="land_options_panel">
 			<panel.string name="search_enabled_tooltip">
-				Permetre als altres residents veure aquest terreny als resultats de la cerca.
+				Permet que altres residents vegin aquesta parcel·la als resultats de la cerca
 			</panel.string>
 			<panel.string name="search_disabled_small_tooltip">
-				Aquesta opció està desactivada perquè la superfície del terreny és inferior o igual a 128 m².
-Només els terrenys de gran mida poden aparèixer a la cerca.
+				Aquesta opció està desactivada perquè la superfície d'aquesta parcel·la és inferior o igual a 128 m².
+Només les parcel·les grans poden aparèixer a la cerca.
 			</panel.string>
 			<panel.string name="search_disabled_permissions_tooltip">
-				Aquesta opció està desactivada perquè no podeu canviar les opcions d'aquest terreny.
+				Aquesta opció està desactivada perquè no podeu modificar les opcions d'aquesta parcel·la.
 			</panel.string>
 			<panel.string name="mature_check_mature">
 				Contingut moderat
@@ -279,67 +279,67 @@ Només els terrenys de gran mida poden aparèixer a la cerca.
 				Contingut adult
 			</panel.string>
 			<panel.string name="mature_check_mature_tooltip">
-				Les informacions o contingut del terreny estan classificades moderat.
+				La informació o el contingut de la vostra parcel·la es classifiquen com a Moderat.
 			</panel.string>
 			<panel.string name="mature_check_adult_tooltip">
-				Les informacions o contingut del terreny estan classificades adult.
+				La informació o el contingut de la vostra parcel·la es classifiquen com a Adult.
 			</panel.string>
 			<panel.string name="landing_point_none">
 				(cap)
 			</panel.string>
 			<panel.string name="push_restrict_text">
-				Cap empenta
+				No empènyer
 			</panel.string>
 			<panel.string name="push_restrict_region_text">
-				Cap empenta (les normes de la regió tenen prioritat)
+				No empènyer (les regles de la regió prevalen)
 			</panel.string>
 			<panel.string name="DirectoryFree">
-				Posar a la cerca
+				Lloc a la cerca
 			</panel.string>
 			<panel.string name="DirectoryFee">
-				Posar a la cerca ([DIRECTORY_FEE]L$/setm.)
+				Lloc a la cerca ([DIRECTORY_FEE]L$/setm.)
 			</panel.string>
 			<text name="allow_label">
-				Autoritzar els altres residents a :
+				Permet a altres residents:
 			</text>
 			<text name="allow_label1">
-				Terraformar el terreny :
+				Modificar el terreny:
 			</text>
-			<check_box label="Tots" name="edit land check" tool_tip="Si està marcada la casella, qualsevol podrà terraformar el terreny. Es recomana deixar aquesta opció desmarcada, ja que sempre podràs editar el teu terreny."/>
+			<check_box label="Tothom" name="edit land check" tool_tip="Si aquesta opció està marcada, tothom podrà terraformar el vostre terreny. Deixeu aquesta opció desmarcada, ja que sempre podreu modificar el vostre terreny."/>
 			<text name="caution_text">
-				(Utiliztar amn precaució!)
+				(A utilitzar amb precaució!)
          </text>
 			<text name="allow_label0">
-				Volar :
+				Volar:
 			</text>
-			<check_box label="Tots" name="check fly" tool_tip="Si està marcada la casella, els residents podran volar al terreny. Si no ho està, només podran volar quan arribin i passin per sobre del terreny."/>
+			<check_box label="Tothom" name="check fly" tool_tip="Si aquesta opció està marcada, els residents poden volar al vostre terreny. Si no està marcada, només podran volar quan arribin i passin per sobre del vostre terreny."/>
 			<text name="allow_label2">
-				Construir :
+				Construir:
 			</text>
-			<check_box label="Tots" name="edit objects check" tool_tip="Si està marcada la casella, qualsevol podrà crear i rezzar objectes al terreny."/>
-			<check_box label="Grup" name="edit group objects check" tool_tip="Si està marcada la casella, els membres del grup del terreny podran crear-hi i rezzar-hi objectes."/>
+			<check_box label="Tothom" name="edit objects check" tool_tip="Si la casella està marcada, els residents poden crear i 'rezzar' objectes al vostre terreny."/>
+			<check_box label="Grup" name="edit group objects check" tool_tip="Si la casella està marcada, els membres del grup de la parcel·la poden crear i 'rezzar' objectes al vostre terreny."/>
 			<text name="allow_label3">
-				Deixar entrar objectes :
+				Deixar entrar objectes:
 			</text>
-			<check_box label="Tots" name="all object entry check" tool_tip="Si està marcada la casella, qualsevol podrà moure uns objectes d'altres terrenys per portar-los a aquest."/>
-			<check_box label="Grup" name="group object entry check" tool_tip="Si està marcada la casella, els membres del grup del terreny podran moure-hi uns objectes d'altres terrenys per portar-los a aquest."/>
+			<check_box label="Tothom" name="all object entry check" tool_tip="Si la casella està marcada, els residents poden moure els objectes d'altres parcel·les per portar-los a aquesta."/>
+			<check_box label="Grup" name="group object entry check" tool_tip="Si la casella està marcada, els membres del grup de la parcel·la poden moure els objectes d'altres parcel·les per portar-los a aquesta."/>
 			<text name="allow_label4">
-				Executar scripts :
+				Executar scripts:
 			</text>
-			<check_box label="Tots" name="check other scripts" tool_tip="Si està marcada la casella, qualsevol podrà executar uns scripts al terreny, incloent-hi des d'objectes portats."/>
-			<check_box label="Groupe" name="check group scripts" tool_tip="Si està marcada la casella, els membres del grup del terreny podran executar-hi uns scripts, incloent-hi des d'objectes portats."/>
-			<check_box label="Cap dany" name="check safe" tool_tip="Si està marcada la casella, no hi haurà danys causats per combats. Si no està marcada, podria haver-n'hi."/>
-			<check_box label="Cap empenta" name="PushRestrictCheck" tool_tip="Impedeix que s'executin empentes des de scripts. Aquesta opció és útil per restringir el comportament abusiu."/>
-			<check_box label="Posar a la cerca (L$30/setm.)" name="ShowDirectoryCheck" tool_tip="Els residents veuran el terreny als resultats de cerca."/>
+			<check_box label="Tothom" name="check other scripts" tool_tip="Si la casella està marcada, tothom pot executar scripts a la vostra parcel·la, incloent-hi els adjunts."/>
+			<check_box label="Grup" name="check group scripts" tool_tip="Si la casella està marcada, els membres del grup de la parcel·la poden executar scripts a la vostra parcel·la, incloent-hi els adjunts."/>
+			<check_box label="Segur (sense danys)" name="check safe" tool_tip="Si aquesta opció està marcada, el terreny és segur i no hi ha risc de danys per combats. Si està desmarcada, es poden produir danys per combats."/>
+			<check_box label="No empènyer" name="PushRestrictCheck" tool_tip="Evita l'ús de scripts que causen empentes. Aquesta opció és útil per prevenir comportaments abusius al vostre terreny."/>
+			<check_box label="Lloc a la cerca (30 L$/setmana)" name="ShowDirectoryCheck" tool_tip="Permet que els residents vegin aquesta parcel·la als resultats de la cerca."/>
 			<combo_box name="land category">
-				<combo_box.item label="Toutes categories" name="item0"/>
-				<combo_box.item label="Pertanyent als Lindens" name="item1"/>
+				<combo_box.item label="Totes les categories" name="item0"/>
+				<combo_box.item label="Propietat de Linden" name="item1"/>
 				<combo_box.item label="Art i cultura" name="item3"/>
 				<combo_box.item label="Negocis" name="item4"/>
 				<combo_box.item label="Educació" name="item5"/>
 				<combo_box.item label="Jocs" name="item6"/>
-				<combo_box.item label="Social" name="item7"/>
-				<combo_box.item label="Acollida per als nouvinguts" name="item8"/>
+				<combo_box.item label="Preferits" name="item7"/>
+				<combo_box.item label="Nouvinguts" name="item8"/>
 				<combo_box.item label="Parcs i natura" name="item9"/>
 				<combo_box.item label="Residencial" name="item10"/>
 				<combo_box.item label="Compres" name="item11"/>
@@ -348,133 +348,135 @@ Només els terrenys de gran mida poden aparèixer a la cerca.
 			</combo_box>
 			<check_box label="Contingut moderat" name="MatureCheck" />
 			<text name="Snapshot:">
-				Foto :
+				Foto:
 			</text>
-			<texture_picker label="" name="snapshot_ctrl" tool_tip="Fes clic per seleccionar una imatge"/>
+			<texture_picker label="" name="snapshot_ctrl" tool_tip="Clica per seleccionar una imatge"/>
 			<text name="allow_see_label" top="170">
-				Permettre mostrar avatars i xatejar amb ells des d'altres terrenys
+				Els avatars d'altres parcel·les poden veure i xatejar amb els avatars d'aquesta parcel·la.
 			</text>
-			<check_box label="Mostrar els avatars" name="SeeAvatarsCheck" top="170" tool_tip="Els avatars en altres terrenys podran veure i xatejar amb els del terreny i viceversa."/>
+			<check_box label="Veure els avatars" name="SeeAvatarsCheck" top="170" tool_tip="Permet als avatars d'altres parcel·les veure i xatejar amb els d'aquesta, i a vós veure'ls i xatejar amb ells."/>
 			<text name="landing_point">
-				Punt d'arribada : [LANDING]
+				Punt d'arribada: [LANDING]
 			</text>
-			<button label="Definir" label_selected="Definir" name="Set" tool_tip="Defineix el punt d'arribada dels visitants al lloc actual del teu avatar."/>
-			<button label="Treure" label_selected="Treure" name="Clear" tool_tip="Esborra el punt d'arribada."/>
+			<button label="Defineix" label_selected="Defineix" name="Set" tool_tip="Defineix el punt d'arribada dels visitants. Estableix la ubicació del vostre avatar en aquest terreny."/>
+			<button label="Esborra" label_selected="Esborra" name="Clear" tool_tip="Esborra el punt d'arribada"/>
 			<text name="Teleport Routing: ">
-				Regla de teleportació :
+				Regles de teleportació:
 			</text>
-			<combo_box name="landing type" tool_tip="Tria la regla de teleportació al terreny :" width="140">
-				<combo_box.item label="Bloquejada" name="Blocked"/>
-				<combo_box.item label="Punt d'arribada fixa" name="LandingPoint"/>
-				<combo_box.item label="Punt d&apos;arrivée lliure" name="Anywhere"/>
+			<combo_box name="landing type" tool_tip="Regles de teleportació - Trieu les regles per teleportar-se al vostre terreny" width="140">
+				<combo_box.item label="Bloquejat" name="Blocked"/>
+				<combo_box.item label="Punt d'arribada fix" name="LandingPoint"/>
+				<combo_box.item label="Arribada a qualsevol lloc" name="Anywhere"/>
 			</combo_box>
 		</panel>
-		<panel label="Mitjans" name="land_media_panel">
+		<panel label="Multimèdia" name="land_media_panel">
 			<text name="with media:" width="85">
-				Tipus :
+				Tipus:
 			</text>
-			<combo_box left="97" name="media type" tool_tip="Indica si és l'URL d'un vídeo, d'una pagina web o altra cosa"/>
+			<combo_box left="97" name="media type" tool_tip="Indiqueu si es tracta de l'URL d'una pel·lícula, una pàgina web o una altra cosa"/>
 			<text name="at URL:" width="85">
-				Pàgina d'inici :
+				Pàgina d'inici:
 			</text>
 			<line_editor left="97" name="media_url"/>
-			<button label="Triar" name="set_media_url"/>
+			<button label="Defineix" name="set_media_url"/>
 			<text name="Description:">
-				Descripció :
+				Descripció:
 			</text>
-			<line_editor left="97" name="url_description" tool_tip="Text mostrat al costat del botó Reproduir/Carregar"/>
+			<line_editor left="97" name="url_description" tool_tip="Text que es mostra al costat del botó Reproduir/Carregar"/>
 			<text name="Media texture:">
-				Substituir la textura :
+				Textura de
+reemplaçament:
 			</text>
-			<texture_picker label="" left="97" name="media texture" tool_tip="Fes clic per seleccionar una imatge"/>
+			<texture_picker label="" left="97" name="media texture" tool_tip="Clica per seleccionar una imatge"/>
 			<text name="replace_texture_help">
-				Els objectes amb aquesta textura mostraran el vídeo o la pàgina web quan es farà clic a la fletxa Reproduir. Selecciona la imatge en miniatura per triar una textura diferent.
+				Els objectes amb aquesta textura mostren la pel·lícula o la pàgina web quan feu clic a la fletxa de reproducció. Seleccioneu la miniatura per triar una textura diferent.
 			</text>
-			<check_box label="Escala autòmatica" name="media_auto_scale" tool_tip="Si selecciones aquesta opció, el contingut del terreny s'escalarà automàticament. La qualitat visual pot ser reduida, però no haures de fer cap altra escala ni alineació."/>
-			<text name="media_size" tool_tip="Mida del mitjà web (deixar 0 pel valor per defecte).">
-				Mida :
+			<check_box label="Escala automàtica" name="media_auto_scale" tool_tip="Si seleccioneu aquesta opció, el contingut d'aquesta parcel·la s'escalarà automàticament. La qualitat visual pot disminuir, però no haureu de fer cap altre escalat o alineació."/>
+			<text name="media_size" tool_tip="Mida del multimèdia web, deixeu 0 per al valor per defecte.">
+				Mida:
 			</text>
-			<spinner name="media_size_width" tool_tip="Amplada del mitjà web (deixar 0 pel valor per defecte)."/>
-			<spinner name="media_size_height" tool_tip="Alçada del mitjà web (deixar 0 pel valor per defecte)."/>
+			<spinner name="media_size_width" tool_tip="Mida del multimèdia web, deixeu 0 per al valor per defecte."/>
+			<spinner name="media_size_height" tool_tip="Mida del multimèdia web, deixeu 0 per al valor per defecte."/>
 			<text name="pixels">
-				pixels
+				píxels
 			</text>
 			<text name="Options:">
-				Opcions :
+				Opcions:
 			</text>
-			<check_box label="En bucle" name="media_loop" tool_tip="Reproduir el mitjà en bucle. Quan acabi de jugar, tornarà a començar."/>
+			<check_box label="En bucle" name="media_loop" tool_tip="Reprodueix el multimèdia en bucle. Quan acabi, tornarà a començar."/>
 		</panel>
 		<panel label="So" name="land_audio_panel">
 			<text bottom_delta="-28" name="MusicURL:">
-				URL de la música :
+				URL de la 
+música:
 			</text>
-			<button name="stream_add_btn" tool_tip="Afegeix l'URL del flux de música a la llista de fluxos desats"/>
-			<button name="stream_delete_btn" tool_tip="Suprimir l'URL del flux de música de la llista de fluxos desats"/>
-			<button name="stream_copy_btn" tool_tip="Copiar l'URL del flux de música al porta-retalls"/>
+			<button name="stream_add_btn" tool_tip="Afegeix la URL del flux de música a la llista de fluxos desats"/>
+			<button name="stream_delete_btn" tool_tip="Suprimeix la URL del flux de música de la llista de fluxos desats"/>
+			<button name="stream_copy_btn" tool_tip="Copia la URL del flux de música al porta-retalls"/>
 			<text name="Sound:">
-				So :
+				So:
 			</text>
-			<check_box label="Limitar els sons dels gestos i dels objectes al terreny" name="check sound local"/>
+			<check_box label="Limita els sons de gestos i objectes a aquesta parcel·la" name="check sound local"/>
 			<text name="Avatar Sounds:">
-				Sons d&apos;avatar :
+				Sons d'avatar:
 			</text>
-			<check_box label="Tots" name="all av sound check"/>
+			<check_box label="Tothom" name="all av sound check"/>
 			<check_box label="Grup" name="group av sound check"/>
 			<text name="Voice settings:">
-				Veu :
+				Veu:
 			</text>
-			<check_box label="Activar la veu" name="parcel_enable_voice_channel"/>
-			<check_box label="Activar la veu (controlat pel domini)" name="parcel_enable_voice_channel_is_estate_disabled"/>
-			<check_box label="Limita la veu al terreny" name="parcel_enable_voice_channel_local"/>
+			<check_box label="Activa el xat de veu" name="parcel_enable_voice_channel"/>
+			<check_box label="Activa la veu (controlat per la finca)" name="parcel_enable_voice_channel_is_estate_disabled"/>
+			<check_box label="Limita el xat de veu a aquesta parcel·la" name="parcel_enable_voice_channel_local"/>
 			<text name="media">
-				Mitjà :
+				Multimèdia:
 			</text>
-			<check_box label="Limitar els MOAP" name="obscure_moap" tool_tip="Els mitans sobre prims (MOAP) fora del terreny no seran reproduits automàticament des del terreny i viceversa."/>
+			<check_box label="Amaga el MOAP" name="obscure_moap" tool_tip="Els multimèdia d'un prim situat fora de la parcel·la no s'han de reproduir automàticament per a un agent dins d'aquesta parcel·la, i viceversa."/>
 		</panel>
 		<panel label="Accés" name="land_access_panel">
 			<panel.string name="access_estate_defined">
-				(definit pel domini)
+				(definit per la finca)
 			</panel.string>
 			<panel.string name="estate_override">
-				Al menys una d'aquestes opcions està definida a nivell de domini.
+				Almenys una d'aquestes opcions està definida a nivell de finca.
 			</panel.string>
-			<check_box label="Tothom pot visitar" tool_tip="Es crearan línies de no accés si no es marca aquesta casella." name="public_access"/>
-			<check_box label="Cal tenir més de 18 anys [ESTATE_AGE_LIMIT]" name="limit_age_verified" tool_tip="Per accedir al terreny, els residents han de tenir com a mínim 18 anys. Consulta el [SUPPORT_SITE] per a més informació."/>
-			<check_box label="Les infos de pagament han d'estar registrades [ESTATE_PAYMENT_LIMIT]" name="limit_payment" tool_tip="Per accedir al terreny, els residents hauran de tenir la informació de pagament registrada. Consulta el [SUPPORT_SITE] per més informació."/>
-			<check_box label="Autoritzar el grup [GROUP] sense cap restricció" name="GroupCheck" tool_tip="Definir el grup a la pestanya General."/>
-			<check_box label="Vendre passis a :" name="PassCheck" tool_tip="Autoritzar un accés temporari al terrany"/>
+			<check_box label="Tothom pot visitar" tool_tip="Es crearan línies de prohibició si aquesta casella no està marcada" name="public_access"/>
+			<check_box label="Ha de tenir més de 18 anys [ESTATE_AGE_LIMIT]" name="limit_age_verified" tool_tip="Per accedir a aquesta parcel·la, els residents han de tenir almenys 18 anys. Consulteu el [SUPPORT_SITE] per a més informació."/>
+			<check_box label="La informació de pagament ha d'estar registrada [ESTATE_PAYMENT_LIMIT]" name="limit_payment" tool_tip="Per accedir a aquesta parcel·la, els residents han d'haver registrat informació de pagament. Consulteu el [SUPPORT_SITE] per a més informació."/>
+			<check_box label="Permet l'accés al grup [GROUP] sense restriccions" name="GroupCheck" tool_tip="Definiu el grup a la pestanya General."/>
+			<check_box label="Ven passades a:" name="PassCheck" tool_tip="Permet un accés temporal a aquesta parcel·la"/>
 			<combo_box name="pass_combo" width="110">
 				<combo_box.item label="Tothom" name="Anyone"/>
 				<combo_box.item label="Grup" name="Group"/>
 			</combo_box>
-			<spinner label="Preu en L$ :" name="PriceSpin"/>
-			<spinner label="Durades en hores :" name="HoursSpin"/>
+			<spinner label="Preu en L$:" name="PriceSpin"/>
+			<spinner label="Durada en hores:" name="HoursSpin"/>
 			<text name="OwnerLimited">
-				(El propietari de domini pot haver limitat aquestes opcions)
+				(El propietari de la finca pot haver limitat aquestes opcions)
 			</text>
 			<panel name="Allowed_layout_panel">
-				<text label="Sempre autoritzar" name="AllowedText">
-					Sempre autoritzat ([COUNT], max. [MAX])
+				<text label="Sempre permesos" name="AllowedText">
+					Sempre permesos ([COUNT], màx. [MAX])
 				</text>
-				<name_list name="AccessList" tool_tip="([LISTED] a la llista, max. [MAX].)"/>
-				<button label="Afegir" name="add_allowed"/>
-				<button label="Suprimir" label_selected="Suprimir" name="remove_allowed"/>
-				<button label="Exportar" label_selected="Exportar" name="export_allowed"/>
+				<name_list name="AccessList" tool_tip="([LISTED] a la llista, [MAX] màx.)"/>
+				<button label="Afegeix" name="add_allowed"/>
+				<button label="Suprimeix" label_selected="Suprimeix" name="remove_allowed"/>
+				<button label="Exporta" label_selected="Exporta" name="export_allowed"/>
 			</panel>
 			<panel name="Banned_layout_panel">
-				<text label="Bandejar" name="BanCheck">
-					Bandejat ([COUNT], max. [MAX])
+				<text label="Prohibits" name="BanCheck">
+					Prohibits ([COUNT], màx. [MAX])
 				</text>
-				<name_list name="BannedList" tool_tip="([LISTED] a la llista, max. [MAX].)">
+				<name_list name="BannedList" tool_tip="([LISTED] a la llista, [MAX] màx.)">
 					<columns label="Nom" name="name"/>
 					<columns label="Durada" name="duration"/>
 				</name_list>
-				<button label="Afegir" name="add_banned"/>
-				<button label="Suprimir" label_selected="Suprimir" name="remove_banned"/>
-				<button label="Exportar" label_selected="Exportar" name="export_banned"/>
+				<button label="Afegeix" name="add_banned"/>
+				<button label="Suprimeix" label_selected="Suprimeix" name="remove_banned"/>
+				<button label="Exporta" label_selected="Exporta" name="export_banned"/>
 			</panel>
 		</panel>
 		<panel label="Experiències" name="land_experiences_panel"/>
-		<panel label="Medi ambient" name="land_environment_panel" />
+		<panel label="Entorn" name="land_environment_panel" />
 	</tab_container>
 </floater>

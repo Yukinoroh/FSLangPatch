@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_performance_preferences">
+	<text name="back_lbl">Enrere</text>
+	<text name="settings_title">Configuració de gràfics</text>
+	<text name="quality_lbl">Qualitat o velocitat</text>
+	<text name="FasterText">Ràpid</text>
+	<text name="BetterText">Qualitat</text>
+	<text name="ShadersPrefText">Baix</text>
+	<text name="ShadersPrefText2">Mitjà</text>
+	<text name="ShadersPrefText3">Alt</text>
+	<text name="ShadersPrefText4">Ultra</text>
+	<text name="quality_desc">L'elecció d'una preconfiguració restablirà tots els canvis.</text>
+	<text name="distance_lbl">Distància de visió</text>
+	<text name="faster_lbl">Ràpid</text>
+	<text name="draw_distance_m">m</text>
+	<text name="farther_lbl" width="50">Lluny</text>
+	<text name="distance_desc1">Estableix menys per a una millor velocitat, més per veure més lluny.</text>
+	<text name="environment_lbl">Entorn</text>
+	<text name="enhancements_desc">
+Reduir/eliminar ombres pot augmentar els FPS, però afecta
+l'atmosfera i l'aparença de l'escena.
+	</text>
+	<text name="RenderShadowDetailText">Fonts d'ombra:</text>
+	<combo_box name="ShadowDetail">
+		<combo_box.item label="Cap" name="0"/>
+		<combo_box.item label="Sol/lluna" name="1"/>
+		<combo_box.item label="Sol/Lluna + Projectors" name="2"/>
+	</combo_box>
+	<text name="water_lbl">Aigua</text>
+	<text name="water_desc">Reduir els efectes pot millorar la taxa de fotogrames.</text>
+	<text name="ReflectionsText">Reflexos a l'aigua:</text>
+	<combo_box name="Reflections">
+		<combo_box.item label="Cap; opaca" name="-2"/>
+		<combo_box.item label="Cap; transparent" name="-1"/>
+		<combo_box.item label="Mínim" name="0" value="0"/>
+		<combo_box.item label="Paisatge i arbres" name="1"/>
+		<combo_box.item label="Tots els objectes estàtics" name="2"/>
+		<combo_box.item label="Tots els avatars i objectes" name="3"/>
+		<combo_box.item label="Tot" name="4"/>
+	</combo_box>
+	<text name="photo_lbl">Foto</text>
+	<text name="photo_desc">
+    Els fotògrafs necessiten alta qualitat, però això redueix la freqüència d'imatges.
+    Eines fotogràfiques [APP_NAME] t'ajudarà a trobar l'equilibri adequat.
+	</text>
+	<button name="open_phototools" label="Eines fotogràfiques" tool_tip="Obriu les eines de foto dedicades per a la configuració avançada de fotos."/>
+</panel>
+	
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="Popup" label="Minimapa">
+	<menu_item_call label="Mostra el perfil" name="View Profile"/>
+	<menu label="Mostra els perfils" name="View Profiles"></menu>
+	<menu_item_call label="Afegeix a un grup" name="Add to Set Multiple"/>
+	<menu_item_call label="Apropa la càmera" name="Cam"/>
+	<menu name="MarkAvatar" label="Marca...">
+		<menu_item_call label="Vermell" name="MarkRed"/>
+		<menu_item_call label="Verd" name="MarkGreen"/>
+		<menu_item_call label="Blau" name="MarkBlue"/>
+		<menu_item_call label="Lila" name="MarkPurple"/>
+		<menu_item_call label="Groc" name="MarkYellow"/>
+		<menu_item_call label="Treu la marca" name="Clear Mark"/>
+		<menu_item_call label="Treu totes les marques" name="Clear Marks"/>
+	</menu>
+	<menu name="More Options" label="Més opcions...">
+		<menu_item_call label="Afegeix a amics" name="Add Friend"/>
+		<menu_item_call label="Afegeix a un grup" name="Add to Set"/>
+		<menu_item_call label="Elimina d'amics" name="Remove Friend"/>
+		<menu_item_call label="Envia MI" name="IM"/>
+		<menu_item_call label="Truca" name="Call"/>
+		<menu_item_call label="Mapa" name="Map"/>
+		<menu_item_call label="Comparteix" name="Share"/>
+		<menu_item_call label="Paga" name="Pay"/>
+		<menu_item_call label="Ofereix teletransport" name="teleport"/>
+		<menu_item_call label="Demana teletransport" name="request_teleport"/>
+		<menu_item_call label="Teletransporta a" name="teleport_to"/>
+		<menu_item_call label="Convida a un grup" name="GroupInvite"/>
+		<menu_item_call label="Info dels scripts" name="ScriptInfo"/>
+		<menu_item_check label="Bloca/Desbloca" name="Block/Unblock"/>
+		<menu_item_call label="Denuncia" name="report"/>
+		<menu_item_call label="Gela" name="freeze"/>
+		<menu_item_call label="Parcel·la: Expulsa" name="eject"/>
+		<menu_item_call label="Regió: Expulsa" name="kick"/>
+		<menu_item_call label="Regió: Envia a casa" name="teleport_home"/>
+		<menu_item_call label="Regió: Veta" name="estate_ban"/>
+		<menu_item_call label="No renderis" name="derender"/>
+		<menu_item_call label="No renderis (permanent)" name="derender_permanent"/>
+	</menu>
+	<menu_item_call label="Inicia el seguiment" name="Start Tracking"/>
+	<menu_item_call label="Atura el seguiment" name="Stop Tracking"/>
+	<menu label="Zoom" name="Minimap Zoom">
+		<menu_item_check label="Molt a prop" name="Zoom very close"/>
+		<menu_item_check label="A prop" name="Zoom close"/>
+		<menu_item_check label="Mitjà (per defecte)" name="Zoom medium"/>
+		<menu_item_check label="Lluny" name="Zoom far"/>
+	</menu>
+	<menu label="Mostra" name="Minimap Show">
+		<menu_item_check label="Objectes" name="Objects"/>
+		<menu_item_check label="Objectes físics" name="Physical Objects"/>
+		<menu_item_check label="Objectes amb scripts" name="Scripted Objects"/>
+		<menu_item_check label="Objectes temporals" name="Temp On Rez Objects"/>
+		<menu_item_check label="Límits de la parcel·la" name="Property Lines"/>
+		<menu_item_check label="Parcel·les en venda" name="Parcels for Sale"/>
+		<menu_item_check label="Textures del terreny" name="Terrain Textures"/>
+		<menu_item_check label="Textures del mapa del món" name="World Map Textures"/>
+	</menu>
+	<menu_item_check label="Nord a dalt" name="North at top"/>
+	<menu_item_check label="Càmera a dalt" name="Camera at top"/>
+	<menu_item_check label="Centra el mapa automàticament" name="Auto-center map"/>
+	<menu_item_call label="Torna a centrar el mapa" name="Re-center map"/>
+	<menu label="Anells de distància del xat" name="Chat Distance Rings Menu">
+		<menu_item_check label="Mostra els anells de distància" name="Chat Distance Rings"/>
+		<menu_item_check label="Mostra l'anell de xiuxiueig" name="Whisper Distance Ring"/>
+		<menu_item_check label="Mostra l'anell de xat" name="Chat Distance Ring"/>
+		<menu_item_check label="Mostra l'anell de crit" name="Shout Distance Ring"/>
+	</menu>
+	<menu_item_call label="Quant al terreny" name="About Land"/>
+	<menu_item_call label="Perfil del lloc" name="Place Profile"/>
+	<menu_item_call label="Mapa del món" name="World Map"/>
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="Avatar Icon Menu">
+	<menu_item_call label="Perfil" name="Показати профіль"/>
+	<menu_item_call label="Envia MI..." name="Send IM"/>
+	<menu_item_call label="Teletransporta a" name="Teleport to"/>
+	<menu_item_call label="Ofereix teletransport" name="Offer Teleport"/>
+	<menu_item_call label="Demana teletransport" name="Request Teleport"/>
+	<menu_item_call label="Trucada de veu" name="Voice Call"/>
+	<menu_item_call label="Historial del xat..." name="Chat History"/>
+	<menu_item_call label="Afegeix a amics..." name="Add Friend"/>
+	<menu_item_call label="Elimina d'amics..." name="Remove Friend"/>
+	<menu_item_call label="Afegeix a un grup" name="Add Contact Set"/>
+	<menu_item_call label="Convida a un grup..." name="Invite Group"/>
+	<menu_item_call label="Apropa" name="Zoom In"/>
+	<menu_item_call label="Mapa" name="Map"/>
+	<menu_item_call label="Segueix" name="track"/>
+	<menu_item_call label="Comparteix" name="Share"/>
+	<menu_item_call label="Paga" name="Pay"/>
+	<menu_item_call label="Copia el nom" name="copy name"/>
+	<menu_item_call label="Copia l'URL" name="copy url"/>
+	<menu_item_check label="Bloca la veu" name="Block Unblock"/>
+	<menu_item_check label="Bloca el text" name="Mute Text"/>
+	<context_menu label="Opcions de moderador" name="Moderator Options">
+		<menu_item_call label="Permet el xat de text" name="AllowTextChat"/>
+		<menu_item_call label="Prohibeix el xat de text" name="ForbidTextChat"/>
+		<menu_item_call label="Prohibeix el xat de veu" name="ModerateVoiceMuteSelected"/>
+		<menu_item_call label="Permet el xat de veu" name="ModerateVoiceUnMuteSelected"/>
+	</context_menu>
+	<menu_item_call label="Veta" name="BanMember"/>
+</toggleable_menu>

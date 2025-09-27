@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="Configuració de la IU" name="Display panel">
+<tab_container label="Configuració de Firestorm" name="tabs">
+    <panel label="Món 3D" name="UI Prefs Panel">
+        <text name="HoverTipText" width="150">
+            Consells emergents:
+        </text>
+        <check_box label="Mostra els consells emergents" name="ShowHoverTips" tool_tip="Marca-ho per mostrar consells en passar per sobre d'avatars i altres coses (CTRL+MAJ+T)" />
+        <check_box label="En tots els objectes" tool_tip="Marca-ho per mostrar consells en passar per sobre d'objectes" name="ShowAllHoverTips" />
+        <check_box label="Sobre el terreny" tool_tip="Marca-ho per mostrar consells en passar per sobre del terreny" name="ShowLandHoverTips" />
+        <check_box name="FSAdvancedTooltips" label="Mostra informació avançada als consells" />
+        <check_box name="FSShowGroupTitleInTooltip" label="Mostra els títols de grup als consells" />
+        <text name="tooltip_textbox">
+           Retard dels consells:
+        </text>
+        <slider label="Eines:" name="ToolTipDelay_slider" tool_tip="(Per defecte: 0.7)" />
+        <text name="ToolTipDelay_text">
+            segons
+        </text>
+        <slider label="Avatars:" name="AvatarInspectorTooltipDelay_slider" tool_tip="(Per defecte: 0.35)" />
+        <text name="AvatarInspectorTooltipDelay_text">
+            segons
+        </text>
+        <slider label="Objectes:" name="ObjectInspectorTooltipDelay_slider" tool_tip="(Per defecte: 0.35)" />
+        <text name="ObjectInspectorTooltipDelay_text">
+            segons
+        </text>
+        <text name="FSHudTextLabel">
+				Opcions de text flotant :
+		</text>
+        <slider name="FSHudTextFadeDistance" label="Distància d'atenuació del text flotant (m):" tool_tip="Estableix la distància a la qual el text flotant comença a atenuar-se" label_width="285" width="529"/>
+        <slider name="FSHudTextFadeRange" label="Rang d'atenuació del text flotant (m):" tool_tip="Estableix el rang necessari perquè el text flotant passi de totalment visible a totalment invisible" label_width="285" width="529 "/>
+        <check_box name="FSHudTextUseHoverHighlight" label="Ressalta el text flotant en passar per sobre:" tool_tip="Quan es passa el ratolí per sobre d'un objecte, ressalta el text flotant (hovertext) portant-lo al primer pla i desactivant-ne l'alfa."/>
+         <text name="FSHudTextShowBackgroundLabel" width="216">
+			 Mostra el fons del text flotant:
+         </text>
+        <combo_box name="FSHudTextShowBackgroundDropdown" tool_tip="Mostra un fons negre/blanc darrere del text flotant (hovertext) per fer-lo més llegible. L'opacitat es pot modificar a Colors > Diversos.">
+        <combo_box.item label="No" name="ScriptDialogOption_0"/>
+        <combo_box.item label="Només en ressaltar" name="ScriptDialogOption_1"/>
+        <combo_box.item label="Tots els objectes" name="ScriptDialogOption_2"/>
+        </combo_box>
+    </panel>
+    <panel label="Superposició 2D" name="ui-2d-overlay">
+        <text name="UI Size:" Width="304">Escala Interfície Usuari(pot fer nyap):</text>
+        <slider name="ui_scale_slider" width="200"/>
+        <text name="HUD Size:" width="130">
+            Escala del HUD:
+        </text>
+        <text name="ScriptDialogsPerObjectLabel" width="185">
+            Diàlegs de Script:
+        </text>
+        <combo_box name="ScriptDialogPerObjectDropdown" width="138">
+            <combo_box.item label="Un per Objecte" name="ScriptDialogOption_0" />
+            <combo_box.item label="Un per Objecte i canal" name="ScriptDialogOption_1" />
+            <combo_box.item label="Un per Canal(adjuntant)" name="ScriptDialogOption_2" />
+            <combo_box.item label="Un per Canal(mostrant)" name="ScriptDialogOption_3" />
+            <combo_box.item label="Il·limitat (mostrant)" name="ScriptDialogOption_4" />
+            <combo_box.item label="Il·limitat" name="ScriptDialogOption_5" />
+        </combo_box>
+        <check_box label="Treu botó &quot;Bloqueja&quot;" name="FSRemoveScriptBlockButton" />
+        <text name="ScriptDialogsPositionLabel" width="186">
+            Posició Diàleg de Script:
+        </text>
+        <combo_box name="ScriptDialogsPositionDropdown" tool_tip="Trieu a quina part de la pantalla es mostraran els diàlegs de script">
+            <combo_box.item label="Acoblat a la safata d'icones" name="ScriptDialogPositionOption_1" />
+            <combo_box.item label="A dalt a l'esquerra" name="ScriptDialogPositionOption_2" />
+            <combo_box.item label="A dalt a la dreta" name="ScriptDialogPositionOption_3" />
+            <combo_box.item label="A baix a l'esquerra" name="ScriptDialogPositionOption_4" />
+            <combo_box.item label="A baix a la dreta" name="ScriptDialogPositionOption_5" />
+        </combo_box>
+        <check_box label="Diàlegs animats" name="FSAnimatedScriptDialogs" tool_tip="Mostra una animació de diàleg en obrir-se (es desplega de dalt a baix)" />
+        <slider label="Files visibles al diàleg de script:" label_width="280" name="FSRowsPerScriptDialog" tool_tip="Nombre màxim de files que es mostraran simultàniament en un diàleg de script." />
+        <check_box label="Usa el menú circular" name="UsePieMenu" tool_tip="Usa l'estil V1 del menú circular en fer clic dret sobre objectes, avatars i el terreny" />
+        <check_box label="Animació del text" name="PieMenuPopupFontEffect" tool_tip="Inclou el text del menú circular com a part de l'animació quan s'obre." />
+        <check_box label="Activa l'ombra de l'anell exterior" name="PieMenuOuterRingShade" tool_tip="Permet una ombra addicional a l'anell exterior que ajuda a visualitzar els submenús." />
+        <text name="ShowGroupNoticesTopRightLabel" width="180">
+           Posició dreta d'avisos i IM:
+        </text>
+        <radio_group name="ShowGroupNoticesTopRight" width="210"
+         tool_tip="Trieu on es mostraran a la pantalla els avisos de grup i les icones d'IM." >
+           <radio_item label="A baix" name="radio" width="100" />
+           <radio_item label="A dalt" name="radio1" width="100" />
+        </radio_group>
+        <text name="GroupTopRightRequiresRestart" left_delta="270" width="150">
+           (Cal reiniciar)
+        </text>
+        <check_box label="Amaga les icones de xat de grup i IM" name="FSDisableIMChiclets" tool_tip="Treu les icones de missatges instantanis i xats de grup (les converses es continuaran mostrant)." />
+        <check_box label="Usa la llista antiga per a les Notificacions." name="FSLegacyNotificationWell" tool_tip="Si està marcat, Firestorm utilitzarà la visualització de llista antiga per a les notificacions desades." width="320" />
+        <text name="FSLegacyNotificationWellRequiresRestart" width="150">(Cal reiniciar)</text>
+        <check_box label="Canvia la mida automàticament de llistes de Converses i Notificacions" name="FSLegacyNotificationWellAutoResize" tool_tip="Si està marcat, Firestorm sempre canviarà automàticament la mida de les llistes de Converses i Notificacions antigues en afegir o treure elements."/>
+        <check_box label="Reassigna les tecles de drecera ja en ús (només a Linux, cal reiniciar)" name="FSRemapLinuxShortcuts" tool_tip="Si està activat, les tecles de drecera ja utilitzades pel sistema operatiu Linux (p. ex., CTRL-ALT-Fx) es reassignen." />
+        <check_box label="Evita que la finestra d'estadístiques agafi el focus" name="FSStatisticsNoFocus"
+        tool_tip="Si està activat, la finestra d'estadístiques mai no agafarà el focus en tancar una altra finestra (accions com canviar la disposició del gràfic encara són possibles)."
+        width="256" />
+        <check_box label="Mostra les miniatures dels articles d'inventari als consells flotants" name="FSShowInventoryThumbnailTooltips" tool_tip="Si aquesta opció està activada, en passar el ratolí per sobre d'elements d'inventari que continguin una miniatura, aquesta es mostrarà en un consell flotant."/>
+        <slider label="Retard Veure ConsellFlotant:" tool_tip="Retard en mostrar les miniatures dels elements d'inventari als consells flotants" name="FSInventoryThumbnailTooltipsDelay"/>
+        <text name="FSInventoryThumbnailTooltipsDelayText">
+			sec
+        </text>
+        <slider label="Pampallugues Pestanya d'IM:" name="ButtonsFlashCount" />
+        <slider label="Freqüència Pampallugues:" tool_tip="Freqüència amb què pampalluguegen les pestanyes de missatges instantanis:" name="ButtonFlashRate" />
+        <text name="ButtonFlashRateText">
+            cops
+        </text>
+    </panel>
+	<panel label="Barres superiors" name="UI-interface-top-bars" >
+
+		<text name="statusbar_textbox">
+		Barra d'estat:
+		</text>
+
+		<check_box tool_tip="Mostra el mesurador de trànsit a la cantonada superior dreta de la pantalla" label="Mostra el mesurador de trànsit a la cantonada superior dreta" name="ShowNetStats"/>
+		<check_box label="Usa la visualització antiga per als valors del mesurador de lag" name="FSStatbarLegacyMeanPerSec" tool_tip="Si està activat, Firestorm utilitzarà el mètode tradicional per mostrar les dades"/>
+		<check_box label="Fer clic a l'indicador de trànsit obre les estadístiques" name="FSUseStatsInsteadOfLagMeter"/>
+		<check_box label="Mostra els controls multimèdia a la barra de menú" name="FSEnableVolumeControls" tool_tip="Mostra a la part superior dreta controls per activar i desactivar l'àudio en streaming i els mitjans."/>
+		<check_box label="Mostra el canal del simulador a la barra d'estat" name="FSStatusbarShowSimulatorVersion" tool_tip="Mostra el canal del simulador (RC Magnum, RC Le Tigre, RC BlueSteel, etc.) a la barra superior."/>
+		<check_box label="Mostra la ubicació a la barra de menú" name="ShowMenuBarLocation"/>
+		<check_box label="Mostra la cerca a la barra de menú" name="show_search_menu_check"/>
+		<check_box label="Mostra el saldo actual de L$" name="FSShowCurrencyBalanceInStatusbar"/>
+		<check_box label="Activa menús emergents de ratolí a les icones de la barra de menú" name="FSStatusBarMenuButtonPopupOnRollover" width="270" />
+		<text name="statusbar_timeformat_textbox" width="144">
+			Format de l'hora:
+		</text>
+		<combo_box name="FSStatusBarTimeFormat" tool_tip="Tria el format de l'hora utilitzat a la barra de menú principal." left_pad="30" Width="306">
+			<combo_box.item label="Idioma per defecte" name="Language"/>
+			<combo_box.item label="12 Hores" name="12_Hour"/>
+			<combo_box.item label="12 Hores amb Segons" name="12_Hour_Seconds"/>
+			<combo_box.item label="12 Hores amb Zona Horària" name="12_Hour_TZ"/>
+			<combo_box.item label="12 Hores amb Segons i Zona Horària" name="12_Hour_TZ_Seconds"/>
+			<combo_box.item label="24 Hores" name="24_Hour"/>
+			<combo_box.item label="24 Hores amb Segons" name="24_Hour_Seconds"/>
+			<combo_box.item label="24 Hores amb Zona Horària" name="24_Hour_TZ"/>
+			<combo_box.item label="24 Hores amb Segons i Zona Horària" name="24_Hour_TZ_Seconds"/>
+		</combo_box>
+		<text name="navfav_textbox"  width="320">
+		Barra de navegació i adreces d'interès:
+		</text>
+
+		<check_box label="Mostra la barra d'adreces d'interès" name="ShowNavbarFavoritesPanel"/>
+		<check_box label="Mostra la barra de navegació i cerca" name="ShowNavbarNavigationPanel"/>
+		<check_box label="Mostra la cerca" name="ShowSearchTopBar"/>
+
+    </panel>
+    <panel label="Finestres de la IU" name="UI-interface-windows-tab">
+        <check_box label="Obre el perfil de l'avatar en fer clic al seu nom" name="FSInspectAvatarSlurlOpensProfile" tool_tip="Obre el perfil de l'avatar en fer clic al seu nom" />
+        <check_box label="Desactiva l'obertura automàtica de la llista de bloquejats" name="FSDisableBlockListAutoOpen" tool_tip="Desactiva l'obertura automàtica de la llista de bloquejats quan bloquegeu un avatar o un objecte" />
+        <check_box label="Obre finestres d'estil [SHORT_VIEWER_GENERATION] per a 'Amics' i 'Grups'" name="FSUseV2Friends" tool_tip="Quan activeu aquesta opció, amics/grups s'obriran en finestres; altrament, es farà a Contactes." />
+        <check_box label="Usa la finestra de propietats d'objecte antiga" name="FSUseLegacyObjectProperties" tool_tip="Si està activat, en obrir les propietats d'un objecte s'utilitzarà la finestra de propietats antiga."/>
+        <check_box label="Usa la finestra de càmera petita" name="FSUseSmallCameraFloater" tool_tip="Si està activat, s'utilitzarà la finestra de càmera més petita i antiga sense controls de configuració de la càmera."/>
+        <text name="standalone_textbox" width="264">
+            Us de finestres separades per a:
+        </text>
+        <check_box name="FSUseStandaloneGroupFloater" label="Perfils de grup" tool_tip="Si està activat, els perfils de grup es mostraran en una finestra separada" />
+        <check_box name="FSUseStandaloneTeleportHistoryFloater" label="Historial de teletransports" tool_tip="Si està activat, l'historial de teletransports es mostrarà en una finestra separada" />
+        <check_box name="FSUseStandaloneBlocklistFloater" label="Llista de bloquejats" tool_tip="Si està activat, la llista de bloquejats es mostrarà en una finestra separada" />
+        <check_box name="FSUseStandalonePlaceDetailsFloater" label="Adreces d'interès, detalls del lloc i historial de teletransports" tool_tip="Si està activat, les adreces d'interès, els detalls del lloc i de l'historial de teletransports es mostraran en una finestra separada" />
+        <text name="ExtendedTeleportHistoryLabel">
+            Afegeix a l'historial de teletransports:
+        </text>
+        <check_box name="FSTeleportHistoryShowPosition" label="Posició" tool_tip="Si està activat, les coordenades locals a la regió es mostraran a l'historial de teletransports."/>
+        <check_box name="FSTeleportHistoryShowDate" label="Data" tool_tip="Si està activat, la data i l'hora del teletransport es mostraran a l'historial de teletransports."/>
+        <text name="textFriendlistOptions">
+            Configuració de la llista de contactes:
+        </text>
+        <text name="textFriendlistColumns" width="128">
+            Columna del nom:
+        </text>
+        <check_box width="80" label="Usuari" name="FSFriendListColumnShowUserName" tool_tip="La columna del nom mostra només el nom d'usuari." />
+        <check_box width="105" label="Pantalla" name="FSFriendListColumnShowDisplayName" tool_tip="La columna del nom mostra només el nom de pantalla." />
+        <check_box label="Nom complet" name="FSFriendListColumnShowFullName" tool_tip="La columna del nom mostra el nom complet." />
+        <text name="textFriendListSortOrder" width="83">
+            Ordena per:
+        </text>
+        <radio_group name="FSFriendListSortOrder">
+            <radio_item label="Usuari" name="username" width="80" />
+            <radio_item label="Nom de pantalla" name="displayname" />
+        </radio_group>
+        <text name="textFriendListFullNameFormat" width="93">
+            Mostra com:
+        </text>
+        <radio_group name="FSFriendListFullNameFormat">
+            <radio_item label="Usuari (Pantalla)" name="username_displayname" />
+            <radio_item label="Pantalla (Usuari)" name="displayname_username" />
+        </radio_group>
+        <check_box label="Mostra la columna de permisos" name="FSFriendListColumnShowPermissions" tool_tip="La llista de contactes mostra columnes amb els permisos que heu donat a aquests avatars i viceversa." />
+        <check_box label="Mostra el filtre de cerca" name="FSContactListShowSearch" tool_tip="La llista de contactes mostrarà un camp de cerca per filtrar la llista."/>
+        <text name="textInventoryOptions">
+            Configuració de l'inventari:
+        </text>
+        <check_box label="Amaga les carpetes de sistema buides a l'inventari" name="DebugHideEmptySystemFolders" tool_tip="Si està activat, les carpetes de sistema de l'inventari no es mostraran (Adreces d'interès, Targetes, etc.)" />
+        <check_box label="Mostra la carpeta d'elements rebuts a l'inventari" name="FSShowInboxFolder" tool_tip="Si està activat, tots els articles comprats es mostraran a la carpeta Rebuts." />
+        <check_box label="Mostra sempre 'Elements rebuts' a la part inferior de l'inventari" name="FSAlwaysShowInboxButton" tool_tip="Mostra sempre 'Elements rebuts' a la part inferior de l'inventari" />
+        <check_box label="Permet termes de cerca separats a cada pestanya d'inventari" name="FSSplitInventorySearchOverTabs" tool_tip="Permet termes de cerca separats a cada pestanya d'inventari" />
+    </panel>
+    <panel label="Avisos (Toasts)" name="UI-toasts-tab">
+        <text name="ToastSettings" width="592">
+            Configuració d'Avisos (finestres emergents, consola, toasts):
+        </text>
+        <slider label="Espai inferior dels avisos:" tool_tip="Espai entre l'avís més baix i la part inferior de la IU:" name="ToastSpace" />
+        <text name="ToastSpaceText">
+            píxels
+        </text>
+        <slider label="Durada de l'avís:" tool_tip="Durada de l'avís abans d'atenuar-se" name="ToastLifetime" />
+        <text name="ToastLifetimeText">
+            segons
+        </text>
+        <slider label="Durada del consell:" tool_tip="Nombre de segons abans que un avís amb informació menys important desaparegui de la pantalla" name="TipToastLifetime" />
+        <text name="TipToastLifetimeText">
+            segons
+        </text>
+        <slider label="Durada del xat local:" tool_tip="Durada de la visualització del xat local abans d'atenuar-se" name="NearbyToastLifetime" />
+        <text name="NearbyToastLifetimeText">
+            segons
+        </text>
+        <slider label="Desplaçament Z d'avisos de xat:" tool_tip="Desplaçament en l'eix Z per als avisos del xat local" name="FSNearbyChatToastsOffset" />
+        <text name="FSNearbyChatToastsOffsetText">
+            píxels
+        </text>
+        <slider label="Temps d'atenuació del xat local:" tool_tip="Temps necessari per a l'efecte d'atenuació" name="NearbyToastFadingTime" />
+        <text name="NearbyToastFadingTimeText">
+            segons
+        </text>
+        <slider label="Durada de l'avís d'inici:" tool_tip="Durada de l'avís d'inici abans de desaparèixer:" name="StartupToastLifetime" />
+        <text name="StartupToastLifetimeText">
+            segons
+        </text>
+        <slider label="Temps d'atenuació de l'avís:" tool_tip="Temps necessari perquè l'avís s'atenuï" name="ToastFadingTime" />
+        <text name="ToastFadingTimeText">
+            segons
+        </text>
+        <slider label="Espai entre avisos:" tool_tip="Espai entre avisos" name="ToastGap" />
+        <text name="ToastGapText">
+            píxels
+        </text>
+        <slider label="Alçada de l'avís de desbordament:" tool_tip="Alçada de l'avís de desbordament" name="OverflowToastHeight" />
+        <text name="OverflowToastHeightText">
+            píxels
+        </text>
+        <slider label="Amplada de Consola de Xat Local:" tool_tip="Amplada de la consola de xat local" name="NearbyToastWidth" />
+        <text name="NearbyToastWidthText" left_delta="470">%</text>
+        <check_box label="Mostra els avisos davant d'altres finestres" name="FSShowToastsInFront" />
+        <check_box label="Usa la nova notificació de reinici de regió" name="FSUseNewRegionRestartNotification" />
+        <check_box label="No sacsejar la pantalla en rebre un avís de reinici de regió" name="FSNoScreenShakeOnRegionRestart" />
+        <check_box label="Informa Reinici Regió al Canal:" width="245" name="FSReportRegionRestartToChat" />
+    </panel>
+    <panel label="Tipus de lletra" name="UI-font-tab">
+        <text name="tooltip_textbox1">
+           Tipus de lletra:
+        </text>
+        <combo_box left_pad="25" name="Fontsettingsfile">
+           
+        </combo_box>
+        <text name="tooltip_textbox2" width="150">
+           (Cal reiniciar)
+        </text>
+        <text name="tooltip_textbox5">
+           Mida addicional:
+        </text>
+        <text name="tooltip_textbox6" >
+           pt (cal reiniciar)
+Per defecte 0. Valors més alts poden causar errors.
+        </text>
+        <text name="tooltip_textbox3">
+           Interlineat:
+        </text>
+        <text name="tooltip_textbox4">
+          píxels (cal reiniciar)
+[VIEWER_GENERATION] per defecte 0. V1 per defecte 2.
+        </text>
+        <text name="Label_FolderItemViewHeight">
+           Alçada d'elements:
+        </text>
+        <text name="Label_FolderItemViewHeight_Scale">
+          píxels (cal reiniciar)
+[VIEWER_GENERATION] per defecte 20. V1 per defecte 18.
+        </text>
+        <text name="text_box_notecard_font" Width="176">
+          Lletra Targetes:
+        </text>
+        <combo_box name="FSNotecardFontName" tool_tip="Nom del tipus de lletra utilitzat a l'editor de targetes"/>
+        <combo_box name="FSNotecardFontSize" tool_tip="Mida del tipus de lletra utilitzat a l'editor de targetes" Width="144">
+             <combo_item name="Monospace" label="Monoespaiada"/>
+             <combo_item name="Scripting" label="Escriptura de codi"/>
+             <combo_item name="Cascadia" label="Cascadia"/>
+             <combo_item name="Small" label="Petita"/>
+             <combo_item name="Medium" label="Mitjana"/>
+             <combo_item name="Large" label="Gran"/>
+        </combo_box>
+        <text name="emoji_font_settings_label" Width="368" >
+				Configuració de Font d'Emojis: (Cal reiniciar)
+			</text>
+			<check_box label="Mostrar emojis en monocrom :" name="FSUseBWEmojis"/>
+			<check_box label="Fes servir el bonic botó d'Emoji :" name="FSUsePrettyEmojiButton"/>
+        
+    </panel>
+</tab_container>
+</panel>

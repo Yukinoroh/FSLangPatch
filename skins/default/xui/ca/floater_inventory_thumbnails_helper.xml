@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="contents" title="Ajudant per a les miniatures de l'inventari">
+	<scroll_list name="inventory_thumbnails_list" tool_tip="Enganxa elements del teu inventari">
+		<scroll_list.columns label="Element d'inventari" name="item_name"/>
+		<scroll_list.columns label="Imatge existent" name="existing_texture"/>
+		<scroll_list.columns label="Imatge nova" name="new_texture"/>
+	</scroll_list>
+	<button label="Enganxa elements de l'inventari" name="paste_items_btn"/>
+	<button label="Enganxa imatges des de l'inventari" name="paste_textures_btn"/>
+	<button label="Escriu les miniatures" name="write_thumbnails_btn"/>
+	<button label="Registra els elements sense miniatura" name="log_missing_thumbnails_btn"/>
+	<button label="Esborra les miniatures dels elements enganxats" name="clear_thumbnails_btn"/>
+</floater>

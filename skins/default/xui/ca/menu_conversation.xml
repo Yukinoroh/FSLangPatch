@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="menu_conversation_participant">
+	<menu_item_call label="Tanca la conversa" name="close_conversation" />
+	<menu_item_call label="Inicia una conversa de veu" name="open_voice_conversation" />
+	<menu_item_call label="Desconnecta de la conversa de veu" name="disconnect_from_voice" />
+	<menu_item_call label="Tanca les converses seleccionades" name="close_selected_conversations" />
+	<menu_item_call label="Mostra el perfil" name="view_profile" />
+	<menu_item_call label="Envia MI" name="im" />
+	<menu_item_call label="Ofereix teletransport" name="offer_teleport" />
+	<menu_item_call label="Demana teletransport" name="request_teleport" />
+	<menu_item_call label="Trucada de veu" name="voice_call" />
+	<menu_item_call label="Historial del xat..." name="chat_history" />
+	<menu_item_call label="Afegeix a amics" name="add_friend" />
+	<menu_item_call label="Elimina d'amics" name="remove_friend" />
+	<menu_item_call label="Elimina d'amics" name="remove_friends" />
+	<menu_item_call label="Convida a un grup..." name="invite_to_group" />
+	<menu_item_call label="Apropa" name="zoom_in" />
+	<menu_item_call label="Mapa" name="map" />
+	<menu_item_call label="Comparteix" name="share" />
+	<menu_item_call label="Paga" name="pay" />
+	<menu_item_check label="Bloca la veu" name="block_unblock" />
+	<menu_item_check label="Bloca el text" name="MuteText" />
+	<menu_item_call label="Perfil del grup" name="group_profile" />
+	<menu_item_call label="Activa el grup" name="activate_group" />
+	<menu_item_call label="Abandona el grup" name="leave_group" />
+	<context_menu label="Opcions de moderador" name="Moderator Options">
+		<menu_item_check label="Permet el xat de text" name="AllowTextChat" />
+		<menu_item_call label="Silencia aquest resident" name="ModerateVoiceMuteSelected" />
+		<menu_item_call label="Reactiva aquest resident" name="ModerateVoiceUnMuteSelected" />
+		<menu_item_call label="Silencia a tothom" name="ModerateVoiceMute" />
+		<menu_item_call label="Reactiva a tothom" name="ModerateVoiceUnmute" />
+	</context_menu>
+	<menu_item_call label="Veta" name="BanMember" />
+</toggleable_menu>

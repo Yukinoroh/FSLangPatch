@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Llocs" name="places panel">
+	<string name="landmarks_tab_title" value="Les meves adreces d'interès"/>
+	<string name="teleport_history_tab_title" value="Historial de teleports"/>
+	<string name="favorites_tab_title" value="Preferits"/>
+	<string name="tooltip_trash_items" value="Suprimeix l'adreça d'interès o la carpeta seleccionada"/>
+	<string name="tooltip_trash_history" value="Suprimeix la llista de llocs visitats"/>
+	<layout_stack name="places_layout_panel">
+		<layout_panel name="main_panel">
+			<layout_stack name="top_menu_panel">
+				<layout_panel name="filter_panel">
+					<filter_editor label="Filtra les adreces d'interès" name="Filter"/>
+				</layout_panel>
+				<layout_panel name="options_gear_btn_panel">
+					<menu_button tool_tip="Mostra les opcions" name="options_gear_btn"/>
+				</layout_panel>
+				<layout_panel name="options_sort_btn_panel">
+					<menu_button tool_tip="Mostra les opcions d'ordenació" name="sorting_menu_btn"/>
+				</layout_panel>
+				<layout_panel name="add_btn_panel">
+					<menu_button name="add_menu_btn" tool_tip="Afegeix una nova adreça d'interès o una carpeta"/>
+				</layout_panel>
+				<layout_panel name="trash_btn_panel" tool_tip="Suprimeix l'adreça d'interès o la carpeta seleccionada">
+					<dnd_button name="trash_btn"/>
+				</layout_panel>
+			</layout_stack>
+		</layout_panel>
+		<layout_panel name="button_layout_panel">
+			<panel name="button_panel">
+				<layout_stack name="bottom_bar_ls0">
+					<layout_panel name="lp1">
+						<layout_stack name="bottom_bar_ls1">
+							<layout_panel name="teleport_btn_lp">
+								<button label="Teleporta" name="teleport_btn" tool_tip="Teleporta a la zona seleccionada"/>
+							</layout_panel>
+							<layout_panel name="chat_btn_lp">
+								<button label="Mapa" name="map_btn" tool_tip="Mostra la zona corresponent al mapa del món"/>
+							</layout_panel>
+						</layout_stack>
+					</layout_panel>
+					<layout_panel name="lp_options">
+						<menu_button name="overflow_btn" tool_tip="Mostra més opcions"/>
+					</layout_panel>
+					<layout_panel name="lp2">
+						<layout_stack name="bottom_bar_profile_ls">
+							<layout_panel name="profile_btn_lp">
+								<button label="Perfil" name="profile_btn" tool_tip="Mostra el perfil del lloc"/>
+							</layout_panel>
+						</layout_stack>
+						<layout_stack name="bottom_bar_close_ls3">
+							<layout_panel name="close_btn_lp">
+								<button label="Tanca" name="close_btn"/>
+							</layout_panel>
+						</layout_stack>
+					</layout_panel>
+				</layout_stack>
+				<layout_stack name="bottom_bar_ls2">
+					<layout_panel name="save_btn_lp">
+						<button label="Desa" name="save_btn"/>
+					</layout_panel>
+					<layout_panel name="cancel_btn_lp">
+						<button label="Cancel·la" name="cancel_btn"/>
+					</layout_panel>
+				</layout_stack>
+			</panel>
+		</layout_panel>
+	</layout_stack>
+</panel>

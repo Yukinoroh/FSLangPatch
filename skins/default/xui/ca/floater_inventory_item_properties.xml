@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="item properties" title="Propietats de l'element">
+	<floater.string name="unknown">(desconegut)</floater.string>
+	<floater.string name="public">(públic)</floater.string>
+	<floater.string name="you_can">Pots:</floater.string>
+	<floater.string name="owner_can">El propietari pot:</floater.string>
+	<floater.string name="acquiredDate">[wkday,datetime,local], [day,datetime,local] [mth,datetime,local] [year,datetime,local] [hour,datetime,local]:[min,datetime,local]:[second,datetime,local]</floater.string>
+	<text name="LabelItemNameTitle">Nom:</text>
+	<text name="LabelItemDescTitle">Descripció:</text>
+	<text name="LabelCreatorTitle">Creador:</text>
+	<button label="Perfil..." name="BtnCreator"/>
+	<text name="LabelOwnerTitle">Propietari:</text>
+	<button label="Perfil..." name="BtnOwner"/>
+	<text name="LabelAcquiredTitle">Adquirit:</text>
+	<text name="LabelAcquiredDate">Dc. 24 de maig 12:50:46 2006</text>
+	<text name="LabelItemExperienceTitle">Experiència:</text>
+	<text name="OwnerLabel">Tu:</text>
+	<check_box label="Modificar" name="CheckOwnerModify"/>
+	<check_box label="Copiar" name="CheckOwnerCopy"/>
+	<check_box label="Transferir" name="CheckOwnerTransfer"/>
+	<check_box label="Exportar" name="CheckOwnerExport"/>
+	<text name="AnyoneLabel">Qualsevol:</text>
+	<check_box label="Copiar" name="CheckEveryoneCopy"/>
+	<text name="GroupLabel">Grup:</text>
+	<check_box label="Compartir" name="CheckShareWithGroup"/>
+	<text name="NextOwnerLabel">Propietari següent:</text>
+	<check_box label="Modificar" name="CheckNextOwnerModify"/>
+	<check_box label="Copiar" name="CheckNextOwnerCopy"/>
+	<check_box label="Transferir" name="CheckNextOwnerTransfer"/>
+	<check_box label="A la venda:" name="CheckPurchase"/>
+	<combo_box name="ComboBoxSaleType">
+		<combo_box.item label="Còpia" name="Copy"/>
+		<combo_box.item label="Contingut" name="Contents"/>
+		<combo_box.item label="Original" name="Original"/>
+	</combo_box>
+	<spinner label="Preu:" name="Edit Cost"/>
+    <text name="CurrencySymbol">L$</text>
+</floater>

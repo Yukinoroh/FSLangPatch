@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater label="Llocs" name="voice_effects" title="Canviador de veu">
+	<string name="no_voice_effect">
+		(Sense canviador de veu)
+	</string>
+	<string name="active_voice_effect">
+		(Actiu)
+	</string>
+	<string name="unsubscribed_voice_effect">
+		(Sense subscripció)
+	</string>
+	<string name="new_voice_effect">
+		(Nou!)
+	</string>
+	<string name="effect_Arena">
+		Arena
+	</string>
+	<string name="effect_Beast">
+		Beast
+	</string>
+	<string name="effect_Buff">
+		Buff
+	</string>
+	<string name="effect_Buzz">
+		Buzz
+	</string>
+	<string name="effect_Camille">
+		Camille
+	</string>
+	<string name="effect_Creepy">
+		Creepy
+	</string>
+	<string name="effect_CreepyBot">
+		CreepyBot
+	</string>
+	<string name="effect_Cyber">
+		Cyber
+	</string>
+	<string name="effect_DeepBot">
+		DeepBot
+	</string>
+	<string name="effect_Demon">
+		Demon
+	</string>
+	<string name="effect_Female Elf">
+		Elf femella
+	</string>
+	<string name="effect_Flirty">
+		Flirty
+	</string>
+	<string name="effect_Foxy">
+		Foxy
+	</string>
+	<string name="effect_Halloween 2010 Bonus">
+		Halloween 2010 Bonus
+	</string>
+	<string name="effect_Helium">
+		Helium
+	</string>
+	<string name="effect_Husky">
+		Husky
+	</string>
+	<string name="effect_Husky Whisper">
+		Murmuri ronc
+	</string>
+	<string name="effect_Intercom">
+		Intèrfon
+	</string>
+	<string name="effect_Julia">
+		Julia
+	</string>
+	<string name="effect_Lo Lilt">
+		Cantarella
+	</string>
+	<string name="effect_Macho">
+		Macho
+	</string>
+	<string name="effect_Micro">
+		Micro
+	</string>
+	<string name="effect_Mini">
+		Mini
+	</string>
+	<string name="effect_Model">
+		Model
+	</string>
+	<string name="effect_Nano">
+		Nano
+	</string>
+	<string name="effect_Nightmare">
+		Nightmare
+	</string>
+	<string name="effect_PopBot">
+		PopBot
+	</string>
+	<string name="effect_Rachel">
+		Rachel
+	</string>
+	<string name="effect_Radio">
+		Radio
+	</string>
+	<string name="effect_Robot">
+		Robot
+	</string>
+	<string name="effect_Roxanne">
+		Roxanne
+	</string>
+	<string name="effect_Rumble">
+		Ronc
+	</string>
+	<string name="effect_Sabrina">
+		Sabrina
+	</string>
+	<string name="effect_Samantha">
+		Samantha
+	</string>
+	<string name="effect_Sexy">
+		Sexy
+	</string>
+	<string name="effect_Shorty">
+		Shorty
+	</string>
+	<string name="effect_Smaller">
+		Més petit
+	</string>
+	<string name="effect_Sneaky">
+		Sneaky
+	</string>
+	<string name="effect_Stallion">
+		Stallion
+	</string>
+	<string name="effect_Sultry">
+		Sultry
+	</string>
+	<string name="effect_Thunder">
+		Thunder
+	</string>
+	<string name="effect_Vixen">
+		Vixen
+	</string>
+	<string name="effect_WhinyBot">
+		WhinyBot
+	</string>
+	<text name="preview_text">
+		Preescolta
+	</text>
+	<text name="status_text">
+		Grava una mostra i després fes clic per sentir com sonarà la teva veu.
+	</text>
+	<button label="Grava" name="record_btn" tool_tip="Grava una mostra de la teva veu."/>
+	<button label="Atura" name="record_stop_btn"/>
+	<text name="voice_morphing_link">
+		[[URL] Subscriu-t'hi]
+	</text>
+	<scroll_list name="voice_effect_list" tool_tip="Grava una mostra de la teva veu i després fes clic per preescoltar un efecte.">
+		<scroll_list.columns label="Nom de la veu" name="name"/>
+		<scroll_list.columns label="Caduca" name="expires"/>
+	</scroll_list>
+</floater>

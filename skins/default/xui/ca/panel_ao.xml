@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<panel name="animation_overrider_outer_panel">
+<panel name="animation_overrider_panel">
+		<combo_box name="ao_set_selection_combo" tool_tip="Selecciona un conjunt d'animacions per editar." />
+		<button name="ao_activate" tool_tip="Activa aquest conjunt d'animacions ara." />
+		<check_box name="ao_default" label="Per defecte" tool_tip="Fes que aquest sigui el conjunt d'animacions que s'inicia en entrar." width="20" />
+		<button name="ao_add" tool_tip="Crea un nou conjunt d'animacions." />
+		<button name="ao_remove" tool_tip="Suprimeix aquest conjunt d'animacions." />
+		<check_box name="ao_sit_override" label="Seure" tool_tip="Marca-ho si vols sobreescriure l'animació de seure." width="100" />
+		<check_box name="ao_smart" label="Intel·ligent" tool_tip="El mode intel·ligent intenta detectar si la sobreescriptura de seure entrarà en conflicte amb l'animació pròpia d'un objecte i la desactivarà temporalment."
+			left_pad="4" right="-1" height="16" />
+		<check_box name="ao_disable_stands_in_mouselook" label="Desact. postures en Mouselook" tool_tip="Si necessites mantenir la teva pròpia animació de postura en Mouselook, marca aquesta casella." width="100" />
+		<combo_box name="ao_state_selection_combo" tool_tip="Selecciona un estat d'animació per editar." />
+		<panel name="ao_animation_move_trash_panel" >
+			<button name="ao_move_up" tool_tip="Mou l'animació seleccionada amunt a la llista." />
+			<button name="ao_move_down" tool_tip="Mou l'animació seleccionada avall a la llista." />
+			<button name="ao_trash" tool_tip="Suprimeix l'animació seleccionada de la llista." />
+		</panel>
+		<check_box name="ao_cycle" label="Cicle" tool_tip="Reprodueix una animació diferent de la llista cada cop que s'activa l'estat d'animació." width="55" />
+		<check_box name="ao_randomize" label="Aleatori" tool_tip="Posa en ordre aleatori les animacions en el mode de cicle."
+			width="100" />
+		<text name="ao_cycle_time_seconds_label" value="Temps (segons):" width="120" />
+		<spinner name="ao_cycle_time" tool_tip="Temps fins a canviar a la següent animació de la llista. Posa 0 per desactivar l'animació automàtica." />
+		<button name="ao_reload" label="Recarrega" tool_tip="Recarrega la configuració del sobreescriptor d'animacions." />
+		<layout_stack name="next_previous_buttons_stack" >
+			<layout_panel name="next_previous_buttons_stack_left">
+				<button name="ao_previous" tool_tip="Ves a l'animació anterior de l'estat actual." />
+			</layout_panel>
+			<layout_panel name="next_previous_buttons_stack_right">
+				<button name="ao_next" tool_tip="Ves a la següent animació de l'estat actual." />
+			</layout_panel>
+		</layout_stack>
+		<button name="ao_less" tool_tip="Mostra la interfície petita del sobreescriptor d'animacions." />
+	</panel>
+<panel name="ao_reload_cover">
+		<panel name="ao_reload_text_panel">
+			<text name="reload_label" >
+				S'està recarregant la configuració
+			</text>
+			<text name="wait_label">
+				Si us plau, espera
+			</text>
+		</panel>
+	</panel>
+<panel name="animation_overrider_panel_small">
+		<combo_box name="ao_set_selection_combo_small" tool_tip="Selecciona un conjunt d'animacions per editar."/>
+		<button name="ao_more" tool_tip="Mostra la interfície de configuració completa." />
+		<button name="ao_previous_small" tool_tip="Ves a l'animació anterior de l'estat actual." />
+		<button name="ao_next_small" tool_tip="Ves a la següent animació de l'estat actual." />
+		<check_box name="ao_sit_override_small" label="Seure" tool_tip="Marca-ho si vols sobreescriure l'animació de seure." width="45" />
+	</panel>
+</panel>

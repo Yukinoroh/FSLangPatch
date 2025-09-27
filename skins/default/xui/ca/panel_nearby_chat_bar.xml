@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="nearby_chat">
+	<line_editor label="Feu clic aquí per a xatejar" name="chat_box" tool_tip="Premeu Intro per a parlar, Ctrl+Intro per a cridar"/>
+	<button name="show_nearby_chat" tool_tip="Mostra/amaga el xat local"/>
+</panel>

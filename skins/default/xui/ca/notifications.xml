@@ -595,14 +595,31 @@ Vols continuar de debò?
 		Fons insuficients per crear l'anunci classificat.
 		<usetemplate name="okbutton" yestext="D'acord"/>
 	</notification>
-	<notification name="DeleteAvatarPick">
+	<notification name="ProfileDeleteClassified">
 		Vols suprimir la selecció &lt;nolink&gt;[PICK]&lt;/nolink&gt;?
 		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
+	
+	<notification name="ProfileDeletePick">
+		Suprimeix la selecció &lt;nolink&gt;[PICK]&lt;/nolink&gt;?
+		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
+	</notification>
+	
+	<notification name="ProfileUnpublishedClassified">
+		Tens anuncis classificats no publicats. Es perdran si tanques la finestra.
+		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
+	</notification>
+	
+	<notification name="ProfileUnsavedChanges">
+		Tens canvis sense desar.
+		<usetemplate name="okcancelbuttons" notext="Descartar" yestext="Desar"/>
+	</notification>
+		
 	<notification name="DeleteOutfits">
 		Vols suprimir el(s) conjunt(s) seleccionat(s)?
 		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
+	
 	<notification name="DeleteOutfitsWithName">
 		Vols suprimir el conjunt "[NAME]"?
 		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
@@ -749,6 +766,22 @@ La qualitat dels gràfics s'establirà a Baixa per evitar alguns errors de contr
 Et recomanem que actualitzis els controladors de la teva targeta gràfica.
 La qualitat dels gràfics es pot augmentar a la secció Preferències &gt; Gràfics
 	</notification>
+	
+	<notification name="AutoFPSConfirmDisable">
+		Si canvieu aquesta configuració, es desactivarà l'ajust automàtic i es desactivarà la "Configuració automàtica". Esteu segur que voleu continuar?.
+	<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="Continuar"/>
+	</notification>
+	
+	<notification name="AdvancedLightingConfirm">
+		Per activar la il·luminació avançada, hem d'augmentar la qualitat al nivell 4.
+	<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
+	</notification>
+	
+	<notification name="ShadowsConfirm">
+		Per habilitar les ombres, hem d'augmentar la qualitat al nivell 4.
+	<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
+	</notification>
+	
 	<notification name="RegionNoTerraforming">
 		La terraformació està prohibida a la regió [REGION].
 	</notification>
@@ -1263,6 +1296,11 @@ Vols fusionar el terreny?
 		No s'ha pogut desar el fitxer [NAME] a la base de dades central.
 Aquest error sol ser temporal. Si us plau, modifica i desa l'element portable de nou d'aquí a uns minuts.
 	</notification>
+	
+    <notification name="OutOfDiskSpace">
+El sistema no té espai al disc. Haureu d'alliberar espai a l'ordinador o esborrar la memòria cau.
+   </notification>
+	
 	<notification name="YouHaveBeenLoggedOut">
 		Vaja. Has estat desconnectat(da) de [CURRENT_GRID].
 
@@ -1410,9 +1448,22 @@ Vols suprimir aquests articles de debò?
 		Almenys un dels objectes que has seleccionat està bloquejat.
 
 Estàs segur que vols suprimir aquests objectes?
+		
+			<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteNoCopy">
+		Com a mínim un dels objectes que has seleccionat no es pot copiar.
+
+Estàs segur que vols suprimir aquests objectes?
 		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
-		<notification name="ConfirmObjectDeleteLockNoCopy">
+	<notification name="ConfirmObjectDeleteNoOwn">
+		Com a mínim un dels elements que has seleccionat no et pertany.
+
+Estàs segur que vols suprimir aquests elements?
+		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteLockNoCopy">
 		Almenys un dels objectes està bloquejat.
 Almenys un dels objectes no es pot copiar.
 
@@ -1537,6 +1588,17 @@ Pots utilitzar [APP_NAME] normalment, els altres residents et veuen correctament
 Si utilitzes [CURRENT_GRID] per primera vegada, has d'obrir un compte abans de poder-te connectar.
 		<usetemplate name="okcancelbuttons" notext="Continua" yestext="Crea un compte..."/>
 	</notification>
+	
+	<notification name="LoginCantRemoveUsername">
+Els usuaris ja recordats es poden oblidar des de Jo &gt; Preferències &gt; Avançat &gt; Noms d'usuari recordats.
+    </notification>
+
+  <notification name="LoginCantRemoveCurUsername">
+Si oblideu l'usuari que ha iniciat la sessió, cal tancar la sessió.
+    <usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="Confirma i tanca la sessió"/>
+  </notification>
+	
+	
 	<notification name="LoginPacketNeverReceived">
 		Tenim dificultats per connectar-te. Potser hi ha un problema amb la teva connexió a Internet o amb la [CURRENT_GRID].
 
@@ -1670,14 +1732,54 @@ Reemplaça la textura [TEXTURE_NUM] per una imatge RGB opaca i després torna a 
 
 L'alfa només és compatible amb materials de terreny (PBR Metallic Roughness), quan alphaMode="MASK" i doubleSided=false.
 	</notification>
-	<notification name="InvalidTerrainSize">
+		<notification name="InvalidTerrainSize">
 		No es poden definir les textures de la regió:
 La textura del terreny [TEXTURE_NUM] és massa voluminosa ([TEXTURE_SIZE_X] X [TEXTURE_SIZE_Y]).
 
 Reemplaça la textura [TEXTURE_NUM] amb una imatge de 24 bits, [MAX_SIZE]x[MAX_SIZE] o més petita, i després torna a fer clic a 'Aplica'.
 	</notification>
+	
+	<notification name="InvalidTerrainMaterialNotLoaded">
+        No s'han pogut definir els materials de la regió:
+El material del terreny [MATERIAL_NUM] no s'ha carregat.
+ 
+Espereu que es carregui el material o substituïu el material [MATERIAL_NUM] per un material vàlid.
+  </notification>
+
+  <notification name="InvalidTerrainMaterialLoadFailed">
+      No s'han pogut definir els materials de la regió:
+El material del terreny [MATERIAL_NUM] no s'ha carregat.
+ 
+Substituïu el material [MATERIAL_NUM] per un material vàlid.
+  </notification>
+
+  <notification
+   icon="alertmodal.tga"
+   name="InvalidTerrainMaterialDoubleSided"
+   type="alertmodal">
+    <unique combine="cancel_old" />
+No s'han pogut definir els materials de la regió:
+El material del terreny [MATERIAL_NUM] és de doble cara. Actualment, els materials de doble cara no són compatibles amb el terreny PBR.
+
+Substitueix el material [MATERIAL_NUM] per un material amb doubleSided=false.
+  </notification>
+
+  <notification
+   icon="alertmodal.tga"
+   name="InvalidTerrainMaterialAlphaMode"
+   type="alertmodal">
+    <unique combine="cancel_old" />
+No s'han pogut definir els materials de la regió:
+El material del terreny [MATERIAL_NUM] utilitza l'alphaMode="[MATERIAL_ALPHA_MODE]" no compatible.
+
+Substitueix el material [MATERIAL_NUM] per un material amb alphaMode="OPAQUE" o alphaMode="MASK".
+  </notification>
+
+	
+	
+	
 	<notification name="RawUploadStarted">
-		La càrrega ha començat. Trigarà un o dos minuts,
+		La càrrega ha començat. Trigará un o dos minuts,
 depenent de la teva velocitat de connexió.
 	</notification>
 	<notification name="ConfirmBakeTerrain">
@@ -1738,6 +1840,18 @@ Supera el límit fixat a [MAX_AGENTS] [LIST_TYPE] de [NUM_EXCESS].
 	<notification name="CanNotChangeAppearanceUntilLoaded">
 		No es pot canviar d'aparença fins que la roba i la silueta estiguin carregades.
 	</notification>
+	
+	
+	<notification name="UsavedWearableChanges">
+		Tens canvis sense desar.
+    <usetemplate
+     ignoretext="Confirma abans de descartar els canvis no desats del dispositiu portàtil"
+     name="okcancelignore"
+     notext="Continua editant"
+     yestext="Descartar"/>
+   </notification>
+	
+	
 	<notification name="ClassifiedMustBeAlphanumeric">
 		El nom del teu anunci classificat ha de començar per un número o una lletra (A a Z). No es permet la puntuació.
 	</notification>
@@ -1910,12 +2024,12 @@ Totes les invitacions de grup seran ara rebutjades automàticament. No se't noti
 	</notification>
 	<notification name="GroupLimitInfo">
 		Els residents amb una subscripció bàsica es poden inscriure a un màxim de [MAX_BASIC] grups.
-Les subscripcions Premium permeten fins a [MAX_PREMIUM]. [https://secondlife.com/my/account/membership.php? Més informació o actualitza]
+Les subscripcions premium permeten fins a [MAX_PREMIUM]. [https://secondlife.com/my/account/membership.php? Més informació o actualitza]
 		<usetemplate name="okbutton" yestext="Tanca"/>
 	</notification>
 	<notification name="GroupLimitInfoPlus">
 		Els residents amb una subscripció bàsica es poden inscriure a un màxim de [MAX_BASIC] grups.
-Les subscripcions Premium permeten fins a [MAX_PREMIUM]. Les subscripcions Premium Plus permeten
+Les subscripcions premium permeten fins a [MAX_PREMIUM]. Les subscripcions Premium Plus permeten
 fins a [MAX_PREMIUM_PLUS]. [https://secondlife.com/my/account/membership.php? Més informació o actualitza]
 		<usetemplate name="okbutton" yestext="Tanca"/>
 	</notification>
@@ -2078,7 +2192,7 @@ Vols continuar?
 	<notification label="Modifica l'accés a un domini Linden" name="ChangeLindenAccess">
 		Estàs a punt de modificar la llista d'accés a un domini pertanyent als Linden (continent, zona per a adolescents, orientació, etc.).
 
-Aquesta acció és delicada i només s'ha de fer per invocar el "hack" que autoritza que objectes/L$ siguin transferits dins/fora de la graella.
+Aquesta acció és delicada i només s'ha de fer per invocar el hack que autoritza que objectes/L$ siguin transferits dins/fora de la graella.
 Aquesta acció modificarà milers de regions i serà difícil de pair per al servidor.
 		<usetemplate name="okcancelbuttons" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
@@ -2460,6 +2574,20 @@ Si us plau, torna a introduir la teva contrasenya i fes clic a D'acord.
 has actualitzat la ubicació d'aquest favorit però els altres detalls romandran sense canvis.
 		<usetemplate name="okbutton" yestext="D'acord"/>
 	</notification>
+	
+	<notification name="ApplyInventoryToObject">
+Esteu aplicant l'opció &apos;no copiar&apos; a l'element d'inventari.
+Aquest element es mourà a l'inventari de l'objecte, no es copiarà.
+
+Voleu moure l'element d'inventari?
+     <usetemplate
+     ignoretext="Avisa'm abans d'aplicar elements &apos;no copiar&apos; a un objecte"
+     name="okcancelignore"
+     notext="Cancel·la"
+     yestext="D'acord"/>
+  </notification>
+	
+	
 	<notification name="MoveInventoryFromObject">
 		Has seleccionat objectes no copiables.
 Aquests objectes es mouran al teu inventari i no es copiaran.
@@ -2559,6 +2687,14 @@ Has de reemplaçar-los abans de suprimir-los.
 		Per afegir una imatge a un conjunt, utilitza la finestra 'Galeria de conjunts' o fes clic amb el botó dret del ratolí sobre la carpeta del conjunt i selecciona "Imatge..."
 		<usetemplate name="okbutton" yestext="D'acord"/>
 	</notification>
+	
+	 <notification name="ThumbnailSelectionTooLarge">
+        Només pots modificar fins a 50 miniatures alhora.
+        <usetemplate
+         name="okbutton"
+         yestext="D'acord"/>
+    </notification>
+		
 	<notification name="ConfirmUnlink">
 		Aquesta és una selecció àmplia amb grups d'enllaços. Si cancel·les els enllaços, corres el risc de no poder-los restablir. Potser hauries de fer còpies dels grups d'enllaços al teu inventari per precaució.
 		<usetemplate ignoretext="Confirma la cancel·lació dels enllaços d'un grup d'enllaços" name="okcancelignore" notext="Cancel·la" yestext="Desfés l'enllaç"/>
@@ -2922,6 +3058,16 @@ Això pot afectar la teva contrasenya.
 	<notification name="NotecardNoPermissions">
 		No tens el dret de consultar aquesta nota.
 	</notification>
+	
+	<notification name="MaterialMissing">
+    Falta material a la base de dades.
+    </notification>
+
+    <notification name="MaterialNoPermissions">
+    No tens permís per veure aquest material.
+    </notification>
+	
+	
 	<notification name="RezItemNoPermissions">
 		Drets insuficients per ressejar l'objecte.
 	</notification>
@@ -3663,6 +3809,16 @@ Si ets un membre Premium, [[PREMIUM_URL] fes clic aquí] per rebre el teu efecte
 	<notification name="VoiceEffectsNew">
 		Hi ha nous efectes de veu disponibles!
 	</notification>
+	
+	<notification name="VoiceEffectsNotSupported">
+Aquest visor no admet les morfogrames de veu.
+Per obtenir més informació sobre altres eines de morfogrames de veu, consulteu [[FAQ_URL] aquest article].
+    <usetemplate
+        ignoretext="Avisa'm que la transformació de veu no és compatible"
+        name="okignore"
+        yestext="D'acord"/>
+    </notification>
+	
 	<notification name="Cannot enter parcel: not a group member">
 		Només els membres d'un cert grup poden visitar aquesta zona.
 	</notification>
@@ -3884,8 +4040,13 @@ Si us plau, verifica la configuració de la teva xarxa i del teu tallafoc.
 Si us plau, desactiva qualsevol funcionalitat SIP ALG al teu router.
 
 No hi ha cap comunicació de veu disponible.
-		<usetemplate name="okbutton" yestext="D'acord"/>
+https://wiki.firestormviewer.org/fs_voice
+	<usetemplate
+	name="okignore"
+	ignoretext="Avisa'm quan el Visualitzador no es pugui connectar al servidor de veu"
+	yestext="D'acord"/>
 	</notification>
+		
 	<notification name="NoVoiceConnect-GIAB">
 		Tenim dificultats per connectar-te al teu servidor de veu. No hi ha cap comunicació de veu disponible. Si us plau, verifica la configuració de la teva xarxa i del teu tallafoc.
 		<usetemplate name="okbutton" yestext="D'acord"/>
@@ -3934,10 +4095,37 @@ Textura fixada de [RESOLUTION] actualitzada localment per a [BODYREGION] al cap 
 		No es pot mostrar una previsualització d'aquesta textura perquè és una textura sense còpia i/o transferència.
 		<usetemplate ignoretext="Avisa'm que el mode de previsualització en directe no està disponible per a textures sense còpia i/o transferència" name="okignore" yestext="D'acord"/>
 	</notification>
+	
+   <notification name="LivePreviewUnavailablePBR">
+   
+No podem mostrar una vista prèvia d'aquest material perquè no es permet la còpia, la transferència i/o la modificació.
+  <usetemplate
+    ignoretext="Avisa'm que el mode de previsualització en directe no està disponible per a materials sense còpia, sense transferència i/o sense modificació."
+    name="okignore"
+    yestext="D'acord"/>
+  </notification>
+	
+	
 	<notification name="FacePasteFailed">
 		L'enganxada ha fallat. [REASON]
 		<usetemplate name="okbutton" yestext="D'acord"/>
 	</notification>
+	
+   <notification name="FailedToApplyTextureNoCopyToMultiple">
+No s'ha pogut aplicar la textura. No podeu aplicar una textura sense còpia a diversos objectes.
+   <usetemplate
+    name="okbutton"
+    yestext="D'acord"/>
+  </notification>
+
+  <notification name="FailedToApplyGLTFNoCopyToMultiple">
+No s'ha pogut aplicar el material GLTF. No podeu aplicar un material sense còpia a diversos objectes.
+   <usetemplate
+    name="okbutton"
+    yestext="D'acord"/>
+  </notification>
+	
+	
 	<notification name="FacePasteTexturePermissions">
 		Has aplicat una textura amb permisos limitats, l'objecte heretarà els permisos de la textura.
 		<usetemplate ignoretext="Enganxar: has aplicat una textura amb permisos limitats" name="notifyignore"/>
@@ -4169,16 +4357,7 @@ Vols continuar?
 		L'objecte seleccionat afecta la malla de navegació. Si el modifiques a 'Flexibilitat', serà suprimit d'aquesta malla.
 		<usetemplate ignoretext="L'objecte seleccionat afecta la malla de navegació. Si el modifiques a 'Flexibilitat', serà suprimit d'aquesta malla." name="okcancelignore" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
-	<global name="UnsupportedShaderRequirements">
-		Sembla que no compleixes els requisits de maquinari necessaris per a [APP_NAME]. [APP_NAME] requereix compatibilitat amb shaders OpenGL 2.0 o superior. Si és el cas, verifica que disposes dels últims controladors per a la teva targeta gràfica i dels últims Service Packs i pedaços per al teu sistema operatiu.
-
-Si continues trobant problemes, si us plau, consulta el [SUPPORT_SITE].
-	</global>
-	<global name="UnsupportedGLRequirements">
-		Sembla que no tens el maquinari necessari per utilitzar [APP_NAME]. [APP_NAME] requereix una targeta gràfica OpenGL amb suport per a multitexturització. Si tens una targeta així, assegura't que també tinguis els controladors més recents per a la targeta, així com els Service Packs i els pedaços per al teu sistema operatiu.
-
-Si encara tens problemes, si us plau, consulta la pàgina [SUPPORT_SITE].
-	</global>
+		
 	<global name="UnsupportedGPU">
 		- La teva targeta gràfica no compleix els requisits mínims.
 	</global>
@@ -4293,6 +4472,14 @@ El nom només pot contenir caràcters ASCII, excepte ":" i "|".
 [SYSINFO]
 		<usetemplate name="okcancelbuttons" yestext="Envia" notext="Cancel·la" />
 	</notification>
+	
+	<notification name="BlockLoginInfo">
+    [REASON]
+    <usetemplate
+     name="okbutton"
+     yestext="D'acord"/>
+  </notification>
+	
 	<notification name="TestversionExpired">
 		Aquesta versió de prova de [APP_NAME] ha expirat i ja no es pot utilitzar.
 		<usetemplate name="okbutton" yestext="D'acord"/>
@@ -4413,7 +4600,7 @@ Consulta FIRE-17710 per a més detalls.
 		La memòria cau del visor està buida. La descàrrega de nou contingut pot provocar un alentiment de la velocitat de visualització i de la càrrega de l'inventari durant un curt període de temps.
 	</notification>
 		<notification name="FirstJoinSupportGroup2">
-		Benvingut al grup de suport als espectadors de Phoenix/Firestorm!
+		Benvingut al grup de suport als Visualitzadors de Phoenix/Firestorm!
 
 Per facilitar el suport, es recomana anunciar la versió del teu visor al grup. Aquesta informació inclou la versió actual del visor, el tema del visor, el sistema operatiu i l'estat de RLVa. Pots triar mostrar la versió del teu visor davant de qualsevol discussió que enviïs al grup. Els nostres membres d'assistència et poden donar immediatament consells més pertinents si coneixen la versió del visor que utilitzes.
 
@@ -4444,6 +4631,12 @@ S'estan desactivant les futures actualitzacions d'aquest fitxer...
 	<notification name="LocalBitmapsVerifyFail">
 		S'ha intentat afegir un fitxer d'imatge [FNAME] no vàlid o il·legible que no s'ha pogut obrir o descodificar. S'ha cancel·lat l'intent.
 	</notification>
+	
+   <notification name="LocalGLTFVerifyFail">
+S'ha intentat afegir un material GLTF no vàlid o il·legible [FNAME] que no s'ha pogut obrir ni descodificar.
+Intent cancel·lat.
+  </notification>
+	
 	<notification name="PathfindingReturnMultipleItems">
 		Retornaràs [NUM_ITEMS] articles. Vols continuar de debò?
 		<usetemplate ignoretext="Vols retornar diversos articles de debò?" name="okcancelignore" notext="No" yestext="Sí"/>
@@ -5544,7 +5737,7 @@ Vols continuar?
 		<usetemplate ignoretext="Consells per a la sonda de reflexió" name="okcancelignore" notext="Cancel·la" yestext="D'acord"/>
 	</notification>
 	<notification name="AutoAdjustHDRSky">
-		Estàs modificant un cel no HDR que ha estat convertit automàticament a HDR. Per suprimir l'HDR i el mapatge de tons, ajusta l'Ambient de la sonda de reflexió a zero.
+		Estàs modificant un cel no HDR que ha estat convertit automàticament a HDR. Per suprimir l'HDR i el mapeig de tons, ajusta l'Ambient de la sonda de reflexió a zero.
 		<usetemplate ignoretext="Advertència sobre l'ajust del cel HDR" name="okignore" yestext="D'acord"/>
 	</notification>
 	<notification name="GLTFOpenSelection">
@@ -5589,14 +5782,19 @@ Tingues en compte que "Utilitza l'entorn compartit" i "Basat en el cicle diari" 
 	<notification name="WindlightBulkImportFinished">
 		La importació per lots dels paràmetres de Windlight s'ha completat.
 	</notification>
+	
 	<notification name="FSAOScriptedNotification">
 		Supervisor d'animació de Firestorm: [AO_MESSAGE]
+	<usetemplate
+    ignoretext="Avisa'm quan un objecte amb script accedeixi al Supervisor d'animació de Firestorm"
+    name="notifyignore"/>	
 	</notification>
+		
 	<notification name="WarnForceLoginURL">
 		L'URL de la pantalla d'inici de sessió s'ha reemplaçat amb finalitats de prova.
 
 Vols restablir l'URL per defecte?
-		<usetemplate name="okcancelbuttons" notext="Recorda-m'ho més tard" yestext="Reinicia"/>
+	<usetemplate name="okcancelbuttons" notext="Recorda-m'ho més tard" yestext="Reinicia"/>
 	</notification>
 	<notification name="WarnScriptedCamera">
 La reinicialització de la càmera pot ser impedida pels objectes següents:

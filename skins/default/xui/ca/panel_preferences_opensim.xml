@@ -4,8 +4,11 @@
 		<panel label="Gestor de Graelles" name="grid_management_panel">
 			<text name="add_grid_text">Afegeix una nova Graella</text>
 			<line_editor name="add_grid" label="Introdueix l'URI de connexió"/>
-			<button label="Esborra" label_selected="Esborra" name="clear_grid"/>
-			<button label="Afegeix" name="apply_new_grid"/>
+			
+			<button label="Desfer" name="clear_grid" />
+             
+			<button label="Ficar" name="apply_new_grid"/>
+			
 			<text name="add_grid_text">Gestiona les Graelles</text>
 			<scroll_list name="grid_list">
 				<scroll_list.columns label="Nom de la Graella" name="grid_label"/>
@@ -22,7 +25,7 @@
 				<text name="website_text">Lloc Web:</text>
 				<text name="support_text">Suport:</text>
 				<text name="register_text">Registre:</text>
-				<text name="password_text">Contrasenya oblidada:</text>
+				<text name="password_text">Contrasenya Perduda:</text>
 				<text name="search_text">Cerca:</text>
 				<text name="message_text">Missatge del dia:</text>
 			</panel>
@@ -30,8 +33,9 @@
 		<panel label="Diversos" name="opensim_misc_panel">
 			<check_box label="Cerca de depuració" name="DebugSearch"/>
 			<text name="search_url_debug_text">Sobreescriu la pàgina de cerca actual: (Inactiu si és buit)</text>
-			<button label="Esborra" label_selected="Esborra" name="clear_search_url_debug"/>
-			<button label="Defineix" name="pick_current_search_url"/>
+			
+			<button label="Desfer" name="clear_search_url_debug"/>
+			<button label="Ficar" name="pick_current_search_url"/>
 		</panel>
 	</tab_container>
 </panel>

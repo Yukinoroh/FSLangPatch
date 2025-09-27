@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="Expulsió de residents" name="bulk_ban_panel">
+  <panel.string name="loading">
+    (S'està carregant...)
+  </panel.string>
+  <panel.string name="ban_selection_too_large">
+    No s'han enviat les expulsions en bloc: hi ha massa residents seleccionats. Les expulsions en bloc estan limitades a 100 per sol·licitud.
+  </panel.string>
+  <panel.string name="ban_not_permitted">
+    No s'han enviat les expulsions en bloc: no tens l'habilitat 'Gestionar la llista d'expulsats'.
+  </panel.string>
+  <panel.string name="ban_limit_fail">
+    No s'han enviat les expulsions en bloc: el teu grup ha arribat al límit d'entrades d'expulsió permeses.
+  </panel.string>
+  <panel.string name="partial_ban">
+    Algunes expulsions en bloc no s'han enviat:
+[MOTIUS]
+  </panel.string>
+  <panel.string name="ban_failed">
+    Les expulsions en bloc no s'han enviat:
+[MOTIUS]
+  </panel.string>
+  <panel.string name="residents_already_banned">
+    - Els residents següents ja estan expulsats: [RESIDENTS].
+  </panel.string>
+  <panel.string name="ban_limit_reached">
+    - S'ha arribat al límit d'expulsions, els agents següents no han estat expulsats: [RESIDENTS].
+  </panel.string>
+  <panel.string name="cant_ban_yourself">
+    - No et pots expulsar a tu mateix/a del grup.
+  </panel.string>
+  <text name="help_text">
+    Pots seleccionar múltiples residents per expulsar-los del teu grup.
+  </text>
+  <button label="Obre el selector de residents" name="add_button"/>
+  <name_list name="banned_agent_list" tool_tip="Mantingues premuda la tecla Ctrl i fes clic als noms dels residents per a una selecció múltiple."/>
+  <button label="Treu els seleccionats de la llista" name="remove_button"
+   tool_tip="Treu els residents seleccionats a dalt de la llista d'expulsions"/>
+  <button label="Expulsa els residents" name="ban_button"/>
+  <button label="Cancel·la" name="cancel_button"/>
+  <string name="GroupBulkBan">
+    Expulsió en bloc del grup
+  </string>
+</panel>

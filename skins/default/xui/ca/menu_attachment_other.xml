@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Avatar Pie">
+	<menu_item_call label="Perfil..." name="Profile..."/>
+	<menu_item_call label="Afegeix a amics" name="Add Friend"/>
+	<menu_item_call label="Afegeix a un grup de contactes" name="Add to Set"/>
+	<menu_item_call label="Envia MI..." name="Send IM..."/>
+	<menu_item_call label="Dona targeta de visita" name="Give Calling Card"/>
+	<menu_item_call label="Truca" name="Call"/>
+	<menu_item_call label="Convida a un grup..." name="Invite..."/>
+	<menu_item_call label="Reinicia l'esquelet" name="Reset Skeleton"/>
+	<menu_item_call label="Reinicia esquelet i animacions" name="Reset Skeleton And Animations"/>
+	<menu_item_call label="Reinicia el LOD del mesh" name="Reset Mesh LOD" />
+	<context_menu label="Gestiona" name="Annoyance">
+		<menu_item_call label="Bloca" name="Avatar Mute"/>
+		<menu_item_call label="Desbloca" name="Avatar Unmute"/>
+		<menu_item_call label="Denuncia" name="abuse"/>
+		<menu_item_call label="Gela..." name="Freeze..."/>
+		<menu_item_call label="Expulsa..." name="Eject..."/>
+	</context_menu>
+	<menu_item_call label="Dump XML" name="Dump XML"/>
+	<menu_item_call label="Apropa" name="Zoom In"/>
+	<menu_item_call label="Paga..." name="Pay..."/>
+	<menu_item_call label="Perfil de l'objecte" name="Object Inspect"/>
+	<menu_item_check name="AlwaysRenderFully" label="Renderitza sempre completament"/>
+	<menu_item_check name="DoNotRender" label="No renderis mai"/>
+	<menu_item_check name="RenderNormally" label="Treu de les excepcions de render"/>
+	<menu_item_call label="Bloca l'emissor de partícules" name="Mute Particle"/>
+	<menu_item_call label="Inspecciona" name="Object_Inspect_Floater"/>
+	<menu_item_call label="Info dels scripts" name="ScriptInfo"/>
+	<menu_item_call label="No renderis" name="Derender"/>
+	<menu_item_call label="No renderis (permanent)" name="DerenderPermanent"/>
+	<menu_item_call label="Depuració (Textures)..." name="Debug..."/>
+	<menu_item_call label="Refresca la textura" name="Texture Refresh"/>
+	<context_menu label="Exporta com a" name="Export Menu">
+		<menu_item_call label="Còpia de seguretat" name="Backup"/>
+		<menu_item_call label="Collada" name="Collada"/>
+	</context_menu>
+</context_menu>

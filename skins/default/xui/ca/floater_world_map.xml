@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="worldmap" title="Mapa del món">
+	<layout_stack name="resizing_stack">
+		<layout_panel name="map_details_panel">
+			<panel name="layout_panel_1">
+				<text name="events_label">
+					Llegenda
+				</text>
+			</panel>
+			<panel name="layout_panel_2">
+				<button name="Show My Location" tool_tip="Centra el mapa a la posició del meu avatar"/>
+				<text name="me_label">
+					Jo
+				</text>
+				<text name="person_label">
+					Persones
+				</text>
+				<text name="infohub_label">
+					Infohub
+				</text>
+				<text name="land_sale_label">
+					Venda de terreny
+				</text>
+				<text name="auction_label">
+					en subhasta
+				</text>
+				<text name="by_owner_label">
+					pel propietari
+				</text>
+				<button name="Go Home" tool_tip="Teletransporta't a casa"/>
+				<text name="Home_label">
+					Llar
+				</text>
+				<text name="events_label">
+					Esdeveniments:
+				</text>
+				<text name="pg_label">
+					General
+				</text>
+				<check_box initial_value="true" name="events_mature_chk"/>
+				<text name="events_mature_label">
+					Moderat
+				</text>
+				<text name="events_adult_label">
+					Per a adults
+				</text>
+			</panel>
+			<panel name="layout_panel_3">
+				<text name="find_on_map_label">
+					Troba al mapa
+				</text>
+			</panel>
+			<panel name="layout_panel_4">
+				<combo_box label="Amics en línia" name="friend combo" tool_tip="Mostra els amics al mapa"/>
+				   <combo_box.item label="Els meus amics estan en línia" name="item1"/>
+				<combo_box label="Els meus punts de referència" name="landmark combo" tool_tip="Mostra els meus punts de referència al mapa"/>
+				   <combo_box.item label="Els meus punts de referència" name="item1"/>
+				<search_editor label="Nom de la regió" name="location" tool_tip="Introdueix el nom de la regió"/>
+				<button label="Cerca" name="DoSearch" tool_tip="Cerca a la regió"/>
+				<button label="Esborra" name="Clear" tool_tip="Esborra el seguiment i restableix el mapa a la vista estàndard"/>
+				<text name="events_label">
+					Lloc:
+				</text>
+				<button label="Teletransporta't" name="Teleport" tool_tip="Teletransporta't al lloc seleccionat"/>
+				<button label="Còpia" name="copy_slurl" tool_tip="Còpia la SLurl al porta-retalls"/>
+				
+				<button label="Mostra la ubicació" name="Show Destination" tool_tip="Centra el mapa a la ubicació seleccionada"/>
+		        <button label="Regió de la pista" name="track_region" tool_tip="Afegeix una regió al seguiment"/>
+	</panel>
+	<panel name="layout_panel_5">
+		<text name="zoom_label">
+			Ampliació
+		</text>
+	</panel>
+</layout_panel>
+</layout_stack>
+</floater>
+			

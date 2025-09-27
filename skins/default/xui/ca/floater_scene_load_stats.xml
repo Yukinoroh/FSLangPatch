@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="Scene Load Statistics" title="Estadístiques de càrrega de l'escena" >
+	<scroll_container name="statistics_scroll" >
+		<container_view name="statistics_view" >
+			<stat_view name="basic" label="Bàsic" >
+				<stat_bar name="frame difference" label="Diferència de fotogrames en píxels"/>
+				<stat_bar name="bandwidth" label="Recepció de dades UDP"/>
+				<stat_bar name="packet_loss" label="Pèrdua de paquets"/>
+			</stat_view>
+			<stat_view name="advanced" label="Avançat">
+				<stat_view name="render" label="Renderització">
+					<stat_bar name="objs" label="Objectes totals"/>
+					<stat_bar name="newobjs" label="Objectes nous"/>
+					<stat_bar name="object_cache_hits" label="Taxa d'encerts de la cau d'objectes"/>
+				</stat_view>
+				<stat_view name="texture" label="Textura" >
+					<stat_bar name="texture_cache_hits" label="Taxa d'encerts de la cau"/>
+					<stat_bar name="texture_cache_read_latency" label="Latència de lectura de la cau"/>
+					<stat_bar name="texture_decode_latency" label="Latència de descodificació de la cau"/>
+					<stat_bar name="texture_decode_latency" label="Latència d'escriptura a la cau"/>
+					<stat_bar name="texture_fetch_latency" label="Latència de recuperació de la cau"/>
+					<stat_bar name="texture_fetch_time" label="Temps de recuperació de la cau"/>
+					<stat_bar name="numimagesstat" label="Comptador"/>
+					<stat_bar name="numrawimagesstat" label="Comptador en cru (raw)"/>
+				</stat_view>
+				<stat_view name="network" label="Xarxa" >
+					<stat_bar name="packetsinstat" label="Paquets d'entrada"/>
+					<stat_bar name="packetsoutstat" label="Paquets de sortida"/>
+					<stat_bar name="objectdatareceived" label="Objectes"/>
+					<stat_bar name="texturedatareceived" label="Textures"/>
+					<stat_bar name="assetudpdatareceived" label="Actius"/>
+					<stat_bar name="layersdatareceived" label="Capes"/>
+					<stat_bar name="messagedatain" label="Entrada real"/>
+					<stat_bar name="messagedataout" label="Sortida real"/>
+				</stat_view>
+			</stat_view>
+			<stat_view name="sim" label="Simulador" >
+				<stat_bar name="simobjects" label="Objectes"/>
+				<stat_bar name="simactiveobjects" label="Objectes actius"/>
+				<stat_bar name="simactivescripts" label="Scripts actius"/>
+				<stat_bar name="siminpps" label="Paquets d'entrada/s"/>
+				<stat_bar name="simoutpps" label="Paquets de sortida/s"/>
+				<stat_bar name="simpendingdownloads" label="Descàrregues pendents"/>
+				<stat_bar name="simpendinguploads" label="Càrregues pendents"/>
+				<stat_bar name="simtotalunackedbytes" label="Total de bytes sense confirmació"/>
+				<stat_view name="simperf" label="Temps (ms)" >
+					<stat_bar name="simframemsec" label="Temps total del fotograma"/>
+					<stat_bar name="simnetmsec" label="Temps de xarxa"/>
+					<stat_bar name="simsimphysicsmsec" label="Temps de física"/>
+					<stat_bar name="simsimothermsec" label="Temps de simulació"/>
+					<stat_bar name="simagentmsec" label="Temps d'agent"/>
+					<stat_bar name="simimagesmsec" label="Temps d'imatges"/>
+					<stat_bar name="simscriptmsec" label="Temps de script"/>
+					<stat_bar name="simsparemsec" label="Temps de reserva"/>
+					<stat_view name="timedetails" label="Detalls del temps (ms)" >
+						<stat_bar name="simsimphysicsstepmsec" label="Pas de física"/>
+						<stat_bar name="simsimphysicsshapeupdatemsec" label="Actualització de formes físiques"/>
+						<stat_bar name="simsimphysicsothermsec" label="Altres de física"/>
+						<stat_bar name="simsleepmsec" label="Temps d'espera (sleep)"/>
+						<stat_bar name="simpumpiomsec" label="E/S (Pump IO)"/>
+					</stat_view>
+				</stat_view>
+			</stat_view>
+		</container_view>
+	</scroll_container>
+</floater>

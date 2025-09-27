@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Avisos" name="notices_tab">
+	<panel.string name="help_text">
+		Els avisos són una manera ràpida de comunicar-se amb tots els membres del grup.
+Pots adjuntar un objecte a l'avís. Només rebran l'avís els membres amb rols que tinguin l'habilitat per fer-ho.
+Pots desactivar la recepció d'avisos a la pestanya 'General', desmarcant la casella 'Rebre avisos del grup'.
+	</panel.string>
+	<panel.string name="no_notices_text">
+		No hi ha avisos
+	</panel.string>
+	<text name="lbl2">
+		Els avisos es guarden durant 14 dies.
+El límit diari d'avisos del grup és de 200.
+	</text>
+	<scroll_list name="notice_list">
+		<scroll_list.columns label="Assumpte" name="subject"/>
+		<scroll_list.columns label="De" name="from"/>
+		<scroll_list.columns label="Data" name="date"/>
+	</scroll_list>
+	<button label="Crea" name="create_new_notice" tool_tip="Crea un nou avís"/>
+	<button name="refresh_notices" tool_tip="Actualitza la llista d'avisos"/>
+	<text name="notice_list_none_found">
+		No s'han trobat avisos
+	</text>
+	<panel label="Crea un nou avís" name="panel_create_new_notice">
+		<text name="lbl">
+			Crea un avís
+		</text>
+		<text name="lbl3">
+			Assumpte:
+		</text>
+		<text name="lbl4">
+			Missatge:
+		</text>
+		<text name="lbl5">
+			Adjunció:
+		</text>
+		<text name="drag_and_drop_help">
+			Arrossega un adjunt aquí per afegir-lo:
+		</text>
+		<button name="remove_attachment" tool_tip="Elimina l'adjunció de l'avís"/>
+		<button label="Inventari" name="open_inventory" tool_tip="Obre l'inventari"/>
+		<button label="Envia" label_selected="Envia" name="send_notice"/>
+		<group_drop_target name="drop_target" tool_tip="Per adjuntar un objecte a aquest avís, arrossega'l des del teu inventari a aquest panell. Has de tenir permisos per copiar i transferir l'objecte."/>
+	</panel>
+	<panel label="Arxiu d'avisos" name="panel_view_past_notice">
+		<text name="lbl6">
+			Arxiu d'avisos
+		</text>
+		<text name="lbl7">
+			Per enviar un nou avís, fes clic al botó '+Crea'
+		</text>
+		<text name="lbl8">
+			Assumpte:
+		</text>
+		<text name="lbl9">
+			Missatge:
+		</text>
+		<text name="lbl10">
+			Adjunció:
+		</text>
+		<button label="Obre l'adjunció" name="open_attachment"/>
+	</panel>
+</panel>

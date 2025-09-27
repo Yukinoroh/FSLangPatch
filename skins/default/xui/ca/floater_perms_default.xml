@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="perms default" title="PERMISOS DE CREACIÓ PER DEFECTE">
+	<panel label="Permisos per defecte" name="default permissions">
+		<text name="label_1">
+			Propietari següent:
+		</text>
+		<text name="label_2">
+			Copiar
+		</text>
+		<text name="label_3">
+			Modificar
+		</text>
+		<text name="label_4">
+			Transferir
+		</text>
+		<text name="label_5">
+			Comparteix amb el grup
+		</text>
+		<text name="label_6">
+			Permet que tothom ho copiï
+		</text>
+		<text name="label_7" tool_tip="Estableix els permisos per defecte per a la creació d'objectes">
+			Objectes
+		</text>
+		<text name="label_8" tool_tip="Estableix els permisos per defecte per a les càrregues">
+			Càrregues
+		</text>
+		<text name="label_9" tool_tip="Estableix els permisos per defecte per a la creació de scripts">
+			Scripts
+		</text>
+		<text name="label_10" tool_tip="Estableix els permisos per defecte per a la creació de notes">
+			Notes
+		</text>
+		<text name="label_11" tool_tip="Estableix els permisos per defecte per a la creació de gestos">
+			Gestos
+		</text>
+		<text name="label_12" tool_tip="Estableix els permisos per defecte per a la creació de roba o parts del cos">
+			Vestibles
+		</text>
+		<text name="label_13" tool_tip="Estableix els permisos per defecte quan es creïn paràmetres d'entorn">
+			Entorns
+		</text>
+	</panel>
+	<button label="D'acord" label_selected="D'acord" name="OK"/>
+	<button label="Cancel·la" label_selected="Cancel·la" name="cancel"/>
+</floater>

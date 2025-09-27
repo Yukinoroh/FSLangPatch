@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu_bar name="Login Menu">
+	<menu label="Visualitzador" name="File">
+		<menu_item_call label="Preferències..." name="Preferences..."/>
+		<menu_item_call label="Tanca la finestra" name="Close Window"/>
+		<menu_item_call label="Mostra el selector de xarxes" name="Show Grid Picker"/>
+		<menu_item_call label="Surt de [APP_NAME]" name="Quit"/>
+	</menu>
+	<menu label="Ajuda" name="Help">
+		<menu_item_call label="Firestorm Wiki" name="Firestorm Wiki"/>
+		<menu_item_call label="Resolució de problemes" name="Troubleshooting"/>
+		<menu_item_call label="Guies pràctiques" name="How To"/>
+		<!--
+		<menu_item_separator/>
+        <menu_item_call
+             label="Knowledge Base"
+             name="Knowledge Base">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+            parameter="http://community.secondlife.com/t5/English-Knowledge-Base/Second-Life-User-s-Guide/ta-p/1244857"/>
+        </menu_item_call>
+        <menu_item_call
+             label="Wiki"
+             name="Wiki">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="http://wiki.secondlife.com"/>
+        </menu_item_call>
+        <menu_item_call
+             label="Community Forums"
+             name="Community Forums">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="http://community.secondlife.com/t5/Forums/ct-p/Forums"/>
+        </menu_item_call>         
+        <menu_item_call
+             label="Support portal"
+             name="Support portal">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="https://support.secondlife.com/"/>         
+        </menu_item_call>
+        <menu_item_separator/>
+        <menu_item_call
+             label="[SECOND_LIFE] Blogs"
+             name="Second Life Blogs">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="https://community.secondlife.com/news/"/>
+        </menu_item_call>
+        <menu_item_separator/>       
+-->
+		
+		<menu_item_call label="Informa d'un error" name="Report Bug"/>
+		<menu_item_call label="Quant a [APP_NAME]" name="About Second Life"/>
+		<menu_item_call label="Ajuda de [CURRENT_GRID]" name="current_grid_help_login"/>
+		<menu_item_call label="Informació de [CURRENT_GRID]" name="current_grid_about_login"/>
+	</menu>
+	<menu_item_check label="Mostra el menú de depuració" name="Show Debug Menu"/>
+	<menu label="Depuració" name="Debug">
+		<menu_item_call label="Mostra els paràmetres de depuració" name="Debug Settings"/>
+		<menu_item_call label="Eina de previsualització XUI" name="UI Preview Tool"/>
+		<menu label="Proves d'interfície (UI)" name="UI Tests"/>
+		<menu_item_call label="Defineix la mida de la finestra..." name="Set Window Size..."/>
+		<menu_item_call label="Mostra les condicions del servei (TOS)" name="TOS"/>
+		<menu_item_call label="Mostra els missatges crítics" name="Critical"/>
+		<menu_item_call label="Navegador de mitjans" name="Media Browser"/>
+		<menu_item_call label="Mostra la consola de notificacions" name="Show Notifications Console"/>
+		<menu label="Defineix el nivell de registre" name="Set Logging Level">
+			<menu_item_check label="Depuració" name="Debug"/>
+			<menu_item_check label="Informació" name="Info"/>
+			<menu_item_check label="Avís" name="Warning"/>
+			<menu_item_check label="Error" name="Error"/>
+			<menu_item_check label="Cap" name="None"/>
+		</menu>
+	</menu>
+</menu_bar>

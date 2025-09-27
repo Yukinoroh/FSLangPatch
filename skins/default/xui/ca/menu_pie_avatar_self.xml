@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<pie_menu name="Self Pie">
+    <pie_slice label="Perfil" name="Profile..."/>
+    <pie_slice label="Grups" name="Groups..."/>
+    <pie_menu label="Treu &gt;" name="Take Off &gt;">
+        <pie_menu label="Roba &gt;" name="Clothes &gt;">
+            <pie_slice label="Camisa" name="Shirt"/>
+            <pie_slice label="Pantalons" name="Pants"/>
+            <pie_slice label="Sabates" name="Shoes"/>
+            <pie_slice label="Mitjons" name="Socks"/>
+            <pie_slice label="Jaqueta" name="Куртка"/>
+            <pie_slice label="Guants" name="Gloves"/>
+            <pie_menu label="Més &gt;" name="Clothes More">
+                <pie_slice label="Samarreta interior" name="Self Undershirt"/>
+                <pie_slice label="Tota la roba" name="All Clothes"/>
+                <pie_slice label="Calçotets" name="Self Underpants"/>
+                <pie_slice label="Tatuatge" name="Self Tattoo"/>
+                <pie_slice label="Física" name="Self Physics"/>
+                <pie_slice label="Alfa" name="Self Alpha"/>
+            </pie_menu>
+            <pie_slice label="Faldilla" name="Skirt"/>
+        </pie_menu>
+        <pie_menu name="Pie Object Detach HUD"/>
+        <pie_menu label="Treu &gt;" name="Pie Object Detach">
+            <pie_menu label="Esquelet millorat &gt;" name="Enhanced Skeleton">
+                <pie_slice label="Ala dreta" name="Right Wing"/>
+                <pie_slice label="Engonal" name="Groin"/>
+                <pie_slice label="Base de la cua" name="Tail Base"/>
+                <pie_slice label="Punta de la cua" name="Tail Tip"/>
+                <pie_slice label="Ala esquerra" name="Left Wing"/>
+                <pie_slice label="Peu posterior esquerre" name="Left Hind Foot"/>
+                <pie_menu label="Més &gt;" name="Enhanced Skeleton More">
+                    <pie_slice label="Orella dreta alt." name="Alt Right Ear"/>
+                    <pie_slice label="Ull dret alt." name="Alt Right Eye"/>
+                    <pie_slice label="Llengua" name="Tongue"/>
+                    <pie_slice label="Ull esquerre alt." name="Alt Left Eye"/>
+                    <pie_slice label="Orella esquerra alt." name="Alt Left Ear"/>
+                    <pie_slice label="Dit anular esquerre" name="Left Ring Finger"/>
+                    <pie_slice label="Mandíbula" name="Jaw"/>
+                    <pie_slice label="Dit anular dret" name="Right Ring Finger"/>
+                </pie_menu>
+                <pie_slice label="Peu posterior dret" name="Right Hind Foot"/>
+            </pie_menu>
+        </pie_menu>
+        <pie_slice label="Treu-ho tot" name="Detach All"/>
+    </pie_menu>
+    <pie_slice label="Seure" name="Sit Down Here"/>
+    <pie_slice label="Aixecar-se" name="Stand Up"/>
+    <pie_slice label="Scripts" name="ScriptInfo"/>
+    <pie_slice label="Gestos..." name="Gestures"/>
+    <pie_menu label="Aparença &gt;" name="Appearance &gt;">
+        <pie_slice label="Forma" name="Edit My Shape"/>
+        <pie_menu name="ResetMenu" label="Reinicia &gt;">
+            <pie_slice label="Esq. i animacions" name="Reset Skeleton And Animations"/>
+            <pie_slice label="Esquelet" name="Reset Skeleton"/>
+            <pie_slice label="Mesh LOD" name="Reset Mesh LOD"/>
+        </pie_menu>
+        <pie_slice label="Refresca la textura" name="Texture Refresh"/>
+        <pie_slice label="Conjunt" name="Edit My Outfit"/>
+        <pie_slice label="Dump XML" name="Dump XML"/>
+        <pie_slice label="Alçada flotant" name="Hover Height"/>
+    </pie_menu>
+    <pie_slice label="Depuració..." name="Debug..."/>
+</pie_menu>

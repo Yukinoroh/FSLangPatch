@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Snapshot" title="Previsualització d'instantània">
+	<floater.string name="unknown">
+		desconegut
+	</floater.string>
+	<string name="postcard_progress_str">
+		S'està enviant la postal
+	</string>
+	<string name="facebook_progress_str">
+		S'està publicant a Facebook
+	</string>
+	<string name="profile_progress_str">
+		S'està publicant
+	</string>
+	<string name="inventory_progress_str">
+		S'està desant a l'inventari
+	</string>
+	<string name="local_progress_str">
+		S'està desant a l'ordinador
+	</string>
+	<string name="facebook_succeeded_str">
+		Imatge penjada correctament
+	</string>
+	<string name="profile_succeeded_str">
+		Imatge publicada correctament
+	</string>
+	<string name="postcard_succeeded_str">
+		Postal enviada!
+	</string>
+	<string name="inventory_succeeded_str">
+		S'ha desat a l'inventari!
+	</string>
+	<string name="local_succeeded_str">
+		S'ha desat a l'ordinador!
+	</string>
+	<string name="facebook_failed_str">
+		No s'ha pogut penjar la imatge a la teva cronologia de Facebook.
+	</string>
+	<string name="profile_failed_str">
+		No s'ha pogut publicar la imatge al teu perfil.
+	</string>
+	<string name="postcard_failed_str">
+		No s'ha pogut enviar la postal.
+	</string>
+	<string name="inventory_failed_str">
+		No s'ha pogut desar a l'inventari.
+	</string>
+	<string name="local_failed_str">
+		No s'ha pogut desar a l'ordinador.
+	</string>
+	<view name="controls_container">
+	<button label="Refresca" name="new_snapshot_btn"/>
+	<panel name="advanced_options_panel">
+		<text name="layer_type_label">
+			Captura:
+		</text>
+		<combo_box label="Capes d'imatge" name="layer_types">
+			<combo_box.item label="Colors" name="Colors"/>
+			<combo_box.item label="Profunditat" name="Depth"/>
+		</combo_box>
+		<check_box label="Interfície" name="ui_check"/>
+		<check_box label="Saldo en L$" name="currency_check"/>
+		<check_box label="HUD del visor" name="hud_check"/>
+		<check_box label="Congela la imatge (pantalla completa)" name="freeze_frame_check"/>
+		<check_box label="Refresca automàticament" name="auto_snapshot_check"/>
+		<text name="filter_list_label" width="60">
+            Filtre:
+        </text>
+		<combo_box name="filters_combobox" left="60" >
+            <combo_box.item label="Sense filtre" name="NoFilter"/>
+        </combo_box>
+	</panel>
+	</view>
+	<text name="image_res_text">
+		[WIDTH] (amplada) x [HEIGHT] (alçada) píx.
+	</text>
+	<text name="file_size_label">
+		[SIZE] KB
+	</text>
+	<button label="Instantània 360°" name="360_label"/>
+</floater>

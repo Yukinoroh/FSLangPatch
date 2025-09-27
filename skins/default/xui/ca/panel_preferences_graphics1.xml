@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Visualització" name="Display panel">
+	<tab_container label="Paràmetres de visualització" name="tabs">
+		<panel label="General" name="General">
+			<text name="preset_label" width="155">Preconfiguració en ús: </text>
+			<text name="preset_text">
+				(Cap)
+			</text>
+			<text name="QualitySpeed">Qualitat i rendiment:</text>
+			<text name="FasterText">R</text>
+			<text name="BetterText">Q</text>
+			
+			<!-- <slider left="175" name="QualityPerformanceSelection"></slider> -->
+ 
+			
+			<text name="ShadersPrefText">Baix</text>
+			<text name="ShadersPrefText2">Mitjà</text>
+			<text name="ShadersPrefText3">Alt</text>
+			<text name="ShadersPrefText4">Ultra</text>
+			<text name="ShadersText">Shaders:</text>
+			<check_box label="Transparència de l'aigua" name="TransparentWater"/>
+			<check_box label="Oclusió ambiental" name="UseSSAO"/>
+			<check_box label="Reflexos en l'espai (SSR)" name="ScreenSpaceReflections"/>
+			<check_box label="Miralls" name="Mirrors"/>
+			<text name="shadows_label">Ombres:</text>
+			<combo_box name="ShadowDetail">
+				<combo_box.item label="Cap" name="0"/>
+				<combo_box.item label="Sol/Lluna" name="1"/>
+				<combo_box.item label="Sol/Lluna/Projectors" name="2"/>
+			</combo_box>
+			<text name="ReflectionDetailText">
+				Detalls dels reflexos:
+			</text>
+			<combo_box name="ReflectionDetail">
+				<combo_box.item label="Estàtics" name="0"/>
+				<combo_box.item label="Estàtics i dinàmics" name="1"/>
+				<combo_box.item label="Temps real" name="2"/>
+				</combo_box>
+			<text name="ReflectionProbeText">
+				Cobertura dels reflexos:
+			</text>
+			<combo_box name="ReflectionLevel">
+				<combo_box.item label="Cap" name="0"/>
+				<combo_box.item label="Només manuals" name="1"/>
+				<combo_box.item label="Manuals i terreny" name="2"/>
+				<combo_box.item label="Escena completa" name="3"/>
+			</combo_box>
+			<text width="185" name="local lights_label" tool_tip="Afecta el nombre de fonts de llum. Cal reiniciar per canviar el mode.">
+				Il·luminació (cal reiniciar):
+			</text>
+			<combo_box name="LocalLightsDetail">
+				<combo_box.item label="Totes (per defecte)" name="3"/>
+				<combo_box.item label="Reduïdes" name="2"/>
+				<combo_box.item label="Només Sol / Lluna" name="1"/>
+			</combo_box>
+			<text name="MirrorResolutionText">
+				Resolució del mirall:
+			</text>
+			<combo_box name="MirrorResolution">
+				<combo_box.item label="256" name="0"/>
+				<combo_box.item label="512" name="1"/>
+				<combo_box.item label="1024" name="2"/>
+				<combo_box.item label="2048" name="3"/>
+			</combo_box>
+			<text name="HeroProbeUpdateText">
+				Actualització del mirall:
+			</text>
+			<combo_box name="HeroProbeUpdateRate">
+				<combo_box.item label="Cada fotograma" name="0"/>
+				<combo_box.item label="Cada 2 fotogrames" name="1"/>
+				<combo_box.item label="Cada 3 fotogrames" name="2"/>
+				<combo_box.item label="Cada 4 fotogrames" name="3"/>
+			</combo_box>
+			<check_box label="Mode de pantalla completa" name="Fullscreen Mode" tool_tip="Executa el Firestorm en mode de pantalla completa. Cal reiniciar per canviar el mode."/>
+			<slider label="Distància de visió:" name="DrawDistance"/>
+			<text name="DrawDistanceMeterText2">m</text>
+			<slider label="Nombre màxim de partícules:" name="MaxParticleCount"/>
+			<text name="AvatarComplexityModeLabel">
+				Visualització d'avatars:
+			</text>
+			<combo_box name="AvatarComplexityMode">
+				<combo_box.item label="Per complexitat" name="0"/>
+				<combo_box.item label="Amb els amics" name="1"/>
+				<combo_box.item label="Només els amics" name="2"/>
+			</combo_box>
+			<slider label="Complexitat màxima:" name="IndirectMaxComplexity"/>
+			<slider label="Màxim d'avatars 3D:" name="IndirectMaxNonImpostors"/>
+			<slider label="Qualitat Postprocessament:" name="RenderPostProcess"/>
+			<text name="PostProcessText">Baixa</text>
+			<slider label="Màxim de llums properes:" name="MaxLights"/>
+			<slider label="Propietats dels avatars:" name="AvatarPhysicsDetail"/>
+			<slider label="Exposició:" name="RenderExposure"/>
+			<text name="MeshDetailText">Factors de detall per distància:</text>
+			<slider label="  Objectes i sculpts:" name="ObjectMeshDetail"/>
+			<slider label="  Prims flexibles:" name="FlexibleMeshDetail"/>
+			<slider label="  Arbres:" name="TreeMeshDetail"/>
+			<slider label="  Avatars:" name="AvatarMeshDetail"/>
+			<slider label="  Terreny:" name="TerrainMeshDetail"/>
+			<slider label="  Cel:" name="SkyMeshDetail"/>
+			<text name="Presets_Label">
+				Configuració:
+			</text>
+			<button left="290" label="Desa" name="PrefSaveButton"/>
+			<button left_pad="5" label="Carrega" name="PrefLoadButton"/>
+			<button left_pad="5" label="Suprimeix" name="PrefDeleteButton"/>
+			<button left="490" tool_tip="Restaura els valors per defecte." name="Defaults"/>
+		</panel>
+		<panel label="Paràmetres Màquina" name="Hardware Settings">
+			<check_box label="Filtratge anisotròpic (més lent si s'activa)" name="ani"/>
+			<check_box label="Activa la compressió de textures sense pèrdua (cal reiniciar)" name="texture compression" tool_tip="Activar la compressió de textures a la memòria gràfica permet carregar textures de resolució superior i suportar un nombre més gran de textures pel mateix cost de memòria."/>
+			<check_box label="Activa el suport per a pantalles HiDPI (només macOS; cal reiniciar)" name="use HiDPI" tool_tip="Activa l'OpenGL per a la visualització d'alta resolució."/>
+			<text width="235" name="antialiasing label" tool_tip="Canviar aquest paràmetre pot requerir reiniciar en alguns ordinadors.">
+				Antialiàsing (es recomana reiniciar):
+			</text>
+			<text name="antialiasing quality label" tool_tip="Canviar aquest paràmetre pot requerir reiniciar en alguns ordinadors.">
+				Qualitat de l'antialiàsing:
+			</text>
+			<combo_box label="Antialiàsing" name="fsaa">
+				<combo_box.item label="Desactivat" name="FSAADisabled"/>
+				<combo_box.item label="FXAA" name="FXAA"/>
+			</combo_box>
+			<combo_box name="fsaa quality">
+				<combo_box.item label="Baixa" name="Low"/>
+				<combo_box.item label="Mitjana" name="Medium"/>
+				<combo_box.item label="Alta" name="High"/>
+				<combo_box.item label="Ultra" name="Ultra"/>
+			</combo_box>
+			<check_box label="Limita la VRAM per a textures (MB):" name="FSLimitTextureVRAMUsage" tool_tip="Limita la quantitat de VRAM utilitzada per a les textures. L'ús total pot ser superior, ja que altres elements també fan servir VRAM."/>
+			<slider name="RenderMaxVRAMBudget" tool_tip="Quantitat màxima de VRAM en megabytes utilitzada per a les textures."/>
+			<text name="advanced_settings">
+				Paràmetres avançats (cal reiniciar):
+			</text>
+			<check_box label="Ignora la detecció de VRAM" name="FSOverrideVRAMDetection" tool_tip="Permet a l'usuari ignorar la detecció de VRAM (utilitzeu-ho amb molta precaució)"/>
+			<slider label="Ignora la VRAM dedicada de la GPU (GB):" name="FSForcedVideoMemory" tool_tip="Important: utilitzeu-ho amb molta precaució.
+Ignora la VRAM detectada a la vostra GPU.
+Això no ha d'incloure la VRAM 'compartida' que forma part de la RAM del sistema.
+Si no enteneu la distinció, no toqueu aquest control."/>
+			<text name="automatic_texture_downscale_settings">
+				Reducció automàtica de la mida de textures:
+			</text>
+			<text name="TextureDiscardBackgroundedTime_label" tool_tip="Redueix la mida de les textures després d'un cert nombre de segons quan la finestra no està activa.">
+				En segon pla (0 per desactivar):
+			</text>
+			<spinner name="TextureDiscardBackgroundedTime" tool_tip="Redueix la mida de les textures després d'un cert nombre de segons quan la finestra no està activa."/>
+			<text name="TextureDiscardBackgroundedTime_seconds">
+				Segon(s)
+			</text>
+			<text name="TextureDiscardMinimizedTime_label" tool_tip="Redueix la mida de les textures després d'un cert nombre de segons quan l'aplicació està minimitzada.">
+			Minimitzada (0 per desactivar):
+			</text>
+			<spinner name="TextureDiscardMinimizedTime" tool_tip="Redueix la mida de les textures després d'un cert nombre de segons quan l'aplicació està minimitzada."/>
+			<text name="TextureDiscardMinimizedTime_seconds">
+				Segon(s)
+			</text>
+		</panel>
+		<panel label="Renderització" name="Rendering">
+			<text name="World Updating">
+				Actualització del món:
+			</text>
+			<check_box name="WorldPause" label="Congela les actualitzacions del món (ho posa tot en pausa)" tool_tip="Marqueu aquesta opció per congelar totes les actualitzacions del món - Això aturarà totes les accions visuals però no afectarà les converses de xat o de veu"/>
+			<check_box label="Limita els fotogrames per segon" name="FSLimitFramerate" tool_tip="Limita la taxa de refresc a un valor definit per l'usuari. Pot reduir el consum d'energia i l'escalfor de la GPU/CPU."/>
+			<check_box label="Limita la taxa de refresc a la freqüència del monitor (VSync)" name="vsync" tool_tip="Sincronitza la freqüència de fotogrames amb la de refresc del monitor, la qual cosa pot provocar un augment del lag i imatges entretallades."/>
+			<text name="Texture Rendering">Renderització de textures:</text>
+			<text name="FSRestrictMaxTextureSize">
+				Limita la resolució de les textures a:
+			</text>
+			<combo_box tool_tip="Defineix la resolució màxima de visualització de les textures al món. Això permet mostrar més textures abans de superar la memòria de textures disponible i obtenir textures borroses." name="FSRestrictMaxTexturePixels"/>
+			<text name="TextureDetailLabel">
+				Qualitat Textures:
+			</text>
+			<combo_box name="TextureDetail" tool_tip="Qualitat de càrrega de les textures, afecta el paràmetre TextureDiscardLevel">
+				<combo_box.item label="Normal" name="0"/>
+				<combo_box.item label="Mitjana" name="3"/>
+				<combo_box.item label="Baixa" name="4"/>
+				<combo_box.item label="Sense textures" name="5"/>
+			</combo_box>
+			<text name="Miscellaneous Rendering">Miscel·lània:</text>
+			<check_box label="HDR i emissivitat" tool_tip="Permet funcionalitats addicionals del pipeline de renderització en màquines més noves, com ara l'HDR i les textures emissives en contingut PBR." name="VintageMode"/>
+			<check_box label="Activa les màscares alfa" tool_tip="Si aquesta opció està marcada, la renderització de màscares alfa (bits transparents) és correcta." name="RenderAutoMaskAlphaDeferred"/>
+			<check_box label="Brillantor lluminosa" tool_tip="Activa la brillantor lluminosa. Tingueu en compte que la força s'ha d'establir a 0 per desactivar la brillantor quan les ombres estan activades." name="RenderGlow"/>
+			<slider label="Força:" tool_tip="Força de la brillantor lluminosa. Un valor més alt la fa més difusa i suau (2 per defecte)" name="glow_strength"/>
+			<check_box label="Mostra els avatars que no han acabat de carregar" name="RenderUnloadedAvatars"/>
+			<slider label="FPS:" name="MaxFPS"/>
+			<check_box label="Mostra en mode filferro" name="Wireframe"/>
+			<check_box label="Activa les fonts de llum portades (Face Lights)" tool_tip="Aquest paràmetre activarà totes les fonts de llum que porten els avatars, com les 'Face Lights'." name="Render Attached Lights"/>
+			<check_box label="Renderització de partícules portades" name="Render Attached Particles"/>
+			<slider width="480" label_width="340" label="Temporització de la memòria cau del món:" tool_tip="Retard en segons per a la càrrega de la memòria cau del món abans de connectar-vos (6 segons per defecte)" name="PrecachingDelay"/>
+			<text name="PrecachingDelayText" left_delta="480">Segons</text>
+			<slider width="480" label_width="340" label="Qualitat de les ombres:" tool_tip="Qualitat de les ombres (1 per defecte)" name="ShadowResolution"/>
+			<slider width="480" label_width="340" label="Renderització de textures de Terreny (cal reiniciar):" name="RenderTerrainScale" tool_tip="Determina la mida de renderització de les textures del terreny - un valor més baix és més comprimit (requereix reiniciar)"/>
+			<slider label="Millora de la nitidesa:" name="RenderSharpness"/>
+			<text name="ReflectionProbeCount">
+				Sondes de reflexió:
+			</text>
+			<combo_box name="ProbeCount">
+				<combo_box.item label="Cap" name="1"/>
+				<combo_box.item label="Baix" name="32"/>
+				<combo_box.item label="Mitjà" name="64"/>
+				<combo_box.item label="Alt" name="128"/>
+				<combo_box.item label="Ultra" name="256"/>
+			</combo_box>
+			<text name="TonemapTypeText">
+				Mapatge de tons:
+			</text>
+			<slider label="MesclaMapatgeTons:" tool_tip="Mescla de colors lineals i colors mapats" name="TonemapMix"/>
+		</panel>
+		<panel label="Profunditat de camp" name="DOF panel">
+			<check_box name="UseDoF" label="Activa la profunditat de camp" tool_tip="Desenfocarà la vista excepte al punt de focus de la càmera"/>
+			<check_box label="Activa durant l'edició d'objectes o terreny" name="RenderDepthOfFieldInEditMode"/>
+			<check_box label="L'enfocament de la profunditat de camp segueix el cursor" name="FSFocusPointFollowsPointer" tool_tip="L'enfocament de la profunditat de camp (PdC) seguirà el vostre cursor, aquest comportament correspon al que s'observa en utilitzar la flycam. S'utilitza juntament amb el bloqueig de l'enfocament de la PdC"/>
+			<slider label="Índex d'obertura:" name="CameraFNum" tool_tip="Índex d'obertura de la càmera per a efectes de profunditat"/>
+			<slider label="Distància focal:" name="CameraFocal" tool_tip="Distància focal de la càmera per a efectes de profunditat (en mil·límetres)"/>
+			<slider label="Angle de camp:" name="Camera FOV" tool_tip="Angle de camp vertical de la càmera per a efectes de profunditat (en graus)"/>
+			<slider label="Temps de Transicions:" name="CameraFocusTrans" tool_tip="Temps necessari per canviar l'efecte de profunditat durant un moviment de càmera (dinamisme)"/>
+			<slider label="Q/R Desenfocament:" name="CameraDoFResScale" tool_tip="Defineix la qualitat del desenfocament i el rendiment de la renderització. (Com més alt, millor qualitat; com més baix, millor rendiment)"/>
+		</panel>
+	</tab_container>
+</panel>

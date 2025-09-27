@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Model Preview" title="Pujada de models">
+  <string name="no_havok">carregant malla amb físiques</string>
+  <string name="status_parse_error">Error: Problema en analitzar el fitxer DAE; consulteu el registre per a més detalls.</string>
+  <string name="status_bind_shape_orientation">Avís: La matriu de la forma d'enllaç no està orientada per defecte al llarg de l'eix X.</string>
+  <string name="status_material_mismatch">Error: El material del model no és un subconjunt del model de referència.</string>
+  <string name="status_lod_model_mismatch">Error: El model de nivell de detall no té cap pare.</string>
+  <string name="status_reading_file">Carregant...</string>
+  <string name="status_generating_meshes">Generant malles...</string>
+  <string name="status_vertex_number_overflow">Error: S'ha superat el nombre de vèrtexs (més de 65535). S'ha avortat!</string>
+  <string name="bad_element">Error: element no vàlid</string>
+  <string name="high">Alt</string>
+  <string name="medium">Mitjà</string>
+  <string name="low">Baix</string>
+  <string name="lowest">Molt baix</string>
+  <string name="mesh_status_good">A punt per pujar!</string>
+  <string name="mesh_status">N/D</string>
+  <string name="mesh_status_none">Cap</string>
+  <string name="mesh_status_submesh_mismatch">Nombre diferent de cares texturables entre els nivells de detall.</string>
+  <string name="mesh_status_mesh_mismatch">Nombre diferent d'instàncies de malla entre els nivells de detall.</string>
+  <string name="mesh_status_too_many_vertices">Massa vèrtexs en un nivell de detall.</string>
+  <string name="mesh_status_missing_lod">Falta un nivell de detall requerit.</string>
+  <string name="mesh_status_invalid_material_list">Els materials del nivell de detall no són un subconjunt del model de referència.</string>
+  <string name="phys_status_vertex_limit_exceeded">Alguns embolcalls físics han superat el límit de vèrtexs (256); proveu un altre 'Mètode d'Anàlisi'.</string>
+  <string name="phys_status_hull_limit_exceeded">Alguns models superen el límit d'embolcalls (256); proveu la 'Simplificació'.</string>
+  <string name="phys_status_degenerate_triangles">La malla de físiques és massa densa o conté triangles degenerats. Utilitzeu Anàlisi/Simplificació per resoldre-ho.</string>
+  <string name="phys_status_no_havok">Aquesta versió no és compatible amb Havok i no es recomana per pujar físiques a Second Life. Els resultats poden ser impredictibles.</string>
+  <string name="phys_status_too_thin">Una o més dimensions són inferiors a 0,5 m; només les formes físiques basades en embolcalls (analitzades) funcionaran correctament.</string>
+  <string name="phys_status_unknown_error">S'ha produït un error no reconegut.</string>
+  <string name="layer_all">Tot</string>
+  <string name="decomposing">Analitzant...</string>
+  <string name="simplifying">Simplificant...</string>
+  <string name="tbd">Pendent</string>
+
+  <string name="TooManyJoint">Texturació desactivada, massa articulacions: [JOINTS], màxim: [MAX]</string>
+  <string name="UnrecognizedJoint">Ajustat per a una articulació desconeguda [NAME]</string>
+  <string name="UnknownJoints">Texturació desactivada, massa [COUNT] articulacions desconegudes</string>
+  <string name="ModelLoaded">Model [MODEL_NAME] carregat</string>
+  <string name="IncompleteTC">Dades de coordenades de textura incompletes.</string>
+  <string name="PositionNaN">S'ha trobat un NaN en carregar dades de posició del DAE, model no vàlid.</string>
+  <string name="NormalsNaN">S'ha trobat un NaN en carregar les normals del DAE, model no vàlid.</string>
+  <string name="NegativeScaleTrans">S'ha detectat una escala negativa en una transformació no compatible. domInstance_geometry: [LABEL]</string>
+  <string name="NegativeScaleNormTrans">S'ha detectat una escala negativa en una transformació normal no compatible. domInstance_geometry: [LABEL]</string>
+  <string name="CantResolveGeometryUrl">No es pot resoldre l'URL de la geometria.</string>
+  <string name="ParsingErrorBadElement">Element erroni</string>
+  <string name="ParsingErrorCantParseScene">L'escena no es pot analitzar</string>
+  <string name="ParsingErrorCorrupt">Error amb el dae; normalment indica un fitxer corrupte.</string>
+  <string name="ParsingErrorNoController">No s'ha pogut validar el controlador</string>
+  <string name="ParsingErrorNoDoc">No es poden trobar documents interns</string>
+  <string name="ParsingErrorNoRoot">El document no té arrel</string>
+  <string name="ParsingErrorNoScene">El document no té visual_scene</string>
+  <string name="ParsingErrorPositionInvalidModel">No es pot processar una malla sense dades de posició. Model no vàlid.</string>
+
+  <panel name="left_panel">
+    <panel name="model_name_representation_panel">
+      <text name="name_label">Nom del model:</text>
+    </panel>
+    <tab_container name="import_tab">
+      <panel label="Nivell de detall" name="lod_panel" title="Nivell de detall">
+        <text initial_value="Font" name="source" value="Font"/>
+        <text initial_value="Triangles" name="triangles" value="Triangles"/>
+        <text initial_value="Vèrtexs" name="vertices" value="Vèrtexs"/>
+        <text initial_value="Alt" name="high_label" value="Alt"/>
+        <combo_box name="lod_source_high">
+          <item name="Load from file" label="Carrega des de fitxer"/>
+          <item name="MeshOpt Auto" label="Genera Automàtic"/>
+          <item name="MeshOptCombine" label="Genera Precís"/>
+          <item name="MeshOptSloppy" label="Genera Imprecís"/>
+          <item name="Generate" label="Genera Robust"/>
+        </combo_box>
+        <button label="Navega..." name="lod_browse_high"/>
+        <combo_box name="lod_mode_high">
+          <item label="Límit de triangles" name="Triangle Limit"/>
+          <item label="Llindar d'error" name="Error Threshold"/>
+        </combo_box>
+        <text initial_value="Mitjà" name="medium_label" value="Mitjà"/>
+        <combo_box name="lod_source_medium">
+          <item name="Load from file" label="Carrega des de fitxer"/>
+          <item name="MeshOpt Auto" label="Genera Automàtic"/>
+          <item name="MeshOptCombine" label="Genera Precís"/>
+          <item name="MeshOptSloppy" label="Genera Imprecís"/>
+          <item name="Generate" label="Genera Robust"/>
+          <item name="Use LoD above" label="Usa el LOD superior"/>
+        </combo_box>
+        <button label="Navega..." name="lod_browse_medium"/>
+        <combo_box name="lod_mode_medium">
+          <item label="Límit de triangles" name="Triangle Limit"/>
+          <item label="Llindar d'error" name="Error Threshold"/>
+        </combo_box>
+        <text initial_value="Baix" name="low_label" value="Baix"/>
+        <combo_box name="lod_source_low">
+          <item name="MeshOpt Auto" label="Genera Automàtic"/>
+          <item name="MeshOptCombine" label="Genera Precís"/>
+          <item name="MeshOptSloppy" label="Genera Imprecís"/>
+          <item name="Generate" label="Genera Robust"/>
+          <item name="Use LoD above" label="Usa el LOD superior"/>
+        </combo_box>
+        <button label="Navega..." name="lod_browse_low"/>
+        <combo_box name="lod_mode_low">
+          <item label="Límit de triangles" name="Triangle Limit"/>
+          <item label="Llindar d'error" name="Error Threshold"/>
+        </combo_box>
+        <text initial_value="Molt baix" name="lowest_label" value="Molt baix"/>
+        <combo_box name="lod_source_lowest">
+          <item name="MeshOpt Auto" label="Genera Automàtic"/>
+          <item name="MeshOptCombine" label="Genera Precís"/>
+          <item name="MeshOptSloppy" label="Genera Imprecís"/>
+          <item name="Generate" label="Genera Robust"/>
+          <item name="Use LoD above" label="Usa el LOD superior"/>
+        </combo_box>
+        <button label="Navega..." name="lod_browse_lowest"/>
+        <combo_box name="lod_mode_lowest">
+          <item label="Límit de triangles" name="Triangle Limit"/>
+          <item label="Llindar d'error" name="Error Threshold"/>
+        </combo_box>
+        <check_box label="Genera les normals" name="gen_normals"/>
+        <text initial_value="Angle de plec:" name="crease_label" value="Angle de plec:"/>
+      </panel>
+
+      <panel label="Físiques" name="physics_panel">
+        <panel name="physics geometry">
+          <text name="first_step_name">Pas 1: Nivell de detall</text>
+          <combo_box name="physics_lod_combo" tool_tip="Nivell de detall per a la forma física">
+            <combo_item name="choose_one">Trieu-ne un...</combo_item>
+            <combo_item name="physics_high">Alt</combo_item>
+            <combo_item name="physics_medium">Mitjà</combo_item>
+            <combo_item name="physics_low">Baix</combo_item>
+            <combo_item name="physics_lowest">Molt baix</combo_item>
+            <combo_item name="physics_cube">Cub</combo_item>
+            <combo_item name="physics_hex">Hexàgon</combo_item>
+            <combo_item name="physics_ud">Definit per l'usuari</combo_item>
+            <combo_item name="physics_bounding_box">Caixa delimitadora</combo_item>
+            <combo_item name="load_from_file">Des de fitxer</combo_item>
+          </combo_box>
+          <button label="Navega..." name="physics_browse"/>
+        </panel>
+        <panel name="physics analysis">
+          <text name="method_label">Pas 2: Anàlisi</text>
+          <text name="analysis_method_label">Mètode:</text>
+          <text name="quality_label">Qualitat:</text>
+          <text name="smooth_method_label">Suavitat:</text>
+          <check_box label="Tanca els forats (Lent)" name="Close Holes (Slow)"/>
+          <button label="Analitza" name="Decompose"/>
+          <button label="Cancel·la" name="decompose_cancel"/>
+        </panel>
+        <panel name="physics simplification">
+          <text name="second_step_label">Pas 3: Simplificació</text>
+          <text name="simp_method_header">Mètode:</text>
+          <text name="pass_method_header">Passades:</text>
+          <text name="Detail Scale label" left_pad="30" width="100">Escala de detall:</text>
+          <text name="Retain%_label">Conserva:</text>
+          <combo_box name="Combine Quality" value="1"/>
+          <button label="Simplifica" name="Simplify"/>
+          <button label="Cancel·la" name="simplify_cancel"/>
+        </panel>
+        <panel name="physics info">
+          <text name="results_text" width="70">Resultats:</text>
+          <text name="physics_triangles" width="150">Triangles: [TRIANGLES],</text>
+          <text name="physics_points" width="120">Vèrtexs: [POINTS],</text>
+          <text name="physics_hulls" width="120">Embolcalls: [HULLS]</text>
+        </panel>
+      </panel>
+      <panel label="Opcions de pujada" name="modifiers_panel">
+        <text name="scale_label" width="195">Escala (1=sense escala):</text>
+        <text name="dimensions_label">Dimensions:</text>
+        <check_box label="Inclou les textures" name="upload_textures"/>
+      </panel>
+
+      <panel label="Muntatge (Rigging)" name="rigging_panel" title="Muntatge (Rigging)">
+        <check_box label="Inclou els pesos de la pell" name="upload_skin"/>
+        <check_box label="Inclou les posicions de les articulacions" name="upload_joints"/>
+        <check_box label="Bloqueja l'escala si s'estableix la posició de l'articulació" name="lock_scale_if_joint_position"/>
+        <text name="pelvis_offset_label">Desplaçament Z (puja/baixa):</text>
+        <text name="skin_too_many_joints">Massa articulacions amb pesos de pell</text>
+        <text name="skin_unknown_joint">El model té una o més articulacions desconegudes</text>
+        <text name="joints_descr">Articulacions:</text>
+        <text name="conflicts_description">[CONFLICTS] conflictes en [JOINTS_COUNT] articulacions</text>
+        <text name="pos_overrides_descr">Sobreescriptures de posició per a l'articulació '[JOINT]':</text>
+        <scroll_list name="pos_overrides_list">
+          <scroll_list.columns label="Model" name="model_name"/>
+        </scroll_list>
+      </panel>
+      <panel label="Registre" name="logs_panel">
+        <check_box label="Activa el registre detallat" name="verbose_logging" width="80"/>
+      </panel>
+      <panel label="Configuració de la previsualització" name="mesh_preview_settings_panel">
+        <text name="mesh_upload_behaviour_label">
+         Paràmetres de comportament a la pujada de malles:
+        </text>
+        <check_box label="Inclusió automàtica de pesos"
+         tool_tip="Estableix automàticament la inclusió de pesos per a malles amb rigging"
+         name="mesh_preview_auto_weights"/>
+        <check_box label="Visualització automàtica de pesos"
+         tool_tip="Mostra automàticament els pesos a la previsualització per a malles amb rigging"
+         name="mesh_preview_auto_show_weights"/>
+        <text name="lod_suffix_label" width="110">
+            Sufixos de LOD:
+        </text>
+        <combo_box name="lod_suffix_combo" width="250" tool_tip="Trieu una configuració predefinida o personalitzeu-la">
+            <combo_item name="choose_one">Trieu un estàndard o editeu manualment...</combo_item>
+            <combo_item name="suff_sl">Estàndard SL (Molt baix=LOD0)</combo_item>
+            <combo_item name="suff_unity">Estàndard de motors de jocs (Molt baix=LOD3)</combo_item>
+            <combo_item name="suff_descriptive">Paraules (alt,mitjà...)</combo_item>
+        </combo_box>
+        <text name="suf_lowest_lab" width="60">
+            Molt baix:
+        </text>
+        <line_editor name="suf_lowest" tool_tip="Sufix utilitzat per identificar el fitxer de nivell de detall molt baix al disc i els models dins del fitxer."/>
+        <text name="suf_low_lab" width="60">
+            Baix:
+        </text>
+        <line_editor name="suf_low" tool_tip="Sufix utilitzat per identificar el fitxer de nivell de detall baix al disc i els models dins del fitxer."/>
+        <text name="suf_medium_lab" width="60">
+            Mitjà:
+        </text>
+        <line_editor name="suf_medium" tool_tip="Sufix utilitzat per identificar el fitxer de nivell de detall mitjà al disc i els models dins del fitxer."/>
+        <text name="suf_high_lab" width="60">
+            Alt:
+        </text>
+        <line_editor name="suf_high" tool_tip="Sufix utilitzat per identificar el fitxer de nivell de detall alt al disc i els models dins del fitxer."/>
+        <text name="suf_physics_lab" width="60">
+            Físiques:
+        </text>
+        <line_editor name="suf_physics" tool_tip="Sufix utilitzat per identificar el fitxer de físiques al disc i els models dins del fitxer."/>
+        <text name="mesh_preview_ud_preset_label">
+          Predefinits de físiques:
+        </text>
+        <line_editor name="ud_physics" tool_tip="Ruta completa del sistema a una definició de malla Collada simple per utilitzar en físiques."/>
+        <button label="Navega" label_selected="Navega" name="set_user_def_phys"/>
+        <text name="mesh_preview_colors_label">
+         Colors de la previsualització:
+        </text>
+        <text name="user_label">
+         Principal:
+        </text>
+        <color_swatch label="Fons" tool_tip="Color del llenç per a la finestra de previsualització"
+         name="mesh_preview_canvas_color"/>
+        <color_swatch label="Arestes del model" tool_tip="Color de les arestes del model a la finestra de previsualització"
+         name="mesh_preview_edge_color"/>
+        <color_swatch label="Llum ambiental" tool_tip="Nivell de llum ambiental a la finestra de previsualització (també afecta la previsualització d'animacions, etc.)"
+         name="preview_ambient_color"/>
+        <text name="physics_settings_label">
+         Físiques:
+        </text>
+        <color_swatch label="Arestes de físiques"
+         tool_tip="Color de les arestes per als triangles de físiques a la finestra de previsualització"
+         name="mesh_preview_physics_edge_color"/>
+        <color_swatch label="Farciment de físiques"
+         tool_tip="Color de farciment per al model de físiques a la finestra de previsualització"
+         name="mesh_preview_physics_fill_color"/>
+        <text name="physics_issues_setting_label" width="110">
+         Problemes de físiques:
+        </text>
+        <color_swatch label="Arestes errònies"
+         tool_tip="Color de les arestes per a triangles degenerats (fins) a la finestra de previsualització"
+         name="mesh_preview_degenerate_edge_color"/>
+        <color_swatch label="Farciment erroni"
+         tool_tip="Color de farciment per a triangles degenerats (fins) a la finestra de previsualització"
+         name="mesh_degenerate_fill_color"/>
+      </panel>
+    </tab_container>
+    <panel name="weights_and_warning_panel">
+      <button label="Calcula els pesos i el cost" name="calculate_btn" tool_tip="Calcula els pesos i el cost"/>
+      <button label="Cancel·la" name="cancel_btn"/>
+      <button label="Puja" name="ok_btn" tool_tip="Puja al simulador"/>
+      <button label="Neteja i reinicia" name="reset_btn"/>
+      <text name="upload_fee">Cost de la pujada: L$ [FEE]</text>
+      <text name="prim_weight" width="140">Impacte al terreny: [EQ]</text>
+      <text name="download_weight">Descàrrega: [ST]</text>
+      <text name="physics_weight">Físiques: [PH]</text>
+      <text name="server_weight">Servidor: [SIM]</text>
+      <panel name="price_breakdown_panel">
+        <text name="price_breakdown_title">Desglossament del preu</text>
+        <text name="price_breakdown_labels">
+Descàrrega:
+Físiques:
+Instàncies:
+Textures:
+Model:
+        </text>
+      </panel>
+      <panel name="physics_costs_panel">
+        <text name="physics_breakdown_title">Cost de les físiques</text>
+        <text name="physics_breakdown_labels">
+Embolcall:
+Convex:
+Anàlisi:
+        </text>
+      </panel>
+      <panel name="preview_controls_panel">
+        <panel name="preview_controls_inner_panel">
+          <text name="preview_controls_title">Previsualització</text>
+          <combo_box name="preview_lod_combo" tool_tip="Nivell de detall a previsualitzar">
+            <combo_item name="high">Alt</combo_item>
+            <combo_item name="medium">Mitjà</combo_item>
+            <combo_item name="low">Baix</combo_item>
+            <combo_item name="lowest">Molt baix</combo_item>
+          </combo_box>
+        </panel>
+        <check_box label="Arestes" name="show_edges"/>
+        <check_box label="Textures" name="show_textures"/>
+        <check_box label="Guia UV" name="show_uv_guide"/>
+        <check_box label="Físiques" name="show_physics"/>
+        <text name="exploder_label">Rang</text>
+        <check_box label="Pesos pell" name="show_skin_weight"/>
+        <check_box label="Articulacions" name="show_joint_positions"/>
+        <check_box label="Canvis articul." name="show_joint_overrides"/>
+      </panel>
+
+      <text name="warning_title">NOTA:</text>
+      <text name="warning_message">No teniu permís per pujar models de malla. [[VURL] Apreneu com] obtenir-lo.</text>
+    </panel>
+  </panel>
+  <text name="lod_label">Previsualització:</text>
+</floater>

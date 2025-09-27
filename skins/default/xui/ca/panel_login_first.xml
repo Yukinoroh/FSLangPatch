@@ -1,0 +1,20 @@
+<panel name="panel_login">
+  <layout_stack name="logo_stack">
+    <layout_panel name="parent_panel2">
+      <layout_stack name="widget_stack">
+        <layout_panel name="widget_container">
+         <combo_box label="Usuari"
+            tool_tip="El nom d'usuari que vau triar en registrar-vos, per exemple: joanpi12 o Brillantor Estel·lar"
+            name="username_combo"/>
+          <line_editor name="password_edit" label="Contrasenya"/>
+          <button label="Inicia la sessió" name="connect_btn"/>
+          <text name="sign_up_text">Registra't</text>
+          <check_box label="Recorda'm" name="remember_name"
+            tool_tip="Podeu fer que s'oblidi un usuari des del menú Avatar > Preferències > Avançat > Noms d'usuari recordats."/>
+          <check_box label="Recorda la contrasenya" name="remember_password"/>
+          <text name="forgot_password_text">Has oblidat la contrasenya?</text>
+        </layout_panel>
+      </layout_stack>
+    </layout_panel>
+  </layout_stack>
+</panel>

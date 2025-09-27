@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="Navbar Menu">
+	<menu_item_check label="Mostra les coordenades" name="Show Coordinates"/>
+	<menu_item_check label="Mostra la informació del terreny" name="Show Parcel Properties"/>
+	<menu_item_call label="Referència" name="Landmark"/>
+	<menu_item_call label="Retalla" name="Cut"/>
+	<menu_item_call label="Copia" name="Copy"/>
+	<menu_item_call label="Enganxa" name="Paste"/>
+	<menu_item_call label="Suprimeix" name="Delete"/>
+	<menu_item_call label="Selecciona-ho tot" name="Select All"/>
+</menu>

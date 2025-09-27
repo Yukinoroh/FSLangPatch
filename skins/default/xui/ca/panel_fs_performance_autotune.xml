@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_performance_autotune">
+	<text name="back_lbl">Enrere</text>
+	<text name="settings_title">Configuració de l'autoajustament</text>
+	<text name="quality_lbl">Avatars llunyans</text>
+	<check_box name="FSAutoTuneImpostorByDistEnabled" label="Optimitza segons la distància" tool_tip="Si s'activa, el visor ajustarà el paràmetre MaxNonImpostors per limitar els avatars completament renderitzats només a aquells que es trobin dins d'un radi determinat."/>
+	<spinner name="ffa_autotune" label="Més llunyà"/>
+	<text name="distant_av_advice">
+Els avatars llunyans s'optimitzaran independentment de la renderització. Estableix la distància a la qual un avatar serà optimitzat.
+Nota: Aquest paràmetre establirà MaxNonImpostors a 1 si no hi ha ningú a prop.
+	</text>
+	<text name="distance_lbl">Límits de l'ajustament de la distància</text>
+	<spinner name="min_dd_autotune" label="Distància mínima"/>
+	<spinner name="pref_dd_autotune" label="Distància preferida"/>
+	<text name="distance_desc1">
+En ajustar els paràmetres de l'escena, l'autoajustament triarà un valor entre la distància de dibuixat mínima i la preferida.
+	</text>
+	<text name="sundry_lbl">Paràmetres diversos</text>
+	<check_box name="alow_self_impostor" label="Optimitza el teu propi avatar" tool_tip="Quan s'activa, el teu propi avatar es pot mostrar com a impostor (silueta)."/>
+	<check_box name="show_tuned_art" label="Temps ajustat" tool_tip="Si s'activa, la columna 'Temps' mostra el temps de renderització actual en lloc del temps preajustat."/>
+	<text name="sundry_desc1">
+Aquests paràmetres controlen opcions més subtils. Consulta la pàgina d'ajuda en línia per a més informació sobre què fan.
+	</text>
+</panel>

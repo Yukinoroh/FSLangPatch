@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_postcard_message">
+	<text name="to_label">
+		Per a:
+	</text>
+	<text name="name_label">
+		De:
+	</text>
+	<text name="subject_label">
+		Assumpte:
+	</text>
+	<line_editor label="Introduïu l'assumpte." name="subject_form"/>
+	<text name="msg_label">
+		Missatge:
+	</text>
+	<text_editor name="msg_form">
+		Introduïu el missatge.
+	</text_editor>
+	<button label="Cancel·la" name="cancel_btn"/>
+	<button label="Envia" name="send_btn"/>
+</panel>

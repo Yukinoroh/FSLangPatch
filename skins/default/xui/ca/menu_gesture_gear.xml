@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="menu_gesture_gear">
+	<menu_item_call label="Activa/Desactiva el gest seleccionat" name="activate"/>
+	<menu_item_call label="Canvia el nom" name="rename"/>
+    <menu_item_call label="Copia" name="copy_gesture"/>
+	<menu_item_call label="Enganxa" name="paste"/>
+	<menu_item_call label="Copia l'UUID" name="copy_uuid"/>
+	<menu_item_call label="Guarda al conjunt actual" name="save_to_outfit"/>
+	<menu_item_call label="Modifica" name="edit_gesture"/>
+</toggleable_menu>

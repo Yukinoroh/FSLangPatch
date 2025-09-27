@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<fonts>
+
+  <font name="default" comment="fitxers de lletra per defecte (alternatives globals)">
+    <file>DejaVuSans.ttf</file>
+    <file functor="is_emoji_use_color">TwemojiSVG.ttf</file>
+    <file functor="is_emoji_use_bw">NotoEmoji-Regular.ttf</file>
+    <os name="Windows">
+      <file>MSNeoGothic.ttf</file>
+      <file>meiryo.TTC</file>
+      <file>MSGOTHIC.TTC</file>
+      <file>gulim.ttc</file>
+      <file>simhei.ttf</file>
+      <file>ArialUni.ttf</file>
+      <file>msyh.ttc</file>
+      <file load_collection="true">Cambria.ttc</file>
+      <file>micross.ttf</file>
+    </os>
+    <os name="Mac">
+      <file>ヒラギノ角ゴシック W3.ttc</file>
+      <file>ヒラギノ角ゴ Pro W3.otf</file>
+      <file>ヒラギノ角ゴ ProN W3.otf</file>
+      <file>ヒラギノ明朝 ProN W3.ttc</file>
+      <file>AppleGothic.dfont</file>
+      <file>AppleGothic.ttf</file>
+      <file>AppleSDGothicNeo-Regular.otf</file>
+      <file>AppleSDGothicNeo.ttc</file>
+      <file>华文细黑.ttf</file>
+      <file>PingFang.ttc</file>
+      <file>STIXGeneral.otf</file>
+      <file>Thonburi.ttc</file>
+    </os>
+  </font>
+
+  <font name="SansSerifBold"
+	comment="Nom de la lletra de pal sec en negreta">
+    <file>DejaVuSans-Bold.ttf</file>
+    <os name="Windows">
+      <file>arialbd.ttf</file>
+      </os>
+    <os name="Mac">
+      <file>Helvetica.dfont</file>
+      </os>
+  </font>
+
+  <font name="SansSerif" comment="Nom de la lletra de pal sec (nom del fitxer Truetype)">
+    <file>DejaVuSans.ttf</file>
+    <os name="Windows">
+      <file>arial.ttf</file>
+      </os>
+    <os name="Mac">
+      <file>Helvetica.dfont</file>
+      </os>
+  </font>
+
+  <font name="SansSerif"
+	comment="Nom de la lletra de pal sec en negreta"
+	font_style="BOLD">
+    <file>DejaVuSans-Bold.ttf</file>
+  </font>
+
+  <font name="SansSerif"
+	comment="Nom de la lletra de pal sec en cursiva"
+	font_style="ITALIC">
+    <file>DejaVuSans-Oblique.ttf</file>
+  </font>
+
+  <font name="SansSerif"
+	comment="Nom de la lletra de pal sec en negreta i cursiva"
+	font_style="BOLD|ITALIC">
+    <file>DejaVuSans-BoldOblique.ttf</file>
+  </font>
+
+  <font name="Emoji"
+	comment="Nom de la lletra per a emojis">
+    <file>TwemojiSVG.ttf</file>
+  </font>
+
+  <font name="EmojiBW"
+	comment="Nom de la lletra per a emojis en blanc i negre">
+    <file>NotoEmoji-Regular.ttf</file>
+  </font>
+
+  <font name="Monospace"
+	comment="Nom de la lletra monoespaiada">
+    <file>DejaVuSansMono.ttf</file>
+  </font>
+
+  <font name="DejaVu"
+	comment="Nom de la lletra DejaVu">
+    <file>DejaVuSans.ttf</file>
+  </font>
+
+  <font name="DejaVu"
+	comment="Nom de la lletra DejaVu (negreta)"
+	font_style="BOLD">
+    <file>DejaVuSans-Bold.ttf</file>
+  </font>
+
+  <font name="DejaVu"
+	comment="Nom de la lletra DejaVu (cursiva)"
+	font_style="ITALIC">
+    <file>DejaVuSans-Oblique.ttf</file>
+  </font>
+
+  <font name="DejaVu"
+	comment="Nom de la lletra DejaVu (negreta i cursiva)"
+	font_style="BOLD|ITALIC">
+    <file>DejaVuSans-BoldOblique.ttf</file>
+  </font>
+
+  <font name="Helvetica"
+	comment="Nom de la lletra Helvetica">
+    <file>DejaVuSans.ttf</file>
+    <os name="Windows">
+      <file>arial.ttf</file>
+      </os>
+    <os name="Mac">
+      <file>arial.ttf</file>
+      </os>
+  </font>
+
+  <font name="Helvetica"
+	comment="Nom de la lletra Helvetica (negreta)"
+	font_style="BOLD">
+    <file>DejaVuSans-Bold.ttf</file>
+    <os name="Windows">
+      <file>arialbd.ttf</file>
+      </os>
+    <os name="Mac">
+      <file>arialbd.ttf</file>
+      </os>
+  </font>
+
+  <font name="Helvetica"
+	comment="Nom de la lletra Helvetica (cursiva)"
+	font_style="ITALIC">
+    <file>DejaVuSans-Oblique.ttf</file>
+    <os name="Windows">
+      <file>ariali.ttf</file>
+      </os>
+    <os name="Mac">
+      <file>ariali.ttf</file>
+      </os>
+  </font>
+
+  <font name="Helvetica"
+	comment="Nom de la lletra Helvetica (negreta i cursiva)"
+	font_style="BOLD|ITALIC">
+    <file>DejaVuSans-BoldOblique.ttf</file>
+    <os name="Windows">
+      <file>arialbi.ttf</file>
+      </os>
+    <os name="Mac">
+      <file>arialbi.ttf</file>
+      </os>
+  </font>
+
+  <font name="OverrideTest"
+	comment="Nom de la lletra per provar la sobreescriptura">
+    <file>times.ttf</file>
+    <file>DejaVuSans.ttf</file>
+  </font>
+
+  <font_size name="Monospace"
+	     comment="Mida de la lletra monoespaiada (punts, o 1/72 de polzada)"
+	     size="8.0"
+	     />
+  <font_size name="Huge"
+	     comment="Mida de la lletra enorme (punts, o 1/72 de polzada)"
+	     size="16.0"
+	     />
+  <font_size name="Large"
+	     comment="Mida de la lletra gran (punts, o 1/72 de polzada)"
+	     size="10.6"
+	     />
+  <font_size name="Medium"
+	     comment="Mida de la lletra mitjana (punts, o 1/72 de polzada)"
+	     size="8.6"
+	     />
+  <font_size name="Small"
+	     comment="Mida de la lletra petita (punts, o 1/72 de polzada)"
+	     size="7.6"
+	     />
+  <font_size name="SmallLSL"
+         comment="Mida de la lletra petita per a l'editor LSL (punts, o 1/72 de polzada)"
+         size="7"
+         />
+  <font_size name="HugeLSL"
+         comment="Mida de la lletra enorme per a l'editor LSL (punts, o 1/72 de polzada)"
+         size="12"
+         />
+</fonts>

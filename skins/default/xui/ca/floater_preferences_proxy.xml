@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Proxy Settings Floater" title="Configuració del servidor intermediari (proxy)">
+	<check_box initial_value="false" label="Utilitza un servidor intermediari HTTP per a les pàgines web" name="web_proxy_enabled"/>
+	<text name="http_proxy_label">
+		Servidor intermediari HTTP:
+	</text>
+	<line_editor name="web_proxy_editor" tool_tip="El nom DNS o l'adreça IP del servidor intermediari HTTP que s'ha d'utilitzar."/>
+	<spinner label="Número de port:" name="web_proxy_port" tool_tip="El port del servidor intermediari HTTP que s'ha d'utilitzar."/>
+	<check_box label="Utilitza un servidor intermediari SOCKS 5 per al trànsit UDP" name="socks_proxy_enabled"/>
+	<text name="socks5_proxy_label">
+		Servidor SOCKS 5:
+	</text>
+	<line_editor name="socks_proxy_editor" tool_tip="El nom DNS o l'adreça IP del servidor intermediari SOCKS 5 que s'ha d'utilitzar."/>
+	<spinner label="Número de port:" name="socks_proxy_port" tool_tip="El port del servidor intermediari SOCKS 5 que s'ha d'utilitzar."/>
+	<text name="socks_auth_label">
+		Autenticació SOCKS:
+	</text>
+	<radio_group name="socks5_auth_type">
+		<radio_item label="Sense autenticació" name="Socks5NoAuth" tool_tip="No es requereix autenticació al servidor intermediari SOCKS 5." value="No"/>
+		<radio_item label="Nom d'usuari/contrasenya" name="Socks5UserPass" tool_tip="Es requereix autenticació (nom d'usuari i contrasenya) al servidor intermediari SOCKS 5." value="UserPass"/>
+	</radio_group>
+	<text name="socks5_username_label">
+		Nom d'usuari:
+	</text>
+	<text name="socks5_password_label">
+		Contrasenya:
+	</text>
+	<line_editor name="socks5_username" tool_tip="Nom d'usuari per a l'autenticació al servidor SOCKS 5"/>
+	<line_editor name="socks5_password" tool_tip="Contrasenya per a l'autenticació al servidor SOCKS 5"/>
+	<text name="other_proxy_label">
+		Altre servidor intermediari per al trànsit HTTP:
+	</text>
+	<radio_group name="other_http_proxy_type">
+		<radio_item label="No utilitzis servidor intermediari" name="OtherNoProxy" tool_tip="El trànsit HTTP no relacionat amb llocs web NO es transmetrà al servidor intermediari." value="No"/>
+		<radio_item label="Utilitza un servidor intermediari HTTP" name="OtherHTTPProxy" tool_tip="El trànsit HTTP no relacionat amb llocs web es transmetrà al servidor intermediari HTTP." value="HTTP"/>
+		<radio_item label="Utilitza un servidor intermediari SOCKS 5" name="OtherSocksProxy" tool_tip="El trànsit HTTP no relacionat amb llocs web es transmetrà al servidor intermediari SOCKS 5." value="SOCKS5"/>
+	</radio_group>
+	<button label="D'acord" label_selected="D'acord" name="OK"/>
+	<button label="Cancel·la" label_selected="Cancel·la" name="Cancel"/>
+</floater>

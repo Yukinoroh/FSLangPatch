@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="panel_login">
+	<string name="ServerComboTooltip">
+		Xarxa existent o URI de la xarxa
+	</string>
+	<layout_stack name="login_widgets">
+		<layout_panel name="login">
+			<text name="log_in_text">
+				Inici de sessió
+			</text>
+			<text name="username_text">
+				Nom d'usuari:
+			</text>
+			<button tool_tip="Elimina el nom d'usuari" name="remove_user_btn"/>
+			<combo_box name="username_combo" tool_tip="El nom d'usuari és el que vas triar en registrar-te, p. ex., bobsmith12 o Steller Sunshine"/>
+			<text name="password_text">
+				Contrasenya:
+			</text>
+		</layout_panel>
+		<layout_panel name="start_location_panel">
+			<text name="start_location_text">
+				Lloc d'inici:
+			</text>
+			<combo_box name="start_location_combo">
+				<combo_box.item label="La meva darrera ubicació" name="MyLastLocation"/>
+				<combo_box.item label="Casa meva" name="MyHome"/>
+				<combo_box.item label="&lt;Escriu el nom de la regió&gt;" name="Typeregionname"/>
+			</combo_box>
+		</layout_panel>
+		<layout_panel name="grid_panel">
+			 <text name="grid_builder_text" Width="272">
+				 + Feu clic per afegir més graelles
+			 </text>
+			 <text name="grid_login_text">
+				Connecta a la xarxa:
+			 </text>
+		</layout_panel>
+		
+		
+		
+		<layout_panel name="links_login_panel">
+			<text name="create_new_account_text">
+				Crea un compte
+			</text>
+			<text name="forgot_password_text">
+				Has oblidat el teu nom d'usuari o la teva contrasenya?
+			</text>
+			<button label="Inicia la sessió" name="connect_btn"/>
+			<check_box label="Recorda l'usuari" name="remember_username_check" />
+			<check_box label="Recorda la contrasenya" name="remember_check"/>
+		</layout_panel>
+		<layout_panel name="mode_selection">
+			<text name="mode_selection_text">
+				Selecció de mode
+			</text>
+			<combo_box name="mode_combo" tool_tip="Tria el mode de configuració amb el qual estiguis més familiaritzat/da. El mode per defecte serà el de Firestorm">
+				<combo_box.item label="Híbrid" name="Hybrid"/>
+			</combo_box>
+		</layout_panel>
+	</layout_stack>
+</panel>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Attachment Pie">
+	<menu_item_call label="Toca" name="Attachment Object Touch"/>
+	<menu_item_call label="Mostra a l'inventari" name="Show original"/>
+	<menu_item_call label="Edita..." name="Edit..."/>
+	<menu_item_call label="Treu" name="Detach"/>
+	<context_menu label="Exporta com a" name="Export Menu">
+		<menu_item_call label="Còpia de seguretat" name="Backup"/>
+		<menu_item_call label="Collada" name="Collada"/>
+	</context_menu>
+	<menu_item_call label="Seu" name="Sit Down Here"/>
+	<menu_item_call label="Aixeca't" name="Stand Up"/>
+	<context_menu label="Aparença" name="AppearanceSubmenu">
+		<menu_item_call label="Porto posat..." name="NowWearing"/>
+		<menu_item_call label="Canvia de conjunt" name="Change Outfit"/>
+		<menu_item_call label="Edita la forma" name="Edit Shape"/>
+		<menu_item_call label="Edita el conjunt" name="Edit Outfit Parts"/>
+		<menu_item_call label="Alçada flotant" name="Hover Height"/>
+		<menu_item_call label="Reinicia l'esquelet" name="Reset Skeleton"/>
+		<menu_item_call label="Reinicia esquelet i animacions" name="Reset Skeleton And Animations"/>
+		<menu_item_call label="Reinicia el LOD del mesh" name="Reset Mesh LOD"/>
+	</context_menu>
+	<context_menu label="Treu" name="Take Off &gt;">
+		<context_menu label="Roba" name="Clothes &gt;">
+			<menu_item_call label="Camisa" name="Shirt"/>
+			<menu_item_call label="Pantalons" name="Pants"/>
+			<menu_item_call label="Faldilla" name="Skirt"/>
+			<menu_item_call label="Sabates" name="Shoes"/>
+			<menu_item_call label="Mitjons" name="Socks"/>
+			<menu_item_call label="Jaqueta" name="Jacket"/>
+			<menu_item_call label="Guants" name="Gloves"/>
+			<menu_item_call label="Samarreta interior" name="Self Undershirt"/>
+			<menu_item_call label="Calçotets" name="Self Underpants"/>
+			<menu_item_call label="Tatuatge" name="Self Tattoo"/>
+			<menu_item_call label="Física" name="Self Physics"/>
+			<menu_item_call label="Alfa" name="Self Alpha"/>
+			<menu_item_call label="Tota la roba" name="All Clothes"/>
+		</context_menu>
+		<context_menu label="HUD" name="Detach Self HUD" />
+		<context_menu label="Treu..." name="Detach Self" />
+		<menu_item_call label="Treu-ho tot" name="Detach All"/>
+	</context_menu>
+	<menu_item_call label="Seu/Aixeca't" name="Sit stand"/>
+	<menu_item_call label="Vola/Aterra" name="Fly land"/>
+	<menu_item_call label="Atura les animacions" name="Stop Animating My Avatar"/>
+	<context_menu label="Comunitat" name="CommunitySubmenu">
+		<menu_item_call label="Amics..." name="Friends..."/>
+		<menu_item_call label="Grups..." name="Groups..."/>
+		<menu_item_call label="Perfil..." name="Profile..."/>
+	</context_menu>
+	<menu_item_call label="Dump XML" name="Dump XML"/>
+	<menu_item_call label="Perfil de l'objecte" name="Object Inspect"/>
+	<menu_item_call label="Inspecciona" name="Object_Inspect_Floater"/>
+	<menu_item_call label="Info dels scripts" name="ScriptInfo"/>
+	<menu_item_call label="No renderis" name="Derender"/>
+	<menu_item_call label="No renderis (permanent)" name="DerenderPermanent"/>
+	<menu_item_call label="Depuració (Textures)..." name="Debug..."/>
+	<menu_item_call label="Refresca la textura" name="Texture Refresh"/>
+	<menu_item_call label="Deixa anar" name="Drop"/>
+	<menu_item_call label="Bloca l'emissor de partícules" name="Mute Particle"/>
+</context_menu>

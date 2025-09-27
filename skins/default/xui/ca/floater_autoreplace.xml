@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <floater name="autoreplace_floater" title="Paràmetres de substitució automàtica">
 	<check_box label="Activar la substitució automàtica" name="autoreplace_enable" tool_tip="A mesura que escriguis, cada paraula clau introduïda serà substituïda per la substitució corresponent, si n'hi ha."/>
-	<button name="autoreplace_import_list" width="115" left_pad="5" label="Importar une lista..." tool_tip="Carregar a partir d'un fitxer una llista previament exportada."/>
-	<button name="autoreplace_export_list" width="115" left_pad="5" label="Exportar une llista..." tool_tip="Desar la llista seleccionada en un fitxer perquè puguis compartir-la."/>
+	<button name="autoreplace_import_list" width="115" left_pad="5" label="Importar llista..." tool_tip="Carregar a partir d'un fitxer una llista previament exportada."/>
+	<button name="autoreplace_export_list" width="115" left_pad="5" label="Exportar llista..." tool_tip="Desar la llista seleccionada en un fitxer perquè puguis compartir-la."/>
 	<button name="autoreplace_new_list" width="115" left_pad="5" label="Nova llista..." tool_tip="Crear una nova llista."/>
-	<button name="autoreplace_delete_list" width="115" left_pad="5" label="Suprimir la llista" tool_tip="Suprimir la llista seleccionada."/>
+	<button name="autoreplace_delete_list" width="115" left_pad="5" label="Suprimir llista" tool_tip="Suprimir la llista seleccionada."/>
 	<button name="autoreplace_list_up" tool_tip="Augmentar la prioritat d'aquesta llista."/>
 	<button name="autoreplace_list_down" tool_tip="Disminuir la prioritat d'aquesta llista."/>
 	<scroll_list name="autoreplace_list_replacements">

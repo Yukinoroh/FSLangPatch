@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<panel label="Copia de seguretat" name="backup">
+	<text name="backup_path_label" width="180">
+		Camí de la còpia de seguretat:
+	</text>
+	<button label="Defineix" name="set_backup_settings_path"/>
+	<layout_stack name="ls_account_specific_label">
+		<layout_panel name="lp_account_specific_label">
+			<text name="account_specific_label">
+				Actualment no has iniciat sessió. Recorda que algunes configuracions del teu compte només es poden desar i restaurar quan has iniciat sessió. Tot i així, pots fer una còpia de seguretat de les configuracions que s'apliquen a tots els comptes sense iniciar sessió.
+			</text>
+		</layout_panel>
+		<layout_panel name="lp_buttons">
+			<text name="settings_restored_label">
+				Grups de configuració que es desaran:
+			</text>
+			<layout_stack name="ls_list_view_stack">
+				<layout_panel name="lp_restore_global_files">
+					<scroll_list name="restore_global_files_list">
+						<column label="Fitxers generals:" name="restore_global_files_label"/>
+						<column label="Valor" name="value"/>
+						<row name="restore_global_row_login">
+							<column name="restore_global_files_label">Imatge d'inici de sessió</column>
+						</row>
+						<row name="restore_global_row_toolbar">
+							<column name="restore_global_files_label">Barra d'eines</column>
+						</row>
+						<row name="restore_global_row_viewer">
+							<column name="restore_global_files_label">Interfície d'usuari</column>
+						</row>
+					</scroll_list>
+				</layout_panel>
+				<layout_panel name="lp_restore_folders">
+					<scroll_list name="restore_folders_list">
+						<column label="Carpetes:" name="restore_global_folders_label"/>
+						<row name="restore_folders_row_crashguards">
+							<column name="restore_global_folders_label">Protecció contra errors</column>
+						</row>
+						<row name="restore_folders_row_favorites">
+							<column name="restore_global_folders_label">Preferits</column>
+						</row>
+						<row name="restore_folders_row_spellcheck">
+							<column name="restore_global_folders_label">Corrector ortogràfic</column>
+						</row>
+						<row name="restore_folders_row_windlight">
+							<column name="restore_global_folders_label">Entorn (Obligatori)</column>
+						</row>
+						<row name="restore_folders_row_daycycles">
+							<column name="restore_global_folders_label">Entorn: cicle diari</column>
+						</row>
+						<row name="restore_folders_row_skies">
+							<column name="restore_global_folders_label">Entorn: Cel</column>
+						</row>
+						<row name="restore_folders_row_waters">
+							<column name="restore_global_folders_label">Entorn: aigua</column>
+						</row>
+						<row name="restore_folders_row_presets" value="presets">
+							<column name="restore_global_folders_label">Preajustaments</column>
+						</row>
+					</scroll_list>
+				</layout_panel>
+			</layout_stack>
+			<button label="Escull Tot" name="select_all_button" />
+			<button label="Escull Res" name="deselect_all_button"/>
+			<check_box label="Restaurar configuració global" name="restore_global_settings_checkbox"/>
+			<check_box label="Restaurar configuració del compte" name="restore_account_settings_checkbox"/>
+			<check_box label="Restaura la configuració per usuari" name="restore_per_account_settings_checkbox"/>
+	
+		   <button label="Desa la Configuració" name="backup_settings" width="160"/>
+           <button label="ReCarregar" name="restore_settings"/>
+       		
+		</layout_panel>
+	</layout_stack>
+	
+	
+	
+	
+	
+	
+
+</panel>

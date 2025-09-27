@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="General" name="general_tab">
+	<panel.string name="help_text">
+		La pestanya 'General' conté informació general sobre el grup, la llista de membres, la configuració general del grup i les opcions dels membres.
+
+Posa el cursor sobre una opció per obtenir ajuda.
+	</panel.string>
+	<panel.string name="group_info_unchanged">
+		S'ha canviat la informació general del grup.
+	</panel.string>
+	<panel.string name="incomplete_member_data_str">
+		S'estan obtenint les dades dels membres
+	</panel.string>
+	<panel name="group_general_panel">
+		<text name="group_key_label">
+			Clau:
+		</text>
+		<text_editor name="group_key" label="Clau del grup:" initial_value="(S'està carregant...)"/>
+		<button name="copy_uri" label="Copia l'URI"/>
+		<text name="prepend_founded_by">
+			Fundador:
+		</text>
+		<text name="founder_name" initial_value="(S'està carregant...)"/>
+		<button name="copy_name" label="Copia el nom"/>
+		<texture_picker name="insignia" tool_tip="Fes clic per triar una imatge"/>
+		<text_editor name="charter">
+			Estatuts del grup
+		</text_editor>
+		<text name="join_cost_text">
+			Gratuït
+		</text>
+		<button label="Uneix-t'hi!" name="btn_join"/>
+		<name_list name="visible_members">
+			<name_list.columns label="Nom" name="name"/>
+			<name_list.columns label="Títol" name="title"/>
+			<name_list.columns label="Estat" name="status"/>
+		</name_list>
+		<layout_stack name="group_preferences_layout">
+			<layout_panel name="user_preferences_container">
+				<text name="my_group_settngs_label">
+					La meva configuració del grup
+				</text>
+				<check_box label="Mostra al perfil" name="list_groups_in_profile" tool_tip="Marca-ho si vols mostrar el grup al teu perfil"/>
+				<check_box label="Rep els avisos del grup" name="receive_notices" tool_tip="Marca-ho si vols rebre avisos d'aquest grup. Desmarca-ho si creus que el grup fa correu brossa."/>
+				<check_box label="Rep els missatges del grup" name="receive_chat" tool_tip="Marca-ho si vols participar al xat del grup"/>
+				<text name="active_title_label">
+					Títol actual:
+				</text>
+				<combo_box name="active_title" tool_tip="Estableix el títol que es mostrarà quan el grup estigui actiu."/>
+			</layout_panel>
+			<layout_panel name="group_preferences_container">
+				<text name="group_settngs_label">
+					Configuració del grup
+				</text>
+				<check_box label="Mostra a la cerca" name="show_in_group_list" tool_tip="Permet que la gent vegi aquest grup als resultats de la cerca"/>
+				<check_box label="Tothom s'hi pot unir" name="open_enrollement" tool_tip="El grup ofereix admissió gratuïta per a tothom i no requereix invitació."/>
+				<check_box label="Cost d'unió" name="check_enrollment_fee" tool_tip="Estableix una quota per unir-se al grup."/>
+				<spinner name="spin_enrollment_fee" tool_tip="Els nous membres han de pagar aquesta quantitat per unir-se al grup si s'ha seleccionat 'Cost d'unió'."/>
+				<combo_box name="group_mature_check" tool_tip="Les classificacions de maduresa determinen el tipus de contingut i comportament permesos al grup">
+					<combo_item name="select_mature">
+						- Selecciona una classificació d'edat -
+					</combo_item>
+					<combo_box.item label="Contingut moderat" name="mature"/>
+					<combo_box.item label="Contingut general" name="pg"/>
+				</combo_box>
+			</layout_panel>
+		</layout_stack>
+	</panel>
+</panel>

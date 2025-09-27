@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu_bar name="Main Menu">
+	<menu label="Avatar" name="Me">
+		<menu_item_call label="El teu compte" name="Manage Account"/>
+		<menu_item_call label="Anuncis del Marketplace..." name="MarketplaceListings"/>
+		<menu_item_call label="Compra L$" name="Buy and Sell L$"/>
+		<menu_item_call label="Nova finestra d'inventari" name="NewInventoryWindow"/>
+		<menu_item_check label="Inventari" name="Inventory"/>
+		<menu_item_check label="Carpetes protegides" name="Protected Folders"/>
+		<menu_item_check label="Conjunts preferits" name="WearableFavorites"/>
+		<menu_item_call label="Llocs" name="Picks"/>
+		<menu_item_call label="Experiències" name="Experiences"/>
+		<menu_item_call label="Perfil" name="Profile"/>
+		<menu_item_call label="Porto posat..." name="NowWearing"/>
+		<menu_item_check label="Aparença" name="ChangeOutfit"/>
+		<menu label="Treu-te" name="Take Off &gt;">
+			<menu label="Roba" name="Clothes &gt;">
+				<menu_item_call label="Camisa" name="Shirt"/>
+				<menu_item_call label="Pantalons" name="Pants"/>
+				<menu_item_call label="Faldilla" name="Skirt"/>
+				<menu_item_call label="Sabates" name="Shoes"/>
+				<menu_item_call label="Mitjons" name="Socks"/>
+				<menu_item_call label="Jaqueta" name="Jacket"/>
+				<menu_item_call label="Guants" name="Gloves"/>
+				<menu_item_call label="Samarreta interior" name="Self Undershirt"/>
+				<menu_item_call label="Calçotets" name="Self Underpants"/>
+				<menu_item_call label="Tatuatge" name="Self Tattoo"/>
+				<menu_item_call label="Física" name="Self Physics"/>
+				<menu_item_call label="Alfa" name="Self Alpha"/>
+				<menu_item_call label="Tota la roba" name="All Clothes"/>
+			</menu>
+			<menu label="HUD" name="Avatar Detach HUD"/>
+			<menu label="Desprèn" name="Avatar Detach"/>
+			<menu_item_call label="Desprèn-ho tot" name="Detach All"/>
+		</menu>
+		<menu_item_call label="Tria un avatar" name="Avatar Picker"/>
+		<menu_item_call label="Altura de flotació" name="HoverHeight"/>
+		<menu label="Moviment" name="Movement">
+			<menu_item_call label="Aixeca't" name="Stand up"/>
+			<menu_item_call label="Seu aquí" name="Sit Down Here"/>
+			<menu_item_check label="Vola" name="Fly"/>
+			<menu_item_call label="Deixa de volar" name="Stop flying"/>
+			<menu_item_check label="Sempre córrer" name="Always Run"/>
+			<menu_item_check label="Força seure a terra" name="Force Toggle Sitting"/>
+			<menu_item_check label="Bloqueja el moviment" name="Move Lock"/>
+			<menu_item_check label="Salt ràpid" name="Avatar Ignore Prejump"/>
+		</menu>
+		<menu_item_check label="Controls de moviment" name="Movement Controls"/>
+		<menu_item_check label="Controls de càmera" name="Camera Controls"/>
+		<menu label="Salut de l'avatar" name="avhealth">
+			<menu_item_call label="Atura les animacions de l'avatar" name="Stop Animating My Avatar"/>
+			<menu_item_call label="Atura les animacions i revoca permisos" name="Stop Animating My Avatar With Revoke"/>
+			<menu_item_call label="Des-deforma l'avatar" name="undeform_avatar"/>
+			<menu_item_call label="Reinicia l'esquelet" name="Reset Skeleton"/>
+			<menu_item_call label="Reinicia esquelet i animacions" name="Reset Skeleton And Animations"/>
+			<menu_item_call label="Força l'actualització de l'aparença (Rebake)" name="Rebake Texture"/>
+			<menu_item_call label="Refresca els adjunts" name="Refresh Attachments"/>
+			<menu_item_call label="Reinicia l'avatar masculí per defecte" name="ResetDefaultAvM"/>
+			<menu_item_call label="Reinicia l'avatar femení per defecte" name="ResetDefaultAvF"/>
+			<menu_item_check label="Mostra la informació de complexitat" name="Avatar Draw Info"/>
+			<menu_item_call label="Els meus scripts..." name="MyScripts"/>
+			<menu_item_call label="Mesurador de lag" name="Lag Meter"/>
+			<menu_item_call label="Recrea el pont LSL" name="Recreate LSL Bridge"/>
+		</menu>
+		<menu_item_call label="Instantània" name="Take Snapshot"/>
+		<menu_item_call label="Instantània 360°" name="Capture 360"/>
+		<menu_item_call label="Seguiment de diners" name="money_tracker"/>
+		<menu_item_call label="Suport per a poses..." name="pose_stand"/>
+		<menu_item_call label="Preferències" name="Preferences"/>
+		<menu_item_call label="Botons de la barra d'eines" name="Toolbar Buttons"/>
+		<menu_item_check label="Mostra els HUDs adjunts" name="Show HUD Attachments"/>
+		<menu_item_check label="Mostra la Interfície d'Usuari" name="Show User Interface"/>
+		<menu_item_call label="Demana l'estat d'Administrador" name="Request Admin Options"/>
+		<menu_item_call label="Surt de l'estat d'Administrador" name="Leave Admin Options"/>
+		<menu_item_call label="Surt de [APP_NAME]" name="Quit"/>
+	</menu>
+	<menu label="Comunicació" name="Communicate">
+		<menu label="Estat de connexió" name="Status">
+			<menu_item_check label="Absent" name="Away"/>
+			<menu_item_check label="No molestar" name="Do Not Disturb"/>
+			<menu_item_check label="Resposta automàtica" name="Set Autorespond"/>
+			<menu_item_check label="Resposta automàtica a no amics" name="Set Autorespond to non-friends"/>
+			<menu_item_check label="Rebutja les ofertes de teletransport" name="Automatically reject teleport offers"/>
+			<menu_item_check label="Rebutja totes les invitacions de grup" name="Reject all group invites"/>
+			<menu_item_check label="Rebutja totes les sol·licituds d'amistat" name="Reject all friendship requests"/>
+		</menu>
+		<menu_item_call label="Els meus amics" name="My Friends"/>
+		<menu_item_check label="Contactes" name="Contacts"/>
+		<menu_item_call label="Conjunts de contactes" name="Contact Sets"/>
+		<menu_item_call label="Grups" name="My Groups"/>
+		<menu_item_check label="Xat proper..." name="Nearby Chat"/>
+		<menu_item_check label="Persones" name="People"/>
+		<menu_item_check label="Converses" name="Conversations"/>
+		<menu_item_check label="Gestos" name="Gestures"/>
+		<menu label="Modificació de veu" name="VoiceMorphing">
+			<menu_item_check label="Sense modificació de veu" name="NoVoiceMorphing"/>
+			<menu_item_check label="Previsualitza..." name="Preview"/>
+			<menu_item_call label="Subscriu-te..." name="Subscribe"/>
+			<menu_item_call label="Avantatge Premium..." name="PremiumPerk"/>
+		</menu>
+		<menu_item_check name="Conversation Log..." label="Registre de converses..."/>
+		<menu_item_check label="Veus properes" name="Nearby Voice"/>
+		<menu_item_call label="Llista de bloquejats" name="Block List"/>
+	</menu>
+	<menu label="Món" name="World">
+		<menu_item_call label="Resincronitza les animacions" name="Resync Animations"/>
+		<menu_item_call label="Avatars propers" name="Active Speakers"/>
+		<menu_item_check label="Radar" name="Radar"/>
+		<menu_item_call label="Historial de teletransportacions" name="Teleport History"/>
+		<menu_item_check label="Llocs" name="Places"/>
+		<menu_item_call label="Destinacions" name="Destinations"/>
+		<menu_item_call label="Esdeveniments" name="Events"/>
+		<menu_item_check label="Minimapa" name="Mini-Map"/>
+		<menu_item_check label="Mapa del món" name="World Map"/>
+		<menu_item_check label="Seguiment de la regió" name="Region Tracker"/>
+		<menu_item_check label="Títol del flux" name="Stream Title"/>
+		<menu_item_call label="Crea un punt de referència aquí" name="Create Landmark Here"/>
+		<menu_item_call label="Perfil del lloc" name="Place Profile"/>
+		<menu_item_call label="Quant al terreny" name="About Land"/>
+		<menu_item_call label="Detalls de la regió" name="RegionEstate"/>
+		<menu_item_call label="Estableix la llar aquí" name="Set Home to Here"/>
+		<menu_item_call label="Compra aquest terreny" name="Buy Land"/>
+		<menu_item_call label="Els meus terrenys" name="My Land"/>
+		<menu_item_call label="La meva Llar Linden..." name="Linden Home"/>
+		<menu label="Mostra més" name="LandShow">
+		<menu_item_check label="Línies de prohibició" name="Ban Lines"/>
+		<menu_item_check label="Balises" name="beacons"/>
+		<menu_item_check label="Línies de propietat" name="Property Lines"/>
+		<menu_item_check label="Propietaris del terreny" name="Land Owners"/>
+		<menu_item_check label="Coordenades" name="Coordinates"/>
+		<menu_item_check label="Drets de la parcel·la" name="Parcel Properties"/>
+		<menu_item_check label="Menú avançat" name="Show Advanced Menu"/>
+	</menu>
+	<menu_item_check label="Augmenta la velocitat gràfica..." name="Performance"/>
+	<menu_item_call label="Teletransporta't a casa" name="Teleport Home"/>
+	<menu label="Entorn" name="Environment">
+		<menu_item_check label="Sortida de sol" name="Sunrise"/>
+		<menu_item_check label="Migdia" name="Noon"/>
+		<menu_item_check label="Posta de sol" name="Sunset"/>
+		<menu_item_check label="Mitjanit" name="Midnight"/>
+		<menu_item_check label="Utilitza l'entorn compartit" name="Use Shared Environment"/>
+		<menu_item_call label="El meu entorn..." name="my_environs"/>
+		<menu_item_call label="Il·luminació personal..." name="adjustment_tool"/>
+		<menu_item_check label="Pausa els núvols" name="pause_clouds"/>
+		<menu label="Importació massiva" name="WL Bulk Import">
+			<menu_item_call label="Dies..." name="WL Bulk Import Days"/>
+			<menu_item_call label="Cels..." name="WL Bulk Import Skies"/>
+			<menu_item_call label="Aigües..." name="WL Bulk Import Water"/>
+		</menu>
+	</menu>
+	<!-- desactivats en la versió anglesa   
+	    <menu
+	     create_jump_keys="true"
+	     label="Environment Editor"
+	     name="Environment Editor"
+	     tear_off="true">
+	     	
+	     	<menu_item_call
+	     	 label="Environment Settings..."
+	     	 name="Environment Settings">
+	     	 	<menu_item_call.on_click
+	     	 	 function="World.EnvSettings"
+                 parameter="editor"/>
+          <menu_item_call.on_enable
+           function="RLV.EnableIfNot"
+           parameter="setenv" />
+	     	</menu_item_call>
+	     	
+	     	<menu_item_separator/>
+
+	     	<menu
+	     	 name="Water Presets"
+	     	 label="Water Presets">
+	     	 	<menu_item_call
+	     	 	 label="New preset..."
+	     	 	 name="new_water_preset">
+	     	 	 	<menu_item_call.on_click
+	     	 	 	function="World.EnvPreset"
+	     	 	 	parameter="new_water"/>
+            <menu_item_call.on_enable
+            function="RLV.EnableIfNot"
+            parameter="setenv" />
+	     	 	</menu_item_call>
+	     	 	<menu_item_call
+	     	 	 label="Edit preset..."
+	     	 	 name="edit_water_preset">
+	     	 	 	<menu_item_call.on_click
+	     	 	 	function="World.EnvPreset"
+	     	 	 	parameter="edit_water"/>
+            <menu_item_call.on_enable
+            function="RLV.EnableIfNot"
+            parameter="setenv" />
+          </menu_item_call>
+	     	</menu>
+
+	     	<menu
+	     	 name="Sky Presets"
+	     	 label="Sky Presets">
+	     	 	<menu_item_call
+	     	 	 label="New preset..."
+	     	 	 name="new_sky_preset">
+	     	 	 	<menu_item_call.on_click
+	     	 	 	function="World.EnvPreset"
+	     	 	 	parameter="new_sky"/>
+            <menu_item_call.on_enable
+            function="RLV.EnableIfNot"
+            parameter="setenv" />
+          </menu_item_call>
+	     	 	<menu_item_call
+	     	 	 label="Edit preset..."
+	     	 	 name="edit_sky_preset">
+	     	 	 	<menu_item_call.on_click
+	     	 	 	function="World.EnvPreset"
+	     	 	 	parameter="edit_sky"/>
+            <menu_item_call.on_enable
+            function="RLV.EnableIfNot"
+            parameter="setenv" />
+          </menu_item_call>
+	     	</menu>
+	     	
+	     	<menu
+	     	 name="Day Presets"
+	     	 label="Day Presets">
+	     	 	<menu_item_call
+	     	 	 label="New preset..."
+	     	 	 name="new_day_preset">
+	     	 	 	<menu_item_call.on_click
+	     	 	 	function="World.EnvPreset"
+	     	 	 	parameter="new_day_cycle"/>
+            <menu_item_call.on_enable
+            function="RLV.EnableIfNot"
+            parameter="setenv" />
+          </menu_item_call>
+	     	 	<menu_item_call
+	     	 	 label="Edit preset..."
+	     	 	 name="edit_day_preset">
+	     	 	 	<menu_item_call.on_click
+	     	 	 	function="World.EnvPreset"
+	     	 	 	parameter="edit_day_cycle"/>
+            <menu_item_call.on_enable
+            function="RLV.EnableIfNot"
+            parameter="setenv" />
+          </menu_item_call>
+	     	</menu>
+	    </menu>
+-->    
+	
+	
+	<menu name="photo_and_video" label="Foto i Vídeo">
+		<menu_item_call label="Eines de foto" name="phototools_item_call"/>
+		<menu_item_call label="Eines de càmera" name="cameratools_item_call"/>
+		<menu_item_check label="Bloqueja el focus de la profunditat de camp" name="lock_focus_point"/>
+	</menu>
+	<menu_item_call label="Cerca a l'àrea" name="area_search"/>
+	<menu_item_call label="Explorador de sons" name="Sound Explorer"/>
+	<menu_item_call label="Explorador d'animacions" name="Animation Explorer"/>
+	<menu_item_call label="Llista negra d'actius" name="asset_blacklist"/>
+	<menu_item_call label="Paràmetres de renderització de l'avatar" name="Avatar Render Settings"/>
+	<menu_item_check label="Mostra sempre els amics completament" name="Always show Friends normally"/>
+	<menu_item_check label="Mostra només els amics" name="Render Friends Only"/>
+	</menu>
+	<menu label="Construeix" name="BuildTools">
+		<menu_item_check label="Construeix" name="Show Build Tools"/>
+		<menu label="Tria una eina de construcció" name="Select Tool">
+			<menu_item_call label="Enfoca" name="Focus"/>
+			<menu_item_call label="Mou" name="Move"/>
+			<menu_item_call label="Edita" name="Edit"/>
+			<menu_item_call label="Crea" name="Create"/>
+			<menu_item_call label="Edita el terreny" name="Land"/>
+		</menu>
+		<menu label="Selecciona elements" name="Select Elements">
+			<menu_item_call label="Selecciona la següent part o cara" name="Select Next Part or Face"/>
+			<menu_item_call label="Selecciona la part o cara anterior" name="Select Previous Part or Face"/>
+			<menu_item_call label="Inclou la següent part o cara" name="Include Next Part or Face"/>
+			<menu_item_call label="Inclou la part o cara anterior" name="Include Previous Part or Face"/>
+		</menu>
+		<menu_item_call label="Enllaça" name="Link"/>
+		<menu_item_call label="Desenllaça" name="Unlink"/>
+		<menu_item_check label="Edita les parts enllaçades" name="Edit Linked Parts"/>
+		<menu label="Selecciona les parts enllaçades" name="Select Linked Parts">
+			<menu_item_call label="Selecciona la següent part" name="Select Next Part"/>
+			<menu_item_call label="Selecciona la part anterior" name="Select Previous Part"/>
+			<menu_item_call label="Inclou la següent part" name="Include Next Part"/>
+			<menu_item_call label="Inclou la part anterior" name="Include Previous Part"/>
+		</menu>
+		<menu_item_call label="Enfoca la selecció" name="Focus on Selection"/>
+		<menu_item_call label="Fes zoom a la selecció" name="Zoom to Selection"/>
+		<menu label="Objecte" name="Object">
+			<menu_item_call label="Compra" name="Menu Object Buy"/>
+			<menu_item_call label="Agafa" name="Menu Object Take"/>
+			<menu_item_call label="Agafa una còpia" name="Take Copy"/>
+			<menu_item_call label="Duplica" name="Duplicate"/>
+			<menu_item_call label="Edita les partícules" name="Menu Object Edit Particles"/>
+			<menu_item_call label="Desa a l'inventari" name="Save Object Back to My Inventory"/>
+			<menu_item_call label="Desa l'objecte a l'inventari" name="Save Object Back to My Inventory"/>
+			<menu_item_call label="Desa el contingut de l'objecte" name="Save Object Back to Object Contents"/>
+			<menu_item_call label="Retorna l'objecte" name="Return Object back to Owner"/>
+			<menu label="Exporta com a" name="Export Menu">
+				<menu_item_call label="Còpia de seguretat" name="Backup"/>
+				<menu_item_call label="Collada" name="Collada"/>
+			</menu>
+		</menu>
+		<menu label="Scripts" name="Scripts">
+			<menu_item_call label="Mostra avisos/errors dels scripts" name="Script Debug"/>
+			<menu_item_call label="Informació dels scripts (Comptador)" name="Script Info"/>
+			<menu_item_call label="Recompila els scripts (Mono)" name="Mono"/>
+			<menu_item_call label="Recompila els scripts (LSL)" name="LSL"/>
+			<menu_item_call label="Reinicia els scripts" name="Reset Scripts"/>
+			<menu_item_call label="Executa els scripts" name="Set Scripts to Running"/>
+			<menu_item_call label="Atura els scripts" name="Set Scripts to Not Running"/>
+			<menu_item_call label="Suprimeix els scripts de la selecció" name="Remove Scripts From Selection"/>
+		</menu>
+		<menu label="Cerca de camins" name="Pathfinding">
+			<menu_item_call label="Conjunts d'enllaços..." name="pathfinding_linksets_menu_item"/>
+			<menu_item_call label="Personatges..." name="pathfinding_characters_menu_item"/>
+			<menu_item_call label="Revisió / prova..." name="pathfinding_console_menu_item"/>
+			<menu_item_call label="Reconstrueix la regió" name="pathfinding_rebake_navmesh_item"/>
+		</menu>
+		<menu label="Opcions" name="Options">
+		 <menu_item_check label="Mostra els permisos addicionals" name="DebugPermissions"/>
+		 <menu_item_check label="Selecciona només els meus objectes" name="Select Only My Objects"/>
+		 <menu_item_check label="Selecciona només objectes movibles" name="Select Only Movable Objects"/>
+		 <menu_item_check label="Selecciona només objectes bloquejats" name="Select Only Locked Objects"/>
+		 <menu_item_check label="Selecciona només objectes copiables" name="Select Only Copyable Objects"/>
+		 <menu_item_check label="Inclou objectes propietat del grup" name="Include Group-Owned Objects"/>
+		 <menu_item_check label="Selecciona per entorn" name="Select By Surrounding"/>
+		 <menu_item_check label="Mostra la forma física" name="Show Physics Shape"/>
+		 <menu_item_check label="Mostra els contorns de la selecció" name="Show Selection Outlines"/>
+		 <menu_item_check label="Mostra la selecció oculta" name="Show Hidden Selection"/>
+		 <menu_item_check label="Mostra el radi de llum per a la selecció" name="Show Light Radius for Selection"/>
+		 <menu_item_check label="Mostra el feix de selecció" name="Show Selection Beam"/>
+		 <menu_item_check label="Ajusta a la graella" name="Snap to Grid"/>
+		 <menu_item_call label="Ajusta XY de l'objecte a la graella" name="Snap Object XY to Grid"/>
+		 <menu_item_call label="Usa la selecció per a la graella" name="Use Selection for Grid"/>
+		 <menu_item_call label="Opcions de la graella..." name="Grid Options"/>
+		 <menu_item_call label="Estableix els permisos per defecte..." name="Set default permissions"/>
+	</menu>
+	<menu label="Puja" name="Upload">
+		<menu_item_call label="Imatge (L$[COST])..." name="Upload Image"/>
+		<menu_item_call label="So (L$[COST])..." name="Upload Sound"/>
+		<menu_item_call label="Animació (L$[COST])..." name="Upload Animation"/>
+		<menu_item_call label="Model de malla..." name="Upload Model"/>
+		<menu_item_call label="Massiu..." name="Bulk Upload"/>
+		<menu_item_call label="Importa..." name="import linkset"/>
+	</menu>
+	<menu_item_call label="Malla local" name="local_mesh"/>
+	<menu_item_call label="Desfés" name="Undo"/>
+	<menu_item_call label="Refés" name="Redo"/>
+	</menu>
+	<menu label="Contingut" name="Content">
+		<menu_item_check label="Cerca" name="Search"/>
+		<menu_item_call label="Marketplace de SL" name="SL Marketplace"/>
+		<menu_item_call label="LindenXchange" name="LindenXchange"/>
+		<menu_item_call label="Biblioteca de scripts" name="Script Library"/>
+		<menu_item_call label="Blog de Firestorm" name="Firestorm Blog"/>
+		<menu_item_call label="Flickr de Firestorm" name="Firestorm Flickr"/>
+		<menu_item_call label="YouTube de Firestorm" name="Firestorm YouTube"/>
+		<menu_item_call label="Twitter de Firestorm" name="Firestorm Twitter"/>
+		<menu_item_call label="Plurk de Firestorm" name="Firestorm Plurk"/>
+		<menu_item_call label="Missatge del dia" name="Firestorm MoTD"/>
+	</menu>
+	<menu label="Ajuda" name="Help">
+		<menu_item_check label="Activa els consells de la interfície" name="Enable Hints"/>
+		<menu_item_call label="Wiki de Firestorm" name="Firestorm Wiki"/>
+		<menu_item_call label="Resolució de problemes" name="Troubleshooting"/>
+		<menu_item_call label="Uneix-te al grup de suport de Firestorm" name="firestorm_support_group"/>
+		<menu_item_call label="Horari de classes de Firestorm" name="Firestorm Classes Schedule"/>
+		<menu_item_call label="Calendari d'esdeveniments de Firestorm" name="Firestorm Events Calendar"/>
+		<menu_item_check label="Com fer..." name="How To"/>
+		<!--       <menu_item_call
+         label="Second Life Help"
+         name="Second Life Help">
+             <menu_item_call.on_click
+             function="PromptShowURL"
+             name="script_library_url"
+             parameter="WebLaunchExternalTarget,https://support.secondlife.com/" />
+        </menu_item_call>-->
+		<menu_item_call label="Ajuda de [CURRENT_GRID]" name="current_grid_help"/>
+		<menu_item_call label="Quant a [CURRENT_GRID]" name="current_grid_about"/>
+		<!--        <menu_item_call
+         label="Tutorial"
+         name="Tutorial">
+            <menu_item_call.on_click
+             function="Floater.Show"
+             parameter="hud" />
+        </menu_item_call>
+		<menu_item_separator/>
+        <menu_item_call
+             label="Knowledge Base"
+             name="Knowledge Base">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+            parameter="http://community.secondlife.com/t5/English-Knowledge-Base/Second-Life-User-s-Guide/ta-p/1244857"/>
+        </menu_item_call>
+        <menu_item_call
+             label="Wiki"
+             name="Wiki">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="http://wiki.secondlife.com"/>
+        </menu_item_call>
+        <menu_item_call
+             label="Community Forums"
+             name="Community Forums">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="http://community.secondlife.com/t5/Forums/ct-p/Forums"/>
+        </menu_item_call>         
+        <menu_item_call
+             label="Support portal"
+             name="Support portal">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="https://support.secondlife.com/"/>         
+        </menu_item_call>
+        <menu_item_separator/>
+        <menu_item_call
+             label="[SECOND_LIFE] Blogs"
+             name="Second Life Blogs">
+             <menu_item_call.on_click
+                 function="Advanced.ShowURL"
+                 parameter="https://community.secondlife.com/news/"/>
+        </menu_item_call>-->
+		
+		<menu_item_call label="Estat de la graella" name="Grid Status"/>
+		<menu_item_call label="Informa d'un abús" name="Report Abuse"/>
+		<menu_item_call label="Informa d'un error" name="Report Bug"/>
+		<menu_item_call label="Col·lisions, empentes i cops" name="Bumps, Pushes &amp;amp; Hits"/>
+		<menu_item_check label="Activa el botó d'informació del sistema" name="Enable Sysinfo Button"/>
+		<menu_item_call label="Quant a [APP_NAME]" name="About Second Life"/>
+	</menu>
+	<menu name="RLVa Main">
+		<menu label="Depuració" name="Debug">
+			<menu_item_check label="Mostra el menú RLVa a la barra superior" name="Show Top-level RLVa Menu"/>
+			<menu_item_check label="Mostra els missatges de depuració" name="Show Debug Messages"/>
+			<menu_item_check label="Amaga missatges duplicats" name="Hide Unset or Duplicate Messages"/>
+			<menu_item_check label="Mostra els errors d'asserció" name="Show Assertion Failures"/>
+			<menu_item_check label="Amaga les capes bloquejades" name="Hide Locked Layers"/>
+			<menu_item_check label="Amaga els adjunts bloquejats" name="Hide Locked Attachments"/>
+			<menu_item_check label="Activa els noms heretats (Legacy)" name="Enable Legacy Naming"/>
+			<menu_item_check label="Activa 'Shared Wear'" name="Enable Shared Wear"/>
+			<menu_item_check label="Reanomena els elements compartits en posar-los" name="Rename Shared Items on Wear"/>
+			<menu_item_check label="Bloquejos..." name="Locks"/>
+		</menu>
+		<menu_item_check label="Permet el xat OOC (Fora de Rol)" name="Allow OOC Chat"/>
+		<menu_item_check label="Mostra el xat filtrat" name="Show Filtered Chat"/>
+		<menu_item_check label="Mostra 'Escribint' al xat redirigit" name="Show Redirected Chat Typing"/>
+		<menu_item_check label="Divideix el xat redirigit llarg" name="Split Long Redirected Chat"/>
+		<menu_item_check label="Permet adjunts temporals" name="Allow Temporary Attachments"/>
+		<menu_item_check label="Prohibeix donar a la carpeta #RLV" name="Forbid Give to #RLV"/>
+		<menu_item_check label="El reemplaçament de roba està desbloquejat" name="Wear Replaces Unlocked"/>
+		<menu_item_check label="Consola..." name="Console"/>
+		<menu_item_check label="Restriccions..." name="Restrictions"/>
+		<menu_item_check label="Cadenes de text..." name="Strings"/>
+	</menu>
+	<menu label="Avançat" name="Advanced">
+		<menu_item_call label="Actualitza les textures (rebake)" name="Rebake Texture"/>
+		<menu_item_call label="Refresca els adjunts" name="Refresh Attachments"/>
+		<menu_item_call label="Restaura la mida de la interfície per defecte" name="Set UI Size to Default"/>
+		<menu_item_call label="Estableix la mida de la finestra..." name="Set Window Size..."/>
+		<menu_item_check label="Limita la distància de selecció" name="Limit Select Distance"/>
+		<menu_item_check label="Desactiva les restriccions de la càmera" name="Disable Camera Distance"/>
+		<menu_item_check label="Instantània d'alta resolució" name="HighResSnapshot"/>
+		<menu_item_check label="Instantània silenciosa al disc" name="QuietSnapshotsToDisk"/>
+		<menu label="Eines de rendiment" name="Performance Tools">
+			<menu_item_call label="Mesurador de lag" name="Lag Meter"/>
+			<menu_item_check label="Barra d'estadístiques" name="Statistics Bar"/>
+			<menu_item_check label="Estadístiques de càrrega de l'escena" name="Scene Load Statistics"/>
+			<menu_item_check label="Augmenta la velocitat gràfica..." name="Performance"/>
+			<menu_item_check label="Mostra la informació de complexitat dels avatars" name="Avatar Draw Info"/>
+		</menu>
+		<menu label="Ressaltat i visibilitat" name="Highlighting and Visibility">
+			<menu_item_check label="Balises" name="Cheesy Beacon"/>
+		    <menu_item_check label="Amaga les partícules" name="Hide Particles"/>
+	    	<menu_item_check label="Amaga la selecció" name="Hide Selected"/>
+	    	<menu_item_check label="Ressalta els transparents" name="Highlight Transparent"/>
+		    <menu_item_check label="- inclou els 'rigged' transparents" name="Include Transparent Rigged"/>
+		    <menu_item_check label="Mostra el punt de mira en vista subjectiva" name="ShowCrosshairs"/>
+		    <menu label="Consells flotants" name="Hover Tips">
+			  <menu_item_check label="Mostra els consells" name="Show Tips"/>
+			  <menu_item_check label="Consells sobre el terreny" name="Land Tips"/>
+			  <menu_item_check label="Consells sobre tots els objectes" name="Tips On All Objects"/>
+		</menu>
+	</menu>
+	<menu label="Tipus de renderització" name="Rendering Types">
+		<menu_item_check label="Simple" name="Rendering Type Simple"/>
+		<menu_item_check label="Alfa" name="Rendering Type Alpha"/>
+		<menu_item_check label="Arbre" name="Rendering Type Tree"/>
+		<menu_item_check label="Avatars" name="Rendering Type Character"/>
+		<menu_item_check label="Malla animada" name="Rendering Type Control Avatar"/>
+		<menu_item_check label="Superfície de pegat" name="Rendering Type Surface Patch"/>
+		<menu_item_check label="Cel" name="Rendering Type Sky"/>
+		<menu_item_check label="Aigua" name="Rendering Type Water"/>
+		<menu_item_check label="Sòl" name="Rendering Type Ground"/>
+		<menu_item_check label="Volum" name="Rendering Type Volume"/>
+		<menu_item_check label="Herba" name="Rendering Type Grass"/>
+		<menu_item_check label="Núvols" name="Rendering Type Clouds"/>
+		<menu_item_check label="Partícules" name="Rendering Type Particles"/>
+		<menu_item_check label="Relleu" name="Rendering Type Bump"/>
+	</menu>
+	<menu label="Característiques de renderització" name="Rendering Features">
+		<menu_item_check label="Interfície d'usuari" name="ToggleUI"/>
+		<menu_item_check label="Seleccionat" name="Selected"/>
+		<menu_item_check label="Ressaltat" name="Highlighted"/>
+		<menu_item_check label="Textures dinàmiques" name="Dynamic Textures"/>
+		<menu_item_check label="Ombres dels peus" name="Foot Shadows"/>
+		<menu_item_check label="Boira" name="Fog"/>
+		<menu_item_check label="Objectes flexibles" name="Flexible Objects"/>
+	</menu>
+	<menu label="Còpies de seguretat de fluxos de mèdia" name="media_stream_import_export">
+		<menu_item_call label="Importa la llista de fluxos XML..." name="media_stream_import"/>
+		<menu_item_call label="Exporta la llista de fluxos XML..." name="media_stream_export"/>
+	</menu>
+	<menu_item_check label="Utilitza el connector per llegir els fils de missatges" name="Use Plugin Read Thread"/>
+	<menu_item_call label="Buida la memòria cau del grup" name="ClearGroupCache"/>
+	<menu_item_check label="Suavitzat del ratolí" name="Mouse Smoothing"/>
+	<menu_item_call label="Allibera les tecles" name="Release Keys"/>
+	<menu label="Dreceres" name="Shortcuts">
+		<menu_item_call label="Puja una imatge ([COST] L$)..." name="Upload Image"/>
+		<menu_item_check label="Cerca" name="Search"/>
+		<menu_item_check label="Teletransport amb doble clic" name="DoubleClick Teleport"/>
+		<menu_item_check label="Sempre córrer" name="Always Run"/>
+		<menu_item_check label="Vola" name="Fly"/>
+		<menu_item_call label="Tanca la finestra" name="Close Window"/>
+		<menu_item_call label="Tanca el grup de finestres" name="Close Window Group"/>
+		<menu_item_call label="Tanca totes les finestres" name="Close All Windows"/>
+		<menu_item_call label="Instantània al disc" name="Snapshot to Disk"/>
+		<menu_item_call label="Vista subjectiva" name="Mouselook"/>
+		<menu_item_call label="Càmera de vol amb joystick" name="Joystick Flycam"/>
+		<menu_item_call label="Reinicia la vista" name="Reset View"/>
+		<menu_item_call label="Reinicia els angles de la càmera" name="Reset Camera Angles"/>
+		<menu_item_call label="Mira a l'últim que ha parlat" name="Look at Last Chatter"/>
+		<menu_item_call label="Apropa el zoom" name="Zoom In"/>
+		<menu_item_call label="Zoom per defecte" name="Zoom Default"/>
+		<menu_item_call label="Allunya el zoom" name="Zoom Out"/>
+	</menu>
+	<menu_item_check label="Ignora la prohibició de volar" name="Fly Override"/>
+	<menu_item_check label="Control per scripts (RLVa)" name="RLV API"/>
+	<menu_item_call label="Mostra els paràmetres de depuració" name="Debug Settings"/>
+	<menu_item_check label="Mostra el menú de desenvolupament" name="Debug Mode"/>
+  </menu>
+    <menu label="Desenvolupament" name="Develop">
+	 <menu label="Consoles" name="Consoles">
+		<menu_item_check label="Consola de textures" name="Texture Console"/>
+		<menu_item_check label="Consola de depuració" name="Debug Console"/>
+		<menu_item_call label="Consola de notificacions" name="Notifications"/>
+		<menu_item_check label="Consola de depuració de la regió" name="Region Debug Console"/>
+		<menu_item_check label="Temporitzadors ràpids" name="Fast Timers"/>
+		<menu_item_check label="Memòria" name="Memory"/>
+		<menu_item_check label="Estadístiques de l'escena" name="Scene Statistics"/>
+		<menu_item_check label="Monitor de càrrega de l'escena" name="Scene Loading Monitor"/>
+		<menu_item_call label="Consola de depuració de la cerca de textures" name="Texture Fetch Debug Console"/>
+		<menu_item_call label="Informació de la regió a la consola de depuració" name="Region Info to Debug Console"/>
+		<menu_item_call label="Informació del grup a la consola de depuració" name="Group Info to Debug Console"/>
+		<menu_item_call label="Informació de capacitats a la consola de depuració" name="Capabilities Info to Debug Console"/>
+		<menu_item_check label="Càmera" name="Camera"/>
+		<menu_item_check label="Vent" name="Wind"/>
+		<menu_item_check label="Angle de visió" name="FOV"/>
+		<menu_item_check label="Insígnia" name="Badge"/>
+		<menu_item_check label="Galetes" name="Cookies"/>
+		</menu>
+		<menu label="Mostra la informació" name="Display Info">
+		<menu_item_check label="Mostra l'hora" name="Show Time"/>
+		<menu_item_check label="Mostra les transaccions de pujada" name="Show Upload Transaction"/>
+		<menu_item_check label="Mostra la informació de les textures" name="Show Texture Info"/>
+		<menu_item_call label="VRAM utilitzada per cada objecte" name="VRAM usage per object"/>
+		<menu_item_check label="Mostra la informació de renderització de l'avatar" name="Show Avatar Render Info"/>
+		<menu_item_check label="Mostra la informació de dibuixat" name="Show Render Info"/>
+		<menu_item_check label="Mostra les matrius" name="Show Matrices"/>
+		<menu_item_check label="Mostra el color sota el cursor" name="Show Color Under Cursor"/>
+		<menu_item_check label="Mostra la memòria" name="Show Memory"/>
+		<menu_item_check label="Mostra les actualitzacions dels objectes" name="Show Updates"/>
+	</menu>
+	<menu label="Perfils/Telemetria" name="Enable / Disable telemetry capture">
+	    <menu_item_check label="Perfils" name="Profiling"/>
+		<menu_item_check label="Comença en connectar" name="Start when telemetry client connects"/>
+	</menu>
+	<menu label="Força un error" name="Force Errors">
+		<menu_item_call label="Punt d'interrupció (breakpoint)" name="Force Breakpoint"/>
+		<menu_item_call label="Força un error LL i bloqueig" name="Force LLError And Crash"/>
+		<menu_item_call label="Accés a memòria incorrecte" name="Force Bad Memory Access"/>
+		<menu_item_call label="Bucle infinit" name="Force Infinite Loop"/>
+		<menu_item_call label="Bloqueig del controlador" name="Force Driver Carsh"/>
+		<menu_item_call label="Excepció del programari" name="Force Software Exception"/>
+		<menu_item_call label="Desconnexió del visor" name="Force Disconnect Viewer"/>
+		<menu_item_call label="Simula una fuita de memòria" name="Memory Leaking Simulation"/>
+	</menu>    
+	<menu label="Proves de renderització" name="Render Tests">
+		<menu_item_check label="Desplaçament de càmera" name="Camera Offset"/>
+		<menu_item_check label="Taxa de fotogrames aleatòria" name="Randomize Framerate"/>
+		<menu_item_check label="Alentiment periòdic de fotogrames" name="Periodic Slow Frame"/>
+		<menu_item_check label="Prova de fotogrames" name="Frame Test"/>
+		<menu_item_call label="Perfil del fotograma" name="Frame Profile"/>
+		<menu_item_call label="Estàndard (prova)" name="Benchmark"/>
+	</menu>
+	<menu label="Metadades de renderització" name="Render Metadata">
+		<menu_item_check label="Caixes delimitadores" name="Bounding Boxes"/>
+		<menu_item_check label="Hitboxs de l'avatar" name="Avatar Hitboxes"/>
+		<menu_item_check label="Normals" name="Normals"/>
+		<menu_item_check label="Octree" name="Octree"/>
+		<menu_item_check label="Frustum d'ombra" name="Shadow Frusta"/>
+		<menu_item_check label="Formes físiques" name="Physics Shapes"/>
+		<menu_item_check label="Oclusió" name="Occlusion"/>
+		<menu_item_check label="Lots de renderització" name="Render Batches"/>
+		<menu_item_check label="Tipus d'actualització" name="Update Type"/>
+		<menu_item_check label="Animació de textures" name="Texture Anim"/>
+		<menu_item_check label="Prioritat de textures" name="Texture Priority"/>
+		<menu_item_check label="Àrea de textures" name="Texture Area"/>
+		<menu_item_check label="Àrea de la cara" name="Face Area"/>
+		<menu_item_check label="Informació de LOD" name="LOD Info"/>
+		<menu_item_check label="Comptador de triangles" name="Triangle Count"/>
+		<menu_item_check label="Cua de construcció" name="Build Queue"/>
+		<menu_item_check label="Llums" name="Lights"/>
+		<menu_item_check label="Partícules" name="Particles"/>
+		<menu_item_check label="Esquelet de col·lisió" name="Collision Skeleton"/>
+		<menu_item_check label="Articulacions" name="Joints"/>
+		<menu_item_check label="Raycasts" name="Raycast"/>
+		<menu_item_check label="Vectors de vent" name="Wind Vectors"/>
+		<menu_item_check label="Complexitat de renderització" name="rendercomplexity"/>
+		<menu_item_check label="Bytes dels adjunts" name="attachment bytes"/>
+		<menu_item_check label="Esculpit" name="Sculpt"/>
+		<menu_item_check label="Mida de la textura" name="Texture Size"/>
+		<menu label="Densitat de la textura" name="Texture Density">
+			<menu_item_check label="Cap" name="None"/>
+			<menu_item_check label="Actual" name="Current"/>
+			<menu_item_check label="Desitjada" name="Desired"/>
+			<menu_item_check label="Completa" name="Full"/>
+		</menu>
+	</menu>
+	<menu label="Renderització" name="Rendering">
+		<menu_item_check label="Eixos" name="Axes"/>
+		<menu_item_check label="Base tangent" name="Tangent Basis"/>
+		<menu_item_check label="Informació de la textura seleccionada" name="Selected Texture Info Basis"/>
+		<menu_item_call label="Informació del material seleccionat" name="Selected Material Info"/>
+		<menu_item_check label="Estructura de filferro" name="Wireframe"/>
+		<menu_item_check label="Oclusió objecte-objecte" name="Object-Object Occlusion"/>
+		<menu_item_check label="Il·luminació avançada" name="Advanced Lighting Model"/>
+		<menu_item_check label="Ombres del sol/lluna/projectors" name="Shadows from Sun/Moon/Projectors"/>
+		<menu_item_check label="SSAO i suavitzat d'ombres" name="SSAO and Shadow Smoothing"/>
+		<menu_item_check label="Depuració GL en el proper inici" name="Debug GL"/>
+		<menu_item_check label="Depuració del pipeline" name="Debug Pipeline"/>
+		<menu_item_check label="Màscares alfa automàtiques (diferides)" name="Automatic Alpha Masks (deferred)"/>
+		<menu_item_check label="Màscares alfa automàtiques (no diferides)" name="Automatic Alpha Masks (non-deferred)"/>
+		<menu_item_check label="Textures animades" name="Animation Textures"/>
+		<menu_item_check label="Desactiva les textures" name="Disable Textures"/>
+		<menu_item_call label="No renderitzis cap animesh" name="Derender Animesh"/>
+		<menu_item_check label="Desactiva l'entorn" name="Disable Ambient"/>
+		<menu_item_check label="Desactiva la llum del sol" name="Disable Sunlight"/>
+		<menu_item_check label="Desactiva les llums locals" name="Disable Local Lights"/>
+		<menu_item_check label="Textures a resolució completa (PERILLÓS)" name="Full Res Textures"/>
+		<menu_item_check label="Renderitza les llums adjuntes" name="Render Attached Lights"/>
+		<menu_item_check label="Renderitza les partícules adjuntes" name="Render Attached Particles"/>
+		<menu_item_check label="Objectes brillants en passar per sobre" name="Hover Glow Objects"/>
+	</menu>
+	<menu label="Xarxa" name="Network">
+		<menu_item_check label="Atura l'avatar" name="AgentPause"/>
+		<menu_item_call label="Activa el registre de missatges" name="Enable Message Log"/>
+		<menu_item_call label="Desactiva el registre de missatges" name="Disable Message Log"/>
+		<menu_item_check label="Velocitat d'interpolació d'objectes" name="Velocity Interpolate Objects"/>
+		<menu_item_check label="Interpola la posició de l'objecte amb el ping" name="Ping Interpolate Object Positions"/>
+		<menu_item_call label="Deixa caure un paquet" name="Drop a Packet"/>
+	</menu>
+	<menu label="Memòria cau" name="Cache">
+		<menu_item_call label="Buida la memòria cau del disc" name="Purge Disk Cache"/>
+	</menu>
+	<menu_item_call label="Bolca la càmera amb script" name="Dump Scripted Camera"/>
+	<menu label="Gravació" name="Recorder">
+		<menu_item_call label="Inicia la gravació d'esdeveniments" name="Start event recording"/>
+		<menu_item_call label="Atura la gravació d'esdeveniments" name="Stop event recording"/>
+		<menu_item_call label="Reprodueix la gravació d'esdeveniments" name="Playback event recording"/>
+		<menu_item_call label="Inicia la reproducció" name="Start Playback"/>
+		<menu_item_call label="Atura la reproducció" name="Stop Playback"/>
+		<menu_item_call label="Reprodueix en bucle" name="Loop Playback"/>
+		<menu_item_call label="Comença a gravar" name="Start Record"/>
+		<menu_item_call label="Atura la gravació" name="Stop Record"/>
+	</menu>
+	<menu label="Món" name="DevelopWorld">
+		<menu_item_check label="Sobreescriu el sol del simulador" name="Sim Sun Override"/>
+		<menu_item_check label="Temps fix" name="Fixed Weather"/>
+		<menu_item_call label="Bolca la memòria cau d'objectes de la regió" name="Dump Region Object Cache"/>
+		<menu_item_check label="Llista d'interès: actualització completa" name="Interest List: Full Update"/>
+		<menu_item_call label="Bolca les característiques del simulador al xat" name="DumpSimFeaturesToChat"/>
+	</menu>
+	<menu label="Interfície d'usuari" name="UI">
+		<menu_item_call label="Prova del navegador de mèdia" name="Web Browser Test"/>
+		<menu_item_check label="Prova de reinici de la regió..." name="Region Restart Test"/>
+		<menu_item_call label="Navegador de contingut web" name="Web Content Browser"/>
+		<menu_item_call label="Prova de connexió amb Facebook" name="FB Connect Test"/>
+		<menu_item_call label="Bolca el SelectMgr" name="Dump SelectMgr"/>
+		<menu_item_call label="Bolca l'inventari" name="Dump Inventory"/>
+		<menu_item_call label="Bolca els temporitzadors" name="Dump Timers"/>
+		<menu_item_call label="Bolca el focus holder" name="Dump Focus Holder"/>
+		<menu_item_call label="Imprimeix la informació de l'objecte seleccionat" name="Print Selected Object Info"/>
+		<menu_item_call label="Imprimeix la informació de l'agent" name="Print Agent Info"/>
+		<menu_item_check label="Doble clic - Autopilot" name="Double-ClickAuto-Pilot"/>
+		<menu_item_check label="Doble clic - Teletransport" name="DoubleClick Teleport"/>
+		<menu_item_check label="Depuració del SelectMgr" name="Debug SelectMgr"/>
+		<menu_item_check label="Depuració de clics" name="Debug Clicks"/>
+		<menu_item_check label="Depuració de vistes" name="Debug Views"/>
+		<menu_item_check label="Depuració de noms d'eines" name="Debug Name Tooltips"/>
+		<menu_item_check label="Depuració d'esdeveniments del ratolí" name="Debug Mouse Events"/>
+		<menu_item_check label="Depuració de tecles" name="Debug Keys"/>
+		<menu_item_check label="Depuració del procés de finestra" name="Debug WindowProc"/>
+	</menu>
+	<menu label="XUI/XML" name="XUI">
+		<menu_item_call label="Recarrega la configuració de colors" name="Reload Color Settings"/>
+		<menu_item_call label="Mostra la prova de fonts" name="Show Font Test"/>
+		<menu_item_call label="Carrega des de XML" name="Load from XML"/>
+		<menu_item_call label="Desa a XML" name="Save to XML"/>
+		<menu_item_check label="Mostra els noms XUI" name="Show XUI Names"/>
+		<menu_item_check label="Mostra la informació de depuració" name="DebugViews"/>
+		<menu_item_call label="Eines de previsualització XUI" name="UI Preview Tool"/>
+		<menu_item_call label="Envia IMs de prova" name="Send Test IMs"/>
+		<menu_item_call label="Buida la memòria cau de noms" name="Flush Names Caches"/>
+	</menu>
+	<menu label="Avatar" name="Character">
+		<menu label="Agafa les textures renderitzades" name="Grab Baked Texture">
+			<menu_item_call label="Iris" name="Grab Iris"/>
+			<menu_item_call label="Cap" name="Grab Head"/>
+			<menu_item_call label="Part superior del cos" name="Grab Upper Body"/>
+			<menu_item_call label="Part inferior del cos" name="Grab Lower Body"/>
+			<menu_item_call label="Faldilla" name="Grab Skirt"/>
+		</menu>
+		<menu label="Proves de personatge" name="Character Tests">
+			<menu_item_call label="Aparença a XML" name="Appearance To XML"/>
+			<menu_item_call label="Activa/desactiva la geometria del personatge" name="Toggle Character Geometry"/>
+			<menu_item_call label="Prova home" name="Test Male"/>
+			<menu_item_call label="Prova dona" name="Test Female"/>
+			<menu_item_check label="Permet seleccionar l'avatar" name="Allow Select Avatar"/>
+		</menu>
+		<menu label="Velocitat de l'animació" name="Animation Speed">
+			<menu_item_call label="Totes les animacions un 10% més ràpides" name="All Animations 10 Faster"/>
+			<menu_item_call label="Totes les animacions un 10% més lentes" name="All Animations 10 Slower"/>
+			<menu_item_call label="Reinicia totes les velocitats d'animació" name="Reset All Animation Speed"/>
+			<menu_item_check label="Animacions a càmera lenta" name="Slow Motion Animations"/>
+		</menu>
+		<menu_item_call label="Força els paràmetres per defecte" name="Force Params to Default"/>
+		<menu_item_check label="Informació de l'animació" name="Animation Info"/>
+		<menu_item_check label="Mostra el punt de mira" name="Show Look At"/>
+		<menu_item_check label="Mostra el punt assenyalat" name="Show Point At"/>
+		<menu_item_check label="Depura les actualitzacions de les articulacions" name="Debug Joint Updates"/>
+		<menu_item_check label="Desactiva el nivell de detall (LOD)" name="Disable LOD"/>
+		<menu_item_check label="Depura la visibilitat del personatge" name="Debug Character Vis"/>
+		<menu_item_check label="Mostra l'esquelet de col·lisió" name="Show Collision Skeleton"/>
+		<menu_item_check label="Mostra els ossos" name="Show Bones"/>
+		<menu_item_check label="Mostra l'objectiu de l'agent" name="Display Agent Target"/>
+		<menu_item_check label="Mostra l'extensió de l'impostor" name="Show Impostor Extents"/>
+		<menu_item_call label="Bolca els adjunts" name="Dump Attachments"/>
+		<menu_item_call label="Depura les textures de l'avatar" name="Debug Avatar Textures"/>
+		<menu_item_call label="Bolca les textures locals" name="Dump Local Textures"/>
+		<menu_item_call label="Recarrega les partícules del núvol de l'avatar" name="Reload Avatar Cloud Particle"/>
+	</menu>
+	<menu_item_check label="Textures HTTP" name="HTTP Textures"/>
+	<menu_item_call label="Comprimeix les imatges" name="Compress Images"/>
+	<menu_item_call label="Prova de compressió de fitxers" name="Compress File Test"/>
+	<menu_item_call label="Activa el detector visual de fuites" name="Enable Visual Leak Detector"/>
+	<menu_item_check label="Emet un minidump en la depuració" name="Output Debug Minidump"/>
+	<menu_item_check label="Finestra de consola en el proper inici" name="Console Window"/>
+	<menu label="Estableix el nivell de registre" name="Set Logging Level">
+		<menu_item_check label="Depuració" name="Debug"/>
+		<menu_item_check label="Informació" name="Info"/>
+		<menu_item_check label="Advertiment" name="Warning"/>
+		<menu_item_check label="Error" name="Error"/>
+		<menu_item_check label="Cap" name="None"/>
+	</menu>
+	<menu_item_call label="Demana l'estat d'Administrador" name="Request Admin Options"/>
+	<menu_item_call label="Surt de l'estat d'Administrador" name="Leave Admin Options"/>
+	<menu_item_check label="Mostra el menú d'Administrador" name="View Admin Options"/>
+	</menu>
+	<menu label="Administrador" name="Admin">
+		<menu label="Objecte" name="AdminObject">
+			<menu_item_call label="Agafa una còpia" name="Admin Take Copy"/>
+			<menu_item_call label="Força'm com a propietari" name="Force Owner To Me"/>
+			<menu_item_call label="Força permisos de propietari" name="Force Owner Permissive"/>
+			<menu_item_call label="Suprimeix" name="Delete"/>
+			<menu_item_call label="Bloqueja" name="Lock"/>
+			<menu_item_call label="Obté els IDs dels actius" name="Get Assets IDs"/>
+		</menu>
+		<menu label="Parcel·la" name="Parcel">
+			<menu_item_call label="Força'm com a propietari" name="Owner To Me"/>
+			<menu_item_call label="Estableix com a contingut Linden" name="Set to Linden Content"/>
+			<menu_item_call label="Reclama terreny públic" name="Claim Public Land"/>
+		</menu>
+		<menu name="Region">
+			<menu_item_call label="Bolca les dades temporals dels actius" name="Dump Temp Asset Data"/>
+			<menu_item_call label="Desa l'estat de la regió" name="Save Region State"/>
+		</menu>
+		<menu_item_call label="Eines de Déu" name="God Tools"/>
+	</menu>
+	<menu name="Deprecated">
+		<menu label="Adjunta un objecte" name="Attach Object"/>
+		<menu label="Desprèn un objecte" name="Detach Object"/>
+		<menu label="Treu-te la roba" name="Take Off Clothing">
+			<menu_item_call label="Camisa" name="Shirt"/>
+			<menu_item_call label="Pantalons" name="Pants"/>
+			<menu_item_call label="Sabates" name="Shoes"/>
+			<menu_item_call label="Mitjons" name="Socks"/>
+			<menu_item_call label="Jaqueta" name="Jacket"/>
+			<menu_item_call label="Guants" name="Gloves"/>
+			<menu_item_call label="Samarreta interior" name="Menu Undershirt"/>
+			<menu_item_call label="Calçotets" name="Menu Underpants"/>
+			<menu_item_call label="Faldilla" name="Skirt"/>
+			<menu_item_call label="Tatuatge" name="Tattoo"/>
+			<menu_item_call label="Física" name="Physics"/>
+			<menu_item_call label="Tota la roba" name="All Clothes"/>
+		</menu>
+		<menu label="Ajuda" name="DeprecatedHelp">
+			<menu_item_call label="Blog oficial de Linden" name="Official Linden Blog"/>
+			<menu_item_call label="Portal de scripting" name="Scripting Portal"/>
+			<menu label="Informe d'errors" name="Bug Reporting">
+				<menu_item_call label="Seguiment públic de problemes" name="Public Issue Tracker"/>
+				<menu_item_call label="Ajuda del seguiment públic de problemes" name="Publc Issue Tracker Help"/>
+				<menu_item_call label="Informe d'errors 101" name="Bug Reporing 101"/>
+				<menu_item_call label="Problemes de seguretat" name="Security Issues"/>
+				<menu_item_call label="Wiki de QA" name="QA Wiki"/>
+				<menu_item_call label="Blog oficial de Linden" name="Official Linden Blog"/>
+			</menu>
+	    </menu>
+	</menu>
+</menu_bar>

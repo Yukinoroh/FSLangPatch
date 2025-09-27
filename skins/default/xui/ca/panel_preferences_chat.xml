@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Xat/IM" name="chat">
+	<tab_container label="Configuració de Firestorm" name="tabs">
+		<panel label="Visuals" name="ChatVisuals">
+			<text name="console_font_size" width="210">
+				Mida de la lletra de la consola:
+			</text>
+			<radio_group name="chat_console_font_size" left_delta="210">
+				<radio_item label="Petita" name="consradio" />
+				<radio_item label="Mitjana" name="consradio2"/>
+				<radio_item label="Gran" name="consradio3"/>
+				<radio_item label="Molt Gran" name="consradio4" left_delta="60"/>
+			</radio_group>
+			<check_box label="Mostra les animacions de l'Avatar (Per exemple, cridant)" name="play_avatar_animations"/>
+			
+			<check_box name="FSIMSystemMessageBrackets" label="Mostra els missatges del sistema entre parèntesis"/>
+			<check_box name="FSChatHistoryShowYou" label="Mostra &quot;Vós&quot; a l'historial del xat en lloc del vostre nom" />
+			<check_box name="EmotesUseItalic" label="Usa cursiva per a les emoticones"/>
+			<check_box name="FSEmphasizeShoutWhisper" label="Crits en negreta, xiuxiueigs en cursiva"/>
+			<check_box name="FSMarkObjects" label="Marca els objectes en enviar al xat per evitar estafes"/>
+			<check_box label="Dirigeix l'script llOwnerSay a la finestra de depuració" name="FSllOwnerSayToScriptDebugWindow_checkbox" />
+			<check_box label="Mostra el xat en bombolles sobre els avatars" name="bubble_text_chat"/>
+			<check_box label="No mostris el xat a la consola ni als avisos emergents" name="FSBubblesHideConsoleAndToasts"/>
+			<check_box label="Mostra l'indicador d'escriptura a les bombolles sobre els avatars" name="bubble_text_typing"/>
+			<check_box label="Mostra l'indicador d'escriptura a l'etiqueta de nom sobre els avatars" name="FSShowTypingStateInNameTag"/>
+			<check_box label="Mostra els segons a l'historial del xat [HH:MM:SS]" name="FSSecondsinChatTimestamps"/>
+			<text name="show_timestamps_label" width="120">
+				Mostra l'hora a:
+			</text>
+			<check_box label="Xat local" name="show_timestamps_nearby_chat" width="95"/>
+			<check_box label="IM" name="show_timestamps_im" width="50"/>
+			<check_box label="Historials de xat i IM" name="show_timestamps_transcripts" left_pad="2"/>
+			<check_box name="FSShowOnscreenConsole" label="Mostra la consola de xat" tool_tip="Mostra/Amaga el text de la consola de xat quan no es mostra la finestra Converses"/>
+			<check_box name="FSConsoleClassicDrawMode" label="Usa la consola clàssica" tool_tip="Aquesta opció mostra el fons de la consola com un sol bloc gran sota totes les línies de text, amb l'amplada de la més llarga."/>
+			<check_box name="ChatFullWidth" label="Usa l'amplada completa de la pantalla"/>
+			<spinner label="Reduir passats:" name="fade_chat_time" label_width="130" width="150"/>
+			<text name="text_box4">
+				(Segons)
+			</text>
+			<text name="text_box5">
+				(línies)
+			</text>
+		</panel>
+		<panel label="Finestres de xat" name="ChatWindows">
+			<text name="font_size" width="250">
+				Tipus de lletra de la finestra de xat:
+			</text>
+			<radio_group name="chat_font_size" left_delta="240">
+				<radio_item label="Petita" name="radio"/>
+				<radio_item label="Mitjana" name="radio2"/>
+				<radio_item label="Gran" name="radio3"/>
+				<radio_item label="Molt Gran" name="radio4" left_delta="55"/>
+			</radio_group>
+			<check_box name="IMShowNamesForP2PConv" label="Mostra els noms als IM oberts" />
+			<check_box label="Usa l'estil V1 per a les capçaleres de xat" name="plain_text_chat_history" />
+			<check_box label="En usar capçaleres d'estil [SHORT_VIEWER_GENERATION], mostra mini-avatars" name="ShowChatMiniIcons" />
+			<check_box label="Mostra el final de la conversa anterior" name="LogShowHistory"/>
+			<check_box name="FSTypingChevronPrefix" label="Afegeix (&gt;) como a indicador d'escriptura als IM"/>
+			<text name="show_unread_messages_label">
+				Notifica'm els missatges nous:
+			</text>
+			<check_box name="FSNotifyUnreadChatMessages" label="Al xat local" tool_tip="Mostra un avís de missatges no llegits (i el seu recompte) al xat local quan n'apareixen de nous i l'historial està desplaçat cap amunt." />
+			<check_box name="FSNotifyUnreadIMMessages" label="Als IM/Grups" tool_tip="Mostra un avís de missatges no llegits (i el seu recompte) als IM quan n'apareixen de nous i l'historial està desplaçat cap amunt." />
+			<text name="show_ims_in_label" width="110">
+				Mostra els IM a:
+			</text>
+			<radio_group name="chat_window" tool_tip="Mostra els missatges en finestres separades o en pestanyes (cal reiniciar).">
+				<radio_item label="Finestres" name="radio"/>
+				<radio_item label="Pestanyes" name="radio2"/>
+			</radio_group>
+			<text name="req_restart_ims" left_pad="50" width="120">
+				(cal reiniciar)
+			</text>
+			<text name="tab_direction_label" width="190">
+				Orientació de les Pestanyes:
+			</text>
+			<radio_group name="chat_tab_direction" tool_tip="Canvia la disposició de les pestanyes de xat a horitzontal o vertical quan el mode de pestanyes està activat (cal reiniciar).">
+				<radio_item label="Horitzontal" name="radio_horizontal" width="120"/>
+				<radio_item label="Vertical" name="radio_vertical" />
+			</radio_group>
+			<text name="req_restart_chattabs" left_pad="50" width="120">
+				(cal reiniciar)
+			</text>
+			<text name="FSIMTabNameFormat_label" width="235">
+				Format del nom en pestanyes d'IM:
+			</text>
+			<combo_box name="FSIMTabNameFormat" width="270">
+				<combo_box.item label="Nom de visualització" name="display_name"/>
+				<combo_box.item label="Nom d'usuari" name="user_name"/>
+				<combo_box.item label="Nom de visualització (Nom d'usuari)" name="display_user_name"/>
+				<combo_box.item label="Nom d'usuari (Nom de visualització)" name="user_display_name"/>
+			</combo_box>
+			<check_box name="FSHighlightGroupMods" label="Ressalta el text dels moderadors del grup"/>
+			<text name="Moderator Name Style" width="35">
+				Nom:
+			</text>
+			<combo_box name="mod_name_style" width="230">
+				<combo_box.item label="Normal" name="normal"/>
+				<combo_box.item label="Negreta" name="BOLD"/>
+				<combo_box.item label="Cursiva" name="ITALIC"/>
+				<combo_box.item label="Negreta i cursiva" name="BOLDITALIC"/>
+				<combo_box.item label="Subratllat" name="UNDERLINE"/>
+				<combo_box.item label="Negreta i subratllat" name="BOLDUNDERLINE"/>
+				<combo_box.item label="Cursiva i subratllat" name="ITALICUNDERLINE"/>
+				<combo_box.item label="Negreta, cursiva i subratllat" name="BOLDITALICUNDERLINE"/>
+			</combo_box>
+			<text name="Moderator Text Style" width="35">
+				Text:
+			</text>
+			<combo_box name="mod_text_style" width="230">
+				<combo_box.item label="Normal" name="normal"/>
+				<combo_box.item label="Negreta" name="BOLD"/>
+				<combo_box.item label="Cursiva" name="ITALIC"/>
+				<combo_box.item label="Negreta i cursiva" name="BOLDITALIC"/>
+				<combo_box.item label="Subratllat" name="UNDERLINE"/>
+				<combo_box.item label="Negreta i subratllat" name="BOLDUNDERLINE"/>
+				<combo_box.item label="Cursiva i subratllat" name="ITALICUNDERLINE"/>
+				<combo_box.item label="Negreta, cursiva i subratllat" name="BOLDITALICUNDERLINE"/>
+			</combo_box>
+			<check_box name="FSMuteAllGroups" label="Silencia tots els xats de grup"/>
+			<check_box name="FSMuteGroupWhenNoticesDisabled" label="Si la recepció d'avisos de grup està desactivada, silencia els xats de grup"/>
+			<check_box name="FSIgnoreAdHocSessions" label="Ignora i rebutja automàticament totes les conferències (Ad-Hoc)"/>
+			<check_box name="FSReportIgnoredAdHocSession" label="Informa al xat local de totes les conferències rebutjades"/>
+				<check_box name="FSDontIgnoreAdHocFromFriends" label="No ignoris les ofertes de conferència dels meus amics"/>
+	<text width="200" name="group_snooze_time_label" tool_tip="Quantitat de temps que un xat de grup estarà silenciat temporalment després de prémer el botó 'Pausa'. Establir-ho a 0 simplement tancarà el xat fins al pròxim missatge.">
+		Durada de la pausa del grup:
+	</text>
+	<spinner name="GroupSnoozeTime" tool_tip="Quantitat de temps que un xat de grup estarà silenciat temporalment després de prémer el botó 'Pausa'. Establir-ho a 0 simplement tancarà el xat fins al pròxim missatge." />
+	<text name="group_snooze_time_seconds_label" tool_tip="Quantitat de temps que un xat de grup estarà silenciat temporalment després de prémer el botó 'Pausa'. Establir-ho a 0 simplement tancarà el xat fins al pròxim missatge.">
+		segons
+	</text>
+	<check_box name="FSEnablePerGroupSnoozeDuration" label="Estableix un temps de pausa per a cada grup individualment"/>
+</panel>
+<panel label="Escriptura" name="ChatTyping">
+	<button name="autoreplace_showgui" label="Substitució..."/>
+	<button name="spellcheck_showgui" label="Corrector ortogràfic"/>
+	<button label="Traducció..." name="translation_settings_btn"/>
+	<check_box label="Reprodueix l'animació d'escriure" name="play_typing_animation"/>
+	<check_box label="Reprodueix l'animació d'escriure també per a les emoticones" name="play_typing_animation_emote"/>
+	<check_box label="Reprodueix so en escriure al xat local" name="play_typing_sound"/>
+	<check_box label="Mostra als altres que estic escrivint en un IM" name="FSSendTypingState"/>
+	<check_box label="Activa l'autocompletat de gestos a la barra de xat" name="FSChatbarGestureAutoCompleteEnable"/>
+	<check_box label="Activa la predicció de noms a la barra de xat" name="FSChatbarNamePrediction"/>
+	<check_box name="AllowMUpose" label="Usa &quot;:&quot; com a sinònim de &quot;/me&quot;"/>
+	<check_box name="AutoCloseOOC" label="Tanca automàticament els ((parèntesis)) del xat OOC"/>
+	<check_box name="FSEnableEmojiWindowPopupWhileTyping" label="Activa finestra selecció automàtica d'emojis quan s'escriu a xat"/>
+	<check_box name="FSShowEmojiButton" label="Mostra el botó d'emojis al Xat per a sessions de IM i Xat proper"/>
+	<check_box name="FSShowIMSendButton" label="Mostra el botó d'enviament a la línia d'escriptura dels IM"/>
+	<check_box name="FSNearbyChatbar" label="Afegeix una barra de xat local a la finestra de converses"/>
+	<check_box name="FSShowChatChannel" label="Mostra el selector de canal a la barra de xat"/>
+	<check_box name="FSShowChatType" label="Mostra el botó d'enviament a la barra de xat"/>
+	<check_box label="Amaga automàticament la barra de xat" name="AutohideChatBar" tool_tip="Amaga la barra d'entrada del xat fins que hi facis clic."/>
+	<check_box label="Tanca la barra de xat després de prémer Retorn" name="CloseChatOnReturn"/>
+	<check_box label="Treu el focus de l'historial del xat en prémer Retorn" name="FSUnfocusChatHistoryOnReturn" />
+	<text name="textUseKeyboardShortcuts">
+		Usa les dreceres de teclat:
+	</text>
+	<check_box name="FSUseCtrlShout" label="Ctrl+Retorn Cridar" tool_tip="Selecciona aquesta opció si vols utilitzar la combinació de tecles Ctrl+Retorn per cridar al xat local." />
+	<check_box name="FSUseShiftWhisper" label="Maj+Retorn Xiuxiuejar" tool_tip="Selecciona aquesta opció si vols utilitzar la combinació de tecles Maj+Retorn per xiuxiuejar al xat local." />
+	<check_box name="FSUseAltOOC" label="Alt+Retorn per OOC" tool_tip="Selecciona aquesta opció si vols utilitzar la combinació de tecles Alt+Retorn per enviar missatges ((OOC)) al xat local." />
+</panel>
+<panel label="Avisos" name="ChatNotices">
+	<text name="disable_toast_label">
+		Activa els avisos emergents de conversa:
+	</text>
+	<check_box label="Xats de grup" name="EnableGroupChatPopups" tool_tip="Selecciona-ho per veure un avís emergent quan hi hagi missatges en un xat de grup"/>
+	<check_box label="Missatges instantanis" name="EnableIMChatPopups" tool_tip="Selecciona-ho per veure un avís emergent quan hi hagi un nou missatge instantani (IM)"/>
+	<check_box name="FSUseNearbyChatConsole" label="Us de Consola per Avisos emergents en lloc de Toasts (estil del client 1.x)"/>
+	<check_box name="FSLogImToChatConsole" label="Mostra els missatges d'IM a la consola del xat"/>
+	<check_box name="FSLogGroupImToChatConsole" label="Mostra els missatges de grup a la consola del xat"/>
+	<text name="FSShowGroupNameLength_label" width="370">
+		Longitud del nom del grup mostrat a l'historial de xat:
+	</text>
+	<spinner tool_tip="-1 per al nom complet del grup, 0 per desactivar" name="FSShowGroupNameLength"/>
+	<check_box name="FSOpenIMContainerOnOfflineMessage" label="Obre les converses si hi ha missatges de quan estaves desconnectat/da"/>
+	
+	<check_box label="Envia els IM al meu correu electrònic quan estigui desconnectat/da ([EMAIL])" name="send_im_to_email"/>
+	<text name="email_settings">[https://accounts.secondlife.com/change_email Obre la configuració de correu per als xats fora de línia]</text>
+	<text name="email_settings_login_to_change" width="600">:Inicia Sessió per canviar la Configuració de Missatges per Correu fora de línia:</text>
+	
+	
+	<check_box name="FSShowIMInChatHistory" label="Mostra els IM a la finestra del xat local"/>
+	<check_box name="FSLogIMInChatHistory" label="Guarda els IM a la finestra del xat local"/>
+	<text name="FSIMChatHistoryFade_label" width="270">
+		Atenuació del text d'IM al xat local:
+	</text>
+	<spinner tool_tip="0.25-1.0, 0.25 per a una atenuació forta, 1 per desactivar-la" name="FSIMChatHistoryFade"/>
+	<check_box name="FSShowMessageCountInWindowTitle" label="Mostra el recompte de missatges no llegits al títol de la finestra Firestorm"/>
+	<check_box name="FSAnnounceIncomingIM" label="Avisa'm dels nous IM tan bon punt el remitent comenci a escriure"/>
+	<check_box name="FSIMChatFlashOnFriendStatusChange" label="Fes pampalluguejar pestanyes d'IM quan Amics/gues Connectin/Desconnectin "/>
+	<check_box name="FSNotifyNearbyChatFlash" label="Fes pampalluguejar la pestanya del xat local en rebre missatges" tool_tip="Fa pampalluguejar la pestanya del xat local en rebre nous missatges. Requereix que la pestanya del xat local estigui acoblada a la finestra de converses."/>
+	<check_box name="FSNotifyIMFlash" label="Fes pampalluguejar les pestanyes d'IM en rebre missatges" tool_tip="Fa pampalluguejar la pestanya d'IM en rebre nous missatges. Requereix que la pestanya de l'IM estigui acoblada a la finestra de converses."/>
+	<check_box name="FSReportMutedGroupChat" label="Informa al xat local dels xats de grup silenciats"/>
+	<check_box name="FSGroupNoticesToIMLog" label="Mostra els avisos de grup al xat local, a més de les finestres emergents"/>
+	<check_box name="FSBetterGroupNoticesToIMLog" label="Mostra també els títols i els autors"/>
+</panel>
+<panel name="ChatRadar" label="Radar">
+	<check_box name="reportChatRangeEnter" label="Avís del radar quan un Avatar entra al radi de xat"/>
+	<check_box name="PlayModeUISndRadarChatEnter" width="150" label="Reprodueix so:"/>
+	<button name="Prev_UISndRadarChatEnter" tool_tip="Escolta aquest so."/>
+	<button name="Def_UISndRadarChatEnter" tool_tip="UUID per defecte."/>
+	<check_box name="reportChatRangeLeave" label="Avís del radar quan un Avatar surt del radi de xat"/>
+	<check_box name="PlayModeUISndRadarChatLeave" width="150" label="Reprodueix so:"/>
+	<button name="Prev_UISndRadarChatLeave" tool_tip="Escolta aquest so."/>
+	<button name="Def_UISndRadarChatLeave" tool_tip="UUID per defecte."/>
+	<check_box name="reportDrawRangeEnter" label="Avís del radar quan un Avatar entra a la distància de dibuixat"/>
+	<check_box name="PlayModeUISndRadarDrawEnter" width="150" label="Reprodueix so:"/>
+	<button name="Prev_UISndRadarDrawEnter" tool_tip="Escolta aquest so."/>
+	<button name="Def_UISndRadarDrawEnter" tool_tip="UUID per defecte."/>
+	<check_box name="reportDrawRangeLeaave" label="Avís del radar quan un Avatar surt de la distància de dibuixat"/>
+	<check_box name="PlayModeUISndRadarDrawLeave" width="150" label="Reprodueix so:"/>
+	<button name="Prev_UISndRadarDrawLeave" tool_tip="Escolta aquest so."/>
+	<button name="Def_UISndRadarDrawLeave" tool_tip="UUID per defecte."/>
+	<check_box name="RadarReportSimRangeEnter" label="Avís del radar quan un Avatar entra a la regió"/>
+	<check_box name="PlayModeUISndRadarSimEnter" width="150" label="Reprodueix so:"/>
+	<button name="Prev_UISndRadarSimEnter" tool_tip="Escolta aquest so."/>
+	<button name="Def_UISndRadarSimEnter" tool_tip="UUID per defecte."/>
+	<check_box name="RadarReportSimRangeLeave" label="Avís del radar quan un Avatar surt de la regió"/>
+	<check_box name="PlayModeUISndRadarSimLeave" width="150" label="Reprodueix so:"/>
+	<button name="Prev_UISndRadarSimLeave" tool_tip="Escolta aquest so."/>
+	<button name="Def_UISndRadarSimLeave" tool_tip="UUID per defecte."/>
+	<check_box name="RadarEnterChannelAlert" label="Notificacions d'entrada d'scripts"/>
+	<check_box name="RadarLeaveChannelAlert" label="Notificacions de sortida d'scripts"/>
+	<check_box name="FSRadarEnhanceByBridge" label="Millora el radar amb el pont LSL" tool_tip="Si s'activa, el pont LSL ajudarà les funcions del radar a determinar la ubicació dels avatars a altituds elevades."/>
+	<text name="AgeAlertLabel">
+		Alertes d'edat:
+	</text>
+	<text name="RadarAvatarAgeAlertValueLabel">
+		Llindar:
+	</text>
+	<spinner name="RadarAvatarAgeAlertValue" tool_tip="També acoloreix la columna d'edat al radar. Estableix a -1 per desactivar." />
+	<text name="RadarAvatarAgeAlertValueLabelSuffix">
+		Dies
+	</text>
+	<check_box name="RadarAvatarAgeAlert" label="Avís del radar per a avatars més joves que l'edat establerta" />
+	<check_box name="PlayModeUISndRadarAgeAlert" width="150" label="Reprodueix so:" />
+	<button name="Prev_UISndRadarAgeAlert" tool_tip="Escolta aquest so." />
+	<button name="Def_UISndRadarAgeAlert" tool_tip="UUID per defecte." />
+</panel>
+<panel label="Detector de paraules clau" name="ChatKeywordAlerts">
+	<check_box name="FSKeywordOn" label="Activa el detector de paraules clau"/>
+	<check_box name="FSKeywordInChat" label="Cerca paraules al xat local"/>
+	<check_box name="FSKeywordInIM" label="Cerca paraules als IM i xats de grup"/>
+	<check_box name="FSKeywordSpeakersName" label="Cerca paraules en noms de persones i objectes"/>
+	<check_box name="FSKeywordCaseSensitive" label="Distingeix entre majúscules i minúscules"/>
+	<check_box name="FSKeywordMatchWholeWords" label="Fes coincidir només paraules senceres"/>
+	<text name="textFSKeywords">
+		Paraules clau (separades per comes):
+	</text>
+	<check_box name="FSKeywordChangeColor" label="Acoloreix la coincidència"/>
+	<color_swatch name="colorswatch" tool_tip="Fes clic per triar un color"/>
+	<check_box name="FSKeywordPlaySound" label="Reprodueix un so en trobar una paraula"/>
+	<text name="textFSKeywordSound">
+		So d'alerta:
+	</text>
+	<button name="Prev_UISndFSKeywordSound" tool_tip="Escolta aquest so."/>
+	<button name="Def_UISndFSKeywordSound" tool_tip="UUID per defecte."/>
+</panel>
+<panel label="Ordres" name="tab-CmdLine">
+	<check_box label="Activa l'ús de la barra de xat com a línia d'ordres" name="chat_cmd_toggle" />
+	<text name="FSCmdLineCalc_txt">
+		Calculadora
+	</text>
+	<text name="FSCmdLineDrawDistance_txt">
+		Distància de dibuixat (en metres)
+	</text>
+	<text name="FSCmdLineBandWidth_txt">
+		Amplada de banda (kbps)
+	</text>
+	<text name="FSCmdLineCopyCam_txt">
+		Copia lloc Càmera a PortaRetalls
+	</text>
+	<text name="FSCmdLineAO_txt">
+		Activa/desactiva l'AO (on/off)
+	</text>
+	<text name="FSCmdLineClearChat_txt">
+		Neteja l'historial del xat
+	</text>
+	<line_editor tool_tip="Neteja els registres de xat per prevenir el lag dels spammers." name="FSCmdLineClearChat" />
+	<text name="FSCmdLineMedia_txt">
+		Estableix l'URL de Multimèdia
+	</text>
+	<line_editor tool_tip="Estableix i reprodueix el flux de contingut multimèdia per a l'URL donada" name="FSCmdLineMedia" />
+	<text name="FSCmdLineMusic_txt">
+		Estableix l'URL de Música
+	</text>
+	<line_editor tool_tip="Estableix i reprodueix el flux de música per a l'URL donada" name="FSCmdLineMusic" />
+	<text name="FSCmdLineRezPlatform_txt">
+		Crea una plataforma (0 - 64)
+	</text>
+	<slider name="FSCmdLinePlatformSize" label="Amplada:" tool_tip="Com de gran serà la plataforma?" />
+	<text name="FSCmdLineKeyToName_txt">
+		Obtén el nom d'un Avatar amb el UUID
+	</text>
+	<text name="FSCmdLineRollDice_txt">
+		Llença els daus
+	</text>
+	<line_editor tool_tip="Llença els daus - [nombre de daus]d[nombre de cares]+[modificador]. Exemple: 1d20+5" name="FSCmdLineRollDice" />
+	<text name="FSCmdLinePos_txt">
+		Teleporta't dins de la regió (x y z)
+	</text>
+	<text name="FSCmdLineGround_txt">
+		Teleporta't a terra
+	</text>
+	<text name="FSCmdLineHeight_txt">
+		Teleporta't a l'alçada (z)
+	</text>
+	<text name="FSCmdTeleportToCam_txt">
+		Teleporta't a la posició de la càmera
+	</text>
+	<text name="FSCmdLineOfferTp_txt">
+		Ofereix teletransport a l'Avatar (UUID)
+	</text>
+	<text name="FSCmdLineTP2_txt">
+		Teleporta't a l'Avatar (nom)
+	</text>
+	<line_editor tool_tip="La sintaxi no distingeix majúscules de minúscules, però es recomana escriure el nom tal com apareix al radar." name="FSCmdLineTP2" />
+	<text name="FSCmdLineTeleportHome_txt">
+		Teleporta't a casa
+	</text>
+	<text name="FSCmdLineMapTo_txt">
+		Teleporta't a la regió (regió | x y z)
+	</text>
+	<check_box label="Conserva la posició de Teletransport" name="toggle" />
+  </panel>
+ </tab_container>
+</panel>
+
+			
+			
+

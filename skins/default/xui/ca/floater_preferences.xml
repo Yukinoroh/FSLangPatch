@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Preferences" title="Configuració">
+	<button label="D'acord" label_selected="D'acord" name="OK"/>
+	<button label="Cancel·la" label_selected="Cancel·la" name="Cancel"/>
+	<panel name="search_panel">
+		<search_editor label="Cerca a la configuració" name="search_prefs_edit" tool_tip="Escriu aquí el terme que t'interessa per cercar. Es mostraran els resultats per a coincidències parcials de text complet en el nom del paràmetre o en els comentaris."/>
+		<button name="copy_search_slurl_btn" tool_tip="Copia la consulta de cerca com a SLURL"/>
+	</panel>
+	<tab_container name="pref core">
+		<panel label="General" name="general"/>
+		<panel label="Xat" name="chat"/>
+		<panel label="Color" name="colors"/>
+		<panel label="Gràfics" name="display"/>
+		<panel label="So i mèdia" name="audio"/>
+		<panel label="Xarxa i fitxers" name="input"/>
+		<panel label="Moviment i càmera" name="move"/>
+		<panel label="Controls" name="controls"/>
+		<panel label="Notificacions" name="msgs"/>
+		<panel label="Privadesa" name="im"/>
+		<panel label="Avançat" name="advanced1"/>
+		<panel label="Interfície" name="ui"/>
+		<panel label="Temes" name="skins"/>
+		<panel label="Copia de seguretat" name="backup"/>
+		<panel label="Errors" name="crashreports"/>
+		<panel label="Firestorm" name="firestorm"/>
+		<panel label="Opensim" name="opensim"/>
+	</tab_container>
+	
+</floater>

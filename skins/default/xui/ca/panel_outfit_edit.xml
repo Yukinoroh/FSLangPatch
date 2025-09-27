@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="outfit_edit">
+	<string name="No Outfit" value="Cap conjunt"/>
+	<string name="unsaved_changes" value="Canvis no desats"/>
+	<string name="now_editing" value="S'està editant"/>
+	<panel.string name="not_available">
+		(no disponible)
+	</panel.string>
+	<panel.string name="unknown">
+		(desconegut)
+	</panel.string>
+	<string name="Filter.All" value="Tot"/>
+	<string name="Filter.Clothes/Body" value="Roba/cos"/>
+	<string name="Filter.Objects" value="Objectes"/>
+	<string name="Filter.Clothing" value="Roba"/>
+	<string name="Filter.Bodyparts" value="Parts del cos"/>
+	<string name="replace_body_part" value="Feu clic per a reemplaçar la forma actual"/>
+	<text name="title" value="Edita el conjunt"/>
+	<panel name="header_panel">
+		<panel name="outfit_name_and_status">
+			<text name="status" value="S'està editant..."/>
+			<text name="curr_outfit_name" value="[Conjunt actual]"/>
+		</panel>
+	</panel>
+	<layout_stack name="im_panels">
+		<layout_panel name="outfit_wearables_panel">
+			<layout_stack name="filter_panels">
+				<layout_panel name="add_button_and_combobox">
+					<button label="Afegeix..." name="show_add_wearables_btn" tool_tip="Obre/tanca"/>
+				</layout_panel>
+				<layout_panel name="filter_panel">
+					<filter_editor label="Filtre per a l'inventari" name="look_item_filter"/>
+				</layout_panel>
+			</layout_stack>
+		</layout_panel>
+		<layout_panel name="add_wearables_panel">
+			<button label="Peça de roba" name="plus_btn"/>
+		</layout_panel>
+	</layout_stack>
+	<panel name="no_add_wearables_button_bar">
+		<text name="avatar_complexity_label">Complexitat: [WEIGHT]</text>
+		<button name="shop_btn_1" tool_tip="Visiteu el Mercat de Second Life. També podeu seleccionar una peça de roba que porteu posada i fer clic aquí per a trobar alguna cosa semblant"/>
+	</panel>
+	<panel name="add_wearables_button_bar">
+		<text name="avatar_complexity_adding_label">Complexitat: [WEIGHT]</text>
+		<button name="shop_btn_2" tool_tip="Visiteu el Mercat de Second Life. També podeu seleccionar una peça de roba que porteu posada i fer clic aquí per a trobar alguna cosa semblant"/>
+	</panel>
+	<panel name="save_revert_button_bar">
+		<layout_stack name="button_bar_ls">
+			<layout_panel name="save_btn_lp">
+				<button label="Desa" name="save_btn"/>
+			</layout_panel>
+			<layout_panel name="save_as_btn_lp">
+				<button label="Desa com a..." name="save_as_btn"/>
+			</layout_panel>
+			<layout_panel name="revert_btn_lp">
+				<button label="Reverteix els canvis" name="revert_btn" tool_tip="Torna a la darrera versió desada"/>
+			</layout_panel>
+		</layout_stack>
+	</panel>
+</panel>

@@ -2,10 +2,10 @@
 <panel label="Moviment i càmera" name="move_panel">
 	<tab_container label="Moviment i càmera" name="tabs">
 		<panel label="Càmera" name="tab-view">
-			<slider label="Angle de visió" name="camera_fov"/>
-			<slider label="Distància" name="camera_offset_scale"/>
-			<slider label="Transició" name="camera_transition_time"/>
-			<slider label="Fluïdesa" name="camera_position_smoothing"/>
+			<slider label="Angle de visió:" name="camera_fov"/>
+			<slider label="Distància:" name="camera_offset_scale"/>
+			<slider label="Transició:" name="camera_transition_time"/>
+			<slider label="Fluïdesa:" name="camera_position_smoothing"/>
 			<check_box label="Desactiva les restriccions de límit d'allunyament del zoom" name="DisableCameraConstraints" tool_tip="Activa aquesta opció per permetre a la càmera allunyar el zoom més enllà de les seves limitacions"/>
 			<check_box label="Desactiva la roda del ratolí per ajustar el nivell del zoom" name="FSDisableMouseWheelCameraZoom"/>
 			<text left="55" name="heading2">Posicionament automàtic per a:</text>
@@ -19,7 +19,7 @@
 			<check_box label="Permet a la càmera travessar objectes" name="ignorecameraconstraints" tool_tip="Ignora els moviments de càmera que el simulador efectua quan aquesta s'apropa massa als objectes."/>
 			<text name="ignorecameraconstraints_requires_restart">(Cal reiniciar)</text>
 			<check_box label="Mostra sempre la finestra de controls de la càmera de manera opaca" name="FSAlwaysOpaqueCameraControls"/>
-			<check_box label="Torna a mostrar després d'una teletransportació els objectes temporalment ocults." name="FSTempDerenderUntilTeleport" tool_tip="Activada, els objectes temporalment ocults ho restaran fins a la pròxima teletransportació. Desactivada, restaran ocults fins al final de la sessió o fins que es tornin a mostrar manualment a la finestra de la llista negra d'elements."/>
+			<check_box label="Torna a veure després de teletransportació Objectes temporalment Ocults." name="FSTempDerenderUntilTeleport" tool_tip="Activada, els objectes temporalment ocults ho restaran fins a la pròxima teletransportació. Desactivada, restaran ocults fins al final de la sessió o fins que es tornin a mostrar manualment a la finestra de la llista negra d'elements."/>
 		</panel>
 		<panel label="Vista subjectiva" name="tab-mouselook">
 			<check_box label="Activa la vista subjectiva" name="EnableMouselook" tool_tip="Permet una vista en primera persona i un control de la càmera amb el ratolí"/>
@@ -46,10 +46,10 @@
 			<check_box label="No et giris quan caminis cap enrere" name="FSDisableTurningAroundWhenWalkingBackwards" tool_tip="Evita que el teu avatar es giri per mirar la càmera quan camines cap enrere. Aquesta opció només afecta la teva visió i no és compatible amb els AOs."/>
 			<check_box label="Gira l'avatar cap a l'objecte que selecciona" name="FSTurnAvatarToSelectedObject" tool_tip="Gira el teu avatar de cara a l'objecte que estàs seleccionant."/>
 			<slider label="Velocitat de rotació de l'avatar" name="av_turn_spd" tool_tip="Modifica la velocitat a la qual el teu avatar respon a la rotació. 0-100 en percentatge estimat de la velocitat de rotació màxima. Els valors alts donaran resultats bruscos i entretallats."/>
-			<text name="Region_Crossing_Movement_Label" width="290">Previsió de moviment si es canvia de regió:</text>
-			<radio_group name="Region_Crossing_Movement" left_pad="1">
-				<radio_item label="Il·limitat" name="move_predict" width="65" />
-				<radio_item label="Atura't si l'error és massa gran" name="move_stop" width="100"/>
+			<text name="Region_Crossing_Movement_Label" width="285">Previsió de moviment si es canvià de Regió:</text>
+			<radio_group name="Region_Crossing_Movement" left_pad="10" width="350">
+				<radio_item label="Gran" name="move_predict" left_pad="-10" width="65" />
+				<radio_item label="Aturat si fa Error Gros" name="move_stop" left_pad="0" width="100"/>
 			</radio_group>
 			<text name="movelock_lbl">Si l'ancoratge del Pont LSL està actiu...</text>
 			<check_box label="Reactiva l'ancoratge després d'una teletransportació" name="RelockMoveLockAfterRegionChange"/>
@@ -66,7 +66,7 @@
 				<combo_box.item label="Teletransporta't al lloc" name="2"/>
 			</combo_box>
 			<check_box label="Permet el doble clic en objectes amb script" name="FSAllowDoubleClickOnScriptedObjects"/>
-			<button label="Config. del comandament" name="joystick_setup_button"/>
+			<button label="Configuració del Comandament (Joystik)" name="joystick_setup_button" width="320"/>
 		</panel>
 		<panel label="Teletransportacions" name="tab-teleports">
 			<check_box label="Reprodueix un efecte de so durant les teletransportacions" name="PlayTeleportSound"/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="menu_folder_gear">
+	<menu_item_call label="Afegeix una referència" name="add_landmark"/>
+	<menu_item_call label="Afegeix una carpeta" name="add_folder"/>
+	<menu_item_call label="Restaura l'objecte" name="restore_item"/>
+	<menu_item_call label="Retalla" name="cut"/>
+	<menu_item_call label="Copia" name="copy_folder"/>
+	<menu_item_call label="Enganxa" name="paste"/>
+	<menu_item_call label="Reanomena" name="rename"/>
+	<menu_item_call label="Suprimeix" name="delete"/>
+	<menu_item_call label="Desplega" name="expand"/>
+	<menu_item_call label="Replega" name="collapse"/>
+</toggleable_menu>

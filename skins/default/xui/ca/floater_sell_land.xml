@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="sell land" title="Venda de terreny">
+	<scroll_container name="profile_scroll">
+		<panel name="scroll_content_panel">
+			<text name="info_parcel_label">
+				Parcel·la:
+			</text>
+			<text name="info_parcel">
+				Nom de la parcel·la
+			</text>
+			<text name="info_size_label">
+				Mida:
+			</text>
+			<text name="info_size">
+				[AREA] m²
+			</text>
+			<text name="info_action">
+				Per vendre aquesta parcel·la:
+			</text>
+			<text name="price_label">
+				1. Estableix un preu:
+			</text>
+			<text name="price_text">
+				Estableix un preu que et sembli just.
+			</text>
+			<text name="price_ld">
+				L$
+			</text>
+			<line_editor name="price">
+				0
+			</line_editor>
+			<text name="price_per_m">
+				(L$[PER_METER] per m²)
+			</text>
+			<text name="sell_to_label">
+				2. Ven el terreny a:
+			</text>
+			<text name="sell_to_text">
+				Tria a qui vols vendre-li el terreny.
+			</text>
+			<combo_box name="sell_to">
+				<combo_box.item label="- selecciona'n un -" name="--selectone--"/>
+				<combo_box.item label="Qualsevol" name="Anyone"/>
+				<combo_box.item label="Un resident específic:" name="Specificuser:"/>
+			</combo_box>
+			<button label="Tria" name="sell_to_select_agent"/>
+			<text name="sell_objects_label">
+				3. Vols vendre els objectes amb el terreny?
+			</text>
+			<text name="sell_objects_text">
+				Els objectes del terreny que et pertanyen canviaran de propietari?
+			</text>
+			<radio_group name="sell_objects">
+				<radio_item label="No, conservar la propietat dels objectes" name="no"/>
+				<radio_item label="Sí, vendre els objectes amb el terreny" name="yes"/>
+			</radio_group>
+			<button label="Mostra els objectes" name="show_objects"/>
+			<text name="nag_message_label">
+				IMPORTANT: Aquesta venda no es pot desfer.
+			</text>
+			<button label="Posa el terreny a la venda" name="sell_btn"/>
+			<button label="Cancel·la" name="cancel_btn"/>
+		</panel>
+	</scroll_container>
+</floater>

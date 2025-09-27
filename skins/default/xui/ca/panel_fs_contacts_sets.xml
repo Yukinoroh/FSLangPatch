@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="contact_sets_panel">
+	<panel.string name="empty_list">
+		Aquest conjunt és buit.
+	</panel.string>
+	<panel.string name="no_sets">
+		Cap conjunt
+	</panel.string>
+	<panel.string name="all_sets">
+		Tots els conjunts
+	</panel.string>
+	<panel.string name="pseudonyms">
+		Àlies
+	</panel.string>
+	<panel.string name="non_friends">
+		No són a la llista d'amics
+	</panel.string>
+	<button name="config_btn" tool_tip="Configuració del conjunt seleccionat" />
+	<button name="add_set_btn" tool_tip="Afegeix un nou conjunt de contactes" />
+	<button name="remove_set_btn" tool_tip="Elimina el conjunt de contactes seleccionat" />
+	<button label="Afegeix..." name="add_btn" tool_tip="Afegeix un avatar al conjunt de contactes actual" />
+	<button label="Elimina..." name="remove_btn" tool_tip="Elimina un avatar del conjunt de contactes actual" />
+	<button label="Perfil..." name="profile_btn" tool_tip="Obre el perfil de l'avatar" />
+	<button label="MI..." name="start_im_btn" tool_tip="Envia un missatge instantani (MI)" />
+	<button label="Teleporta..." name="offer_teleport_btn" tool_tip="Ofereix a aquest usuari teleportar-se fins a la teva posició" />
+	<button label="Àlies +" name="set_pseudonym_btn" tool_tip="Estableix un àlies per a aquest avatar" />
+	<button label="Àlies -" name="remove_pseudonym_btn" tool_tip="Elimina l'àlies d'aquest avatar" />
+	<button label="Elimina NP" name="remove_displayname_btn" tool_tip="Elimina el nom públic d'aquest avatar" />
+	<text name="member_count">
+		Membres: [COUNT]
+	</text>
+</panel>
