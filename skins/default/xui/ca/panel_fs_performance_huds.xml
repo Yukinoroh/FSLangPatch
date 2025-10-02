@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_performance_huds">
+	<text name="back_lbl">Enrere</text>
+	<text name="huds_title">Els teus HUDs</text>
+	<text name="huds_desc1">
+		Desprendre els HUDs que no fas servir estalvia memòria i pot accelerar el funcionament del programa.
+	</text>
+	<text name="huds_desc2">
+		Els HUDs sovint contenen molts scripts i també provoquen retards al servidor.
+	</text>
+	<text name="huds_desc3">
+		Nota: El botó per minimitzar un HUD no el desprèn. Fes servir la X per eliminar-lo.
+	</text>
+	<name_list name="hud_list">
+		<name_list.columns name="art_value" label="Temps (μs)" tool_tip="Temps dedicat a renderitzar aquest HUD (microsegons)"/>
+		<name_list.columns name="name" label="Nom" tool_tip="Fes clic a la 'X' per desprendre'l"/>
+	</name_list>
+</panel>

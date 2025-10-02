@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="Chat Options Menu">
+	<menu_item_check label="Mostra el radar..." name="nearby_people"/>
+	<menu_item_check label="Mostra les veus..." name="nearby_voice"/>
+	<menu_item_check label="Mostra la llista de blocats..." name="block_list"/>
+	<menu_item_check label="Fes servir l'estil V1 per al xat" name="plain_text_chat_history"/>
+	<menu_item_check label="Mostra les icones de perfil a les capçaleres del xat" name="chat_header_icons"/>
+	<context_menu label="Mida de la lletra..." name="font_size">
+		<menu_item_check label="Petita" name="font_size_small"/>
+		<menu_item_check label="Mitjana" name="font_size_medium"/>
+		<menu_item_check label="Gran" name="font_size_large"/>
+		<menu_item_check label="Enorme" name="font_size_huge"/>
+	</context_menu>
+	<menu_item_check label="Afegeix (&gt;) com a indicador d'escriptura" name="typing_chevron"/>
+	<menu_item_check label="Mostra les notificacions de missatges nous" name="new_message_notification"/>
+	<menu_item_check label="Mostra la barra d'escriptura" name="show_chat_bar"/>
+	<menu_item_check label="Mostra la selecció de canal" name="show_channel_selection"/>
+	<menu_item_check label="Mostra el botó Escriu/Envia" name="show_send_button"/>
+	<menu_item_check label="Mostra el botó Envia MI" name="show_im_send_button"/>
+</toggleable_menu>

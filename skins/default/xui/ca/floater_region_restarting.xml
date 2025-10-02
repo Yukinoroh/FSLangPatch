@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="region_restarting" title="La regió s'està reiniciant">
+	<floater.string name="RegionName">
+		La regió on et trobes ([NAME]) es reiniciarà.
+
+Si et quedes en aquesta regió quan s'apagui, et desconnectaràs automàticament.
+	</floater.string>
+	<floater.string name="RestartSeconds">
+		Segons per al reinici
+[SECONDS]
+	</floater.string>
+	<panel name="layout_panel_1">
+		<text name="region_name">
+			La regió on et trobes (-Nom Llarg de la Regió-) es reiniciarà.
+
+Si et quedes en aquesta regió quan s'apagui, et desconnectaràs automàticament.
+		</text>
+		<text name="restart_seconds">
+			Segons per al reinici
+32767
+		</text>
+		<combo_box label="Els meus punts de referència" name="landmark combo">
+			<combo_box.item label="Els meus punts de referència" name="item1"/>
+		</combo_box>
+		<button tool_tip="Teletransporta't al punt de referència" name="teleport_btn"/>
+	</panel>
+</floater>

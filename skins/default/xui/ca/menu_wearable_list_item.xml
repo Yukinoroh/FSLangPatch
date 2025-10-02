@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Outfit Wearable Context Menu">
+	<menu_item_call label="Reemplaça" name="wear_replace"/>
+	<menu_item_call label="Vesteix" name="wear_wear"/>
+	<menu_item_call label="Afegeix" name="wear_add"/>
+	<context_menu label="Adjunta a" name="wearable_attach_to"/>
+	<context_menu label="Adjunta al HUD" name="wearable_attach_to_hud"/>
+	<menu_item_call label="Edita" name="edit"/>
+	<menu_item_call label="Treu / Desadjunta" name="take_off_or_detach"/>
+	<menu_item_call label="Desadjunta" name="detach"/>
+	<menu_item_call label="Treu" name="take_off"/>
+	<menu_item_call label="Perfil de l'objecte" name="object_profile"/>
+	<menu_item_call label="Mostra l'original" name="show_original"/>
+	<menu_item_call label="Crea'n un de nou" name="create_new"/>
+	<menu_item_call label="--sense opcions--" name="--no options--"/>
+</context_menu>

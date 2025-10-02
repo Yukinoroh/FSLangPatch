@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<context_menu
+ layout="topleft"
+ name="Friends Popup">
+	<menu_item_call
+	 label="Envia MI..."
+	 layout="topleft"
+	 name="send_im">
+	</menu_item_call>
+	<menu_item_call
+	 label="Afegeix al conjunt..."
+	 layout="topleft"
+	 name="Add to Set">
+		
+	</menu_item_call>
+	<menu_item_call
+	 label="Ofereix teletransportació"
+	 layout="topleft"
+	 name="offer_teleport">
+		
+	</menu_item_call>
+	<menu_item_call
+	 label="Elimina amics..."
+	 layout="topleft"
+	 name="remove_friend">
+		
+	</menu_item_call>
+	<menu_item_separator/>
+	<menu name="options" label="Opcions...">
+		<menu_item_check
+		 label="Mostra la columna del nom d'usuari"
+		 name="show_username">
+			
+		</menu_item_check>
+		<menu_item_check
+		 label="Mostra la columna del nom de visualització"
+		 name="show_displayname">
+			
+		</menu_item_check>
+		<menu_item_check
+		 label="Mostra la columna del nom complet"
+		 name="show_fullname">
+			
+		</menu_item_check>
+		<menu_item_check
+		 label="Mostra les columnes de permisos"
+		 name="show_permissions">
+			
+		</menu_item_check>
+		<menu_item_separator/>
+		<menu_item_check
+		 label="Ordena per nom d'usuari"
+		 name="sort_by_username">
+			
+		</menu_item_check>
+		<menu_item_check
+		 label="Ordena per nom de visualització"
+		 name="sort_by_displayname">
+			
+		</menu_item_check>
+		<menu_item_separator/>
+		<menu_item_check
+		 label="Format de nom complet: Nom d'usuari (Nom de visualització)"
+		 name="format_username_displayname">
+			
+		</menu_item_check>
+		<menu_item_check
+		 label="Format de nom complet: Nom de visualització (Nom d'usuari)"
+		 name="format_displayname_username">
+			
+		</menu_item_check>
+		<menu_item_separator/>
+		<menu_item_check
+		 label="Mostra el filtre de cerca"
+		 name="friend_filter">
+			
+		</menu_item_check>
+	</menu>
+	<menu_item_separator/>
+	<menu_item_check
+	 label="Estat de connexió visible per als amics"
+	 name="GlobalOnlineStatusToggle">
+		
+	</menu_item_check>
+</context_menu>

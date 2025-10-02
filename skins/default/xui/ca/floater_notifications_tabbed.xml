@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_notifications_tabbed" title="Notificacions">
+	<floater.string name="system_tab_title">
+		Sistema ([COUNT])
+	</floater.string>
+	<floater.string name="transactions_tab_title">
+		Transaccions ([COUNT])
+	</floater.string>
+	<floater.string name="group_invitations_tab_title">
+		Invitacions ([COUNT])
+	</floater.string>
+	<floater.string name="group_notices_tab_title">
+		Grup ([COUNT])
+	</floater.string>
+	<string name="title_notification_tabbed_window">
+		NOTIFICACIONS
+	</string>
+	<layout_stack name="TabButtonsStack">
+		<layout_panel name="TabButtonsLayoutPanel">
+			<tab_container name="notifications_tab_container">
+				<panel label="Sistema (0)" name="system_notification_list_tab"/>
+				<panel label="Transaccions (0)" name="transaction_notifications_tab"/>
+				<panel label="Invitacions (0)" name="group_invite_notifications_tab"/>
+				<panel label="Grup (0)" name="group_notice_notifications_tab"/>
+			</tab_container>
+			<layout_stack name="ButtonsStack">
+				<layout_panel name="CondenseAllButtonPanel">
+					<button label="Redueix-ho tot" name="collapse_all_button"/>
+				</layout_panel>
+				<layout_panel name="GapLayoutPanel">
+					<panel label="Tauler de separació" name="GapPanel"/>
+				</layout_panel>
+				<layout_panel name="DeleteAllButtonPanel">
+					<button label="Suprimeix-ho tot" name="delete_all_button"/>
+				</layout_panel>
+			</layout_stack>
+		</layout_panel>
+	</layout_stack>
+</floater>

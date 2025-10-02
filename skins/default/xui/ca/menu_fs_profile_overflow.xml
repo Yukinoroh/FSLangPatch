@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="profile_overflow_menu">
+	<menu_item_call label="Comparteix" name="share"/>
+	<menu_item_call label="Truca" name="call"/>
+	<menu_item_call label="Afegeix al conjunt de contactes" name="add_to_contact_set"/>
+	<menu_item_call label="Copia el nom" name="copy_name_to_clipboard"/>
+	<menu_item_call label="Copia l'URI" name="copy_uri_to_clipboard"/>
+	<menu_item_call label="Copia l'UUID" name="copy_key_to_clipboard"/>
+	<menu_item_call label="Expulsa" name="kick"/>
+	<menu_item_call label="Congela" name="freeze"/>
+	<menu_item_call label="Descongela" name="unfreeze"/>
+	<menu_item_call label="CSR" name="csr"/>
+	<menu_item_call label="Informa d'un abús" name="report"/>
+</toggleable_menu>

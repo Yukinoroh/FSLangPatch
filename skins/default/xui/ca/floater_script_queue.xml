@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="queue" title="RESTABLEIX EL PROGRÉS">
+	<floater.string name="Starting">
+		S'inicia [START] en [COUNT] objectes.
+	</floater.string>
+	<floater.string name="Done">
+		Fet.
+	</floater.string>
+	<floater.string name="Resetting">
+		Restablint
+	</floater.string>
+	<floater.string name="Running">
+		En execució
+	</floater.string>
+	<floater.string name="NotRunning">
+		Aturat
+	</floater.string>
+	<floater.string name="Timeout">
+		Temps d'espera esgotat: [OBJECT_NAME]
+	</floater.string>
+	<floater.string name="LoadingObjInv">
+		S'està carregant l'inventari de: [OBJECT_NAME]
+	</floater.string>
+	<button label="Tanca" label_selected="Tanca" name="close"/>
+</floater>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="Avatar Profile Menu">
+	<menu_item_call label="IM" name="im"/>
+	<menu_item_call label="Ofereix teletransport" name="offer_teleport"/>
+	<menu_item_call label="Demana teletransport" name="request_teleport"/>
+	<menu_item_call label="Trucada de veu" name="voice_call"/>
+	<menu_item_call label="Visualitza l'historial del xat..." name="chat_history"/>
+	<menu_item_call label="Afegeix com a amic" name="add_friend"/>
+	<menu_item_call label="Elimina dels amics" name="remove_friend"/>
+	<menu_item_call label="Convida al grup..." name="invite_to_group"/>
+	<menu_item_call label="Permisos" name="agent_permissions"/>
+	<menu_item_call label="Mapa" name="map"/>
+	<menu_item_call label="Comparteix" name="share"/>
+	<menu_item_call label="Paga" name="pay"/>
+	<menu_item_check label="Bloqueja/Desbloqueja" name="block_unblock"/>
+	<menu_item_call label="Copia el nom de visualització" name="copy_display_name"/>
+	<menu_item_call label="Copia el nom d'usuari" name="copy_name"/>
+	<menu_item_call label="Copia l'identificador" name="copy_id"/>
+</toggleable_menu>

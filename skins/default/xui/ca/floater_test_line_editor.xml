@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_test_line_editor">
+	<line_editor name="enabled_line_editor" tool_tip="editor de línia activat">Editor de línia activat</line_editor>
+	<line_editor name="ascii_line_editor" tool_tip="editor de línia ASCII">Editor de línia només ASCII</line_editor>
+	<line_editor name="disabled_line_editor" tool_tip="editor de línia desactivat">Editor de línia desactivat</line_editor>
+	<line_editor name="enabled_colored_line_editor" tool_tip="editor de línia activat amb color">Editor de línia activat amb text vermell</line_editor>
+	<line_editor name="disabled_colored_line_editor" tool_tip="editor de línia desactivat amb color">Editor de línia desactivat amb text vermell</line_editor>
+	<line_editor name="left_pad_editor">Marge de text esquerre de 25 px</line_editor>
+	<line_editor name="left_pad_editor">Marge de text dret de 75 px</line_editor>
+	<line_editor name="left_pad_editor">Marge de text de 25 px a l'esquerra i 75 px a la dreta</line_editor>
+	<search_editor label="Escriu aquí per cercar" name="search editor" tool_tip="editor de cerca"/>
+</floater>

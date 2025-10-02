@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="gestures" title="Gestos" label="Llocs">
+	<floater.string name="loading">Carregant...</floater.string>
+	<floater.string name="playing">(Reproduint)</floater.string>
+	<floater.string name="copy_name">Còpia de [COPY_NAME]</floater.string>
+	<scroll_list name="gesture_list">
+		<scroll_list.columns label="Nom" name="name"/>
+		<scroll_list.columns label="Activador" name="trigger"/>
+		<scroll_list.columns label="Tecla" name="shortcut"/>
+	</scroll_list>
+	<panel label="bottom_panel" name="bottom_panel">
+		<menu_button name="gear_btn" tool_tip="Més opcions"/>
+		<button name="new_gesture_btn" tool_tip="Crea un gest nou"/>
+		<button name="activate_btn" tool_tip="Activa/desactiva el gest seleccionat"/>
+		<check_box label="Només els actius" name="FSShowOnlyActiveGestures"/>
+		<button name="del_btn" tool_tip="Suprimeix aquest gest"/>
+	</panel>
+	<button label="Edita" name="edit_btn" tool_tip="Obre la finestra per a editar el gest seleccionat"/>
+	<button label="Reprodueix" name="play_btn" tool_tip="Executa el gest seleccionat al món virtual."/>
+	<button label="Atura" name="stop_btn"/>
+</floater>

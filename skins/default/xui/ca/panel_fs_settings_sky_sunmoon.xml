@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="Sol i Lluna" name="panel_fs_settings_sky_hbodies">
+	<panel name="P_Sun_Color">
+		<text name="T_Sun_Header" value="Color del Sol i de la Lluna"/>
+	</panel>
+	<panel name="P_SM_Color">
+		<text name="color_label">
+			Color Sol/Lluna:
+		</text>
+	</panel>
+	<panel name="P_Sun_Header">
+		<text name="T_Sun_Header" value="Paràmetres del Sol i de les estrelles"/>
+	</panel>
+	<panel name="P_Sun_Setting">
+		<text name="image_label">
+			Imatge:
+		</text>
+		<check_box label="Mostra la balisa" name="sunbeacon"/>
+		<text name="glow_focus_label">
+			Focus de la brillantor:
+		</text>
+		<text name="glow_size_label">
+			Mida de la brillantor:
+		</text>
+		<text name="star_brightness_label">
+			Brillantor de les estrelles:
+		</text>
+		<text name="sun_scale_label">
+			Escala:
+		</text>
+		<text name="sun_azimuth_label">
+			Azimut:
+		</text>
+		<text name="sun_elevation_label">
+			Elevació:
+		</text>
+	</panel>
+	<panel name="P_Moon_Header">
+		<text name="T_Moon_Header" value="Paràmetres de la Lluna"/>
+	</panel>
+	<panel name="P_Moon_Setting">
+		<text name="moon_image_label">
+			Imatge:
+		</text>
+		<check_box label="Mostra la balisa" name="moonbeacon"/>
+		<text name="moon_scale_label">
+			Escala:
+		</text>
+		<text name="brightness_label">
+			Brillantor:
+		</text>
+		<text name="moon_azimuth_label">
+			Azimut:
+		</text>
+		<text name="moon_elevation_label">
+			Elevació:
+		</text>
+	</panel>
+</panel>

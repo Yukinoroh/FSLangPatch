@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="Terrenys en venda" name="panel_ls_land">
+	<panel name="panel_ls_input">
+		<text name="search_text">
+			Introdueix una consulta:
+		</text>
+		<combo_box name="land_category">
+			<combo_box.item label="Totes les categories" name="All" />
+			<combo_box.item label="Subhasta" name="Auction" />
+			<combo_box.item label="Terreny continental" name="Mainland" />
+			<combo_box.item label="Terreny a una illa" name="Estate" />
+		</combo_box>
+		<check_box label="Preu &lt;" name="price_check" />
+		<line_editor left_pad="23" name="edit_price" />
+		<check_box label="Àrea &gt;" name="area_check" />
+		<line_editor left_pad="32" name="edit_area" />
+		<text name="sort_text">
+			Ordena per:
+		</text>
+		<check_box label="Ascendent" name="ascending_check" />
+		<combo_box name="land_sort_combo">
+			<combo_box.item label="Nom" name="Name_item" />
+			<combo_box.item label="Preu" name="Price_item" />
+			<combo_box.item label="Preu per metre" name="PPM_item" />
+			<combo_box.item label="Àrea" name="Area_item" />
+		</combo_box>
+		<button label="Cerca" name="land_find" />
+	</panel>
+	<panel name="panel_ls_scrolllist">
+		<scroll_list name="search_results_land">
+			<columns label="Nom" name="land_name" />
+			<columns label="Preu" name="price" />
+			<columns label="Àrea" name="area" />
+			<columns label="Tipus" name="land_type" />
+		</scroll_list>
+		<button label="Enrere" name="land_back" />
+		<button label="Següent" name="land_next" />
+	</panel>
+</panel>

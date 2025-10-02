@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Url Popup">
+	<menu_item_call label="Mostra el perfil" name="show_agent"/>
+	<menu_item_call label="Envia MI" name="send_im"/>
+	<menu_item_call label="Mostra l'historial del xat" name="chat_history"/>
+	<menu_item_call label="Afegeix com a amic" name="add_friend"/>
+	<menu_item_call label="Afegeix al conjunt" name="Add to Set"/>
+	<menu_item_call label="Apropa't al resident" name="zoom_agent"/>
+	<menu_item_call label="Teleporta't al resident" name="teleportto_agent"/>
+	<menu_item_call label="Ofereix teleportació" name="offer_teleport"/>
+	<menu_item_call label="Sol·licita teleportació" name="request_teleport"/>
+	<menu_item_call label="Segueix el resident" name="track_agent"/>
+	<menu_item_call label="Elimina dels amics" name="remove_friend"/>
+	<menu_item_check label="Bloca" name="Block"/>
+	<context_menu label="Opcions del moderador" name="GroupModerationSubmenu">
+		<menu_item_call label="Permet el xat de text" name="AllowGroupChat"/>
+		<menu_item_call label="Prohibeix el xat de text" name="ForbidGroupChat"/>
+		<menu_item_call label="Veta el membre" name="BanGroupMember"/>
+		<menu_item_call label="Expulsa el membre" name="BanEjectMember"/>
+	</context_menu>
+	<menu_item_call label="Copia el nom al porta-retalls" name="url_copy_label"/>
+	<menu_item_call label="Copia la SLurl al porta-retalls" name="url_copy"/>
+</context_menu>

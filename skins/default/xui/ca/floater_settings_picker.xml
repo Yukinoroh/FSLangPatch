@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="settings picker" title="SELECCIONA: PARÀMETRES">
+	<floater.string name="pick title">
+		Selecciona:
+	</floater.string>
+	<floater.string name="pick_track">
+		SELECCIONA EL MODE D'EDICIÓ
+	</floater.string>
+	<floater.string name="pick_settings">
+		SELECCIONA ELS PARÀMETRES
+	</floater.string>
+	<floater.string name="track_water">
+		Aigua
+	</floater.string>
+	<floater.string name="track_ground">
+		Sòl
+	</floater.string>
+	<floater.string name="track_sky">
+		Cel[NUM]
+	</floater.string>
+	<layout_stack name="test_stack">
+		<layout_panel name="inv_list">
+			<filter_editor label="Filtra les textures" name="flt_inventory_search"/>
+		</layout_panel>
+		<layout_panel name="temp">
+			<button label="D'acord" label_selected="D'acord" name="btn_select"/>
+			<button label="Cancel·la" label_selected="Cancel·la" name="btn_cancel"/>
+		</layout_panel>
+	</layout_stack>
+</floater>

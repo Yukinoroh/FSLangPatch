@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="preview_texture">
+	<floater.string name="Title">
+		Textura: [NAME]
+	</floater.string>
+	<floater.string name="Copy">
+		Copia a l'inventari
+	</floater.string>
+	<floater.string name="DateTime">
+		[weekday,datetime,slt], [day,datetime,slt] [month,datetime,slt] [year,datetime,slt] [hour,datetime,slt]:[min,datetime,slt]:[second,datetime,slt] [timezone,datetime,slt]
+	</floater.string>
+	<floater.string name="UploaderDateTime">
+		Carregada per: [UPLOADER] el [DATE_TIME]
+	</floater.string>
+	<text name="desc txt">
+		Descripció:
+	</text>
+	<button label="Perfil" name="openprofile" width="65" />
+	<panel name="dimensions_panel" >
+		<text name="dimensions" width="110">
+			[WIDTH] x [HEIGHT] píx.
+		</text>
+		<button label="UUID" name="copyuuid" tool_tip="Copia l'UUID al porta-retalls" width="60" />
+		<text right="-128" name="aspect_ratio" width="128">
+			Previsualització
+		</text>
+		<combo_box width="100" name="combo_aspect_ratio" tool_tip="Previsualitza amb una relació d'aspecte fixa">
+		</combo_box>
+	</panel>
+
+	<panel name="button_panel">
+		<button name="btn_refresh" width="22" />
+		<button label="D'acord" name="OK" width="90" />
+		<button label="Cancel·la" name="Discard" width="110" />
+		<flyout_button label="Desa..." name="save_tex_btn" width="110">
+			<flyout_button.item label="Desa com a TGA" name="save_item_tga" />
+			<flyout_button.item label="Desa com a PNG" name="save_item_png" />
+		</flyout_button>
+	</panel>
+</floater>

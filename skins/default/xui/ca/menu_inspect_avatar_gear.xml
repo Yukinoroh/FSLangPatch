@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toggleable_menu name="Gear Menu">
+	<menu_item_call label="Visualitza el perfil" name="view_profile"/>
+	<menu_item_call label="Afegeix als amics" name="add_friend"/>
+	<menu_item_call label="Envia un IM" name="im"/>
+	<menu_item_call label="Truca" name="call"/>
+	<menu_item_call label="Ofereix teletransport" name="teleport"/>
+	<menu_item_call label="Demana teletransport" name="request_teleport"/>
+	<menu_item_call label="Convida al grup" name="invite_to_group"/>
+	<menu_item_call label="Bloqueja" name="block"/>
+	<menu_item_call label="Desbloqueja" name="unblock"/>
+	<menu_item_call label="Informa d'un abús" name="report"/>
+	<menu_item_call label="Congela" name="freeze"/>
+	<menu_item_call label="Expulsa (de la parcel·la)" name="eject"/>
+	<menu_item_call label="Expulsa (de la finca)" name="kick"/>
+	<menu_item_call label="CSR" name="csr"/>
+	<menu_item_call label="Depura les textures" name="debug"/>
+	<menu_item_call label="Bolca l'XML" name="Dump XML"/>
+	<menu_item_call label="Troba al mapa" name="find_on_map"/>
+	<menu_item_call label="Apropa el zoom" name="zoom_in"/>
+	<menu_item_call label="Paga" name="pay"/>
+	<menu_item_call label="Comparteix" name="share"/>
+</toggleable_menu>

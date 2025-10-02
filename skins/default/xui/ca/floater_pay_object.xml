@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Give Money" title="Paga">
+	<string name="payee_group">Paga al grup</string>
+	<string name="payee_resident">Paga al resident</string>
+	<text name="payee_name">Lenny Cazari</text>
+	<text name="object_name_label">A través de l'objecte:</text>
+	<icon name="icon_object" tool_tip="Objectes"/>
+	<text name="object_name_text">El meu objecte super guai amb un nom llarguíssim</text>
+	<button label="Paga L$1" label_selected="Paga L$1" name="fastpay 1"/>
+	<button label="Paga L$5" label_selected="Paga L$5" name="fastpay 5"/>
+	<button label="Paga L$10" label_selected="Paga L$10" name="fastpay 10"/>
+	<button label="Paga L$20" label_selected="Paga L$20" name="fastpay 20"/>
+	<text name="amount text">O introdueix l'import:</text>
+	<button label="Paga" label_selected="Paga" name="pay btn"/>
+	<button label="Cancel·la" label_selected="Cancel·la" name="cancel btn"/>
+</floater>

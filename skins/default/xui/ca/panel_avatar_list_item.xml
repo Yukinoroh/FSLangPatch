@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="avatar_list_item">
+    <string name="FormatSeconds">[COUNT]s</string>
+    <string name="FormatMinutes">[COUNT]m</string>
+    <string name="FormatHours">[COUNT]h</string>
+    <string name="FormatDays">[COUNT]d</string>
+    <string name="FormatWeeks">[COUNT]st</string>
+    <string name="FormatMonths">[COUNT]ms</string>
+    <string name="FormatYears">[COUNT]a</string>
+    <text name="avatar_name" value="(carregant)" />
+    <icon name="permission_edit_theirs_icon" tool_tip="Pots editar els objectes d'aquest amic." />
+    <button name="permission_edit_mine_btn" tool_tip="Aquest amic pot editar, suprimir o agafar els teus objectes" />
+    <button name="permission_map_btn" tool_tip="Aquest amic et pot localitzar al mapa." />
+    <button name="permission_online_btn" tool_tip="Aquest amic pot veure quan estàs en línia." />
+    <slider name="volume_slider" tool_tip="Volum de la veu" />
+    <button name="info_btn" tool_tip="Més informació" />
+    <button name="profile_btn" tool_tip="Mostra el perfil" />
+    <output_monitor name="speaking_indicator" tool_tip="Indica que l'avatar és a l'abast del xat de veu i el nivell de volum si està parlant." />
+</panel>
