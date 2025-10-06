@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<panel name="panel_flickr_account">
+	<string name="flickr_connected" value="Connectat a Flickr com:" />
+	<string name="flickr_disconnected" value="Error de connexió amb Flickr" />
+	<text name="account_caption_label">
+		No hi ha connexió amb Flickr.
+	</text>
+	<panel name="panel_buttons">
+		<button label="Connecta" name="connect_btn"/>
+		<button label="Desconnecta" name="disconnect_btn"/>
+		<text name="account_learn_more_label">
+			[http://community.secondlife.com/t5/English-Knowledge-Base/Second-Life-Share-Flickr/ta-p/2435609 Més informació sobre l'enviament a Flickr]
+		</text>
+	</panel>
+</panel>

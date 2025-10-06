@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="objectcontents" title="Contingut de l'objecte">
+	<layout_stack name="button_bar_ls">
+		<layout_panel name="copy_btn_lp">
+			<flyout_button label="Copia a l'inventari" name="copy_flyout">
+				<flyout_button.item label="Reemplaça el conjunt" name="replace"/>
+				<flyout_button.item label="Afegeix al conjunt" name="add"/>
+			</flyout_button>
+		</layout_panel>
+		<layout_panel name="cancel_btn_lp">
+			<button label="Cancel·la" label_selected="Cancel·la" name="cancel_button"/>
+		</layout_panel>
+	</layout_stack>
+</floater>

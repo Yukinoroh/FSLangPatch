@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="region_tracker" title="Seguiment de regions">
+	<text name="region_label_text" value="Afegeix regions des del mapa del món" />
+	<button name="refresh" tool_tip="Actualitza" />
+	<button name="remove" tool_tip="Elimina" />
+	<button name="open_map" tool_tip="Obre el mapa" />
+	<scroll_list name="region_list" tool_tip="Un doble clic l'obrirà al mapa del món">
+		<scroll_list.columns name="region_label" label="Etiqueta" />
+		<scroll_list.columns name="region_name" label="Regió" />
+	</scroll_list>
+</floater>

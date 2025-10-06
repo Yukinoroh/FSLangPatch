@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_test_radiogroup">
+	<radio_group name="parcel_voice_channel">
+		<radio_item label="Utilitza el canal espacial de l''Estate'" name="Estate"/>
+		<radio_item label="Utilitza un canal espacial privat" name="Private"/>
+		<radio_item label="Desactiva l'àudio espacial en aquesta parcel·la" name="Disabled"/>
+	</radio_group>
+	<radio_group name="simple_radio_group">
+		<radio_item label="Etiqueta a l'atribut 'label'" name="label_radio_item"/>
+		<radio_item label="Etiqueta al contingut de text" name="contents_radio_item"/>
+	</radio_group>
+	<radio_group name="no_border_radio_group">
+		<radio_item label="'Foo' sense vora" name="foo_radio_item"/>
+		<radio_item label="'Bar' sense vora" name="bar_item"/>
+	</radio_group>
+</floater>

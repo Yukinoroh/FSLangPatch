@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="menu_conversation_view">
+	<menu_item_check label="Ordena per nom" name="sort_by_name" />
+	<menu_item_check label="Ordena per data" name="sort_by_date" />
+	<menu_item_check label="Posa els amics a dalt" name="sort_by_friends" />
+	<menu_item_call label="Mostra l'historial del xat de proximitat..." name="view_nearby_chat_history" />
+</toggleable_le_menu>

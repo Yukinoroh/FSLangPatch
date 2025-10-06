@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="NearBy Chat Menu">
+	<menu_item_call label="Mostra la gent propera..." name="nearby_people"/>
+	<menu_item_check label="Mostra el text silenciat" name="muted_text"/>
+	<menu_item_check label="Mostra les icones d'amics" name="show_buddy_icons"/>
+	<menu_item_check label="Mostra els noms" name="show_names"/>
+	<menu_item_check label="Mostra les icones i els noms" name="show_icons_and_names"/>
+	<menu_item_call label="Mida de la lletra" name="font_size"/>
+</menu>

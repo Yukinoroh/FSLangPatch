@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Import Collada" title="Importa una escena">
+	<text name="mesh count">
+		Malles: [COUNT]
+	</text>
+	<text name="texture count">
+		Textures: [COUNT]
+	</text>
+	<text name="status">
+		Estat: [STATUS]
+	</text>
+	<button name="cancel" label="Cancel·la"/>
+	<string name="status_idle">
+		Inactiu
+	</string>
+	<string name="status_uploading">
+		S'està penjant [NAME]
+	</string>
+	<string name="status_creating">
+		S'està creant l'objecte [NAME]
+	</string>
+</floater>

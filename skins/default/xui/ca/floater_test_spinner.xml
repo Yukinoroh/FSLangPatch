@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_test_spinner">
+	<spinner label="Spinner genèric" name="generic_spinner"/>
+	<spinner label="Spinner amb 'callback'" name="callback_spinner"/>
+	<spinner label="Spinner amb colors" name="colorful_spinner"/>
+	<spinner label="Spinner de valor" name="value_spinner"/>
+	<spinner label="Mini spinner 1" name="mini_spinner_1"/>
+	<spinner label="Mini spinner 2" name="mini_spinner_2"/>
+	<spinner label="Spinner de control" name="control_spinner"/>
+	<spinner label="Segueix a l'esquerra" name="follows_left"/>
+	<spinner label="Segueix a la dreta" name="follows_right"/>
+</floater>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<context_menu name="Settings">
+	<menu_item_check label="Renderitza sempre completament" name="always_render"/>
+	<menu_item_check label="No renderitzis mai completament" name="never_render"/>
+	<menu_item_check label="Elimina de les excepcions" name="default"/>
+	<menu_item_call label="Inspecciona l'avatar" name="inspect"/>
+	<menu_item_call label="Apropa't a l'avatar" tool_tip="mou la càmera per visualitzar aquest avatar." name="zoom"/>
+</context_menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf--8" standalone="yes"?>
+<floater name="floater_test_checkbox">
+	<check_box label="Oh, mira, una casella de selecció!" name="show_location_checkbox"/>
+	<check_box label="Casella de selecció mínima" name="minimal_checkbox"/>
+	<check_box label="Casella de selecció desactivada" name="disabled_checkbox"/>
+	<check_box label="Color del text activat" name="text_enabled_color_checkbox"/>
+	<check_box label="Color del text desactivat" name="text_disabled_color_checkbox"/>
+	<check_box label="Valor inicial marcat" name="initial_value_checkbox"/>
+	<check_box label="Font monoespaiada" name="font_checkbox"/>
+</floater>

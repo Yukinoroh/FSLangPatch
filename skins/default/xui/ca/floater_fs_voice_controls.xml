@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_voice_controls" title="Controls de veu">
+	<string name="title_nearby">
+		Configuració de la veu
+	</string>
+	<string name="title_group">
+		Trucada al grup [GROUP]
+	</string>
+	<string name="title_adhoc">
+		Conferència
+	</string>
+	<string name="title_peer_2_peer">
+		Trucada a [NAME]
+	</string>
+	<string name="no_one_near">
+		No hi ha ningú a prop amb la veu activada
+	</string>
+	<layout_stack name="my_call_stack">
+		<layout_panel name="my_panel">
+			<text name="user_text" value="El meu avatar:"/>
+		</layout_panel>
+		<layout_panel name="leave_call_panel">
+			<layout_stack name="voice_effect_and_leave_call_stack">
+				<layout_panel name="leave_call_btn_panel">
+					<button label="Finalitza la trucada" name="leave_call_btn"/>
+				</layout_panel>
+			</layout_stack>
+		</layout_panel>
+	</layout_stack>
+</floater>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="edit_alpha_panel">
+	<scroll_container name="avatar_alpha_color_panel_scroll">
+		<panel name="avatar_alpha_color_panel">
+			<texture_picker label="Alfa inferior" name="Lower Alpha" tool_tip="Fes clic per seleccionar una imatge"/>
+			<texture_picker label="Alfa superior" name="Upper Alpha" tool_tip="Fes clic per seleccionar una imatge"/>
+			<texture_picker label="Alfa del cap" name="Head Alpha" tool_tip="Fes clic per seleccionar una imatge"/>
+			<texture_picker label="Alfa dels ulls" name="Eye Alpha" tool_tip="Fes clic per seleccionar una imatge"/>
+			<texture_picker label="Alfa dels cabells" name="Hair Alpha" tool_tip="Fes clic per seleccionar una imatge"/>
+		</panel>
+	</scroll_container>
+</panel>

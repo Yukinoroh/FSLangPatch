@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="edit_physics_panel">
+	<panel label="" name="accordion_panel">
+		<accordion name="physics_accordion">
+			<accordion_tab name="physics_breasts_updown_tab" title="Bot dels pits"/>
+			<accordion_tab name="physics_breasts_inout_tab" title="Canal dels pits"/>
+			<accordion_tab name="physics_breasts_leftright_tab" title="Balanceig dels pits"/>
+			<accordion_tab name="physics_belly_tab" title="Bot de la panxa"/>
+			<accordion_tab name="physics_butt_tab" title="Bot de les natges"/>
+			<accordion_tab name="physics_butt_leftright_tab" title="Balanceig de les natges"/>
+			<accordion_tab name="physics_advanced_tab" title="Paràmetres avançats"/>
+		</accordion>
+	</panel>
+</panel>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="gltf asset editor">
+	<floater.string name="floater_title" value="Editor d'escenes GLTF" />
+	<floater.string name="scene_title" value="Escena" />
+	<floater.string name="node_title" value="Node" />
+	<floater.string name="mesh_title" value="Malla" />
+	<floater.string name="skin_title" value="Skin" />
+	<layout_stack name="main_layout">
+		<layout_panel name="transforms_panel">
+			<menu_button name="clipboard_pos_btn" tool_tip="Opcions d'enganxat" />
+			<text name="label position" tool_tip="Posició (metres)">
+				Posició (m)
+			</text>
+			<menu_button name="clipboard_size_btn" tool_tip="Opcions d'enganxat" />
+			<text name="label size" tool_tip="Mida (metres)">
+				Mida (m)
+			</text>
+			<menu_button name="clipboard_rot_btn" tool_tip="Opcions d'enganxat" />
+			<text name="label rotation" tool_tip="Rotació (graus)">
+				Rotació (°)
+			</text>
+		</layout_panel>
+	</layout_stack>
+</floater>

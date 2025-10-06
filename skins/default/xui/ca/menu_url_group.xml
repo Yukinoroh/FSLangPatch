@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Url Popup">
+	<menu_item_call label="Mostra la informació del grup" name="show_group"/>
+	<menu_item_call label="Obtenint dades del grup, torna-ho a provar!" name="waiting_for_group_data"/>
+	<menu_item_call label="Activa el grup" name="activate_group"/>
+	<menu_item_call label="Uneix-te al grup" name="join_group"/>
+	<menu_item_call label="Abandona el grup" name="leave_group"/>
+	<menu_item_call label="Copia el nom del grup al porta-retalls" name="url_copy_label"/>
+	<menu_item_call label="Copia la SLurl al porta-retalls" name="url_copy"/>
+</context_menu>

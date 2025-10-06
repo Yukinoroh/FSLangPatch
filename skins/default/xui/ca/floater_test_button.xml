@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_test_button">
+	<button label="Botó estàndard" name="generic_button"/>
+	<button label="Delta inferior" name="bottom_delta_button"/>
+	<button label="Font SansSerifSmall" name="sans_serif_small_button"/>
+	<button label="Canvi de mida automàtic" name="auto_resize_button"/>
+	<button label="Fes clic per canviar l'etiqueta" label_selected="Etiqueta nova" name="label_selected_button"/>
+	<button label="Etiqueta sense ombra" name="label_shadow_button"/>
+	<button label="Etiqueta acolorida" name="label_color_button"/>
+	<button label="Commutable" label_selected="Activat" name="label_color_selected_button"/>
+	<button label="Desactivat" label_selected="Seleccionat" name="label_color_disabled_button"/>
+	<button label="Ressaltat" name="highlight_color_button"/>
+	<button label="Sense ressaltat" name="hover_glow_amount_button"/>
+</floater>

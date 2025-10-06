@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="menu_group_plus">
+	<menu_item_check label="Ordena per nom" name="sort_name" />
+	<menu_item_check label="Ordena per nom d'usuari" name="sort_username" />
+	<menu_item_check label="Ordena per estat" name="sort_status" />
+	<menu_item_check name="view_icons" label="Mostra les icones" />
+	<menu_item_check name="view_permissions" label="Mostra els permisos" />
+	<menu_item_check name="view_conversation" label="Mostra el registre de converses..." />
+</toggleable_menu>

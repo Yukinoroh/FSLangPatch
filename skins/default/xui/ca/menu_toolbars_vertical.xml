@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<context_menu name="Toolbars Popup" label="Botons">
+  <menu_item_call label="Elimina aquest botó" name="Remove button" />
+  <menu_item_call label="Botons de la barra d'eines..." name="Choose Buttons" />
+  <menu_item_check label="Alinea a la part superior" name="top_aligned" />
+  <menu_item_check label="Alinea al centre" name="center_aligned" />
+  <menu_item_check label="Alinea a la part inferior" name="bottom_aligned" />
+  <menu_item_check label="Icones i etiquetes" name="icons_with_text" />
+  <menu_item_check label="Només icones" name="icons_only" />
+  <menu_item_check label="Només etiquetes" name="text_only" />
+  <menu_item_check label="Bloquejada" name="toolbars_locked" />
+</context_menu>

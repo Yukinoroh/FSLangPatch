@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="edit_shape_panel">
+	<string name="meters">
+		Metres
+	</string>
+	<string name="feet">
+		Peus
+	</string>
+	<string name="height">
+		Alçada:
+	</string>
+	<string name="height_label_color">
+	    Blanc_50
+	</string>
+    <string name="height_value_label_color">
+	    Blanc
+	</string>
+	
+	<panel label="Forma" name="accordion_panel">
+		<accordion name="wearable_accordion">
+			<accordion_tab name="shape_body_tab" title="Cos"/>
+			<accordion_tab name="shape_head_tab" title="Cap"/>
+			<accordion_tab name="shape_eyes_tab" title="Ulls"/>
+			<accordion_tab name="shape_ears_tab" title="Orelles"/>
+			<accordion_tab name="shape_nose_tab" title="Nas"/>
+			<accordion_tab name="shape_mouth_tab" title="Boca"/>
+			<accordion_tab name="shape_chin_tab" title="Barbeta"/>
+			<accordion_tab name="shape_torso_tab" title="Tors"/>
+			<accordion_tab name="shape_legs_tab" title="Cames"/>
+		</accordion>
+	</panel>
+</panel>

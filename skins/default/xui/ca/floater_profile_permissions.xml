@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="profile_permissions">
+	<string name="description_string" value="Permet a [AGENT_NAME]:" />
+	<text name="perm_description" value="Permet a l'usuari:"/>
+	<check_box name="online_check" label="Veure quan estic en línia"/>
+	<check_box name="map_check" label="Trobar-me al mapa del món"/>
+	<check_box name="objects_check" label="Editar, eliminar o agafar els meus objectes"/>
+	<button name="perms_btn_ok" label="D'acord"/>
+	<button name="perms_btn_cancel" label="Cancel·la"/>
+</floater>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="preview_sound">
+	<floater.string name="Title">
+		So: [NAME]
+	</floater.string>
+	<text name="desc txt">
+		Descripció:
+	</text>
+	<button label="Reprodueix públicament" label_selected="Atura" name="Sound play btn" tool_tip="El so el sentirà tothom que sigui a prop"/>
+	<button label="Reprodueix en local" label_selected="Atura" name="Sound audition btn" tool_tip="El so només el sentiré jo"/>
+</floater>
