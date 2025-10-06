@@ -22,7 +22,7 @@
 		Inicialitzant la memòria cau de textures...
 	</string>
 	<string name="StartupRequireDriverUpdate">
-		Ha fallat la inicialització dels gràfics. Si us plau, actualitzeu el controlador gràfic.
+		Ha fallat la inicialització dels gràfics. Si us plau, actualitza el controlador gràfic.
 	</string>
 	<string name="AboutHeader">
 		[APP_NAME] [VIEWER_VERSION_0].[VIEWER_VERSION_1].[VIEWER_VERSION_2] ([VIEWER_VERSION_3]) [BUILD_DATE] [BUILD_TIME] ([ADDRESS_SIZE]bit / [SIMD]) ([CHANNEL])
@@ -105,7 +105,7 @@ Versió del servidor de veu: [VOICE_VERSION]
 		Lluminositat completa (Legacy)
 	</string>
 	<string name="LoginInProgress">
-		La connexió a [APP_NAME] pot semblar bloquejada. Si us plau, espereu.
+		La connexió a [APP_NAME] pot semblar bloquejada. Si us plau, espera.
 	</string>
 	<string name="LoginInProgressNoFrozen">
 		Connectant...
@@ -168,31 +168,31 @@ Versió del servidor de veu: [VOICE_VERSION]
 		Descarregant la roba...
 	</string>
 	<string name="InvalidCertificate">
-		El servidor ha retornat un certificat no vàlid o corrupte. Contacteu amb l'administrador de la graella.
+		El servidor ha retornat un certificat no vàlid o corrupte. Contacta amb l'administrador de la graella.
 	</string>
 	<string name="CertInvalidHostname">
-		S'ha utilitzat un nom d'amfitrió no vàlid per accedir al servidor. Verifiqueu el nom de la graella o l'SLURL.
+		S'ha utilitzat un nom d'amfitrió no vàlid per accedir al servidor. Verifica el nom de la graella o l'SLURL.
 	</string>
 	<string name="CertExpired">
-		Sembla que el certificat retornat per la graella ha expirat. Verifiqueu el rellotge del vostre sistema o contacteu amb l'administrador de la graella.
+		Sembla que el certificat retornat per la graella ha expirat. Verifica el rellotge del teu sistema o contacta amb l'administrador de la graella.
 	</string>
 	<string name="CertKeyUsage">
-		No es pot utilitzar el certificat retornat pel servidor per a SSL. Contacteu amb l'administrador de la graella.
+		No es pot utilitzar el certificat retornat pel servidor per a SSL. Contacta amb l'administrador de la graella.
 	</string>
 	<string name="CertBasicConstraints">
-		Hi ha massa certificats a la cadena de certificats del servidor. Contacteu amb l'administrador de la graella.
+		Hi ha massa certificats a la cadena de certificats del servidor. Contacta amb l'administrador de la graella.
 	</string>
 	<string name="CertInvalid">
-		No es pot carregar el certificat. Si us plau, contacteu amb l'administrador de la graella.
+		No es pot carregar el certificat. Si us plau, contacta amb l'administrador de la graella.
 	</string>
 	<string name="CertInvalidSignature">
-		No es pot verificar la signatura del certificat retornat pel servidor de la graella. Contacteu amb l'administrador de la graella.
+		No es pot verificar la signatura del certificat retornat pel servidor de la graella. Contacta amb l'administrador de la graella.
 	</string>
 	<string name="CertAllocationFailure">
 		Ha fallat l'assignació de memòria d'openssl per al certificat.
 	</string>
 	<string name="LoginFailedNoNetwork">
-		Error de xarxa: no s'ha pogut establir la connexió. Verifiqueu la vostra connexió de xarxa.
+		Error de xarxa: no s'ha pogut establir la connexió. Verifica la teva connexió de xarxa.
 	</string>
 	<string name="LoginFailedHeader">
 		Error de connexió.
@@ -210,15 +210,15 @@ Versió del servidor de veu: [VOICE_VERSION]
 		Graella de proves beta de Second Life (Aditi)
 	</string>
 	<string name="LoginFailedViewerNotPermitted">
-		El client que utilitzeu ja no permet accedir a Second Life. Descarregueu un nou client a la pàgina següent:
+		El client que utilitzés ja no permet accedir a Second Life. Descarrega un nou client a la pàgina següent:
 http://secondlife.com/download
 
-Per a més informació, consulteu la pàgina de preguntes freqüents següent:
+Per a més informació, consulta la pàgina de preguntes freqüents següent:
 http://secondlife.com/viewer-access-faq
 	</string>
 	<string name="LoginFailed">
-		El procés de connexió no ha finalitzat a causa d'un problema del sistema. Torneu-ho a provar en uns minuts.
-Si creieu que es tracta d'un error, contacteu amb el servei d'assistència de la xarxa.
+		El procés de connexió no ha finalitzat a causa d'un problema del sistema. Torna a provar en uns minuts.
+Si creus que es tracta d'un error, contacta amb el servei d'assistència de la xarxa.
 	</string>
 	<string name="LoginIntermediateOptionalUpdateAvailable">
 		Actualització opcional del client disponible: [VERSION]
@@ -231,28 +231,28 @@ Si creieu que es tracta d'un error, contacteu amb el servei d'assistència de la
 	</string>
 	<string name="LoginFailedAuthenticationFailed">
 		Ho sentim! La connexió ha fallat.
-Si us plau, verifiqueu que els elements següents s'han introduït correctament:
+Si us plau, verifica que els elements següents s'han introduït correctament:
     * Nom d'usuari (per exemple, bobsmith12 o steller.sunshine)
     * Contrasenya
     * Token de segon factor (si està activat)
-Assegureu-vos també que la tecla Bloq Majús no estigui activada.
+Assegura't també que la tecla Bloq Majús no estigui activada.
 	</string>
 	<string name="LoginFailedPasswordChanged">
-		La vostra contrasenya s'ha modificat per motius de seguretat.
-Accediu al vostre compte a la pàgina http://secondlife.com/password
-i responeu a la pregunta de seguretat per restablir la vostra contrasenya.
-Disculpeu les molèsties.
+		La teva contrasenya s'ha modificat per motius de seguretat.
+Accedeix al teu compte a la pàgina http://secondlife.com/password
+i respon a la pregunta de seguretat per restablir la teva contrasenya.
+Disculpa les molèsties.
 	</string>
 	<string name="LoginFailedPasswordReset">
-		Haureu de restablir la vostra contrasenya a causa d'alguns canvis realitzats al nostre sistema.
-Per a això, accediu al vostre compte a la pàgina http://secondlife.com/password
-i responeu a la pregunta de seguretat. La vostra contrasenya serà restablerta.
-Disculpeu les molèsties.
+		Has de restablir la teva contrasenya a causa d'alguns canvis realitzats al nostre sistema.
+Per a això, accedeix al teu compte a la pàgina http://secondlife.com/password
+i respon a la pregunta de seguretat. La teva contrasenya serà restablerta.
+Disculpa les molèsties.
 	</string>
 	<string name="LoginFailedEmployeesOnly">
 		Second Life està tancat temporalment per manteniment.
 Només els empleats hi poden accedir actualment.
-Consulteu la pàgina www.secondlife.com/status per a més informació.
+Consulta la pàgina www.secondlife.com/status per a més informació.
 	</string>
 	<string name="LoginFailedPremiumOnly">
 		Les connexions a Second Life estan temporalment limitades per garantir que l'experiència dels usuaris presents al món virtual sigui òptima.
@@ -261,33 +261,33 @@ Les persones amb comptes gratuïts no podran accedir a Second Life durant aquest
 	</string>
 	<string name="LoginFailedComputerProhibited">
 		No es pot accedir a Second Life des d'aquest ordinador.
-Si creieu que es tracta d'un error, contacteu
+Si creus que es tracta d'un error, contacta
 amb l'Assistència a l'adreça següent: support@secondlife.com.
 	</string>
 	<string name="LoginFailedAcountSuspended">
-		El vostre compte no és accessible fins a
+		El teu compte no és accessible fins a
 [TIME], hora del Pacífic.
 	</string>
 	<string name="LoginFailedAccountDisabled">
-		No es pot processar la vostra sol·licitud en aquest moment.
-Per obtenir ajuda, contacteu amb l'Assistència de Second Life a la pàgina següent: http://support.secondlife.com.
+		No es pot processar la teva sol·licitud en aquest moment.
+Per obtenir ajuda, contacta amb l'Assistència de Second Life a la pàgina següent: http://support.secondlife.com.
 	</string>
 	<string name="LoginFailedTransformError">
 		Incoherència de dades durant la connexió.
-Si us plau, contacteu amb support@secondlife.com.
+Si us plau, contacta amb support@secondlife.com.
 	</string>
 	<string name="LoginFailedAccountMaintenance">
-		S'estan realitzant operacions de manteniment menors al vostre compte.
-El vostre compte no és accessible fins a
+		S'estan realitzant operacions de manteniment menors al teu compte.
+El teu compte no és accessible fins a
 [TIME], hora del Pacífic.
-Si creieu que es tracta d'un error, contacteu amb l'Assistència a l'adreça següent: support@secondlife.com
+Si creus que es tracta d'un error, contacta amb l'Assistència a l'adreça següent: support@secondlife.com
 	</string>
 	<string name="LoginFailedPendingLogoutFault">
 		El simulador ha retornat un error en resposta a la sol·licitud de desconnexió.
 	</string>
 	<string name="LoginFailedPendingLogout">
-		El sistema us està desconnectant.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+		El sistema t'està desconnectant.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LoginFailedUnableToCreateSession">
 		No s'ha pogut crear una sessió vàlida.
@@ -296,61 +296,61 @@ Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
 		No s'ha pogut connectar a un simulador.
 	</string>
 	<string name="LoginFailedRestrictedHours">
-		El vostre compte només permet accedir a Second Life
+		El teu compte només permet accedir a Second Life
 entre [START] i [END], hora del Pacífic.
-Si us plau, torneu-ho a provar durant el període indicat.
-Si creieu que es tracta d'un error, contacteu amb l'Assistència a l'adreça següent: support@secondlife.com
+Si us plau, tornes-ho a provar durant el període indicat.
+Si creus que es tracta d'un error, contacta amb l'Assistència a l'adreça següent: support@secondlife.com
 	</string>
 	<string name="LoginFailedIncorrectParameters">
 		Paràmetres incorrectes.
-Si creieu que es tracta d'un error, contacteu amb l'Assistència a l'adreça següent: support@secondlife.com
+Si creus que es tracta d'un error, contacta amb l'Assistència a l'adreça següent: support@secondlife.com
 	</string>
 	<string name="LoginFailedFirstNameNotAlphanumeric">
 		El paràmetre Nom ha de ser alfanumèric.
-Si creieu que es tracta d'un error, contacteu amb l'Assistència a l'adreça següent: support@secondlife.com
+Si creus que es tracta d'un error, contacta amb l'Assistència a l'adreça següent: support@secondlife.com
 	</string>
 	<string name="LoginFailedLastNameNotAlphanumeric">
 		El paràmetre Cognom ha de ser alfanumèric.
-Si creieu que es tracta d'un error, contacteu amb l'Assistència a l'adreça següent: support@secondlife.com
+Si creus que es tracta d'un error, contacta amb l'Assistència a l'adreça següent: support@secondlife.com
 	</string>
 	<string name="LogoutFailedRegionGoingOffline">
 		La regió s'està desconnectant.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LogoutFailedAgentNotInRegion">
 		Agent absent de la regió.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LogoutFailedPendingLogin">
 		Una altra sessió s'estava obrint dins de la regió.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LogoutFailedLoggingOut">
 		La sessió anterior s'estava tancant dins de la regió.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LogoutFailedStillLoggingOut">
 		El tancament de la sessió anterior encara està en curs per a la regió.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LogoutSucceeded">
 		Darrera sessió tancada dins de la regió.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LogoutFailedLogoutBegun">
 		S'ha iniciat el procés de desconnexió per a la regió.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LoginFailedLoggingOutSession">
-		El sistema ha començat a tancar la vostra darrera sessió.
-Si us plau, torneu a intentar connectar-vos d'aquí a un minut.
+		El sistema ha començat a tancar la teva darrera sessió.
+Si us plau, tornes a intentar connectat d'aquí a un minut.
 	</string>
 	<string name="LoginFailedAuthenticationMFARequired">
-		Introduïu un nou token des de la vostra aplicació d'autenticació per poder connectar-vos.
-Si creieu que es tracta d'un error, contacteu amb support@secondlife.com.
+		Introduïu un nou token des de la teva aplicació d'autenticació per poder connectar-te.
+Si creus que es tracta d'un error, contacta amb support@secondlife.com.
 	</string>
 	<string name="AgentLostConnection">
-		Pot haver-hi problemes tècnics en aquesta regió. Si us plau, verifiqueu la vostra connexió a Internet.
+		Pot haver-hi problemes tècnics en aquesta regió. Si us plau, verifica la teva connexió a Internet.
 	</string>
 	<string name="SavingSettings">
 		Desant els paràmetres...
@@ -362,10 +362,10 @@ Si creieu que es tracta d'un error, contacteu amb support@secondlife.com.
 		Aturant...
 	</string>
 	<string name="YouHaveBeenDisconnected">
-		Heu estat desconnectat de la regió on éreu.
+		Has estat desconnectat de la regió on eres.
 	</string>
 	<string name="SentToInvalidRegion">
-		Heu estat transferit a una regió no vàlida.
+		Has estat transferit a una regió no vàlida.
 	</string>
 	<string name="TestingDisconnect">
 		Prova de desconnexió del client
@@ -503,7 +503,7 @@ Si creieu que es tracta d'un error, contacteu amb support@secondlife.com.
 		No es pot arrossegar més d'un objecte aquí
 	</string>
 	<string name="TooltipTooManyWearables">
-		No podeu portar una carpeta que contingui més de [AMOUNT] articles. Podeu modificar aquest límit a Avançat &gt; Mostra els paràmetres de depuració &gt; WearFolderLimit.
+		No pots portar una carpeta que contingui més de [AMOUNT] articles. Pots modificar aquest límit a Avançat &gt; Mostra els paràmetres de depuració &gt; WearFolderLimit.
 	</string>
 	<string name="TooltipPrice" value="[AMOUNT] L$:"/>
 	<string name="TooltipSLIcon">
@@ -543,49 +543,49 @@ Si creieu que es tracta d'un error, contacteu amb support@secondlife.com.
 		Posició: [POSITION]
 	</string>
 	<string name="TooltipOutboxDragToWorld">
-		No podeu rezzer (carregar) articles de la carpeta Anuncis del Marketplace
+		No pots rezzer (carregar) articles de la carpeta Anuncis del Marketplace
 	</string>
 	<string name="TooltipOutboxWorn">
-		No podeu posar articles que porteu a la carpeta Anuncis del Marketplace
+		No pots posar articles que portes a la carpeta Anuncis del Marketplace
 	</string>
 	<string name="TooltipOutboxFolderLevels">
-		El nivell de carpetes imbricades supera [AMOUNT]. Disminuïu el nombre de nivells de carpetes imbricades en altres carpetes. Si cal, poseu alguns articles en una caixa.
+		El nivell de carpetes imbricades supera [AMOUNT]. Disminueix el nombre de nivells de carpetes imbricades en altres carpetes. Si cal, posa alguns articles en una caixa.
 	</string>
 	<string name="TooltipOutboxTooManyFolders">
-		El nombre de subcarpetes supera [AMOUNT]. Disminuïu el nombre de subcarpetes al vostre anunci. Si cal, poseu alguns articles en una caixa.
+		El nombre de subcarpetes supera [AMOUNT]. Disminueix el nombre de subcarpetes al teu anunci. Si cal, posa alguns articles en una caixa.
 	</string>
 	<string name="TooltipOutboxTooManyObjects">
-		El nombre d'articles supera [AMOUNT]. Per poder vendre més de [AMOUNT] articles dins d'un mateix anunci, heu de posar alguns d'aquests articles en una caixa.
+		El nombre d'articles supera [AMOUNT]. Per poder vendre més de [AMOUNT] articles dins d'un mateix anunci, has de posar alguns d'aquests articles en una caixa.
 	</string>
 	<string name="TooltipOutboxTooManyStockItems">
 		El nombre d'articles en estoc supera [AMOUNT].
 	</string>
 	<string name="TooltipOutboxCannotDropOnRoot">
-		Només podeu dipositar articles o carpetes a les pestanyes TOTS o NO ASSOCIATS. Seleccioneu una d'aquestes pestanyes i torneu a moure el vostre article o carpetes.
+		Només pots dipositar articles o carpetes a les pestanyes TOTS o NO ASSOCIATS. Selecciona una d'aquestes pestanyes i tornes a moure el teu article o carpetes.
 	</string>
 	<string name="TooltipOutboxNoTransfer">
 		No es poden vendre ni transferir un o més d'aquests objectes
 	</string>
 	<string name="TooltipOutboxNotInInventory">
-		Només podeu posar al Marketplace articles del vostre inventari
+		Només pots posar al Marketplace articles del teu inventari
 	</string>
 	<string name="TooltipOutboxLinked">
-		No podeu posar articles o carpetes enllaçades al Marketplace
+		No pots posar articles o carpetes enllaçades al Marketplace
 	</string>
 	<string name="TooltipOutboxCallingCard">
-		No podeu posar targetes de visita al Marketplace
+		No pots posar targetes de visita al Marketplace
 	</string>
 	<string name="TooltipOutboxDragActive">
-		no podeu moure un anunci publicat
+		no pots moure un anunci publicat
 	</string>
 	<string name="TooltipOutboxCannotMoveRoot">
-		No podeu moure la carpeta arrel dels anuncis del Marketplace
+		No pots moure la carpeta arrel dels anuncis del Marketplace
 	</string>
 	<string name="TooltipOutboxMixedStock">
 		tots els articles d'una carpeta d'estoc han de tenir el mateix tipus i dret
 	</string>
 	<string name="TooltipOutfitNotInInventory">
-		Només podeu col·locar articles o conjunts del vostre inventari personal a "Els meus conjunts".
+		Només pots col·locar articles o conjunts del teu inventari personal a "Els meus conjunts".
 	</string>
 	<string name="TooltipCantCreateOutfit">
 		Un o més articles no es poden utilitzar en "Els meus conjunts".
@@ -597,13 +597,13 @@ Si creieu que es tracta d'un error, contacteu amb support@secondlife.com.
 		No es pot moure una carpeta a si mateixa
 	</string>
 	<string name="TooltipHttpUrl">
-		Feu clic per veure aquesta pàgina web
+		Fes clic per veure aquesta pàgina web
 	</string>
 	<string name="TooltipSLURL">
-		Feu clic per saber-ne més sobre aquest lloc
+		Fes clic per saber-ne més sobre aquest lloc
 	</string>
 	<string name="TooltipAgentUrl">
-		Feu clic per veure el perfil d'aquest resident
+		Fes clic per veure el perfil d'aquest resident
 	</string>
 	<string name="TooltipAgentInspect">
 		Saber-ne més sobre aquest resident
@@ -624,41 +624,41 @@ Si creieu que es tracta d'un error, contacteu amb support@secondlife.com.
 		Fer clic per oferir una teletransportació a aquest resident
 	</string>
 	<string name="TooltipAgentRequestFriend">
-		Fer clic per demanar a aquest resident que sigui el vostre amic
+		Fer clic per demanar a aquest resident que sigui el teu amic
 	</string>
 	<string name="TooltipGroupUrl">
-		Feu clic per veure la descripció d'aquest grup
+		Fes clic per veure la descripció d'aquest grup
 	</string>
 	<string name="TooltipEventUrl">
-		Feu clic per veure la descripció d'aquest esdeveniment
+		Fes clic per veure la descripció d'aquest esdeveniment
 	</string>
 	<string name="TooltipClassifiedUrl">
-		Feu clic per veure aquest anunci classificat
+		Fes clic per veure aquest anunci classificat
 	</string>
 	<string name="TooltipParcelUrl">
-		Feu clic per veure la descripció d'aquesta parcel·la
+		Fes clic per veure la descripció d'aquesta parcel·la
 	</string>
 	<string name="TooltipTeleportUrl">
-		Feu clic per teletransportar-vos a aquest lloc
+		Fes clic per teletransportar-vos a aquest lloc
 	</string>
 	<string name="TooltipObjectIMUrl">
-		Feu clic per veure la descripció d'aquest objecte
+		Fes clic per veure la descripció d'aquest objecte
 	</string>
 	<string name="TooltipMapUrl">
-		Feu clic per veure aquesta ubicació al mapa
+		Fes clic per veure aquesta ubicació al mapa
 	</string>
 	<string name="TooltipSLAPP">
-		Feu clic per executar l'ordre secondlife://
+		Fes clic per executar l'ordre secondlife://
 	</string>
 	<string name="TooltipFSHelpDebugSLUrl">
-		Feu clic per obrir la finestra de paràmetres de depuració per a aquest paràmetre
+		Fes clic per obrir la finestra de paràmetres de depuració per a aquest paràmetre
 	</string>
 	<string name="TooltipFSUrlEntryWear">
-		Feu clic per portar el contingut d'una carpeta d'inventari
+		Fes clic per portar el contingut d'una carpeta d'inventari
 	</string>
 	<string name="CurrentURL" value=" URL actual: [CurrentURL]"/>
 	<string name="TooltipEmail">
-		Feu clic per compondre un missatge
+		Fes clic per compondre un missatge
 	</string>
 	<string name="SLurlLabelTeleport">
 		Teletransporta'm a
@@ -799,7 +799,7 @@ poden ser adjuntats a les notes.
 		Serveis no disponibles o el temps de càrrega ha estat superat.
 	</string>
 	<string name="AssetUploadRequestInvalid">
-		Error en la sol·licitud de càrrega. Si us plau, consulteu el lloc:
+		Error en la sol·licitud de càrrega. Si us plau, consulta el lloc:
 http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 	</string>
 	<string name="SettingValidationError">
@@ -1127,7 +1127,7 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Utilitzar la textura
 	</string>
 	<string name="manip_hint1">
-		Arrossegueu el cursor sobre l'eix
+		Arrossega el cursor sobre l'eix
 	</string>
 	<string name="manip_hint2">
 		per fixar-lo a la graella
@@ -1151,7 +1151,7 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		(Distància: [DISTANCE] m)
 	</string>
 	<string name="minimap_no_focus">
-		La càmera no pot enfocar l'usuari perquè està fora de la vostra distància de visió.
+		La càmera no pot enfocar l'usuari perquè està fora de la teva distància de visió.
 	</string>
 	<string name="Ok">
 		D'acord
@@ -1190,7 +1190,7 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Desconnectat del xat de veu
 	</string>
 	<string name="reconnect_nearby">
-		Ara sereu reconnectat(da) al xat de veu proper.
+		Ara seràs reconnectat(da) al xat de veu proper.
 	</string>
 	<string name="ScriptQuestionCautionChatGranted">
 		'[OBJECTNAME]', un objecte pertanyent a [OWNERNAME], situat a [REGIONNAME] a [REGIONPOS], ha rebut el dret de: [PERMISSIONS].
@@ -1199,22 +1199,22 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		'[OBJECTNAME]', un objecte pertanyent a [OWNERNAME], situat a [REGIONNAME] a [REGIONPOS], no ha rebut el dret de: [PERMISSIONS].
 	</string>
 	<string name="AdditionalPermissionsRequestHeader">
-		Si autoritzeu l'accés al vostre compte, també autoritzeu l'objecte a:
+		Si autoritzes l'accés al teu compte, també autoritzes l'objecte a:
 	</string>
 	<string name="ScriptTakeMoney">
-		Fer dèbit als vostres Linden dollars (L$)
+		Fer dèbit als teus Linden dollars (L$)
 	</string>
 	<string name="ActOnControlInputs">
-		Utilitzar les vostres tecles de control
+		Utilitzar les teus tecles de control
 	</string>
 	<string name="RemapControlInputs">
-		Reconfigurar les vostres tecles de control
+		Reconfigurar les teus tecles de control
 	</string>
 	<string name="AnimateYourAvatar">
-		Animar el vostre avatar
+		Animar el teu avatar
 	</string>
 	<string name="AttachToYourAvatar">
-		Adjuntar al vostre avatar
+		Adjuntar al teu avatar
 	</string>
 	<string name="ReleaseOwnership">
 		Passar l'objecte al domini públic (sense propietari)
@@ -1229,25 +1229,25 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Modificar els seus permisos
 	</string>
 	<string name="TrackYourCamera">
-		Seguir la vostra càmera
+		Seguir la teva càmera
 	</string>
 	<string name="ControlYourCamera">
-		Controlar la vostra càmera
+		Controlar la teva càmera
 	</string>
 	<string name="TeleportYourAgent">
-		Teletransportar-vos
+		Teletransportar-te
 	</string>
 	<string name="ManageEstateSilently">
-		Gestioneu els vostres béns discretament
+		Gestiona els teus béns discretament
 	</string>
 	<string name="ChangeYourDefaultAnimations">
-		Modifiqueu les vostres animacions per defecte
+		Modifica les teves animacions per defecte
 	</string>
 	<string name="ForceSitAvatar">
-		Forceu el vostre avatar a seure
+		Modifica les teves animacions per defecte
 	</string>
 	<string name="ChangeEnvSettings">
-		Canvieu els vostres paràmetres d'entorn
+		Canvia els teus paràmetres d'entorn
 	</string>
 	<string name="SnapshotSavedToDisk">
 		Foto desada: [FILENAME]
@@ -1263,10 +1263,10 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Suprimir les alertes en gestionar les llistes d'accés als dominis
 	</string>
 	<string name="OverrideYourAnimations">
-		Substituïu les vostres animacions per defecte
+		ubstitueix les teves animacions per defecte
 	</string>
 	<string name="ScriptReturnObjects">
-		Retorneu els objectes de part vostra
+		Retornes els objectes de part teva
 	</string>
 	<string name="UnknownScriptPermission">
 		(desconegut)
@@ -1576,7 +1576,7 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Fitxer(s) adjunt(s):
 	</string>
 	<string name="GroupNotifyViewPastNotices">
-		Consulteu les notícies anteriors o trieu no rebre més aquests missatges aquí.
+		Consulteu les notícies anteriors o tria no rebre més aquests missatges aquí.
 	</string>
 	<string name="GroupNotifyOpenAttachment">
 		Obre el fitxer adjunt
@@ -1630,22 +1630,22 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Premeu ESC per sortir de la vista subjectiva
 	</string>
 	<string name="InventoryNoMatchingItems">
-		No heu trobat el que cercàveu? Proveu [secondlife:///app/search/all/[SEARCH_TERM] Cercar].
+		No has trobat el que cercàveu? Proveu [secondlife:///app/search/all/[SEARCH_TERM] Cercar].
 	</string>
 	<string name="InventoryNoMatchingRecentItems">
-		Heu trobat el que cercàveu? Proveu [secondlife:///app/inventory/filters Show filters].
+		Has trobat el que cercàveu? Proveu [secondlife:///app/inventory/filters Show filters].
 	</string>
 	<string name="PlacesNoMatchingItems">
-		No heu trobat el que cercàveu? Proveu [secondlife:///app/search/places/[SEARCH_TERM] Cercar].
+		No has trobat el que cercàveu? Proveu [secondlife:///app/search/places/[SEARCH_TERM] Cercar].
 	</string>
 	<string name="FavoritesNoMatchingItems">
-		Arrossegueu un punt de referència aquí per afegir-lo als vostres Favorits.
+		Arrossega un punt de referència aquí per afegir-lo als teus Favorits.
 	</string>
 	<string name="MarketplaceNoListing">
 		Encara no teniu cap anunci.
 	</string>
 	<string name="MarketplaceNoMatchingItems">
-		No s'ha trobat cap article. Verifiqueu l'ortografia de la vostra cadena de cerca i torneu-ho a provar.
+		No s'ha trobat cap article. Verifica l'ortografia de la teva cadena de cerca i tornes-ho a provar.
 	</string>
 	<string name="InventorySingleFolderEmpty">
 		La carpeta és buida.
@@ -1654,10 +1654,10 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Cap coincidència.
 	</string>
 	<string name="InventoryNoTexture">
-		No teniu cap còpia d'aquesta textura al vostre inventari
+		No teniu cap còpia d'aquesta textura al teu inventari
 	</string>
 	<string name="InventoryInboxNoItems">
-		Les compres que heu fet al Marketplace es mostren aquí. Llavors podeu arrossegar-les al vostre inventari per utilitzar-les.
+		Les compres que has fet al Marketplace es mostren aquí. Llavors pots arrossegar-les al teu inventari per utilitzar-les.
 	</string>
 	<string name="MarketplaceURL">
 		https://marketplace.[MARKETPLACE_DOMAIN_NAME]/
@@ -1688,10 +1688,10 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 	</string>
 	<string name="InventoryOutboxNotMerchantTooltip"/>
 	<string name="InventoryOutboxNotMerchant">
-		Per esdevenir venedor, heu de [[MARKETPLACE_CREATE_STORE_URL] crear una botiga al Marketplace].
+		Per esdevenir venedor, has de [[MARKETPLACE_CREATE_STORE_URL] crear una botiga al Marketplace].
 	</string>
 	<string name="InventoryOutboxNoItemsTitle">
-		La vostra bústia de sortida és buida.
+		La teva bústia de sortida és buida.
 	</string>
 	<string name="InventoryOutboxNoItemsTooltip"/>
 	<string name="InventoryOutboxNoItems">
@@ -1701,7 +1701,7 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 		Inicialitzant el Marketplace...
 	</string>
 	<string name="InventoryOutboxInitializing">
-		Estem accedint al vostre compte a la [[MARKETPLACE_CREATE_STORE_URL] botiga del Marketplace].
+		Estem accedint al teu compte a la [[MARKETPLACE_CREATE_STORE_URL] botiga del Marketplace].
 	</string>
 	<string name="InventoryOutboxErrorTitle">
 		Errors del Marketplace.
@@ -1711,18 +1711,18 @@ http://secondlife.com/support per ajudar-vos a resoldre aquest problema.
 	</string>
 	<string name="InventoryMarketplaceError">
 		S'ha produït un error en obrir els anuncis del Marketplace.
-Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life a http://support.secondlife.com per obtenir ajuda.
+Si continues rebent aquest missatge, contacta amb l'assistència de Second Life a http://support.secondlife.com per obtenir ajuda.
 	</string>
 	<string name="InventoryMarketplaceConnectionError">
 		La connexió a l'anunci del Marketplace ha fallat.
-Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life a l'adreça següent: http://support.secondlife.com
+Si continues rebent aquest missatge, contacta amb l'assistència de Second Life a l'adreça següent: http://support.secondlife.com
 	</string>
 	<string name="InventoryMarketplaceConnectionErrorReason">
 		La connexió a l'anunci del Marketplace ha fallat. Motiu: [REASON]
-Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life a l'adreça següent: http://support.secondlife.com
+Si continues rebent aquest missatge, contacta amb l'assistència de Second Life a l'adreça següent: http://support.secondlife.com
 	</string>
 	<string name="InventoryMarketplaceListingsNoItemsTitle">
-		La vostra carpeta d'Anuncis del Marketplace és buida.
+		La teva carpeta d'Anuncis del Marketplace és buida.
 	</string>
 	<string name="InventoryMarketplaceListingsNoItems">
 		Per posar carpetes a la venda al [[MARKETPLACE_DASHBOARD_URL] Marketplace], arrossegueu-les a aquesta zona.
@@ -1782,7 +1782,7 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Error:
 	</string>
 	<string name="Marketplace Error Not Merchant">
-		Abans d'enviar articles al Marketplace, heu de configurar-vos com a venedor (gratuït).
+		Abans d'enviar articles al Marketplace, has de configurar-vos com a venedor (gratuït).
 	</string>
 	<string name="Marketplace Error Not Accepted">
 		No es pot moure l'article a aquesta carpeta.
@@ -1812,7 +1812,7 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		actualitzant...
 	</string>
 	<string name="UploadFeeInfo">
-		Les tarifes depenen del vostre nivell de subscripció. Els nivells superiors estan subjectes a tarifes menys elevades. [https://secondlife.com/my/account/membership.php? Més informació]
+		Les tarifes depenen del teu nivell de subscripció. Els nivells superiors estan subjectes a tarifes menys elevades. [https://secondlife.com/my/account/membership.php? Més informació]
 	</string>
 	<string name="Open landmarks">
 		Punts de referència oberts
@@ -2187,22 +2187,22 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Inscrit avui
 	</string>
 	<string name="av_render_everyone_now">
-		A partir d'ara, tothom us pot veure.
+		A partir d'ara, tothom et pot veure.
 	</string>
 	<string name="av_render_not_everyone">
-		És possible que no sigueu renderitzat per tota la gent que us envolta.
+		És possible que no siguis renderitzat per tota la gent que t'envolta.
 	</string>
 	<string name="av_render_over_half">
-		És possible que no sigueu renderitzat per més de la meitat de la gent que us envolta.
+		És possible que no siguis renderitzat per més de la meitat de la gent que t'envolta.
 	</string>
 	<string name="av_render_most_of">
-		És possible que no sigueu renderitzat per la majoria de la gent que us envolta.
+		És possible que no siguis renderitzat per la majoria de la gent que t'envolta.
 	</string>
 	<string name="av_render_anyone">
-		És possible que no sigueu renderitzat per cap de les persones que us envolten.
+		És possible que no siguis renderitzat per cap de les persones que us envolten.
 	</string>
 	<string name="hud_description_total">
-		El vostre HUD
+		El teu HUD
 	</string>
 	<string name="hud_name_with_joint">
 		[OBJ_NAME] (portat a [JNT_NAME])
@@ -2516,7 +2516,7 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Cap parcel·la seleccionada
 	</string>
 	<string name="ScriptLimitsRequestWrongRegion">
-		Error: la informació de l'script només està disponible a la vostra regió actual.
+		Error: la informació de l'script només està disponible a la teva regió actual.
 	</string>
 	<string name="ScriptLimitsRequestWaiting">
 		Extraient la informació...
@@ -2711,25 +2711,25 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Nou script
 	</string>
 	<string name="DoNotDisturbModeResponseDefault">
-		Aquest resident ha activat No Molestar i veurà el vostre missatge més tard.
+		Aquest resident ha activat No Molestar i veurà el teu missatge més tard.
 	</string>
 	<string name="AutoResponseModeDefault">
-		El resident a qui heu enviat un missatge ha activat el mode de resposta automàtica del visor [APP_NAME], la qual cosa significa que ha demanat que no el molestin. El vostre missatge es mostrarà igualment a la finestra de missatgeria instantània per a ser consultat posteriorment.
+		El resident a qui has enviat un missatge ha activat el mode de resposta automàtica del visor [APP_NAME], la qual cosa significa que ha demanat que no el molestin. El teu missatge es mostrarà igualment a la finestra de missatgeria instantània per a ser consultat posteriorment.
 	</string>
 	<string name="AutoResponseModeNonFriendsDefault">
-		El resident a qui heu enviat un missatge ha activat el mode de resposta automàtica del visor [APP_NAME], la qual cosa significa que ha demanat que no el molestin. El vostre missatge es mostrarà igualment a la finestra de missatgeria instantània per a ser consultat posteriorment.
+		El resident a qui has enviat un missatge ha activat el mode de resposta automàtica del visor [APP_NAME], la qual cosa significa que ha demanat que no el molestin. El teu missatge es mostrarà igualment a la finestra de missatgeria instantània per a ser consultat posteriorment.
 	</string>
 	<string name="RejectTeleportOffersResponseDefault">
-		El resident a qui heu enviat un missatge ha activat el mode de rebuig de totes les ofertes o sol·licituds de teletransportació del visor [APP_NAME], la qual cosa significa que ha demanat que no el molestin amb ofertes o sol·licituds de teletransportació. Podeu enviar-li un missatge privat igualment.
+		El resident a qui has enviat un missatge ha activat el mode de rebuig de totes les ofertes o sol·licituds de teletransportació del visor [APP_NAME], la qual cosa significa que ha demanat que no el molestin amb ofertes o sol·licituds de teletransportació. Pots enviar-li un missatge privat igualment.
 	</string>
 	<string name="RejectFriendshipRequestsResponseDefault">
-		El resident a qui heu enviat un missatge ha activat el mode de rebuig de totes les sol·licituds d'amistat del visor [APP_NAME], la qual cosa significa que ha demanat que no el molestin amb sol·licituds d'amistat. Podeu enviar-li un missatge privat igualment.
+		El resident a qui has enviat un missatge ha activat el mode de rebuig de totes les sol·licituds d'amistat del visor [APP_NAME], la qual cosa significa que ha demanat que no el molestin amb sol·licituds d'amistat. Pots enviar-li un missatge privat igualment.
 	</string>
 	<string name="MutedAvatarsResponseDefault">
-		El resident a qui heu enviat un missatge ha bloquejat l'enviament de tots els missatges de la vostra part.
+		El resident a qui has enviat un missatge ha bloquejat l'enviament de tots els missatges de la teva part.
 	</string>
 	<string name="AwayAvatarResponseDefault">
-		El resident a qui heu enviat un missatge està actualment absent. El vostre missatge es mostrarà a la finestra de missatgeria instantània per a ser consultat posteriorment.
+		El resident a qui has enviat un missatge està actualment absent. El teu missatge es mostrarà a la finestra de missatgeria instantània per a ser consultat posteriorment.
 	</string>
 	<string name="MuteByName">
 		(per nom)
@@ -2750,7 +2750,7 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		No hi ha cap reglament per a aquest domini.
 	</string>
 	<string name="RegionNoCovenantOtherOwner">
-		No hi ha cap reglament per a aquest domini. El terreny d'aquest domini és venut pel propietari. Per a més informació, contacteu amb el propietari.
+		No hi ha cap reglament per a aquest domini. El terreny d'aquest domini és venut pel propietari. Per a més informació, contacta amb el propietari.
 	</string>
 	<string name="covenant_last_modified" value="Darrera modificació:"/>
 	<string name="none_text" value=" (cap)"/>
@@ -2795,13 +2795,13 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		(actualització després de la publicació)
 	</string>
 	<string name="NoPicksClassifiedsText">
-		No heu creat favorits ni anuncis classificats. Feu clic al botó Més per crear un favorit o un anunci classificat.
+		No has creat favorits ni anuncis classificats. Fes  clic al botó Més per crear un favorit o un anunci classificat.
 	</string>
 	<string name="NoPicksText">
-		No heu creat favorits. Feu clic al botó Nou per crear un favorit.
+		No has creat favorits. Fes  clic al botó Nou per crear un favorit.
 	</string>
 	<string name="NoClassifiedsText">
-		No heu creat anuncis classificats. Feu clic al botó Nou per crear un anunci classificat.
+		No has creat anuncis classificats. Fes  clic al botó Nou per crear un anunci classificat.
 	</string>
 	<string name="NoAvatarPicksClassifiedsText">
 		L'usuari no té ni favorits ni anuncis classificats.
@@ -2816,13 +2816,13 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		Carregant...
 	</string>
 	<string name="NoPicksText">
-		No heu creat favorits.
+		No has creat favorits.
 	</string>
 	<string name="NoAvatarPicksText">
 		L'usuari no té favorits.
 	</string>
 	<string name="NoClassifiedsText">
-		No heu creat anuncis. Feu clic al botó Més de sota per crear un anunci.
+		No has creat anuncis. Fes  clic al botó Més de sota per crear un anunci.
 	</string>
 	<string name="NoAvatarClassifiedsText">
 		L'usuari no té anuncis
@@ -2849,22 +2849,22 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		posseït per un resident desconegut
 	</string>
 	<string name="InvOfferGaveYou">
-		us ha donat
+		t'ha donat
 	</string>
 	<string name="InvOfferYouDecline">
-		Rebutgeu
+		Rebutja
 	</string>
 	<string name="InvOfferDecline">
-		Rebutgeu l'oferta [DESC] de [NAME].
+		Rebutja l'oferta [DESC] de [NAME].
 	</string>
 	<string name="InvOfferFrom">
 		de
 	</string>
 	<string name="InvOfferAutoAcceptObject">
-		Un objecte anomenat [OBJECT_NAME] us ha donat aquest(a) [OBJECT_TYPE]: [DESC]
+		Un objecte anomenat [OBJECT_NAME] t'ha donat aquest(a) [OBJECT_TYPE]: [DESC]
 	</string>
 	<string name="InvOfferAutoAcceptUser">
-		[USER_NAME] us ha donat aquest(a) [OBJECT_TYPE]: [DESC]
+		[USER_NAME] t'ha donat aquest(a) [OBJECT_TYPE]: [DESC]
 	</string>
 	<string name="GroupMoneyTotal">
 		Total
@@ -2873,7 +2873,7 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 		comprat
 	</string>
 	<string name="GroupMoneyPaidYou">
-		us ha pagat
+		t'ha pagat
 	</string>
 	<string name="GroupMoneyPaidInto">
 		pagat
@@ -3124,7 +3124,7 @@ Si continueu rebent aquest missatge, contacteu amb l'assistència de Second Life
 	</string>
 	<string name="MBCmdLineError">
 		S'ha produït un error en llegir la línia d'ordres.
-Si us plau, consulteu: http://wiki.secondlife.com/wiki/Client_parameters
+Si us plau, consulta: http://wiki.secondlife.com/wiki/Client_parameters
 Error:
 	</string>
 	<string name="MBCmdLineUsg">
@@ -3133,18 +3133,18 @@ Error:
 	<string name="MBUnableToAccessFile">
 		[APP_NAME] no pot accedir a un fitxer requerit.
 
-Això es deu al fet que algú ha obert múltiples còpies o que el vostre sistema pensa que un fitxer està obert.
-Si aquest missatge persisteix, reinicieu l'ordinador.
-Si el problema persisteix, potser haureu de desinstal·lar completament i reinstal·lar [APP_NAME].
+Això es deu al fet que algú ha obert múltiples còpies o que el teu sistema pensa que un fitxer està obert.
+Si aquest missatge persisteix, reinicia l'ordinador.
+Si el problema persisteix, potser has de desinstal·lar completament i reinstal·lar [APP_NAME].
 	</string>
 	<string name="MBFatalError">
 		Error fatal
 	</string>
 	<string name="MBApplicationError">
-		Error de l'aplicació - No us espanteu
+		Error de l'aplicació - No t'espantis
 	</string>
 	<string name="MBApplicationErrorDetails">
-		Ho sentim, però [APP_NAME] s'ha bloquejat i s'ha de tancar. Si observeu que aquest problema es repeteix, contacteu amb el nostre equip d'assistència i envieu el missatge següent:
+		Ho sentim, però [APP_NAME] s'ha bloquejat i s'ha de tancar. Si observes que aquest problema es repeteix, contacta amb el nostre equip d'assistència i envia el missatge següent:
 
 [ERROR_DETAILS]
 	</string>
@@ -3153,8 +3153,8 @@ Si el problema persisteix, potser haureu de desinstal·lar completament i reinst
 	</string>
 	<string name="MBAlreadyRunning">
 		[APP_NAME] ja s'està executant.
-Verifiqueu si una versió minimitzada del programa apareix a la vostra barra de tasques.
-Si aquest missatge persisteix, reinicieu l'ordinador.
+Verifica si una versió minimitzada del programa apareix a la teva barra de tasques.
+Si aquest missatge persisteix, reinicia l'ordinador.
 	</string>
 	<string name="MBFrozenCrashed">
 		[APP_NAME] sembla que s'ha bloquejat durant l'ús anterior.
@@ -3165,7 +3165,7 @@ Voleu enviar un informe d'error?
 	</string>
 	<string name="MBNoDirectX">
 		[APP_NAME] no pot detectar DirectX 9.0b o una versió superior.
-[APP_NAME] utilitza DirectX per detectar els maquinaris i/o els controladors que no estan actualitzats i poden causar problemes d'estabilitat, rendiment o bloquejos. Tot i que podeu utilitzar [APP_NAME] sense DirectX, us recomanem que l'utilitzeu amb DirectX 9.0b.
+[APP_NAME] utilitza DirectX per detectar els maquinaris i/o els controladors que no estan actualitzats i poden causar problemes d'estabilitat, rendiment o bloquejos. Tot i que pots utilitzar [APP_NAME] sense DirectX, us recomanem que l'utilitza amb DirectX 9.0b.
 
 Voleu continuar?
 	</string>
@@ -3203,13 +3203,13 @@ Utilitzant el mode de finestra.
 	</string>
 	<string name="MBTrueColorWindow">
 		[APP_NAME] requereix True Color (32 bits) per executar-se.
-Accediu als paràmetres de visualització del vostre ordinador i configureu el mode de color a 32 bits.
+Accediu als paràmetres de visualització del teu ordinador i configureu el mode de color a 32 bits.
 	</string>
 	<string name="MBAlpha">
 		[APP_NAME] no es pot executar, ja que no hi ha un canal alfa de 8 bits accessible. En general, això prové de problemes amb el controlador de la targeta de vídeo.
 Assegureu-vos d'haver instal·lat el controlador de la targeta de vídeo més recent possible.
-Assegureu-vos també que la vostra pantalla estigui configurada a True Color (32 bits) a Tauler de control &gt; Pantalla &gt; Configuració.
-Si aquest missatge persisteix, aneu a la pàgina [SUPPORT_SITE].
+Assegureu-vos també que la teva pantalla estigui configurada a True Color (32 bits) a Tauler de control &gt; Pantalla &gt; Configuració.
+Si aquest missatge persisteix, ves a la pàgina [SUPPORT_SITE].
 	</string>
 	<string name="MBPixelFmtSetErr">
 		No es pot trobar el format de píxel adequat
@@ -3221,9 +3221,9 @@ Si aquest missatge persisteix, aneu a la pàgina [SUPPORT_SITE].
 		No es pot activar el context de renderització GL
 	</string>
 	<string name="MBVideoDrvErr">
-		[APP_NAME] no es pot executar perquè els controladors de la vostra targeta de vídeo no s'han instal·lat correctament, no estan actualitzats o són per a maquinari no compatible. Assegureu-vos de tenir controladors de targetes de vídeo recents, i fins i tot si teniu els més recents, reinstal·leu-los.
+		[APP_NAME] no es pot executar perquè els controladors de la teva targeta de vídeo no s'han instal·lat correctament, no estan actualitzats o són per a maquinari no compatible. Assegureu-vos de tenir controladors de targetes de vídeo recents, i fins i tot si teniu els més recents, reinstal·leu-los.
 
-Si aquest missatge persisteix, aneu a la pàgina [SUPPORT_SITE].
+Si aquest missatge persisteix, ves a la pàgina [SUPPORT_SITE].
 	</string>
 	<string name="MBOutOfMemoryTitle">
 		Sense Memòria
@@ -3231,12 +3231,12 @@ Si aquest missatge persisteix, aneu a la pàgina [SUPPORT_SITE].
 	<string name="MBOutOfMemoryErr">
 		La sol·licitud de memòria de [APP_NAME] ha fallat. L'aplicació no pot continuar i es tancarà.
 
-Si la memòria RAM del vostre ordinador és baixa, tanqueu les aplicacions pesades abans d'iniciar [APP_NAME], assigneu un fitxer de paginació o reduïu els paràmetres gràfics com la distància de renderitzat.
+Si la memòria RAM del teu ordinador és baixa, tanques les aplicacions pesades abans d'iniciar [APP_NAME], assigneu un fitxer de paginació o reduïu els paràmetres gràfics com la distància de renderitzat.
 	</string>
 	<string name="MBMissingFile">
 		[APP_NAME] no ha pogut accedir o trobar alguns dels fitxers que necessita i es tancarà.
 
-Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPORT_SITE] si el problema persisteix després de la reinstal·lació.
+Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacta amb [SUPPORT_SITE] si el problema persisteix després de la reinstal·lació.
 	</string>
 	<string name="5 O'Clock Shadow">
 		Ombra de les 5
@@ -4721,7 +4721,7 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		Instal·lant [APP_NAME]...
 	</string>
 	<string name="UpdaterUpdatingDescriptive">
-		El client [APP_NAME] s'està actualitzant. Això pot trigar una estona, gràcies per la vostra paciència.
+		El client [APP_NAME] s'està actualitzant. Això pot trigar una estona, gràcies per la teva paciència.
 	</string>
 	<string name="UpdaterProgressBarTextWithEllipses">
 		Actualitzant...
@@ -4763,10 +4763,10 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		El xat escrit no està disponible per a aquesta trucada.
 	</string>
 	<string name="IM_muted_text_label">
-		El vostre xat escrit ha estat desactivat per un moderador de grup.
+		El teu xat escrit ha estat desactivat per un moderador de grup.
 	</string>
 	<string name="IM_default_text_label">
-		Feu clic aquí per enviar un missatge instantani.
+		Fes clic aquí per enviar un missatge instantani.
 	</string>
 	<string name="IM_to_label">
 		A
@@ -4778,7 +4778,7 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		(Enregistrament: [LONG_TIMESTAMP])
 	</string>
 	<string name="IM_unblock_only_groups_friends">
-		Per veure aquest missatge, heu de desactivar la casella "Només els meus amics i grups em poden trucar o enviar un IM", a Preferències/Privadesa.
+		Per veure aquest missatge, has de desactivar la casella "Només els meus amics i grups em poden trucar o enviar un IM", a Preferències/Privadesa.
 	</string>
 	<string name="OnlineStatus">
 		En línia
@@ -4802,16 +4802,16 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		Element de resposta automàtica enviat: [ITEM_NAME]
 	</string>
 	<string name="answered_call">
-		La vostra trucada ha estat resposta
+		La teva trucada ha estat resposta
 	</string>
 	<string name="you_started_call">
 		Esteu trucant.
 	</string>
 	<string name="you_joined_call">
-		Us heu unit a la trucada
+		Us has unit a la trucada
 	</string>
 	<string name="you_auto_rejected_call-im">
-		Heu rebutjat automàticament la trucada de veu quan el mode No Molestar estava activat.
+		Has rebutjat automàticament la trucada de veu quan el mode No Molestar estava activat.
 	</string>
 	<string name="name_started_call">
 		[NAME] truca.
@@ -4844,13 +4844,13 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		Article d'inventari ofert a [NAME]
 	</string>
 	<string name="share_alert">
-		Arrossegueu els objectes de l'inventari aquí
+		Arrossega els objectes de l'inventari aquí
 	</string>
 	<string name="facebook_post_success">
-		Heu publicat a Facebook.
+		Has publicat a Facebook.
 	</string>
 	<string name="flickr_post_success">
-		Heu publicat a Flickr.
+		Has publicat a Flickr.
 	</string>
 	<string name="no_session_message">
 		(Sessió d'IM inexistent)
@@ -4862,16 +4862,16 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		[NAME] està fora de línia.
 	</string>
 	<string name="invite_message">
-		Per acceptar aquest xat de veu/connectar-vos, feu clic al botó [BUTTON NAME].
+		Per acceptar aquest xat de veu/connectat, feu clic al botó [BUTTON NAME].
 	</string>
 	<string name="muted_message">
-		Ignoreu aquest resident. Si li envieu un missatge, deixarà de ser ignorat.
+		Ignoreu aquest resident. Si li envia un missatge, deixarà de ser ignorat.
 	</string>
 	<string name="generic">
-		Error durant la sol·licitud, torneu-ho a provar més tard.
+		Error durant la sol·licitud, tornes-ho a provar més tard.
 	</string>
 	<string name="generic_request_error">
-		Error durant la sol·licitud, torneu-ho a provar més tard.
+		Error durant la sol·licitud, tornes-ho a provar més tard.
 	</string>
 	<string name="insufficient_perms_error">
 		No teniu els permisos necessaris.
@@ -4889,31 +4889,31 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		No sou moderador de la sessió.
 	</string>
 	<string name="muted">
-		Un moderador de grup ha desactivat el vostre xat escrit.
+		Un moderador de grup ha desactivat el teu xat escrit.
 	</string>
 	<string name="muted_error">
-		Un moderador de grup ha desactivat el vostre xat escrit.
+		Un moderador de grup ha desactivat el teu xat escrit.
 	</string>
 	<string name="add_session_event">
 		No es poden afegir participants a la sessió de xat amb [RECIPIENT].
 	</string>
 	<string name="message">
-		No es pot enviar el vostre missatge a la sessió de xat amb [RECIPIENT].
+		No es pot enviar el teu missatge a la sessió de xat amb [RECIPIENT].
 	</string>
 	<string name="message_session_event">
-		No es pot enviar el vostre missatge a la sessió de xat amb [RECIPIENT].
+		No es pot enviar el teu missatge a la sessió de xat amb [RECIPIENT].
 	</string>
 	<string name="mute">
 		Error durant la moderació.
 	</string>
 	<string name="removed">
-		Heu estat eliminat del grup.
+		Has estat eliminat del grup.
 	</string>
 	<string name="removed_from_group">
-		Heu estat eliminat del grup.
+		Has estat eliminat del grup.
 	</string>
 	<string name="close_on_no_ability">
-		Ja no podeu participar en la sessió de xat.
+		Ja no pots participar en la sessió de xat.
 	</string>
 	<string name="unread_chat_single">
 		[SOURCES] ha dit alguna cosa nova
@@ -4940,43 +4940,43 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		https://land.secondlife.com/ca-ES/lindenhomes/my-home.php
 	</string>
 	<string name="paid_you_ldollars">
-		[NAME] us ha pagat [AMOUNT] L$ [REASON].
+		[NAME] t'ha pagat [AMOUNT] L$ [REASON].
 	</string>
 	<string name="paid_you_ldollars_gift">
-		[NAME] us ha pagat [AMOUNT] L$: [REASON]
+		[NAME] t'ha pagat [AMOUNT] L$: [REASON]
 	</string>
 	<string name="paid_you_ldollars_no_reason">
-		[NAME] us ha pagat [AMOUNT] L$.
+		[NAME] t'ha pagat [AMOUNT] L$.
 	</string>
 	<string name="you_paid_ldollars">
-		Heu pagat [AMOUNT] L$ [REASON].
+		Has pagat [AMOUNT] L$ [REASON].
 	</string>
 	<string name="you_paid_ldollars_gift">
-		Heu pagat a [NAME] [AMOUNT] L$: [REASON]
+		Has pagat a [NAME] [AMOUNT] L$: [REASON]
 	</string>
 	<string name="you_paid_ldollars_no_info">
-		Heu pagat [AMOUNT] L$.
+		Has pagat [AMOUNT] L$.
 	</string>
 	<string name="you_paid_ldollars_no_reason">
-		Heu pagat a [NAME] [AMOUNT] L$.
+		Has pagat a [NAME] [AMOUNT] L$.
 	</string>
 	<string name="you_paid_ldollars_no_name">
-		Heu pagat a [AMOUNT] L$ [REASON].
+		Has pagat a [AMOUNT] L$ [REASON].
 	</string>
 	<string name="you_paid_failure_ldollars">
-		El vostre pagament de [AMOUNT] L$ a [NAME] [REASON] ha fallat.
+		El teu pagament de [AMOUNT] L$ a [NAME] [REASON] ha fallat.
 	</string>
 	<string name="you_paid_failure_ldollars_gift">
-		El vostre pagament de [AMOUNT] L$ a [NAME] ha fallat: [REASON]
+		El teu pagament de [AMOUNT] L$ a [NAME] ha fallat: [REASON]
 	</string>
 	<string name="you_paid_failure_ldollars_no_info">
-		El vostre pagament de [AMOUNT] L$ ha fallat.
+		El teu pagament de [AMOUNT] L$ ha fallat.
 	</string>
 	<string name="you_paid_failure_ldollars_no_reason">
-		El vostre pagament de [AMOUNT] L$ a [NAME] ha fallat.
+		El teu pagament de [AMOUNT] L$ a [NAME] ha fallat.
 	</string>
 	<string name="you_paid_failure_ldollars_no_name">
-		El vostre pagament de [AMOUNT] L$ [REASON] ha fallat.
+		El teu pagament de [AMOUNT] L$ [REASON] ha fallat.
 	</string>
 	<string name="for item">
 		per a l'article següent: [ITEM]
@@ -5015,7 +5015,7 @@ Si us plau, reinstal·leu el visor des de [DOWNLOAD_URL] i contacteu amb [SUPPOR
 		Aquest objecte costa [AMOUNT] L$
 	</string>
 	<string name="giving">
-		Voleu donar
+		Vols donar
 	</string>
 	<string name="group_role_everyone">
 		Tothom
@@ -5314,10 +5314,10 @@ de l'informe d'infracció
 		No es poden carregar imatges de mida superior a [WIDTH]*[HEIGHT]
 	</string>
 	<string name="outfit_photo_load_dimensions_error">
-		Mida màx. de la foto del conjunt: [WIDTH]*[HEIGHT]. Redimensioneu la imatge o utilitzeu-ne una altra.
+		Mida màx. de la foto del conjunt: [WIDTH]*[HEIGHT]. Redimensioneu la imatge o utilitza-ne una altra.
 	</string>
 	<string name="outfit_photo_select_dimensions_error">
-		Mida màx. de la foto del conjunt: [WIDTH]*[HEIGHT]. Seleccioneu una altra textura.
+		Mida màx. de la foto del conjunt: [WIDTH]*[HEIGHT]. Selecciona una altra textura.
 	</string>
 	<string name="outfit_photo_verify_dimensions_error">
 		No es poden verificar les dimensions de la foto. Espereu que la mida de la foto es mostri al selector.
@@ -5327,7 +5327,7 @@ de l'informe d'infracció
 		Malgrat els nostres esforços, s'ha produït un error inesperat.
 
 Consulteu https://secondlife-status.statuspage.io per determinar si hi ha un problema conegut amb aquest servei.
-Si el problema persisteix, verifiqueu la configuració de la vostra xarxa i del vostre tallafoc.
+Si el problema persisteix, verifica la configuració de la teva xarxa i del teu tallafoc.
 	</string>
 	<string name="dateTimeWeekdaysNames">
 		Diumenge:Dilluns:Dimarts:Dimecres:Dijous:Divendres:Dissabte
@@ -5411,7 +5411,7 @@ Si el problema persisteix, verifiqueu la configuració de la vostra xarxa i del 
 		La meva subscripció Premium
 	</string>
 	<string name="DeleteItems">
-		Voleu suprimir els [COUNT_SELECTION] articles seleccionats ([COUNT_TOTAL] total)?
+		Vols suprimir els [COUNT_SELECTION] articles seleccionats ([COUNT_TOTAL] total)?
 	</string>
 	<string name="DeleteItem">
 		Voleu suprimir l'article seleccionat ([COUNT_TOTAL] total)?
@@ -5420,7 +5420,7 @@ Si el problema persisteix, verifiqueu la configuració de la vostra xarxa i del 
 		Aquest conjunt no conté cap article.
 	</string>
 	<string name="ExternalEditorNotSet">
-		Seleccioneu un editor definint la variable d'entorn LL_SCRIPT_EDITOR o el paràmetre ExternalEditor.
+		Selecciona un editor definint la variable d'entorn LL_SCRIPT_EDITOR o el paràmetre ExternalEditor.
 Vegeu https://wiki.secondlife.com/wiki/LSL_Alternate_Editors
 	</string>
 	<string name="ExternalEditorNotFound">
@@ -5987,7 +5987,7 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Informació sobre el terreny que visiteu
 	</string>
 	<string name="Command_Appearance_Tooltip">
-		Modifiqueu el vostre avatar
+		Modifiqueu el teu avatar
 	</string>
 	<string name="Command_Avatar_Tooltip">
 		Trieu un avatar complet
@@ -5996,10 +5996,10 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Construcció d'objectes i remodelació del terreny
 	</string>
 	<string name="Command_Chat_Tooltip">
-		Parleu amb les persones properes mitjançant xat escrit
+		Parla amb les persones properes mitjançant xat escrit
 	</string>
 	<string name="Command_Conversations_Tooltip">
-		Parleu amb algú
+		Parla amb algú
 	</string>
 	<string name="Command_Compass_Tooltip">
 		Brúixola
@@ -6014,7 +6014,7 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Carrega a Flickr
 	</string>
 	<string name="Command_Gestures_Tooltip">
-		Gestos del vostre avatar
+		Gestos del teu avatar
 	</string>
 	<string name="Command_Grid_Status_Tooltip">
 		Mostreu l'estat actual de la graella
@@ -6023,22 +6023,22 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Com realitzar les operacions habituals
 	</string>
 	<string name="Command_Inventory_Tooltip">
-		Mostreu i utilitzeu les vostres possessions
+		Mostreu i utilitza les teus possessions
 	</string>
 	<string name="Command_Map_Tooltip">
 		Mapa del món
 	</string>
 	<string name="Command_Marketplace_Tooltip">
-		Aneu de compres
+		Ves de compres
 	</string>
 	<string name="Command_MarketplaceListings_Tooltip">
-		Veneu la vostra creació
+		Veneu la teva creació
 	</string>
 	<string name="Command_MiniMap_Tooltip">
 		Mostreu les persones properes
 	</string>
 	<string name="Command_Move_Tooltip">
-		Feu moure el vostre avatar
+		Fes moure el teu avatar
 	</string>
 	<string name="Command_People_Tooltip">
 		Amics, grups i persones properes
@@ -6047,7 +6047,7 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Reguleu els paràmetres gràfics
 	</string>
 	<string name="Command_Picks_Tooltip">
-		Llocs per mostrar com a favorits al vostre perfil
+		Llocs per mostrar com a favorits al teu perfil
 	</string>
 	<string name="Command_Places_Tooltip">
 		Llocs desats
@@ -6056,22 +6056,22 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Preferències
 	</string>
 	<string name="Command_Profile_Tooltip">
-		Modifiqueu o mostreu el vostre perfil
+		Modifiqueu o mostreu el teu perfil
 	</string>
 	<string name="Command_Report_Abuse_Tooltip">
-		Informeu d'una infracció
+		InFormes d'una infracció
 	</string>
 	<string name="Command_Search_Tooltip">
-		Trobeu llocs, persones, esdeveniments
+		Troba llocs, persones, esdeveniments
 	</string>
 	<string name="Command_Snapshot_Tooltip">
-		Feu una foto
+		Fes una foto
 	</string>
 	<string name="Command_Speak_Tooltip">
-		Parleu amb les persones properes utilitzant el vostre micròfon
+		Parla amb les persones properes utilitzant el teu micròfon
 	</string>
 	<string name="Command_View_Tooltip">
-		Canvieu l'angle de la càmera
+		Canvia l'angle de la càmera
 	</string>
 	<string name="Command_Voice_Tooltip">
 		Controls de regulació del volum de les trucades i de les persones properes a Second Life.
@@ -6122,7 +6122,7 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Passa al mode de vista subjectiva (M)
 	</string>
 	<string name="Command_Landmark_Here_Tooltip">
-		Crea un punt de referència a la vostra posició actual
+		Crea un punt de referència a la teva posició actual
 	</string>
 	<string name="Command_Teleport_History_Tooltip">
 		Obre l'historial de teletransportació (ALT+H)
@@ -6332,19 +6332,19 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		(posició desconeguda)
 	</string>
 	<string name="Collision_Bump">
-		[NAME] us ha colpejat.
+		[NAME] t'ha colpejat.
 	</string>
 	<string name="Collision_PushObject">
-		[NAME] us ha empès amb un script.
+		[NAME] t'ha empès amb un script.
 	</string>
 	<string name="Collision_ObjectCollide">
-		[NAME] us ha colpejat amb un objecte.
+		[NAME] t'ha colpejat amb un objecte.
 	</string>
 	<string name="Collision_ScriptedObject">
-		[NAME] us ha colpejat amb un objecte amb script.
+		[NAME] t'ha colpejat amb un objecte amb script.
 	</string>
 	<string name="Collision_PhysicalObject">
-		[NAME] us ha colpejat amb un objecte físic.
+		[NAME] t'ha colpejat amb un objecte físic.
 	</string>
 	<string name="Collision_UnknownType">
 		[NAME] ha causat una col·lisió de tipus desconegut.
@@ -6367,7 +6367,7 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		RLVa ha estat [STATE] (no cal reiniciar)
 	</string>
 	<string name="RLVaToggleMessageRestart">
-		RLVa serà [STATE] després que reinicieu</string>
+		RLVa serà [STATE] després que reinicia</string>
 	<string name="RLVaToggleEnabled">
 		activat
 	</string>
@@ -6414,19 +6414,19 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		([EXPERIENCES], [MAXEXPERIENCES] màx.)
 	</string>
 	<string name="ExperiencePermission1">
-		assumir els vostres controls
+		assumir els teus controls
 	</string>
 	<string name="ExperiencePermission3">
-		activar animacions per al vostre avatar
+		activar animacions per al teu avatar
 	</string>
 	<string name="ExperiencePermission4">
-		adjuntar al vostre avatar
+		adjuntar al teu avatar
 	</string>
 	<string name="ExperiencePermission9">
-		seguir la vostra càmera
+		seguir la teva càmera
 	</string>
 	<string name="ExperiencePermission10">
-		controlar la vostra càmera
+		controlar la teva càmera
 	</string>
 	<string name="ExperiencePermission11">
 		teletransportar-vos
@@ -6435,10 +6435,10 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		acceptar automàticament els permisos d'experiència
 	</string>
 	<string name="ExperiencePermission16">
-		forceu el vostre avatar a seure
+		força el teu avatar a seure
 	</string>
 	<string name="ExperiencePermission17">
-		canviar els vostres paràmetres d'entorn
+		canviar els teus paràmetres d'entorn
 	</string>
 	<string name="ExperiencePermissionShortUnknown">
 		ha realitzat una operació desconeguda: [Permission]
@@ -6474,19 +6474,19 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Selecció de materials
 	</string>
 	<string name="material_selection_text">
-		Seleccioneu un material:
+		Selecciona un material:
 	</string>
 	<string name="material_batch_import_text">
 		--- Carrega'ls tots ---
 	</string>
 	<string name="logging_calls_disabled_log_empty">
-		Les converses no s'arxiven. Per començar a registrar, trieu Desa: Només registre o Desa: Registre i transcripcions a Preferències &gt; Xat.
+		Les converses no s'arxiven. Per començar a registrar, tria Desa: Només registre o Desa: Registre i transcripcions a Preferències &gt; Xat.
 	</string>
 	<string name="logging_calls_disabled_log_not_empty">
-		Ja no es registrarà cap conversa. Per tornar a registrar, trieu Desa: Només registre o Desa: Registre i transcripcions a Preferències &gt; Xat.
+		Ja no es registrarà cap conversa. Per tornar a registrar, tria Desa: Només registre o Desa: Registre i transcripcions a Preferències &gt; Xat.
 	</string>
 	<string name="logging_calls_enabled_log_empty">
-		No hi ha cap conversa registrada. Quan algú us contacti o quan contacteu algú, es mostrarà aquí una entrada de registre.
+		No hi ha cap conversa registrada. Quan algú et contacti o quan contacta algú, es mostrarà aquí una entrada de registre.
 	</string>
 	<string name="loading_chat_logs">
 		Carregant...
@@ -6507,32 +6507,32 @@ Proveu amb el camí d'accés a l'editor entre cometes dobles
 		Sense límit
 	</string>
 	<string name="Mav_Details_MAV_FOUND_DEGENERATE_TRIANGLES">
-		La forma física conté triangles massa petits. Intenteu simplificar el model físic.
+		La forma física conté triangles massa petits. Intenta simplificar el model físic.
 	</string>
 	<string name="Mav_Details_MAV_CONFIRMATION_DATA_MISMATCH">
-		La forma física conté dades de confirmació incorrectes. Intenteu corregir el model físic.
+		La forma física conté dades de confirmació incorrectes. Intenta corregir el model físic.
 	</string>
 	<string name="Mav_Details_MAV_UNKNOWN_VERSION">
-		La forma física no té la versió correcta. Configureu la versió correcta per al model físic.
+		La forma física no té la versió correcta. Configura la versió correcta per al model físic.
 	</string>
 	<string name="couldnt_resolve_host">
 		El DNS no ha pogut resoldre el nom d'amfitrió([HOSTNAME]).
-Si us plau, verifiqueu que podeu connectar-vos al lloc www.secondlife.com.
-Si és el cas, i continueu rebent aquest missatge d'error, si us plau
-aneu a la secció de Suport i informeu d'aquest problema.
+Si us plau, verifica que pots connectar al lloc www.secondlife.com.
+Si és el cas, i continues rebent aquest missatge d'error, si us plau
+ves a la secció de Suport i informa d'aquest problema.
 	</string>
 	<string name="ssl_peer_certificate">
 		El servidor d'identificació ha trobat un error de connexió SSL.
-Si continueu rebent aquest missatge d'error,
-si us plau, aneu a la secció de Suport del lloc web
-SecondLife.com i informeu d'aquest problema.
+Si continues rebent aquest missatge d'error,
+si us plau, ves a la secció de Suport del lloc web
+SecondLife.com i informa d'aquest problema.
 	</string>
 	<string name="ssl_connect_error">
-		Això sovint es deu a una configuració incorrecta del rellotge del vostre ordinador.
-Aneu als Taulers de control i assegureu-vos que l'hora i la data estiguin configurades
-correctament. Verifiqueu també que la vostra xarxa i el vostre tallafoc estiguin configurats
-correctament. Si continueu rebent aquest missatge d'error, si us plau, aneu
-a la secció de Suport del lloc web SecondLife.com i informeu d'aquest problema.
+		Això sovint es deu a una configuració incorrecta del rellotge del teu ordinador.
+Ves als Taulers de control i assegurat que l'hora i la data estiguin configurades
+correctament. Verifica també que la teva xarxa i el teu tallafoc estiguin configurats
+correctament. Si continues rebent aquest missatge d'error, si us plau, ves
+a la secció de Suport del lloc web SecondLife.com i informa d'aquest problema.
 
 [https://community.secondlife.com/knowledgebase/english/error-messages-r520/#Section__3 Base de coneixement]
 	</string>
@@ -6555,10 +6555,10 @@ a la secció de Suport del lloc web SecondLife.com i informeu d'aquest problema.
 		Resultat total per a [DICE]d[FACES][MODIFIER]: [RESULT].
 	</string>
 	<string name="FSCmdLineRollDiceLimits">
-		Heu de proporcionar valors positius per als daus (màx. 100) i les cares (màx. 1000).
+		Has de proporcionar valors positius per als daus (màx. 100) i les cares (màx. 1000).
 	</string>
 	<string name="FSCmdLineRollDiceModifiersInvalid">
-		Si voleu utilitzar un modificador, heu de proporcionar un número de modificador vàlid i el tipus de modificador. El modificador ha d'estar comprès entre -1000 i 1000. Els tipus de modificadors vàlids són "+" (bonificació), "-" (penalització), "&gt;", "&lt;" (èxit), "r&gt;", "r&lt;", "r" (rellançar), "!p&gt;", "!p&lt;", "!p" (penetracions), "!&gt;", "!&lt;" i "!" (explosions). Només podeu utilitzar un tipus de modificador per tirada. Exemples: "[COMMAND] 1 20 + 5", "[COMMAND] 5 40 &gt; 15", "[COMMAND] 10 25 ! 25", "[COMMAND] 15 25 !&lt; 10".
+		Si vols utilitzar un modificador, has de proporcionar un número de modificador vàlid i el tipus de modificador. El modificador ha d'estar comprès entre -1000 i 1000. Els tipus de modificadors vàlids són "+" (bonificació), "-" (penalització), "&gt;", "&lt;" (èxit), "r&gt;", "r&lt;", "r" (rellançar), "!p&gt;", "!p&lt;", "!p" (penetracions), "!&gt;", "!&lt;" i "!" (explosions). Només pots utilitzar un tipus de modificador per tirada. Exemples: "[COMMAND] 1 20 + 5", "[COMMAND] 5 40 &gt; 15", "[COMMAND] 10 25 ! 25", "[COMMAND] 15 25 !&lt; 10".
 	</string>
 	<string name="FSCmdLineRollDiceExploded">
 		Explotat
@@ -6573,7 +6573,7 @@ a la secció de Suport del lloc web SecondLife.com i informeu d'aquest problema.
 		Rellançar
 	</string>
 	<string name="FSCmdLineRollDiceFreezeGuard">
-		Aquesta operació no es pot realitzar perquè el visor es bloquejaria en un bucle infinit. Si us plau, modifiqueu els criteris.
+		Aquesta operació no es pot realitzar perquè el visor es bloquejaria en un bucle infinit. Si us plau, modifica els criteris.
 	</string>
 	<string name="FSCmdLineCalcRandError">
 		'[RAND]' no és una expressió vàlida per a RAND(min,max). MAX ha de ser superior a MIN, tots dos en un rang de -10000 a 10000.
@@ -6605,10 +6605,10 @@ a la secció de Suport del lloc web SecondLife.com i informeu d'aquest problema.
 		Totes les categories
 	</string>
 	<string name="search_banned">
-		Alguns termes de la vostra consulta de cerca han estat exclosos a causa de restriccions de contingut, tal com s'especifica a les Normes de la Comunitat.
+		Alguns termes de la teva consulta de cerca han estat exclosos a causa de restriccions de contingut, tal com s'especifica a les Normes de la Comunitat.
 	</string>
 	<string name="search_short">
-		Els vostres termes de cerca són massa curts, no s'ha realitzat cap cerca.
+		Els teus termes de cerca són massa curts, no s'ha realitzat cap cerca.
 	</string>
 	<string name="search_disabled">
 		La cerca a l'antiga ha estat desactivada en aquesta regió.
@@ -6635,37 +6635,37 @@ a la secció de Suport del lloc web SecondLife.com i informeu d'aquest problema.
 		Ultra (7/7)
 	</string>
 	<string name="render_quality_unknown">
-		Desconegut, més enllà del normal, verifiqueu el paràmetre de depuració RenderQualityPerformance
+		Desconegut, més enllà del normal, verifica el paràmetre de depuració RenderQualityPerformance
 	</string>
 	<string name="fsbridge_cant_create_disabled">
 		[APP_NAME] no pot crear el pont LSL si "Activar el Pont LSL" està desactivat a les Preferències.
 	</string>
 	<string name="fsbridge_no_library">
-		[APP_NAME] no ha pogut crear un pont LSL. Si us plau, activeu la vostra biblioteca i reconnecteu-vos.
+		[APP_NAME] no ha pogut crear un pont LSL. Si us plau, activa la teva biblioteca i reconnectat.
 	</string>
 	<string name="fsbridge_already_creating">
-		Creació d'un pont en curs, impossible iniciar-ne un altre. Si us plau, espereu uns minuts abans de tornar-ho a provar.
+		Creació d'un pont en curs, impossible iniciar-ne un altre. Si us plau, espera uns minuts abans de tornar-ho a provar.
 	</string>
 	<string name="fsbridge_creating">
-		Creant el pont. Això pot trigar una estona, si us plau, espereu.
+		Creant el pont. Això pot trigar una estona, si us plau, espera.
 	</string>
 	<string name="fsbridge_failure_creation_create_script">
 		Pont no creat. L'script del pont no s'ha pogut crear.
 	</string>
 	<string name="fsbridge_failure_creation_bad_name">
-		Pont no creat. El pont té un nom incorrecte. Si us plau, utilitzeu el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
+		Pont no creat. El pont té un nom incorrecte. Si us plau, utilitza el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
 	</string>
 	<string name="fsbridge_failure_creation_null">
-		Pont no creat. El pont no s'ha pogut trobar a l'inventari. Si us plau, utilitzeu el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
+		Pont no creat. El pont no s'ha pogut trobar a l'inventari. Si us plau, utilitza el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
 	</string>
 	<string name="fsbridge_failure_attach_wrong_object">
-		El pont no s'ha pogut adjuntar. No es tracta de la versió actual del pont. Si us plau, utilitzeu el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
+		El pont no s'ha pogut adjuntar. No es tracta de la versió actual del pont. Si us plau, utilitza el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
 	</string>
 	<string name="fsbridge_failure_attach_wrong_location">
-		El pont no s'ha adjuntat. El pont no s'ha trobat a la ubicació correcta de l'inventari. Si us plau, utilitzeu el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
+		El pont no s'ha adjuntat. El pont no s'ha trobat a la ubicació correcta de l'inventari. Si us plau, utilitza el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
 	</string>
 	<string name="fsbridge_failure_attach_point_in_use">
-		El pont no s'ha adjuntat. Alguna altra cosa estava utilitzant el punt d'adjunció del pont. Si us plau, utilitzeu el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
+		El pont no s'ha adjuntat. Alguna altra cosa estava utilitzant el punt d'adjunció del pont. Si us plau, utilitza el menú 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear el pont.
 	</string>
 	<string name="fsbridge_failure_not_found">
 		L'objecte pont no s'ha pogut trobar. No es pot procedir a la seva creació, fi de la tasca.
@@ -6674,7 +6674,7 @@ a la secció de Suport del lloc web SecondLife.com i informeu d'aquest problema.
 		L'inventari del pont conté elements inesperats.
 	</string>
 	<string name="fsbridge_warning_not_finished">
-		El pont no ha acabat de crear-se, potser haureu d'utilitzar la funció 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear-lo abans d'utilitzar-lo.
+		El pont no ha acabat de crear-se, potser has d'utilitzar la funció 'Jo/Salut de l'avatar/Recrear el Pont' LSL de [APP_NAME] per recrear-lo abans d'utilitzar-lo.
 	</string>
 	<string name="fsbridge_detached">
 		Pont desconnectat.
@@ -6709,19 +6709,19 @@ Temps per aparèixer: [OBJECT_REZ_TIME]
 Tipus de cerca de camins: [OBJECT_PATHFINDING_TYPE]
 Punt d'adjunció: [OBJECT_ATTACHED_POINT]
 Adjuntat temporalment: [OBJECT_TEMP_ATTACHED]
-La vostra posició actual: [AVATAR_POS]
+La teva posició actual: [AVATAR_POS]
 	</string>
 	<string name="fsbridge_error_scriptinfonotfound">
 		Informació de l'script: L'objecte a verificar no és vàlid o està fora de l'abast.
 	</string>
 	<string name="fsbridge_error_scriptinfomalformed">
-		Informació de l'script: Recepció d'una resposta malformada del pont. Torneu-ho a provar.
+		Informació de l'script: Recepció d'una resposta malformada del pont. Torna-ho a provar.
 	</string>
 	<string name="fsbridge_error_injection">
-		AVÍS: Un o més scripts han estat afegits al pont del vostre [APP_NAME]! Si no esperàveu rebre aquest missatge, utilitzeu el menú Jo/Salut de l'avatar/Recrear el pont LSL de [APP_NAME] per recrear el pont.
+		AVÍS: Un o més scripts han estat afegits al pont del teu [APP_NAME]! Si no esperaves rebre aquest missatge, utilitza el menú Jo/Salut de l'avatar/Recrear el pont LSL de [APP_NAME] per recrear el pont.
 	</string>
 	<string name="fsbridge_error_wrongvm">
-		AVÍS: L'script del Pont utilitza l'antic LSO (Límit de memòria de 16 Ko) en lloc de la nova màquina virtual Mono (Límit de memòria de 64 Ko), la qual cosa crea una alta probabilitat de col·lisió entre piles i de fallada del pont per manca de memòria. Utilitzeu el menú Jo/Salut de l'avatar/Recrear el pont LSL de [APP_NAME] per recrear el pont. Si torneu a veure aquest missatge, proveu-ho de nou en una altra regió.
+		AVÍS: L'script del Pont utilitza l'antic LSO (Límit de memòria de 16 Ko) en lloc de la nova màquina virtual Mono (Límit de memòria de 64 Ko), la qual cosa crea una alta probabilitat de col·lisió entre piles i de fallada del pont per manca de memòria. Utilitza el menú Jo/Salut de l'avatar/Recrear el pont LSL de [APP_NAME] per recrear el pont. Si tornes a veure aquest missatge, proveu-ho de nou en una altra regió.
 	</string>
 
 	<string name="FSAOEnabled">
@@ -6819,11 +6819,11 @@ La vostra posició actual: [AVATAR_POS]
 		Silenci del xat de grup de [NAME].
 	</string>
 	<string name="IgnoredAdHocSession">
-		Heu estat convidat a una conferència (ad-hoc) per [AVATAR_NAME], però el visor l'ha ignorat automàticament a causa de la vostra configuració.
+		Has estat convidat a una conferència (ad-hoc) per [AVATAR_NAME], però el visor l'ha ignorat automàticament a causa de la teva configuració.
 	</string>
 
 	<string name="camera_no_focus">
-		La càmera no pot enfocar l'usuari [AVATARNAME] perquè està fora de la vostra distància de visió.
+		La càmera no pot enfocar l'usuari [AVATARNAME] perquè està fora de la teva distància de visió.
 	</string>
 	<string name="entering_draw_distance">
 		ha entrat a la distància de visió ([DISTANCE] m).
@@ -6858,7 +6858,7 @@ La vostra posició actual: [AVATAR_POS]
 		El nombre total de scripts a la regió ha passat de [OLD_VALUE] a [NEW_VALUE] ([DIFFERENCE]).
 	</string>
 	<string name="preproc_toggle_warning">
-		El canvi del preprocessador només tindrà efecte quan tanqueu i torneu a obrir aquest editor.
+		El canvi del preprocessador només tindrà efecte quan tanques i tornes a obrir aquest editor.
 	</string>
 
 	<string name="fs_preprocessor_starting">
@@ -6958,7 +6958,7 @@ La vostra posició actual: [AVATAR_POS]
 		Avís: La sortida del preprocessador ha estat truncada a causa de la mida excessiva del text de l'script. Aquest script probablement no funcionarà.
 	</string>
 	<string name="skin_defaults_starlight_location">
-		La visualització de la vostra posició actual a la barra de menú ha estat desactivada per defecte per a la sèrie de skins Starlight.
+		La visualització de la teva posició actual a la barra de menú ha estat desactivada per defecte per a la sèrie de skins Starlight.
 	</string>
 	<string name="skin_defaults_starlight_navbar">
 		La visualització de la barra de navegació ha estat activada per defecte per a la sèrie de skins Starlight.
@@ -6988,13 +6988,13 @@ La vostra posició actual: [AVATAR_POS]
 		Agent desconegut
 	</string>
 	<string name="groupcountstring">
-		Formeu part de [COUNT] grups ([REMAINING] restants).
+		Formes part de [COUNT] grups ([REMAINING] restants).
 	</string>
 	<string name="groupcountunlimitedstring">
-		Formeu part de [COUNT] grups.
+		Formes part de [COUNT] grups.
 	</string>
 	<string name="SLGridStatusInvalidMsg">
-		Codi d'error SL: Format de missatge no vàlid. Torneu-ho a provar més tard.
+		Codi d'error SL: Format de missatge no vàlid. Torna-ho a provar més tard.
 	</string>
 	<string name="SLGridStatusTimedOut">
 		Codi d'error SL: La sol·licitud ha expirat.
@@ -7015,7 +7015,7 @@ La vostra posició actual: [AVATAR_POS]
 		Sempre córrer desactivat.
 	</string>
 	<string name="FSRegionRestartInLocalChat">
-		La regió on sou està a punt de reiniciar-se. Si us quedeu, sereu desconnectat.
+		La regió on sou està a punt de reiniciar-se. Si et quedes, seràs desconnectat.
 	</string>
 	<string name="Mute_Add">
 		'[NAME]' ha estat afegit a la llista de bloqueig.
@@ -7024,10 +7024,10 @@ La vostra posició actual: [AVATAR_POS]
 		'[NAME]' ha estat eliminat de la llista de bloqueig.
 	</string>
 	<string name="Reqsysinfo_Chat_NoReason">
-		Demano informació sobre la configuració del vostre sistema.
+		Demano informació sobre la configuració del teu sistema.
 	</string>
 	<string name="Reqsysinfo_Chat_Reason">
-		Demano informació sobre la configuració del vostre sistema per la raó següent: [REASON]
+		Demano informació sobre la configuració del teu sistema per la raó següent: [REASON]
 	</string>
 	<string name="Reqsysinfo_Chat_Information_sent">
 		Informació enviada: [DATA]
@@ -7119,7 +7119,7 @@ La vostra posició actual: [AVATAR_POS]
 		[NUM_ELEMENTS] elements
 	</string>
 	<string name="OpenSimInventoryValidationErrorGenericHelp">
-		l'equip d'assistència del vostre gestor de graella
+		l'equip d'assistència del teu gestor de graella
 	</string>
 	<string name="Unlimited">
 		Il·limitat
