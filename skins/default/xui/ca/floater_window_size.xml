@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="window_size" title="Mides de la finestra">
+	<text name="windowsize_text">
+		Defineix la mida de la finestra:
+	</text>
+	<combo_box name="window_size_combo" tool_tip="amplada x alçada">
+		<combo_box.item label="1000 x 700 (per defecte)" name="item1"/>
+	</combo_box>
+	<button label="Defineix" name="set_btn"/>
+	<button label="Cancel·la" name="cancel_btn"/>
+</floater>

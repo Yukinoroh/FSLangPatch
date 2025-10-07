@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="wearable_item">
+	<button name="btn_delete" tool_tip="Treu del conjunt"/>
+	<panel name="btn_lock" tool_tip="No teniu permís per a modificar-ho"/>
+	<panel name="btn_edit_panel">
+		<button name="btn_edit" tool_tip="Edita aquest article"/>
+	</panel>
+</panel>

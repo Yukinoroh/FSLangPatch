@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="notifications_console" title="Consola de notificacions">
+	<combo_box label="Trieu el tipus de notificació" name="notification_types"/>
+	<button label="Afegeix" name="add_notification"/>
+</floater>

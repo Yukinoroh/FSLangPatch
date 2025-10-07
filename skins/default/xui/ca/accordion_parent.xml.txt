@@ -1,0 +1,5 @@
+    background_visible="true"
+       label="splitter_parent"
+       title=""
+       translate="false"
+    >

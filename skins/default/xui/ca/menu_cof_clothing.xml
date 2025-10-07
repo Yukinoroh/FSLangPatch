@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="COF Clothing">
+	<menu_item_call label="Treu" name="take_off"/>
+	<menu_item_call label="Edita" name="edit"/>
+	<menu_item_call label="Reemplaça" name="replace"/>
+	<menu_item_call label="Crea'n un de nou" name="create_new"/>
+</context_menu>

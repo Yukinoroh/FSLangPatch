@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="block by name" title="Bloca l'objecte pel nom">
+	<text name="message">
+		Bloca l'objecte:
+	</text>
+	<line_editor name="object_name">
+		Nom de l'objecte
+	</line_editor>
+	<text name="note">
+		* Només es bloquen els missatges de l'objecte, no els sons
+	</text>
+	<button label="Cancel·la" name="Cancel"/>
+</floater>

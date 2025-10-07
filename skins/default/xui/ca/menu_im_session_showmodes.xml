@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="menu_modes">
+	<menu_item_check label="Visualització compacta" name="compact_view" />
+	<menu_item_check label="Visualització expandida" name="expanded_view" />
+	<menu_item_check name="IMShowTime" label="Mostra l'hora" />
+	<menu_item_check name="IMShowNamesForP2PConv" label="Mostra els noms a les converses individuals" />
+</toggleable_menu>

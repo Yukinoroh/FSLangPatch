@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="landmark_overflow_menu">
+	<menu_item_call label="Copia l'SLurl" name="copy"/>
+	<menu_item_call label="Suprimeix" name="delete"/>
+	<menu_item_call label="Crea una tria" name="pick"/>
+	<menu_item_call label="Afegeix a la barra de favorits" name="add_to_favbar"/>
+</toggleable_menu>

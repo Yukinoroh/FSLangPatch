@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="script ed float" title="Informació de l'LSL">
+	<check_box label="Cursor" name="lock_check"/>
+	<combo_box label="Bloqueig" name="history_combo"/>
+	<button label="Enrere" name="back_btn"/>
+	<button label="Endavant" name="fwd_btn"/>
+</floater>

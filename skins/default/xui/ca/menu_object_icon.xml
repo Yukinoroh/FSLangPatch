@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="Object Icon Menu">
+	<menu_item_call label="Perfil de l'objecte..." name="Object Profile"/>
+	<menu_item_call label="Bloca..." name="Block"/>
+	<menu_item_call label="Desbloca" name="Unblock"/>
+	<menu_item_call label="Mostra al mapa" name="show_on_map"/>
+	<menu_item_call label="Teleporta a l'objecte" name="teleport_to_object"/>
+</menu>

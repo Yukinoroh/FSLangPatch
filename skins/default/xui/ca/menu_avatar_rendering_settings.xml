@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Settings">
+	<menu_item_check label="Renderitza sempre completament" name="always_render"/>
+	<menu_item_check label="No renderitzis mai completament" name="never_render"/>
+	<menu_item_check label="Suprimeix de les excepcions de renderització" name="default"/>
+</context_menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="CopyMenu">
+	<menu_item_call label="Copia el nom de visualització" name="copy_display"/>
+	<menu_item_call label="Copia el nom d'usuari" name="copy_name"/>
+	<menu_item_call label="Copia l'UUID" name="copy_id"/>
+	<menu_item_call label="Copia l'URI" name="copy_uri"/>
+</toggleable_menu>

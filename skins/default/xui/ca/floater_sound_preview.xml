@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Sound Preview">
+	<text name="name_label">
+		Nom:
+	</text>
+	<text name="description_label">
+		Descripció:
+	</text>
+	<button label="Cancel·la" label_selected="Cancel·la" name="cancel_btn"/>
+	<button label="Penja ([AMOUNT]L$)" name="ok_btn"/>
+</floater>
