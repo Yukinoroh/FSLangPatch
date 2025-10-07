@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_lagmeter" title="Indicador de lag">
+	<floater.string name="max_title_msg">Indicador de lag</floater.string>
+	<floater.string name="min_title_msg">Lag</floater.string>
+	<floater.string name="client_text_msg">Client</floater.string>
+	<floater.string name="client_frame_time_window_bg_msg">Normal, la finestra està en segon pla</floater.string>
+	<floater.string name="client_frame_time_critical_msg">Velocitat de fotogrames del client per sota de [CLIENT_FRAME_RATE_CRITICAL]</floater.string>
+	<floater.string name="client_frame_time_warning_msg">Velocitat de fotogrames del client entre [CLIENT_FRAME_RATE_CRITICAL] i [CLIENT_FRAME_RATE_WARNING]</floater.string>
+	<floater.string name="client_frame_time_normal_msg">Normal</floater.string>
+	<floater.string name="client_draw_distance_cause_msg">Causa possible: distància de visió massa alta</floater.string>
+	<floater.string name="client_texture_loading_cause_msg">Causa possible: càrrega d'imatges</floater.string>
+	<floater.string name="client_texture_memory_cause_msg">Causa possible: massa imatges en memòria</floater.string>
+	<floater.string name="client_complex_objects_cause_msg">Causa possible: massa objectes complexos a l'escena</floater.string>
+	<floater.string name="network_text_msg">Xarxa</floater.string>
+	<floater.string name="network_packet_loss_critical_msg">La connexió està degradada, [NETWORK_PACKET_LOSS_CRITICAL]% de pèrdua de paquets</floater.string>
+	<floater.string name="network_packet_loss_warning_msg">La connexió està degradada, [NETWORK_PACKET_LOSS_WARNING]%-[NETWORK_PACKET_LOSS_CRITICAL]% de pèrdua de paquets</floater.string>
+	<floater.string name="network_performance_normal_msg">Normal</floater.string>
+	<floater.string name="network_ping_critical_msg">El temps de ping de la connexió supera els [NETWORK_PING_CRITICAL] ms</floater.string>
+	<floater.string name="network_ping_warning_msg">El temps de ping de la connexió és de [NETWORK_PING_WARNING]-[NETWORK_PING_CRITICAL] ms</floater.string>
+	<floater.string name="network_packet_loss_cause_msg">Mala connexió o ample de banda definit a les opcions massa alt.</floater.string>
+	<floater.string name="network_ping_cause_msg">Possible mala connexió o aplicació per compartir fitxers.</floater.string>
+	<floater.string name="server_text_msg">Servidor</floater.string>
+	<floater.string name="server_frame_time_critical_msg">Velocitat de fotogrames del simulador per sota de [SERVER_FRAME_RATE_CRITICAL]</floater.string>
+	<floater.string name="server_frame_time_warning_msg">Velocitat de fotogrames del simulador entre [SERVER_FRAME_RATE_CRITICAL] i [SERVER_FRAME_RATE_WARNING]</floater.string>
+	<floater.string name="server_frame_time_normal_msg">Normal</floater.string>
+	<floater.string name="server_physics_cause_msg">Causa possible: massa objectes físics</floater.string>
+	<floater.string name="server_scripts_cause_msg">Causa possible: massa objectes amb scripts</floater.string>
+	<floater.string name="server_net_cause_msg">Causa possible: massa trànsit de xarxa</floater.string>
+	<floater.string name="server_agent_cause_msg">Causa possible: massa gent a la regió</floater.string>
+	<floater.string name="server_images_cause_msg">Causa possible: massa càlculs d'imatge </floater.string>
+	<floater.string name="server_generic_cause_msg">Causa possible: càrrega del simulador massa alta
+	</floater.string>
+	
+	<button name="client_lagmeter" tool_tip="Estat del lag del client"/>
+	<text name="client">Client</text>
+	<text name="client_text">Normal</text>
+	<button name="network_lagmeter" tool_tip="Estat del lag de la xarxa"/>
+	<text name="network">Xarxa</text>
+	<text name="network_text">Normal</text>
+	<button name="server_lagmeter" tool_tip="Estat del lag del servidor"/>
+	<text name="server">Servidor</text>
+	<text name="server_text">Normal</text>
+	<button name="minimize" tool_tip="Minimitza/Maximitza la finestra"/>
+</floater>
