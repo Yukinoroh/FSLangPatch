@@ -13,15 +13,16 @@ o especificant el teu camí al camp 'Camí de l'editor'.</string>
         <button label="Edita..." label_selected="Edita..." name="edit_floater" tool_tip="Edita la finestra XUI definida pel fitxer XML seleccionat (obre un editor extern). Obre la versió anglesa si no existeix una versió localitzada."/>
         <button label="Desa" label_selected="Desa" name="save_floater" tool_tip="Desa la finestra XUI definida pel fitxer XML seleccionat"/>
         
-       <button label="Desa-ho tot" label_selected="Desa-ho tot" Width="88" name="save_all_floaters"  tool_tip="Desa totes les finestres flotants XUI definides per l'idioma seleccionat"/>
+       <button label="Desa Tot" label_selected="Desa-ho tot" Width="95" name="save_all_floaters"  tool_tip="Desa totes les finestres flotants XUI definides per l'idioma seleccionat"/>
 		<button	name="toggle_overlap_panel" tool_tip="Activa/desactiva el ressaltat i el panell de visualització per a elements superposats; fes clic dret en un element per seleccionar-lo per a aquesta funció. L'element seleccionat es marca amb un rectangle vermell."/>
 		<text name="select_language_label_2" Width="136">
 			  Idioma secundari:
 		</text>
 		
-		<button  name="display_floater_2"  tool_tip="Mostra la finestra flotant XUI definida pel fitxer XML seleccionat"/>
+		<button  label="Mostra" name="display_floater_2"  tool_tip="Mostra la finestra flotant XUI definida pel fitxer XML seleccionat"/>
+		
 		<button label="Amaga" name="close_displayed_floater_2" tool_tip="Tanca la finestra flotant que es mostra actualment, si n'hi ha"/>
-		<button label="Exporta l'esquema" name="export_schema" Width="136" />
+		<button label="ExportaEsquema" name="export_schema" Width="136" />
 		<button label="Actualitza" name="refresh_btn" />
 		<check_box label="Mostra els rectangles" name="show_rectangles" Width="168" />
 		
@@ -40,29 +41,199 @@ o especificant el teu camí al camp 'Camí de l'editor'.</string>
 			   width="250" />
 		</scroll_list>
               
-        <text name="editor_path_label" width="150">
-            Camí de l'editor:
-        </text>
-        
-       <line_editor name="executable_path_field" tool_tip="El camí complet a un editor (executable) per editar els fitxers XML de les finestres flotants (les cometes no són necessàries)" />
-	   <button label="Navega..." label_selected="Navega..." name="browse_for_executable" tool_tip="Cerca un editor (executable) per editar els fitxers XML de les finestres flotants" />
-	  <text name="executable_args_label" Width="176">
-		  Arguments de l'editor:
-	  </text>
-	 <line_editor name="executable_args_field" tool_tip="Arguments de la línia d'ordres per a l'editor; utilitza &apos;%FILE%&apos; per referir-te al fitxer de destinació; s'executarà &apos;ElTeuPrograma.exe NomDelFitxer.xml&apos; si aquest camp està buit" />
-        
+         <panel
+         bevel_style="in"
+         bg_alpha_color="Transparent"
+         bg_opaque_color="Black_25"
+         border="true"
+         bottom_delta="65"
+         follows="left|right|bottom"
+         height="60"
+         layout="topleft"
+         left="10"
+         name="editor_panel"
+         right="-10">
+           <text
+             type="string"
+             length="1"
+             follows="left|bottom"
+             font="SansSerif"
+             height="30"
+             layout="topleft"
+             left="10"
+             left_delta="10"
+             name="editor_path_label"
+             top="10"
+             Width="180">
+             Ruta Editor:
+           </text>
+           <line_editor
+             border_style="line"
+             border_thickness="1"
+             follows="left|bottom"
+             font="SansSerif"
+             height="20"
+             layout="topleft"
+             left_delta="100"
+             max_length_bytes="300"
+             name="executable_path_field"
+             select_on_focus="true"
+             tool_tip="La ruta completa a un editor (executable) per a editar fitxers XML flotants (les cometes no són necessàries)"
+             top_delta="-2"
+             width="315" />
+           <button
+             follows="left|bottom"
+             height="25"
+             label="Cerca..."
+             label_selected="Cerca..."
+             layout="topleft"
+             left_pad="5"
+             name="browse_for_executable"
+             tool_tip="Cerca un editor (executable) per a editar fitxers XML flotants"
+             top_delta="-2"
+             width="75" />
+           <text
+             type="string"
+             length="1"
+             follows="left|bottom"
+             font="SansSerif"
+             height="30"
+             layout="topleft"
+             left="10"
+             left_delta="-420"
+             name="executable_args_label"
+             top="36"
+             Width="168">
+             Arguments:
+           </text>
+           <line_editor
+             border_style="line"
+             border_thickness="1"
+             follows="left|bottom"
+             font="SansSerif"
+             height="20"
+             layout="topleft"
+             left_delta="100"
+             max_length_bytes="300"
+             name="executable_args_field"
+             select_on_focus="true"
+             tool_tip="Arguments de línia d'ordres per a l'editor; utilitza '%FILE%' per a referir-te al fitxer de destinació; s'executarà 'ElTeuPrograma.exe NomDelFitxer.xml' si aquest camp està buit"
+             top_delta="-2"
+             width="315" />
+       </panel>
+       <panel
+         bevel_style="in"
+         bg_alpha_color="Transparent"
+         bg_opaque_color="Black_25"
+         border="true"
+         bottom_delta="40"
+         follows="left|right|bottom"
+         height="35"
+         layout="topleft"
+         left="10"
+         name="vlt_panel"
+         right="-10">
+           <text
+             type="string"
+             length="1"
+             follows="left|bottom"
+             font="SansSerif"
+             height="30"
+             layout="topleft"
+             left="10"
+             left_delta="10"
+             name="diff_file_label"
+             top="10"
+             width="200">
+             Fitxer delta:
+           </text>
+           <line_editor
+             border_style="line"
+             border_thickness="1"
+             follows="left|bottom"
+             font="SansSerif"
+             height="20"
+             layout="topleft"
+             left_delta="100"
+             max_length_bytes="300"
+             name="vlt_diff_path_field"
+             select_on_focus="true"
+             tool_tip="La ruta completa a un fitxer de diferències de localització XML D0 o D1 generat per l'Eina de Localització del Visor (VLT)"
+             top_delta="-2"
+             width="235" />
+           <button
+             follows="left|bottom"
+             height="25"
+             label="Examina..."
+             label_selected="Examina..."
+             layout="topleft"
+             left_pad="5"
+             name="browse_for_vlt_diffs"
+             tool_tip="Busca un fitxer de diferències D0 o D1 generat pel VLT per a ressaltar els fitxers i elements modificats"
+             top_delta="-2"
+             width="75" />
+           <button
+             follows="left|bottom"
+             height="25"
+             is_toggle="true"
+             label="Ressalta"
+             label_selected="No Ressaltis"
+             layout="topleft"
+             left_pad="5"
+             name="toggle_vlt_diff_highlight"
+             tool_tip="Activa/desactiva el ressaltat dels fitxers i elements que continguin dades de localització modificades"
+             top_delta="0"
+             Width="300" />
+       </panel>
      </panel>
-        <panel name="vlt_panel">
-            <text name="diff_file_label" width="150">
-                Fitxer de diferències:
-            </text>
-            <line_editor name="vlt_diff_path_field" left_delta="100" width="350" tool_tip="Ruta completa al fitxer de diferències de localització XML D0 o D1 generat per l'eina de localització"/>
-            <button label="Selecciona..." label_selected="Selecciona..." name="browse_for_vlt_diffs" tool_tip="Selecciona un fitxer de diferències D0 o D1 generat per VLT per ressaltar fitxers i elements canviats"/>
-            <button label="Ressalta la Diferència" label_selected="No ressaltis la Diferència" name="toggle_vlt_diff_highlight" tool_tip="Commuta el ressaltat de fitxers i elements que contenen dades de localització canviades" width="150" />
-        </panel>
-    <scroll_container name="overlap_scroll">
-      <panel name="overlap_dummy_panel">
-        <overlap_panel label="Panell superposat" name="overlap_panel" tool_tip="Aquest panell s'utilitza per a la depuració i proves de ginys superposats (que comparteixen el mateix espai de pantalla)."/>
-        </panel>
+      <scroll_container
+       follows="top|right|bottom"
+       height="600"
+       layout="topleft"
+       left="750"
+       name="overlap_scroll"
+       reserve_scroll_corner="true"
+       top="20"
+       width="300">
+       <panel
+         border="true"
+         name="overlap_dummy_panel"
+         top="0"
+         left="0"
+         width="300"
+         height="600"
+         >
+         <overlap_panel
+           background_opaque="true"
+           background_visible="true"
+           bevel_style="in"
+           bg_alpha_color="Black"
+           bg_opaque_color="White"
+           border="true"
+           follows="top|right|bottom"
+           height="600"
+           label="Tauler de superposició"
+           layout="topleft"
+           left="0"
+           min_width="300"
+           name="overlap_panel"
+           tool_tip="Aquest tauler mostra l'element seleccionat actualment i tots els elements que s'hi superposen, separats per línies horitzontals"
+           top="0"
+           visible="false"
+           width="300" />
+         <text
+           type="string"
+           length="1"
+           follows="top|right"
+           font="SansSerif"
+           height="30"
+           layout="topleft"
+           left="10"
+           name="overlap_panel_label"
+           top="10"
+           width="150">
+           Elements superposats:
+         </text>
+       </panel>
     </scroll_container>
 </floater>
