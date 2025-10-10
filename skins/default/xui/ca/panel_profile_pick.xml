@@ -19,16 +19,16 @@
 				Carregant...
 			</line_editor>
 		</layout_panel>
-		<layout_panel name="util_buttons_lp">
+		<layout_panel name="util_buttons_lp" width="150">
 			<layout_stack name="util_buttons_stack">
 				<layout_panel name="map_btn_lp">
-					<button name="show_on_map_btn" label="Mostra al mapa" />
+					<button name="show_on_map_btn" label="Mostra Mapa" />
 				</layout_panel>
 				<layout_panel name="tp_btn_lp">
-					<button name="teleport_btn" label="Teletransporta't" />
+					<button name="teleport_btn" label="Teleporta't" />
 				</layout_panel>
 				<layout_panel name="set_to_curr_location_btn_lp">
-					<button name="set_to_curr_location_btn" label="Defineix el lloc" tool_tip="Estableix la ubicació actual" />
+					<button name="set_to_curr_location_btn" label="Defineix Lloc" tool_tip="Estableix la ubicació actual" />
 				</layout_panel>
 			</layout_stack>
 		</layout_panel>

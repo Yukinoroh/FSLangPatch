@@ -3,13 +3,13 @@
 	<floater.string name="InvalidAvatar">Avatar invàlid</floater.string>
 	<scroll_container name="profile_scroll">
 		<panel name="scroll_content_panel">
-			<text name="label">
+			<text name="label" left="10" width="96">
 				Textures BOM
 			</text>
-			<text name="composite_label">
-				Textures composits
+			<text name="composite_label" width="144">
+				Textures Composits
 			</text>
-			<button label="Sauvegarder les IDs dans la console" label_selected="Sauvegarder" name="Dump"/>
+			<button width="192" label="Desa els ID a la Consola" label_selected="Sauvegarder" name="Dump"/>
 			<panel name="scroll_content_panel2">
 				<texture_picker label="Cabells" name="hair-baked"/>
 				<texture_picker label="Cabells" name="hair_grain"/>
