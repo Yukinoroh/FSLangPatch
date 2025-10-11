@@ -24,14 +24,14 @@
 				<panel label="Grup (0)" name="group_notice_notifications_tab"/>
 			</tab_container>
 			<layout_stack name="ButtonsStack">
-				<layout_panel name="CondenseAllButtonPanel">
-					<button label="Redueix-ho tot" name="collapse_all_button"/>
+				<layout_panel name="CondenseAllButtonPanel" width="122">
+					<button width="122" label="Redueix-ho tot" name="collapse_all_button"/>
 				</layout_panel>
 				<layout_panel name="GapLayoutPanel">
 					<panel label="Tauler de separació" name="GapPanel"/>
 				</layout_panel>
-				<layout_panel name="DeleteAllButtonPanel">
-					<button label="Suprimeix-ho tot" name="delete_all_button"/>
+				<layout_panel name="DeleteAllButtonPanel" width="128">
+					<button width="128" label="Suprimeix-ho tot" name="delete_all_button"/>
 				</layout_panel>
 			</layout_stack>
 		</layout_panel>

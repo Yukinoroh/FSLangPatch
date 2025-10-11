@@ -24,6 +24,9 @@
 	<panel name="search_panel">
 		<text name="lbl name part" >Introdueix una part del nom:</text>
 		<button label="Inicia" name="find"/>
+		
+		<text name="lbl max content rating" width="220">Classificació Màxima Contingut:</text>
+       		
 		<icons_combo_box label="Moderat" name="maturity">
 			<icons_combo_box.item label="Adult" name="Adult" value="42"/>
 			<icons_combo_box.item label="Moderat" name="Mature" value="21"/>

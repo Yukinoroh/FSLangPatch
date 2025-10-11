@@ -9,7 +9,7 @@
 	<text name="objret_text_lbl">Retorn d'objectes</text>
 	<text name="resident_text_lbl" width="100">Propietari:</text>
 	<line_editor name="target_avatar_name" width="200" left_delta="100">(cap)</line_editor>
-	<button label="Selecciona" name="choose_avatar_btn" width="80"/>
+	<button label="Selecciona" name="choose_avatar_btn" width="90"/>
 	<text name="options_text_lbl">Opcions:</text>
 	<check_box label="Amb scripts" name="return_scripts" tool_tip="Retorna només els objectes que tinguin scripts" left_delta="100"/>
 	<check_box label="Al terreny d'algú altre" name="return_other_land" tool_tip="Retorna només els objectes d'aquest resident que siguin al terreny d'un tercer"/>
@@ -21,5 +21,5 @@
 	<text name="label_restart_delay" width="110" left_delta="220">Segons:</text>
 	<spinner left_delta="65" name="restart_delay" width="50"/>
 	<button label="Cancel·la el reinici" width="200" name="cancel_restart_btn" tool_tip="Cancel·la el reinici de la regió"/>
-	<button label="Consola de depuració de la regió" width="200" name="region_debug_console_btn" tool_tip="Obre la consola de depuració de la regió"/>
+	<button label="Consola de Depuració" width="200" name="region_debug_console_btn" tool_tip="Obre la consola de depuració de la regió"/>
 </panel>

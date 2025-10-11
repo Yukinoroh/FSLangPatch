@@ -15,13 +15,13 @@
 	<panel.string name="no_results">
 		(buit)
 	</panel.string>
-	<text name="text_name">
+	<text name="text_name" right="188">
 		Llista d'experiències
 	</text>
 	<name_list name="experience_list">
 		<name_list.columns label="Nom" name="experience_name"/>
 	</name_list>
 	<button label="Afegeix" name="btn_add"/>
-	<button label="Suprimeix" name="btn_remove"/>
+	<button label="Esborra" name="btn_remove"/>
 	<button label="Perfil" name="btn_profile"/>
 </panel>

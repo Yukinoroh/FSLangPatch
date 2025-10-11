@@ -3,6 +3,6 @@
 	<text name="combo_text">
 		Selecciona una opció :
 	</text>
-	<button label="OK" name="combo_ok"/>
+	<button label="D'acord" name="combo_ok"/>
 	<button label="Anul·lar" name="combo_cancel"/>
 </floater>

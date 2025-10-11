@@ -49,7 +49,7 @@
 							</text>
 							<button label="Utilitza l'inventari" name="btn_select_inventory"/>
 							<button label="Personalitza" name="btn_edit"/>
-							<check_box label="Un(a) propietari(ària) pot personalitzar" name="chk_allow_override"/>
+							<check_box label="Propietari(a) pot personalitzar" name="chk_allow_override"/>
 						</layout_panel>
 						<layout_panel name="pnl_environment_length">
 							<text name="day_settings_label">

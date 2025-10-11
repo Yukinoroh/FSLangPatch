@@ -55,6 +55,6 @@
 	<line_editor default_text="Introduïu la clau de l'API de DeepL i feu clic a &quot;Verifica&quot;" name="deepl_api_key"/>
 	<button label="Verifica" name="verify_deepl_api_key_btn"/>
 	<text name="deepl_links_text">[https://www.deepl.com/pro/select-country?cta=header-prices Tarifes]</text>
-	<button label="OK" name="ok_btn"/>
+	<button label="D'acord" name="ok_btn"/>
 	<button label="Cancel·la" name="cancel_btn"/>
 </floater>

@@ -15,7 +15,8 @@
 			<button label="Informa d'un abús" name="btn_report_xp"/>
 		</layout_panel>
 		<layout_panel name="button_panel">
-			<check_box label="Notifica tots els esdeveniments (Dies)" name="notify_all" width="210"/>
+			<check_box label="Notifica tot esdeveniment (Dies)" name="notify_all" width="210"/>
+			<spinner left_pad="30" name="logsizespinner"/>
 			<button label="Neteja" name="btn_clear"/>
 			<button label="&lt;" name="btn_prev"/>
 			<button label="&gt;" name="btn_next"/>
