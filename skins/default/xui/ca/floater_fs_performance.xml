@@ -16,7 +16,7 @@
 		Espera de 5 a 10 s per veure els canvis.
 	</floater.string>
 	<floater.string name="info_frozen">
-		Pause des statistiques lorsque le FPS est limité ou en arrière-plan.
+		Les estadístiques es posen en pausa quan els FPS són limitats o en segon pla.
 	</floater.string>
 	<floater.string name="tot_av_template">
 		Total: [TOT_AV] ([TOT_AV_TIME]μs)
@@ -27,7 +27,7 @@
 	<panel name="panel_top">
 		<panel name="fps_subpanel">
 			<text name="fps_lbl">
-				imatges par segon
+				imatges per segon
 			</text>
 			<text name="fps_warning">
 				Limitat a 000FPS per l'usuari

@@ -38,6 +38,7 @@
 			<scroll_container name="edit_xp_scroll">
 				<panel name="edit_scrolling_panel">
 					<button name="Group_btn" label="Grup"/>
+					<text name="edit_experience_title_label" value="Nom:"/>
 					<text name="edit_ContentRating">Classificació :</text>
 					<icons_combo_box label="Moderar" tool_tip="L'augment de la maduresa d'una experiència reiniciarà les permissions de tots els residents que van permetre aquesta experiència." name="edit_ContentRatingText">
 						<icons_combo_box.item label="Adult" name="Adult"/>

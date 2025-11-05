@@ -3,6 +3,7 @@
 	<text name="title" value="Remitent / Grup"/>
 	<text name="group_notice" value="Anunci de grup"/>
 	<text name="attachment" value="Adjunts"/>
+	<button label="D'acord" name="btn_ok"/>
 	<button label="Altres anuncis" name="btn_notices" width="130" />
 	<button label="Grups de xat" name="btn_groupchat"/>
 </panel>

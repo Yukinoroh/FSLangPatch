@@ -2,7 +2,7 @@
 <floater name="360capture" title="Foto a 360°">
 	<panel name="ui_panel_left">
 		<text name="quality_level_label">
-			Qualité
+			Qualitat
 		</text>
 		<radio_group name="360_quality_selection">
 			<radio_item label="Vista prèvia (ràpid)" name="preview_quality" tool_tip="Qualitat la menys bona" />

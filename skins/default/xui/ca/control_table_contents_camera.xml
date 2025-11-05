@@ -51,6 +51,14 @@
 	<rows name="spin_around_cw">
 		<columns name="lst_action" tool_tip="La càmera gira en sentit horari" value="Rotació de la càmera cap a la dreta" />
 	</rows>
+	
+	 <rows name="roll_left" value="roll_left">
+      <columns name="lst_action" tool_tip="Inclina la càmera a l'esquerra" value="Inclina a l'esquerra" />
+    </rows>
+    <rows name="roll_right" value="roll_right">
+      <columns name="lst_action" tool_tip="Inclina la càmera a la dreta" value="Inclina a la dreta" />
+    </rows>
+    	
 	<rows name="move_forward_sitting">
 		<columns name="lst_action" value="Càmera frontal quan assegut/da" />
 	</rows>
