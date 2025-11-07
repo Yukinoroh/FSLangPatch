@@ -227,7 +227,7 @@
 			<menu_item_call label="Desa el contingut de l'objecte" name="Save Object Back to Object Contents"/>
 			<menu_item_call label="Retorna l'objecte" name="Return Object back to Owner"/>
 			<menu label="Exporta com a" name="Export Menu">
-				<menu_item_call label="Còpia de seguretat" name="Backup"/>
+				<menu_item_call label="CòpiaSeguretat" name="Backup"/>
 				<menu_item_call label="Collada" name="Collada"/>
 			</menu>
 		</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Test Floater" title="Finestra de prova">
+	<text>
+ això
+ és
+ text
+ que
+ està
+ alineat
+ a dalt</text>
+	<text>
+ això
+ és
+ text
+ que
+ està
+ alineat
+ al mig</text>
+	<text>
+ això
+ és
+ text
+ que
+ està
+ alineat
+ a baix</text>
+	<text_editor>
+ això
+ és
+ text
+ que
+ està
+ alineat
+ a dalt
+	</text_editor>
+	<text_editor>
+ això
+ és
+ text
+ que
+ està
+ alineat
+ al centre
+	</text_editor>
+	<text_editor>
+ això
+ és
+ text
+ que
+ està
+ alineat
+ a baix
+	</text_editor>
+</floater>

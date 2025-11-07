@@ -14,6 +14,6 @@
 	<text name="hours_textbox">
 		hores
 	</text>
-	<button label="OK" name="ok_btn"/>
+	<button label="D'acord" name="ok_btn"/>
 	<button label="Anul·lar" name="cancel_btn"/>
 </floater>

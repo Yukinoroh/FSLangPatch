@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="search replace" title="Cerca / Reemplaça">
+    <check_box label="Ignora majúscules i minúscules" left="50" name="case_text" width="140" />
+    <check_box label="Cerca enrere" name="find_previous" />
+    <button label="Cerca" label_selected="Cerca" name="search_btn" />
+    <button label="Reemplaça" label_selected="Reemplaça" name="replace_btn" />
+    <button label="Reemplaça-ho tot" label_selected="Reemplaça-ho tot" name="replace_all_btn" />
+    <text name="txt">
+        Cerca
+    </text>
+    <text name="txt2">
+        Reemplaça per
+    </text>
+</floater>

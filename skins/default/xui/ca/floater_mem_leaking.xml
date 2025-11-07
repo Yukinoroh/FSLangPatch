@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="MemLeak" title="Simula una fuita de memòria">
+	<spinner label="Velocitat de la fuita (bytes per fotograma):" name="leak_speed"/>
+	<spinner label="Memòria màxima perduda (MB):" name="max_leak"/>
+	<text name="total_leaked_label">Memòria perduda actualment: [SIZE] KB</text>
+	<button label="Inicia" name="start_btn"/>
+	<button label="Atura" name="stop_btn"/>
+	<button label="Allibera" name="release_btn"/>
+	<button label="Tanca" name="close_btn"/>
+</floater>

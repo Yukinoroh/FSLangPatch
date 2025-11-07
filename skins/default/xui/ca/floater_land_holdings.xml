@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="land holdings floater" title="Els meus terrenys">
+	<floater.string name="area_string">
+		[AREA] m²
+	</floater.string>
+	<scroll_list name="parcel list">
+		<scroll_list.columns label="Parcel·la" name="name"/>
+		<scroll_list.columns label="Regió" name="location"/>
+		<scroll_list.columns label="Tipus" name="type"/>
+		<scroll_list.columns label="Àrea" name="area"/>
+	</scroll_list>
+	<button label="Teletransporta't" label_selected="Teletransporta't" name="Teleport" tool_tip="Teletransporta't al centre d'aquest terreny."/>
+	<button label="Mapa" label_selected="Mapa" name="Show on Map" tool_tip="Mostra aquest terreny al mapa del món."/>
+	<text name="contrib_label">
+		Les teves contribucions a grups:
+	</text>
+	<scroll_list name="grant list">
+		<scroll_list.columns label="Grup" name="group"/>
+		<scroll_list.columns label="Àrea" name="area"/>
+	</scroll_list>
+	<text name="allowed_label">
+		Mida de propietat permesa per al pla de pagament actual:
+	</text>
+	<text name="allowed_text">
+		[AREA] m²
+	</text>
+	<text name="current_label">
+		Mida actual:
+	</text>
+	<text name="current_text">
+		[AREA] m²
+	</text>
+	<text name="available_label">
+		Disponible per a la compra:
+	</text>
+	<text name="available_text">
+		[AREA] m²
+	</text>
+</floater>

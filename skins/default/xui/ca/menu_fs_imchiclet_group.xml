@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<menu name="IMChiclet Group Menu">
+	<menu_item_call label="Perfil del grup" name="Show Profile" />
+	<menu_item_call label="Mostra la sessió" name="Chat" />
+	<menu_item_call label="Silencia la sessió" name="Snooze Session" />
+	<menu_item_call label="Tanca la sessió" name="End Session" />
+</menu>

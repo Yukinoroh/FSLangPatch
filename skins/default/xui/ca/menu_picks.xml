@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Picks">
+	<menu_item_call label="Quant a" name="pick_info"/>
+	<menu_item_call label="Edita" name="pick_edit"/>
+	<menu_item_call label="Teletransportar" name="pick_teleport"/>
+	<menu_item_call label="Veure al mapa" name="pick_map"/>
+	<menu_item_call label="Suprimeix" name="pick_delete"/>
+</context_menu>

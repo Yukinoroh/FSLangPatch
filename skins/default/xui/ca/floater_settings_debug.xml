@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="settings_debug" title="Paràmetres de depuració">
+	<panel name="debug_settings_search_panel">
+		<search_editor label="Cerca aquí" name="search_settings_input" tool_tip="Introduïu aquí els termes de la vostra cerca. Els resultats que es mostrin contindran la cerca al nom del paràmetre o al seu comentari."/>
+		<scroll_list name="settings_scroll_list">
+			<scroll_list.columns label="Paràmetres" name="setting"/>
+		</scroll_list>
+		<check_box label="Només els paràmetres modificats" name="hide_default"/>
+	</panel>
+	<panel name="debug_settings_values_panel">
+		<text_editor name="comment_text" tool_tip="Comentari dels paràmetres de depuració. Dona informació útil sobre l'ajustament que heu seleccionat."/>
+		<radio_group name="boolean_combo">
+			<radio_item label="CERT" name="TRUE"/>
+			<radio_item label="FALS" name="FALSE"/>
+		</radio_group>
+		<color_swatch name="val_color_swatch" label="Color"/>
+		<spinner label="Control numèric 1" name="val_spinner_1"/>
+		<spinner label="Control numèric 2" name="val_spinner_2"/>
+		<spinner label="Control numèric 3" name="val_spinner_3"/>
+		<spinner label="Control numèric 4" name="val_spinner_4"/>
+		<button label="Copia" name="copy_btn" tool_tip="Copia el nom del paràmetre."/>
+		<button label="Restableix" name="default_btn" tool_tip="Restableix aquest paràmetre de depuració al seu valor per defecte."/>
+	</panel>
+</floater>

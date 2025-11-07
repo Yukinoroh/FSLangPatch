@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Toybox" title="Botons de la barra d'eines">
+	<text name="toybox label 1">
+		Afegeix o elimina botons arrossegant-los a les barres d'eines o fora d'elles.
+	</text>
+	<text name="toybox label 2">
+		Els botons es mostraran en la seva forma original o com a icones, depenent de la configuració de cada barra d'eines.
+	</text>
+	<button label="Neteja totes les barres" label_selected="Neteja totes les barres" name="btn_clear_all"/>
+	<button label="Restaura els valors per defecte" label_selected="Restaura els valors per defecte" name="btn_restore_defaults"/>
+	<check_box name="check_toolbars_locked" label="Bloqueja" tool_tip="Marca aquesta casella per bloquejar les barres d'eines, de manera que els botons no es puguin arrossegar o eliminar accidentalment."/>
+</floater>

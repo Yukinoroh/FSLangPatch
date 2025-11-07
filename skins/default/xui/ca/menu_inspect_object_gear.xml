@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toggleable_menu name="Gear Menu">
+	<menu_item_call label="Toca" name="touch"/>
+	<menu_item_call label="Seu" name="sit"/>
+	<menu_item_call label="Paga" name="pay"/>
+	<menu_item_call label="Compra" name="buy"/>
+	<menu_item_call label="Agafa" name="take"/>
+	<menu_item_call label="Agafa'n una còpia" name="take_copy"/>
+	<menu_item_call label="Obre" name="open"/>
+	<menu_item_call label="Edita" name="edit"/>
+	<menu_item_call label="Vesteix" name="wear"/>
+	<menu_item_call label="Afegeix" name="add"/>
+	<menu_item_call label="Informa" name="report"/>
+	<menu_item_call label="Ignora" name="block"/>
+	<menu_item_call label="Deixa d'ignorar" name="unblock"/>
+	<menu_item_call label="Apropa't" name="zoom_in"/>
+	<menu_item_call label="Suprimeix" name="remove"/>
+	<menu_item_call label="Més informació" name="more_info"/>
+</toggleable_menu>

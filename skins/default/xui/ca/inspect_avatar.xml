@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="inspect_avatar">
+	<slider name="volume_slider" tool_tip="Volum"/>
+	<button label="Afegeix als amics" name="add_friend_btn"/>
+	<button label="MI" name="im_btn"/>
+	<button label="Perfil" name="view_profile_btn"/>
+	<panel name="moderator_panel">
+		<button label="Desactiva la veu" name="disable_voice"/>
+		<button label="Activa la veu" name="enable_voice"/>
+	</panel>
+</floater>

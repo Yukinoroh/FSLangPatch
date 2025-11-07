@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="Teleport History Gear Context Menu">
+	<menu_item_call label="Expandeix totes les carpetes" name="Expand all folders"/>
+	<menu_item_call label="Contrau totes les carpetes" name="Collapse all folders"/>
+	<menu name="TPHistoryTimeZone" label="Selecciona l'hora...">
+		<menu_item_check name="teleport_history_tz_utc" label="UTC" />
+		<menu_item_check name="teleport_history_tz_slt" label="SLT" />
+		<menu_item_check name="teleport_history_tz_local" label="Local" />
+	</menu>
+	<menu name="Show Menu" label="Mostra...">
+		<menu_item_check name="Show Position" label="Posició" />
+		<menu_item_check name="Show Date" label="Data" />
+	</menu>
+	<menu_item_call label="Neteja l'historial de teletransportacions" name="Clear Teleport History"/>
+</toggleable_menu>

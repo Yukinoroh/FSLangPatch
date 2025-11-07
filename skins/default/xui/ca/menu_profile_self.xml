@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="Avatar Profile Menu Self">
+	<menu_item_call label="Edita el nom de visualització" name="edit_display_name"/>
+	<menu_item_call label="Edita la parella" name="edit_partner"/>
+	<menu_item_call label="Puja una foto" name="upload_photo"/>
+	<menu_item_call label="Canvia la foto" name="change_photo"/>
+	<menu_item_call label="Elimina la foto" name="remove_photo"/>
+	<menu_item_call label="Copia el nom de visualització" name="copy_display_name"/>
+	<menu_item_call label="Copia el nom d'usuari" name="copy_name"/>
+	<menu_item_call label="Copia l'identificador" name="copy_id"/>
+</toggleable_menu>

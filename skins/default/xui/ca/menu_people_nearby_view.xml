@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="menu_group_plus">
+	<menu_item_check label="Ordena per conversa recent" name="sort_by_recent_speakers" />
+	<menu_item_check label="Ordena per nom" name="sort_name" />
+	<menu_item_check label="Ordena per distància" name="sort_distance" />
+	<menu_item_check label="Ordena per arribada recent" name="sort_arrival"/>
+	<menu_item_check label="Mostra les icones de les persones" name="view_icons"/>
+	<menu_item_check label="Mostra el mapa" name="view_map"/>
+	<menu_item_check label="Amaga els noms d'usuari" name="view_usernames"/>
+</toggleable_menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="edit_underpants_panel">
+	<panel name="avatar_underpants_color_panel">
+		<texture_picker label="Textura" name="Fabric" tool_tip="Feu clic per triar una imatge"/>
+		<color_swatch label="Color" name="Color/Tint" tool_tip="Feu clic per triar un color"/>
+	</panel>
+	<panel name="accordion_panel">
+		<accordion name="wearable_accordion">
+			<accordion_tab name="underpants_main_tab" title="Calçotets"/>
+		</accordion>
+	</panel>
+</panel>

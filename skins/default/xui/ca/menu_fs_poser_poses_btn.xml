@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="Settings">
+	<menu_item_call label="Carrega la selecció" tool_tip="Carrega només les articulacions que estiguin desactivades i les activa." name="load_selective"/>
+	<menu_item_call label="Carrega la selecció - Només les rotacions" tool_tip="Carrega només les rotacions de les articulacions que estiguin desactivades, i les activa." name="rotations_positions"/>
+	<menu_item_call label="Carrega només les rotacions" tool_tip="Carrega només les rotacions. Va bé per a les postures fetes per a altres avatars/siluetes." name="rotations"/>
+	<menu_item_call label="Carrega" tool_tip="Carrega les rotacions, les posicions i les escales" name="load_all"/>
+</toggleable_menu>

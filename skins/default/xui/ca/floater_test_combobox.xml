@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_test_combobox">
+	<text>
+         Ús en un cas real (ubicació d'inici de sessió):
+	</text>
+	<combo_box name="start_location_combo">
+		<combo_box.item label="La meva última ubicació" name="MyLastLocation"/>
+		<combo_box.item label="La meva llar" name="MyHome"/>
+		<combo_box.item label="&lt;Escriu el nom de la regió&gt;" name="Typeregionname"/>
+	</combo_box>
+	<text>
+         Quadre combinat mínim:
+	</text>
+	<combo_box name="minimal_combo">
+		<combo_box.item label="Primer element" name="item1"/>
+		<combo_box.item label="Segon element" name="item2"/>
+	</combo_box>
+	<text>
+         Permet l'entrada de text:
+	</text>
+	<combo_box name="text_entry_combo">
+		<combo_box.item label="Primer element" name="item1"/>
+		<combo_box.item label="Segon element" name="item2"/>
+	</combo_box>
+	<text>
+         Permet l'entrada de text, per defecte el segon element:
+	</text>
+	<combo_box name="text_entry_combo2">
+		<combo_box.item label="Primer element" name="item1"/>
+		<combo_box.item label="Segon element" name="item2"/>
+	</combo_box>
+	<text>
+         Entrada màxima de dos caràcters:
+	</text>
+	<combo_box name="state_combo">
+		<combo_box.item label="CA" name="item1"/>
+		<combo_box.item label="NY" name="item2"/>
+		<combo_box.item label="TX" name="item3"/>
+	</combo_box>
+</floater>

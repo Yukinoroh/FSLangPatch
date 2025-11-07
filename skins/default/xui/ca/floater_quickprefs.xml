@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="quickprefs" title="Preferències ràpides">
+	<panel name="quickprefs">
+		<layout_stack name="wl_options_stack">
+			<layout_panel name="wl_options_panel">
+				<text name="HoverHeightLabel" tool_tip="Ajusta l'alçada del teu avatar">Flotació</text>
+				<text name="Maximum bandwidth" tool_tip="Ajusta l'amplada de banda en Kbps (kilobits per segon)">Amplada de banda</text>
+				<text name="WL Sky" tool_tip="Paràmetres atmosfèrics">Entorn cel</text>
+				<text name="WL Water" tool_tip="Paràmetres aquàtics">Entorn aigua</text>
+				<text name="Day Cycle" tool_tip="Paràmetres del cicle diari">Dia/Nit</text>
+				
+				<button name="btn_personal_lighting" label="Il·luminació personal..." Width="192"/>
+           				
+				<button name="ResetToRegionDefault" tool_tip="Aplica els paràmetres d'entorn per defecte de la regió"/>
+				<button name="button_edit" tool_tip="Feu clic aquí per configurar el panell de preferències ràpides"/>
+			</layout_panel>
+		</layout_stack>
+	</panel>
+	<panel name="edit_overlay_panel">
+		<button name="move_up_button" tool_tip="Mou l'opció seleccionada cap amunt"/>
+		<button name="add_new_button" tool_tip="Afegeix una nova opció de preferència ràpida"/>
+		<line_editor name="label_edit" tool_tip="Introduïu el nom de l'opció aquí" label="Nom de l'opció:"/>
+		<button name="move_down_button" tool_tip="Mou l'opció seleccionada cap avall"/>
+		<combo_box name="control_name_combo" tool_tip="Seleccioneu l'opció de la llista de paràmetres de depuració"><combo_box.item label="=== Seleccioneu ===" name="control_name_list_header"/></combo_box>
+		<text name="control_type_label">Tipus:</text>
+		<combo_box name="control_type_combo_box" tool_tip="Seleccioneu el tipus de control que voleu utilitzar per a aquest paràmetre">
+			<combo_box.item label="Casella de selecció" name="Checkbox"/>
+			<combo_box.item label="Text" name="Text"/>
+			<combo_box.item label="Selector numèric" name="Spinner"/>
+			<combo_box.item label="Control lliscant" name="Slider"/>
+			<combo_box.item label="Botó d'opció" name="Radio"/>
+			<combo_box.item label="Color" name="Color 3"/>
+			<combo_box.item label="Color + Alfa" name="Color 4"/>
+		</combo_box>
+		<check_box name="control_integer_checkbox" tool_tip="Activeu aquesta opció si el vostre paràmetre no accepta decimals" label="Enter"/>
+		<spinner name="control_min_edit" tool_tip="El valor seleccionable més petit" label="Mín.:"/>
+		<spinner name="control_max_edit" tool_tip="El valor seleccionable més gran" label="Màx.:"/>
+		<spinner name="control_increment_edit" tool_tip="El valor d'increment per als selectors numèrics o controls lliscants" label="Incr.:"/>
+		<button name="Restore_Btn" tool_tip="Restaura els paràmetres per defecte" label="Restableix"/>
+		<button name="button_close" tool_tip="Tanca l'edició del panell de preferències ràpides"/>
+	</panel>
+</floater>

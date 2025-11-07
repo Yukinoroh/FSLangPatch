@@ -6,6 +6,9 @@
 	<string name="edit_water">
 		Modificar l'aigua
 	</string>
+	
+	<text name="info_panel_label">Nom:</text>
+	
 	<layout_stack name="floater_stack">
 		<layout_panel name="info_panel">
 			<button label="Carregar" name="btn_load" tool_tip="Carregar paràmetres des de l'inventari"/>

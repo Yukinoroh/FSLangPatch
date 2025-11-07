@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_gltf_material" >
+	<check_box label="Doble cara" name="double sided"/>
+	<panel name="base_color_texture_pnl">
+		<text name="base_color_lbl">
+			Color de base:
+		</text>
+		<texture_picker name="base_color_texture" tool_tip="Mapa de color base. El canal alfa és opcional i s'utilitza per a la transparència."/>
+		<text name="base_color_upload_fee">
+			Sense costos de càrrega
+		</text>
+		<text name="base_color_tint_lbl">
+			Tint
+		</text>
+		<text name="base_color_transparency_lbl">
+			Alfa
+		</text>
+		<text name="alpha_mode_lbl">
+			Mode alfa
+		</text>
+		<combo_box name="alpha mode">
+			<combo_box.item label="Opac" name="None" />
+			<combo_box.item label="Mescla" name="Alpha blending" />
+			<combo_box.item label="Màscara" name="Alpha masking" />
+		</combo_box>
+		<text name="alpha_cutoff_lbl">
+			Retall alfa
+		</text>
+	</panel>
+	<panel name="metallic_texture_pnl">
+		<text name="metallic_roughness_lbl">
+			Metàl·lic-Rugositat:
+		</text>
+		<texture_picker name="metallic_roughness_texture" tool_tip="Textura de rugositat metàl·lica GLTF amb oclusió ambiental opcional. El canal vermell correspon a l'oclusió ambiental, el canal verd a la rugositat i el canal blau a la metal·litat."/>
+		<text name="metallic_upload_fee">
+			Sense costos de càrrega
+		</text>
+		<text name="metallic_factor_lbl">
+			Factor metàl·lic
+		</text>
+		<text name="roughness_factor_lbl">
+			Factor de rugositat
+		</text>
+	</panel>
+	<panel name="emissive_texture_pnl">
+		<text name="emissive_lbl">
+			Emissiu:
+		</text>
+		<text name="emissive_upload_fee">
+			Sense costos de càrrega
+		</text>
+		<text name="emissive_tint_lbl">
+			Tint
+		</text>
+	</panel>
+	<panel name="normal_texture_pnl">
+		<text name="normal_lbl">
+			Normal:
+		</text>
+		<text name="normal_upload_fee">
+			Sense costos de càrrega
+		</text>
+	</panel>
+</panel>

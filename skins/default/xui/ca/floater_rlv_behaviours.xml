@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="rlv_behaviours" title="Restriccions RLV actives">
+  <tab_container name="behaviour_tab">
+    <panel label="Restriccions" name="behaviour_panel">
+      <scroll_list name="behaviour_list" tool_tip="Llista de les restriccions RLVa actuals.">
+        <scroll_list.columns label="Restricció" name="behaviour" width="100"/>
+        <scroll_list.columns label="Nom de l'objecte" name="issuer"/>
+      </scroll_list>
+    </panel>
+    <panel label="Excepcions" name="exception_panel">
+      <scroll_list name="exception_list" tool_tip="Llista de les excepcions RLVa actuals.">
+        <scroll_list.columns label="Excepció" name="behaviour" width="100"/>
+        <scroll_list.columns label="Origen" name="option" />
+        <scroll_list.columns label="Nom de l'objecte" name="issuer" />
+      </scroll_list>
+    </panel>
+    <panel label="Modificadors" name="modifier_panel">
+      <scroll_list name="modifier_list" tool_tip="Llista dels modificadors RLVa actuals." >
+        <scroll_list.columns label="Modificador" name="modifier" width="150" />
+        <scroll_list.columns label="Valor" name="value" width="105" />
+        <scroll_list.columns label="Objecte principal" name="primary" />
+      </scroll_list>
+    </panel>
+  </tab_container>
+  <panel name="bottom_panel">
+    <button label="Copia al porta-retalls" name="copy_btn" width="200" />
+  </panel>
+</floater>

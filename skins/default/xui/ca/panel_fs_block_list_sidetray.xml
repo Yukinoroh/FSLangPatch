@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="block_list_panel">
+	<panel label="bottom_panel" name="blocked_buttons_panel">
+		<filter_editor label="Filtre" name="blocked_filter_input"/>
+		<menu_button name="blocked_gear_btn" tool_tip="Accions amb la persona o objecte seleccionat"/>
+		<menu_button name="view_btn" tool_tip="Ordena"/>
+		<menu_button name="plus_btn" tool_tip="Tria un resident o objecte per blocar"/>
+		<button name="unblock_btn" tool_tip="Treu el resident o objecte de la llista de blocats"/>
+	</panel>
+	<text name="block_limit">
+		Blocats: [COUNT] (màxim [LIMIT])
+	</text>
+	<fs_scroll_list name="block_list">
+		<fs_scroll_list.columns name="item_name" label="Nom"/>
+		<fs_scroll_list.columns name="item_type" label="Tipus"/>
+	</fs_scroll_list>
+</panel>

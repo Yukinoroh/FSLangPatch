@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="inspect_group">
+	<string name="PrivateGroup">
+		Grup privat
+	</string>
+	<string name="FreeToJoin">
+		Unir-s'hi és gratuït
+	</string>
+	<string name="CostToJoin">
+		[AMOUNT]L$ per unir-s'hi
+	</string>
+	<string name="YouAreMember">
+		Ets membre del grup
+	</string>
+	<button label="Unir-s'hi" name="join_btn"/>
+	<button label="Abandonar" name="leave_btn"/>
+	<button label="Veure el perfil" name="view_profile_btn"/>
+</floater>

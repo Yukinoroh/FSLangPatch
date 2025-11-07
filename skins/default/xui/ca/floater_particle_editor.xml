@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="particle_editor_floater" title="Editor de partícules">
+	<panel name="particle_editor_panel">
+		<panel name="top_left_panel">
+			<text name="Pattern_Label">
+				Model:
+			</text>
+			<combo_box name="pattern_type_combo">
+				<combo_box.item label="Explosió" name="explode"/>
+				<combo_box.item label="Angle" name="angle"/>
+				<combo_box.item label="Angle - con" name="angle_cone"/>
+				<combo_box.item label="Angle - con buit" name="angle_cone_empty"/>
+				<combo_box.item label="Caiguda" name="drop"/>
+			</combo_box>
+			<text name="Texture_Label">
+				Textura:
+			</text>
+			<text name="Burst_Rate_Label">
+				Vel. d'impuls:
+			</text>
+			<text name="Burst_Count_Label">
+				Quant. d'impulsos:
+			</text>
+			<text name="Burst_Radius_Label">
+				Radi d'esclat:
+			</text>
+			<text name="Angle_Begin_Label">
+				Angle d'inici:
+			</text>
+			<text name="Burst_Speed_Min_Label">
+				Més lent:
+			</text>
+			<text name="Angle_End_Label">
+				Angle de fi:
+			</text>
+			<text name="Burst_Speed_Max_Label">
+				Més ràpid:
+			</text>
+			<text name="Source_Max_Age_Label">
+				Edat màx. font:
+			</text>
+			<text name="Start_Alpha_Label">
+				Alfa d'inici:
+			</text>
+			<text name="Particles_Max_Age_Label">
+				Edat màx. partícules:
+			</text>
+			<text name="End_Alpha_Label">
+				Alfa final:
+			</text>
+			<text name="Start_Glow_Label">
+				Brillantor inicial:
+			</text>
+			<combo_box name="blend_func_src_combo">
+				<combo_box.item label="Mescla de bits u" name="blend_one" />
+				<combo_box.item label="Mescla de bits zero" name="blend_zero" />
+				<combo_box.item label="Mescla de color de destinació" name="blend_dest_color" />
+				<combo_box.item label="Mescla de color d'origen" name="blend_src_color" />
+				<combo_box.item label="Mescla 1 - Color de destinació" name="blend_one_minus_dest_color" />
+				<combo_box.item label="Mescla 1 - Color d'origen" name="blend_one_minus_src_color" />
+				<combo_box.item label="Mescla alfa d'origen" name="blend_src_alpha" />
+				<combo_box.item label="Mescla 1 - alfa d'origen" name="blend_one_minus_src_alpha" />
+			</combo_box>
+			<text name="End_Glow_Label">
+				Brillantor final:
+			</text>
+			<combo_box name="blend_func_dest_combo">
+				<combo_box.item label="Mescla de bits u" name="blend_one" />
+				<combo_box.item label="Mescla de bits zero" name="blend_zero" />
+				<combo_box.item label="Mescla de color de destinació" name="blend_dest_color" />
+				<combo_box.item label="Mescla de color d'origen" name="blend_src_color" />
+				<combo_box.item label="Mescla 1 - Color de destinació" name="blend_one_minus_dest_color" />
+				<combo_box.item label="Mescla 1 - Color d'origen" name="blend_one_minus_src_color" />
+				<combo_box.item label="Mescla alfa d'origen" name="blend_src_alpha" />
+				<combo_box.item label="Mescla 1 - alfa d'origen" name="blend_one_minus_src_alpha" />
+			</combo_box>
+			<text name="Scale_Start_Label">
+				Escala d'inici:
+			</text>
+			<text name="End_Label">
+				Fi:
+			</text>
+		</panel>
+		<panel name="top_right_panel">
+			<check_box name="bounce_checkbox" label="Rebots"/>
+			<check_box name="emissive_checkbox" label="Emissions"/>
+			<check_box name="follow_source_checkbox" label="Segueix la font"/>
+			<check_box name="follow_velocity_checkbox" label="Segueix la velocitat"/>
+			<check_box name="interpolate_color_checkbox" label="Interpola el color"/>
+			<check_box name="interpolate_scale_checkbox" label="Interpola la mida"/>
+			<check_box name="target_position_checkbox" label="Apunta a l'objecte"/>
+			<check_box name="target_linear_checkbox" label="Apunta linealment"/>
+			<check_box name="wind_checkbox" label="Vent"/>
+			<check_box name="ribbon_checkbox" label="Cinta"/>
+			<button name="copy_button" label="Copia" tool_tip="Copia els paràmetres de l'editor de partícules al porta-retalls en forma de script LSL."/>
+			<button name="inject_button" label="Insereix" tool_tip="Insereix un sistema de partícules predefinit a l'objecte seleccionat."/>
+		</panel>
+		<panel name="bottom_left_panel">
+			<text name="Target_Key_Label">
+				Clau de la destinació:
+			</text>
+			<button name="clear_target_button" tool_tip="Esborra l'objecte o l'avatar de destinació."/>
+			<button name="pick_target_button" tool_tip="Fes clic aquí per seleccionar l'objecte o l'avatar de destinació per a les partícules."/>
+			<text name="Acceleration_Label">
+				Acceleració:
+			</text>
+			<text name="Omega_Label">
+				Rotació:
+			</text>
+		</panel>
+		<panel name="bottom_right_panel">
+			<color_swatch label="Color inici" name="start_color_selector"/>
+			<color_swatch label="Color fi" name="end_color_selector"/>
+		</panel>
+	</panel>
+</floater>

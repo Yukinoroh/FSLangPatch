@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="modal container">
+	<floater.string name="real_url">
+		http://secondlife.com/app/tos/
+	</floater.string>
+	<floater.string name="loading_url">
+		data:text/html,%3Chtml%3E%3Chead%3E%3C/head%3E%3Cbody text=%22000000%22%3E%3Ch2%3E Loading %3Ca%20target%3D%22_external%22%20href%3D%22http%3A//secondlife.com/app/tos/%22%3ETerms%20of%20Service%3C/a%3E...%3C/h2%3E %3C/body%3E %3C/html%3E
+	</floater.string>
+	<text name="tos_heading">
+		Llegeix els termes i condicions de l'Acord de l'usuari de Second Life, incloent-hi la política de privadesa, el procediment de resolució de disputes i la renúncia a qualsevol reclamació col·lectiva o de grup per a resoldre desacords. Per a entrar a [SECOND_LIFE], has d'acceptar els termes de l'acord.
+	</text>
+	<text name="external_tos_required">
+		Per a continuar, ves a https://my.secondlife.com, inicia la sessió i accepta els Termes del Servei. Gràcies!
+	</text>
+	<check_box label="" name="agree_chk"/>
+	<text name="agree_list">
+		He llegit i accepto els Termes i Condicions de l'Acord, incloent-hi la política de privadesa i els requisits de resolució de disputes de Second Life.
+	</text>
+	<button label="Continua" label_selected="Continua" name="Continue"/>
+	<button label="Cancel·la" label_selected="Cancel·la" name="Cancel"/>
+</floater>

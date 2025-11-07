@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<toggleable_menu name="Gear Menu">
+	<menu_item_call label="Seu" name="Sit Down Here"/>
+	<menu_item_call label="Aixeca't" name="Stand Up"/>
+	<context_menu label="Treu-te" name="Take Off &gt;">
+		<context_menu label="Roba" name="Clothes &gt;">
+			<menu_item_call label="Camisa" name="Shirt"/>
+			<menu_item_call label="Pantalons" name="Pants"/>
+			<menu_item_call label="Faldilla" name="Skirt"/>
+			<menu_item_call label="Sabates" name="Shoes"/>
+			<menu_item_call label="Mitjons" name="Socks"/>
+			<menu_item_call label="Jaqueta" name="Jacket"/>
+			<menu_item_call label="Guants" name="Gloves"/>
+			<menu_item_call label="Samarreta interior" name="Self Undershirt"/>
+			<menu_item_call label="Calçotets" name="Self Underpants"/>
+			<menu_item_call label="Tatuatge" name="Self Tattoo"/>
+			<menu_item_call label="Alfa" name="Self Alpha"/>
+			<menu_item_call label="Tota la roba" name="All Clothes"/>
+		</context_menu>
+		<context_menu label="Desprèn" name="Inspect Self Detach"/>
+		<menu_item_call label="Desprèn-ho tot" name="Detach All"/>
+	</context_menu>
+	<menu_item_call label="Canvia de conjunt" name="Chenge Outfit"/>
+	<menu_item_call label="Edita el conjunt" name="Edit Outfit"/>
+	<menu_item_call label="Edita la meva figura" name="Edit My Shape"/>
+	<menu_item_call label="Amics..." name="Friends..."/>
+	<menu_item_call label="Grups..." name="Groups..."/>
+	<menu_item_call label="Perfil..." name="Profile..."/>
+	<menu_item_call label="Depuració..." name="Debug..."/>
+	<menu_item_call label="Bolca XML" name="Dump XML"/>
+</toggleable_menu>

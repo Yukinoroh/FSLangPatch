@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_region_restart_schedule" title="Planificació de reinici de la regió">
+	<text name="days_general">
+		Reinicia la regió en aquests dies:
+	</text>
+	<check_box name="s_chk" tool_tip="Diumenge" />
+	<check_box name="m_chk" tool_tip="Dilluns" />
+	<check_box name="t_chk" tool_tip="Dimarts" />
+	<check_box name="w_chk" tool_tip="Dimecres" />
+	<check_box name="r_chk" tool_tip="Dijous" />
+	<check_box name="f_chk" tool_tip="Divendres" />
+	<check_box name="a_chk" tool_tip="Dissabte" />
+	<text name="su_label">
+		Dg
+	</text>
+	<text name="mo_label">
+		Dl
+	</text>
+	<text name="tu_label">
+		Dt
+	</text>
+	<text name="we_label">
+		Dc
+	</text>
+	<text name="th_label">
+		Dj
+	</text>
+	<text name="fr_label">
+		Dv
+	</text>
+	<text name="sa_label">
+		Ds
+	</text>
+	<text name="at_label">
+		a les
+	</text>
+	<button name="save_btn" label="Desa" />
+	<button name="cancel_btn" label="Cancel·la" />
+</floater>

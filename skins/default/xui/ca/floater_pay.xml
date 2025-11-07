@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Give Money">
+	<string name="payee_group">Paga a un grup</string>
+	<string name="payee_resident">Paga a un resident</string>
+	<text name="payee_name">Nom de Prova per a verificació</text>
+	<text name="amount text">O introdueix una quantitat:</text>
+	<text name="payment_message_label">Missatge (opcional):</text>
+	<button label="Paga" label_selected="Paga" name="pay btn"/>
+	<button label="Cancel·la" label_selected="Cancel·la" name="cancel btn"/>
+</floater>

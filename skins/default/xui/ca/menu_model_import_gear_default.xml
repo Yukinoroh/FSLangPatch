@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="model_menu_gear_default">
+  <menu_item_check label="Mostra les vores" name="show_edges" />
+  <menu_item_check label="Mostra la física" name="show_physics" />
+  <menu_item_check label="Mostra les textures" name="show_textures" />
+  <menu_item_check label="Mostra el pes de la pell" name="show_skin_weight" />
+  <menu_item_check label="Mostra les posicions de les articulacions" name="show_joint_positions" />
+</toggleable_menu>

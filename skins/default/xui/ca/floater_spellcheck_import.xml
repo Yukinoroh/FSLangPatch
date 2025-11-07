@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="spellcheck_import" title="Importa el diccionari">
+	<text name="import_dict">
+		Diccionari:
+	</text>
+	<button label="Navega" label_selected="Navega" name="dictionary_path_browse" />
+	<text name="import_name">
+		Nom:
+	</text>
+	<text name="import_lang">
+		Llengua:
+	</text>
+	<button name="ok_btn" label="Importa" />
+	<button name="cancel_btn" label="Cancel·la" />
+</floater>

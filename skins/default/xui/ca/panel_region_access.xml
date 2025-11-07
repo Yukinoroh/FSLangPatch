@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <panel label="Accés" name="Access">
 	<tab_container name="tabs">
-		<panel label="GESTORS DEL DOMINI" name="estate_managers_panel">
+		<panel label="Gestors del Domini" name="estate_managers_panel">
 			<text name="estate_manager_label">
 				Gestors del domini:
 			</text>
@@ -12,7 +12,7 @@
 			<button label="Suprimeix..." name="remove_estate_manager_btn"/>
 			<button label="Exporta..." name="export_estate_manager_btn"/>
 		</panel>
-		<panel label="PERMESOS" name="allowed_panel">
+		<panel label="Permesos" name="allowed_panel">
 			<panel label="top_panel" name="allowed_search_panel">
 				<filter_editor label="Cerca agents permesos" name="allowed_search_input"/>
 				<button label="Copia" name="copy_allowed_list_btn"/>
@@ -27,7 +27,7 @@
 			<button label="Suprimeix..." name="remove_allowed_avatar_btn"/>
 			<button label="Exporta..." name="export_allowed_list_btn"/>
 		</panel>
-		<panel label="GRUPS PERMESOS" name="allowed_groups_panel">
+		<panel label="Grups Permesos" name="allowed_groups_panel">
 			<panel label="top_panel" name="allowed_group_search_panel">
 				<filter_editor label="Cerca grups permesos" name="allowed_group_search_input"/>
 				<button label="Copia" name="copy_allowed_group_list_btn"/>
@@ -42,7 +42,7 @@
 			<button label="Suprimeix" name="remove_allowed_group_btn"/>
 			<button label="Exporta..." name="export_allowed_group_btn"/>
 		</panel>
-		<panel label="PROHIBITS" name="banned_panel">
+		<panel label="Prohibits" name="banned_panel">
 			<panel label="top_panel" name="banned_search_panel">
 				<filter_editor label="Cerca agents prohibits" name="banned_search_input"/>
 				<button label="Copia" name="copy_banned_list_btn"/>

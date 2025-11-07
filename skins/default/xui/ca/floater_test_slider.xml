@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_test_slider">
+	<slider label="Lliscador genèric" name="generic_slider"/>
+	<slider label="Lliscador amb 'callback'" name="callback_slider"/>
+	<slider label="Lliscador de valor" name="value_slider"/>
+	<slider label="Mini lliscador 1" name="mini_slider_1"/>
+	<slider label="Mini lliscador 2" name="mini_slider_2"/>
+	<slider_bar label="Barra lliscadora" name="slider_bar"/>
+	<slider label="Lliscador vermell" name="red_slider"/>
+	<slider label="Lliscador vermell vertical" name="red_slider_vertical"/>
+</floater>

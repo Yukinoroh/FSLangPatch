@@ -9,7 +9,7 @@
 					<layout_stack name="ls1">
 						<layout_panel name="top panel"><button label="Editar" name="edit_btn"/></layout_panel>
 						<layout_panel name="maturity panel">
-							<text name="ContentRating">Classificació :</text>
+							<text name="ContentRating" width="120">Classificació :</text>
 						</layout_panel>
 						<layout_panel name="location panel">
 							<text name="Location">Ubicació :</text>
@@ -28,7 +28,7 @@
 							<button label="Oblidar" name="forget_btn"/>
 							<button label="Bloquejar" name="block_btn"/>
 							<text name="privileged">Aquesta experiència està activata per tots els residents.</text>
-							<button label="Informar d'un abus" width="110" name="report_btn"/>
+							<button label="Informar d'un abus" width="144" name="report_btn"/>
 						</layout_panel>
 					</layout_stack>
 				</panel>
@@ -38,6 +38,7 @@
 			<scroll_container name="edit_xp_scroll">
 				<panel name="edit_scrolling_panel">
 					<button name="Group_btn" label="Grup"/>
+					<text name="edit_experience_title_label" value="Nom:"/>
 					<text name="edit_ContentRating">Classificació :</text>
 					<icons_combo_box label="Moderar" tool_tip="L'augment de la maduresa d'una experiència reiniciarà les permissions de tots els residents que van permetre aquesta experiència." name="edit_ContentRatingText">
 						<icons_combo_box.item label="Adult" name="Adult"/>

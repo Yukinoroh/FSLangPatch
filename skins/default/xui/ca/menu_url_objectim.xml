@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Url Popup">
+	<menu_item_call label="Perfil de l'objecte..." name="show_object"/>
+	<menu_item_call label="Bloqueja" name="block_object"/>
+	<menu_item_call label="Desbloqueja" name="unblock_object"/>
+	<menu_item_call label="Mostra al mapa" name="show_on_map"/>
+	<menu_item_call label="Teletransporta't a l'objecte" name="teleport_to_object"/>
+	<menu_item_call label="Copia el nom de l'objecte al porta-retalls" name="url_copy_label"/>
+	<menu_item_call label="Copia la SLurl al porta-retalls" name="url_copy"/>
+</context_menu>

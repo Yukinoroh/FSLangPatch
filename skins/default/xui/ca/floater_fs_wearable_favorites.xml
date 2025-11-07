@@ -1,0 +1,14 @@
+<?xml version="1.e nc="utf-8" standalone="yes" ?>
+<floater name="floater_fs_wearable_favorites" title="Articles de roba preferits">
+	<floater.string name="empty_list">
+		Arrossega articles de roba aquí per afegir-los a la llista.
+	</floater.string>
+	<floater.string name="search_no_items">
+		No s'ha trobat res.
+	</floater.string>
+	<panel name="buttons_panel">
+		<filter_editor label="Filtra els articles de roba" name="wearable_filter_input" />
+		<menu_button name="options_btn" tool_tip="Opcions dels articles de roba preferits" />
+		<button name="remove_btn" tool_tip="Elimina l'article de la llista de preferits"/>
+	</panel>
+</floater>

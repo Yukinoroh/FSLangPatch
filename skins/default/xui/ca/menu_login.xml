@@ -59,7 +59,18 @@
 	<menu_item_check label="Mostra el menú de depuració" name="Show Debug Menu"/>
 	<menu label="Depuració" name="Debug">
 		<menu_item_call label="Mostra els paràmetres de depuració" name="Debug Settings"/>
-		<menu_item_call label="Eina de previsualització XUI" name="UI Preview Tool"/>
+		
+		<menu_item_call label="Mostra la configuració del color"  name="Color Settings"/>
+        
+        <menu_item_call label="Eina de previsualització XUI" name="UI Preview Tool"/>
+        
+        <menu label="Fonts" name="Fonts">
+	     <menu_item_call label="Mostra la prova de fonts" name="Show Font Test"/>
+	     <menu_item_separator />
+	     <menu_item_call label="Bolca les fonts" name="Dump Fonts"/>
+	     <menu_item_call label="Bolca les textures de les fonts" name="Dump Font Textures"/>
+        </menu>
+                
 		<menu label="Proves d'interfície (UI)" name="UI Tests"/>
 		<menu_item_call label="Defineix la mida de la finestra..." name="Set Window Size..."/>
 		<menu_item_call label="Mostra les condicions del servei (TOS)" name="TOS"/>

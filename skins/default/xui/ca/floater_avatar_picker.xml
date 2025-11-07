@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <floater name="avatarpicker" title="Tria un resident">
 	<floater.string name="not_found">'[TEXT]' no trobat</floater.string>
+	
+	<floater.string name="not_found_text">No es va trobar el resident.</floater.string>
+	
 	<floater.string name="no_one_near">Ningú a prop</floater.string>
 	<floater.string name="no_results">Cap resultat</floater.string>
 	<floater.string name="searching">Cerca...</floater.string>

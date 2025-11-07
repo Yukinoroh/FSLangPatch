@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Residents" name="people_panel">
+	<string name="no_recent_people" value="Ningú no ha aparegut recentment."/>
+	<string name="no_filtered_recent_people" value="No has trobat el que cercaves? Prova a [secondlife:///app/search/people/[SEARCH_TERM] Cercar]."/>
+	<string name="no_one_near" value="No hi ha ningú a prop teu. Per cercar residents amb qui passar l'estona, fes servir la [secondlife:///app/search/people Cerca] o el [secondlife:///app/worldmap Mapa del món]."/>
+	<string name="no_one_filtered_near" value="No has trobat el que cercaves? Prova a [secondlife:///app/search/people/[SEARCH_TERM] Cercar]."/>
+	<string name="no_friends_online" value="Cap amic connectat"/>
+	<string name="no_friends" value="Cap amic"/>
+	<string name="no_friends_msg">
+		Per cercar amics, fes servir la [secondlife:///app/search/people Cerca] o fes clic dret sobre un resident per afegir-lo com a amic.
+Per cercar residents amb qui passar l'estona, fes servir el [secondlife:///app/worldmap Mapa del món].
+	</string>
+	<string name="no_filtered_friends_msg">
+		No has trobat el que cercaves? Prova a [secondlife:///app/search/people/[SEARCH_TERM] Cercar].
+	</string>
+	<string name="no_filtered_groups_msg" value="No has trobat el que cercaves? Prova a [secondlife:///app/search/groups/[SEARCH_TERM] Cercar]."/>
+	<string name="no_groups_msg" value="Vols trobar grups per unir-t'hi? Fes servir la [secondlife:///app/search/groups Cerca]."/>
+	<string name="MiniMapToolTipMsg" value="[REGION](Mapa: doble clic; Moure: Maj + arrossegar)"/>
+	<string name="AltMiniMapToolTipMsg" value="[REGION](Teleportació: doble clic; Moure: Maj + arrossegar)"/>
+	<string name="GroupCountWithInfo" value="Ets membre de [COUNT] grups i et pots unir a [REMAINING] més. [secondlife:/// En vols més?]"/>
+	<panel.string name="empty_list">
+		Aquest cercle és buit.
+	</panel.string>
+	<panel.string name="no_sets">
+		Cap cercle
+	</panel.string>
+	<panel.string name="all_sets">
+		Tots els cercles
+	</panel.string>
+	<panel.string name="pseudonyms">
+		Àlies
+	</panel.string>
+	<panel.string name="AllFriendsTitle">
+		Tots ([ALL])
+	</panel.string>
+	<panel.string name="OnlineFriendsTitle">
+		En línia ([ONLINE])
+	</panel.string>
+	<tab_container name="tabs">
+		<panel label="A prop" name="nearby_panel">
+</panel>
+		<panel label="Amics" name="friends_panel">
+			<panel name="friends_buttons_panel">
+				<filter_editor label="Filtra les persones" name="friends_filter_input"/>
+				<button name="gear_btn" tool_tip="Accions sobre la persona seleccionada"/>
+				<menu_button name="friends_view_btn" tool_tip="Opcions de visualització/ordenació"/>
+				<button name="friends_add_btn" tool_tip="Proposa a aquest resident ser el teu amic"/>
+				<button name="GlobalOnlineStatusToggle" tool_tip="Commuta la visibilitat de l'estat de presència global en línia"/>
+				<dnd_button name="friends_del_btn" tool_tip="Elimina la persona seleccionada dels amics"/>
+			</panel>
+			<tab_container name="friends_accordion">
+				<panel name="tab_online" title="En línia"/>
+				<panel name="tab_all" title="Tots"/>
+			</tab_container>
+		</panel>
+		<panel label="Grups" name="groups_panel">
+			<panel name="groups_buttons_panel">
+				<filter_editor label="Filtra els grups" name="groups_filter_input"/>
+				<menu_button name="groups_gear_btn" tool_tip="Accions sobre el grup seleccionat"/>
+				<menu_button name="groups_view_btn" tool_tip="Opcions de visualització/ordenació"/>
+				<menu_button name="plus_btn" tool_tip="Uneix-te o crea un nou grup"/>
+				<dnd_button name="minus_btn" tool_tip="Abandona el grup seleccionat"/>
+			</panel>
+			<text name="groupcount">
+				Ets membre de [COUNT] grups i et pots unir a [REMAINING] més.
+			</text>
+		</panel>
+		<panel label="Recents" name="recent_panel">
+			<panel name="recent_buttons_panel">
+				<filter_editor label="Filtra les persones" name="recent_filter_input"/>
+				<button name="gear_btn" tool_tip="Accions sobre la persona seleccionada"/>
+				<menu_button name="recent_view_btn" tool_tip="Opcions de visualització/ordenació"/>
+				<button name="add_friend_btn" tool_tip="Proposa a aquest resident ser el teu amic"/>
+				<dnd_button name="recent_del_btn" tool_tip="Elimina la persona seleccionada dels amics"/>
+			</panel>
+		</panel>
+		<panel label="Bloquejats" name="blocked_panel">
+			<panel label="Residents i objectes ignorats" name="panel_block_list_sidetray"/>
+		</panel>
+		<panel label="Cercles" name="contact_sets_panel">
+			<panel name="panel_people_contacts_sidetray" label="Cercles de contactes"/>
+		</panel>
+	</tab_container>
+</panel>

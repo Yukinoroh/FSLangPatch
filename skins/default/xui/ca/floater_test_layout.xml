@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_test_layout">
+	<text>
+         a baix 400 esquerra 10
+	</text>
+	<text>
+         Delta inferior -20
+	</text>
+	<text>
+         a baix 300 esquerra 10, hauria de ser delta_bottom
+	</text>
+	<text>
+         a baix 300 esquerra 250, hauria de ser delta_left
+	</text>
+	<text>
+         a baix 280 esquerra 10, hauria de ser posició absoluta
+	</text>
+	<text>
+         a baix 282 esquerra 250, hauria de ser delta_left i delta_bottom
+	</text>
+	<text>
+         a baix 250 esquerra 10, hauria de ser posició absoluta
+	</text>
+	<text>
+         a baix 240 esquerra 250, hauria de ser posició absoluta
+	</text>
+</floater>

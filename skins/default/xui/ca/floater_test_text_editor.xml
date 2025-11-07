@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_test_text_editor">
+	<text_editor name="test_text_editor" tool_tip="editor de text">Editor de text</text_editor>
+	<text_editor name="test_text_editor1" tool_tip="editor de text">Això conté text llarg i s'hauria de desplaçar horitzontalment cap a la dreta</text_editor>
+	<text_editor name="numeric_text_editor" tool_tip="editor de text només per a l'entrada de valors numèrics">Això és text que NO és un número, per tant no hauria de sortir</text_editor>
+</floater>

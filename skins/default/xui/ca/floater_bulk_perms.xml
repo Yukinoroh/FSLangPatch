@@ -58,7 +58,7 @@
 	<check_box label="Modificar" name="next_owner_modify" height="17" tool_tip="El proper propietari podra canviar propietats com ara el nom de l'objecte o la seva escala."/>
 	<check_box label="Copiar" name="next_owner_copy" height="18" tool_tip="El proper propietari podra fer còpies il·limitades d'aquest objecte. Les còpies conservaran les informacions sobre el creador i mai no podran ser més permissives que el seu objecte d'origen directe."/>
 	<check_box initial_value="true" label="Transferir" name="next_owner_transfer" height="19" tool_tip="El proper proprietari podrà donar o revendre aquest objecte."/>
-	<button label="OK" name="ok"/>
+	<button label="D'acord" name="ok"/>
 	<button label="Aplicar" name="apply"/>
 	<button label="Anul·lar" name="close"/>
 </floater>

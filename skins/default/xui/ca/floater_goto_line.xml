@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="script goto" title="Ves a la línia">
+	<button label="D'acord" label_selected="OK" name="goto_btn"/>
+	<text name="txt">
+		Ves a la línia
+	</text>
+</floater>

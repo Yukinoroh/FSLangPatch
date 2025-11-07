@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="publish_classified" title="Publica un anunci classificat">
+	<text name="explanation_text">
+		El teu anunci es mostrarà durant una setmana a partir de la data de publicació.
+
+Tingues en compte que la tarifa no és reemborsable.
+	</text>
+	<spinner label="Preu: L$" name="price_for_listing" tool_tip="Preu per publicar l'anunci a la cerca"/>
+	<button label="Publica" name="publish_btn"/>
+	<button label="Cancel·la" name="cancel_btn"/>
+</floater>

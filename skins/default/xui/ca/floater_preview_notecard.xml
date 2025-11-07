@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="preview notecard" title="Targeta de notes:">
+	<floater.string name="no_object">
+		No s'ha pogut trobar l'objecte que conté aquesta targeta de notes.
+	</floater.string>
+	<floater.string name="not_allowed">
+		No tens permisos per veure aquesta targeta de notes.
+	</floater.string>
+	<floater.string name="Title">
+		Targeta de notes: [NAME]
+	</floater.string>
+	<text name="desc txt">
+		Descripció:
+	</text>
+	<text_editor name="Notecard Editor">
+		S'està carregant...
+	</text_editor>
+	<button name="Search" tool_tip="Cerca i Reemplaça" />
+	<button label="Edita..." label_selected="Edita" name="Edit"/>
+	<button label="Desa" label_selected="Desa" name="Save"/>
+	<button label="Elimina" label_selected="Elimina" name="Delete"/>
+</floater>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="Aigua" name="panel_fs_settings_water">
+	<panel name="P_Wave_Fog" label="Boira">
+		<text name="water_fog_label" tool_tip="Color de la boira de l'aigua - Aquesta opció modifica el color del tint del volum de l'aigua, definint essencialment el color de l'aigua mateixa. Si la vostra aigua no té boira, semblarà clara com el cristall i incolora.">
+			Color boira aigua
+		</text>
+		<text name="normal_map_label" tool_tip="Mapa de normals - Imatge utilitzada per a determinar les reflexions i refraccions. Es pot fer servir qualsevol textura per a aquest paràmetre, però els mapes de normals reals són els més eficaços.">
+			Mapa de normals
+		</text>
+	</panel>
+	<panel name="P_Wave_Fog_2" label="Boira">
+		<text name="density_exponent_label">
+			Exponent de densitat:
+		</text>
+		<text name="underwater_modifier_label">
+			Modif. submarí:
+		</text>
+		<text name="FresnelScaleText">
+			Escala de Fresnel:
+		</text>
+		<text name="FresnelOffsetText">
+			Decalatge de Fresnel:
+		</text>
+ 	</panel>
+	<panel name="P_Water_Wave" label="Onada">
+		<text name="large_wave_speed_label">
+			Velocitat onades grans
+		</text>
+		<text name="small_wave_speed_label">
+			Velocitat onades petites
+		</text>
+		<text name="reflection_wavelet_scale_label">
+			Escala d'ondetes de reflexió
+		</text>
+	</panel>
+	<panel name="P_Water_Reflection" label="Refracció">
+		<text name="refraction_scale_above_label">
+			Esc. refracció (a sobre):
+		</text>
+		<text name="refraction_scale_below_label">
+			Esc. refracció (a sota):
+		</text>
+		<text name="blur_multiplier_label">
+			Multiplicador de desenfocament:
+		</text>
+	</panel>
+</panel>

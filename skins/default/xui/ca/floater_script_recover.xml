@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="script_recover" title="Recuperació de scripts">
+	<text name="txt2">
+		[APP_NAME] ha detectat scripts que es poden recuperar després de l'últim tancament inespe­rat del client.
+
+Si decideixes recuperar-los, els scripts es desaran a la carpeta 'Objectes perduts'.
+	</text>
+	<scroll_list name="script_list">
+		<scroll_list.columns label="Nom del script" name="script_name" />
+	</scroll_list>
+	<button label="Recupera" name="recover_btn" />
+	<button label="Cancel·la" name="cancel_btn" />
+</floater>

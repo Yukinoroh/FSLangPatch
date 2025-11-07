@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="inspect_object">
+	<string name="Creator">
+		De [CREATOR]
+	</string>
+	<string name="CreatorAndOwner">
+		De [CREATOR]
+Propietari [OWNER]
+	</string>
+	<string name="Price">
+		L$[AMOUNT]
+	</string>
+	<string name="PriceFree">
+		Gratis!
+	</string>
+	<string name="Touch">
+		Toca
+	</string>
+	<string name="Sit">
+		Seu
+	</string>
+	<text name="object_creator">
+		de secondlife:///app/agent/0e346d8b-4433-4d66-a6b0-fd37083abc4c/about
+propietari secondlife:///app/agent/0e346d8b-4433-4d66-a6b0-fd37083abc4c/about
+	</text>
+	<text name="price_text">
+		L$30,000
+	</text>
+	<icon name="secure_browsing" tool_tip="Navegació segura"/>
+	<text name="object_media_url">
+		http://www.superdupertest.com
+	</text>
+	<button label="Compra" name="buy_btn"/>
+	<button label="Paga" name="pay_btn"/>
+	<button label="Agafa una còpia" name="take_free_copy_btn"/>
+	<button label="Toca" name="touch_btn"/>
+	<button label="Seu" name="sit_btn"/>
+	<button label="Obre" name="open_btn"/>
+	<button label="Més" name="more_info_btn"/>
+</floater>

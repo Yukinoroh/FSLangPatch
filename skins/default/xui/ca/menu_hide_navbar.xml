@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="hide_navbar_menu">
+	<menu_item_check label="Mostra la barra de navegació i de cerca" name="ShowNavbarNavigationPanel"/>
+	<menu_item_check label="Mostra la barra de preferits" name="ShowNavbarFavoritesPanel"/>
+	<menu_item_check label="Mostra la barra de cerca" name="ShowSearchTopBar"/>
+	<menu_item_check label="Mostra la ubicació a la barra superior" name="ShowMenuBarLocation"/>
+	<menu_item_check label="Mostra la versió del simulador a la barra superior" name="FSStatusbarShowSimulatorVersion"/>
+	<menu_item_check label="Mostra la cerca als menús" name="FSMenuSearch"/>
+	<menu_item_check label="Mostra el saldo de la moneda" name="FSShowCurrencyBalanceInStatusbar"/>
+	<menu_item_check label="Mostra els controls multimèdia" name="FSEnableVolumeControls"/>
+	<menu_item_check label="Mostra els fotogrames per segon" name="FSStatusBarShowFPS"/>
+	<menu_item_check label="Mostra l'indicador de color per als fotogrames per segon" name="FSStatusBarShowFPSColors"/>
+	<menu_item_check label="Mostra l'indicador de trànsit" name="ShowNetStats"/>
+	<menu_item_check label="Mostra les coordenades" name="Coordinates"/>
+	<menu_item_check label="Mostra els permisos de la parcel·la" name="Parcel Properties"/>
+</menu>

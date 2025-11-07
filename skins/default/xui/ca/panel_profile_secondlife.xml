@@ -80,12 +80,12 @@
 			<button label="Paga" label_selected="Paga" name="pay" tool_tip="Paga al resident"/>
 		</layout_panel>
 		<layout_panel name="middle_buttonstack">
-			<button label="Ofereix teletransportació" label_selected="Ofereix teletransportació" name="teleport" tool_tip="Ofereix una teletransportació al Resident"/>
-			<button label="Missatge instantani" label_selected="Missatge instantani" name="im" tool_tip="Obre una sessió de missatgeria privada (IM)."/>
+			<button label="Ofereix Teleportà" label_selected="Ofereix Teleportà" name="teleport" tool_tip="Ofereix una teletransportació al Resident"/>
+			<button label="Missatge Immediat" label_selected="Missatge Immediat" name="im" tool_tip="Obre una sessió de missatgeria privada (IM)."/>
 		</layout_panel>
 		<layout_panel name="right_buttonstack">
 			<button label="Afegeix com a amic" label_selected="Afegeix com a amic" name="add_friend" tool_tip="Proposa a aquest resident de ser el teu amic"/>
-			<button name="remove_friend" label="Elimina l'amistat" tool_tip="Posa fi a l'amistat amb el resident" label_selected="Elimina l'amistat"/>
+			<button name="remove_friend" label="Esborra l'amistat" tool_tip="Posa fi a l'amistat amb el resident" label_selected="Esborra l'amistat"/>
 			<button label="Bloqueja" name="block" tool_tip="Bloqueja aquest Resident"/>
 			<button label="Desbloqueja" name="unblock" tool_tip="Desbloqueja aquest Resident"/>
 		</layout_panel>

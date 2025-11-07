@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_poser" title="Sistema de poses per a avatars i animesh">
+	<string name="header_mHead">Cos</string>
+	<string name="header_mFaceForeheadLeft">Front/celles</string>
+	<string name="header_mEyeLeft">Ulls/parpelles</string>
+	<string name="header_mFaceCheekUpperLeft">Galtes/llavis</string>
+	<string name="header_mHandThumb1Left">Mà esquerra</string>
+	<string name="header_mCollarLeft">Braç esquerre</string>
+	<string name="header_mHandThumb1Right">Mà dreta</string>
+	<string name="header_mCollarRight">Braç dret</string>
+	<string name="header_mHipLeft">Cames</string>
+	<string name="header_mTail1">Cua</string>
+	<string name="header_mHindLimbsRoot">Extremitats posteriors</string>
+	<string name="header_mWingsRoot">Ales</string>
+	<string name="header_mFaceEar1Left">Orelles/nas</string>
+	<string name="header_mSkull">Cos</string>
+	<string name="header_HEAD">Cos</string>
+	<string name="header_L_UPPER_ARM">Braços</string>
+	<string name="header_L_UPPER_LEG">Cames</string>
+	
+	<string name="title_mPelvis">Avatar sencer</string>
+	<string name="title_mTorso">Tors</string>
+	<string name="title_mSpine1">Columna 1</string>
+	<string name="title_mSpine2">Columna 2</string>
+	<string name="title_mSpine3">Columna 3</string>
+	<string name="title_mSpine4">Columna 4</string>
+	<string name="title_mChest">Pit</string>
+	<string name="title_mNeck">Coll</string>
+	<string name="title_mHead">Cap</string>
+	<string name="title_mSkull">Cani</string>
+	<string name="title_mEyeRight">Ull dret</string>
+	<string name="title_mEyeLeft">Ull esquerre</string>
+	<string name="title_mFaceForeheadLeft">Front costat esquerre</string>
+	<string name="title_mFaceForeheadRight">Front costat dret</string>
+	<string name="title_mFaceEyebrowOuterLeft">Cella exterior esquerra</string>
+	<string name="title_mFaceEyebrowCenterLeft">Cella mitjana esquerra</string>
+	<string name="title_mFaceEyebrowInnerLeft">Cella interior esquerra</string>
+	<string name="title_mFaceEyebrowOuterRight">Cella exterior dreta</string>
+	<string name="title_mFaceEyebrowCenterRight">Cella mitjana dreta</string>
+	<string name="title_mFaceEyebrowInnerRight">Cella interior dreta</string>
+	<string name="title_mFaceEyeLidUpperLeft">Parpella superior esquerra</string>
+	<string name="title_mFaceEyecornerInnerLeft">Comissura interna de l'ull esquerre</string>
+	<string name="title_mFaceEyeLidLowerLeft">Parpella inferior esquerra</string>
+	<string name="title_mFaceEyeLidUpperRight">Parpella superior dreta</string>
+	<string name="title_mFaceEyecornerInnerRight">Comissura interna de l'ull dret</string>
+	<string name="title_mFaceEyeLidLowerRight">Parpella inferior dreta</string>
+	<string name="title_mFaceEar1Left">Orella superior esquerra</string>
+	<string name="title_mFaceEar2Left">Orella inferior esquerra</string>
+	<string name="title_mFaceEar1Right">Orella superior dreta</string>
+	<string name="title_mFaceEar2Right">Orella inferior dreta</string>
+	<string name="title_mFaceNoseBase">Base del nas</string>
+	<string name="title_mFaceNoseBridge">Pont del nas</string>
+	<string name="title_mFaceNoseLeft">Nas esquerre</string>
+	<string name="title_mFaceNoseCenter">Nas mig</string>
+	<string name="title_mFaceNoseRight">Nas dret</string>
+	<string name="title_mFaceCheekLowerLeft">Galta inferior esquerra</string>
+	<string name="title_mFaceCheekUpperLeft">Galta superior esquerra</string>
+	<string name="title_mFaceCheekLowerRight">Galta inferior dreta</string>
+	<string name="title_mFaceCheekUpperRight">Galta superior dreta</string>
+	<string name="title_mFaceJaw">Mandíbula</string>
+	<string name="title_mFaceTeethLower">Dents inferiors</string>
+	<string name="title_mFaceLipLowerLeft">Llaví inferior esquerre</string>
+	<string name="title_mFaceLipLowerRight">Llaví inferior dret</string>
+	<string name="title_mFaceLipLowerCenter">Llaví inferior mig</string>
+	<string name="title_mFaceTongueBase">Base de la llengua</string>
+	<string name="title_mFaceTongueTip">Punta de la llengua</string>
+	<string name="title_mFaceJawShaper">Modelador de mandíbula</string>
+	<string name="title_mFaceForeheadCenter">Front mig</string>
+	<string name="title_mFaceTeethUpper">Dents superiors</string>
+	<string name="title_mFaceLipUpperLeft">Llaví superior esquerre</string>
+	<string name="title_mFaceLipUpperRight">Llaví superior dret</string>
+	<string name="title_mFaceLipCornerLeft">Comissura del llaví esquerre</string>
+	<string name="title_mFaceLipCornerRight">Comissura del llaví dret</string>
+	<string name="title_mFaceLipUpperCenter">Llaví superior mig</string>
+	<string name="title_mCollarLeft">Clavícula</string>
+	<string name="title_mShoulderLeft">Braç sencer</string>
+	<string name="title_mElbowLeft">Avantbraç</string>
+	<string name="title_mWristLeft">Canell</string>
+	<string name="title_mHandMiddle1Left">Base del dit del mig</string>
+	<string name="title_mHandMiddle2Left">Mig del dit del mig</string>
+	<string name="title_mHandMiddle3Left">Punta del dit del mig</string>
+	<string name="title_mHandIndex1Left">Base del dit índex</string>
+	<string name="title_mHandIndex2Left">Mig del dit índex</string>
+	<string name="title_mHandIndex3Left">Punta del dit índex</string>
+	<string name="title_mHandRing1Left">Base del dit anular</string>
+	<string name="title_mHandRing2Left">Mig del dit anular</string>
+	<string name="title_mHandRing3Left">Punta del dit anular</string>
+	<string name="title_mHandPinky1Left">Base del dit petit</string>
+	<string name="title_mHandPinky2Left">Mig del dit petit</string>
+	<string name="title_mHandPinky3Left">Punta del dit petit</string>
+	<string name="title_mHandThumb1Left">Base del dit polze</string>
+	<string name="title_mHandThumb2Left">Mig del dit polze</string>
+	<string name="title_mHandThumb3Left">Punta del dit polze</string>
+	<string name="title_mCollarRight">Clavícula</string>
+	<string name="title_mShoulderRight">Braç sencer</string>
+	<string name="title_mElbowRight">Avantbraç</string>
+	<string name="title_mWristRight">Canell</string>
+	<string name="title_mHandMiddle1Right">Base del dit del mig</string>
+	<string name="title_mHandMiddle2Right">Mig del dit del mig</string>
+	<string name="title_mHandMiddle3Right">Punta del dit del mig</string>
+	<string name="title_mHandIndex1Right">Base del dit índex</string>
+	<string name="title_mHandIndex2Right">Mig del dit índex</string>
+	<string name="title_mHandIndex3Right">Punta del dit índex</string>
+	<string name="title_mHandRing1Right">Base del dit anular</string>
+	<string name="title_mHandRing2Right">Mig del dit anular</string>
+	<string name="title_mHandRing3Right">Punta del dit anular</string>
+	<string name="title_mHandPinky1Right">Base del dit petit</string>
+	<string name="title_mHandPinky2Right">Mig del dit petit</string>
+	<string name="title_mHandPinky3Right">Punta del dit petit</string>
+	<string name="title_mHandThumb1Right">Base del dit polze</string>
+	<string name="title_mHandThumb2Right">Mig del dit polze</string>
+	<string name="title_mHandThumb3Right">Punta del dit polze</string>
+	<string name="title_mWingsRoot">Arrel</string>
+	<string name="title_mWing1Left">Esquerra 1</string>
+	<string name="title_mWing2Left">Esquerra 2</string>
+	<string name="title_mWing3Left">Esquerra 3</string>
+	<string name="title_mWing4Left">Esquerra 4</string>
+	<string name="title_mWing4FanLeft">Ventall esquerre</string>
+	<string name="title_mWing1Right">Dreta 1</string>
+	<string name="title_mWing2Right">Dreta 2</string>
+	<string name="title_mWing3Right">Dreta 3</string>
+	<string name="title_mWing4Right">Dreta 4</string>
+	<string name="title_mWing4FanRight">Ventall dret</string>
+	<string name="title_mHipRight">Cama sencera dreta</string>
+	<string name="title_mKneeRight">Genoll dret</string>
+	<string name="title_mAnkleRight">Turmell dret</string>
+	<string name="title_mFootRight">Peu dret</string>
+	<string name="title_mToeRight">Dit del peu dret</string>
+	<string name="title_mHipLeft">Cama sencera esquerra</string>
+	<string name="title_mKneeLeft">Genoll esquerre</string>
+	<string name="title_mAnkleLeft">Turmell esquerre</string>
+	<string name="title_mFootLeft">Peu esquerre</string>
+	<string name="title_mToeLeft">Dit del peu esquerre</string>
+	<string name="title_mTail1">Base de la cua</string>
+	<string name="title_mTail2">Cua 2</string>
+	<string name="title_mTail3">Cua 3</string>
+	<string name="title_mTail4">Cua 4</string>
+	<string name="title_mTail5">Cua 5</string>
+	<string name="title_mTail6">Punta de la cua</string>
+	<string name="title_mGroin">Engonal</string>
+	<string name="title_mHindLimbsRoot">Arrel</string>
+	<string name="title_mHindLimb1Left">Base esquerra</string>
+	<string name="title_mHindLimb2Left">Esquerra 2</string>
+	<string name="title_mHindLimb3Left">Esquerra 3</string>
+	<string name="title_mHindLimb4Left">Esquerra 4</string>
+	<string name="title_mHindLimb1Right">Base dreta</string>
+	<string name="title_mHindLimb2Right">Dreta 2</string>
+	<string name="title_mHindLimb3Right">Dreta 3</string>
+	<string name="title_mHindLimb4Right">Dreta 4</string>
+	<string name="title_HEAD">Cap</string>
+	<string name="title_NECK">Coll</string>
+	<string name="title_CHEST">Pit</string>
+	<string name="title_BUTT">Natges</string>
+	<string name="title_BELLY">Ventre</string>
+	<string name="title_LEFT_PEC">Pectoral esquerre</string>
+	<string name="title_RIGHT_PEC">Pectoral dret</string>
+	<string name="title_L_CLAVICLE">Clavícula esquerra</string>
+	<string name="title_R_CLAVICLE">Clavícula dreta</string>
+	<string name="title_L_UPPER_ARM">Braç superior esquerre</string>
+	<string name="title_R_UPPER_ARM">Braç superior dret</string>
+	<string name="title_L_LOWER_ARM">Avantbraç esquerre</string>
+	<string name="title_R_LOWER_ARM">Avantbraç dret</string>
+	<string name="title_L_HAND">Mà esquerra</string>
+	<string name="title_R_HAND">Mà dreta</string>
+	<string name="title_UPPER_BACK">Esquena superior</string>
+	<string name="title_LEFT_HANDLE">Cintura esquerra</string>
+	<string name="title_RIGHT_HANDLE">Cintura dreta</string>
+	<string name="title_PELVIS">Pelvis</string>
+	<string name="title_L_UPPER_LEG">Cuixa esquerra</string>
+	<string name="title_R_UPPER_LEG">Cuixa dreta</string>
+	<string name="title_L_LOWER_LEG">Cama inferior esquerra</string>
+	<string name="title_R_LOWER_LEG">Cama inferior dreta</string>
+	<string name="title_L_FOOT">Peu esquerre</string>
+	<string name="title_R_FOOT">Peu dret</string>
+	
+	<string name="LoadPoseLabel">Carrega la posició</string>
+	<string name="SavePoseLabel">Desa la posició</string>
+	<string name="LoadDiffLabel">Carrega la diferència</string>
+	<string name="SaveDiffLabel">Desa la diferència</string>
+	<string name="OverWriteLabel">Sobreescriu?</string>
+	
+	
+	<layout_stack
+	 follows="top|left|right"
+	 height="435"
+	 layout="topleft"
+	 left="3"
+	 border_size="-4"
+	 close_time_constant="0.02"
+	 open_time_constant="0.02"
+	 mouse_opaque="false"
+	 name="poser_stack"
+	 orientation="vertical"
+	 top="0"
+	 width="700">
+		<layout_panel
+		 follows="top|left"
+		 layout="topleft"
+		 auto_resize="false"
+		 name="regular_controls_layout"
+		 height="310"
+		 width="700">
+			<panel
+			 follows="left"
+			 height="300"
+			 background_visible="false"
+			 layout="topleft"
+			 mouse_opaque="false"
+			 name="joints_parent_panel"
+			 top="0"
+			 left="0"
+			 width="235">
+				<tab_container
+				 follows="all"
+				 halign="center"
+				 height="295"
+				 layout="topleft"
+				 left="0"
+				 name="joints_tabs"
+				 tab_height="20"
+				 tab_width="55"
+				 tab_group="1"
+				 tab_position="left"
+				 top="0"
+				 width="235">
+					<panel
+					 follows="all"
+					 background_visible="false"
+					 height="302"
+					 layout="topleft"
+					 title="Mou"
+					 name="positionRotation_panel"
+					 top="0"
+					 width="235">
+						<panel
+						 follows="all"
+						 height="302"
+						 background_visible="false"
+						 layout="topleft"
+						 mouse_opaque="false"
+						 left="5"
+						 name="title"
+						 top="0"
+						 width="235">
+							<text follows="left|top"
+							 name="av_position_updown_label"
+							 height="10"
+							 layout="topleft"
+							 left_delta="0"
+							 top_pad="5"
+							 width="172">
+								Amunt/Avall:
+							</text>
+							<slider
+							 decimal_digits="2"
+							 show_text="false"
+							 follows="left|top"
+							 height="16"
+							 increment="0.01"
+							 initial_value="0"
+							 layout="topleft"
+							 left_delta="5"
+							 min_val="-1.5"
+							 max_val="1.5"
+							 name="av_position_updown"
+							 top_pad="5"
+							 width="122"
+							 tool_tip="Mou l'avatar seleccionat amunt o avall"
+							 can_edit_text="true">
+								<slider.commit_callback
+								 function="Poser.CommitSlider"
+								 parameter="0"/>
+							</slider>
+							<spinner
+							 height="16"
+							 decimal_digits="2"
+							 follows="left|top"
+							 increment="0.01"
+							 top_pad="-19"
+							 left_pad="0"
+							 name="av_position_updown_spinner"
+							 min_val="-1.5"
+							 max_val="1.5"
+							 width="47">
+								<spinner.commit_callback
+								 function="Poser.CommitSpinner"
+								 parameter="0"/>
+							</spinner>
+							<text
+							 follows="left|top"
+							 name="av_position_leftright_label"
+							 height="10"
+							 layout="topleft"
+							 left="0"
+							 top_pad="5"
+							 width="172">
+								Esquerra/Dreta:
+							</text>
+							<slider
+							 decimal_digits="2"
+							 follows="left|top"
+							 show_text="false"
+							 height="16"
+							 increment="0.01"
+							 initial_value="0"
+							 layout="topleft"
+							 left_delta="5"
+							 min_val="-1.5"
+							 max_val="1.5"
+							 name="av_position_leftright"
+							 top_pad="5"
+							 width="122"
+							 tool_tip="Mou l'avatar seleccionat a l'esquerra o a la dreta"
+							 can_edit_text="true">
+								<slider.commit_callback
+								 function="Poser.CommitSlider"
+								 parameter="1"/>
+							</slider>
+							<spinner
+							 height="16"
+							 decimal_digits="2"
+							 follows="left|top"
+							 increment="0.01"
+							 top_pad="-19"
+							 left_pad="0"
+							 name="av_position_leftright_spinner"
+							 min_val="-1.5"
+							 max_val="1.5"
+							 width="47">
+								<spinner.commit_callback
+								 function="Poser.CommitSpinner"
+								 parameter="1"/>
+							</spinner>
+							<text
+							 follows="left|top"
+							 name="av_position_inout_label"
+							 height="10"
+							 layout="topleft"
+							 left="0"
+							 top_pad="5"
+							 width="172">
+								Endins/Enfora:
+							</text>
+							<slider
+							 decimal_digits="2"
+							 follows="left|top"
+							 show_text="false"
+							 height="16"
+							 increment="0.01"
+							 initial_value="0"
+							 layout="topleft"
+							 left_delta="5"
+							 min_val="-1.5"
+							 max_val="1.5"
+							 name="av_position_inout"
+							 top_pad="5"
+							 width="122"
+							 tool_tip="Mou l'avatar seleccionat endins o enfora"
+							 can_edit_text="true">
+								<slider.commit_callback
+								 function="Poser.CommitSlider"
+								 parameter="2"/>
+							</slider>
+							<spinner
+							 height="16"
+							 decimal_digits="2"
+							 follows="left|top"
+							 increment="0.01"
+							 top_pad="-19"
+							 left_pad="0"
+							 name="av_position_inout_spinner"
+							 min_val="-1.5"
+							 max_val="1.5"
+							 width="47">
+								<spinner.commit_callback
+								 function="Poser.CommitSpinner"
+								 parameter="2"/>
+							</spinner>
+							<scroll_list
+							 visible="false"
+							 column_padding="2"
+							 height="300"
+							 follows="all"
+							 can_sort="false"
+							 layout="topleft"
+							 left="2"
+							 width="479"
+							 multi_select="true"
+							 name="entireAv_joint_scroll"
+							 top="0">
+								<scroll_list.columns
+								 label=""
+								 name="icon"
+								 relative_width="0.1"/>
+								<scroll_list.columns
+								 label="Part del cos"
+								 name="joint"
+								 relative_width="0.9"/>
+							</scroll_list>
+						</panel>
+					</panel>
+					<panel
+					 follows="all"
+					 background_visible="false"
+					 height="299"
+					 layout="topleft"
+					 left="0"
+					 title="Cos"
+					 name="body_joints_panel"
+					 top="0"
+					 width="481">
+						<scroll_list
+						 column_padding="2"
+						 height="300"
+						 follows="all"
+						 can_sort="false"
+						 layout="topleft"
+						 left="2"
+						 width="479"
+						 multi_select="true"
+						 name="body_joints_scroll"
+						 top="0">
+							<scroll_list.columns
+							 label=""
+							 name="icon"
+							 relative_width="0.1"/>
+							<scroll_list.columns
+							 label="Part del cos"
+							 name="joint"
+							 relative_width="0.9"/>
+						</scroll_list>
+					</panel>
+					<panel
+					 follows="all"
+					 background_visible="false"
+					 height="299"
+					 layout="topleft"
+					 left="0"
+					 title="Cara"
+					 name="face_joints_panel"
+					 top="0"
+					 width="481">
+						<scroll_list
+						 column_padding="2"
+						 height="300"
+						 follows="all"
+						 can_sort="false"
+						 layout="topleft"
+						 left="2"
+						 width="479"
+						 multi_select="true"
+						 name="face_joints_scroll"
+						 top="0">
+							<scroll_list.columns
+							 label=""
+							 name="icon"
+							 relative_width="0.1"/>
+							<scroll_list.columns
+							 label="Part del cos"
+							 name="joint"
+							 relative_width="0.9"/>
+						</scroll_list>
+					</panel>
+					<tab_container
+					 follows="all"
+					 halign="center"
+					 height="285"
+					 layout="topleft"
+					 left="0"
+					 title="Mans"
+					 name="hands_tabs"
+					 tab_height="20"
+					 tab_width="50"
+					 tab_group="1"
+					 tab_position="top"
+					 top="0"
+					 width="235">
+						<panel
+						 follows="all"
+						 background_visible="false"
+						 height="299"
+						 layout="topleft"
+						 left="0"
+						 title="Ajusta"
+						 name="hands_joints_panel"
+						 top="0"
+						 width="481">
+							<scroll_list
+							 column_padding="2"
+							 height="300"
+							 follows="all"
+							 can_sort="false"
+							 layout="topleft"
+							 left="2"
+							 width="479"
+							 multi_select="true"
+							 name="hand_joints_scroll"
+							 top="0">
+								<scroll_list.columns
+								 label=""
+								 name="icon"
+								 relative_width="0.1"/>
+								<scroll_list.columns
+								 label="Part del cos"
+								 name="joint"
+								 relative_width="0.9"/>
+							</scroll_list>
+						</panel>
+						<panel
+						 follows="all"
+						 background_visible="false"
+						 height="299"
+						 layout="topleft"
+						 left="0"
+						 title="Preajustaments"
+						 name="hands_presets_panel"
+						 top="0"
+						 width="481">
+							<scroll_list
+							 column_padding="2"
+							 height="275"
+							 follows="all"
+							 can_sort="false"
+							 layout="topleft"
+							 left="2"
+							 width="479"
+							 multi_select="false"
+							 name="hand_presets_scroll"
+							 top="0">
+								<scroll_list.columns
+								 label="Nom del preajustament"
+								 name="name"
+								 relative_width="0.9"/>
+							</scroll_list>
+							<button
+							 follows="top|left"
+							 height="21"
+							 layout="topleft"
+							 label="Fixa l'esquerra"
+							 name="button_loadHandPoseLeft"
+							 tool_tip="Fes clic per aplicar el preajustament seleccionat a la mà esquerra"
+							 top_delta="238"
+							 left_pad="1"
+							 left="2"
+							 width="85" >
+								<button.commit_callback
+								 function="Poser.LoadLeftHand"/>
+							</button>
+							<button
+							 follows="left|top"
+							 height="21"
+							 layout="topleft"
+							 label="Fixa la dreta"
+							 name="button_loadHandPoseRight"
+							 tool_tip="Fes clic per aplicar el preajustament seleccionat a la mà dreta"
+							 left_pad="2"
+							 top_delta="0"
+							 width="85" >
+								<button.commit_callback
+								 function="Poser.LoadRightHand"/>
+							</button>
+						</panel>
+					</tab_container>
+					<panel
+					 follows="all"
+					 background_visible="false"
+					 height="299"
+					 layout="topleft"
+					 left="0"
+					 title="Miscel·lani"
+					 name="misc_joints_panel"
+					 top="0"
+					 width="481">
+						<scroll_list
+						 column_padding="2"
+						 height="300"
+						 follows="all"
+						 can_sort="false"
+						 layout="topleft"
+						 left="2"
+						 width="479"
+						 multi_select="true"
+						 name="misc_joints_scroll"
+						 top="0">
+							<scroll_list.columns
+							 label=""
+							 name="icon"
+							 relative_width="0.1"/>
+							<scroll_list.columns
+							 label="Part del cos"
+							 name="joint"
+							 relative_width="0.9"/>
+						</scroll_list>
+					</panel>
+					<panel
+					 follows="all"
+					 background_visible="false"
+					 height="299"
+					 layout="topleft"
+					 left="0"
+					 title="Física"
+					 name="collision_volumes_panel"
+					 top="0"
+					 width="481">
+						<scroll_list
+						 column_padding="2"
+						 height="300"
+						 follows="all"
+						 can_sort="false"
+						 layout="topleft"
+						 left="2"
+						 width="479"
+						 multi_select="true"
+						 name="collision_volumes_scroll"
+						 top="0">
+							<scroll_list.columns
+							 label=""
+							 name="icon"
+							 relative_width="0.1"/>
+							<scroll_list.columns
+							 label="Física"
+							 name="joint"
+							 relative_width="0.9"/>
+						</scroll_list>
+					</panel>
+					<panel
+					 follows="all"
+					 height="302"
+					 background_visible="false"
+					 layout="topleft"
+					 visible="true"
+					 title="Model"
+					 mouse_opaque="false"
+					 name="avatarSelection_panel"
+					 top="0"
+					 left="0"
+					 width="153">
+						<avatar_list
+						 allow_select="true"
+						 follows="all"
+						 height="150"
+						 layout="topleft"
+						 multi_select="true"
+						 name="avatars_online"
+						 keep_one_selected="false"
+						 show_permissions_granted="true"
+						 width="317" />
+						<scroll_list
+						 column_padding="0"
+						 height="250"
+						 can_sort="false"
+						 follows="all"
+						 layout="topleft"
+						 left="3"
+						 tool_tip="Selecciona l'avatar o l'animesh que vols animar."
+						 width="151"
+						 multi_select="false"
+						 name="avatarSelection_scroll"
+						 top="0">
+							<scroll_list.columns
+							 label=""
+							 name="icon"
+							 relative_width="0.0"/>
+							<scroll_list.columns
+							 label="Selecciona algú per posar..."
+							 name="name"
+							 relative_width="1.0"/>
+							<scroll_list.columns
+							 label="UUID"
+							 name="uuid"
+							 relative_width="0.0"/>
+							<scroll_list.columns
+							 label="Nom del fitxer"
+							 name="saveFileName"
+							 relative_width="0.0"/>
+						</scroll_list>
+						<button
+						 height="21"
+						 follows="top|left"
+						 layout="topleft"
+						 label=""
+						 image_overlay="Refresh_Off"
+						 image_unselected="Toolbar_Middle_Off"
+						 name="refresh_avatars"
+						 tool_tip="Actualitza la llista d'avatars i animeshes"
+						 width="20"
+						 top="232"
+						 left="3">
+							<button.commit_callback
+							 function="Poser.RefreshAvatars"/>
+						</button>
+						<button
+						 height="21"
+						 follows="top|left"
+						 enabled="false"
+						 is_toggle="true"
+						 label="Comença a posar"
+						 top_delta="0"
+						 left_pad="2"
+						 label_selected="Atura el posicionament"
+						 image_hover_unselected="Toolbar_Middle_Over"
+						 image_selected="Toolbar_Middle_Selected"
+						 image_unselected="Toolbar_Middle_Off"
+						 button_flash_enable="true"
+						 flash_color="0.7 0.7 1 1"
+						 button_flash_count="64"
+						 button_flash_rate="0.5"
+						 tool_tip="Comença a posar l'avatar o l'animesh seleccionat, si tens permís"
+						 name="start_stop_posing_button"
+						 width="150">
+							<button.commit_callback
+							 function="Poser.StartStopAnimating"/>
+						</button>
+						<button
+						 height="21"
+						 follows="top|left"
+						 layout="topleft"
+						 left="3"
+						 top_pad="1"
+						 label="Estableix la posició T"
+						 image_unselected="Toolbar_Middle_Off"
+						 name="set_t_pose_button"
+						 tool_tip="Fes clic per establir l'avatar seleccionat en la 'Posició T'"
+						 width="172">
+							<button.commit_callback
+							 function="Poser.SetToTPose"/>
+						</button>
+					</panel>
+					<panel
+					 follows="all"
+					 background_visible="false"
+					 height="299"
+					 layout="topleft"
+					 left="0"
+					 title="Configuració"
+					 name="settings_panel"
+					 top="0"
+					 width="481">
+						<text
+						 follows="left|top"
+						 name="trackpad_sensitivity_label"
+						 height="10"
+						 layout="topleft"
+						 left_delta="3"
+						 top_pad="2"
+						 width="200">
+							Sensibilitat del trackpad:
+						</text>
+						<slider
+						 decimal_digits="2"
+						 control_name="FSPoserTrackpadSensitivity"
+						 can_edit_text="true"
+						 follows="left|top"
+						 height="14"
+						 increment="0.01"
+						 initial_value="0"
+						 layout="topleft"
+						 left_delta="0"
+						 max_val="2"
+						 min_val="0.01"
+						 show_text="false"
+						 name="trackpad_sensitivity_slider"
+						 tool_tip="Ajusta la sensibilitat del trackball"
+						 top_pad="3"
+						 width="120" >
+							<slider.commit_callback
+							 function="Poser.AdjustTrackPadSensitivity"/>
+						</slider>
+						<spinner
+						 height="16"
+						 decimal_digits="2"
+						 follows="left|top"
+						 control_name="FSPoserTrackpadSensitivity"
+						 increment="0.01"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="trackpad_sensitivity_spinner"
+						 min_val="0.01"
+						 max_val="2"
+						 width="47">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="3"/>
+						</spinner>
+						<check_box
+						 control_name="FSPoserStopPosingWhenClosed"
+						 name="stop_posing_on_close_checkbox"
+						 height="16"
+						 label="Atura el posicionament en tancar"
+						 follows="left|top"
+						 left="5"
+						 tool_tip="No aturar la posició pot ser útil si has treballat molt i no vols perdre-ho accidentalment."
+						 top_pad="10"
+						 width="134" />
+						<check_box
+						 control_name="FSPoserResetBaseRotationOnEdit"
+						 name="reset_base_rotation_on_edit_checkbox"
+						 height="16"
+						 label="Reinicia la rotació base en editar"
+						 follows="left|top"
+						 left="5"
+						 tool_tip="Quan edites una rotació per primer cop, reinicia-la a zero. Això significa que el teu treball pot desar una posició (i no una diferència, vegeu carregar/desar). Apareix una marca verda al costat de cada articulació que has posat a zero."
+						 top_pad="5"
+						 width="134" />
+						<check_box
+						 control_name="FSPoserSaveExternalFileAlso"
+						 name="also_save_bvh_checkbox"
+						 height="16"
+						 enabled="false"
+						 label="Escriu BVH en desar**"
+						 follows="left|top"
+						 left="15"
+						 tool_tip="Quan desis la teva posició, escriu també un fitxer BVH, que es pot pujar mitjançant 'Construir > Pujar > Animació' per posar-te a tu mateix o a altres dins del món. Això requereix que les articulacions reiniciïn la seva 'base' a zero, perquè BVH requereix un treball original."
+						 top_pad="2"
+						 width="134" />
+						<check_box
+						 control_name="FSPoserOnSaveConfirmOverwrite"
+						 name="confirm_overwrite_on_save_checkbox"
+						 height="16"
+						 label="Confirma la sobreescriptura"
+						 follows="left|top"
+						 left="5"
+						 tool_tip="Quan desis una posició, si el fitxer ja existeix, hauràs de fer clic de nou al botó de desar per confirmar que realment vols sobreescriure'l."
+						 top_pad="5"
+						 width="134" />
+						<check_box
+						 control_name="FSManipRotateJointUseNaturalDirection"
+						 name="natural_direction_checkbox"
+						 height="16"
+						 label="Usa l'alineació natural"
+						 follows="left|top"
+						 left="5"
+						 tool_tip="L'esquelet té rotacions d'articulacions poc naturals per defecte. Això complica el posicionament. Quan està marcat, les articulacions rotaran d'una manera més natural."
+						 top_pad="5"
+						 width="134" />
+						<check_box
+						 control_name="FSManipShowJointMarkers"
+						 name="show_joint_markers_checkbox"
+						 height="16"
+						 label="Mostra els marcadors d'articulació"
+						 follows="left|top"
+						 left="5"
+						 tool_tip="Mostra petits indicadors per ajudar a la selecció d'articulacions durant el posicionament visual."
+						 top_pad="5"
+						 width="134" />
+					</panel>
+				</tab_container>
+				<button
+				 follows="bottom|left"
+				 layout="bottomleft"
+				 is_toggle="true"
+				 image_overlay="Poser_Visual_On"
+				 image_hover_unselected="Toolbar_Middle_Over"
+				 image_selected="Toolbar_Middle_Selected"
+				 image_unselected="Toolbar_Middle_Off"
+				 name="toggleVisualManipulators"
+				 tool_tip="Activa i desactiva els manipuladors visuals"
+				 height="50"
+				 width="50"
+				 left="5"
+				 bottom_delta="5"
+				 >
+					<button.commit_callback
+					 function="Poser.ToggleVisualManipulators"/>
+				</button>
+			</panel>
+			<panel
+			 follows="left|top|bottom"
+			 background_visible="false"
+			 layout="topleft"
+			 mouse_opaque="false"
+			 name="joint_manipulation_panel"
+			 enabled="true"
+			 top="0"
+			 width="215"
+			 left_pad="0">
+				<tab_container
+				 follows="all"
+				 halign="center"
+				 height="263"
+				 layout="topleft"
+				 name="modifier_tabs"
+				 tab_height="20"
+				 tab_width="90"
+				 tab_group="1"
+				 tab_position="top"
+				 top_pad="0"
+				 width="215">
+					<panel
+					 follows="left|right|top|bottom"
+					 height="265"
+					 background_visible="false"
+					 layout="topleft"
+					 mouse_opaque="false"
+					 label="Gira"
+					 name="trackball_panel"
+					 enabled="false"
+					 top="0"
+					 width="215"
+					 left="0">
+						<fs_virtual_trackpad
+						 name="limb_rotation"
+						 follows="left|right|top"
+						 top="2"
+						 height="160"
+						 width="160"
+						 left="15"
+						 tool_tip="Canvia la rotació de la(les) part(s) del cos seleccionada(es). Mantingues Ctrl per moure lentament. Gira la roda per ajustar el 3r eix. Usa Majús o Alt per intercanviar quines rotacions canvien"
+						 pinch_mode="false"
+						 infinite_scroll_mode="true"/>
+						<text
+						 follows="left|top"
+						 name="limb_pitch_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="2"
+						 width="200">
+							Amunt/Avall:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.1"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 min_val="-180"
+						 max_val="180"
+						 name="limb_pitch_slider"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="4"/>
+						</slider>
+						<spinner
+						 height="16"
+						 decimal_digits="2"
+						 follows="left|top"
+						 increment="0.1"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="limb_pitch_spinner"
+						 min_val="-180"
+						 max_val="180"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="4"/>
+						</spinner>
+						<text
+						 follows="left|top"
+						 name="limb_yaw_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="2"
+						 width="200">
+							Esquerra/Dreta:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.1"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 min_val="-180"
+						 max_val="180"
+						 name="limb_yaw_slider"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="5"/>
+						</slider>
+						<spinner
+						 height="16"
+						 decimal_digits="2"
+						 follows="left|top"
+						 increment="0.1"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="limb_yaw_spinner"
+						 min_val="-180"
+						 max_val="180"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="5"/>
+						</spinner>
+						<text
+						 follows="left|top"
+						 name="limb_roll_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="2"
+						 width="200">
+							Inclina:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.1"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 min_val="-180"
+						 max_val="180"
+						 name="limb_roll_slider"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="6"/>
+						</slider>
+						<spinner
+						 height="16"
+						 decimal_digits="2"
+						 follows="left|top"
+						 increment="0.1"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="limb_roll_spinner"
+						 min_val="-180"
+						 max_val="180"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="6"/>
+						</spinner>
+					</panel>
+					<panel
+					 follows="all"
+					 background_visible="false"
+					 height="99"
+					 layout="topleft"
+					 left="0"
+					 title="Mou / Escala"
+					 name="position_panel"
+					 top="0"
+					 width="170">
+						<text
+						 follows="left|top"
+						 name="pos_x_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="2"
+						 width="200">
+							Posició X:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.001"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 max_val="1.5"
+						 min_val="-1.5"
+						 name="Advanced_Position_X"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="7"/>
+						</slider>
+						<spinner
+						 height="20"
+						 decimal_digits="3"
+						 follows="left|top"
+						 increment="0.001"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="adv_posx_spinner"
+						 min_val="-1.5"
+						 max_val="1.5"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="7"/>
+						</spinner>
+						<text
+						 follows="left|top"
+						 name="pos_y_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="2"
+						 width="200">
+							Posició Y:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.001"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 max_val="1.5"
+						 min_val="-1.5"
+						 name="Advanced_Position_Y"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="8"/>
+						</slider>
+						<spinner
+						 height="20"
+						 decimal_digits="3"
+						 follows="left|top"
+						 increment="0.001"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="adv_posy_spinner"
+						 min_val="-1.5"
+						 max_val="1.5"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="8"/>
+						</spinner>
+						<text
+						 follows="left|top"
+						 name="pos_z_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="2"
+						 width="200">
+							Posició Z:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.001"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 max_val="1.5"
+						 min_val="-1.5"
+						 name="Advanced_Position_Z"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="9"/>
+						</slider>
+						<spinner
+						 height="20"
+						 decimal_digits="3"
+						 follows="left|top"
+						 increment="0.001"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="adv_posz_spinner"
+						 min_val="-1.5"
+						 max_val="1.5"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="9"/>
+						</spinner>
+						<text
+						 follows="left|top"
+						 name="scale_x_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="15"
+						 width="200">
+							Escala X:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.001"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 max_val="1.5"
+						 min_val="-1.5"
+						 name="Advanced_Scale_X"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="10"/>
+						</slider>
+						<spinner
+						 height="20"
+						 decimal_digits="3"
+						 follows="left|top"
+						 increment="0.001"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="adv_scalex_spinner"
+						 min_val="-1.5"
+						 max_val="1.5"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="10"/>
+						</spinner>
+						<text
+						 follows="left|top"
+						 name="scale_y_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="2"
+						 width="200">
+							Escala Y:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.001"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 max_val="1.5"
+						 min_val="-1.5"
+						 name="Advanced_Scale_Y"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="11"/>
+						</slider>
+						<spinner
+						 height="20"
+						 decimal_digits="3"
+						 follows="left|top"
+						 increment="0.001"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="adv_scaley_spinner"
+						 min_val="-1.5"
+						 max_val="1.5"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="11"/>
+						</spinner>
+						<text
+						 follows="left|top"
+						 name="scale_z_label"
+						 height="10"
+						 layout="topleft"
+						 left="5"
+						 top_pad="2"
+						 width="200">
+							Escala Z:
+						</text>
+						<slider
+						 label=""
+						 label_width="0"
+						 follows="left|top"
+						 height="14"
+						 increment="0.001"
+						 initial_value="0"
+						 layout="topleft"
+						 show_text="false"
+						 left="3"
+						 max_val="1.5"
+						 min_val="-1.5"
+						 name="Advanced_Scale_Z"
+						 top_pad="2"
+						 width="130" >
+							<slider.commit_callback
+							 function="Poser.CommitSlider"
+							 parameter="12"/>
+						</slider>
+						<spinner
+						 height="20"
+						 decimal_digits="3"
+						 follows="left|top"
+						 increment="0.001"
+						 top_pad="-19"
+						 left_pad="0"
+						 name="adv_scalez_spinner"
+						 min_val="-1.5"
+						 max_val="1.5"
+						 width="53">
+							<spinner.commit_callback
+							 function="Poser.CommitSpinner"
+							 parameter="12"/>
+						</spinner>
+					</panel>
+				</tab_container>
+				<panel
+				 follows="left|top|bottom"
+				 height="44"
+				 background_visible="false"
+				 layout="topleft"
+				 mouse_opaque="false"
+				 left="0"
+				 top_pad="2"
+				 name="trackball_button_panel"
+				 width="232">
+					<button
+					 height="21"
+					 follows="top|left"
+					 layout="topleft"
+					 image_overlay="Script_Undo"
+					 image_unselected="Toolbar_Middle_Off"
+					 name="undo_change"
+					 tool_tip="Desfés l'últim canvi"
+					 width="18"
+					 top_pad="0"
+					 left="4">
+						<button.commit_callback
+						 function="Poser.UndoLastRotation"/>
+					</button>
+					<button
+					 height="21"
+					 follows="top|left"
+					 layout="topleft"
+					 image_overlay="Script_Redo"
+					 image_unselected="Toolbar_Middle_Off"
+					 name="button_redo_change"
+					 tool_tip="Refés l'últim canvi"
+					 enabled="false"
+					 width="18"
+					 top_delta="0"
+					 left_pad="1">
+						<button.commit_callback
+						 function="Poser.RedoLastRotation"/>
+					</button>
+					<button
+					 height="21"
+					 follows="top|left"
+					 layout="topleft"
+					 image_overlay="Inv_TrashOpen"
+					 image_unselected="Toolbar_Middle_Off"
+					 name="poser_joint_reset"
+					 tool_tip="Fes clic per reiniciar la(les) part(s) del cos seleccionada(es) a l'estat inicial abans de començar a posar"
+					 width="18"
+					 top_delta="0"
+					 left_pad="1">
+						<button.commit_callback
+						 function="Poser.ResetJoint"/>
+					</button>
+					<button
+					 height="21"
+					 follows="top|left"
+					 layout="topleft"
+					 is_toggle="true"
+					 image_overlay="Inv_Mesh"
+					 image_unselected="Toolbar_Middle_Off"
+					 name="delta_mode_toggle"
+					 tool_tip="Si canvies diverses articulacions, cadascuna canvia en la mateixa quantitat en lloc d'obtenir el mateix canvi. També s'utilitza per trencar el bloqueig de Gimbal."
+					 width="18"
+					 top_delta="0"
+					 left_pad="1">
+					</button>
+					<button
+					 follows="left|top"
+					 height="21"
+					 is_toggle="true"
+					 layout="topleft"
+					 label="Mirall"
+					 image_hover_unselected="Toolbar_Middle_Over"
+					 image_selected="Toolbar_Middle_Selected"
+					 image_unselected="Toolbar_Middle_Off"
+					 button_flash_enable="true"
+					 flash_color="0.7 0.7 1 1"
+					 button_flash_count="64"
+					 button_flash_rate="0.5"
+					 name="button_toggleMirrorRotation"
+					 tool_tip="Reflecteix els canvis a l'articulació oposada."
+					 left_pad="1"
+					 top_delta="0"
+					 width="52" >
+						<button.commit_callback
+						 function="Poser.ToggleMirrorChanges"/>
+					</button>
+					<button
+					 follows="left|top"
+					 height="21"
+					 is_toggle="true"
+					 layout="topleft"
+					 label="Copia"
+					 image_hover_unselected="Toolbar_Middle_Over"
+					 image_selected="Toolbar_Middle_Selected"
+					 image_unselected="Toolbar_Middle_Off"
+					 button_flash_enable="true"
+					 flash_color="0.7 0.7 1 1"
+					 button_flash_count="64"
+					 button_flash_rate="0.5"
+					 name="button_toggleSympatheticRotation"
+					 tool_tip="Copia els canvis a l'articulació oposada."
+					 left_pad="1"
+					 top_delta="0"
+					 width="52" >
+						<button.commit_callback
+						 function="Poser.ToggleSympatheticChanges"/>
+					</button>
+					<button
+					 follows="left|top"
+					 height="18"
+					 layout="topleft"
+					 label="Copia E &gt; D"
+					 name="button_symmetrize_left_to_right"
+					 tool_tip="Fes clic per copiar el canvi del costat esquerre al dret."
+					 left="14"
+					 top_pad="0"
+					 width="70" >
+						<button.commit_callback
+						 function="Poser.Symmetrize"
+						 parameter="1"/>
+					</button>
+					<button
+					 follows="left|top"
+					 height="19"
+					 layout="topleft"
+					 label="Copia D &gt; E"
+					 name="button_symmetrize_right_to_left"
+					 tool_tip="Fes clic per copiar el canvi del costat dret a l'esquerre."
+					 left_pad="23"
+					 top_delta="0"
+					 width="70" >
+						<button.commit_callback
+						 function="Poser.Symmetrize"
+						 parameter="2"/>
+					</button>
+				</panel>
+			</panel>
+
+			<panel
+			 follows="top|left|bottom"
+			 height="290"
+			 background_visible="false"
+			 layout="topleft"
+			 mouse_opaque="false"
+			 left_pad="-26"
+			 visible="false"
+			 name="poses_loadSave"
+			 top="0"
+			 width="225">
+				<scroll_list
+				 column_padding="0"
+				 height="280"
+				 follows="left|top|right"
+				 layout="topleft"
+				 tool_tip="Carrega una posició per a qui estàs animant."
+				 width="225"
+				 multi_select="true"
+				 name="poses_scroll"
+				 top="0">
+					<scroll_list.columns
+					 label="Nom de la posició"
+					 name="name"/>
+				</scroll_list>
+				<line_editor
+				 follows="top|left"
+				 layout="topleft"
+				 height="21"
+				 top_pad="-2"
+				 commit_on_focus_lost="false"
+				 label="Introdueix el nom de la posició per desar..."
+				 name="pose_save_name"
+				 width="225"/>
+			</panel>
+		</layout_panel>
+		
+		<layout_panel name="button_controls_layout">
+			<panel name="button_controls_panel">
+				<button name="FlipPose_avatar" tool_tip="Inverteix tota la posa cap a l'esquerra/dreta"/>
+				<button name="FlipJoint_avatar" tool_tip="Reflecteix les parts del cos seleccionades esquerra/dreta"/>
+				<button label="Captura" name="button_RecaptureParts" tool_tip="Si les parts del cos seleccionades estan desactivades, aquesta opció permet capturar de nou el que aquestes parts del cos estan fent actualment."/>
+				<button label="Activa/desactiva" name="toggle_PosingSelectedBones" tool_tip="Activa o desactiva el Poser per a les parts del cos seleccionades. Quan està desactivada, aquesta part del cos s'anima com de costum (com amb un AO o una pilota, etc.)." />
+				<button label="Les meves poses" name="toggleLoadSavePanel" tool_tip="Carrega, desa i gestiona les poses que crees"/>
+				<button tool_tip="Gestiona el catàleg de poses" name="open_poseDir_button"/>
+				<menu_button label="Carrega posa" tool_tip="Carrega la posa seleccionada." name="load_poses_button"/>
+				
+				<button
+				 height="21"
+				 follows="top|left"
+				 layout="topleft"
+				 label="Desa la diferència"
+				 enabled="false"
+				 visible="false"
+				 tool_tip="Una 'Diferència' (Diff) són només els teus canvis sobre una posició existent. Comença des d'una Posició T per desar un treball nou."
+				 image_overlay="Icon_Dock_Foreground"
+				 image_overlay_alignment="left"
+				 image_hover_unselected="Toolbar_Middle_Over"
+				 image_selected="Toolbar_Middle_Selected"
+				 image_unselected="Toolbar_Middle_Off"
+				 name="save_poses_button"
+				 width="99"
+				 top_delta="0"
+				 left_pad="1">
+					<button.commit_callback
+					 function="Poser.Save"/>
+				</button>
+			</panel>
+		</layout_panel>
+		<layout_panel
+		 follows="top|left|right"
+		 layout="topleft"
+		 height="99"
+		 auto_resize="false"
+		 name="advanced_controls_layout"
+		 width="600">
+			<panel
+			 follows="top|left|right"
+			 height="99"
+			 left="0"
+			 layout="all"
+			 enabled="false"
+			 background_visible="false"
+			 mouse_opaque="false"
+			 visible="false"
+			 name="advanced_parent_panel"
+			 width="555">
+			</panel>
+				
+		</layout_panel>
+	</layout_stack>
+</floater>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_performance_complexity">
+	<text name="back_lbl">Enrere</text>
+	<text name="attachments_title">Complexitat dels adjunts</text>
+	<text name="tot_att_count">Total: 50 (120000.10μs)</text>
+	<text name="attachments_desc1">Els adjunts fan que el teu avatar sigui més complex i lent de renderitzar.</text>
+	<text name="attachments_desc2">Aquesta pantalla et permet revisar els adjunts del teu propi avatar.</text>
+	<text name="attachments_desc3">Pots eliminar de manera ràpida i fàcil els teus propis adjunts fent clic a la 'X'.</text>
+	<name_list name="obj_list">
+		<name_list.columns name="art_value" label="Temps (μs)" tool_tip="Temps dedicat a renderitzar aquest adjunt (microsegons)"/>
+		<name_list.columns name="complex_value" label="ARC" tool_tip="Complexitat de l'objecte (ARC)" />
+		<name_list.columns name="name" label="Nom de l'adjunt" tool_tip="Fes clic a la 'X' per desprendre'l"/>
+	</name_list>
+</panel>

@@ -11,16 +11,16 @@
 		<panel label="Xat" name="chat"/>
 		<panel label="Color" name="colors"/>
 		<panel label="Gràfics" name="display"/>
-		<panel label="So i mèdia" name="audio"/>
-		<panel label="Xarxa i fitxers" name="input"/>
-		<panel label="Moviment i càmera" name="move"/>
+		<panel label="So i Mèdia" name="audio"/>
+		<panel label="Xarxa i Arxius" name="input"/>
+		<panel label="Moció i Càmera" name="move"/>
 		<panel label="Controls" name="controls"/>
 		<panel label="Notificacions" name="msgs"/>
 		<panel label="Privadesa" name="im"/>
 		<panel label="Avançat" name="advanced1"/>
 		<panel label="Interfície" name="ui"/>
 		<panel label="Temes" name="skins"/>
-		<panel label="Copia de seguretat" name="backup"/>
+		<panel label="CòpiaSeguretat" name="backup"/>
 		<panel label="Errors" name="crashreports"/>
 		<panel label="Firestorm" name="firestorm"/>
 		<panel label="Opensim" name="opensim"/>

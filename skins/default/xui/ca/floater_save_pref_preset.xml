@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<floater name="save_pref_preset" title="Desa el valor predeterminat">
+	<text name="Preset">
+		Introduïu un nom per al valor predeterminat o trieu-ne un d'existent.
+	</text>
+	<button label="Desa" name="save"/>
+	<button label="Cancel·la" name="cancel"/>
+</floater>

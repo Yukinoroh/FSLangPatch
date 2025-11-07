@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="whitelist_entry" title="Llista blanca">
+	<text name="media_label">
+		Introdueix una URL o un patró d'URL per afegir-la a la llista de dominis permesos
+	</text>
+	<line_editor name="whitelist_entry" tool_tip="Introdueix una URL o un patró d'URL per afegir-la a la llista de dominis permesos"/>
+	
+	<button label="D'acord" name="ok_btn" width="64" />
+	
+	<button label="Cancel·la" name="cancel_btn"/>
+</floater>

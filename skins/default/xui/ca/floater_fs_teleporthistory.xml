@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_tphistory" title="Historial de teletransportacions">
+	<filter_editor label="Filtre de llocs" name="Filter" />
+	<panel name="button_panel">
+		<layout_stack name="bottom_bar_ls0">
+			<layout_panel name="show_lm_panel">
+				<layout_stack name="bottom_bar_ls1">
+					<layout_panel name="teleport_btn_lp">
+						<button label="Teletransporta't" name="teleport_btn" tool_tip="Teletransporta't al lloc seleccionat" />
+					</layout_panel>
+					<layout_panel name="chat_btn_lp">
+						<button label="Mapa" name="map_btn" tool_tip="Mostra l'àrea corresponent al mapa del món" />
+					</layout_panel>
+					<layout_panel name="profile_btn_lp">
+						<button label="Perfil" name="profile_btn" tool_tip="Mostra el perfil d'aquest lloc" />
+					</layout_panel>
+				</layout_stack>
+			</layout_panel>
+		</layout_stack>	
+	</panel>
+</floater>

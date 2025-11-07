@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<floater name="save_camera_preset" title="Desa la càmera">
+	<string name="btn_label_save">Desa</string>
+	<string name="btn_label_replace">Reemplaça</string>
+	<radio_group name="radio_save_preset">
+		<radio_item label="Desa com a predefinició nova" name="new_preset"/>
+		<radio_item label="Reemplaça una predefinició" name="replace_preset"/>
+	</radio_group>
+	<button label="Desa" name="save"/>
+	<button label="Cancel·la" name="cancel"/>
+</floater>

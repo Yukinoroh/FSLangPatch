@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="Esdeveniments" name="panel_ls_events">
+	<panel name="panel_ls_input">
+		<text name="search_text">
+			Introdueix els termes de cerca:
+		</text>
+		<radio_group name="events_search_mode">
+			<radio_item label="Actuals i futurs" name="current"/>
+			<radio_item label="Per data" name="date"/>
+		</radio_group>
+		<combo_box name="events_category">
+			<combo_box.item label="Qualsevol categoria" name="any"/>
+			<combo_box.item label="Debat" name="discussion"/>
+			<combo_box.item label="Esports" name="sports"/>
+			<combo_box.item label="Discoteca en directe" name="dj"/>
+			<combo_box.item label="Música en directe" name="music"/>
+			<combo_box.item label="Comerç" name="commercial"/>
+			<combo_box.item label="Vida nocturna/Entreteniment" name="nightlife"/>
+			<combo_box.item label="Jocs/Concursos" name="games"/>
+			<combo_box.item label="Espectacles" name="pageants"/>
+			<combo_box.item label="Educació" name="education"/>
+			<combo_box.item label="Art i cultura" name="arts"/>
+			<combo_box.item label="Beneficència/Grups de suport" name="charity"/>
+			<combo_box.item label="Miscel·lània" name="misc"/>
+		</combo_box>
+	</panel>
+	<panel name="panel_ls_scrolllist">
+		<scroll_list name="search_results_events">
+			<columns label="Esdeveniment" name="name"/>
+			<columns label="Data/Hora" name="date"/>
+			<columns label="Hora" name="time"/>
+		</scroll_list>
+		<button label="Ahir" name="events_yesterday"/>
+		<button label="Avui" name="events_today"/>
+		<button label="Demà" name="events_tomorrow"/>
+		<button label="Enrere" name="events_back"/>
+		<button label="Endavant" name="events_next"/>
+	</panel>
+</panel>

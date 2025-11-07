@@ -1,0 +1,17 @@
+<floater name="whitelist_floater" title="Llista blanca de carpetes i programes">
+	<text name="whitelist_intro">
+Els antivirus i els programes antimalware són una part essencial de l'ús segur d'internet, però poden causar tota una sèrie de problemes al visor.
+Per reduir les interferències i millorar l'estabilitat i el rendiment, aconsellem fermament a tots els usuaris que s'assegurin que hi hagi exclusions (conegudes com a llista blanca) per a les carpetes i els programes importants que utilitza el visor. 
+
+Per a més informació, visita el lloc
+https://wiki.firestormviewer.org/antivirus_whitelisting
+	</text>
+	<text name="whitelist_folder_instruction">
+Per simplificar-te la tasca, el requadre de sota indica les carpetes utilitzades pel visor. 
+Si us plau, afegeix-les a les exclusions de carpetes del teu antivirus, tal com s'indica a la pàgina del wiki de dalt.
+	</text>
+	<text name="whitelist_exe_instruction">
+El requadre següent indica els noms i els camins d'accés complets dels executables del visor.
+Afegeix els camins d'accés complets a les exclusions d'executables del teu antivirus, tal com s'indica al wiki de dalt.
+	</text>
+</floater>

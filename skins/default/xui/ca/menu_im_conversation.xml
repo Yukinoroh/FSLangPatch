@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="Conversation Gear Menu">
+	<menu_item_call label="Mostra el perfil" name="View Profile" />
+	<menu_item_call label="Afegeix als amics" name="Add Friend" />
+	<menu_item_call label="Elimina dels amics" name="remove_friend" />
+	<menu_item_call label="Ofereix un teletransport" name="offer_teleport" />
+	<menu_item_call label="Convida a un grup..." name="invite_to_group" />
+	<menu_item_call label="Historial del xat..." name="chat_history" />
+	<menu_item_call label="Apropa't" name="zoom_in" />
+	<menu_item_call label="Mapa" name="map" />
+	<menu_item_call label="Comparteix" name="Share" />
+	<menu_item_call label="Paga" name="Pay" />
+	<menu_item_check label="Silencia la veu" name="Block/Unblock" />
+	<menu_item_check label="Silencia el text" name="MuteText" />
+</toggleable_menu>

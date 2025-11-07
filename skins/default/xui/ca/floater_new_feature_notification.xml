@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_new_feature_notification" title="NOVA FUNCIÓ">
+	<floater.string name="title_txt_inventory">
+		Noves funcions de l'inventari
+	</floater.string>
+	<floater.string name="description_txt_inventory">
+		Ara podeu afegir imatges de previsualització als articles de l'inventari i veure una carpeta a la seva pròpia finestra.
+		Llegiu-ne més a [https://community.secondlife.com/blogs/entry/13637-new-features-inventory-item-preview-and-single-folder-view/ l'entrada del blog]
+	</floater.string>
+	<text name="title_txt">
+		Nova funció
+	</text>
+	<text name="description_txt">
+		Descripció de la funció
+	</text>
+	<button label="Ho he entès!" name="close_btn"/>
+</floater>

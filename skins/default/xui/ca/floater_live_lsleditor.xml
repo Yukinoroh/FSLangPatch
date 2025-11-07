@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="script ed float" title="Script: Script nou">
+	<floater.string name="not_allowed">
+		No pots veure ni modificar aquest script perquè està establert com a 'no copiar'. Necessites permisos complets per a veure o editar un script dins d'un objecte.
+	</floater.string>
+	<floater.string name="script_running">
+		En execució
+	</floater.string>
+	<floater.string name="Title">
+		Script: [NAME]
+	</floater.string>
+	<floater.string name="experience_enabled">
+		Desmarca per a eliminar l'experiència actual
+	</floater.string>
+	<floater.string name="no_experiences">
+		No tens permís per a utilitzar experiències
+	</floater.string>
+	<floater.string name="add_experiences">
+		Selecciona per a afegir una experiència
+	</floater.string>
+	<floater.string name="show_experience_profile">
+		Fes clic per a veure el perfil de l'experiència
+	</floater.string>
+	<floater.string name="loading">
+		Carregant...
+	</floater.string>
+	<button label="Reinicia" label_selected="Reinicia" name="Reset"/>
+	<check_box initial_value="true" label="En execució" name="running"/>
+	<check_box initial_value="true" label="Mono" name="mono"/>
+	<check_box label="Usa experiència:" name="enable_xp"/>
+	<button label="&gt;" name="view_profile"/>
+</floater>

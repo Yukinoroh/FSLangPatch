@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<toggleable_menu name="menu_group_plus">
+	<menu_item_check label="Descripció" name="description"/> 
+	<menu_item_check label="Propietari" name="name_власника"/>
+	<menu_item_check label="Creador" name="creator_name"/>
+	<menu_item_check label="Cares" name="facecount"/>
+	<menu_item_check label="Vèrtex" name="vertexcount"/>
+	<menu_item_check label="Triangles" name="trianglecount" />
+	<menu_item_check label="TMem" name="tramcount"/>
+	<menu_item_check label="VRAM" name="vramcount"/>
+	<menu_item_check label="Data de creació" name="creation_date"/>
+</toggleable_menu>

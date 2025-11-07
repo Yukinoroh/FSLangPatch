@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="preview_anim">
+	<floater.string name="Title">
+		Animació: [NAME]
+	</floater.string>
+	<panel name="basic_info_panel">
+		<text name="desc txt">
+			Descripció:
+		</text>
+		<button label="Reprodueix públicament" label_selected="Atura" name="Inworld" tool_tip="Reprodueix l'animació a l'avatar perquè la vegi tothom"/>
+		<button label="Reprodueix en local" label_selected="Atura" name="Locally" tool_tip="Reprodueix l'animació a l'avatar perquè només la vegis tu"/>
+	</panel>
+	<panel name="advanced_info_panel">
+		<text name="AdvancedStatsLeft">
+Prioritat: [PRIORITY]
+Durada: [DURATION]s
+Repetició (loop): [IS_LOOP]
+		</text>
+		<text name="AdvancedStatsRight">
+Entrada (Ease In): [EASE_IN]
+Sortida (Ease Out): [EASE_OUT]s
+Articulacions: [NUM_JOINTS]
+		</text>
+	</panel>
+</floater>

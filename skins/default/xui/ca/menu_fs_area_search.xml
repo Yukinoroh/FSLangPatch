@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<context_menu name="Object List popup">
+	<menu_item_call label="Informació dels scripts" name="script_info"/>
+	<menu_item_call label="Toca" name="touch_object"/>
+	<menu_item_call label="Teletransporta-t'hi" name="teleport_to_object"/>
+	<menu_item_call label="Apropa't" name="look_at_object"/>
+	<menu_item_call label="Inspecciona" name="inspect_object"/>
+	<menu_item_call label="Edita" name="edit_object"/>
+	<menu_item_call label="Retorna" name="return_object"/>
+	<menu_item_call label="Suprimeix" name="delete_object"/>
+	<menu_item_call label="Oculta &amp; Posa a la llista negra" name="blacklist_object"/>
+	<menu_item_call label="Compra l'objecte" name="object_buy"/>
+</context_menu>

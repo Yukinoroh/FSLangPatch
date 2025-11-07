@@ -4,7 +4,7 @@
     (Les teves afiliacions)
   </panel.string>
   <panel name="group_info_top">
-    <text name="group_name_label">
+    <text name="group_name_label" width="104">
     Nom del grup:
     </text>
     <line_editor label="Introdueix el nom del nou grup" name="group_name_editor" />
@@ -26,7 +26,7 @@
               tool_tip="Estableix si es requereix una quota per unir-se al grup"/>
             <spinner name="spin_enrollment_fee" tool_tip="Els nous membres han de pagar aquesta quota per unir-se al grup si la casella de quota d'inscripció està marcada."/>
             <combo_box name="group_mature_check" tool_tip="Les qualificacions de maduresa defineixen el tipus de contingut i comportament permesos al grup.">
-              <combo_item name="select_mature" value="Tria">
+              <combo_item name="select_mature" value="Tria" width="296">
                - Tria una qualificació de maduresa -
               </combo_item>
               <combo_box.item label="Moderat" name="mature" />
@@ -43,7 +43,7 @@
           <layout_stack name="button_row_ls" >
             <layout_panel name="layout_crt">
               <button label="Crea el grup per L$ [COST]" name="btn_create" tool_tip="Crea un nou grup"/>
-              <button name="back" label="Cancel·la"/>
+              <button width="80" name="back" label="Cancel·la"/>
             </layout_panel>
           </layout_stack>
           <text name="info_deletion">

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="outfit_photo_preview">
+    <floater.string name="Title">
+        Textura: [NAME]
+    </floater.string>
+    <floater.string name="exceed_limits">
+        La mida màxima de la foto és [MAX_WIDTH] x [MAX_HEIGHT]. Si us plau, tria una altra textura.
+    </floater.string>
+    <floater.string name="photo_confirmation">
+        Vols establir aquesta foto per al conjunt [OUTFIT]?
+    </floater.string>
+    <text name="dimensions">
+        [WIDTH]px x [HEIGHT]px
+    </text>
+    <button label="D'acord" name="ok_btn"/>
+    <button label="Cancel·la" name="cancel_btn"/>
+</floater>

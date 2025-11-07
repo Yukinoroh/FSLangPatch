@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<context_menu name="Avatar Context Menu">
+	<menu_item_call label="Mostra el perfil" name="View Profile" />
+	<menu_item_call label="Afegeix als amics" name="Add Friend" />
+	<menu_item_call label="Afegeix al conjunt de contactes" name="Add to Set" />
+	<menu_item_call label="Elimina dels amics" name="Remove Friend" />
+	<menu_item_call label="Envia un IM" name="IM" />
+	<menu_item_call label="Truca" name="Call" />
+	<menu_item_call label="Comparteix" name="Share" />
+	<menu_item_call label="Paga" name="Pay" />
+	<menu_item_call label="Ofereix teletransport" name="teleport" />
+	<menu_item_call label="Demana teletransport" name="request_teleport" />
+	<menu_item_call label="Convida al grup" name="GroupInvite" />
+	<menu_item_check label="Bloqueja/Desbloqueja" name="Block/Unblock" />
+</context_menu>
