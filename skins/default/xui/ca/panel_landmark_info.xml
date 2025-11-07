@@ -41,7 +41,7 @@
                                 <text name="owner_label" value="Propietari:" width="70"/>
                                 <text name="creator_label" value="Creador:" width="70"/>
                                 <text name="created_label" value="Creat el:"/>
-                                <text name="information_label" value="Informació:"/>
+                                <text name="information_label" value="Informació:" width="88"/>
                         </panel>
                         <panel name="landmark_edit_panel">
                                 <text name="title_label" value="Títol:"/>

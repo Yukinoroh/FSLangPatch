@@ -7,10 +7,10 @@
 	<floater.string name="Type_llTriggerSound">llTriggerSound</floater.string>
 	<floater.string name="Type_llLoopSound">llLoopSound</floater.string>
 	<floater.string name="Type_llPlaySound">llPlaySound</floater.string>
-	<check_box name="avatars_chk" label="Avatars"/>
+	<check_box name="avatars_chk" left="0" label="Avatars"/>
 	<check_box name="objects_chk" label="Objectes"/>
-	<check_box name="collision_chk" label="Sons de col·lisió per defecte" />
-	<check_box name="repeated_asset_chk" label="Repeticions" left_delta="180" />
+	<check_box name="collision_chk" left_delta="90" label="So Topades Predeterminat" />
+	<check_box name="repeated_asset_chk" label="Repeticions" left_delta="200" />
 	<check_box name="pause_chk" label="Pausa"/>
 	<scroll_list name="sound_list">
 		<columns label="Posat" name="playing" />
@@ -19,7 +19,8 @@
 		<columns label="So" name="sound" />
 	</scroll_list>
 	<button label="Escoltar" name="play_locally_btn"/>
-	<button label="Mirar" name="look_at_btn"/>
+	<button label="Atura localment" name="stop_locally_btn" width="120"/>
+	<button label="Mirar" name="look_at_btn" left_delta="130"/>
 	<button label="Aturar" name="stop_btn"/>
 	<button label="Afegir a llista negra" name="bl_btn"/>
 	<button label="Bloquejar sons portats AV" name="block_avatar_worn_sounds_btn"/>

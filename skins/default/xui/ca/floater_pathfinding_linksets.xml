@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_pathfinding_linksets" title="OBJECTES DE LA REGIÓ">
+	<floater.string name="messaging_get_inprogress">
+		Demanant els conjunts d'enllaços per a la cerca de camins...
+	</floater.string>
+	<floater.string name="messaging_get_error">
+		Error en demanar els conjunts d'enllaços per a la cerca de camins.
+	</floater.string>
+	<floater.string name="messaging_set_inprogress">
+		Canviant els conjunts d'enllaços seleccionats per a la cerca de camins...
+	</floater.string>
+	<floater.string name="messaging_set_error">
+		Error en canviar els conjunts d'enllaços seleccionats per a la cerca de camins.
+	</floater.string>
+	<floater.string name="messaging_complete_none_found">
+		No s'han trobat conjunts d'enllaços per a la cerca de camins.
+	</floater.string>
+	<floater.string name="messaging_complete_available">
+		Seleccionats [NUM_SELECTED] de [NUM_TOTAL].
+	</floater.string>
+	<floater.string name="messaging_not_enabled">
+		La cerca de camins no està permesa en aquesta regió.
+	</floater.string>
+	<floater.string name="linkset_terrain_name">
+		[Terreny]
+	</floater.string>
+	<floater.string name="linkset_terrain_description">
+		--
+	</floater.string>
+	<floater.string name="linkset_terrain_owner">
+		--
+	</floater.string>
+	<floater.string name="linkset_terrain_scripted">
+		--
+	</floater.string>
+	<floater.string name="linkset_terrain_land_impact">
+		--
+	</floater.string>
+	<floater.string name="linkset_terrain_dist_from_you">
+		--
+	</floater.string>
+	<floater.string name="linkset_owner_loading">
+		[Carregant]
+	</floater.string>
+	<floater.string name="linkset_owner_unknown">
+		[Desconegut]
+	</floater.string>
+	<floater.string name="linkset_owner_group">
+		[grup]
+	</floater.string>
+	<floater.string name="linkset_is_scripted">
+		Sí
+	</floater.string>
+	<floater.string name="linkset_is_not_scripted">
+		No
+	</floater.string>
+	<floater.string name="linkset_is_unknown_scripted">
+		Desconegut
+	</floater.string>
+	<floater.string name="linkset_use_walkable">
+		Lloc transitable
+	</floater.string>
+	<floater.string name="linkset_use_static_obstacle">
+		Obstacle estàtic
+	</floater.string>
+	<floater.string name="linkset_use_dynamic_obstacle">
+		Obstacle movible
+	</floater.string>
+	<floater.string name="linkset_use_material_volume">
+		Volum material
+	</floater.string>
+	<floater.string name="linkset_use_exclusion_volume">
+		Volum d'exclusió
+	</floater.string>
+	<floater.string name="linkset_use_dynamic_phantom">
+		Fantasma movible
+	</floater.string>
+	<floater.string name="linkset_is_terrain">
+		[immutable]
+	</floater.string>
+	<floater.string name="linkset_is_restricted_state">
+		[restringit]
+	</floater.string>
+	<floater.string name="linkset_is_non_volume_state">
+		[còncau]
+	</floater.string>
+	<floater.string name="linkset_is_restricted_non_volume_state">
+		[restringit, còncau]
+	</floater.string>
+	<floater.string name="linkset_choose_use">
+		Trieu el nivell d'ús dels conjunts d'enllaços...
+	</floater.string>
+	<panel name="pathfinding_linksets_main">
+		<text name="linksets_filter_label">
+			Filtre:
+		</text>
+		<text name="linksets_name_label">
+			Nom
+		</text>
+		<text name="linksets_desc_label">
+			Descripció
+		</text>
+		<combo_box name="filter_by_linkset_use">
+			<combo_box.item label="Filtra pel grau d'ús dels conjunts d'enllaços..." name="filter_by_linkset_use_none"/>
+			<combo_box.item label="Lloc transitable" name="filter_by_linkset_use_walkable"/>
+			<combo_box.item label="Obstacle estàtic" name="filter_by_linkset_use_static_obstacle"/>
+			<combo_box.item label="Obstacle movible" name="filter_by_linkset_use_dynamic_obstacle"/>
+			<combo_box.item label="Volum material" name="filter_by_linkset_use_material_volume"/>
+			<combo_box.item label="Volum d'exclusió" name="filter_by_linkset_use_exclusion_volume"/>
+			<combo_box.item label="Fantasma movible" name="filter_by_linkset_use_dynamic_phantom"/>
+		</combo_box>
+		<button label="Aplica" name="apply_filters"/>
+		<button label="Neteja" name="clear_filters"/>
+		<scroll_list name="objects_scroll_list">
+			<scroll_list.columns label="Nom (primitiu arrel)" name="name" width="200"/>
+			<scroll_list.columns label="Descripció (primitiu arrel)" name="description" width="216"/>
+			<scroll_list.columns label="Propietari" name="owner"/>
+			<scroll_list.columns label="Scriptat" name="scripted" width="64"/>
+			<scroll_list.columns label="Impacte" name="land_impact" width="65"/>
+			<scroll_list.columns label="Distància" name="dist_from_you" width="72"/>
+			<scroll_list.columns label="Ús en la cerca de camins" name="linkset_use"/>
+			<scroll_list.columns label="A %" name="a_percent"/>
+			<scroll_list.columns label="B %" name="b_percent"/>
+			<scroll_list.columns label="C %" name="c_percent"/>
+			<scroll_list.columns label="D %" name="d_percent"/>
+		</scroll_list>
+		<text name="messaging_status">
+			Conjunts d'enllaços:
+		</text>
+		<button label="Actualitza la llista" name="refresh_objects_list" left_pad="-100" width="160"/>
+		<button label="Selecciona-ho tot" name="select_all_objects" width="136"/>
+		<button label="Anul·la la selecció" name="select_none_objects" width="152"/>
+	</panel>
+	<panel name="pathfinding_linksets_actions">
+		<text name="linksets_actions_label">
+			Accions amb la selecció
+		</text>
+		<check_box label="Mostra la balisa" name="show_beacon"/>
+		<button label="Agafa" name="take_objects"/>
+		<button label="Agafa una còpia" name="take_copy_objects" width="120"/>
+		<button label="Teletransporta-m'hi" name="teleport_me_to_object"/>
+		<button label="Retorna" name="return_objects" left_pad="222"/>
+		<button label="Suprimeix" name="delete_objects"/>
+	</panel>
+	<panel name="pathfinding_linksets_attributes">
+		<text name="linksets_attributes_label">
+			Canvia els paràmetres de cerca de camins
+		</text>
+		<text name="walkability_coefficients_label">
+			Transitabilitat:
+		</text>
+		<text name="edit_a_label">
+			A
+		</text>
+		<line_editor name="edit_a_value" tool_tip="Transitabilitat per a personatges de tipus A. Exemple de personatge: humanoide."/>
+		<text name="edit_b_label">
+			B
+		</text>
+		<line_editor name="edit_b_value" tool_tip="Transitabilitat per a personatges de tipus B. Exemple de personatge: criatura."/>
+		<text name="edit_c_label">
+			C
+		</text>
+		<line_editor name="edit_c_value" tool_tip="Transitabilitat per a personatges de tipus C. Exemple de personatge: mecanisme."/>
+		<text name="edit_d_label">
+			D
+		</text>
+		<line_editor name="edit_d_value" tool_tip="Transitabilitat per a personatges de tipus D. Exemple de personatge: altre."/>
+		<button label="Aplica els canvis" name="apply_edit_values"/>
+		<text name="suggested_use_a_label">
+			(humanoide)
+		</text>
+		<text name="suggested_use_b_label">
+			(criatura)
+		</text>
+		<text name="suggested_use_c_label">
+			(mecanisme)
+		</text>
+		<text name="suggested_use_d_label">
+			(altre)
+		</text>
+	</panel>
+</floater>

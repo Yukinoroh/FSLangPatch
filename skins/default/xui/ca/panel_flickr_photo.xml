@@ -13,6 +13,17 @@
 	<text name="working_lbl">
 		Actualitzant...
 	</text>
+	
+	<check_box
+     label="Mostra el marc de captura"
+     tool_tip="Mostra un marc a la pantalla que envolta les àrees de la instantània. Les parts de l'escena que queden fora de la instantània es desaturaran i es veuran lleugerament borroses."
+     name="show_frame" />
+    <check_box
+     label="Guia d'enquadrament"
+     tool_tip="Mostra una guia d'enquadrament (regla dels terços) dins del marc de la instantània."
+     left_pad="80"
+     name="show_guides" />
+		
 	<button label="Refresca" name="new_snapshot_btn" tool_tip="Fes clic per a refrescar"/>
 	<button label="Previsualitza" name="big_preview_btn" tool_tip="Fes clic per a canviar la vista"/>
 	<text name="title_label">
