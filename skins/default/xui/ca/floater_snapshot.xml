@@ -61,7 +61,15 @@
 		<check_box label="Interfície" name="ui_check"/>
 		<check_box label="Saldo en L$" name="currency_check"/>
 		<check_box label="HUD del visor" name="hud_check"/>
-		<check_box label="Congela la imatge (pantalla completa)" name="freeze_frame_check"/>
+		
+		<check_box label="Mostra Fotograma Capturat"
+         tool_tip="Mostra un marc a la pantalla que envolta les zones de la instantània. Les parts de l'escena que estan fora de la instantània estaran desaturades i lleugerament borroses."
+         name="show_frame" />
+         <check_box  label="EsVeuGuiaEnquadrament"
+         tool_tip="Mostra la guia d'enquadrament (regla dels terços) dins del marc de la instantània"
+         name="show_guides" />
+         
+		<check_box label="Congela la imatge" name="freeze_frame_check"/>
 		<check_box label="Refresca automàticament" name="auto_snapshot_check"/>
 		<text name="filter_list_label" width="60">
             Filtre:

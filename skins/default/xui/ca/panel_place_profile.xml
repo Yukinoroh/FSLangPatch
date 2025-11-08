@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="place_profile">
+	<string name="on" value="Activat"/>
+	<string name="off" value="Desactivat"/>
+	<string name="anyone" value="Tothom"/>
+	<string name="available" value="disponible"/>
+	<string name="allocated" value="assignat"/>
+	<string name="title_place" value="Perfil del lloc"/>
+	<string name="title_teleport_history" value="Historial de teletransportacions"/>
+	<string name="not_available" value="(No disponible)"/>
+	<string name="unknown" value="(desconegut)"/>
+	<string name="public" value="(públic)"/>
+	<string name="none_text" value="(Cap)"/>
+	<string name="sale_pending_text" value="(Venda pendent)"/>
+	<string name="group_owned_text" value="(Propietat del grup)"/>
+	<string name="price_text" value="L$"/>
+	<string name="area_text" value="m²"/>
+	<string name="all_residents_text" value="Tots els residents"/>
+	<string name="group_text" value="Grup"/>
+	<string name="can_resell">
+		El terreny comprat en aquesta regió es pot revendre.
+	</string>
+	<string name="can_not_resell">
+		El terreny comprat en aquesta regió no es pot revendre.
+	</string>
+	<string name="can_change">
+		El terreny comprat en aquesta regió es pot unir o dividir.
+	</string>
+	<string name="can_not_change">
+		El terreny comprat en aquesta regió no es pot unir ni dividir.
+	</string>
+	<string name="server_update_text">
+		La informació del lloc no està disponible sense una actualització del servidor.
+	</string>
+	<string name="server_error_text">
+		La informació sobre aquest lloc no està disponible actualment. Si us plau, torna-ho a provar més tard.
+	</string>
+	<string name="server_forbidden_text">
+		La informació sobre aquest lloc no està disponible a causa de les restriccions d'accés. Consulta el teu nivell d'accés amb el propietari de la parcel·la.
+	</string>
+	<string name="acquired_date">
+		[wkday,datetime,local], [day,datetime,local] [mth,datetime,local] [year,datetime,local] [hour,datetime,local]:[min,datetime,local]:[second,datetime,local]
+	</string>
+
+	<layout_stack name="place_info_sidetray_main">
+		<layout_panel name="header_container">
+
+	<button name="back_btn" tool_tip="Enrere"/>
+	<text name="title" value="Perfil del lloc"/>
+
+		</layout_panel>
+		<layout_panel name="place_info_content">
+
+			<text name="region_title" value="Regió_de_Mostra"/>
+			<text name="parcel_title" value="Parcel·la_de_Mostra, nom llarg (145, 228, 26)"/>
+			<expandable_text name="description" value="Desconeguda"/>
+			<text name="owner_label" value="Propietari:"/>
+			<text name="owner_value" value="Lenny Cazari i JP Ixito"/>
+			<text name="maturity_value" value="desconeguda"/>
+			<accordion name="advanced_info_accordion">
+				<accordion_tab name="parcel_characteristics_tab" title="Parcel·la">
+					<panel name="parcel_characteristics_panel">
+						<text name="rating_label" value="Classificació:"/>
+						<text name="rating_value" value="desconeguda"/>
+						<text name="voice_label" value="Veu:"/>
+						<text name="voice_value" value="Activat"/>
+						<text name="fly_label" value="Volar:"/>
+						<text name="fly_value" value="Activat"/>
+						<text name="push_label" value="Empentes:"/>
+						<text name="push_value" value="Desactivat"/>
+						<text name="build_label" value="Construcció:"/>
+						<text name="build_value" value="Activat"/>
+						<text name="scripts_label" value="Scripts:"/>
+						<text name="scripts_value" value="Activat"/>
+						<text name="damage_label" value="Danys:"/>
+						<text name="damage_value" value="Desactivat"/>
+						<text name="see_avatars_label" value="Veure avatars:"/>
+						<text name="see_avatars_value" value="Desactivat"/>
+						<button label="Sobre el terreny" name="about_land_btn"/>
+					</panel>
+				</accordion_tab>
+				<accordion_tab name="region_information_tab" title="Regió">
+					<panel name="region_information_panel">
+						<text name="region_name_label" value="Regió:"/>
+						<text name="region_name" value="Kitovo"/>
+						<text name="region_type_label" value="Tipus:"/>
+						<text name="region_type" value="GatSospitós"/>
+						<text name="region_rating_label" value="Classificació:"/>
+						<text name="region_rating" value="Adult"/>
+						<text name="region_owner_label" value="Propietari:"/>
+						<text name="region_owner" value="van GatSospitós nom molt llarg gat"/>
+						<text name="region_group_label" value="Grup:"/>
+						<text name="region_group">
+							Un gat fort i sospitós de Kitovo prop d'Ust-Naglokitovo
+						</text>
+						<button label="Regió/Finca" name="region_info_btn"/>
+					</panel>
+				</accordion_tab>
+				<accordion_tab name="estate_information_tab" title="Finca">
+					<panel name="estate_information_panel">
+						<text name="estate_name_label" value="Finca:"/>
+						<text name="estate_rating_label" value="Classificació:"/>
+						<text name="estate_owner_label" value="Propietari:"/>
+						<text name="estate_owner" value="Prova de nom de propietari amb un nom llarg"/>
+						<text name="covenant_label" value="Pacte:"/>
+					</panel>
+				</accordion_tab>
+				<accordion_tab name="sales_tab" title="En venda">
+					<panel name="sales_panel">
+						<text name="sales_price_label" value="Preu:"/>
+						<text name="area_label" value="Àrea:"/>
+						<text name="traffic_label" value="Trànsit:"/>
+						<text name="primitives_label" value="Primitius:"/>
+						<text name="parcel_scripts_label" value="Scripts:"/>
+						<text name="terraform_limits_label" value="Terraformació:" width="104"/>
+						<text name="subdivide_label" value="Capacitat de divisió/unió:"/>
+						<text name="resale_label" value="Capacitat de revenda:"/>
+						<text name="sale_to_label" value="Venda a:"/>
+					</panel>
+				</accordion_tab>
+			</accordion>
+
+		</layout_panel>
+	</layout_stack>
+</panel>

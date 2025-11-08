@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <toggleable_menu name="menu_gear_default">
-	<menu_item_call label="Finestra d'inventari nova" name="new_window"/>
+	<menu_item_call label="Nova finestra d'inventari" name="new_window"/>
 	<menu_item_check label="Carpetes protegides" name="Protected Folders"/>
+	<menu_item_check label="Configuració de l'inventari..." name="inv_settings"/>
+	<menu_item_check label="Visualització de llista" name="list_view"/>
+	<menu_item_check label="Visualització de galeria" name="gallery_view"/>
+	<menu_item_check label="Visualització combinada" name="combination_view"/>
 	<menu_item_check label="Ordena per nom" name="sort_by_name"/>
 	<menu_item_check label="Ordena per data" name="sort_by_recent"/>
-	<menu_item_check label="Ordena les carpetes per nom" name="sort_folders_by_name"/>
-	<menu_item_check label="Posa les carpetes de sistema a dalt" name="sort_system_folders_to_top"/>
+	<menu_item_check label="Ordena sempre les carpetes per nom" name="sort_folders_by_name"/>
+	<menu_item_check label="Col·loca les carpetes del sistema a dalt" name="sort_system_folders_to_top"/>
 	<context_menu label="Cerca per..." name="inventory_search_menu">
 		<menu_item_check name="inventory_search_by_name" label="Nom"/>
 		<menu_item_check name="inventory_search_by_creator" label="Creador"/>
 		<menu_item_check name="inventory_search_by_description" label="Descripció"/>
+		<menu_item_check name="inventory_search_by_uuid" label="UUID"/>
 		<menu_item_check name="inventory_search_by_all" label="Tot"/>
 	</context_menu>
 	<menu_item_check label="Afegeix objectes amb doble clic" name="add_inv_toggle"/>
-	<menu_item_check label="Posa't roba amb doble clic" name="add_invclothing_toggle"/>
-	<menu_item_call label="Mostra els filtres..." name="show_filters"/>
+	<menu_item_check label="Afegeix roba amb doble clic" name="add_invclothing_toggle"/>
+	<menu_item_call label="Mostra els filtres" name="show_filters"/>
 	<menu_item_call label="Reinicia els filtres" name="reset_filters"/>
-	<menu_item_call label="Tanca totes les carpetes" name="close_folders"/>
-	<menu_item_call label="Buida 'Objectes perduts'" name="empty_lostnfound"/>
-	<menu_item_call label="Desa la textura com a" name="Save Texture As"/>
+	<menu_item_call label="Contrau totes les carpetes" name="close_folders"/>
+	<menu_item_call label="Tanca totes les finestres" name="close_windows"/>
+	<menu_item_call label="Buida la carpeta d'objectes perduts" name="empty_lostnfound"/>
+	<menu_item_call label="Desa la textura" name="Save Texture As"/>
 	<menu_item_call label="Comparteix" name="Share"/>
 	<menu_item_call label="Troba l'original" name="Find Original"/>
 	<menu_item_call label="Troba tots els enllaços" name="Find All Links"/>
@@ -26,9 +32,9 @@
 	<menu_item_check name="inventory_filter_show_links" label="Mostra els enllaços"/>
 	<menu_item_check name="inventory_filter_only_links" label="Mostra només els enllaços"/>
 	<menu_item_check name="inventory_filter_hide_links" label="Amaga els enllaços"/>
-	<menu_item_check name="inventory_filter_only_modify" label="Només modificables"/>
-	<menu_item_check name="inventory_filter_only_copy" label="Només copiables"/>
-	<menu_item_check name="inventory_filter_only_transfer" label="Només transferibles"/>
-	<menu_item_check name="inventory_filter_coalesced_objects_only" label="Només fusionats"/>
+	<menu_item_check name="inventory_filter_only_modify" label="Només els elements modificables"/>
+	<menu_item_check name="inventory_filter_only_copy" label="Només els elements copiables"/>
+	<menu_item_check name="inventory_filter_only_transfer" label="Només els elements transferibles"/>
+	<menu_item_check name="inventory_filter_coalesced_objects_only" label="Només els objectes agrupats"/>
 	<menu_item_call label="Buida la paperera" name="empty_trash"/>
 </toggleable_menu>

@@ -9,9 +9,11 @@
 	<panel.string name="group_join_btn">
 		Uneix-t'hi (L$[AMOUNT])
 	</panel.string>
-	<panel.string name="group_join_free">
-		Gratuït
-	</panel.string>
+	
+	<panel.string name="group_join_free">Gratuït</panel.string>
+    <panel.string name="group_member">Membre</panel.string>
+    <panel.string name="join_txt">Uneix-te</panel.string>
+    <panel.string name="leave_txt">Marxar</panel.string>
 
 	<layout_stack name="group_info_sidetray_main">
 		<layout_panel name="header_container">

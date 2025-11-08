@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <panel label="Pujades" name="uploads">
-	<text name="title">
+	<text name="title" width="384">
 		Carpetes de destinació actuals per a les pujades
 	</text>
 	<text name="title_models">

@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<panel name="object properties" title="Perfil de l&apos;objecte">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="object properties" title="Perfil de l'objecte">
 	<panel.string name="text deed continued">
-		Cedir
+		Cedeix
 	</panel.string>
 	<panel.string name="text deed">
-		Cedir
+		Cedeix
 	</panel.string>
 	<panel.string name="text modify info 1">
-		Podeu modificar aquest objecte
+		Aquest objecte es pot modificar
 	</panel.string>
 	<panel.string name="text modify info 2">
-		Podeu modificar aquests objectes
+		Aquests objectes es poden modificar
 	</panel.string>
 	<panel.string name="text modify info 3">
-		No podeu modificar aquest objecte
+		Aquest objecte no es pot modificar
 	</panel.string>
 	<panel.string name="text modify info 4">
-		No podeu modificar aquests objectes
+		Aquests objectes no es poden modificar
 	</panel.string>
 	<panel.string name="text modify info 5">
-		No es pot modificar aquest objecte més enllà del límit d&apos;una regió
+		Aquest objecte no es pot modificar més enllà dels límits de la regió
 	</panel.string>
 	<panel.string name="text modify info 6">
-		No es poden modificar aquests objectes més enllà del límit d&apos;una regió
+		Aquests objectes no es poden modificar més enllà dels límits de la regió
 	</panel.string>
 	<panel.string name="text modify warning">
-		Aquest objecte inclou parts enllaçades
+		Aquest objecte conté parts enllaçades
 	</panel.string>
 	<panel.string name="Cost Default">
 		Preu: L$
@@ -34,7 +34,7 @@
 		Preu total: L$
 	</panel.string>
 	<panel.string name="Cost Per Unit">
-		Preu per: L$
+		Preu: L$
 	</panel.string>
 	<panel.string name="Cost Mixed">
 		Preu mixt
@@ -42,88 +42,112 @@
 	<panel.string name="Sale Mixed">
 		Venda mixta
 	</panel.string>
-	<text name="title" value="Perfil de l&apos;objecte"/>
-	<text name="where" value="(a Second Life)"/>
+	<button name="back_btn" />
+	<text name="title" value="Perfil de l'objecte"/>
+	<text name="where" value="(al món)" />
 	<scroll_container name="item_profile_scroll">
-		<panel name="properties_panel">
-			<text name="Name:">
+		<panel label="" name="properties_panel">
+			<text name="Name:" width="78">
 				Nom:
 			</text>
-			<line_editor name="Object Name" tool_tip="El nom està limitat a 63 caràcters. Els noms de prims més llargs s'escurcen. Els noms només poden contenir caràcters imprimibles del joc de caràcters ASCII-7 (no estès), a excepció de la barra vertical '|'."/>
-			<text name="Description:">
+			<line_editor name="Object Name" tool_tip="El nom està limitat a 63 caràcters. Els noms de primitius més llargs es redueixen. Els noms només poden contenir caràcters del conjunt ASCII-7 (no estès), excepte la barra vertical/línia '|'." />
+			<text name="Description:" width="78">
 				Descripció:
 			</text>
-			<line_editor name="Object Description" tool_tip="Quan els usuaris seleccionen 'Consells de sobrevol en tots els objectes' a la configuració del visor, la descripció contextual de cada objecte apareix sota el punter del ratolí. La descripció del prim està limitada a 127 bytes, qualsevol cadena superior a aquest límit serà truncada."/>
-			<text name="CreatorNameLabel">
+			<line_editor name="Object Description" tool_tip="Quan a la configuració de la finestra de visualització se selecciona 'Informació sobre tots els objectes', els jugadors veuran una finestra emergent amb la descripció de l'objecte en passar el ratolí per sobre de qualsevol objecte. La descripció del primitiu està limitada a 127 caràcters; els que superin aquesta mida es truncaran." />
+			<text name="CreatorNameLabel" width="78">
 				Creador:
 			</text>
-			<text name="Owner:">
+			<text name="Creator Name">
+				(carregant...)
+			</text>
+			<text name="Owner:" width="78">
 				Propietari:
 			</text>
-			<text name="Group_label">
+			<text name="Owner Name">
+				(carregant...)
+			</text>
+			<text name="Group_label" width="78">
 				Grup:
 			</text>
-			<button name="button set group" tool_tip="Tria un grup per compartir els drets relatius a aquest objecte"/>
-			<name_box initial_value="Carregant…" name="Group Name Proxy"/>
-			<button label="Cedir" label_selected="Cedir" name="button deed" tool_tip="En cedir un objecte, també doneu els drets al propietari següent. Només un oficial pot cedir els objectes compartits d'un grup."/>
-			<text name="label click action">
-				En clicar fes:
+			<button name="button set group" tool_tip="Selecciona un grup per assignar-li els drets d'accés a l'objecte"/>
+			<name_box initial_value="Carregant..." name="Group Name Proxy"/>
+			<button label="Cedeix" label_selected="Cedeix" name="button deed" tool_tip="En cedir l'objecte al grup, els drets sobre ell correspondran als drets del proper propietari. Un objecte cedit al grup pot ser transferit per un oficial del grup." />
+			<text name="label click action" width="280">
+				Acció en fer clic:
 			</text>
-			<combo_box name="clickaction" tool_tip="Una acció de clic us permet interactuar amb un objecte amb un simple clic esquerre. Cada acció de clic té un cursor especial que indica què fa. Algunes accions de clic tenen requisits per funcionar. Per exemple, Tocar i Pagar necessiten scripts">
-				<combo_box.item label="Tocar (per defecte)" name="Touch/grab(default)"/>
-				<combo_box.item label="Seure a l&apos;objecte" name="Sitonobject"/>
-				<combo_box.item label="Comprar l&apos;objecte" name="Buyobject"/>
-				<combo_box.item label="Pagar l&apos;objecte" name="Payobject"/>
-				<combo_box.item label="Obrir" name="Open"/>
-				<combo_box.item label="Zoom" name="Zoom"/>
+			<combo_box name="clickaction" tool_tip="La interacció amb l'objecte es realitza prement el botó esquerre del ratolí. Amb cada clic, apareix un cursor especial que indica l'acció vàlida. Algunes accions tenen requisits funcionals. Per exemple, 'Tocar' i 'Pagar' requereixen scripts." >
+				<combo_box.item label="Toca (per defecte)" name="Touch/grab(default)"/>
+				<combo_box.item label="Seu a l'objecte" name="Sitonobject"/>
+				<combo_box.item label="Compra l'objecte" name="Buyobject"/>
+				<combo_box.item label="Paga a l'objecte" name="Payobject"/>
+				<combo_box.item label="Obre" name="Open"/>
+				<combo_box.item label="Apropa" name="Zoom"/>
 				<combo_box.item label="Cap" name="None"/>
-				<combo_box.item label="Ignorar l'objecte" name="Ignoreobject"/>
 			</combo_box>
 			<panel name="perms_inv">
 				<text name="perm_modify">
-					Podeu modificar aquest objecte
+					Aquest objecte es pot modificar
 				</text>
 				<text name="Anyone can:">
-					Qualsevol pot:
+					Tothom pot:
 				</text>
-				<check_box label="Copiar" name="checkbox allow everyone copy" tool_tip="Tothom pot agafar una còpia de l'objecte. L'objecte i tot el seu contingut han de tenir permís per ser copiats i transferits."/>
-				<check_box label="Moure" name="checkbox allow everyone move" tool_tip="Tothom pot moure l'objecte."/>
-				<text name="GroupLabel">
-					El grup:
+				<check_box label="Copiar" name="checkbox allow everyone copy" tool_tip="Qualsevol pot agafar una còpia de l'objecte." />
+				<check_box label="Moure" name="checkbox allow everyone move" tool_tip="Qualsevol jugador pot moure l'objecte." />
+				<text name="GroupLabel" >
+					Grup:
 				</text>
-				<check_box label="Compartir" name="checkbox share with group" tool_tip="Permet a tots els membres del grup escollit compartir els vostres drets de modificació per a aquest objecte. Per activar les restriccions de rol, primer heu de clicar a Cedir."/>
+				<check_box label="Comparteix" name="checkbox share with group" tool_tip="Permet a tots els membres del grup seleccionat obtenir els drets que tu tens sobre aquest objecte. Per activar les restriccions de rol, cal cedir-lo." />
 				<text name="NextOwnerLabel">
-					El propietari següent:
+					Propietari següent:
 				</text>
-				<check_box label="Modificar" name="checkbox next owner can modify" tool_tip="El propietari següent pot modificar propietats com ara l'etiqueta de l'element o l'escala d'aquest objecte."/>
-				<check_box label="Copiar" name="checkbox next owner can copy" tool_tip="El propietari següent pot fer còpies il·limitades d'aquest objecte. Les còpies conserven la informació del creador i mai no poden ser més permissives que l'element que es copia."/>
-				<check_box label="Transferir" name="checkbox next owner can transfer" tool_tip="El propietari següent pot regalar o revendre aquest objecte"/>
+				<check_box label="Modificar" name="checkbox next owner can modify" tool_tip="El propietari següent pot editar propietats com el nom de l'element individual o l'escala d'aquest objecte." />
+				<check_box label="Copiar" name="checkbox next owner can copy" tool_tip="El propietari següent pot fer un nombre il·limitat de còpies d'aquest objecte. Les còpies contenen informació sobre el creador i mai no poden tenir més permisos que l'objecte copiat." />
+				<check_box label="Transferir" name="checkbox next owner can transfer" tool_tip="El propietari següent pot regalar o revendre l'objecte." />
 			</panel>
-			<check_box label="A la venda" name="checkbox for sale" tool_tip="Permet a la gent comprar aquest objecte, el seu contingut o copiar-lo a Second Life per un preu determinat."/>
-			<combo_box name="sale type" tool_tip="Indiqueu si el comprador rebrà una còpia, una còpia del contingut o l'article en si.">
-				<combo_box.item label="Copia" name="Copy"/>
+			<check_box label="En venda" name="checkbox for sale" tool_tip="Permet als jugadors comprar aquest objecte, el seu contingut o una còpia al món del joc al preu especificat." />
+			<combo_box name="sale type" tool_tip="Tria si el comprador rebrà una còpia, una còpia del contingut o l'objecte original.">
+				<combo_box.item label="Còpia" name="Copy"/>
 				<combo_box.item label="Contingut" name="Contents"/>
 				<combo_box.item label="Original" name="Original"/>
 			</combo_box>
-			<spinner label="Preu: L$" name="Edit Cost" tool_tip="Cost de l&apos;objecte."/>
-			<check_box label="Mostra a la cerca" name="search_check" tool_tip="Permet que altres residents vegin aquest objecte als resultats de la cerca"/>
-			<text name="pathfinding_attributes_label">
-				Atributs de cerca de camí:
-			</t>
+			<spinner label="Preu: L$" name="Edit Cost" tool_tip="El cost de l'objecte."/>
+			<check_box label="Mostra als resultats de la cerca" name="search_check" tool_tip="Mostra l'objecte als resultats de la cerca" />
+			<text name="pathfinding_attributes_label" width="224">
+				Atributs de cerca de camins:
+			</text>
+			<text name="B:">
+				B:
+			</text>
+			<text name="O:">
+				O:
+			</text>
+			<text name="G:">
+				G:
+			</text>
+			<text name="E:">
+				I:
+			</text>
+			<text name="N:">
+				N:
+			</text>
+			<text name="F:">
+				F:
+			</text>
 		</panel>
 	</scroll_container>
 	<layout_stack name="buttons_ls">
 		<layout_panel name="open_btn_panel">
-			<button label="Obrir" name="open_btn" tool_tip="Obre per mostrar el contingut de l&apos;objecte."/>
+			<button label="Obre" name="open_btn" tool_tip="Obre per veure el contingut de l'objecte." />
 		</layout_panel>
-		<layout_panel name="pay_btn_panel">
-			<button label="Pagar" name="pay_btn" tool_tip="Obre la finestra Pagar. L'objecte ha de tenir un script de pagament perquè funcioni."/>
+		<layout_panel name="pay_btn_panel" >
+			<button label="Paga" name="pay_btn" tool_tip="Obre la finestra de pagament. Per pagar a un objecte, ha de tenir un script de pagament." />
 		</layout_panel>
 		<layout_panel name="buy_btn_panel">
-			<button label="Comprar" name="buy_btn" tool_tip="Obre la finestra Comprar. Cal que l'objecte estigui a la venda."/>
+			<button label="Compra" name="buy_btn" tool_tip="Obre la finestra de compra. Cal que l'objecte estigui en venda." />
 		</layout_panel>
 		<layout_panel name="details_btn_panel">
-			<button label="Detalls" name="details_btn" tool_tip="Obre la finestra Inspeccionar l&apos;objecte"/>
+			<button label="Detalls" name="details_btn" tool_tip="Obre la finestra d'inspecció de l'objecte." />
 		</layout_panel>
 	</layout_stack>
 </panel>

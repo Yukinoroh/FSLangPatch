@@ -25,7 +25,7 @@
 							<radar_list.columns name="has_notes" tool_tip="Notes de l'avatar"/>
 							<radar_list.columns label="Edat" name="age"/>
 							<radar_list.columns label="Temps" name="seen"/>
-							<radar_list.columns label="Distància" name="range"/>
+							<radar_list.columns label="Distància" name="range" width="72"/>
 						</radar_list>
 					</layout_panel>
 				</layout_stack>

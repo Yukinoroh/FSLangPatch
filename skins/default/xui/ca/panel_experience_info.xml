@@ -7,7 +7,7 @@
 					<text name="Location">Ubicació:</text>
 					<text name="LocationTextText">algun lloc</text>
 					<button label="Teletransporta" name="teleport_btn"/>
-					<button label="Mostra al mapa" name="map_btn"/>
+					<button label="Mostra al mapa" name="map_btn" width="112"/>
 				</layout_panel>
 				<layout_panel name="marketplace panel">
 					<text name="Location">Botiga del Marketplace:</text>

@@ -141,11 +141,11 @@
 			<check_box label="Mostra el límit màxim d'alçada per construir" name="FSRenderParcelSelectionToMaxBuildHeight"/>
 			<check_box label="Limita la distància de selecció (metres):" width="280" name="LimitSelectDistance"/>
 			<spinner name="MaxSelectDistance" tool_tip="Distància màxima permesa de selecció (en metres des de l'avatar [Per defecte: 128.000])"/>
-			<check_box label="Limita Distància de Desplaçament (metres):" width="280" name="LimitDragDistance"/>
+			<check_box label="Limita Distància Desplaçament (metres):" width="280" name="LimitDragDistance"/>
 			<spinner name="MaxDragDistance" tool_tip="Distància màxima permesa per a un desplaçament únic (metres des del punt de partida) [Per defecte: 48.000]"/>
 			<text name="RotationStepText1" left="23" width="260">Restringeix les rotacions a múltiples de:</text>
 			<spinner name="RotationStep" width="45" tool_tip="Totes les rotacions mitjançant l'eina de rotació estan restringides a múltiples del nombre indicat (1.0 per defecte)"/>
-			<text name="RotationStepText2">Graus si 'Fixa a la graella' inactiu</text>
+			<text name="RotationStepText2">graus, si no s'enganxa a Grilla</text>
 			<check_box name="FSUnlinkConfirmEnabled" width="400" label="Confirmació de supressió d'enllaç si el conjunt té almenys"/>
 			<text name="MinObjectsForUnlinkConfirmText2">objectes</text>
 			<check_box label="Utilitza l'antic funcionament de 'Posa aquest objecte a la venda'" tool_tip="Activar aquesta opció desarà directament la informació de venda de l'objecte en lloc de necessitar una confirmació." name="FSCommitForSaleOnChange_toggle"/>
@@ -160,14 +160,14 @@
 			<check_box label="Nou mòdul de textura de Firestorm a la finestra d'eines (cal reiniciar)" tool_tip="Si aquesta opció està activada, les eines d'edició de textures utilitzaran el flux de treball millorat de FS i permetran l'edició de textures Blinn-Phong i PBR." name="FSUseNewTexturePanel"/>
 		</panel>
 		<panel label="Pujades" name="UploadsTab">
-			<text name="title">Carpetes de destinació per a les pujades:</text>
+			<text name="title" width="328">Carpetes de destinació per a les pujades:</text>
 			<text name="title_sounds">Sons</text>
 			<text name="title_models">Models</text>
-			<text name="upload_help" Width="860" >Per canviar Carpeta Destinació, fes clic dret a sobre a l'inventari i selecciona
-" "
-"Per defecte per a:"
-			</text>
-			<button name="reset_default_folders" label="Reinicia les carpetes per defecte"/>
+			<text name="upload_help" width="704" >
+				Per canviar una carpeta de destinació, feu-hi clic amb el botó dret a l'inventari i tria
+			         "Utilitza com a predeterminada per a"
+		    </text>
+			<button name="reset_default_folders" label="Reinicia les carpetes per defecte" width="264"/>
 		</panel>
 	</tab_container>
 </panel>

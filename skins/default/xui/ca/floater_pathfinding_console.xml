@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater
+    positioning="cascading"
+    can_tear_off="false"
+    height="498"
+    layout="topleft"
+    name="floater_pathfinding_console"
+    help_topic="floater_pathfinding_console"
+    reuse_instance="true"
+    save_rect="true"
+    single_instance="true"
+    title="Visualització / prova de la cerca de camins"
+    width="240">
+  <floater.string name="no_havok">malla de navegació per a la cerca de camins</floater.string>
+	
+  <floater.string name="navmesh_viewer_status_unknown"></floater.string>
+  <floater.string name="navmesh_viewer_status_library_not_implemented">No es pot trobar la implementació de la biblioteca de cerca de camins.</floater.string>
+  <floater.string name="navmesh_viewer_status_region_not_enabled">Aquesta regió no està habilitada per a la cerca de camins.</floater.string>
+  <floater.string name="navmesh_viewer_status_region_loading">Esperant que la regió acabi de carregar-se.</floater.string>
+  <floater.string name="navmesh_viewer_status_checking_version">Comprovant l'estat de la malla de navegació.</floater.string>
+  <floater.string name="navmesh_viewer_status_downloading">Baixant la malla de navegació.</floater.string>
+  <floater.string name="navmesh_viewer_status_updating">La malla de navegació ha canviat al servidor. Baixant la malla de navegació més recent.</floater.string>
+  <floater.string name="navmesh_viewer_status_has_navmesh">S'ha baixat la malla de navegació més recent.</floater.string>
+  <floater.string name="navmesh_viewer_status_error">No s'ha pogut baixar correctament la malla de navegació.</floater.string>
+  <floater.string name="navmesh_simulator_status_unknown"></floater.string>
+  <floater.string name="navmesh_simulator_status_pending">La malla de navegació té canvis pendents.</floater.string>
+  <floater.string name="navmesh_simulator_status_building">La malla de navegació s'està construint.</floater.string>
+  <floater.string name="navmesh_simulator_status_some_pending">Algunes regions de la malla de navegació tenen canvis pendents.</floater.string>
+  <floater.string name="navmesh_simulator_status_some_building">Algunes regions de la malla de navegació s'estan construint.</floater.string>
+  <floater.string name="navmesh_simulator_status_pending_and_building">Algunes regions de la malla de navegació tenen canvis pendents i altres s'estan construint.</floater.string>
+  <floater.string name="navmesh_simulator_status_complete">La malla de navegació està actualitzada.</floater.string>
+  <floater.string name="pathing_unknown"></floater.string>
+  <floater.string name="pathing_library_not_implemented">No es pot trobar la implementació de la biblioteca de cerca de camins.</floater.string>
+  <floater.string name="pathing_region_not_enabled">Aquesta regió no està habilitada per a la cerca de camins.</floater.string>
+  <floater.string name="pathing_choose_start_and_end_points">Si us plau, tria els punts d'inici i de finalització.</floater.string>
+  <floater.string name="pathing_choose_start_point">Si us plau, tria el punt d'inici.</floater.string>
+  <floater.string name="pathing_choose_end_point">Si us plau, tria el punt de finalització.</floater.string>
+  <floater.string name="pathing_path_valid">El camí es mostra en taronja.</floater.string>
+  <floater.string name="pathing_path_invalid">No es pot trobar un camí entre els punts triats.</floater.string>
+  <floater.string name="pathing_error">S'ha produït un error durant la generació del camí.</floater.string>
+  <panel
+      name="pathfinding_console_main"
+      border="false"
+      bevel_style="none"
+      follows="left|top"
+      layout="topleft"
+      left="12"
+      top_pad="10"
+      height="61"
+      width="254">
+    <text
+        name="viewer_status_label"
+        height="13"
+        word_wrap="true"
+        use_ellipses="false"
+        type="string"
+        text_color="LabelTextColor"
+        length="1"
+        layout="topleft"
+        left="0"
+        top_pad="0"
+        width="214">
+      Estat del visor
+    </text>
+    <text
+        height="40"
+        word_wrap="true"
+        use_ellipses="false"
+        type="string"
+        text_color="PathfindingGoodColor"
+        length="1"
+        follows="left|top"
+        layout="topleft"
+        left="0"
+        name="pathfinding_viewer_status"
+        top_pad="8"
+        width="214">
+    </text>
+  </panel>
+  <panel
+      name="pathfinding_console_simulator"
+      border="false"
+      bevel_style="none"
+      follows="left|top"
+      layout="topleft"
+      left="12"
+      height="66"
+      width="214">
+    <text
+        name="simulator_status_label"
+        height="13"
+        word_wrap="true"
+        use_ellipses="false"
+        type="string"
+        text_color="LabelTextColor"
+        length="1"
+        layout="topleft"
+        left="0"
+        top_pad="5"
+        width="214">
+      Estat del simulador
+    </text>
+    <text
+        height="40"
+        word_wrap="true"
+        use_ellipses="false"
+        type="string"
+        text_color="PathfindingGoodColor"
+        length="1"
+        follows="left|top"
+        layout="topleft"
+        left="0"
+        name="pathfinding_simulator_status"
+        top_pad="8"
+        width="214">
+    </text>
+  </panel>
+		 
+  <view_border
+      bevel_style="none"
+      follows="top|left"
+      layout="topleft"
+      left="12"
+      top="182"
+      height="305"
+      width="213"
+      visible="true" />
+  <tab_container
+      follows="left|top"
+      layout="topleft"
+      tab_position="top"
+      name="view_test_tab_container"
+      left="12"
+      top="161"
+      height="328"
+      width="254">
+    <panel
+        border="false"
+        bevel_style="none"
+        follows="left|top"
+        layout="topleft"
+        name="view_panel"
+        label="Visualització">
+      <text
+          height="13"
+          word_wrap="true"
+          use_ellipses="false"
+          type="string"
+          text_color="LabelTextColor"
+          text_readonly_color="LabelDisabledColor"
+          name="show_label"
+          length="1"
+          follows="left|top"
+          layout="topleft"
+          top_pad="20"
+          left="12"
+          width="200">
+        Mostra:
+      </text>
+      <check_box
+          height="19"
+          label="Món"
+          layout="topleft"
+          name="show_world"
+          top_pad="4"
+          width="90" />
+      <check_box
+          height="19"
+          label="Només els movibles"
+          layout="topleft"
+          left="32"
+          name="show_world_movables_only"
+          top_pad="4"
+          width="90" />
+      <check_box
+          height="19"
+          label="Malla de navegació"
+          left="12"
+          layout="topleft"
+          name="show_navmesh"
+          top_pad="7"
+          width="90" />
+      <text
+          height="13"
+          word_wrap="true"
+          use_ellipses="false"
+          type="string"
+          text_color="LabelTextColor"
+          text_readonly_color="LabelDisabledColor"
+          name="show_walkability_label"
+          length="1"
+          follows="left|top"
+          layout="topleft"
+          left="32"
+          width="180">
+        Mostra el mapa de transitabilitat:
+      </text>
+      <combo_box
+          height="19"
+          layout="topleft"
+          left="32"
+          name="show_heatmap_mode"
+          top_pad="8"
+          width="156">
+        <combo_box.item
+            label="No ho mostris"
+            name="show_heatmap_mode_none"
+            value="0" />
+        <combo_box.item
+            label="Tipus de personatge A"
+            name="show_heatmap_mode_a"
+            value="1" />
+        <combo_box.item
+            label="Tipus de personatge B"
+            name="show_heatmap_mode_b"
+            value="2" />
+        <combo_box.item
+            label="Tipus de personatge C"
+            name="show_heatmap_mode_c"
+            value="3" />
+        <combo_box.item
+            label="Tipus de personatge D"
+            name="show_heatmap_mode_d"
+            value="4" />
+      </combo_box>
+      <check_box
+          height="19"
+          label="Transitables"
+          layout="topleft"
+          left="12"
+          name="show_walkables"
+          top_pad="10"
+          width="90" />
+      <check_box
+          height="19"
+          label="Volums de material"
+          layout="topleft"
+          name="show_material_volumes"
+          top_pad="4"
+          width="90" />
+      <check_box
+          height="19"
+          label="Obstacles estàtics"
+          layout="topleft"
+          name="show_static_obstacles"
+          top_pad="4"
+          width="90" />
+      <check_box
+          height="19"
+          label="Volums d'exclusió"
+          layout="topleft"
+          name="show_exclusion_volumes"
+          top_pad="4"
+          width="90" />
+      <check_box
+          height="19"
+          label="Pla de l'aigua"
+          layout="topleft"
+          name="show_water_plane"
+          top_pad="4"
+          width="90" />
+      <check_box
+          height="19"
+          label="Amb visió de raigs X"
+          layout="topleft"
+          name="show_xray"
+          top_pad="4"
+          width="90" />
+    </panel>
+    <panel
+        border="false"
+        bevel_style="none"
+        follows="left|top"
+        layout="topleft"
+        name="test_panel"
+        label="Camí de prova">
+      <text
+          height="14"
+          word_wrap="true"
+          use_ellipses="false"
+          type="string"
+          text_color="LabelTextColor"
+          text_readonly_color="LabelDisabledColor"
+          name="ctrl_click_label"
+          length="1"
+          left="12"
+          follows="left|top"
+          layout="topleft"
+          top_pad="20"
+          width="202">
+        Ctrl+clic per seleccionar el punt d'inici.
+      </text>
+      <text
+          height="14"
+          word_wrap="true"
+          use_ellipses="false"
+          type="string"
+          text_color="LabelTextColor"
+          text_readonly_color="LabelDisabledColor"
+          name="shift_click_label"
+          length="1"
+          follows="left|top"
+          layout="topleft"
+          top_pad="5"
+          width="202">
+        Majús+clic per seleccionar el punt de finalització.
+      </text>
+      <view_border
+          bevel_style="none"
+          follows="top|left"
+          layout="topleft"
+          height="0"
+          width="185"
+          top_pad="13"
+          visible="true" />
+      <text
+          height="14"
+          word_wrap="true"
+          use_ellipses="false"
+          type="string"
+          text_color="LabelTextColor"
+          text_readonly_color="LabelDisabledColor"
+          name="character_width_label"
+          length="1"
+          follows="left|top"
+          layout="topleft"
+          top_pad="14"
+          width="202">
+        Amplada del personatge
+      </text>
+      <slider
+          decimal_digits="1"
+          height="14"
+          increment="0.1"
+          layout="topleft"
+          follows="left|top"
+          max_val="2"
+          min_val="0.2"
+          name="character_width"
+          top_pad="5"
+          value="1"
+          width="145" />
+      <text
+          height="14"
+          word_wrap="false"
+          use_ellipses="false"
+          type="string"
+          text_color="LabelTextColor"
+          text_readonly_color="LabelDisabledColor"
+          name="character_width_unit_label"
+          length="1"
+          follows="left|top"
+          layout="topleft"
+          top_pad="-14"
+          left_pad="0"
+          width="20">
+        m
+      </text>
+      <text
+          height="14"
+          word_wrap="true"
+          use_ellipses="false"
+          type="string"
+          text_color="LabelTextColor"
+          text_readonly_color="LabelDisabledColor"
+          name="character_type_label"
+          length="1"
+          follows="left|top"
+          layout="topleft"
+          left_pad="-165"
+          top_pad="13"
+          width="202">
+        Tipus de personatge
+      </text>
+      <combo_box
+          follows="top|left"
+          layout="topleft"
+          height="19"
+          width="156"
+          top_pad="5"
+          name="path_character_type">
+        <combo_box.item
+            label="Cap"
+            name="path_character_type_none"
+            value="0" />
+        <combo_box.item
+            label="A"
+            name="path_character_type_a"
+            value="1" />
+        <combo_box.item
+            label="B"
+            name="path_character_type_b"
+            value="2" />
+        <combo_box.item
+            label="C"
+            name="path_character_type_c"
+            value="3" />
+        <combo_box.item
+            label="D"
+            name="path_character_type_d"
+            value="4" />
+      </combo_box>
+      <text
+          height="14"
+          word_wrap="true"
+          use_ellipses="false"
+          type="string"
+          text_color="PathfindingGoodColor"
+          length="1"
+          follows="left|top"
+          layout="topleft"
+          name="path_test_status"
+          top_pad="11"
+          width="202">
+      </text>
+      <button
+          follows="left|top"
+          height="22"
+          label="Neteja el camí"
+          layout="topleft"
+          name="clear_path"
+          top_pad="27"
+          width="112"/>
+    </panel>
+  </tab_container>
+</floater>
