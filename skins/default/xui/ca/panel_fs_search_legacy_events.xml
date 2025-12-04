@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <panel label="Esdeveniments" name="panel_ls_events">
 	<panel name="panel_ls_input">
-		<text name="search_text">
+		<text name="search_text" width="248">
 			Introdueix els termes de cerca:
 		</text>
 		<radio_group name="events_search_mode">
 			<radio_item label="Actuals i futurs" name="current"/>
 			<radio_item label="Per data" name="date"/>
 		</radio_group>
-		<combo_box name="events_category">
+		
+		<search_combo_box name="events_edit" width="600" />
+		<combo_box name="events_category" width="162">
 			<combo_box.item label="Qualsevol categoria" name="any"/>
 			<combo_box.item label="Debat" name="discussion"/>
 			<combo_box.item label="Esports" name="sports"/>

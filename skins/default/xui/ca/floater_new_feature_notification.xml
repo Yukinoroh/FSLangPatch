@@ -7,6 +7,17 @@
 		Ara podeu afegir imatges de previsualització als articles de l'inventari i veure una carpeta a la seva pròpia finestra.
 		Llegiu-ne més a [https://community.secondlife.com/blogs/entry/13637-new-features-inventory-item-preview-and-single-folder-view/ l'entrada del blog]
 	</floater.string>
+	
+	 <floater.string name="title_txt_gltf">
+Nous materials GLTF PBR compatibles
+    </floater.string>
+    <floater.string name="description_txt_gltf">
+Ara podeu utilitzar la compatibilitat amb materials ampliats amb la capacitat d'importar i editar materials de renderització física (PBR) GLTF.
+Per tal de donar suport a l'addició del format GLTF, algunes àrees del visor poden aparèixer més fosques del que és habitual.
+
+Més informació sobre [https://wiki.secondlife.com/wiki/PBR_Materials Physically Based Rendering (PBR)]
+    </floater.string>
+	
 	<text name="title_txt">
 		Nova funció
 	</text>

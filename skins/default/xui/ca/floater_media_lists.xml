@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <floater name="floatermedialists" title="Llistes de mèdia">
+	<floater.string name="EnterUrlAllow">
+		Introduïu el domini o l'URL per permetre sempre:
+	</floater.string>
+	<floater.string name="EnterUrlDeny">
+		Introduïu el domini o l'URL per no permetre mai:
+	</floater.string>
+	
 	<layout_stack name="lists_layout_stack">
 	<layout_panel name="whitelist_layout_panel">
+	
+	<scroll_list
+		name="whitelist">
+		<column label="Llista blanca" name="list" width="195" />
+	</scroll_list>
 	<text name="whitelist_text">
 		Dominis permesos:
 	</text>
@@ -21,8 +33,9 @@
 	<text name="blacklist_text">
 		Dominis blocats:
 	</text>
-	<scroll_list name="blacklist_list">
-		<column label="Llista negra" name="blacklist_col" />
+	
+	<scroll_list >
+		<column label="Llista negra" name="list" width="195" />
 	</scroll_list>
 	<layout_stack name="blacklist_buttons_layout_stack">
 	<layout_panel name="blacklist_buttons_panel_add">

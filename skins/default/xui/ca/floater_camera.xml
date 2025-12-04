@@ -30,7 +30,15 @@
 		</layout_stack>
 	</panel>
 	<panel name="preset_buttons_panel">
-		<button label="Posició..." name="camera_position_btn"/>
+		
+	<button
+        label="Posició..."
+        name="camera_position_btn">
+        <button.commit_callback
+          function="Floater.Show"
+          parameter="prefs_view_advanced" />
+    </button>
+				
 		<button name="save_preset_btn" tool_tip="Desar com a prereglatge"/>
 		<combo_box name="preset_combo">
 			<combo_box.item label="Utilitzar el prereglatge" name="Use preset"/>

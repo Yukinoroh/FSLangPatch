@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="Membres i rols" name="roles_tab">
+	<panel.string name="default_needs_apply_text">
+		El panell conté canvis no desats
+	</panel.string>
+	<panel.string name="want_apply_text">
+		Vols desar els canvis?
+	</panel.string>
+	<tab_container name="roles_tab_container">
+		<panel label="Membres" name="members_sub_tab" tool_tip="Membres">
+			<panel.string name="help_text">
+				Pots afegir i suprimir les funcions assignades a les persones.
+Pots seleccionar diverses persones prement Ctrl i fent clic als seus noms.
+			</panel.string>
+			<filter_editor label="Filtra els membres" name="filter_input"/>
+			<name_list name="member_list">
+				<name_list.columns label="Nom" name="name"/>
+				<name_list.columns label="Contribució" name="donated" relative_width="0.18"/>
+				<name_list.columns label="Estat" name="online"/>
+				<name_list.columns label="Títol" name="title"/>
+			</name_list>
+			<button label="Convida" name="member_invite"/>
+			<button label="Expulsa" name="member_eject"/>
+			<button label="Prohibeix" name="member_ban"/>
+			<button name="export_list" label="Exporta la llista" width="136"/>
+			<text name="member_list_selected_count_label">
+				[COUNT] membres seleccionats
+			</text>
+		</panel>
+		<panel label="Rols" name="roles_sub_tab" tool_tip="Pots crear diferents rols per als teus membres, com 'Oficials' o 'Convidats VIP'. Cada rol pot tenir diferents privilegis.">
+			<panel.string name="help_text">
+				Els rols defineixen els títols i privilegis assignats als membres del grup.
+Pots crear nous rols, canviar-los el nom o suprimir-los,
+i assignar diferents privilegis a cada rol.
+			</panel.string>
+			<panel.string name="cant_delete_role">
+				El rol '[ROLE]' no es pot suprimir.
+			</panel.string>
+			<text name="role_list_label">
+				Rols ([COUNT] de [MAX])
+			</text>
+			<text name="role_list_selected_count_label">
+				[COUNT] rols seleccionats
+			</text>
+			<scroll_list name="role_list">
+				<scroll_list.columns label="Nom" name="name"/>
+				<scroll_list.columns label="Títol" name="title"/>
+				<scroll_list.columns label="Membres" name="members"/>
+			</scroll_list>
+			
+			<button label="Nou Rol" name="role_create"/>
+			
+			<button label="Copia el Rol" name="role_copy" width="100" />
+			
+			<button width="128" label="Suprimeix el Rol" name="role_delete"/>
+			
+			
+<!-- Peu de pàgina de ROLS -->
+  
+          
+			
+			<text name="role_name_label">
+				Nom
+			</text>
+			
+			<line_editor name="role_name"/>
+			<text name="role_title_label">
+				Títol del rol
+			</text>
+			<line_editor name="role_title"/>
+			<check_box label="Mostra els membres" name="role_visible_in_list" tool_tip="Determina si els membres d'aquest rol seran visibles a la pestanya 'General' per als no membres del grup."/>
+			<text name="description_label">
+				Descripció
+			</text>
+			
+			
+			
+			<panel name="group_roles_layout_panel">
+				<text name="assigned_members_label">
+					Membre assignat
+				</text>
+			</panel>
+			<panel name="group_roles_layout_panel2">
+				<text name="allowed_abilities_label">
+					Privilegis permesos
+				</text>
+				<scroll_list name="role_allowed_actions" tool_tip="Per veure informació detallada sobre un privilegi, ves a la pestanya 'Privilegis'"/>
+			</panel>
+		</panel>
+		<panel label="Privilegis" name="actions_sub_tab" tool_tip="Aquí pots veure descripcions detallades de cada privilegi i quins rols i membres poden utilitzar-los.">
+			<panel.string name="help_text">
+				Aquesta pestanya mostra els privilegis i qui els pot utilitzar.
+			</panel.string>
+			<scroll_list name="action_list" tool_tip="Seleccioneu una capacitat per veure més detalls">
+				<scroll_list.columns label="Acció" name="action"/>
+				<scroll_list.columns label="Rols que permeten l'acció" name="roles"/>
+				<scroll_list.columns label="Membres" name="members"/>
+			</scroll_list>
+		</panel>
+		<panel
+     border="false"
+     height="303"
+     label="Residents exclosos"
+     layout="topleft"
+     left="0"
+     right="-1"
+     help_topic="roles_banlist_tab"
+     name="banlist_sub_tab"
+     class="panel_group_banlist_subtab"
+     tool_tip="Visualitza els residents exclosos d'aquest grup."
+     width="310">
+     <panel.string
+       name="help_text">
+       Qualsevol resident a la llista d'exclosos no podrà unir-se al grup.
+     </panel.string>
+     <panel.string
+       name="ban_count_template">
+       Recompte d'exclosos: [COUNT]/[LIMIT]
+     </panel.string>
+
+     <filter_editor
+       layout="topleft"
+       top="5"
+       left="5"
+       right="-5"
+       height="22"
+       search_button_visible="false"
+       follows="left|top|right"
+       label="Filtra la llista d'exclosos"
+       name="filter_input" />
+
+     <name_list
+         column_padding="0"
+         draw_heading="true"
+         height="110"
+         follows="left|top|right"
+         layout="topleft"
+         left="0"
+         right="-1F"
+         multi_select="true"
+         name="ban_list"
+         short_names="false"
+         sort_column="0"
+         name_column="name"
+         top_pad="5">
+       <name_list.columns
+        label="Resident"
+        name="name"
+        font.name="SANSSERIF_SMALL"
+        font.style="NORMAL"
+        relative_width="0.7" />
+       <name_list.columns
+        label="Data d'exclusió"
+        name="ban_date"
+        relative_width="0.3" />
+     </name_list>
+     <button
+       follows="top|left"
+       height="20"
+       label="Exclou el/s resident/s"
+       layout="topleft"
+       left="3"
+       name="ban_create"
+       tool_tip="Exclou residents del teu grup"
+       width="176" />
+     <button
+       follows="top|left"
+       height="20"
+       label="Elimina l'exclusió/exclusions"
+       layout="topleft"
+       left_pad="5"
+       name="ban_delete"
+       tool_tip="Treu l'exclusió als residents seleccionats del teu grup"
+       width="120" />
+     <button
+       follows="top|left"
+       height="20"
+       width="20"
+       image_overlay="Refresh_Off"
+       layout="topleft"
+       left_pad="5"
+       name="ban_refresh"
+       tool_tip="Actualitza la llista d'exclosos"
+       />
+     <text
+       type="string"
+       height="20"
+       left_pad="5"
+       follows="top|left|right"
+       layout="topleft"
+       name="ban_count"
+       use_ellipses="true"
+       right="-1">
+     </text>
+   </panel>
+
+
+		
+	</tab_container>
+	<panel name="members_footer">
+		<text name="static">
+			Títol assignat:
+		</text>
+		<text name="active_title_label">
+			(cap)
+		</text>
+	</panel>
+	<panel name="roles_header">
+		<text_editor name="role_action_description">
+			Aquest és el privilegi 'Expulsar membres del grup'. El propietari només pot ser expulsat per un altre propietari.
+		</text_editor>
+	</panel>
+</panel>
