@@ -1,7 +1,7 @@
-In this folder, please add official translation sources.
+In this folder, you will find some official translation sources.
 
-En aquesta carpeta, afegeix les fonts de traduccion oficials.
+En aquesta carpeta, trobaràs algunes fonts de traduccion oficials.
 
-Dans ce répertoire, ajoutez les sources de traductions officielles.
+Dans ce répertoire, vous trouverez quelques sources traductions officielles.
 
-Будь ласка, додайте до цієї папки офіційні джерела перекладу.
+У цій папці ви знайдете деякі офіційні джерела перекладів.
