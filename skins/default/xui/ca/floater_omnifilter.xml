@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<floater name="omnifilter" title="Editor de regles d'omnifiltre">
+	<floater.string name="OmnifilterNewNeedle">
+		NOVA REGLA
+	</floater.string>
+	<layout_stack name="needle_list_stack">
+		<layout_panel name="needle_list_layout">
+			<check_box name="enable_omnifilter" label="Activa l'omnifiltre" />
+			<fs_scroll_list name="needle_list">
+				<fs_scroll_list.columns name="enabled" label="Actiu" />
+				<fs_scroll_list.columns name="needle_name" label="Regla" />
+			</fs_scroll_list>
+			<button name="add_needle" label="Afegeix" />
+			<button name="remove_needle" label="Suprimeix" />
+		</layout_panel>
+		<layout_panel name="filter_log_layout">
+			<fs_scroll_list name="filter_log">
+				<fs_scroll_list.columns name="timestamp" label="Hora (SLT)" />
+				<fs_scroll_list.columns name="log_entry" label="Regla" />
+			</fs_scroll_list>
+		</layout_panel>
+	</layout_stack>
+	<panel name="panel_details">
+		<text name="needle_name_label" value="Nom de la regla" />
+		<text name="sender_name_label" value="Emissor" />
+		<combo_box name="sender_match_type">
+			<combo_item name="sender_exact">
+				<column name="longtext" label="Coincidència exacta" />
+			</combo_item>
+			<combo_item name="sender_substring">
+				<column name="longtext" label="Coincidència de subcadena" />
+			</combo_item>
+			<combo_item name="sender_regex">
+				<column name="longtext" label="Coincidència d'expressió regular" />
+			</combo_item>
+		</combo_box>
+		<text name="content_label" value="Contingut" />
+		<combo_box name="content_match_type">
+			<combo_item name="content_exact">
+				<column name="longtext" label="Coincidència exacta" />
+			</combo_item>
+			<combo_item name="content_substring">
+				<column name="longtext" label="Coincidència de subcadena" />
+			</combo_item>
+			<combo_item name="content_regex">
+				<column name="longtext" label="Coincidència d'expressió regular" />
+			</combo_item>
+		</combo_box>
+		<text name="region_name_label" value="Nom de la regió" />
+		<line_editor name="region_name" tool_tip="Nom de la regió d'origen. Només disponible per a les ofertes d'inventari." />
+		<text name="owner_label" tool_tip="Per a les invitacions de grup: l'UUID del grup. Per al xat d'objecte, el missatge del propietari, el xat de depuració o el xat directe: l'UUID de l'objecte. Per als missatges instantanis d'objecte: l'UUID del propietari de l'objecte. Per a tota la resta, l'UUID de l'avatar del remitent." value="Clau del propietari:" />
+		<text name="match_source_label" value="Coincidència d'origen:" />
+		<layout_stack name="buttons_stack">
+			<layout_panel name="buttons_group_1">
+				<button name="type_nearby" label="Xat local" tool_tip="Conversa pública habitual amb els avatars propers." />
+				<button name="type_im" label="IM" tool_tip="Missatges instantanis dels residents." />
+				<button name="type_group_im" label="Xat de grup" tool_tip="Conversa de grup entre residents." />
+			</layout_panel>
+			<layout_panel name="buttons_group_2">
+				<button name="type_group_notice" label="Notícia" tool_tip="Notícia de grup." />
+				<button name="type_invite" label="Invitació" tool_tip="Invitació de grup." />
+				<button name="type_object_chat" label="Xat d'objecte" tool_tip="Missatge proper provinent d'objectes." />
+			</layout_panel>
+			<layout_panel name="buttons_group_3">
+				<button name="type_object_im" label="IM d'objecte" tool_tip="Missatges instantanis provinents d'objectes." />
+				<button name="type_script_error" label="Error" tool_tip="Missatges de depuració provinents dels scripts." />
+				<button name="type_dialog" label="Diàleg" tool_tip="Coincideix amb els camps dels quadres de diàleg de l'script." />
+			</layout_panel>
+			<layout_panel name="buttons_group_4">
+				<button name="type_inventory_offer" label="Oferta" tool_tip="Coincideix amb els camps de les ofertes d'inventari." />
+				<button name="type_friendship" label="Amistat" tool_tip="Peticions per afegir a la llista d'amics provinents dels residents." />
+				<button name="type_lure" label="TP" tool_tip="Ofertes de teleportació proposades pels residents." />
+			</layout_panel>
+			<layout_panel name="buttons_group_5">
+				<button name="type_tp_request" label="Petició TP" tool_tip="Peticions dels residents per enviar-los una oferta de teleportació." />
+				<button name="type_load_url" label="Carrega URL" tool_tip="Peticions generades per script per visitar un lloc web." />
+			</layout_panel>
+		</layout_stack>
+		<text name="chat_replace_label" value="Substitueix el xat" />
+		<text name="button_reply_label" value="Selecc. el botó" />
+		<text name="text_box_reply_label" value="Selecc. quadre text" />
+	</panel>
+</floater>

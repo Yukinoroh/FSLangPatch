@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="experince_list_editor">
 	<panel.string name="loading">
 		S'està carregant...
@@ -18,10 +18,11 @@
 	<text name="text_name" right="188">
 		Llista d'experiències
 	</text>
+	<text name="text_count" left="175" />
 	<name_list name="experience_list">
-		<name_list.columns label="Nom" name="experience_name"/>
+		<name_list.columns label="Nom" name="experience_name" />
 	</name_list>
-	<button label="Afegeix" name="btn_add"/>
-	<button label="Esborra" name="btn_remove"/>
-	<button label="Perfil" name="btn_profile"/>
+	<button label="Afegeix" name="btn_add" />
+	<button label="Esborra" name="btn_remove" />
+	<button label="Perfil" name="btn_profile" />
 </panel>

@@ -1,58 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Alertes" name="popups">
-<tab_container name="tabs">
-	<panel label="Món" name="tab-world">
-		<check_box label="Quan gasto o rebo L$" name="notify_money_change_checkbox"/>
-		<check_box name="FSPaymentInfoInChat" label="Notificar transaccions de L$ al xat general en lloc d'una finestra emergent"/>
-		<check_box label="Notificar el canvi de versió del simulador en canviar de regió" name="FSShowServerVersionChangeNotice" tool_tip="Mostra un missatge si la versió del simulador canvia en teleportar-se o creuar una regió."/>
-		<check_box label="Consultar status.secondlifegrid.net per a les últimes notícies en iniciar sessió" name="AutoQueryGridStatus"/>
-		<check_box label="Activar les notificacions de Growl" name="notify_growl_checkbox"/>
-		<check_box label="Mostrar les notificacions de Growl fins i tot quan Firestorm estigui actiu" name="notify_growl_always_checkbox"/>
-		<check_box name="FSFilterGrowlKeywordDuplicateIMs" label="Filtrar MI duplicats si ja s'han mostrat com a part de les paraules clau"/>
-	</panel>
-	<panel label="Gent" name="tab-people">
-		<check_box label="Fer pampalluguejar Icona [APP_NAME] en rebre missatges nous si està minimitzat" name="FSFlashOnMessage"/>
-		<check_box label="També fer pampalluguejar la icona en rebre un missatge d'un objecte" name="FSFlashOnObjectIM" />
-		<check_box label="Avisar-me si algú canvia el seu nom de visualització" name="FSShowDisplayNameUpdateNotification"/>
-		<check_box label="Avisar-me si he bloquejat o desbloquejat algú" name="FSReportBlockToNearbyChat"/>
-		<text name="friends_logon_label">
+	<tab_container name="tabs">
+		<panel label="Món" name="tab-world">
+			<check_box label="Quan gasto o rebo L$" name="notify_money_change_checkbox" />
+			<check_box name="FSPaymentInfoInChat" label="Notificar transaccions de L$ al xat general en lloc d'una finestra emergent" />
+			<check_box label="Notificar el canvi de versió del simulador en canviar de regió" name="FSShowServerVersionChangeNotice" tool_tip="Mostra un missatge si la versió del simulador canvia en teleportar-se o creuar una regió." />
+			<check_box label="Consultar status.secondlifegrid.net per a les últimes notícies en iniciar sessió" name="AutoQueryGridStatus" />
+			<check_box label="Activar les notificacions de Growl" name="notify_growl_checkbox" />
+			<check_box label="Mostrar les notificacions de Growl fins i tot quan Firestorm estigui actiu" name="notify_growl_always_checkbox" />
+			<check_box name="FSFilterGrowlKeywordDuplicateIMs" label="Filtrar MI duplicats si ja s'han mostrat com a part de les paraules clau" />
+		</panel>
+		<panel label="Gent" name="tab-people">
+			<check_box label="Fer pampalluguejar Icona [APP_NAME] en rebre missatges nous si està minimitzat" name="FSFlashOnMessage" />
+			<check_box label="També fer pampalluguejar la icona en rebre un missatge d'un objecte" name="FSFlashOnObjectIM" />
+			<check_box label="Avisar-me si algú canvia el seu nom de visualització" name="FSShowDisplayNameUpdateNotification" />
+			<check_box label="Avisar-me si he bloquejat o desbloquejat algú" name="FSReportBlockToNearbyChat" />
+			<text name="friends_logon_label">
 			Quan els meus amics es connecten o desconnecten:
 		</text>
-		<check_box label="Com finestra emergent" width="170" name="friends_online_notify_checkbox"/>
-		<check_box name="OnlineOfflinetoNearbyChat" Width="168" label="A Consola Xat General"/>
-		<check_box label="Sol Historial Xat General" left_pad="-20" name="OnlineOfflinetoNearbyChatHistory"/>
-	</panel>
-	<panel label="Objectes i scripts" name="tab-objects">
-		<check_box label="Fer pampalluguejar la icona de l'aplicació en rebre un diàleg d'script si [APP_NAME] està minimitzat" name="FSFlashOnScriptDialog"/>
-		<check_box label="Mostrar notificacions de col·lisió al xat general" name="FSCollisionMessagesInChat"/>
-		<check_box label="Informar dels errors d'script a:" name="show_script_errors"/>
-		<radio_group name="show_script_errors_location">
-			<radio_item label="Xat general" name="script_0"/>
-			<radio_item label="Finestra separada" name="script_1"/>
-		</radio_group>
-		<check_box label="Quan les regions canvien el recompte total d'scripts:" name="FSReportTotalScriptCountChanges"/>
-		<spinner name="FSReportTotalScriptCountChangesThreshold" tool_tip="Llindar de canvi en el recompte total d'scripts abans de notificar [Per defecte: 100]"/>
-		<check_box label="Informar de col·lisions d'script al canal:" name="FSReportCollisionMessages"/>
-		<spinner name="FSReportCollisionMessagesChannel" tool_tip="Canal utilitzat per a notificar missatges de col·lisió en scripts [Per defecte: -25000]"/>
-	</panel>
-	<panel label="Inventari" name="tab-inventory">
-		<check_box label="Quan he pagat per una càrrega" name="FSShowUploadPaymentToast" />
-		<check_box label="Quan s'ha creat un punt de referència" name="landmark_created_checkbox"/>
-		<check_box label="Desactivar la notificació 'Objecte retornat al vostre inventari'" name="FSDisableReturnObjectNotification"/>
-		<check_box label="Desar el nom del fitxer de les captures a l'historial del xat" name="FSLogSnapshotsToLocal"/>
-		<check_box label="Notificar si es reben molts elements d'objectes ràpidament" name="FSNotifyIncomingObjectSpam" />
-		<check_box label="Notificar si es reben molts elements d'altres residents ràpidament" name="FSNotifyIncomingObjectSpamFrom" />
-		<slider name="FSOfferThrottleMaxCount" label="Llindar d'elements rebuts:" tool_tip="Estableix el llindar d'elements rebuts en 10 segons. Per defecte és 5" />
-	</panel>
-	<panel label="Alertes" name="tab-alerts">
-		<text name="show_label" tool_tip="Llista d'alertes al visor. Marqueu la casella de l'esquerra per activar una alerta, desmarqueu-la per amagar-la.">
+			<check_box label="Com finestra emergent" width="596" name="friends_online_notify_checkbox" />
+			<check_box name="OnlineOfflinetoNearbyChat" Width="168" label="A Consola Xat General" />
+			<check_box label="Sol Historial Xat General" left_pad="-20" name="OnlineOfflinetoNearbyChatHistory" />
+		</panel>
+		<panel label="Objectes i scripts" name="tab-objects">
+			<check_box label="Fer pampalluguejar la icona de l'aplicació en rebre un diàleg d'script si [APP_NAME] està minimitzat" name="FSFlashOnScriptDialog" />
+			<check_box label="Mostrar notificacions de col·lisió al xat general" name="FSCollisionMessagesInChat" />
+			<check_box label="Informar dels errors d'script a:" name="show_script_errors" />
+			<radio_group name="show_script_errors_location">
+				<radio_item label="Xat general" name="script_0" />
+				<radio_item label="Finestra separada" name="script_1" />
+			</radio_group>
+			<check_box label="Quan les regions canvien el recompte total d'scripts:" name="FSReportTotalScriptCountChanges" />
+			<spinner name="FSReportTotalScriptCountChangesThreshold" tool_tip="Llindar de canvi en el recompte total d'scripts abans de notificar [Per defecte: 100]" />
+			<check_box label="Informar de col·lisions d'script al canal:" name="FSReportCollisionMessages" />
+			<spinner name="FSReportCollisionMessagesChannel" tool_tip="Canal utilitzat per a notificar missatges de col·lisió en scripts [Per defecte: -25000]" />
+		</panel>
+		<panel label="Inventari" name="tab-inventory">
+			<check_box label="Quan he pagat per una càrrega" name="FSShowUploadPaymentToast" />
+			<check_box label="Quan s'ha creat un punt de referència" name="landmark_created_checkbox" />
+			<check_box label="Desactivar la notificació 'Objecte retornat al vostre inventari'" name="FSDisableReturnObjectNotification" />
+			<check_box label="Desar el nom del fitxer de les captures a l'historial del xat" name="FSLogSnapshotsToLocal" />
+			<check_box label="Notificar si es reben molts elements d'objectes ràpidament" name="FSNotifyIncomingObjectSpam" />
+			<check_box label="Notificar si es reben molts elements d'altres residents ràpidament" name="FSNotifyIncomingObjectSpamFrom" />
+			<slider name="FSOfferThrottleMaxCount" label="Llindar d'elements rebuts:" tool_tip="Estableix el llindar d'elements rebuts en 10 segons. Per defecte és 5" />
+		</panel>
+		<panel label="Alertes" name="tab-alerts">
+			<text name="show_label" tool_tip="Llista d'alertes al visor. Marqueu la casella de l'esquerra per activar una alerta, desmarqueu-la per amagar-la.">
 			Alertes que es poden mostrar o amagar:
 		</text>
-		<filter_editor label="Filtre d'alertes" name="popup_filter" tool_tip="Introduïu un terme de cerca. Els resultats es mostraran per a coincidències parcials de text complet."/>
-		<scroll_list name="all_popups">
-			<column label="Mostra" name="alert_enabled_check"/>
-			<column label="Alerta" name="alert_label"/>
-		</scroll_list>
-	</panel>
-</tab_container>
+			<text name="dont_show_label">No mostris mai:</text>
+		</panel>
+	</tab_container>
 </panel>

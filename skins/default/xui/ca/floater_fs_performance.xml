@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="performance" title="Millorar el rendiment gràfic">
 	<floater.string name="frame_stats">
 		Imatges: [TOT_FRAME_TIME]ms - Escena:[SCENERY_FRAME_PCT]% Avatars:[AV_FRAME_PCT]% UI:[UI_FRAME_PCT]% Huds:[HUDS_FRAME_PCT]% Permutació:[SWAP_FRAME_PCT]% Tasques:[IDLE_FRAME_PCT]%
@@ -49,9 +49,9 @@
 			<spinner name="target_fps" tool_tip="La freqüència d'imatges objectiu desitjada. El visor intentarà aconseguir-la ajustant dinàmicament els paràmetres gràfiques." />
 			<button label="Iniciar" label_selected="Aturar" name="AutoTuneFPS" tool_tip="El visor intentarà ajustar els paràmetres per aconseguir la freqüència objectiu." width="72" />
 			<check_box label="Continu" name="AutoTuneContinuous" tool_tip="El visor ajustarà contínuament la configuració per assolir la freqüència objectiu, tret que ja l'hagi assolit, fins i tot amb aquesta finestra tancada. Quan està desactivat aquesta opció, si fas clic al botó «Ajust automàtic», la configuració només s'ajustarà una vegada." width="64" />
-			<button name="PrefSaveButton" tool_tip="Desar com a per defecte aquesta configuració."/>
-			<button name="PrefLoadButton" tool_tip="Carregar la configuració desada."/>
-			<button tool_tip="Recarregar els paràmetres gràfics recomanats per a aquest ordinador." name="Defaults"/>
+			<button name="PrefSaveButton" tool_tip="Desar com a per defecte aquesta configuració." />
+			<button name="PrefLoadButton" tool_tip="Carregar la configuració desada." />
+			<button tool_tip="Recarregar els paràmetres gràfics recomanats per a aquest ordinador." name="Defaults" />
 			<text name="settings_desc">
 				Estratègia d'afinació
 			</text>

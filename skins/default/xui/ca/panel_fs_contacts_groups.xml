@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="groups">
-	<button label="MI/Truca" name="chat_btn" tool_tip="Obre una finestra de conversa"/>
-	<button label="Informació" name="info_btn"/>
-	<button label="Títols" name="titles_btn"/>
-	<button label="Activa" name="activate_btn"/>
-	<button label="Abandona" name="leave_btn"/>
-	<button label="Crea..." name="create_btn"/>
-	<button label="Cerca..." name="search_btn"/>
-	<button label="Convida..." name="invite_btn"/>
+	<button label="MI/Truca" name="chat_btn" tool_tip="Obre una finestra de conversa" />
+	<button label="Informació" name="info_btn" />
+	<button label="Títols" name="titles_btn" />
+	<button label="Activa" name="activate_btn" />
+	<button label="Pin" name="favorite_btn" tool_tip="Afegeix o elimina un grup dels preferits" />
+	<button label="Abandona" name="leave_btn" />
+	<button label="Crea..." name="create_btn" />
+	<button label="Cerca..." name="search_btn" />
+	<button label="Convida..." name="invite_btn" />
 </panel>

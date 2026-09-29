@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="contact_sets_panel">
 	<panel name="contact_sets_buttons_panel">
 		<menu_button name="contact_sets_gear_btn" tool_tip="Accions per a la persona o grup seleccionat" />
 		<menu_button name="contact_sets_plus_btn" tool_tip="Afegeix un grup o un usuari" />
 		<menu_button name="contact_sets_remove_btn" tool_tip="Suprimeix el grup o l'usuari" />
+		<filter_editor label="Filtra persones" name="contact_sets_filter_input" />
 	</panel>
 </panel>

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Pujades" name="uploads">
-	<text name="title" width="384">
+	<text name="title" width="654">
 		Carpetes de destinació actuals per a les pujades
 	</text>
 	<text name="title_models">
@@ -15,6 +15,7 @@
 	<text name="title_model">
 		Models
 	</text>
+	<text name="title_pbr">Materials PBR</text>
 	<text name="upload_help">
 		Per modificar una carpeta de destinació, fes clic dret sobre aquesta carpeta a l’inventari i tria
  "Utilitza com a per defecte per a"

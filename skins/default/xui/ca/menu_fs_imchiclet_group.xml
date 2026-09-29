@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <menu name="IMChiclet Group Menu">
 	<menu_item_call label="Perfil del grup" name="Show Profile" />
 	<menu_item_call label="Mostra la sessió" name="Chat" />

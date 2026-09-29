@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel label="Grups" name="panel_dir_groups">
+	<button tool_tip="Pàgina anterior" name="prev_btn" />
+	<button tool_tip="Pàgina següent" name="next_btn" />
+	<string name="searching_text">
+		Cerca en curs...
+	</string>
+	<string name="not_found_text">
+		Cap resultat.
+	</string>
+	<string name="found_text">
+		[COUNT] trobat(s).
+	</string>
+	<text name="find">
+		Termes de cerca:
+	</text>
+	<check_box label="Inclou els grups d'adults" name="incmature" />
+	<combo_box name="groups_maturity">
+		<combo_box.item label="General" name="Desired_PG" />
+		<combo_box.item label="General i Moderat" name="Desired_Mature" />
+		<combo_box.item label="General, Moderat, Adult" name="Desired_Adult" />
+	</combo_box>
+	<scroll_list name="results">
+		<column label="Nom" name="name" dynamicwidth="true" />
+		<column label="Membres" name="members" />
+	</scroll_list>
+</panel>

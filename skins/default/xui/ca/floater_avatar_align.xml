@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<floater name="avatar_align" title="Brúixola">
+	<button name="btn_rotate_left_10" tool_tip="Gira el teu avatar 10° cap a l'esquerra" />
+	<button name="btn_rotate_left_1" tool_tip="Gira el teu avatar 1° cap a l'esquerra" />
+	<button name="btn_rotate_right_1" tool_tip="Gira el teu avatar 1° cap a la dreta" />
+	<button name="btn_rotate_right_10" tool_tip="Gira el teu avatar 10° cap a la dreta" />
+	<button name="btn_rotate_left_90" tool_tip="Gira el teu avatar 90° cap a l'esquerra" />
+	<button name="btn_rotate_left_45" tool_tip="Gira el teu avatar 45° cap a l'esquerra" />
+	<button name="btn_rotate_right_45" tool_tip="Gira el teu avatar 45° cap a la dreta" />
+	<button name="btn_rotate_right_90" tool_tip="Gira el teu avatar 90° cap a la dreta" />
+	<button name="btn_nearest" label="Cap al punt cardinal més proper" tool_tip="Gira el teu avatar cap al punt cardinal més proper" />
+	<button name="btn_avatar" label="De cara a l'avatar més proper" tool_tip="Gira't cap a l'avatar més proper" />
+</floater>

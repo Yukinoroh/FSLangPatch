@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="block by name" title="Bloca l'objecte pel nom">
 	<text name="message">
 		Bloca l'objecte:
@@ -9,5 +9,6 @@
 	<text name="note">
 		* Només es bloquen els missatges de l'objecte, no els sons
 	</text>
-	<button label="Cancel·la" name="Cancel"/>
+	<button label="D'acord" name="OK" />
+	<button label="Cancel·la" name="Cancel" />
 </floater>

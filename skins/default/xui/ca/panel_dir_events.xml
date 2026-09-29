@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel label="Esdeveniments" name="panel_dir_events">
+	<string name="searching_text">
+		Cerca en curs...
+	</string>
+	<string name="not_found_text">
+		Cap resultat.
+	</string>
+	<string name="found_text">
+		[COUNT] trobat(s).
+	</string>
+	<text name="find">
+		Termes de cerca:
+	</text>
+	<combo_box name="category_combo">
+		<combo_item name="All" label="Totes les categories" />
+		<combo_item name="Discussion" label="Discussió" />
+		<combo_item name="Sports" label="Esports" />
+		<combo_item name="LiveMusic" label="Música en directe" />
+		<combo_item name="LiveDJ" label="DJ en directe" />
+		<combo_item name="Commercial" label="Comercial" />
+		<combo_item name="Nightlife/Entertainment" label="Vida nocturna/Entreteniment" />
+		<combo_item name="Games/Contests" label="Jocs/Concursos" />
+		<combo_item name="Pageants" label="Concursos de bellesa" />
+		<combo_item name="Education" label="Educació" />
+		<combo_item name="ArtsandCulture" label="Arts i Cultura" />
+		<combo_item name="Charity/SupportGroups" label="Organitzacions benèfiques / Grups de suport" />
+		<combo_item name="Miscellaneous" label="Diversos" />
+	</combo_box>
+	<icon tool_tip="General" name="rating_icon_general" />
+	<icon tool_tip="Moderat" name="rating_icon_moderate" />
+	<icon tool_tip="Adult" name="rating_icon_adult" />
+	<scroll_list name="results">
+		<column dynamicwidth="true" label="Nom" name="name" />
+		<column label="Hora (PT)" name="date" sort="time" width="106" />
+		<column label="Hora" name="time" width="-1" />
+	</scroll_list>
+	<button tool_tip="Pàgina anterior" name="prev_btn" />
+	<button tool_tip="Pàgina següent" name="next_btn" />
+	<radio_group name="date_mode">
+		<radio_item name="current" label="En curs &amp; propers" />
+		<radio_item name="date" label="Data" />
+	</radio_group>
+	<button label="&lt;&lt;" label_selected="&lt;&lt;" name="back_btn" tool_tip="Torna al dia anterior" />
+	<button label="&gt;&gt;" label_selected="&gt;&gt;" name="forward_btn" tool_tip="Avança un dia" />
+</panel>

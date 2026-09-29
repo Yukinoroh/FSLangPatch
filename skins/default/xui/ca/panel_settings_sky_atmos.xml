@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Atmosfera i llums" name="panel_settings_sky_atmos">
 	<string name="hdr_string">Escala HDR:</string>
 	<string name="brightness_string">Lluminositat:</string>
@@ -47,7 +47,7 @@
 					<text name="probe_ambiance_label" tool_tip="Control de la irradiància. Si és diferent de zero, activa el model d'il·luminació HDR.">
 						Ambient de la sonda de reflexió (HDR):
 					</text>
-					<slider name="probe_ambiance" tool_tip="Intensitat de la il·luminació indirecta basada en l'entorn. A zero, l'escala HDR es converteix en Lluminositat"/>
+					<slider name="probe_ambiance" tool_tip="Intensitat de la il·luminació indirecta basada en l'entorn. A zero, l'escala HDR es converteix en Lluminositat" />
 					<text name="scene_gamma_label">
 						Gamma de l'escena:
 					</text>

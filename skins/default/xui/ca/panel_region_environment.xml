@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Entorn" name="panel_env_info">
 	<string name="str_label_use_default">
 		Utilitza la configuració per defecte
@@ -47,9 +47,9 @@
 							<text name="select_environment_label">
 								Selecciona l'entorn
 							</text>
-							<button label="Utilitza l'inventari" name="btn_select_inventory"/>
-							<button label="Personalitza" name="btn_edit"/>
-							<check_box label="Propietari(a) pot personalitzar" name="chk_allow_override"/>
+							<button label="Utilitza l'inventari" name="btn_select_inventory" />
+							<button label="Personalitza" name="btn_edit" />
+							<check_box label="Propietari(a) pot personalitzar" name="chk_allow_override" />
 						</layout_panel>
 						<layout_panel name="pnl_environment_length">
 							<text name="day_settings_label">
@@ -73,30 +73,33 @@
 				<layout_panel name="pnl_environment_altitudes">
 					<panel name="pnl_alt1">
 						<text name="txt_alt1">
-							Cel [INDEX]&#xA;[ALTITUDE] m
+							Cel [INDEX]
+[ALTITUDE] m
 						</text>
 						<line_editor name="edt_invname_alt1">
 							Desconegut
 						</line_editor>
-						<settings_drop_target name="sdt_alt1" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a cel actual."/>
+						<settings_drop_target name="sdt_alt1" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a cel actual." />
 					</panel>
 					<panel name="pnl_alt2">
 						<text name="txt_alt2">
-							Cel [INDEX]&#xA;[ALTITUDE] m
+							Cel [INDEX]
+[ALTITUDE] m
 						</text>
 						<line_editor name="edt_invname_alt2">
 							Desconegut
 						</line_editor>
-						<settings_drop_target name="sdt_alt2" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a cel actual."/>
+						<settings_drop_target name="sdt_alt2" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a cel actual." />
 					</panel>
 					<panel name="pnl_alt3">
 						<text name="txt_alt3">
-							Cel [INDEX]&#xA;[ALTITUDE] m
+							Cel [INDEX]
+[ALTITUDE] m
 						</text>
 						<line_editor name="edt_invname_alt3">
 							Desconegut
 						</line_editor>
-						<settings_drop_target name="sdt_alt3" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a cel actual."/>
+						<settings_drop_target name="sdt_alt3" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a cel actual." />
 					</panel>
 					<text follows="top|left" name="sky_altitudes_label">
 						Altituds del cel
@@ -108,7 +111,7 @@
 						<line_editor name="edt_invname_ground">
 							Desconegut
 						</line_editor>
-						<settings_drop_target name="sdt_ground" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a cel a nivell de sòl."/>
+						<settings_drop_target name="sdt_ground" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a cel a nivell de sòl." />
 					</panel>
 					<panel name="pnl_water">
 						<text name="txt_water">
@@ -117,9 +120,9 @@
 						<line_editor name="edt_invname_water">
 							Desconegut
 						</line_editor>
-						<settings_drop_target name="sdt_water" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a aigua actual."/>
+						<settings_drop_target name="sdt_water" tool_tip="Arrossega un paràmetre de l'inventari a aquesta zona per seleccionar-lo com a aigua actual." />
 					</panel>
-					<button label="Reinicia" name="btn_rst_altitudes" tool_tip="Restaura les altituds per defecte."/>
+					<button label="Reinicia" name="btn_rst_altitudes" tool_tip="Restaura les altituds per defecte." />
 				</layout_panel>
 			</layout_stack>
 		</layout_panel>

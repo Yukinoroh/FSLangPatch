@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<floater name="floaterpreferencesviewadvanced" title="Posició de la Càmera" width="288">
-	<text name="camera_offset_lbl" width="208">Desplaçament de la càmera:</text>
+<?xml version='1.0' encoding='utf-8'?>
+<floater name="floaterpreferencesviewadvanced" title="Posició de la Càmera" width="438">
+	<text name="camera_offset_lbl" width="610">Desplaçament de la càmera:</text>
 	<text name="focus_offset_lbl" width="184">Desplaçament del Focus:</text>
 	<text name="offset_scale_lbl" width="288">Escala de desplaçament de la càmera:</text>
-	<button label="Desa com a..." name="save_preset_btn" width="125"/>
-	<button label="Tanca" name="close_btn" width="125"/>
+	<button label="Desa com a..." name="save_preset_btn" width="125" />
+	<button label="Tanca" name="close_btn" width="125" />
 </floater>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="env_adjust_snapshot" title="Il·luminació personalitzada">
 	<string name="hdr_string">Escala HDR :</string>
 	<string name="brightness_string">Brillantor :</string>
@@ -16,7 +16,7 @@
 					<text name="blue_density_lbl">
 						Densitat de blau :
 					</text>
-					<button label="Reinicialitzar" tool_tip="Tancar i tornar al medi ambient compartit" name="btn_reset"/>
+					<button label="Reinicialitzar" tool_tip="Tancar i tornar al medi ambient compartit" name="btn_reset" />
 					<text name="sun_color_lbl">
 						Sol :
 					</text>
@@ -44,7 +44,7 @@
 						Mida dels núvols :
 					</text>
 					<text name="reflection_probe_ambiance_label">Ambient de la sonda de reflexió :</text>
-					<slider name="probe_ambiance" tool_tip="La intensitat de la il·luminació indirecta en funció del medi ambient. A zero, l'escala HDR esdevé Brillantor."/>
+					<slider name="probe_ambiance" tool_tip="La intensitat de la il·luminació indirecta en funció del medi ambient. A zero, l'escala HDR esdevé Brillantor." />
 					<text name="scene_gamma_label">
 						Brillantor :
 					</text>
@@ -59,7 +59,7 @@
 					<text name="sun_elevation_label">
 						Elevació :
 					</text>
-					<check_box label="Mostrar la guia" name="sunbeacon"/>
+					<check_box label="Mostrar la guia" name="sunbeacon" />
 					<text name="scale_label">
 						Escala :
 					</text>
@@ -83,7 +83,7 @@
 					<text name="moon_elevation_label">
 						Elevació :
 					</text>
-					<check_box label="Mostrar la guia" name="moonbeacon"/>
+					<check_box label="Mostrar la guia" name="moonbeacon" />
 				</layout_panel>
 			</layout_stack>
 		</layout_panel>

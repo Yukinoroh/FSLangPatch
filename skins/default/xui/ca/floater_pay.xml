@@ -1,10 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="Give Money">
 	<string name="payee_group">Paga a un grup</string>
 	<string name="payee_resident">Paga a un resident</string>
 	<text name="payee_name">Nom de Prova per a verificació</text>
+	<button label="1 L$" label_selected="1 L$" name="fastpay 1" />
+	<button label="5 L$" label_selected="5 L$" name="fastpay 5" />
+	<button label="10 L$" label_selected="10 L$" name="fastpay 10" />
+	<button label="20 L$" label_selected="20 L$" name="fastpay 20" />
 	<text name="amount text">O introdueix una quantitat:</text>
 	<text name="payment_message_label">Missatge (opcional):</text>
-	<button label="Paga" label_selected="Paga" name="pay btn"/>
-	<button label="Cancel·la" label_selected="Cancel·la" name="cancel btn"/>
+	<button label="Paga" label_selected="Paga" name="pay btn" />
+	<button label="Cancel·la" label_selected="Cancel·la" name="cancel btn" />
 </floater>

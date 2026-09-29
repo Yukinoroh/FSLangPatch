@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<floater name="splash_screen_settings" title="Paràmetres de la pantalla d'inici">
+	<text name="description">
+		Configura aquí les opcions de visualització de la pantalla d'inici. Aquests paràmetres s'aplicaran després del proper reinici del client.
+	</text>
+	<text name="section_visibility">
+		Visibilitat de les seccions:
+	</text>
+	<check_box label="Amaga la barra superior" name="hide_top_bar" />
+	<check_box label="Amaga la secció dels blogs" name="hide_blogs" />
+	<check_box label="Amaga les destinacions" name="hide_destinations" />
+	<text name="section_accessibility">
+		Opcions d'accessibilitat:
+	</text>
+	<check_box label="Activa el mode en escala de grisos" name="use_gray_mode" />
+	<check_box label="Activa el mode d'alt contrast" name="use_high_contrast" />
+	<check_box label="Activa el mode &quot;TOT EN MAJÚSCULES&quot;" name="use_all_caps" />
+	<check_box label="Utilitza tipus de lletra més grans" name="use_larger_fonts" />
+	<check_box label="Desactiva els efectes de transparència" name="no_transparency" />
+</floater>

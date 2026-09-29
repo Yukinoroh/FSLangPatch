@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="buy land" title="Compra de terreny">
 	<floater.string name="can_resell">Es poden revendre.</floater.string>
 	<floater.string name="can_not_resell">No es poden revendre.</floater.string>
@@ -69,7 +69,7 @@ Accepta [AMOUNT2] objectes
 	<text name="changeable_clause">Fusió i subdivisió autorisées.</text>
 	<text name="covenant_text">Has d'accepter el conveni del domini :</text>
 	<text_editor name="covenant_editor">Carregant...</text_editor>
-	<check_box label="Accepto els termes del conveni redactat damunt" name="agree_covenant"/>
+	<check_box label="Accepto els termes del conveni redactat damunt" name="agree_covenant" />
 	<text name="info_parcel_label">Terreny :</text>
 	<text name="info_parcel">Scotopteryx 138,204</text>
 	<text name="info_size_label">Superfície :</text>
@@ -82,13 +82,13 @@ Venut amb els objectes
 	</text>
 	<text name="info_action">Comprar aquest terreny serà :</text>
 	<text name="error_message">S'ha produït un error.</text>
-	<button label="Anar al lloc web" name="error_web"/>
+	<button label="Anar al lloc web" name="error_web" />
 	<text name="account_action">Necessitaràs una subscripció premium.</text>
 	<text name="account_reason">Només els membres premium poden tenir un terreny.</text>
 	<combo_box name="account_level">
-		<combo_box.item label="US$9.95/més, facturats mensualment" name="US$9.95/month,billedmonthly"/>
-		<combo_box.item label="US$7.50/més, facturats trimestralment" name="US$7.50/month,billedquarterly"/>
-		<combo_box.item label="US$6.00/més, facturat anualment" name="US$6.00/month,billedannually"/>
+		<combo_box.item label="US$9.95/més, facturats mensualment" name="US$9.95/month,billedmonthly" />
+		<combo_box.item label="US$7.50/més, facturats trimestralment" name="US$7.50/month,billedquarterly" />
+		<combo_box.item label="US$6.00/més, facturat anualment" name="US$6.00/month,billedannually" />
 	</combo_box>
 	<text name="land_use_action">Augmenta el potencial d'ús del terreny per només 40 US$ / més.</text>
 	<text name="land_use_reason">
@@ -101,7 +101,7 @@ Aquest terreny és de 512 m² de superfície.
 	<line_editor name="currency_amt">1000</line_editor>
 	<text name="currency_est">Per aproximadament [LOCAL_AMOUNT]</text>
 	<text name="currency_balance">Tens 2100 L$.</text>
-	<check_box label="Suprimir [AMOUNT] m² de la contribució al grup." name="remove_contribution"/>
-	<button label="Comprar" name="buy_btn"/>
-	<button label="Anul·lar" name="cancel_btn"/>
+	<check_box label="Suprimir [AMOUNT] m² de la contribució al grup." name="remove_contribution" />
+	<button label="Comprar" name="buy_btn" />
+	<button label="Anul·lar" name="cancel_btn" />
 </floater>

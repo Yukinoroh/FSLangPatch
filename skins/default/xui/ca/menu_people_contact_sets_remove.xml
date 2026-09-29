@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <toggleable_menu name="menu_people_contact_sets_remove">
 	<menu_item_call label="Elimina el conjunt..." name="remove_set" />
 	<menu_item_call label="Elimina el contacte..." name="remove_contact" />
 	<menu_item_call label="Elimina el pseudònim..." name="remove_alias" />
 	<menu_item_call label="Elimina el nom de visualització..." name="remove_display_name" />
+	<menu_item_call label="Mou el contacte" name="move_contact" />
 </toggleable_menu>

@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="incoming call" title="Trucada entrant">
-	<floater.string name="lifetime">
-		5
-	</floater.string>
 	<floater.string name="localchat">
 		Xat de veu local
 	</floater.string>
@@ -24,10 +21,10 @@
 	<floater.string name="VoiceInviteQuestionDefault">
 		Vols sortir del xat «[CURRENT_CHAT]» i unir-te a aquest xat de veu?
 	</floater.string>
+	<button label="Contesta" label_selected="Contesta" name="Accept" />
+	<button label="Ignora" label_selected="Ignora" name="Reject" />
+	<button label="Inicia MI" name="Start IM" />
 	<text name="question">
 		Si contestes, abandonaràs el xat de veu actual.
 	</text>
-	<button label="Contesta" label_selected="Contesta" name="Accept"/>
-	<button label="Ignora" label_selected="Ignora" name="Reject"/>
-	<button label="Inicia MI" name="Start IM"/>
 </floater>

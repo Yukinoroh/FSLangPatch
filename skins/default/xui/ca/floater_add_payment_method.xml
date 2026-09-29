@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="floater_add_payment_method">
 	<panel name="wrapper_panel">
 		<text name="title_txt">

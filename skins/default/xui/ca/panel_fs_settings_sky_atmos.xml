@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Atmosfera" name="panel_fs_settings_sky_atmos">
 	<string name="hdr_string">Escala HDR:</string>
 	<string name="brightness_string">Brillantor:</string>
 	<string name="hdr_tooltip">Intensitat dels efectes d'il·luminació com ara cels lluminosos realistes i exposició dinàmica. 1.0 és el valor per defecte, 0 està desactivat, els valors entre 0 i 1 barregen els efectes ambientals i HDR.</string>
 	<panel name="P_Atmosphere_Header">
-		<text name="T_Atmosphere_Header" value="Colors atmosfèrics"/>
+		<text name="T_Atmosphere_Header" value="Colors atmosfèrics" />
 	</panel>
 	<panel name="P_Atmos_Settings">
 		<text name="ambient_color_label">
@@ -18,7 +18,7 @@
 		</text>
 	</panel>
 	<panel name="P_Atmosphere_Header">
-		<text name="T_Atmosphere_Header" value="Paràmetres de l'atmosfera"/>
+		<text name="T_Atmosphere_Header" value="Colors atmosfèrics" />
 	</panel>
 	<panel name="P_Atmosphere_OtherSettings">
 		<text name="haze_horizon_label">
@@ -44,7 +44,7 @@
 		</text>
 	</panel>
 	<panel name="P_Rainbow_Header">
-		<text name="T_Rainbow_Header" value="Paràmetres de l'arc de Sant Martí i l'halo"/>
+		<text name="T_Rainbow_Header" value="Paràmetres de l'arc de Sant Martí i l'halo" />
 	</panel>
 	<panel name="P_Rainbow_OtherSettings">
 		<text name="moisture_level_label">

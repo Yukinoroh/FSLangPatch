@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="telehub" title="Centre de teletransport">
 	<text name="status_text_connected">
 		El centre de teletransport està connectat a l'objecte [OBJECT]
@@ -12,13 +12,13 @@
 	<text name="help_text_not_connected">
 		Selecciona un objecte i prem 'Connecta el centre de teletransport'.
 	</text>
-	<button label="Connecta el centre de teletransport" name="connect_btn"/>
-	<button label="Desconnecta" name="disconnect_btn"/>
+	<button label="Connecta el centre de teletransport" name="connect_btn" />
+	<button label="Desconnecta" name="disconnect_btn" />
 	<text name="spawn_points_text">
 		Punts d'aparició (posicions, no objectes):
 	</text>
-	<button label="Afegeix un punt d'aparició" name="add_spawn_point_btn"/>
-	<button label="Elimina el punt d'aparició" name="remove_spawn_point_btn"/>
+	<button label="Afegeix un punt d'aparició" name="add_spawn_point_btn" />
+	<button label="Elimina el punt d'aparició" name="remove_spawn_point_btn" />
 	<text name="spawn_point_help">
 		Selecciona un objecte i prem 'Afegeix un punt d'aparició' per especificar la posició.
 Després, l'objecte es pot moure o suprimir.

@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="group_titles" title="Títols de grups">
-	<floater.string name="NoGroupTitle" value="&lt;Cap títol&gt;"/>
+	<floater.string name="NoGroupTitle" value="&lt;Cap títol&gt;" />
+	<floater.string name="ClearAllRegions" value="Esborra totes les regions" />
 	<scroll_list name="title_list">
-		<column name="grouptitle" label="Títol"/>
-		<column name="groupname" label="Grup"/>
+		<column name="grouptitle" label="Títol" />
+		<column name="groupname" label="Grup" />
+		<column name="regionname" label="Regió de l'automòbil" />
 	</scroll_list>
-	<button tool_tip="Actualitzar la llista dels títols de grups disponibles" name="btnRefresh"/>
-	<button name="btnInfo" label="Infos" tool_tip="Mostrar les informacions sobre el grup del títol seleccionat"/>
-	<button name="btnActivate" label="Activar" tool_tip="Activar el títol de grup seleccionat"/>
+	<button tool_tip="Actualitzar la llista dels títols de grups disponibles" name="btnRefresh" />
+	<button name="btnSetRegion" label="Aquesta regió" tool_tip="Assigna la teva regió actual al títol seleccionat" />
+	<button name="btnSetRegionManual" label="Introduïu la regió" tool_tip="Introduïu un nom de regió per assignar al títol seleccionat" />
+	<button name="btnClearRegion" label="Neteja la regió" tool_tip="Elimina l'assignació de regió del títol seleccionat" />
+	<button name="btnInfo" label="Infos" tool_tip="Mostrar les informacions sobre el grup del títol seleccionat" />
+	<button name="btnActivate" label="Activar" tool_tip="Activar el títol de grup seleccionat" />
+	<check_box label="&quot;Cap&quot; per a regions sense preajust" name="none_on_unassigned" />
 </floater>

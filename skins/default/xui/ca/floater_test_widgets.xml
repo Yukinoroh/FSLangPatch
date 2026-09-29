@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<floater legacy_header_height="18" can_dock="true" can_resize="true" title="Finestra de prova" height="500" min_width="850" min_height="500" layout="topleft" name="floater_test_widgets" help_topic="floater_test_widgets" translate="false" width="1000">
+
+  <floater.string name="sample_string" value="Cadena de mostra" />
+  <floater.string name="other_string" value="Altra cadena" />
+
+  <menu_bar height="18" layout="topleft" follows="top|left" tool_tip="menú" left="2" name="test_menu_bar" top="16">
+    <menu label="Menú" layout="topleft" tear_off="true" name="Menu" width="128">
+      <menu_item_call label="Element de menú 1" layout="topleft" name="test_menu_item_1" />
+      <menu_item_separator />
+      <menu_item_call label="Element de menú 2" layout="topleft" name="test_menu_item_2" />
+    </menu>
+  </menu_bar>
+
+  <text bottom="55" layout="topleft" follows="top|left" left="10" height="16">
+    Per a la llista de ginys, vegeu http://wiki.secondlife.com/wiki/XUI_Reference
+  </text>
+
+  <button follows="top|left" label="Botó" layout="topleft" left_delta="0" name="test_button" tool_tip="botó" top="80" width="100" />
+  <flyout_button follows="top|left" label="Desplegable" layout="topleft" left_delta="0" name="fly_btn" top_pad="15" tool_tip="botó desplegable" width="250">
+    <flyout_button.item label="Element 1" value="shout" />
+    <flyout_button.item label="Element 2" value="say" />
+    <flyout_button.item label="Element 3" value="whisper" />
+  </flyout_button>
+  <check_box bottom_delta="35" height="10" label="Casella de selecció" layout="topleft" tool_tip="casella de selecció" name="test_checkbox" />
+  <check_box top_pad="5" enabled="false" label="Casella desactivada" tool_tip="casella de selecció desactivada" name="test_checkbox_disabled" />
+  <combo_box bottom_delta="35" follows="top|left" width="360" label="Quadre combinat" layout="topleft" tool_tip="quadre combinat" name="test_combo_box">
+    <combo_box.item name="item1" label="Element 1 del quadre combinat" />
+    <combo_box.item name="item2" label="Element 2 del quadre combinat" />
+  </combo_box>
+  <icon height="16" image_name="icon_avatar_online.tga" layout="topleft" left_delta="0" tool_tip="icona" name="test_icon" top_pad="40" width="16" />
+  <line_editor height="20" follows="top|left" layout="topleft" left_delta="0" name="test_line_editor" top_pad="20" tool_tip="editor de línia" width="560">
+    Text de mostra de l'editor de línia
+  </line_editor>
+  <filter_editor follows="left|top" height="20" label="Escriu aquí per cercar" layout="topleft" left_delta="0" name="search editor" tool_tip="editor de cerca" top_pad="30" width="200" />
+  <progress_bar height="16" follows="top|left" layout="topleft" left_delta="0" name="test_progress_bar" top_pad="30" control_name="NearbyToastWidth" tool_tip="barra de progrés" width="200" />
+  <stat_view height="250" label="Visualització d'estadístiques" layout="topleft" left_delta="0" name="axis_view" show_label="true" top_pad="30" tool_tip="visualització d'estadístiques" width="620">
+    <stat_bar width="430" bar_max="100" bottom_delta="30" label="Estadística de prova" layout="topleft" stat="stat" bar_min="20" name="test_stat_bar" />
+  </stat_view>
+
+  <radio_group height="40" layout="topleft" left_pad="90" name="size_radio_group" tool_tip="grup de botons d'opció" top="80" width="200">
+    <radio_item bottom="20" label="Opció 1" layout="topleft" name="small_radio_item" />
+    <radio_item label="Opció 2" layout="topleft" name="large_radio_item" />
+  </radio_group>
+  <scroll_list bottom_delta="100" follows="top|left" height="80" draw_heading="true" tool_tip="llista desplaçable" layout="topleft">
+    <scroll_list.columns dynamic_width="true" name="first_column" label="Columna A" />
+    <scroll_list.columns dynamic_width="true" name="second_column" label="Columna B" />
+    <row>
+      <column column="first_column">text curt</column>
+      <column column="second_column">més text curt</column>
+    </row>
+    <row>
+      <column column="first_column">això és un text més llarg</column>
+      <column column="second_column">i aquí hi ha més text llarg</column>
+    </row>
+  </scroll_list>
+  <slider bottom_delta="45" follows="top|left" layout="topleft" min_val="0" max_val="100" initial_value="20" label="Control lliscant" name="test_slider" tool_tip="control lliscant" width="500" />
+  <spinner height="10" bottom_delta="35" follows="top|left" label="Comptador" layout="topleft" label_width="45" name="test_spinner" tool_tip="comptador" />
+  <text bottom_delta="50" follows="top|left" font.name="SansSerifSmall" font.style="UNDERLINE" layout="topleft" name="test_text" tool_tip="text">
+    Text (subratllat)
+  </text>
+  <text top_pad="10" follows="top|left" layout="topleft" width="60" use_ellipses="true" name="test_text1" tool_tip="text">
+    Text truncat aquí
+  </text>
+  <text_editor height="40" follows="top|left|bottom" layout="topleft" left_delta="0" name="test_text_editor" tool_tip="editor de text" top_pad="25" width="200">
+    Editor de text
+  </text_editor>
+  <text height="40" follows="top|left|bottom" layout="topleft" name="test_text_box" tool_tip="quadre de text" top_pad="5" width="200">
+      Quadre de text
+amb
+múltiples línies
+i massa
+línies per a cabre-hi
+  </text>
+  <tab_container follows="all" height="400" layout="topleft" left="525" name="group_tab_container" tab_position="top" tool_tip="contenidor de pestanyes" top="80" width="300">
+    <panel border="true" label="Pestanya 1 - Color" layout="topleft" name="panel2">
+      <color_swatch can_apply_immediately="true" color="0.3 0.6 0.9 1" follows="left|top" height="90" layout="topleft" left="10" label="Mostra de color 1" name="swatch1" tool_tip="Mostra de color: Fes clic per obrir el selector de colors" top="10" width="80" />
+      <color_swatch can_apply_immediately="true" color="1 0 1 1" follows="left|top" height="90" label="Mostra de color 2" layout="topleft" left_pad="10" name="swatch2" tool_tip="Mostra de color: Fes clic per obrir el selector de colors" top_delta="0" width="80" />
+      <text top_pad="10" left="10" width="370" follows="top|left" font.name="Monospace" name="test_text10" tool_tip="text">
+        Botó Monoespaiat Desplegable Casella
+      </text>
+      <text top_pad="10" left="10" width="250" follows="top|left" font.name="SansSerifSmall" name="test_text101" tool_tip="text">
+        SansSerifPetit.  Русский 中文 (简体)
+      </text>
+      <text top_pad="10" left="10" width="250" follows="top|left" font.name="SansSerif" name="test_text11" tool_tip="text">
+        SansSerif.  Русский 中文 (简体)
+      </text>
+      <text top_pad="10" left="10" width="250" follows="top|left" font.name="SansSerifLarge" name="test_text12" tool_tip="text">
+        SansSerifGran.  Русский 中文 (简体)
+      </text>
+      <text top_pad="10" left="10" width="250" follows="top|left" font.name="SansSerifHuge" name="test_text13" tool_tip="text">
+        SansSerifEnorme.  Русский 中文 (简体)
+      </text>
+    </panel>
+    <panel border="true" filename="floater_test_checkbox.xml" height="225" label="Pestanya 2 - Casella" layout="topleft" left_delta="0" name="tab2" top_delta="159" width="370" />
+  </tab_container>
+</floater>

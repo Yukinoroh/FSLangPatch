@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="settings_color" title="Paràmetres de color">
 	<filter_editor label="Text a cercar" name="filter_input" />
 	<scroll_list name="setting_list">

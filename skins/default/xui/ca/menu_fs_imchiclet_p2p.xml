@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <menu name="IMChiclet P2P Menu">
 	<menu_item_call label="Mostra el perfil" name="Show Profile" />
 	<menu_item_call label="Ofereix amistat" name="Add Friend" />

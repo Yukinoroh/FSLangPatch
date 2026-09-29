@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <toggleable_menu name="participant_manu_view">
 	<menu_item_check label="Ordena les converses per tipus" name="sort_sessions_by_type" />
 	<menu_item_check label="Ordena les converses per nom" name="sort_sessions_by_name" />

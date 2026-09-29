@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="ColorPicker" title="Paleta de colors">
 	<tab_container name="scale_type_container" width="230">
 		<panel name="RGB" label="RGB">
@@ -12,18 +12,15 @@
 			<text name="b_val_text_lsl">Blau :</text>
 		</panel>
 		<panel name="Hex" label="HEX" width="226">
-			<text name="hex_text" width="216">Codi Hexadecimal (#rrvvbb):</text>
+			<text name="hex_text" width="498">Codi Hexadecimal (#rrvvbb):</text>
 		</panel>
 	</tab_container>
 	<text name="h_val_text">To :</text>
 	<text name="s_val_text">Saturació :</text>
 	<text name="l_val_text">Brillantor :</text>
-	<check_box label="Aplicar" name="apply_immediate"/>
-	<button label="Copiar LSL" tool_tip="Copia el valor de color en un format LSL (&lt;r, g, b&gt;)." name="copy_lsl_btn"/>
-	
-	<button label="D'acord" label_selected="D'acord" name="select_btn"/>
-	
-	<button label="Anul·lar" label_selected="Anul·lar" name="cancel_btn"/>
+	<check_box label="Aplicar" name="apply_immediate" />
+	<button label="Copiar LSL" tool_tip="Copia el valor de color en un format LSL (&lt;r, g, b&gt;)." name="copy_lsl_btn" />
+	<button label="Anul·lar" label_selected="Anul·lar" name="cancel_btn" />
 	<text name="Current color:">^ Color actual ^</text>
 	<text name="(Drag below to save.)" width="160">(Arrosega per desar)</text>
 </floater>

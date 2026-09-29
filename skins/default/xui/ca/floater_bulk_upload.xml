@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="bulk_upload">
 	<layout_stack name="maint_layout">
 		<layout_panel name="count_panel">

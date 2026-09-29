@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<floater name="Search" title="Cerca">
+	<layout_stack name="stack1">
+		<layout_panel name="nav_controls">
+			<button tool_tip="Torna enrere" name="back" />
+			<button tool_tip="Ves endavant" name="forward" />
+			<button tool_tip="Atura la navegació" name="stop" />
+			<button tool_tip="Recarrega la pàgina" name="reload" />
+			<combo_box name="address" tool_tip="Introdueix l'URL aquí" />
+			<icon name="media_secure_lock_flag" tool_tip="Navegació segura" />
+			<button tool_tip="Obre l'URL al navegador del teu ordinador" name="popexternal" />
+		</layout_panel>
+	</layout_stack>
+</floater>

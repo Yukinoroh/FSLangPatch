@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="floater_bumps" title="Col·lisions, empentes i cops">
 	<floater.string name="none_detected">Aucun détecté</floater.string>
 	<floater.string name="bump">[TIME]  [NAME] va xocar amb tu</floater.string>

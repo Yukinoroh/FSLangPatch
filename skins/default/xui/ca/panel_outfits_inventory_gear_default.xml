@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <menu name="menu_gear_default">
-	<menu_item_call label="Posa't el conjunt" name="wear"/>
-	<menu_item_call label="Treu del conjunt actual" name="remove"/>
-	<menu_item_call label="Reanomena" name="rename"/>
-	<menu_item_call label="Suprimeix l'enllaç" name="remove_link"/>
-	<menu_item_call label="Suprimeix el conjunt" name="delete"/>
+	<menu_item_call label="Posa't el conjunt" name="wear" />
+	<menu_item_call label="Treu del conjunt actual" name="remove" />
+	<menu_item_call label="Reanomena" name="rename" />
+	<menu_item_call label="Suprimeix l'enllaç" name="remove_link" />
+	<menu_item_call label="Suprimeix el conjunt" name="delete" />
 </menu>

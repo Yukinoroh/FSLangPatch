@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<floater height="680" name="floater_script_colors" title="Paràmetres de l'editor de scripts" width="330">
-	<text name="color_pickers_label" width="200">
+<?xml version='1.0' encoding='utf-8'?>
+<floater height="680" name="floater_script_colors" title="Paràmetres de l'editor de scripts" width="570">
+	<text name="color_pickers_label" width="500">
 		Tria els colors que prefereixis:
 	</text>
 	<text name="text_label" width="100">
@@ -33,7 +33,7 @@
 	<text name="constant_label" width="100">
 		Constant
 	</text>
-	<text name="i_constant_label" width="100">
+	<text name="i_constant_label" width="148">
 		Constant entera
 	</text>
 	<text name="s_constant_label" width="100">
@@ -67,8 +67,6 @@
 	<text name="advanced_label" width="150">
 		Paràmetres avançats:
 		</text>
-	<check_box name="FSllOwnerSayToScriptDebugWindow_checkbox" width="200" label="Dirigeix llOwnerSay a la finestra de depuració de l'script" />
+	<check_box name="FSllOwnerSayToScriptDebugWindow_checkbox" width="230" label="Dirigeix llOwnerSay a la finestra de depuració de l'script" />
 	<check_box name="FSScriptEditorRecompileButton_checkbox" width="200" label="Botó de recompilació (útil per a #include)" />
-
-	<button name="close_btn" width="100" label="D'acord" />
 </floater>

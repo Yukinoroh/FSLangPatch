@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Conjunts" name="Outfits">
 	<panel.string name="wear_outfit_tooltip">
 		Posa't el conjunt seleccionat
@@ -10,20 +10,20 @@
 		Portant ([COUNT]/[MAX] Art.)
 	</panel.string>
 	<tab_container name="appearance_tabs">
-		<panel label="Galeria de conjunts" name="outfit_gallery_tab"/>
-		<panel label="Els meus conjunts" name="outfitslist_tab"/>
-		<panel label="Portant" name="cof_tab"/>
+		<panel label="Galeria de conjunts" name="outfit_gallery_tab" />
+		<panel label="Els meus conjunts" name="outfitslist_tab" />
+		<panel label="Portant" name="cof_tab" />
 	</tab_container>
 	<panel name="bottom_panel">
 		<layout_stack name="bottom_panel_ls">
 			<layout_panel name="save_btn_lp">
-				<button label="Desa" name="save_btn"/>
+				<button label="Desa" name="save_btn" />
 			</layout_panel>
 			<layout_panel name="save_as_btn_lp">
-				<button label="Desa com a..." name="save_as_btn"/>
+				<button label="Desa com a..." name="save_as_btn" />
 			</layout_panel>
 			<layout_panel name="wear_btn_lp">
-				<button label="Posa-te'l" name="wear_btn"/>
+				<button label="Posa-te'l" name="wear_btn" />
 			</layout_panel>
 		</layout_stack>
 	</panel>

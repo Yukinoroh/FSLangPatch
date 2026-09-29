@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <context_menu name="Avatar Render Settings Menu">
-	<menu_item_call label="Renderitza sempre completament" name="av_render_always"/>
-	<menu_item_call label="No renderitzis mai completament" name="av_render_never"/>
-	<menu_item_call label="Suprimeix de les excepcions de renderització" name="av_render_normal"/>
+	<menu_item_call label="Renderitza sempre completament" name="av_render_always" />
+	<menu_item_call label="No renderitzis mai completament" name="av_render_never" />
+	<menu_item_call label="Suprimeix de les excepcions de renderització" name="av_render_normal" />
 </context_menu>

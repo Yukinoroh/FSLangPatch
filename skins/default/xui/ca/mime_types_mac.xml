@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <mimetypes name="default">
+	<defaultlabel>(Desconegut)</defaultlabel>
 	<widgetset name="web">
 		<label name="web_label">
 			Contingut web
@@ -87,11 +88,6 @@
 			Vídeo (QuickTime)
 		</label>
 	</mimetype>
-	<mimetype name="application/javascript">
-		<label name="application/javascript_label">
-			Javascript
-		</label>
-	</mimetype>
 	<mimetype name="application/ogg">
 		<label name="application/ogg_label">
 			Àudio/vídeo Ogg
@@ -122,10 +118,8 @@
 			Pàgina web (XHTML)
 		</label>
 	</mimetype>
-	<mimetype name="application/x-director">
-		<label name="application/x-director_label">
-			Macromedia Director
-		</label>
+	<mimetype name="application/octet-stream">
+		<label name="application/octet-stream_label">Flux</label>
 	</mimetype>
 	<mimetype name="audio/mid">
 		<label name="audio/mid_label">
@@ -187,11 +181,6 @@
 			Text
 		</label>
 	</mimetype>
-	<mimetype name="text/xml">
-		<label name="text/xml_label">
-			XML
-		</label>
-	</mimetype>
 	<mimetype name="video/mpeg">
 		<label name="video/mpeg_label">
 			Vídeo (MPEG)
@@ -202,9 +191,9 @@
 			Vídeo (MP4)
 		</label>
 	</mimetype>
-	<mimetype name="video/x-flv">
-		<label name="video/x-flv_label">
-			Vídeo (FLV)
+	<mimetype name="application/octet-stream">
+		<label name="video/octet-stream">
+			Film
 		</label>
 	</mimetype>
 	<mimetype name="video/quicktime">

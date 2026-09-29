@@ -1,22 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="inspect_group">
-  <string name="PrivateGroup">Grup privat</string>
-  <string name="FreeToJoin">Inscripció gratuïta</string>
-  <string name="CostToJoin">L$[AMOUNT] per unir-s'hi</string>
-  <string name="YouAreMember">Ets membre</string>
-  <text name="group_name">
-    TestString PleaseIgnore
-  </text>
-  <text name="group_subtitle">
+	<string name="PrivateGroup">Grup privat</string>
+	<string name="FreeToJoin">Inscripció gratuïta</string>
+	<string name="CostToJoin">L$[AMOUNT] per unir-s'hi</string>
+	<string name="YouAreMember">Ets membre</string>
+	<text name="group_subtitle">
     123 membres
   </text>
-  <text name="group_details">
+	<text name="group_details">
 Un grup de gent encarregada de crear una habitació amb un ant.
 Temeu l'ant! Temeu-lo! I a la mangosta també!
   </text>
-  <text name="group_cost">
+	<text name="group_cost">
 L$123 per unir-s'hi
   </text>
-  <button label="Eixir" name="leave_btn"/>
-  <button label="Mostra Perfil" name="view_profile_btn"/>
+	<button label="Uneix-te" name="join_btn" />
+	<button label="Eixir" name="leave_btn" />
+	<button label="Mostra Perfil" name="view_profile_btn" />
 </floater>

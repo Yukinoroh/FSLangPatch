@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="script_recover" title="Recuperació de scripts">
 	<text name="txt2">
 		[APP_NAME] ha detectat scripts que es poden recuperar després de l'últim tancament inespe­rat del client.

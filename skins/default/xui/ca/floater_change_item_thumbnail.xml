@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="change_item_thumbnail" title="Modificar la imatge">
 	<floater.string name="title_item_thumbnail">
 		Modificar la imatge de l'objecte

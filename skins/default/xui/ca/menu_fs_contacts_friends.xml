@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <context_menu name="Friends Popup">
 	<menu_item_call label="Mostra el perfil" name="show_agent" />
 	<menu_item_call label="Envia MI" name="send_im" />
@@ -13,6 +13,7 @@
 	<menu_item_call label="Elimina d'amics" name="remove_friend" />
 	<menu_item_call label="Copia el nom" name="url_copy_label" />
 	<menu_item_call label="Copia l'URL" name="url_copy" />
+	<menu_item_call label="Copieu l'URI de la menció" name="mention_copy_label" />
 	<menu name="options" label="Opcions...">
 		<menu_item_check label="Mostra la columna: Nom d'usuari" name="show_username" />
 		<menu_item_check label="Mostra la columna: Nom públic" name="show_displayname" />

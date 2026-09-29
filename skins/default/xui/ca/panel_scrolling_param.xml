@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="LLScrollingPanelParam">
 	<text name="Loading...">Carregant...</text>
 	<text name="Loading...2">Carregant...</text>

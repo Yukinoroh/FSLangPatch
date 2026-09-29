@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Sol i Lluna" name="panel_fs_settings_sky_hbodies">
 	<panel name="P_Sun_Color">
-		<text name="T_Sun_Header" value="Color del Sol i de la Lluna"/>
+		<text name="T_Sun_Header" value="Color del Sol i de la Lluna" />
 	</panel>
 	<panel name="P_SM_Color">
 		<text name="color_label">
@@ -9,13 +9,13 @@
 		</text>
 	</panel>
 	<panel name="P_Sun_Header">
-		<text name="T_Sun_Header" value="Paràmetres del Sol i de les estrelles"/>
+		<text name="T_Sun_Header" value="Paràmetres del Sol i de les estrelles" />
 	</panel>
 	<panel name="P_Sun_Setting">
 		<text name="image_label">
 			Imatge:
 		</text>
-		<check_box label="Mostra la balisa" name="sunbeacon"/>
+		<check_box label="Mostra la balisa" name="sunbeacon" />
 		<text name="glow_focus_label">
 			Focus de la brillantor:
 		</text>
@@ -36,13 +36,13 @@
 		</text>
 	</panel>
 	<panel name="P_Moon_Header">
-		<text name="T_Moon_Header" value="Paràmetres de la Lluna"/>
+		<text name="T_Moon_Header" value="Paràmetres de la Lluna" />
 	</panel>
 	<panel name="P_Moon_Setting">
 		<text name="moon_image_label">
 			Imatge:
 		</text>
-		<check_box label="Mostra la balisa" name="moonbeacon"/>
+		<check_box label="Mostra la balisa" name="moonbeacon" />
 		<text name="moon_scale_label">
 			Escala:
 		</text>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel name="panel_event_info" title="Esdeveniment">
+	<string name="none">
+		cap
+	</string>
+	<string name="notify">
+		Avisa'm
+	</string>
+	<string name="dont_notify">
+		No m'avisis
+	</string>
+	<text name="event_name">
+		(cap)
+	</text>
+	<text name="event_category_label">
+		Tipus:
+	</text>
+	<text name="event_category">
+		(cap)
+	</text>
+	<text name="event_mature_label">
+		Contingut d'adults:
+	</text>
+	<text name="event_mature_yes">
+		Sí
+	</text>
+	<text name="event_mature_no">
+		No
+	</text>
+	<text name="event_date_label">
+		Data:
+	</text>
+	<text name="event_date">
+		(cap)
+	</text>
+	<text name="event_duration_label">
+		Durada:
+	</text>
+	<text name="event_duration">
+		(cap)
+	</text>
+	<text name="event_runby_label">
+		Organitzat per:
+	</text>
+	<text name="event_runby">
+		(cap)
+	</text>
+	<text name="event_location_label">
+		Lloc:
+	</text>
+	<text name="event_location">
+		(cap)
+	</text>
+	<text name="event_cover_label">
+		Preu d'entrada:
+	</text>
+	<text name="event_cover">
+		(cap)
+	</text>
+	<text name="event_desc_label">
+		Descripció:
+	</text>
+	<button label="Teleporta't" name="teleport_btn" />
+	<button label="Mostra al mapa" name="map_btn" />
+	<button label="Avisa'm" name="notify_btn" />
+</panel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="Test Floater" title="Finestra de test">
 	<text>
  aquest
@@ -11,13 +11,13 @@
  és
  text
  alineat
- al centre</text>
+ amunt</text>
 	<text>
  aquest
  és
  text
  alineat
- avall</text>
+ amunt</text>
 	<text_editor>
  aquest
  és
@@ -30,13 +30,13 @@
  és
  text
  alineat
- al centre
+ amunt
 	</text_editor>
 	<text_editor>
  aquest
  és
  text
  alineat
- avall
+ amunt
 	</text_editor>
 </floater>

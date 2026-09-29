@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="panel_postcard_settings">
 	<combo_box label="Resolució" name="postcard_size_combo">
 		<combo_box.item label="Finestra actual" name="CurrentWindow" />
@@ -6,5 +6,5 @@
 	</combo_box>
 	<spinner label="Amplada Alçada" name="postcard_snapshot_width" />
 	<check_box label="Manté les proporcions" name="postcard_keep_aspect_check" />
-	<slider label="Qualitat:" name="image_quality_slider" label_width="55"/>
+	<slider label="Qualitat:" name="image_quality_slider" label_width="55" />
 </panel>

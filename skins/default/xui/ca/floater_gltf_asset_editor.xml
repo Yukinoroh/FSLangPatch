@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="gltf asset editor">
 	<floater.string name="floater_title" value="Editor d'escenes GLTF" />
 	<floater.string name="scene_title" value="Escena" />

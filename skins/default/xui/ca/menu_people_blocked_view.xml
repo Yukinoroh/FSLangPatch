@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <toggleable_menu name="menu_blocked_view">
 	<menu_item_check label="Ordena per nom" name="sort_by_name" />
 	<menu_item_check label="Ordena per nom (descendent)" name="sort_by_name_desc" />

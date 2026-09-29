@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="top_objects" title="Objectes principals" min_width="800">
 	<floater.string name="top_scripts_title">
 		Scripts principals
@@ -31,36 +31,34 @@
 		S'està carregant...
 	</text>
 	<scroll_list name="objects_list">
-		<scroll_list.columns label="Puntuació" name="score"/>
-		<scroll_list.columns label="Nom" name="name"/>
-		<scroll_list.columns label="Propietari" name="owner"/>
-		<scroll_list.columns label="Lloc" name="location"/>
-		<scroll_list.columns label="Parcel·la" name="parcel"/>
-		<scroll_list.columns label="Temps" name="time"/>
-		<scroll_list.columns label="URL" name="URLs"/>
-		<scroll_list.columns label="Memòria (KB)" name="memory"/>
+		<scroll_list.columns label="Puntuació" name="score" />
+		<scroll_list.columns label="Nom" name="name" />
+		<scroll_list.columns label="Propietari" name="owner" />
+		<scroll_list.columns label="Lloc" name="location" />
+		<scroll_list.columns label="Parcel·la" name="parcel" />
+		<scroll_list.columns label="Temps" name="time" />
+		<scroll_list.columns label="URL" name="URLs" />
+		<scroll_list.columns label="Memòria (KB)" name="memory" />
 	</scroll_list>
 	<text name="id_text">
 		ID de l'objecte:
 	</text>
-	<button label="Mostra el senyal lluminós" name="show_beacon_btn"/>
+	<button label="Mostra el senyal lluminós" name="show_beacon_btn" />
 	<text name="obj_name_text">
 		Nom de l'objecte:
 	</text>
-	<button label="Filtra" name="filter_object_btn"/>
+	<button label="Filtra" name="filter_object_btn" />
 	<text name="owner_name_text">
 		Propietari:
 	</text>
-	<button label="Filtra" name="filter_owner_btn"/>
+	<button label="Filtra" name="filter_owner_btn" />
 	<text name="parcel_name_text">
 		Parcel·la:
 	</text>
-	<button label="Filtra" name="filter_parcel_btn"/>
+	<button label="Filtra" name="filter_parcel_btn" />
 	<button label="Actualitza" name="refresh_btn" />
-	<button label="Retorna la selecció" name="return_selected_btn" width="120" />
+	<button label="Retorna la selecció" name="return_selected_btn" width="186" />
 	<button label="Retorna-ho tot" name="return_all_btn" />
-	<button label="Teleporta-m'hi" name="teleport_to_btn" />
-	<button label="Perfil" name="profile_btn" />
-	<button label="Info. dels scripts" name="script_info_btn" />
-	<button label="Expulsa" name="estate_kick_btn" />
+	<button label="Desactivar" name="disable_selected_btn" />
+	<button label="Desactiva-ho tot" name="disable_all_btn" />
 </floater>

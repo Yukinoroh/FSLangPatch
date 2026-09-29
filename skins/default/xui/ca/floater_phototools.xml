@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="phototools" title="Eines de fotografia">
 	<tab_container name="tabs">
 		<panel name="EnvironmentTab" label="Entorn">
@@ -6,9 +6,6 @@
 				<text name="T_WL_Settings">
 					Paràmetres de l'entorn
 				</text>
-			</panel>
-			<panel name="P_WL_Settings">
-				<check_box name="WindLightUseAtmosShaders" label="Shaders atmosfèrics" tool_tip="Això permetrà utilitzar la funcionalitat completa de l'Entorn Avançat (Shaders atmosfèrics)."/>
 			</panel>
 			<panel name="P_WL_Sky_Water">
 				<text name="WL Sky" tool_tip="Preajustaments del cel per al teu entorn.">
@@ -20,60 +17,67 @@
 				<text name="Day Cycle" tool_tip="Preajustament del cicle del dia per al teu entorn.">
 					Cicle del Dia
 				</text>
-				<button name="btn_personal_lighting" label="Il·luminació personal..."/>
-				<button name="ResetToRegionDefault" tool_tip="Reinicia els paràmetres per defecte de la regió."/>
-				<button label="Pausa els núvols" name="PauseClouds" tool_tip="Atura l'animació dels núvols"/>
+			</panel>
+			<panel name="P_WL_Sky_Water_2">
+				<button name="btn_personal_lighting" tool_tip="La finestra d'il·luminació personal us permet fer canvis temporals a l'entorn en què us trobeu. És útil per fotografiar o simplement editar alguna cosa segons les vostres preferències. NO està pensat per crear la vostra pròpia configuració i els canvis no es poden desar." label="Il·luminació personal" />
+				<button label="Núvols en pausa" name="PauseClouds" tool_tip="Interromp el moviment dels núvols per a composicions amb un cel estàtic." />
 			</panel>
 			<panel name="P_Q_Windlights">
 				<text name="T_Q_Windlights">
 					Configuració ràpida
 				</text>
-				<button name="Sunrise" label="Sortida de sol"/>
-				<button name="Noon" label="Migdia"/>
-				<button name="Sunset" label="Posta de sol"/>
-				<button name="Midnight" label="Mitjanit"/>
-				<button name="Revert to Region Default" label="Hora de la regió"/>
+				<button name="Sunrise" label="Sortida de sol" />
+				<button name="Noon" label="Migdia" />
+				<button name="Sunset" label="Posta de sol" />
+				<button name="Midnight" label="Mitjanit" />
+				<button name="Revert to Region Default" label="Hora de la regió" />
 			</panel>
 			<panel name="P_WL_Presets">
 				<text name="T_WL_Presets" tool_tip="Fes clic a un element de sota per crear un nou preajustament o canviar un d'existent.">
 					Preajustaments
 				</text>
-				<button name="new_sky_preset" label="Cel nou"/>
-				<button name="edit_sky_preset" label="Edita el cel"/>
-				<button name="new_water_preset" label="Aigua nova"/>
-				<button name="edit_water_preset" label="Edita l'aigua"/>
+				<button name="new_sky_preset" label="Cel nou" />
+				<button name="new_water_preset" label="Aigua nova" />
+				<button name="new_day_preset" label="Nou dia predefinit" tool_tip="Crea un nou entorn predefinit basat en la configuració del dia carregada actualment." />
 			</panel>
 			<panel name="P_W_Reflections">
 				<text name="T_W_Reflections">
 					Paràmetres de reflexos de l'aigua
 				</text>
 			</panel>
-           <!-- no esta en la versió anglesa 
-           <panel name="P_W_R_Types">
-				<text name="T_W_R_Types" tool_tip="Defineix què es reflectirà a l'aigua.">
-					Tipus
-				</text>
-				<combo_box name="Reflections">
-					<combo_box.item name="0" label="Mínim"/>
-					<combo_box.item name="1" label="Terra i arbres"/>
-					<combo_box.item name="2" label="Tots els objectes estàtics"/>
-					<combo_box.item name="3" label="Tots els avatars i objectes"/>
-					<combo_box.item name="4" label="Tot"/>
-				</combo_box>
-			</panel> -->
 			<panel name="P_R_Res">
-				<text name="T_R_Res" tool_tip="Defineix la resolució/qualitat dels reflexos de l'aigua. Si la resolució està a 'Molt bona' o superior, també has d'activar el 'Model d'il·luminació avançat' a la pestanya 'Llum'.">
-					Resolució
-				</text>
-				<combo_box name="ReflectionRescombo">
-					<combo_box.item name="0" label="Acceptable"/>
-					<combo_box.item name="1" label="Bona"/>
-					<combo_box.item name="2" label="Molt bona - Cal activar 'Model d'il·luminació avançat'"/>
-					<combo_box.item name="3" label="Excel·lent - Cal activar 'Model d'il·luminació avançat'"/>
-					<combo_box.item name="4" label="Extraordinària - Cal activar 'Model d'il·luminació avançat'"/>
-					<combo_box.item name="5" label="Realista - Cal activar 'Model d'il·luminació avançat'"/>
+				<check_box name="TransparentWater" label="Aigua transparent" tool_tip="Mostra l'aigua transparent. Desactivar-ho fa que l'aigua sigui opaca amb una textura simple." />
+				<check_box label="Activa els reflexos de l'espai de la pantalla" name="ScreenSpaceReflections" tool_tip="Habilita reflexions basades en la visualització de pantalla actual. Proporciona reflexos realistes per als objectes dins del camp de visió de la càmera, però pot ser que es perdin detalls fora de la pantalla. Pot afectar el rendiment en funció de la complexitat de l'escena." />
+				<check_box label="Activa els miralls" name="Mirrors" tool_tip="Permet reflexos en temps real als miralls. Reflecteix amb precisió l'entorn, inclosos els objectes i els avatars, però pot afectar significativament el rendiment a causa de la sobrecàrrega de renderització addicional." />
+				<check_box label="Activa la selecció de la sonda de reflexió" name="checkbox select probes" tool_tip="Permet seleccionar i inspeccionar les sondes de reflexió a l'escena." />
+			</panel>
+			<panel name="P_R_Res_2">
+				<text name="ReflectionDetailText" tool_tip="Determina el nivell de detall de les reflexions. L'opció &quot;Només estàtica&quot; reflecteix objectes estacionaris, mentre que la configuració més alta inclou objectes dinàmics i reflexos en temps real.">Detall de reflexions</text>
+				<combo_box name="ReflectionDetail">
+					<combo_box.item label="Només estàtica" name="0" />
+					<combo_box.item label="Estàtica i dinàmica" name="1" />
+					<combo_box.item label="Temps real" name="2" />
 				</combo_box>
-				<check_box name="TransparentWater" label="Aigua transparent" tool_tip="Mostra l'aigua transparent. Desactivar-ho fa que l'aigua sigui opaca amb una textura simple."/>
+				<text name="ReflectionProbeText" tool_tip="Controla la proporció de l'escena coberta per reflexos. L'opció &quot;Només manual&quot; reflecteix els objectes seleccionats, mentre que l'opció &quot;Escena completa&quot; inclou tot el visible.">Manta de reflexió</text>
+				<combo_box name="ReflectionLevel">
+					<combo_box.item label="Cap" name="0" />
+					<combo_box.item label="Només manual" name="1" />
+					<combo_box.item label="Manuel i terreny" name="2" />
+					<combo_box.item label="Escena completa" name="3" />
+				</combo_box>
+				<text name="MirrorResolutionText" tool_tip="Estableix la resolució de reflexos en miralls. Els valors més alts produeixen reflexos més nítids, però requereixen més potència de processament.">Resolució de mirall</text>
+				<text name="HeroProbeUpdateText" tool_tip="Defineix la freqüència amb què s'actualitzen els reflexos miralls. Una configuració més alta proporciona reflexos més suaus en temps real, però pot afectar el rendiment.">Velocitat de refresc del mirall</text>
+				<combo_box name="HeroProbeUpdateRate">
+					<combo_box.item label="Baix" name="6" />
+					<combo_box.item label="Mitja" name="3" />
+					<combo_box.item label="Alt" name="1" />
+					<combo_box.item label="Ultra" name="0" />
+				</combo_box>
+				<text name="Probe_Resolution" tool_tip="Estableix la resolució de les sondes de reflexió. Les resolucions més altes proporcionen reflexions més detallades, però poden augmentar l'ús de la memòria i requerir un reinici del client per aplicar. Les configuracions superiors a 128 poden consumir quantitats importants de memòria RAM de vídeo, cosa que pot afectar el rendiment en sistemes amb recursos de GPU limitats.">Res. sondes (reiniciar)</text>
+			</panel>
+			<panel name="P_R_Res_3">
+				<text name="T_Reflection_Distance" tool_tip="Controla el rang de visibilitat dels reflexos, afectant el detall i el rendiment de les sondes de reflexió, els miralls i els reflexos de l'espai de la pantalla. Els valors més alts augmenten la distància a la qual els reflexos són visibles, la qual cosa millora el detall però augmenta el cost de rendiment.">Dist. reflex.</text>
+				<button name="Reset_Reflection_Distance" tool_tip="Restaura el valor predeterminat." />
 			</panel>
 		</panel>
 		<panel name="P_Lighting" label="Pàgina">
@@ -83,415 +87,407 @@
 				</text>
 			</panel>
 			<panel name="P_L_S_Settings">
-				<check_box name="RenderDeferred" label="Model d'il·luminació avançat" tool_tip="Això permetrà crear ombres del Sol i la Lluna, així com de fonts de llum externes. També permetrà activar la Profunditat de Camp i altres funcions gràfiques. És necessari per veure la majoria dels 'detalls' al món. Si no pots activar aquesta funció o veure'n l'efecte, assegura't primer que els Shaders Atmosfèrics estiguin activats a la pestanya 'Entorn'."/>
-				<check_box name="LocalLights" label="Activa tota la il·luminació local" tool_tip="Això activarà totes les llums del món. Si ho desactives, la llum del Sol/Lluna encara es mostrarà. És útil si vols eliminar la il·luminació del simulador i utilitzar només la del Sol/Lluna."/>
-				<check_box name="Render Attached Lights" label="Activa les llums adjuntes (Face Lights)" tool_tip="Això permetrà activar qualsevol llum, com la il·luminació de l'avatar. Útil per desactivar les llums quan calgui."/>
-			</panel>
-			<panel name="P_Shadows">
-				<text name="T_Shadow_Types" tool_tip="Aquest paràmetre només afecta les ombres que es visualitzen des de fonts de llum, altrament la llum funcionarà normalment. La llum puntual (llums sense funció de projecció) sempre crearà una sensació d'ombres, però no les projectarà sobre cap superfície. Independentment de la configuració que triïs aquí, les textures projectades des de llums de projecció encara s'inclouran.">
-					Tipus d'ombres
-				</text>
+				<text name="T_Shadow_Types" tool_tip="Controla els tipus d'ombres que representen les fonts de llum. Les llums puntuals sense funcions de projecció creen efectes d'il·luminació però no fan ombres. Les textures de les llums projectades romanen visibles independentment d'aquesta configuració.">Tipus d'ombres</text>
 				<combo_box name="ShadowDetail">
-					<combo_box.item name="0" label="Cap"/>
-					<combo_box.item name="1" label="Sol/lluna"/>
-					<combo_box.item name="2" label="Sol/lluna + projectors"/>
+					<combo_box.item label="Cap" name="0" />
+					<combo_box.item label="Sol/Lluna" name="1" />
+					<combo_box.item label="Sol/Lluna + projectors" name="2" />
 				</combo_box>
+				<text name="local lights_label" tool_tip="Estableix el nombre de fonts de llum locals que es representen simultàniament. Un valor de 0 apaga tots els llums locals. Els valors més alts poden afectar el rendiment en escenes complexes.">Llum puntual (reinici)</text>
+				<combo_box name="LocalLightsDetail">
+					<combo_box.item label="Tot (per defecte)" name="3" />
+					<combo_box.item label="Reduït" name="2" />
+					<combo_box.item label="Sol/Lluna només" name="1" />
+				</combo_box>
+				<check_box name="Render Attached Lights" label="Activa les llums adjuntes (Face Lights)" tool_tip="Això permetrà activar qualsevol llum, com la il·luminació de l'avatar. Útil per desactivar les llums quan calgui." />
 			</panel>
 			<panel name="P_Shadow_Res">
+				<text name="T_Local_Lights" tool_tip="Nombre d'enllumenat local a restaurar.">Llums locals</text>
+				<button name="Reset_Local_Lights" tool_tip="Restaura el valor predeterminat." />
 				<text name="T_Shadow_Res" tool_tip="Qualitat de les ombres: aquest és un paràmetre MOLT important. Determina la qualitat de les ombres. També carrega molt l'ordinador. És una bona idea deixar-lo el més baix possible si no fas fotos. Quan facis fotos, posa'l a 1.0 mentre prepares la imatge. Quan estiguis a punt per fer la foto, puja lentament el control lliscant cap a la dreta. Vigila la teva taxa de fotogrames mentre puges aquest paràmetre.">
-					Resolució d'ombres
+					Detall ombra
 				</text>
-						<text name="T_Shadow_Res" tool_tip="Qualitat de les ombres: aquest és un paràmetre MOLT important. Determina la qualitat de les ombres. També carrega molt l'ordinador. És una bona idea deixar-lo el més baix possible si no fas fotos. Quan facis fotos, posa'l a 1.0 mentre prepares la imatge. Quan estiguis a punt per fer la foto, puja lentament el control lliscant cap a la dreta. Vigila la teva taxa de fotogrames mentre puges aquest paràmetre. Fes-ho lentament les primeres vegades per familiaritzar-te amb el nivell d'ombres que funciona millor amb el teu sistema. NOTA:">
-			Qualitat
-		</text>
-		<button name="Reset_Shadow_Res" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Shd_Clarity" tool_tip="Aquest és un paràmetre MOLT important. Determina de manera significativa com de clares són les ombres del Sol/Lluna en general. Ajusta la claredat fins a obtenir el resultat més nítid. Nota: la claredat de les ombres està directament relacionada amb la posició de la càmera i del Sol/Lluna. Cada vegada que moguis la càmera o el Sol/Lluna, és millor tornar a ajustar aquest valor. A més, per facilitar l'ajust d'aquest valor, és útil establir primer la 'Transparència' a 0.0.">
+				<button name="Reset_Shadow_Res" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Shd_Clarity" tool_tip="Aquest és un paràmetre MOLT important. Determina de manera significativa com de clares són les ombres del Sol/Lluna en general. Ajusta la claredat fins a obtenir el resultat més nítid. Nota: la claredat de les ombres està directament relacionada amb la posició de la càmera i del Sol/Lluna. Cada vegada que moguis la càmera o el Sol/Lluna, és millor tornar a ajustar aquest valor. A més, per facilitar l'ajust d'aquest valor, és útil establir primer la 'Transparència' a 0.0.">
 			Claredat
 		</text>
-		<button name="Shd_Clarity_Reset" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Blur_Size" tool_tip="Com més alt sigui el número, més suaus seran les vores de les ombres. Posa 0 per a les ombres més nítides. Aquest paràmetre està directament relacionat amb el que hi ha a sota. Et permet establir la quantitat total de desenfocament possible de l'ombra. Si està a 4.00, pots utilitzar la 'Suavitat' de les ombres per ajustar el desenfocament de l'ombra independentment de l'oclusió ambiental.">
-			Desenfo
+				<button name="Shd_Clarity_Reset" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Blur_Size" tool_tip="Com més alt sigui el número, més suaus seran les vores de les ombres. Posa 0 per a les ombres més nítides. Aquest paràmetre està directament relacionat amb el que hi ha a sota. Et permet establir la quantitat total de desenfocament possible de l'ombra. Si està a 4.00, pots utilitzar la 'Suavitat' de les ombres per ajustar el desenfocament de l'ombra independentment de l'oclusió ambiental.">
+			Difuminat
 		</text>
-		<button name="Blur_Reset" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Shd_Soften" tool_tip="Controla l'efecte de suavitzat de les ombres del Sol/Lluna. Una manera senzilla d'establir aquest valor per a les teves necessitats específiques és posar primer el 'Desenfo' a un valor superior, al voltant de 3.0. Després, el control lliscant hauria de suavitzar l'efecte al teu gust. Tingues en compte que un valor de 0.0 desactivarà efectivament totes les ombres del Sol/Lluna. A més, això no afecta les ombres causades per llums de projector.">
+				<button name="Blur_Reset" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Shd_Soften" tool_tip="Controla l'efecte de suavitzat de les ombres del Sol/Lluna. Una manera senzilla d'establir aquest valor per a les teves necessitats específiques és posar primer el 'Desenfo' a un valor superior, al voltant de 3.0. Després, el control lliscant hauria de suavitzar l'efecte al teu gust. Tingues en compte que un valor de 0.0 desactivarà efectivament totes les ombres del Sol/Lluna. A més, això no afecta les ombres causades per llums de projector.">
 			Suavitat
 		</text>
-		<button name="Shd_Soften_Reset" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Blur_Dist" tool_tip="Defineix el punt en què les ombres començaran a desenfocar-se en relació amb la càmera. Com més baix sigui el valor, més a prop estarà el punt de desenfocament de l'ombra. ATENCIÓ: per a aquest paràmetre cal activar l''Oclusió Ambiental'.">
+				<button name="Shd_Soften_Reset" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Blur_Dist" tool_tip="Defineix el punt en què les ombres començaran a desenfocar-se en relació amb la càmera. Com més baix sigui el valor, més a prop estarà el punt de desenfocament de l'ombra. ATENCIÓ: per a aquest paràmetre cal activar l''Oclusió Ambiental'.">
 			Distància
 		</text>
-		<button name="Blur_Dist_Reset" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_FOV_Cutoff" tool_tip="Defineix el punt de tall del camp de visió (FOV) en què la renderització canvia entre projecció ortogonal i perspectiva. Si obtens ombres que 'salten', prova d'ajustar aquest paràmetre per millorar-ho. També pot ser molt útil ajustar els valors XYZ per al paràmetre de depuració RenderShadowSplitExponent.">
+				<button name="Blur_Dist_Reset" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_FOV_Cutoff" tool_tip="Defineix el punt de tall del camp de visió (FOV) en què la renderització canvia entre projecció ortogonal i perspectiva. Si obtens ombres que 'salten', prova d'ajustar aquest paràmetre per millorar-ho. També pot ser molt útil ajustar els valors XYZ per al paràmetre de depuració RenderShadowSplitExponent.">
 			Punt de tall
 		</text>
-		<button name="FOV_Cutoff_Reset" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Shd_Bias">
+				<button name="FOV_Cutoff_Reset" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Spot_Cutoff" tool_tip="Ajusta el desplaçament de les ombres projectades pels projectors per minimitzar artefactes com ara ombres d'&quot;acne&quot; o línies no desitjades a les superfícies.">Marge focus</text>
+				<button name="Spot_Cutoff_Reset" tool_tip="Restaura el valor predeterminat." />
+				<text name="T_Shd_Bias" tool_tip="Controla el biaix de profunditat aplicat a les ombres per evitar artefactes d'autoombra (coneguts com a 'acne d'ombra'). Els valors més baixos creen ombres més precises, mentre que els valors lleugerament més alts poden ajudar a reduir els problemes de parpelleig o superposició d'ombres. Ajustar aquesta configuració també pot ajudar a corregir les ombres que semblen surar per sobre de les superfícies o que no toquen correctament les vores dels objectes. Ajusteu-ho gradualment per equilibrar la precisió de les ombres i la prevenció d'artefactes.">
 			Desplaçament
 		</text>
-		<button name="Shd_Bias_Reset" label="R" tool_tip="Reinicia al valor per defecte."/>
-	</panel>
-	<panel name="P_Ambient_Occlusion">
-		<text name="T_Ambient_Occlusion">
+				<button name="Shd_Bias_Reset" label="R" tool_tip="Reinicia al valor per defecte." />
+			</panel>
+			<panel name="P_Ambient_Occlusion">
+				<text name="T_Ambient_Occlusion">
 			Paràmetres d'Oclusió Ambiental
 		</text>
-	</panel>
-	<panel name="P_Amb_Occ_Settings">
-		<check_box name="UseSSAO" label="Oclusió Ambiental (percepció de profunditat)" tool_tip="L'Oclusió Ambiental afegeix ombrejat a tots els objectes. És més efectiu quan s'utilitzen els paràmetres 'Efecte' i 'Suavitzat' de sota. Pot afegir un alt grau de realisme a les imatges, especialment si es prenen a una resolució de 2048 píxels o superior."/>
-	</panel>
-	<panel name="P_Scale">
-		<text name="T_Scale" tool_tip="Controla l'àrea de mostreig; àrees més grans són més precises. Pot ser útil establir aquests valors alts i després afegir una mica de desenfocament d'ombra per suavitzar-ne l'efecte.">
+			</panel>
+			<panel name="P_Amb_Occ_Settings">
+				<check_box name="UseSSAO" label="Oclusió Ambiental (percepció de profunditat)" tool_tip="L'Oclusió Ambiental afegeix ombrejat a tots els objectes. És més efectiu quan s'utilitzen els paràmetres 'Efecte' i 'Suavitzat' de sota. Pot afegir un alt grau de realisme a les imatges, especialment si es prenen a una resolució de 2048 píxels o superior." />
+			</panel>
+			<panel name="P_Scale">
+				<text name="T_Scale" tool_tip="Controla l'àrea de mostreig; àrees més grans són més precises. Pot ser útil establir aquests valors alts i després afegir una mica de desenfocament d'ombra per suavitzar-ne l'efecte.">
 			Escala
 		</text>
-		<button name="Reset_Scale" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Max_Scale" tool_tip="Controla el radi màxim de la pantalla des del qual es fa el mostreig per evitar errors a les memòries cau de les targetes gràfiques i la gran càrrega de rendiment associada. Pot ser útil establir aquests valors alts i després afegir una mica de desenfocament d'ombra per suavitzar-ne l'efecte.">
+				<button name="Reset_Scale" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Max_Scale" tool_tip="Controla el radi màxim de la pantalla des del qual es fa el mostreig per evitar errors a les memòries cau de les targetes gràfiques i la gran càrrega de rendiment associada. Pot ser útil establir aquests valors alts i després afegir una mica de desenfocament d'ombra per suavitzar-ne l'efecte.">
 			Màxim
 		</text>
-		<button name="Reset_Max_Scale" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Scaling_Factor" tool_tip="Coeficient d'escalat per a l'efecte (més fosc). Pot ser útil establir aquests valors alts i després afegir una mica de desenfocament d'ombra per suavitzar-ne l'efecte.">
-			Coef.
+				<button name="Reset_Max_Scale" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Scaling_Factor" tool_tip="Coeficient d'escalat per a l'efecte (més fosc). Pot ser útil establir aquests valors alts i després afegir una mica de desenfocament d'ombra per suavitzar-ne l'efecte.">
+			Coeficient
 		</text>
-		<button name="Reset_Scaling_Factor" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Effect" tool_tip="Controla l'efecte general d'enfosquiment de l'Oclusió Ambiental. El valor per defecte de 0,8 produeix un efecte gairebé imperceptible. Valors de 0.0 i inferiors proporcionen un resultat més realista. Tingues en compte que l'Oclusió Ambiental produeix un efecte sorollós. A més, l'avatar de malla estàndard pot semblar menys atractiu amb valors d'efecte alts a causa de la baixa qualitat de la seva geometria. Nota: el valor més baix que pots establir amb el control lliscant és 0, però al comptador pots introduir valors negatius fins a -10000.">
+				<button name="Reset_Scaling_Factor" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_I_Max" tool_tip="Estableix el límit màxim de brillantor per a la radiació en els càlculs d'oclusió ambiental. Aquest és un límit superior que evita que les zones massa lluminoses dominen l'efecte de les oclusions ambientals.">Màxim llum.</text>
+				<button name="Reset_I_Max" tool_tip="Restaura el valor predeterminat." />
+				<text name="T_I_Scaling" tool_tip="Controla l'escala de radiació de la llum en l'oclusió ambiental, afectant com la intensitat de la llum influeix en la foscor de l'ombra. Permet equilibrar la il·luminació en escenes brillants.">Radiació llum</text>
+				<button name="Reset_I_Scaling" tool_tip="Restaura el valor predeterminat." />
+				<text name="T_Effect" tool_tip="Controla l'efecte general d'enfosquiment de l'Oclusió Ambiental. El valor per defecte de 0,8 produeix un efecte gairebé imperceptible. Valors de 0.0 i inferiors proporcionen un resultat més realista. Tingues en compte que l'Oclusió Ambiental produeix un efecte sorollós. A més, l'avatar de malla estàndard pot semblar menys atractiu amb valors d'efecte alts a causa de la baixa qualitat de la seva geometria. Nota: el valor més baix que pots establir amb el control lliscant és 0, però al comptador pots introduir valors negatius fins a -10000.">
 			Efecte
 		</text>
-		<button name="Reset_Effect" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_AO_Soften" tool_tip="Controla el suavitzat de l'efecte d'Oclusió Ambiental. Una manera senzilla d'establir aquest valor per a les teves necessitats és posar primer el 'Desenfo' de les ombres a un valor superior, al voltant de 4.0. Tingues en compte que un valor de 0.0 desactivarà efectivament l'efecte.">
+				<button name="Reset_Effect" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_AO_Soften" tool_tip="Controla el suavitzat de l'efecte d'Oclusió Ambiental. Una manera senzilla d'establir aquest valor per a les teves necessitats és posar primer el 'Desenfo' de les ombres a un valor superior, al voltant de 4.0. Tingues en compte que un valor de 0.0 desactivarà efectivament l'efecte.">
 			Suavitat
-		</text>	
-		<button name="Reset_AO_Soften" label="C" tool_tip="Restableix al valor per defecte."/>			
+		</text>
+				<button name="Reset_AO_Soften" label="C" tool_tip="Restableix al valor per defecte." />
+			</panel>
 		</panel>
-	</panel>
-	
 		<panel name="P_DoF_Glow" label="Prof./Brillantor">
-		<panel name="PT_DoF_Glow">
-			<text name="T_DoF">
+			<panel name="PT_DoF_Glow">
+				<text name="T_DoF">
 				Paràmetres de Profunditat de Camp
 			</text>
-		</panel>
-		<panel name="P_DoF_Settings">
-			<check_box name="UseDepthofField" label="Activa la Profunditat de Camp (DoF)" tool_tip="Això activarà la Profunditat de Camp, que defineix la distància entre els objectes més propers i més llunyans en una escena que semblen acceptablement nítids en una imatge. Si no la fas servir, desactiva-la per millorar la taxa de fotogrames. Si no pots activar aquesta funció o no en veus l'efecte, activa el 'Model d'il·luminació avançat' a la pestanya 'Llum'."/>
-			<check_box name="UseDoFUnderwater" label="Activa la Profunditat de Camp sota l'aigua" tool_tip="Normalment, la profunditat de camp es desactiva sota l'aigua, fins i tot amb la casella de dalt marcada. Aquesta opció elimina aquesta restricció. Tingues en compte que potser hauràs de reorientar manualment la càmera cap als objectes desitjats fent-hi clic quan siguis sota l'aigua."/>
-			<check_box label="El focus de la PdC segueix el punter" name="FSFocusPointFollowsPointer" tool_tip="El focus de la profunditat de camp (DoF) seguirà el cursor del ratolí, un comportament similar al que s'observa amb la càmera de vol lliure. Utilitza-ho juntament amb el bloqueig del focus de la Profunditat de Camp"/>
-			<check_box name="MIC_Show_FOV" label="Mostra l'Angle de Visió (FOV) a la pantalla" tool_tip="Això et mostrarà l'Angle de Visió de la càmera. Al visor, pots canviar la distància focal de l'objectiu igual que a la vida real. Com més baix sigui el valor de l'Angle de Visió, més llarg serà l'objectiu de la càmera. Un objectiu de 50mm té un Angle de Visió de 27.0 graus. Fes servir el panell 'Zoom' de sota per ajustar-lo. Consulta la Viquipèdia per a una taula que mostra la relació entre l'Angle de Visió i la distància focal de l'objectiu (mm)."/>
-		</panel>
-		<panel name="P_Zoom">
-			<text name="T_Zoom" width="85" tool_tip="En condicions reals, aquesta és la funció de zoom. Canviarà el camp de visió a la finestra de visualització. És el mateix que prémer Ctrl+0 o Ctrl+8. NOTA: Això no funcionarà si has activat la flycam (3D SpaceNavigator).">
+			</panel>
+			<panel name="P_DoF_Settings">
+				<check_box name="UseDepthofField" label="Activa la Profunditat de Camp (DoF)" tool_tip="Això activarà la Profunditat de Camp, que defineix la distància entre els objectes més propers i més llunyans en una escena que semblen acceptablement nítids en una imatge. Si no la fas servir, desactiva-la per millorar la taxa de fotogrames. Si no pots activar aquesta funció o no en veus l'efecte, activa el 'Model d'il·luminació avançat' a la pestanya 'Llum'." />
+				<check_box label="El focus de la PdC segueix el punter" name="FSFocusPointFollowsPointer" tool_tip="El focus de la profunditat de camp (DoF) seguirà el cursor del ratolí, un comportament similar al que s'observa amb la càmera de vol lliure. Utilitza-ho juntament amb el bloqueig del focus de la Profunditat de Camp" />
+				<button name="FocusPointRenderToggle" tool_tip="Us permet canviar la visualització del reticle de l'àrea d'enfocament. La retícula és groga quan està lliure i vermella quan està bloquejada." />
+				<check_box name="MIC_Show_FOV" label="Mostra l'Angle de Visió (FOV) a la pantalla" tool_tip="Això et mostrarà l'Angle de Visió de la càmera. Al visor, pots canviar la distància focal de l'objectiu igual que a la vida real. Com més baix sigui el valor de l'Angle de Visió, més llarg serà l'objectiu de la càmera. Un objectiu de 50mm té un Angle de Visió de 27.0 graus. Fes servir el panell 'Zoom' de sota per ajustar-lo. Consulta la Viquipèdia per a una taula que mostra la relació entre l'Angle de Visió i la distància focal de l'objectiu (mm)." />
+			</panel>
+			<panel name="P_Zoom">
+				<text name="T_Zoom" width="85" tool_tip="En condicions reals, aquesta és la funció de zoom. Canviarà el camp de visió a la finestra de visualització. És el mateix que prémer Ctrl+0 o Ctrl+8. NOTA: Això no funcionarà si has activat la flycam (3D SpaceNavigator).">
 				Zoom
 			</text>
-			<slider_bar name="SB_Zoom" width="122"/>
-			<button name="Reset_Zoom" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_FOV" width="85" tool_tip="Angle de Visió: indica quin Angle de Visió vols simular per a l'efecte de Profunditat de Camp. El millor és ajustar-lo a l'Angle de Visió actual.">
+				<button name="Reset_Zoom" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_FOV" width="151" tool_tip="Angle de Visió: indica quin Angle de Visió vols simular per a l'efecte de Profunditat de Camp. El millor és ajustar-lo a l'Angle de Visió actual.">
 				Angle de Visió
 			</text>
-			<slider_bar name="SB_FOV" width="122"/>
-			<button name="Reset_FOV" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_F_Number" tool_tip="En condicions reals, aquest és el paràmetre d'obertura de l'objectiu, i com més baix sigui el valor, menor serà la profunditat de camp. El mateix s'aplica a SL.">
+				<button name="Reset_FOV" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_F_Number" tool_tip="En condicions reals, aquest és el paràmetre d'obertura de l'objectiu, i com més baix sigui el valor, menor serà la profunditat de camp. El mateix s'aplica a SL.">
 				Obertura
 			</text>
-			<button name="Reset_F_Number" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Focal_Length" tool_tip="Distància focal (mm): indica la distància focal/longitud de l'objectiu que simula l'efecte de Profunditat de Camp. Valors més alts donen una profunditat de camp més estreta.">
+				<button name="Reset_F_Number" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Focal_Length" tool_tip="Distància focal (mm): indica la distància focal/longitud de l'objectiu que simula l'efecte de Profunditat de Camp. Valors més alts donen una profunditat de camp més estreta.">
 				Focal
 			</text>
-			<button name="Reset_Focal_Length" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Foc_Time" tool_tip="Temps de focus: estableix el temps en segons necessari per canviar el focus d'un objecte a un altre.">
+				<button name="Reset_Focal_Length" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Foc_Time" tool_tip="Temps de focus: estableix el temps en segons necessari per canviar el focus d'un objecte a un altre.">
 				Temps de focus
 			</text>
-			<button name="Reset_Foc_Time" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_CoC" tool_tip="Cercle de Confusió: aquest és un PARÀMETRE MOLT IMPORTANT. Determina la intensitat del desenfocament. No canvia la profunditat de camp, sinó que ajusta com de borrosos estaran els objectes fora d'aquesta. També pots accedir a valors negatius al camp de text per a efectes interessants.">
-				Desenfo
+				<button name="Reset_Foc_Time" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_CoC" width="106" tool_tip="Cercle de Confusió: aquest és un PARÀMETRE MOLT IMPORTANT. Determina la intensitat del desenfocament. No canvia la profunditat de camp, sinó que ajusta com de borrosos estaran els objectes fora d'aquesta. També pots accedir a valors negatius al camp de text per a efectes interessants.">
+				Difuminat
 			</text>
-			<button name="Reset_CoC" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Resolution" tool_tip="Resolució: Això determina la qualitat de l'efecte de Profunditat de Camp. Per a un ús no fotogràfic, '.25' és adequat. Per a instantànies, '.50' o '.70' són molt agradables. Per a una alta qualitat, 1.00 és el millor. Valors alts alentiran els teus FPS! També pots accedir a valors negatius al camp de text per a efectes interessants.">
+				<button name="Reset_CoC" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Resolution" tool_tip="Resolució: Això determina la qualitat de l'efecte de Profunditat de Camp. Per a un ús no fotogràfic, '.25' és adequat. Per a instantànies, '.50' o '.70' són molt agradables. Per a una alta qualitat, 1.00 és el millor. Valors alts alentiran els teus FPS! També pots accedir a valors negatius al camp de text per a efectes interessants.">
 				Resolució
 			</text>
-			<button name="Reset_Resolution" label="R" tool_tip="Reinicia al valor per defecte."/>
-		</panel>
-		<panel name="P_Glow_Settings">
-			<text name="T_Glow_Settings">
+				<button name="Reset_Resolution" label="R" tool_tip="Reinicia al valor per defecte." />
+			</panel>
+			<panel name="P_Tone_Settings">
+				<text name="T_Tone_Settings">Configuració d'assignació de tons HDR</text>
+			</panel>
+			<panel name="P_Tone_Settings_2">
+				<check_box label="Activa HDR i efectes emissius" name="Disable_Vintage_Mode" tool_tip="Permet un alt rang dinàmic (HDR) i efectes emissius, millorant la vitalitat del color, la il·luminació dinàmica i la resplendor dels materials emissius. Aquesta configuració millora el realisme general de la il·luminació a les escenes, especialment amb objectes amb textura PBR (Renderització basada en física). La desactivació d'aquesta opció torna a un mode d'il·luminació &quot;vintage&quot; amb menys contrast i vibració, i també elimina la llum emesa pels objectes amb textura PBR, fent-los semblar plans o menys il·luminats." />
+			</panel>
+			<panel name="P_Tone_Settings_3">
+				<text name="T_Tonemap_Type" tool_tip="Controla l'algoritme que s'utilitza per a l'assignació de tons d'alt rang dinàmic (HDR), que afecta l'equilibri de les zones clares i fosques. Khronos Neutral proporciona un aspecte natural i neutre amb menys contrast i una manipulació mínima del color, conservant la il·luminació original tal com estava prevista. ACES (Academy Color Encoding System) està dissenyat per imitar el rang dinàmic de la pel·lícula, oferint colors més rics, un contrast més alt i més aspectes cinematogràfics. Canviar aquesta configuració pot alterar la brillantor general i l'equilibri de color, depenent de l'escena.">Tipus de mapeador de tons HDR</text>
+				<text name="T_Tonemap_Type" tool_tip="Combina entre l'estil de mapeig de tons HDR seleccionat i la il·luminació lineal en brut. Un valor d'1,0 aplica tot l'efecte del mapeador de to escollit (Khronos Neutral o ACES). Un valor de 0,0 desactiva el mapa de tons i mostra la il·luminació lineal sense ajustos posteriors al processament. Ajusteu aquest control lliscant per afinar l'equilibri entre el realisme natural i el contrast cinematogràfic. Els valors més alts emfatitzen l'efecte de mapa de tons, mentre que els valors més baixos produeixen un aspecte més pla i sense processar.">Barreja de tons</text>
+				<button name="Reset_Tonemap_Type" tool_tip="Restaura el valor predeterminat." />
+			</panel>
+			<panel name="P_Glow_Settings">
+				<text name="T_Glow_Settings">
 				Paràmetres de Brillantor
 			</text>
-		</panel>
-		<panel name="P_Glow_Quality">
-			<text name="T_Glow_Quality" tool_tip="Això determinarà la qualitat de l'efecte de brillantor, com més alt millor. Hi ha poca diferència visual entre 8 i 10.">
-				Qualitat
-			</text>
-			<button name="Reset_Glow_Quality" label="R" tool_tip="Reinicia al valor per defecte."/>
-		</panel>
-		<panel name="P_Glow_Iterations">
-			<text name="T_Glow_Iterations" tool_tip="Nombre de repeticions de la brillantor (més alt = més ample i suau, i una mica més lent).">
+			</panel>
+			<panel name="P_Glow_Quality">
+				<check_box label="Activa l'efecte resplendor" name="UseGlow" tool_tip="Activa l'efecte resplendor, que permet que els objectes brillants i les fonts de llum emetin un halo suau, simulant un efecte de floració. Aquest efecte millora l'aspecte de materials emissius, reflexos i reflexos, afegint un aspecte més dinàmic i viu a les zones il·luminades. Desactivar aquesta opció pot millorar el rendiment, especialment en escenes amb il·luminació complexa." />
+				<check_box label="Activa HDR per a l'efecte brillantor" name="GlowHDR" tool_tip="Habilita el processament d'alt rang dinàmic (HDR) per a l'efecte de resplendor, donant lloc a resplendors més intensos i vius amb transicions de brillantor realistes. Això millora la qualitat de la resplendor, especialment en escenes d'alt contrast, millorant la manera com la llum es propaga des de zones molt lluminoses. Útil quan es treballa amb textures emissives i efectes de llum forts." />
+			</panel>
+			<panel name="P_Glow_Iterations">
+				<text name="T_Glow_Quality" tool_tip="Controla la resolució a la qual es representa l'efecte de resplendor. Els valors més alts (més propers a 10) produeixen resplendors més nítids i definits, mentre que els valors més baixos (més propers a 8) són més coherents amb el rendiment, però poden semblar lleugerament més suaus. La diferència entre els valors 8 i 10 és subtil, però els valors més alts poden afectar el rendiment en sistemes menys potents.">Qualitat</text>
+				<button name="Reset_Glow_Quality" tool_tip="Restaura el valor predeterminat." />
+				<text name="T_Glow_Iterations" tool_tip="Nombre de repeticions de la brillantor (més alt = més ample i suau, i una mica més lent).">
 				Repeticions
 			</text>
-			<button name="Reset_Glow_Iterations" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Glow_Strength" tool_tip="Força additiva de la brillantor. Aquest efecte requereix valors molt baixos. Comença amb poc!">
+				<button name="Reset_Glow_Iterations" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Glow_Strength" tool_tip="Força additiva de la brillantor. Aquest efecte requereix valors molt baixos. Comença amb poc!">
 				Força
 			</text>
-			<button name="Reset_Glow_Strength" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Luminance" tool_tip="Intensitat mínima de lluminositat necessària per considerar un objecte prou brillant per brillar automàticament.">
-				Lluminositat
-			</text>
-			<button name="Reset_Luminance" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Warmth" tool_tip="Quantitat de calidesa per utilitzar.">
-				Calidesa
-			</text>
-					<button name="Reset_Warmth" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Glow_Width" tool_tip="Mida de la mostra de brillantor. Més alt = brillantor més àmplia i suau, però es tornarà més pixelada.">
+				<button name="Reset_Glow_Strength" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Glow_Width" tool_tip="Mida de la mostra de brillantor. Més alt = brillantor més àmplia i suau, però es tornarà més pixelada.">
 			Amplada
 		</text>
-		<button name="Reset_Glow_Width" label="R" tool_tip="Reinicia al valor per defecte."/>
-		<text name="T_Alpha" tool_tip="Bàsicament, com de brillant pot ser la brillantor.">
-			Alfa
-		</text>
-		<button name="Reset_Alpha" label="R" tool_tip="Reinicia al valor per defecte."/>
-	</panel>
-   </panel>	
-	<panel name="P_General" label="General">
-		<panel name="PT_General">
-			<text name="T_General">
+				<button name="Reset_Glow_Width" label="R" tool_tip="Reinicia al valor per defecte." />
+			</panel>
+		</panel>
+		<panel name="P_General" label="General">
+			<panel name="PT_General">
+				<text name="T_General">
 				Paràmetres generals de visualització
 			</text>
-		</panel>
-		<panel name="P_General_Settings">
-			<text name="T_Draw_Distance" tool_tip="Estableix la distància de dibuixat màxima. Valors alts alentiran els teus FPS!">
+			</panel>
+			<panel name="P_General_Settings">
+				<text name="T_Draw_Distance" tool_tip="Estableix la distància de dibuixat màxima. Valors alts alentiran els teus FPS!">
 				Dibuixat
 			</text>
-			<button name="Reset_Draw_Distance" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Avi_Count" tool_tip="Nombre màxim d'altres avatars a dibuixar a l'escena. Molt útil per a situacions on molts avatars alenteixen els teus FPS.">
+				<button name="Reset_Draw_Distance" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Avi_Count" tool_tip="Nombre màxim d'altres avatars a dibuixar a l'escena. Molt útil per a situacions on molts avatars alenteixen els teus FPS.">
 				Núm. Avatars
 			</text>
-			<button name="Reset_Avi_Count" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Avi_Detail" tool_tip="Estableix la qualitat de renderització dels avatars. Com més alt, millor!">
+				<button name="Reset_Avi_Count" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Avi_Detail" tool_tip="Estableix la qualitat de renderització dels avatars. Com més alt, millor!">
 				Qual. Avatars
 			</text>
-			<button name="Reset_Avi_Detail" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Avi_Physics" tool_tip="Controla el nivell de detall de la física de l'avatar (per exemple, la física dels pits). Com més alt, millor.">
-				Fís.
+				<button name="Reset_Avi_Detail" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Avi_Physics" tool_tip="Controla el nivell de detall de la física de l'avatar (per exemple, la física dels pits). Com més alt, millor.">
+				Física
 			</text>
-			<button name="Reset_Avi_Physics" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Particle_Cnt" tool_tip="Estableix el nombre màxim de partícules a dibuixar.">
+				<button name="Reset_Avi_Physics" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Particle_Cnt" tool_tip="Estableix el nombre màxim de partícules a dibuixar.">
 				Partícules
 			</text>
-			<button name="Reset_Particle_Cnt" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Terrain_Scale" tool_tip="Estableix la qualitat de la textura del terreny per defecte (paisatge).">
+				<button name="Reset_Particle_Cnt" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Terrain_Scale" tool_tip="Estableix la qualitat de la textura del terreny per defecte (paisatge).">
 				Sòl
 			</text>
-			<button name="Reset_Terrain_Scale" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Terrain_Quality" tool_tip="Estableix la qualitat del terreny. Valors més alts signifiquen un paisatge més detallat a distància.">
+				<button name="Reset_Terrain_Scale" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Terrain_Quality" tool_tip="Estableix la qualitat del terreny. Valors més alts signifiquen un paisatge més detallat a distància.">
 				Terreny
 			</text>
-			<button name="Reset_Terrain_Quality" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Object_Detail" tool_tip="Controla quan es poden utilitzar objectes de menor detall per reduir el cost de renderització. Valors més alts causen retard, fes-ho servir amb precaució.">
+				<button name="Reset_Terrain_Quality" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Object_Detail" tool_tip="Controla quan es poden utilitzar objectes de menor detall per reduir el cost de renderització. Valors més alts causen retard, fes-ho servir amb precaució.">
 				Objectes
 			</text>
-			<button name="Reset_Object_Detail" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Flexi_Detail" tool_tip="Controla el nivell de detall dels objectes flexibles. Més alt significa més detall.">
+				<button name="Reset_Object_Detail" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Flexi_Detail" tool_tip="Controla el nivell de detall dels objectes flexibles. Més alt significa més detall.">
 				Flexibles
 			</text>
-			<button name="Reset_Flexi_Detail" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Tree_Detail" tool_tip="Controla el nivell de detall de la vegetació. Valors més alts donen més detall.">
+				<button name="Reset_Flexi_Detail" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Tree_Detail" tool_tip="Controla el nivell de detall de la vegetació. Valors més alts donen més detall.">
 				Arbres
 			</text>
-			<button name="Reset_Tree_Detail" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Sky_Detail" tool_tip="Controla el detall del cel de WindLight. Valors més baixos donen un millor rendiment i un cel menys bonic.">
+				<button name="Reset_Tree_Detail" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Sky_Detail" tool_tip="Controla el detall del cel de WindLight. Valors més baixos donen un millor rendiment i un cel menys bonic.">
 				Cel
 			</text>
-			<button name="Reset_Sky_Detail" label="R" tool_tip="Reinicia al valor per defecte."/>
-		</panel>
-		<panel name="P_Vignetting">
-			<text name="T_VignetteX" tool_tip="La vinyeta és l'enfosquiment de les cantonades d'una fotografia.">
-				Vinyeta
-			</text>
-			<button name="Reset_VignetteX" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_VignetteY" tool_tip="Afecta la negror de l'enfosquiment de la vora.">
-				Contrast
-			</text>
-			<button name="Reset_VignetteY" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_VignetteZ" tool_tip="Afecta la mida de la zona ombrejada.">
-				Mida
-			</text>
-			<button name="Reset_VignetteZ" label="R" tool_tip="Reinicia al valor per defecte."/>
-		</panel>
-		<panel name="P_Render">
-			<check_box label="Activa la Distància de Dibuixat" name="UseFarClip" tool_tip="Activa la Distància de Dibuixat; si desactives aquesta funció, s'utilitzarà la configuració anterior de Distància de Dibuixat."/>
-			<check_box label="Nivell de detall dinàmic" name="RednerLod1" tool_tip="Això activa una funció que permet ajustar dinàmicament el nivell de detall a l'escena a mesura que t'allunyes dels objectes. Ajuda a millorar el rendiment, però també pot reduir la qualitat dels objectes a l'escena."/>
-			<check_box label="Renderitza només els objectes visibles" tool_tip="Això permet processar/dibuixar només els objectes que estan dins del camp de visió de la càmera i no amagats darrere d'una altra cosa. Normalment millora el rendiment. De vegades pot reduir-lo, especialment quan una escena/sim té molts objectes. Prova-ho per veure si t'ajuda o no!" name="UssOcclusion1"/>
-			<check_box label="Filtratge anisotròpic (textures)" tool_tip="Això permet augmentar la nitidesa de les textures." name="Anisotropic"/>
-			<check_box label="Mostra les partícules adjuntes als avatars" tool_tip="Permet mostrar qualsevol partícula adjunta a altres avatars." name="Render Attached Particle"/>
-		</panel>
-		<panel name="P_Anti-aliasing">
-			<text name="T_Anti-aliasing" tool_tip="Defineix com de precisos i nítids són els contorns dels objectes. A les targetes gràfiques de gamma alta, valors més alts tenen poc impacte en el rendiment. A les targetes de gamma baixa, valors més alts poden alentir el funcionament.">
+				<button name="Reset_Sky_Detail" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Sharpening" tool_tip="Ajusta la nitidesa de la imatge general mitjançant la funció de millora del contrast (CAS). Els valors més alts milloren la claredat de la imatge augmentant el contrast a les vores, cosa que pot millorar el detall visual. Una nitidesa excessiva pot introduir artefactes o fer que la imatge sembli dura.">Nitidesa</text>
+				<button name="Reset_Sharpening" tool_tip="Restaura el valor predeterminat." />
+				<text name="T_Exposure" tool_tip="Controla la brillantor general de l'escena, simulant la configuració d'exposició de la càmera. Els valors més alts fan que la imatge sigui més brillant, cosa que és útil per a entorns foscos, mentre que els valors més baixos enfosquen l'escena, la qual cosa millora el contrast a les zones lluminoses. Ajusteu-lo amb cura per evitar els reflexos esvaïts o les ombres massa fosques.">Exposició</text>
+				<button name="Reset_Exposure" tool_tip="Restaura el valor predeterminat." />
+			</panel>
+			<panel name="P_Render">
+				<check_box label="Activa la Distància de Dibuixat" name="UseFarClip" tool_tip="Activa la Distància de Dibuixat; si desactives aquesta funció, s'utilitzarà la configuració anterior de Distància de Dibuixat." />
+				<check_box label="Nivell de detall dinàmic" name="RednerLod1" tool_tip="Això activa una funció que permet ajustar dinàmicament el nivell de detall a l'escena a mesura que t'allunyes dels objectes. Ajuda a millorar el rendiment, però també pot reduir la qualitat dels objectes a l'escena." />
+				<check_box label="Renderitza només els objectes visibles" tool_tip="Això permet processar/dibuixar només els objectes que estan dins del camp de visió de la càmera i no amagats darrere d'una altra cosa. Normalment millora el rendiment. De vegades pot reduir-lo, especialment quan una escena/sim té molts objectes. Prova-ho per veure si t'ajuda o no!" name="UssOcclusion1" />
+				<check_box label="Filtratge anisotròpic (textures)" tool_tip="Això permet augmentar la nitidesa de les textures." name="Anisotropic" />
+				<check_box label="Mostra les partícules adjuntes als avatars" tool_tip="Permet mostrar qualsevol partícula adjunta a altres avatars." name="Render Attached Particle" />
+			</panel>
+			<panel name="P_Anti-aliasing">
+				<text name="T_Antialiasing_Type" tool_tip="Selecciona el tipus d'antialiasing utilitzat per suavitzar les vores irregulars dels objectes. FXAA (Fast Approximate Antialiasing) és un mètode ràpid de qualitat mitjana. SMAA (Subpixel Morphological Antialiasing) proporciona un millor suavització de les vores amb un cost de rendiment lleugerament superior. Els canvis a aquesta configuració poden requerir un reinici del client perquè tingui efecte en algun maquinari.">Tipus d'antialiasing (reinici)</text>
+				<combo_box name="CB_Antialiasing_Type">
+					<combo_box.item label="Inhabilitat" name="FSAADisabled" />
+				</combo_box>
+				<text name="T_Anti-aliasing" tool_tip="Defineix com de precisos i nítids són els contorns dels objectes. A les targetes gràfiques de gamma alta, valors més alts tenen poc impacte en el rendiment. A les targetes de gamma baixa, valors més alts poden alentir el funcionament.">
 				Antialiàsing
 			</text>
-		<combo_box name="fsaa" label="Antialiàsing">
-			<combo_box.item label="Desactivat (vores rugoses)" name="FSAADisabled"/>
-			<combo_box.item label="2x (Vores suaus)" name="2x"/>
-			<combo_box.item label="4x (Vores llises)" name="4x"/>
-			<combo_box.item label="8x (Vores encara més llises)" name="8x"/>
-			<combo_box.item label="16x (Vores molt llises)" name="16x"/>
-		</combo_box>
-		<text name="T_Texture_Bumpiness" tool_tip="Controla la força i la resolució de les normals i els mapes de relleu.">
+				<combo_box name="fsaa" label="Antialiàsing">
+					<combo_box.item label="Feble" name="Low" />
+					<combo_box.item label="Mitjana" name="Medium" />
+					<combo_box.item label="Alt" name="High" />
+					<combo_box.item label="Ultra" name="Ultra" />
+				</combo_box>
+				<text name="T_Texture_Bumpiness" tool_tip="Controla la força i la resolució de les normals i els mapes de relleu.">
 			Relleu de Textures
 		</text>
-		<combo_box name="BumpStrengthSelection">
-			<combo_box.item label="Molt fi (molt feble)" name="0"/>
-			<combo_box.item label="Més fi (feble)" name="1"/>
-			<combo_box.item label="Fi (feble)" name="2"/>
-			<combo_box.item label="Normal" name="3"/>
-			<combo_box.item label="Gruixut (fort)" name="4"/>
-			<combo_box.item label="Més gruixut (molt fort)" name="5"/>
-		</combo_box>
-	</panel>
-  </panel>
-	<panel name="P_Aids" label="Eines">
-		<panel name="PT_Aids">
-			<text name="T_Aids">
+				<combo_box name="BumpStrengthSelection">
+					<combo_box.item label="Molt fi (molt feble)" name="0" />
+					<combo_box.item label="Més fi (feble)" name="1" />
+					<combo_box.item label="Fi (feble)" name="2" />
+					<combo_box.item label="Normal" name="3" />
+					<combo_box.item label="Gruixut (fort)" name="4" />
+					<combo_box.item label="Més gruixut (molt fort)" name="5" />
+				</combo_box>
+				<text name="T_RestrictMaxTexture" tool_tip="Estableix la màxima resolució de textures que es mostren al món. Les resolucions més altes (com ara 2048 px) proporcionen imatges més nítides i detallades, però utilitzen més memòria de vídeo, cosa que pot afectar el rendiment. Les configuracions més baixes estalvien memòria, reduint el risc d'obtenir textures borroses a causa dels límits de memòria.">Màxima resolució de textura</text>
+				<text name="T_AvatarDisplay" tool_tip="Controla la visualització dels avatars en funció de la seva complexitat i estat d'amistat. L'opció &quot;Límit per complexitat&quot; limita la representació de l'avatar més enllà d'una certa complexitat per millorar el rendiment. L'opció &quot;Mostra sempre els amics&quot; garanteix que els amics es mostrin completament, independentment de la seva complexitat. L'opció &quot;Mostra només els amics&quot; us permet mostrar només els vostres amics i amagar altres avatars per optimitzar el rendiment en zones ocupades.">Es mostren els avatars</text>
+				<combo_box name="AvatarComplexityModeSelection">
+					<combo_box.item label="Limitar per complexitat" name="0" />
+					<combo_box.item label="Mostra sempre als amics" name="1" />
+					<combo_box.item label="Mostra només amics" name="2" />
+				</combo_box>
+			</panel>
+		</panel>
+		<panel name="P_Aids" label="Eines">
+			<panel name="PT_Aids">
+				<text name="T_Aids">
 				Ajudes visuals
 			</text>
-		</panel>
-		<check_box label="Mostra les caixes delimitadores de totes les llums" name="Lights"/>
-		<check_box label="Mostra el radi de llum de la selecció" name="Show Light Radius for Selection"/>
-		<check_box label="Mostra les caixes delimitadores dels objectes" name="Bounding Boxes"/>
-		<check_box label="Mostra l'Estadística" name="Statistics Bar"/>
-		<check_box label="Mostra la Consola de la càmera" name="Camera"/>
-		<check_box label="Mostra la Consola de Textures" name="Texture Console"/>
-		<check_box label="Mostra el Color RGB-I sota el cursor" name="Show Color Under Cursor"/>
-		<check_box label="Ressalta els objectes transparents" name="Highlight Transparent"/>
-		<check_box label="Mostra l'escena en estructura de filferro" name="Wireframe"/>
-		<check_box label="Mostra els HUDs al teu Avatar" name="Show HUD Attachments"/>
-		<check_box label="Animació a càmera lenta del teu Avatar (només per a tu)" name="Slow Motion Animations"/>
-		<button name="Rebake Texture" label="Força l'actualització de l'aparença (Rebake)"/>
-		<button name="Set Window Size..." label="Estableix la mida de la finestra..."/>
-		<button name="Debug Settings" label="Mostra el Menú de Paràmetres de Depuració"/>
-		<panel name="P_Quick_Stats">
-			<text name="T_Quick_Stats" tool_tip="Aquí pots trobar estadístiques molt útils per avaluar el rendiment del sistema. Expandeix/Contrau els elements de sota fent clic a les seves etiquetes.">
+			</panel>
+			<panel name="P_Aids_Settings">
+				<check_box label="Mostra caixes delimitadores de llums" tool_tip="Mostra quadres delimitadors de filferro al voltant de totes les fonts de llum de l'escena, cosa que us permet visualitzar la ubicació i el rang de llums per depurar o configurar l'escena." name="Lights" />
+				<check_box tool_tip="Mostra el radi efectiu de les fonts de llum seleccionades, cosa que us permet veure fins a quin punt arriba la llum a l'escena. Útil per ajustar la configuració d'il·luminació." label="Mostra el radi d'il·luminació dels lums. seleccionat" name="Show Light Radius for Selection" />
+				<check_box tool_tip="Habilita quadres delimitadors de filferro al voltant de tots els objectes de l'escena. Això ajuda a identificar els límits dels objectes per a l'alineació, l'escala o la resolució de problemes de renderització." label="Mostra els quadres delimitadors d'objectes" name="Bounding Boxes" />
+				<check_box tool_tip="Mostra les estadístiques de rendiment en temps real, com ara la freqüència d'actualització (FPS), les dades de la xarxa i les mètriques de renderització. Útil per supervisar el rendiment del client i identificar colls d'ampolla." label="Mostra la barra d'estadístiques" name="Statistics Bar" />
+				<check_box tool_tip="Mostra informació detallada sobre la posició, l'orientació i el moviment de la càmera a l'escena. Útil per a treballs precisos de càmera en fotografia, machinima o construcció." label="Mostra les dades al pos. de la càmera" name="Camera" />
+				<check_box tool_tip="Obre la consola de textures, que mostra informació en temps real sobre la càrrega de textures, inclosa la seva mida, el temps de càrrega i l'ús de la memòria. Ajuda a diagnosticar problemes de rendiment relacionats amb la textura." label="Mostra informació de càrrega de textures" name="Texture Console" />
+				<check_box tool_tip="Mostra els valors de color RGB (vermell, verd, blau) i d'intensitat (I) del píxel directament sota el cursor. Útil per a la concordança de colors, treballs de disseny o depuració de problemes d'il·luminació." label="Valors de color RGB-I sota el control lliscant" name="Show Color Under Cursor" />
+				<check_box tool_tip="Ressalta els objectes transparents en vermell, facilitant la seva identificació. Aquesta característica és especialment útil per localitzar prims invisibles o objectes ocults quan es construeixen o es resolen escenes." label="Objectes transparents en vermell" name="Highlight Transparent" />
+				<check_box tool_tip="Renderitza tota l'escena en mode filferro, mostrant la geometria subjacent dels objectes sense textures ni ombres. Útil per analitzar l'estructura d'objectes, el nivell de detall (LOD) i la topologia de malla." label="Mostra l'escena en mode filferro" name="Wireframe" />
+				<check_box tool_tip="Mostra tots els accessoris HUD (Heads-Up Display) que porta actualment el teu avatar. Desactivar aquesta opció amaga els HUD, que poden ser útils per reduir el desordre de la pantalla o millorar el rendiment." label="Mostra l'HUD adjunt al teu avatar" name="Show HUD Attachments" />
+				<check_box tool_tip="Redueix les animacions de l'avatar del vostre client, cosa que us permet observar els moviments amb detall. Aquesta configuració no afecta com veuen els altres el vostre avatar." label="A poc a poc el vostre avatar (el vostre client slmt)" name="Slow Motion Animations" />
+				<button name="Rebake Texture" tool_tip="Obliga el client a refer o actualitzar les textures de l'aparença del vostre avatar. Això pot solucionar problemes com ara pells borroses, la roba que no es carrega correctament o altres problemes relacionats amb la textura." label="Força el canvi d'aparença (recuperació)" />
+				<button name="Set Window Size..." label="Ajusteu la mida de la finestra del client" tool_tip="Obre un quadre de diàleg per definir les dimensions exactes de la finestra del client. Útil per crear captures de pantalla amb resolucions específiques o complir els requisits de mida de finestra a machinima." />
+				<button name="Debug Settings" label="Mostra el menú de configuració de depuració" tool_tip="Obre el menú de configuració de depuració, proporcionant accés a la configuració avançada del client que no està disponible a les preferències estàndard. Feu servir amb precaució, ja que les modificacions poden afectar el rendiment i l'estabilitat." />
+			</panel>
+			<panel name="P_Quick_Stats">
+				<text name="T_Quick_Stats" tool_tip="Aquí pots trobar estadístiques molt útils per avaluar el rendiment del sistema. Expandeix/Contrau els elements de sota fent clic a les seves etiquetes.">
 				Estadístiques ràpides
 			</text>
+			</panel>
+			<scroll_container name="statistics_scroll">
+				<container_view name="statistics_view">
+					<stat_view name="basic">
+						<stat_bar name="fps" label="Fotogrames per segon" tool_tip="FPS: quantes vegades per segon el teu ordinador redibuixa (o actualitza) el que hi ha a la pantalla. Valors més alts són millors. Una taxa de fotogrames de 12 a 15 és comuna per a animacions, 24 és l'estàndard per a imatges en moviment, i 25(PAL)/30(NTSC) fotogrames per segon (FPS) és la velocitat per a la televisió." />
+						<stat_bar name="bandwidth" label="Amplada de banda" tool_tip="Amplada de banda: Quantes dades es transfereixen entre el teu ordinador i el món virtual. Aquest número varia molt depenent de la configuració d'amplada de banda que hagis utilitzat, on et trobis al món, què estigui passant, i si estàs carregant coses (objectes/textures/etc.) que estan al teu camp de visió. Si l'amplada de banda és de 0 Kbps, alguna cosa pot anar malament (pots estar parcialment desconnectat)." />
+						<stat_bar name="ktrisframe" label="Ktris dibuixats per fotograma" tool_tip="Ktris dibuixats: (per fotograma) Els objectes 3D generats per ordinador es construeixen amb triangles (la forma geomètrica bàsica). Aquest és el recompte del nombre de triangles o 'tris' en un fotograma de l'escena actual." />
+						<stat_bar name="ktrissec" label="Ktris dibuixats per seg." tool_tip="Ktris dibuixats: (per segon) Els objectes 3D generats per ordinador es construeixen amb triangles (la forma geomètrica bàsica). Aquest és el recompte del nombre de triangles o 'tris' per segon." />
+						<stat_bar name="objs" label="Total d'Objectes" tool_tip="Total d'Objectes: El nombre d'objectes que es mostren actualment, incloent: Prims, Avatars, Terrenys, Arbres, Grups de partícules i Trossos d'aigua." />
+						<stat_bar name="newobjs" label="Objectes Nous" tool_tip="Objectes Nous: El nombre d'objectes que es carreguen per segon." />
+						<stat_bar name="numimagesstat" label="Recompte de textures" tool_tip="Recompte: el nombre de textures úniques carregades." />
+					</stat_view>
+				</container_view>
+			</scroll_container>
 		</panel>
-		<scroll_container name="statistics_scroll">
-			<container_view name="statistics_view">
-				<stat_view name="basic">
-					<stat_bar name="fps" label="Fotogrames per segon" tool_tip="FPS: quantes vegades per segon el teu ordinador redibuixa (o actualitza) el que hi ha a la pantalla. Valors més alts són millors. Una taxa de fotogrames de 12 a 15 és comuna per a animacions, 24 és l'estàndard per a imatges en moviment, i 25(PAL)/30(NTSC) fotogrames per segon (FPS) és la velocitat per a la televisió."/>
-					<stat_bar name="bandwidth" label="Amplada de banda" tool_tip="Amplada de banda: Quantes dades es transfereixen entre el teu ordinador i el món virtual. Aquest número varia molt depenent de la configuració d'amplada de banda que hagis utilitzat, on et trobis al món, què estigui passant, i si estàs carregant coses (objectes/textures/etc.) que estan al teu camp de visió. Si l'amplada de banda és de 0 Kbps, alguna cosa pot anar malament (pots estar parcialment desconnectat)."/>
-					<stat_bar name="ktrisframe" label="Ktris dibuixats per fotograma" tool_tip="Ktris dibuixats: (per fotograma) Els objectes 3D generats per ordinador es construeixen amb triangles (la forma geomètrica bàsica). Aquest és el recompte del nombre de triangles o 'tris' en un fotograma de l'escena actual."/>
-					<stat_bar name="ktrissec" label="Ktris dibuixats per seg." tool_tip="Ktris dibuixats: (per segon) Els objectes 3D generats per ordinador es construeixen amb triangles (la forma geomètrica bàsica). Aquest és el recompte del nombre de triangles o 'tris' per segon."/>
-					<stat_bar name="objs" label="Total d'Objectes" tool_tip="Total d'Objectes: El nombre d'objectes que es mostren actualment, incloent: Prims, Avatars, Terrenys, Arbres, Grups de partícules i Trossos d'aigua."/>
-					<stat_bar name="newobjs" label="Objectes Nous" tool_tip="Objectes Nous: El nombre d'objectes que es carreguen per segon."/>
-					<stat_bar name="numimagesstat" label="Recompte de textures" tool_tip="Recompte: el nombre de textures úniques carregades."/>
-				</stat_view>
-			</container_view>
-		</scroll_container>
-	</panel>
-	<panel name="P_Cam" label="Càm.">
-		<panel name="PT_Cam">
-			<text name="T_Cam">
+		<panel name="P_Cam" label="Càm.">
+			<panel name="PT_Cam">
+				<text name="T_Cam">
 				Paràmetres del ratolí 3D (joystick)
 			</text>
-		</panel>
-		<panel name="P_Cam_Settings">
-			<text name="T_LR_Axis" tool_tip="Ajusta la sensibilitat del moviment esquerra/dreta. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
+			</panel>
+			<panel name="P_Cam_Settings">
+				<text name="T_LR_Axis" tool_tip="Ajusta la sensibilitat del moviment esquerra/dreta. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="244">
 				Esquerra/Dreta
 			</text>
-			<slider_bar name="SB_LR_Axis" width="110"/>
-			<button name="Reset_LR_Axis" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_UD_Axis" tool_tip="Ajusta la sensibilitat del moviment Amunt/Avall. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
+				<button name="Reset_LR_Axis" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_UD_Axis" tool_tip="Ajusta la sensibilitat del moviment Amunt/Avall. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
 				Amunt/Avall
 			</text>
-			<slider_bar name="SB_UD_Axis" width="110"/>
-			<button name="Reset_UD_Axis" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_IO_Axis" tool_tip="Ajusta la sensibilitat del moviment Endavant/Enrere. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
+				<button name="Reset_UD_Axis" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_IO_Axis" tool_tip="Ajusta la sensibilitat del moviment Endavant/Enrere. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="130">
 				Endavant/Enrere
 			</text>
-			<slider_bar name="SB_IO_Axis" width="110"/>
-			<button name="Reset_IO_Axis" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Tilt" tool_tip="Ajusta la sensibilitat de l'Inclinació. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
+				<button name="Reset_IO_Axis" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Tilt" tool_tip="Ajusta la sensibilitat de l'Inclinació. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
 				Inclinació
 			</text>
-			<slider_bar name="SB_Tilt" width="110"/>
-			<button name="Reset_Tilt" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Spin" tool_tip="Ajusta la sensibilitat del Gir. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
+				<button name="Reset_Tilt" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Spin" tool_tip="Ajusta la sensibilitat del Gir. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
 				Gir
 			</text>
-			<slider_bar name="SB_Spin" width="110"/>
-			<button name="Reset_Spin" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Roll" tool_tip="Ajusta la sensibilitat del Balanceig. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
+				<button name="Reset_Spin" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Roll" tool_tip="Ajusta la sensibilitat del Balanceig. Si tens dificultats per moure't amb precisió, utilitza valors més baixos a l'escala." width="100">
 				Balanceig
 			</text>
-						<slider_bar name="SB_Roll" width="110"/>
-			<button name="Reset_Roll" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Zoom_Speed" tool_tip="Ajusta la sensibilitat de la velocitat del zoom. Si tens dificultats per fer zoom amb precisió, utilitza valors més baixos a l'escala." width="100">
+				<button name="Reset_Roll" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Zoom_Speed" tool_tip="Ajusta la sensibilitat de la velocitat del zoom. Si tens dificultats per fer zoom amb precisió, utilitza valors més baixos a l'escala." width="154">
 				Velocitat del Zoom
 			</text>
-			<slider_bar name="SB_Zoom_Speed" width="110"/>
-			<button name="Reset_Zoom_Speed" label="R" tool_tip="Reinicia al valor per defecte."/>
-			<text name="T_Feathering" tool_tip="Ajustar el control lliscant completament a la dreta farà que la càmera sigui molt mòbil, proporcionant un control total amb el joystick. Ajustar el control lliscant completament a l'esquerra farà que la càmera tingui molta inèrcia, com si fos pesada; bo per a instantànies, no apte per a vídeo." width="100">
+				<button name="Reset_Zoom_Speed" label="R" tool_tip="Reinicia al valor per defecte." />
+				<text name="T_Feathering" tool_tip="Ajustar el control lliscant completament a la dreta farà que la càmera sigui molt mòbil, proporcionant un control total amb el joystick. Ajustar el control lliscant completament a l'esquerra farà que la càmera tingui molta inèrcia, com si fos pesada; bo per a instantànies, no apte per a vídeo." width="100">
 				Suavitat
 			</text>
-			<slider_bar name="SB_Feathering" width="110"/>
-			<button name="Reset_Feathering" label="R" tool_tip="Reinicia al valor per defecte."/>
-		</panel>
-		<panel name="P_Axis_Mapping">
-			<spinner label="Assignació de l'eix del zoom" name="JoystickAxis6" tool_tip="Controla a quin eix del ratolí s'assigna la funció de zoom (perquè funcioni)."/>
-			<check_box label="Activa el ratolí 3D" tool_tip="Això activa el ratolí 3D." name="enable_joystick"/>
-			<check_box name="CB_ZoomDirect" label="Control de zoom (vegeu el consell!)" tool_tip="Perquè el control de zoom funcioni, has d'establir l''Assignació de l'eix del zoom' a un valor superior a '4'."/>
-			<check_box name="CB_AutoLeveling" label="Autonivellació (evita la inclinació)" tool_tip="Quan està activat, la càmera sempre es manté a nivell."/>
-			<check_box name="CB_Move_Avatar" label="Mou l'avatar amb el ratolí 3D" tool_tip="Quan està activat, el ratolí 3D mourà el teu avatar."/>
-			<check_box name="CB_Move_Objects" label="Mou objectes amb el ratolí 3D (construcció)" tool_tip="Utilitza el ratolí 3D per moure objectes durant la construcció i l'edició."/>
-			<check_box label="Mostra l'Angle de Visió (FOV) a la pantalla" tool_tip="Això et mostrarà l'Angle de Visió de la càmera. Al visor, pots canviar la distància focal de l'objectiu igual que a la vida real. Com més baix sigui el valor de l'Angle de Visió, més llarg serà l'objectiu de la càmera. Un objectiu de 50mm té un Angle de Visió de 27.0 graus. Fes servir el panell 'Zoom' de sota per ajustar-lo. Consulta la Viquipèdia per a una taula que mostra la relació entre l'Angle de Visió i la distància focal de l'objectiu (mm)." name="CAM_Show_FOV"/>
-			<check_box label="Mostra els detalls de la càmera a la consola" name="Camera"/>
-		</panel>
-		<panel name="P_Viewer_Cam_Menu">
-			<text name="PT_Viewer_Cam_Menu">
+				<button name="Reset_Feathering" label="R" tool_tip="Reinicia al valor per defecte." />
+			</panel>
+			<panel name="P_Axis_Mapping">
+				<spinner label="Assignació de l'eix del zoom" name="JoystickAxis6" tool_tip="Controla a quin eix del ratolí s'assigna la funció de zoom (perquè funcioni)." />
+				<check_box label="Activa el ratolí 3D" tool_tip="Això activa el ratolí 3D." name="enable_joystick" />
+				<check_box name="CB_ZoomDirect" label="Control de zoom (vegeu el consell!)" tool_tip="Perquè el control de zoom funcioni, has d'establir l''Assignació de l'eix del zoom' a un valor superior a '4'." />
+				<check_box name="CB_AutoLeveling" label="Autonivellació (evita la inclinació)" tool_tip="Quan està activat, la càmera sempre es manté a nivell." />
+				<check_box name="CB_Move_Avatar" label="Mou l'avatar amb el ratolí 3D" tool_tip="Quan està activat, el ratolí 3D mourà el teu avatar." />
+				<check_box name="CB_Move_Objects" label="Mou objectes amb el ratolí 3D (construcció)" tool_tip="Utilitza el ratolí 3D per moure objectes durant la construcció i l'edició." />
+				<check_box label="Mostra l'Angle de Visió (FOV) a la pantalla" tool_tip="Això et mostrarà l'Angle de Visió de la càmera. Al visor, pots canviar la distància focal de l'objectiu igual que a la vida real. Com més baix sigui el valor de l'Angle de Visió, més llarg serà l'objectiu de la càmera. Un objectiu de 50mm té un Angle de Visió de 27.0 graus. Fes servir el panell 'Zoom' de sota per ajustar-lo. Consulta la Viquipèdia per a una taula que mostra la relació entre l'Angle de Visió i la distància focal de l'objectiu (mm)." name="CAM_Show_FOV" />
+				<check_box label="Mostra els detalls de la càmera a la consola" name="Camera" />
+			</panel>
+			<panel name="P_Viewer_Cam_Menu">
+				<text name="PT_Viewer_Cam_Menu">
 				Menú de configuració de la Càmera
 			</text>
-		</panel>
-		<panel name="P_Viewer_Cam_Menu_Settings">
-			<tab_container name="TC_Viewer_Cam_Menu_Settings">
-				<panel name="CamMov" label="Moviment de la Càmera">
-					<panel name="P_Cam2">
-						<text name="T_Zoom2" tool_tip="En condicions reals, aquesta és la funció de zoom. Canviarà l'angle de visió a la finestra de visualització. És el mateix que prémer Ctrl+0 o Ctrl+8. NOTA: Això no funcionarà si has activat la flycam (3D SpaceNavigator).">
+			</panel>
+			<panel name="P_Viewer_Cam_Menu_Settings">
+				<tab_container name="TC_Viewer_Cam_Menu_Settings">
+					<panel name="CamMov" label="Moviment de la Càmera">
+						<panel name="P_Cam2">
+							<text name="T_Zoom2" tool_tip="En condicions reals, aquesta és la funció de zoom. Canviarà l'angle de visió a la finestra de visualització. És el mateix que prémer Ctrl+0 o Ctrl+8. NOTA: Això no funcionarà si has activat la flycam (3D SpaceNavigator).">
 							Angle de Visió
 						</text>
-						<button name="Reset_Zoom2" label="R" tool_tip="Reinicia al valor per defecte."/>
-						<text name="T_Zoom_Speed2" tool_tip="Controla la rapidesa amb què la càmera fa zoom. Valors més alts proporcionen un zoom més lent i suau.">
+							<button name="Reset_Zoom2" label="R" tool_tip="Reinicia al valor per defecte." />
+							<text name="T_Zoom_Speed2" tool_tip="Controla la rapidesa amb què la càmera fa zoom. Valors més alts proporcionen un zoom més lent i suau.">
 							Velocitat
 						</text>
-						<button name="Reset_Zoom_Speed2" label="R" tool_tip="Reinicia al valor per defecte."/>
-						<text name="T_Camera_Lag" tool_tip="Quant retarda la càmera el moviment de l'avatar (0 = cap, 30 = velocitat de l'avatar).">
+							<button name="Reset_Zoom_Speed2" label="R" tool_tip="Reinicia al valor per defecte." />
+							<text name="T_Camera_Lag" tool_tip="Quant retarda la càmera el moviment de l'avatar (0 = cap, 30 = velocitat de l'avatar).">
 							Retard
 						</text>
-						<button name="Reset_Camera_Lag" label="R" tool_tip="Reinicia al valor per defecte."/>
-						<text name="T_Camera_Offset" tool_tip="Controla quant es desplaça/allunya la càmera del punt de vista per defecte.">
+							<button name="Reset_Camera_Lag" label="R" tool_tip="Reinicia al valor per defecte." />
+							<text name="T_Camera_Offset" tool_tip="Controla quant es desplaça/allunya la càmera del punt de vista per defecte.">
 							Desplaçament
 						</text>
-						<button name="Reset_Camera_Offset" label="R" tool_tip="Reinicia al valor per defecte."/>
-						<text name="T_Cam_Smoothing" tool_tip="Controla la suavitat amb què la càmera accelera i s'atura. Valors més alts donen un moviment més suau (i una mica més lent).">
+							<button name="Reset_Camera_Offset" label="R" tool_tip="Reinicia al valor per defecte." />
+							<text name="T_Cam_Smoothing" tool_tip="Controla la suavitat amb què la càmera accelera i s'atura. Valors més alts donen un moviment més suau (i una mica més lent).">
 							Suavitzat
 						</text>
-						<button name="Reset_Cam_Smoothing" label="R" tool_tip="Reinicia al valor per defecte."/>
+							<button name="Reset_Cam_Smoothing" label="R" tool_tip="Reinicia al valor per defecte." />
+						</panel>
 					</panel>
-				</panel>
-				<panel name="P_Mouse" label="Ratolí">
-					<panel name="P_Mouse_Settings">
-						<text name="T_Mouse_Sens" tool_tip="Controla la sensibilitat del ratolí en mode Vista Subjectiva.">
+					<panel name="P_Mouse" label="Ratolí">
+						<panel name="P_Mouse_Settings">
+							<text name="T_Mouse_Sens" tool_tip="Controla la sensibilitat del ratolí en mode Vista Subjectiva.">
 							Sensibilitat
 						</text>
-						<button name="Reset_Mouse_Sens" label="R" tool_tip="Reinicia al valor per defecte."/>
-						<check_box label="Mostra l'avatar en Vista Subjectiva" tool_tip="Mostra l'avatar i els adjunts per sota del coll en mode Vista Subjectiva. Valor per defecte: Desactivat." name="first_person_avatar_visible"/>
-						<check_box label="Suavitza els moviments en Vista Subjectiva" tool_tip="Suavitza el moviment del ratolí en mode Vista Subjectiva." name="MouseSmooth"/>
+							<button name="Reset_Mouse_Sens" label="R" tool_tip="Reinicia al valor per defecte." />
+							<check_box label="Mostra l'avatar en Vista Subjectiva" tool_tip="Mostra l'avatar i els adjunts per sota del coll en mode Vista Subjectiva. Valor per defecte: Desactivat." name="first_person_avatar_visible" />
+							<check_box label="Suavitza els moviments en Vista Subjectiva" tool_tip="Suavitza el moviment del ratolí en mode Vista Subjectiva." name="MouseSmooth" />
+						</panel>
 					</panel>
-				</panel>
-				<panel name="P_Misc" label="Miscel·lània">
-					<panel name="P_Misc_Settings">
-						<check_box label="Fer clic a l'avatar manté la posició de la càmera" name="clickonavatarkeepscamera" tool_tip="Normalment, fer clic a l'avatar reinicia la posició de la càmera. Aquest paràmetre elimina aquest comportament."/>
-						<check_box label="Reinicia la posició de la càmera després de teletransportar-se" name="FSResetCameraOnTP" tool_tip="Normalment, la posició de la càmera es reinicia en teletransportar-se (dins de la regió). Aquest paràmetre evita aquest comportament."/>
-						<check_box label="Desactiva la distància mínima de la càmera" name="disableminzoomdist" tool_tip="Desactiva el límit de distància més propera de la càmera a un objecte."/>
-						<check_box name="ignorecameraconstraints" label="Permet moure la càmera sense obstacles" tool_tip="Ignora l''expulsió' de la càmera dels objectes. REQUEREIX REINICI!"/>
-						<check_box name="resetcamerapositiononmovement" label="Reinicia la posició de la càmera en moure's" tool_tip="Reinicia la càmera a la posició per defecte en moure l'avatar."/>
+					<panel name="P_Misc" label="Miscel·lània">
+						<panel name="P_Misc_Settings">
+							<check_box label="Fer clic a l'avatar manté la posició de la càmera" name="clickonavatarkeepscamera" tool_tip="Normalment, fer clic a l'avatar reinicia la posició de la càmera. Aquest paràmetre elimina aquest comportament." />
+							<check_box label="Reinicia la posició de la càmera després de teletransportar-se" name="FSResetCameraOnTP" tool_tip="Normalment, la posició de la càmera es reinicia en teletransportar-se (dins de la regió). Aquest paràmetre evita aquest comportament." />
+							<check_box name="ignorecameraconstraints" label="Permet moure la càmera sense obstacles" tool_tip="Ignora l''expulsió' de la càmera dels objectes. REQUEREIX REINICI!" />
+							<check_box name="resetcamerapositiononmovement" label="Reinicia la posició de la càmera en moure's" tool_tip="Reinicia la càmera a la posició per defecte en moure l'avatar." />
+						</panel>
 					</panel>
-				</panel>
-			</tab_container>
+				</tab_container>
+			</panel>
 		</panel>
-	</panel>
- </tab_container>
+	</tab_container>
 </floater>
-
-	

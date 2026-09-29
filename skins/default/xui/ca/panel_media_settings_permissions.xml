@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Configura" name="Media settings for controls">
 	<text name="controls_label">
 		Controls:
@@ -14,16 +14,16 @@
 	<text name="owner_label">
 		Propietari
 	</text>
-	<check_box initial_value="false" label="Permet la navegació i la interacció" name="perms_owner_interact"/>
-	<check_box initial_value="false" label="Tauler de control visible" name="perms_owner_control"/>
+	<check_box initial_value="false" label="Permet la navegació i la interacció" name="perms_owner_interact" />
+	<check_box initial_value="false" label="Tauler de control visible" name="perms_owner_control" />
 	<text name="group_label">
 		Grup:
 	</text>
-	<check_box initial_value="false" label="Permet la navegació i la interacció" name="perms_group_interact"/>
-	<check_box initial_value="false" label="Tauler de control visible" name="perms_group_control"/>
+	<check_box initial_value="false" label="Permet la navegació i la interacció" name="perms_group_interact" />
+	<check_box initial_value="false" label="Tauler de control visible" name="perms_group_control" />
 	<text name="anyone_label">
 		Tothom
 	</text>
-	<check_box initial_value="false" label="Permet la navegació i la interacció" name="perms_anyone_interact"/>
-	<check_box initial_value="false" label="Tauler de control visible" name="perms_anyone_control"/>
+	<check_box initial_value="false" label="Permet la navegació i la interacció" name="perms_anyone_interact" />
+	<check_box initial_value="false" label="Tauler de control visible" name="perms_anyone_control" />
 </panel>

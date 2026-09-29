@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="panel_experience_info">
 	<scroll_container name="xp_scroll">
 		<panel name="scrolling_panel">
@@ -6,8 +6,8 @@
 				<layout_panel name="location panel">
 					<text name="Location">Ubicació:</text>
 					<text name="LocationTextText">algun lloc</text>
-					<button label="Teletransporta" name="teleport_btn"/>
-					<button label="Mostra al mapa" name="map_btn" width="112"/>
+					<button label="Teletransporta" name="teleport_btn" />
+					<button label="Mostra al mapa" name="map_btn" width="112" />
 				</layout_panel>
 				<layout_panel name="marketplace panel">
 					<text name="Location">Botiga del Marketplace:</text>
@@ -18,7 +18,7 @@
 					<text name="ContentRatingText">Adult</text>
 					<text name="Owner">Propietari:</text>
 					<text name="OwnerText">Kyle</text>
-					<button label="Edita" name="edit_btn"/>
+					<button label="Edita" name="edit_btn" />
 				</layout_panel>
 			</layout_stack>
 		</panel>

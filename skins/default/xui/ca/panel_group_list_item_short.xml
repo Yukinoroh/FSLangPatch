@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="group_list_item">
-	<text name="group_name" value="Desconegut"/>
-	<button name="visibility_hide_btn" tool_tip="Amaga el grup al meu perfil"/>
-	<button name="visibility_show_btn" tool_tip="Mostra el grup al meu perfil"/>
-	<button name="info_btn" tool_tip="Més informació"/>
-	<button name="profile_btn" tool_tip="Veure el perfil"/>
+	<text name="group_name" value="Desconegut" />
+	<button name="notices_btn" tool_tip="Avisos de grup" />
+	<button name="visibility_hide_btn" tool_tip="Amaga el grup al meu perfil" />
+	<button name="visibility_show_btn" tool_tip="Mostra el grup al meu perfil" />
+	<button name="info_btn" tool_tip="Més informació" />
+	<button name="profile_btn" tool_tip="Veure el perfil" />
 </panel>

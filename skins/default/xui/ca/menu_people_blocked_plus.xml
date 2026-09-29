@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <toggleable_menu name="menu_blocked_plus">
 	<menu_item_call label="Bloca un resident pel nom..." name="block_resident_by_name" />
 	<menu_item_call label="Bloca un objecte pel nom..." name="block_object_by_name" />

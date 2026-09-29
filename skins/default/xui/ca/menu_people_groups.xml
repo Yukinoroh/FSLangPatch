@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <toggleable_menu name="menu_group_plus">
-	<menu_item_call label="Activa" name="Activate"/>
-	<menu_item_call label="Veure informació" name="View Info"/>
-	<menu_item_call label="Xat" name="Chat"/>
-	<menu_item_call label="Trucar" name="Call"/>
-	<menu_item_call label="Sortir" name="Leave"/>
+	<menu_item_call label="Activa" name="Activate" />
+	<menu_item_call label="Veure informació" name="View Info" />
+	<menu_item_call label="Copia SLurl" name="Copy SLurl to clipboard" />
+	<menu_item_call label="Xat" name="Chat" />
+	<menu_item_call label="Trucar" name="Call" />
+	<menu_item_call label="Fixeu el grup" name="Favorite" />
+	<menu_item_call label="Desenganxa el grup" name="Unfavorite" />
+	<menu_item_call label="Sortir" name="Leave" />
 </toggleable_menu>

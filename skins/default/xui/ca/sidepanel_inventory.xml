@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Objectes rebuts" name="objects panel">
 	<panel name="sidepanel_inventory_panel">
 		<layout_stack name="inventory_layout_stack">
@@ -6,10 +6,12 @@
 				<panel name="marketplace_inbox">
 					<string name="InboxLabelWithArg">Compres rebudes ([NUM])</string>
 					<string name="InboxLabelNoArg">Compres rebudes</string>
-					<button label="Compres rebudes" name="inbox_btn"/>
-					<button name="reload_received_items_btn" tool_tip="Recarrega la llista de compres rebudes."/>
+					<button label="Compres rebudes" name="inbox_btn" />
+					<button name="reload_received_items_btn" tool_tip="Recarrega la llista de compres rebudes." />
 					<text name="inbox_fresh_new_count">[NUM] nous</text>
-					<panel name="inbox_inventory_placeholder_panel" tool_tip="Arrossega els objectes al teu inventari per a utilitzar-los"><text name="inbox_inventory_placeholder">Les compres del Marketplace s'entregaran aquí.</text></panel>
+					<panel name="inbox_inventory_placeholder_panel" tool_tip="Arrossega els objectes al teu inventari per a utilitzar-los">
+						<text name="inbox_inventory_placeholder">Les compres del Marketplace s'entregaran aquí.</text>
+					</panel>
 				</panel>
 			</layout_panel>
 		</layout_stack>

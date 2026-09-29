@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="region_tracker" title="Seguiment de regions">
 	<text name="region_label_text" value="Afegeix regions des del mapa del món" />
 	<button name="refresh" tool_tip="Actualitza" />

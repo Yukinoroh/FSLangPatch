@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="fs_camera_floater_small" title="Control de la càmera">
 	<floater.string name="rotate_tooltip">
 		Fes girar la càmera al voltant del subjecte
@@ -13,8 +13,8 @@
 		<layout_stack name="camera_view_layout_stack">
 			<layout_panel name="camera_rotate_layout_panel">
 				<joystick_rotate name="cam_rotate_stick" tool_tip="Fer girar la càmera al voltant del subjecte" />
-				<button name="roll_left" tool_tip="Fer girar la càmera cap a l'esquerra"/>
-				<button name="roll_right" tool_tip="Fer girar la càmera cap a la dreta"/>
+				<button name="roll_left" tool_tip="Fer girar la càmera cap a l'esquerra" />
+				<button name="roll_right" tool_tip="Fer girar la càmera cap a la dreta" />
 			</layout_panel>
 			<layout_panel name="camera_zoom_layout_panel">
 				<slider_bar name="zoom_slider" tool_tip="Fer zoom al subjecte" />

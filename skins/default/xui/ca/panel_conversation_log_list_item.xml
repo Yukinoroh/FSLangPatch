@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="conversation_log_list_item">
-	<icon name="voice_session_icon" tool_tip="Inclou xat de veu"/>
-	<icon name="unread_ims_icon" tool_tip="Missatges nous rebuts mentre no hi éreu"/>
-	<button name="delete_btn" tool_tip="Suprimeix aquesta entrada"/>
+	<icon name="voice_session_icon" tool_tip="Inclou xat de veu" />
+	<icon name="unread_ims_icon" tool_tip="Missatges nous rebuts mentre no hi éreu" />
+	<button name="delete_btn" tool_tip="Suprimeix aquesta entrada" />
 </panel>

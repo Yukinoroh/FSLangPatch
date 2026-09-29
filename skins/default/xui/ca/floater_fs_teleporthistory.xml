@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="floater_tphistory" title="Historial de teletransportacions">
 	<filter_editor label="Filtre de llocs" name="Filter" />
 	<panel name="button_panel">
@@ -16,6 +16,6 @@
 					</layout_panel>
 				</layout_stack>
 			</layout_panel>
-		</layout_stack>	
+		</layout_stack>
 	</panel>
 </floater>
