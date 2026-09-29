@@ -1,7 +1,11 @@
-In this folder, please add diffs you made between two official translation sources.
+In this folder, you will find a Linux-executable tool to make diffs between two official translation sources,
+as well as some diffs made with it.
 
-En aquesta carpeta, afegeix les diffs que vas fer de dugas fonts de traduccion oficials.
+En aquesta carpeta, trobaràs una eina Linux executable per fer diffs entre dugas fonts de traduccions oficials,
+així que algunes diffs fetes amb ella.
 
-Dans ce répertoire, ajoutez les diffs que vous avez faites de deux sources de traductions officielles.
+Dans ce répertoire, vous trouverez un outil Linux exécutable pour faire des diffs entre deux sources de traduction officielles,
+ainsi que quelques diffs faites avec lui.
 
-Будь ласка, додайте до цієї папки файли різниці (diffs), створені вами на основі порівняння двох офіційних джерел перекладу.
+У цій папці ви знайдете виконуваний у Linux інструмент для створення файлів різниці (diff) між двома офіційними джерелами перекладу,
+а також кілька таких файлів, створених за його допомогою.
