@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<toggleable_menu name="Sort Outfit">
+	<menu_item_check label="Ordena els preferits en ordre descendent" name="sort_favorites_to_top" />
+	<menu_item_check label="Ordena les imatges en ordre descendent" name="sort_images_to_top" />
+	<menu_item_check label="Ordena per nom" name="sort_by_name" />
+</toggleable_menu>

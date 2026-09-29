@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="Inventory Gallery">
-	<text name="empty_txt" >
+	<text name="empty_txt">
 		La carpeta és buida.
-	</text> 
+	</text>
 </panel>

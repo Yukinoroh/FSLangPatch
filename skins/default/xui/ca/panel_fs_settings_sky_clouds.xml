@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Núvols" name="panel_fs_settings_sky_clouds">
 	<panel name="P_Clouds_Header">
-		<text name="T_Clouds_Header" value="Configuració dels núvols"/>
+		<text name="T_Clouds_Header" value="Configuració dels núvols" />
 	</panel>
 	<panel name="P_Atmos_Settings">
 		<text name="cloud_color_label">
@@ -20,18 +20,10 @@
 		</text>
 	</panel>
 	<panel name="P_Cloud_Density">
-		<text name="cloud_density_label" tool_tip="Núvol XY/Densitat - Fes servir els controls lliscants X i Y per a modificar la posició horitzontal de tots els núvols al cel. El control lliscant D afecta la densitat global dels núvols individuals; amb valors baixos, veuràs núvols prims i vaporosos, i amb valors més alts, veuràs núvols més espessos i sòlids.">
-			Densitat dels núvols:
-		</text>
-		<text name="Cloud_XY_Density_X">
-			X:
-		</text>
-		<text name="Cloud_XY_Density_Y">
-			Y:
-		</text>
-		<text name="Cloud_XY_Density_D">
-			D:
-		</text>
+		<text name="cloud_density_label" tool_tip="Núvol XY/Densitat: utilitzeu els controls lliscants X i Y per canviar la posició horitzontal de tots els núvols del cel. El control lliscant D afecta la densitat global dels núvols individuals; a paràmetres baixos veureu núvols prims i suaus, i a paràmetres més alts veureu núvols més gruixuts i sòlids.">Densitat de núvols:</text>
+		<text name="Cloud_XY_Density_X">X:</text>
+		<text name="Cloud_XY_Density_Y">Y:</text>
+		<text name="Cloud_XY_Density_D">D:</text>
 	</panel>
 	<panel name="P_Cloud_Detail">
 		<text name="cloud_detail_label">

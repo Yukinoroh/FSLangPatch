@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="script ed float" title="Script: Script nou">
 	<floater.string name="not_allowed">
 		No pots veure ni modificar aquest script perquè està establert com a 'no copiar'. Necessites permisos complets per a veure o editar un script dins d'un objecte.
@@ -24,9 +24,8 @@
 	<floater.string name="loading">
 		Carregant...
 	</floater.string>
-	<button label="Reinicia" label_selected="Reinicia" name="Reset"/>
-	<check_box initial_value="true" label="En execució" name="running"/>
-	<check_box initial_value="true" label="Mono" name="mono"/>
-	<check_box label="Usa experiència:" name="enable_xp"/>
-	<button label="&gt;" name="view_profile"/>
+	<button label="Reinicia" label_selected="Reinicia" name="Reset" />
+	<check_box initial_value="true" label="En execució" name="running" />
+	<check_box initial_value="true" label="Mono" name="mono" />
+	<check_box label="Usa experiència:" name="enable_xp" />
 </floater>

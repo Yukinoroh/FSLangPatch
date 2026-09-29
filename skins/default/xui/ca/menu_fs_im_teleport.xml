@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <toggleable_menu name="menu_teleport">
 	<menu_item_call label="Suggereix un teletransport" name="offer_tp" />
 	<menu_item_call label="Sol·licita un teletransport" name="request_tp" />

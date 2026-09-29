@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="modal container">
-	<button label="Continuar" label_selected="Continuar" name="Continue"/>
+	<button label="Continuar" label_selected="Continuar" name="Continue" />
 	<text name="tos_heading">Si us plau, llegeix atentament el següent missatge.</text>
 	<text_editor name="tos_text">TOS_TEXT</text_editor>
 </floater>

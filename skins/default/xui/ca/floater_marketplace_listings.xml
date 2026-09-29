@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="floater_marketplace_listings" title="Llistes de productes del Marketplace">
 	<panel name="marketplace_listings_panel">
 		<panel name="background_panel">

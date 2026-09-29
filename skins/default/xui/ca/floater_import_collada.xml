@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="Import Collada" title="Importa una escena">
 	<text name="mesh count">
 		Malles: [COUNT]
@@ -9,7 +9,8 @@
 	<text name="status">
 		Estat: [STATUS]
 	</text>
-	<button name="cancel" label="Cancel·la"/>
+	<button name="cancel" label="Cancel·la" />
+	<button name="ok" label="D'acord" />
 	<string name="status_idle">
 		Inactiu
 	</string>

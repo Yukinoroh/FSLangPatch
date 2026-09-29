@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="clothing_list_button_bar_panel">
-	<button label="Afegeix +" name="add_btn"/>
-	<button label="Botiga" name="clothing_shop_btn"/>
+	<button label="Afegeix +" name="add_btn" />
 </panel>

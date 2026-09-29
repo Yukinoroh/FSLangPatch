@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="ban_duration" title="Durada del bandejament">
 	<text name="duration_textbox">
 		Durada del bandejament :
@@ -14,6 +14,6 @@
 	<text name="hours_textbox">
 		hores
 	</text>
-	<button label="D'acord" name="ok_btn"/>
-	<button label="Anul·lar" name="cancel_btn"/>
+	<button label="D'acord" name="ok_btn" />
+	<button label="Anul·lar" name="cancel_btn" />
 </floater>

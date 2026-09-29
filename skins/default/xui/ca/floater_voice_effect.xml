@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater label="Llocs" name="voice_effects" title="Canviador de veu">
 	<string name="no_voice_effect">
 		(Sense canviador de veu)
@@ -147,13 +147,13 @@
 	<text name="status_text">
 		Grava una mostra i després fes clic per sentir com sonarà la teva veu.
 	</text>
-	<button label="Grava" name="record_btn" tool_tip="Grava una mostra de la teva veu."/>
-	<button label="Atura" name="record_stop_btn"/>
+	<button label="Grava" name="record_btn" tool_tip="Grava una mostra de la teva veu." />
+	<button label="Atura" name="record_stop_btn" />
 	<text name="voice_morphing_link">
 		[[URL] Subscriu-t'hi]
 	</text>
 	<scroll_list name="voice_effect_list" tool_tip="Grava una mostra de la teva veu i després fes clic per preescoltar un efecte.">
-		<scroll_list.columns label="Nom de la veu" name="name"/>
-		<scroll_list.columns label="Caduca" name="expires"/>
+		<scroll_list.columns label="Nom de la veu" name="name" />
+		<scroll_list.columns label="Caduca" name="expires" />
 	</scroll_list>
 </floater>

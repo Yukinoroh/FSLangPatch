@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel label="Persones" name="panel_dir_people">
+	<string name="searching_text">
+		Cerca en curs...
+	</string>
+	<string name="not_found_text">
+		Cap resultat.
+	</string>
+	<string name="found_text">
+		[COUNT] trobat(s).
+	</string>
+	<text name="find">
+		Termes de cerca:
+	</text>
+	<scroll_list name="results">
+		<column label="Nom" name="name" />
+	</scroll_list>
+	<button tool_tip="Pàgina anterior" name="prev_btn" />
+	<button tool_tip="Pàgina següent" name="next_btn" />
+</panel>

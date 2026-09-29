@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="whitelist_floater" title="Llista blanca de carpetes i programes">
 	<text name="whitelist_intro">
 Els antivirus i els programes antimalware són una part essencial de l'ús segur d'internet, però poden causar tota una sèrie de problemes al visor.

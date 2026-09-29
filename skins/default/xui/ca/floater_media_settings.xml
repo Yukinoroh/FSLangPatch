@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="media_settings" title="Configuració del contingut multimèdia">
-	<button label="Cancel·la" label_selected="Cancel·la" name="Cancel"/>
-	<button label="Aplica" label_selected="Aplica" name="Apply"/>
+	<button label="D'acord" label_selected="OK" name="OK" />
+	<button label="Cancel·la" label_selected="Cancel·la" name="Cancel" />
+	<button label="Aplica" label_selected="Aplica" name="Apply" />
 </floater>

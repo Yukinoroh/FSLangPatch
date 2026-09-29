@@ -1,74 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="Joystick" title="Configuració del joystick">
-	<floater.string name="JoystickDisabled">
-		No
-	</floater.string>
-	<text name="joystick_lbl" width="60">
-		Joystick:
-	</text>
-	<spinner label="Eix X" name="JoystickAxis1"/>
-	<spinner label="Eix Y" name="JoystickAxis2"/>
-	<spinner label="Eix Z" name="JoystickAxis0"/>
-	<spinner label="EixCapcineig" name="JoystickAxis4"/> <!--"Eix de capcineig (pitch)"--> 
-	<spinner label="EixGuinyada" name="JoystickAxis5"/>  <!--"Eix de guinyada (yaw)"--> 
-	<spinner label="EixGuerxament" name="JoystickAxis3"/>  <!--Eix de guerxament (roll)"-->  
-	<spinner label="Eix de zoom" name="JoystickAxis6"/>
-	<check_box label="Zoom" name="ZoomDirect"/>
+	<check_box label="Habilita:" name="enable_joystick" />
+	<spinner label="Eix X" name="JoystickAxis1" />
+	<spinner label="Eix Y" name="JoystickAxis2" />
+	<spinner label="Eix Z" name="JoystickAxis0" />
+	<spinner label="EixCapcineig" name="JoystickAxis4" />
+	<spinner label="EixGuinyada" name="JoystickAxis5" />
+	<spinner label="EixGuerxament" name="JoystickAxis3" />
+	<spinner label="Eix de zoom" name="JoystickAxis6" />
+	<check_box label="Zoom" name="ZoomDirect" />
 	<check_box label="Cursor 3D" name="Cursor3D" left="320" />
-	<check_box label="Anivellament automàtic" name="Автовирівнювання"/>
-	<text name="Режими керування:">
-		Modes de control:
-	</text>
-	<check_box label="Avatar" name="JoystickAvatarEnabled"/>
-	<check_box label="Crear" name="JoystickBuildEnabled"/>
-	<check_box label="CàmeraVol" name="JoystickFlycamEnabled"/>
-	<text name="joystick_monitor_label">
-		Monitor del joystick
-	</text>
-	<icon name="button_light_0" tool_tip="Botó 0"/>
-	<icon name="button_light_1" tool_tip="Botó 1"/>
-	<icon name="button_light_2" tool_tip="Botó 2"/>
-	<icon name="button_light_3" tool_tip="Botó 3"/>
-	<icon name="button_light_4" tool_tip="Botó 4"/>
-	<icon name="button_light_5" tool_tip="Botó 5"/>
-	<icon name="button_light_6" tool_tip="Botó 6"/>
-	<icon name="button_light_7" tool_tip="Botó 7"/>
-	<icon name="button_light_8" tool_tip="Botó 8"/>
-	<icon name="button_light_9" tool_tip="Botó 9"/>
-	<icon name="button_light_10" tool_tip="Botó 10"/>
-	<icon name="button_light_11" tool_tip="Botó 11"/>
-	<icon name="button_light_12" tool_tip="Botó 12"/>
-	<icon name="button_light_13" tool_tip="Botó 13"/>
-	<icon name="button_light_14" tool_tip="Botó 14"/>
-	<icon name="button_light_15" tool_tip="Botó 15"/>
-	<scroll_container name="joystick_monitor_axes_scroller">
-		<container_view name="joystick_monitor_axes_container">
-			<stat_view name="axis_view_0">
-				<stat_bar label="Eix 0" name="axis0"/>
-			</stat_view>
-			<stat_view name="axis_view_1">
-				<stat_bar label="Eix 1" name="axis1"/>
-			</stat_view>
-			<stat_view name="axis_view_2">
-				<stat_bar label="Eix 2" name="axis2"/>
-			</stat_view>
-			<stat_view name="axis_view_3">
-				<stat_bar label="Eix 3" name="axis3"/>
-			</stat_view>
-			<stat_view name="axis_view_4">
-				<stat_bar label="Eix 4" name="axis4"/>
-			</stat_view>
-			<stat_view name="axis_view_5">
-				<stat_bar label="Eix 5" name="axis5"/>
-			</stat_view>
-			<stat_view name="axis_view_6">
-				<stat_bar label="Eix 6" name="axis6"/>
-			</stat_view>
-			<stat_view name="axis_view_7">
-				<stat_bar label="Eix 7" name="axis7"/>
-			</stat_view>
-		</container_view>
-	</scroll_container>
+	<check_box label="Nivell automàtic" name="AutoLeveling" left="400" />
+	<text name="Control Modes:">Modes de control:</text>
+	<check_box label="Avatar" name="JoystickAvatarEnabled" />
+	<check_box label="Crear" name="JoystickBuildEnabled" />
+	<check_box label="CàmeraVol" name="JoystickFlycamEnabled" />
 	<text name="XScale">
 		Escala X
 	</text>
@@ -102,7 +48,7 @@
 	<text name="YawDeadZone">
 		ZonaMortaGuinyada
 	</text>
-	<text name="RollDeadZone" width="160" >
+	<text name="RollDeadZone" width="160">
 		ZonaMortaGuerxament
 	</text>
 	<text name="Feathering">
@@ -114,7 +60,16 @@
 	<text name="ZoomDeadZone">
 		Zona morta de Zoom
 	</text>
-	<button label="Valors per defecte per a SpaceNavigator" name="SpaceNavigatorDefaults" width="280" />
-	<button label="D'acord" label_selected="D'acord" name="ok_btn"/>
-	<button label="Cancel·la" label_selected="Cancel·la" name="cancel_btn"/>
+	<button label="Valors per defecte SpaceNavigator" name="SpaceNavigatorDefaults" width="200" />
+	<button label="D'acord" label_selected="D'acord" name="ok_btn" />
+	<button label="Cancel·la" label_selected="Cancel·la" name="cancel_btn" />
+	<stat_view label="Control de joystick" name="axis_view">
+		<stat_bar label="Axe 0" name="axis0" />
+		<stat_bar label="Axe 1" name="axis1" />
+		<stat_bar label="Axe 2" name="axis2" />
+		<stat_bar label="Axe 3" name="axis3" />
+		<stat_bar label="Axe 4" name="axis4" />
+		<stat_bar label="Axe 5" name="axis5" />
+	</stat_view>
+	<string name="NoDevice">no s'ha detectat cap joystick</string>
 </floater>

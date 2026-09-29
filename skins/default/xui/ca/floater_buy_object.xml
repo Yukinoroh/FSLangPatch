@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="contents" title="Comprar una còpia de l'objecte">
 	<floater.string name="title_buy_text">Comprar</floater.string>
 	<floater.string name="title_buy_copy_text">Comprar una còpia de</floater.string>
@@ -8,6 +8,6 @@
 	<text name="contents_text">Conté :</text>
 	<text name="buy_text">Comprar per [AMOUNT] L$ a :</text>
 	<text name="buy_name_text">[NAME] ?</text>
-	<button label="Comprar" label_selected="Comprar" name="buy_btn"/>
-	<button label="Anul·lar" label_selected="Anul·lar" name="cancel_btn"/>
+	<button label="Comprar" label_selected="Comprar" name="buy_btn" />
+	<button label="Anul·lar" label_selected="Anul·lar" name="cancel_btn" />
 </floater>

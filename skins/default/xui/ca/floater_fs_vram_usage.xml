@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="object_vram_usage" title="Impacte dels objectes a la VRAM">
 	<scroll_list name="result_list">
+		<column name="uuid" label="UUID" />
 		<column name="name" label="Nom" />
 		<column name="distance" label="Distància" />
 		<column name="faces" label="Cares" />

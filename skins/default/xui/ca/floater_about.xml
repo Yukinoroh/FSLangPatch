@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="floater_about" title="Sobre [APP_NAME]">
 	<tab_container name="about_tab">
 		<panel label="Informacions" name="support_panel">
@@ -6,7 +6,7 @@
  Per a les útlimes informacions sobre Firestorm, visita
  https://www.firestormviewer.org
 			</text>
-			<button label="Copiar" name="copy_btn"/>
+			<button label="Copiar" name="copy_btn" />
 		</panel>
 		<panel label="Autors Linden Lab" name="credits_panel">
 			<text name="linden_intro">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="floater_region_restart_schedule" title="Planificació de reinici de la regió">
 	<text name="days_general">
 		Reinicia la regió en aquests dies:

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="animation_overrider" title="AO">
 	<floater.string name="ao_no_sets_loaded">Cap grup carregat</floater.string>
 	<floater.string name="ao_no_animations_loaded">Cap animació carregada</floater.string>

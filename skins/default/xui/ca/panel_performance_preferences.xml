@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel bevel_style="none" follows="left|top" height="580" width="580" name="panel_performance_preferences" layout="topleft" left="0" top="0">
+	<button height="16" width="16" layout="topleft" mouse_opaque="true" follows="left|top" name="back_btn" top="7" image_selected="Arrow_Left_Off" image_pressed="Arrow_Left_Off" image_unselected="Arrow_Left_Off" left="15" is_toggle="true" />
+	<text follows="left|top" height="18" layout="topleft" left_pad="0" valign="center" halign="center" top="6" name="back_lbl" width="32">
+		Enrere
+	</text>
+	<text follows="left|top" font="SansSerifLarge" text_color="white" height="20" layout="topleft" left="20" top_pad="15" name="settings_title" width="480">
+		Configuració de gràfics
+	</text>
+	<button follows="top|left" height="23" label="Obre la configuració avançada" layout="topleft" left_delta="300" name="advanced_btn" top_delta="-3" width="390" />
+	<text follows="left|top" font="SansSerif" height="18" layout="topleft" left="22" name="Shaders:" top_pad="10" width="32">
+		Shaders:
+	</text>
+	<check_box follows="left|top" height="18" label="Bàsics" layout="topleft" left_pad="0" name="shaders_check" top_delta="0" width="100" />
+	<check_box follows="left|top" height="18" label="Ambient oclusiu" layout="topleft" name="ambient_occlusion_check" left_pad="10" top_delta="0" width="150" />
+	<check_box follows="left|top" height="18" label="Profunditat de camp" layout="topleft" name="depth_of_field_check" left_pad="0" top_delta="0" width="160" />
+	<text follows="left|top" height="18" layout="topleft" left="22" top_pad="10" name="shadows_label" width="120">
+		Ombres:
+	</text>
+	<combo_box follows="left|top" height="20" label="Ombres" layout="topleft" name="shadows" left_pad="0" top_delta="-2" width="120">
+		<combo_box.item label="Cap" name="0" />
+		<combo_box.item label="Sol/Lluna" name="1" />
+		<combo_box.item label="Sol/Lluna + Projectors" name="2" />
+	</combo_box>
+	<text follows="left|top" height="18" layout="topleft" top_pad="10" left="22" name="reflections_label" width="120">
+		Reflexos de l'aigua:
+	</text>
+	<combo_box follows="left|top" height="20" label="Reflexos" layout="topleft" name="reflections" left_pad="0" top_delta="-2" width="220">
+		<combo_box.item label="Mínim" name="0" />
+		<combo_box.item label="Terreny i arbres" name="1" />
+		<combo_box.item label="Tots els objectes estàtics" name="2" />
+		<combo_box.item label="Tots els avatars i objectes" name="3" />
+		<combo_box.item label="Tot" name="4" />
+	</combo_box>
+	<text follows="left|top" height="18" layout="topleft" left="22" top_pad="10" name="avatar_rendering_label" width="100">
+		Renderització d'avatars:
+	</text>
+	<combo_box follows="left|top" height="20" label="Avatar Rendering" layout="topleft" name="avatar_rendering" left_pad="0" top_delta="-2" width="140">
+		<combo_box.item label="Només amics" name="friends_only" />
+		<combo_box.item label="Completament" name="fully" />
+		<combo_box.item label="Excepcions" name="exceptions" />
+	</combo_box>
+	<spinner follows="left|top" height="23" increment="0.125" label="Detall de la distància:" label_width="95" layout="topleft" max_val="4" min_val="0" name="render_volume_lod" top_pad="10" width="150" />
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" top_delta="3" left_pad="10" name="photo_dist_det_desc" width="180">
+		(Introdueix un valor entre 0.0 i 4.0)
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" top="80" left="213" name="0_lbl" width="7">
+		0
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" left_pad="31" name="1_lbl" width="7">
+		1
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" left_pad="30" name="2_lbl" width="7">
+		2
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" left_pad="32" name="3_lbl" width="7">
+		3
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" left_pad="32" name="4_lbl" width="7">
+		4
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" top_pad="5" left="213" name="low_lbl" width="22">
+		Baix
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" top_delta="0" left_pad="2" name="mid_lbl" width="45">
+		Mitjà
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" top_delta="0" left_pad="3" name="high_lbl" width="22">
+		Alt
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" top_delta="0" left_pad="8" name="ultra_lbl" width="22">
+		Ultra
+	</text>
+	<slider follows="left|top" height="18" increment="1" initial_value="0" label="Qualitat dels gràfics:" label_width="95" layout="topleft" name="quality_slider" show_text="false" top="80" width="144" can_edit_text="false" />
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" top="112" left="213" name="text_box" width="300">
+		(Moure el control lliscant a l'esquerra millora el rendiment)
+	</text>
+	<text follows="left|top" font="SansSerifSmall" height="18" layout="topleft" top="127" left="213" name="text_box2" width="300">
+		(Moure'l a la dreta millora la qualitat)
+	</text>
+</panel>

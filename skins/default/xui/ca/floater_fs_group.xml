@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="group_info">
 	<floater.string name="title_create_group">Crear un nou grup...</floater.string>
 	<floater.string name="title_loading">Perfil del grup - Carregant...</floater.string>

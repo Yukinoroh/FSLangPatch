@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Vestits" name="appearance panel">
 	<string name="No Outfit" value="Cap vestit" />
 	<string name="Unsaved Changes" value="Canvis no desats" />
 	<string name="Now Wearing" value="Porto ara..." />
 	<string name="Changing outfits" value="Canviant de vestits" />
 	<panel name="panel_currentlook">
-		<button label="E" name="editappearance_btn"/>
-		<button label="O" name="openoutfit_btn"/>
+		<button label="E" name="editappearance_btn" />
+		<button label="O" name="openoutfit_btn" />
 		<text name="currentlook_status">(Estat)</text>
 		<text name="currentlook_name">(Carregant)</text>
-		<button name="edit_outfit_btn" tool_tip="Edita aquest vestit"/>
+		<button name="edit_outfit_btn" tool_tip="Edita aquest vestit" />
 	</panel>
-	<filter_editor label="Filtra els vestits" name="Filter"/>
+	<filter_editor label="Filtra els vestits" name="Filter" />
 </panel>

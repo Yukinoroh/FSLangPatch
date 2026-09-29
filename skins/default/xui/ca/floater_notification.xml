@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="notification" title="Consola de missatges">
 	<text_editor name="payload">
 		S'està carregant...
 	</text_editor>
-	<combo_box label="Respon" name="response"/>
+	<combo_box label="Respon" name="response" />
 </floater>

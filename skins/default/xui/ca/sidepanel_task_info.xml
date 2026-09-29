@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="object properties" title="Perfil de l'objecte">
 	<panel.string name="text deed continued">
 		Cedeix
@@ -42,8 +42,7 @@
 	<panel.string name="Sale Mixed">
 		Venda mixta
 	</panel.string>
-	<button name="back_btn" />
-	<text name="title" value="Perfil de l'objecte"/>
+	<text name="title" value="Perfil de l'objecte" />
 	<text name="where" value="(al món)" />
 	<scroll_container name="item_profile_scroll">
 		<panel label="" name="properties_panel">
@@ -58,32 +57,27 @@
 			<text name="CreatorNameLabel" width="78">
 				Creador:
 			</text>
-			<text name="Creator Name">
-				(carregant...)
-			</text>
 			<text name="Owner:" width="78">
 				Propietari:
-			</text>
-			<text name="Owner Name">
-				(carregant...)
 			</text>
 			<text name="Group_label" width="78">
 				Grup:
 			</text>
-			<button name="button set group" tool_tip="Selecciona un grup per assignar-li els drets d'accés a l'objecte"/>
-			<name_box initial_value="Carregant..." name="Group Name Proxy"/>
+			<button name="button set group" tool_tip="Selecciona un grup per assignar-li els drets d'accés a l'objecte" />
+			<name_box initial_value="Carregant..." name="Group Name Proxy" />
 			<button label="Cedeix" label_selected="Cedeix" name="button deed" tool_tip="En cedir l'objecte al grup, els drets sobre ell correspondran als drets del proper propietari. Un objecte cedit al grup pot ser transferit per un oficial del grup." />
-			<text name="label click action" width="280">
+			<text name="label click action" width="304">
 				Acció en fer clic:
 			</text>
-			<combo_box name="clickaction" tool_tip="La interacció amb l'objecte es realitza prement el botó esquerre del ratolí. Amb cada clic, apareix un cursor especial que indica l'acció vàlida. Algunes accions tenen requisits funcionals. Per exemple, 'Tocar' i 'Pagar' requereixen scripts." >
-				<combo_box.item label="Toca (per defecte)" name="Touch/grab(default)"/>
-				<combo_box.item label="Seu a l'objecte" name="Sitonobject"/>
-				<combo_box.item label="Compra l'objecte" name="Buyobject"/>
-				<combo_box.item label="Paga a l'objecte" name="Payobject"/>
-				<combo_box.item label="Obre" name="Open"/>
-				<combo_box.item label="Apropa" name="Zoom"/>
-				<combo_box.item label="Cap" name="None"/>
+			<combo_box name="clickaction" tool_tip="La interacció amb l'objecte es realitza prement el botó esquerre del ratolí. Amb cada clic, apareix un cursor especial que indica l'acció vàlida. Algunes accions tenen requisits funcionals. Per exemple, 'Tocar' i 'Pagar' requereixen scripts.">
+				<combo_box.item label="Toca (per defecte)" name="Touch/grab(default)" />
+				<combo_box.item label="Seu a l'objecte" name="Sitonobject" />
+				<combo_box.item label="Compra l'objecte" name="Buyobject" />
+				<combo_box.item label="Paga a l'objecte" name="Payobject" />
+				<combo_box.item label="Obre" name="Open" />
+				<combo_box.item label="Apropa" name="Zoom" />
+				<combo_box.item label="Cap" name="None" />
+				<combo_box.item label="Ignora l'objecte" name="Ignoreobject" />
 			</combo_box>
 			<panel name="perms_inv">
 				<text name="perm_modify">
@@ -94,7 +88,7 @@
 				</text>
 				<check_box label="Copiar" name="checkbox allow everyone copy" tool_tip="Qualsevol pot agafar una còpia de l'objecte." />
 				<check_box label="Moure" name="checkbox allow everyone move" tool_tip="Qualsevol jugador pot moure l'objecte." />
-				<text name="GroupLabel" >
+				<text name="GroupLabel">
 					Grup:
 				</text>
 				<check_box label="Comparteix" name="checkbox share with group" tool_tip="Permet a tots els membres del grup seleccionat obtenir els drets que tu tens sobre aquest objecte. Per activar les restriccions de rol, cal cedir-lo." />
@@ -107,32 +101,14 @@
 			</panel>
 			<check_box label="En venda" name="checkbox for sale" tool_tip="Permet als jugadors comprar aquest objecte, el seu contingut o una còpia al món del joc al preu especificat." />
 			<combo_box name="sale type" tool_tip="Tria si el comprador rebrà una còpia, una còpia del contingut o l'objecte original.">
-				<combo_box.item label="Còpia" name="Copy"/>
-				<combo_box.item label="Contingut" name="Contents"/>
-				<combo_box.item label="Original" name="Original"/>
+				<combo_box.item label="Còpia" name="Copy" />
+				<combo_box.item label="Contingut" name="Contents" />
+				<combo_box.item label="Original" name="Original" />
 			</combo_box>
-			<spinner label="Preu: L$" name="Edit Cost" tool_tip="El cost de l'objecte."/>
+			<spinner label="Preu: L$" name="Edit Cost" tool_tip="El cost de l'objecte." />
 			<check_box label="Mostra als resultats de la cerca" name="search_check" tool_tip="Mostra l'objecte als resultats de la cerca" />
 			<text name="pathfinding_attributes_label" width="224">
 				Atributs de cerca de camins:
-			</text>
-			<text name="B:">
-				B:
-			</text>
-			<text name="O:">
-				O:
-			</text>
-			<text name="G:">
-				G:
-			</text>
-			<text name="E:">
-				I:
-			</text>
-			<text name="N:">
-				N:
-			</text>
-			<text name="F:">
-				F:
 			</text>
 		</panel>
 	</scroll_container>
@@ -140,7 +116,7 @@
 		<layout_panel name="open_btn_panel">
 			<button label="Obre" name="open_btn" tool_tip="Obre per veure el contingut de l'objecte." />
 		</layout_panel>
-		<layout_panel name="pay_btn_panel" >
+		<layout_panel name="pay_btn_panel">
 			<button label="Paga" name="pay_btn" tool_tip="Obre la finestra de pagament. Per pagar a un objecte, ha de tenir un script de pagament." />
 		</layout_panel>
 		<layout_panel name="buy_btn_panel">

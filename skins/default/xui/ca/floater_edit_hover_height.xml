@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="HoverHeight" title="Definir l'alçada del vol a prop del terra">
-	<slider label="Hauteur" name="HoverHeightSlider"/>
+	<slider label="Hauteur" name="HoverHeightSlider" />
 </floater>

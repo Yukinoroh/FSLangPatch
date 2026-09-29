@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="imcontacts" title="Contactes">
+	<string name="no_friends" value="Sense amics" />
+	<string name="no_filtered_groups_msg" value="No s'ha trobat cap grup que contingui &quot;[SEARCH_TERM]&quot;." />
+	<string name="no_groups_msg" value="Vols unir-te a un grup? Proveu [secondlife:///app/search/groups Search]." />
+	<string name="favorite_label" value="Pin" />
+	<string name="unfavorite_label" value="Desenganxa" />
 	<tab_container name="friends_and_groups">
-		<panel label="Amics" name="friends_panel"/>
-		<panel label="Grups" name="groups_panel"/>
-		<panel label="Cercles" name="contact_sets_panel"/>
+		<panel label="Amics" name="friends_panel" />
+		<panel label="Grups" name="groups_panel" />
+		<panel label="Cercles" name="contact_sets_panel" />
 	</tab_container>
 </floater>

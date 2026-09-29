@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <toggleable_menu name="menu_modes">
 	<menu_item_check label="Visualització compacta" name="compact_view" />
 	<menu_item_check label="Visualització expandida" name="expanded_view" />

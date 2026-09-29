@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel label="Llocs" name="panel_dir_places">
+	<string name="searching_text">
+		Cerca en curs...
+	</string>
+	<string name="not_found_text">
+		Cap resultat.
+	</string>
+	<string name="found_text">
+		[COUNT] trobat(s).
+	</string>
+	<text name="find">
+		Termes de cerca:
+	</text>
+	<combo_box name="Category">
+		<combo_item name="AnyCategory" label="Totes les categories" />
+		<combo_item name="LindenLocation" label="Lloc Linden" />
+		<combo_item name="Arts&amp;Culture" label="Arts &amp; Cultura" />
+		<combo_item name="Business" label="Negocis" />
+		<combo_item name="Educational" label="Educatiu" />
+		<combo_item name="Gaming" label="Jocs" />
+		<combo_item name="Hangout" label="Punt de trobada" />
+		<combo_item name="NewcomerFriendly" label="Per a nouvinguts" />
+		<combo_item name="Parks&amp;Nature" label="Parcs &amp; Natura" />
+		<combo_item name="Residential" label="Residencial" />
+		<combo_item name="Shopping" label="Compres" />
+		<combo_item name="Adult" label="Adult" />
+		<combo_item name="Other" label="Altres" />
+	</combo_box>
+	<icon tool_tip="General" name="rating_icon_general" />
+	<icon tool_tip="Moderat" name="rating_icon_moderate" />
+	<icon tool_tip="Adult" name="rating_icon_adult" />
+	<scroll_list name="results">
+		<column label="Nom" name="name" />
+		<column label="Trànsit" name="dwell" />
+	</scroll_list>
+	<button tool_tip="Pàgina anterior" name="prev_btn" />
+	<button tool_tip="Pàgina següent" name="next_btn" />
+</panel>

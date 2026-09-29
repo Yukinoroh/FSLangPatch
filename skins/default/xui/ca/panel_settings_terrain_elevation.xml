@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="panel_settings_terrain_elevation">
-	<spinner label="Nivell de l'aigua" name="water_height_spin"/>
-	<spinner label="Límit superior del terreny" name="terrain_raise_spin"/>
-	<spinner label="Límit inferior del terreny" name="terrain_lower_spin"/>
+	<spinner label="Nivell de l'aigua" name="water_height_spin" />
+	<spinner label="Límit superior del terreny" name="terrain_raise_spin" />
+	<spinner label="Límit inferior del terreny" name="terrain_lower_spin" />
 	<text name="height_text_lbl5">
 		Intervals d'elevació de la textura
 	</text>
@@ -27,21 +27,21 @@
 	<text name="height_text_lbl7">
 		Nord-est
 	</text>
-	<spinner label="Baix" name="height_start_spin_1"/>
-	<spinner label="Baix" name="height_start_spin_3"/>
-	<spinner label="Alt" name="height_range_spin_1"/>
-	<spinner label="Alt" name="height_range_spin_3"/>
+	<spinner label="Baix" name="height_start_spin_1" />
+	<spinner label="Baix" name="height_start_spin_3" />
+	<spinner label="Alt" name="height_range_spin_1" />
+	<spinner label="Alt" name="height_range_spin_3" />
 	<text name="height_text_lbl8">
 		Sud-oest
 	</text>
 	<text name="height_text_lbl9">
 		Sud-est
 	</text>
-	<spinner label="Baix" name="height_start_spin_0"/>
-	<spinner label="Baix" name="height_start_spin_2"/>
-	<spinner label="Alt" name="height_range_spin_0"/>
-	<spinner label="Alt" name="height_range_spin_2"/>
-	<button label="Descarrega un terreny RAW..." name="download_raw_btn" tool_tip="Disponible només per a propietaris, no per a gestors"/>
-	<button label="Puja un terreny RAW..." name="upload_raw_btn" tool_tip="Disponible només per a propietaris, no per a gestors"/>
-	<button label="Fixa el terreny" name="bake_terrain_btn" tool_tip="Estableix el terreny actual com a punt mitjà per als límits superior/inferior"/>
+	<spinner label="Baix" name="height_start_spin_0" />
+	<spinner label="Baix" name="height_start_spin_2" />
+	<spinner label="Alt" name="height_range_spin_0" />
+	<spinner label="Alt" name="height_range_spin_2" />
+	<button label="Descarrega un terreny RAW..." name="download_raw_btn" tool_tip="Disponible només per a propietaris, no per a gestors" />
+	<button label="Puja un terreny RAW..." name="upload_raw_btn" tool_tip="Disponible només per a propietaris, no per a gestors" />
+	<button label="Fixa el terreny" name="bake_terrain_btn" tool_tip="Estableix el terreny actual com a punt mitjà per als límits superior/inferior" />
 </panel>

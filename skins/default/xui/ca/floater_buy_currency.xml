@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="buy currency" title="COMPRAR L$">
 	<floater.string name="buy_currency">
 		Comprar [LINDENS] L$ per a prop de [LOCALAMOUNT]

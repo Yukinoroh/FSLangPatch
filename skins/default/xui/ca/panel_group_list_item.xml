@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="group_list_item">
-	<text name="group_name" value="Desconegut"/>
-	<button name="info_btn" tool_tip="Més informació"/>
-	<button name="profile_btn" tool_tip="Visualitza el perfil"/>
+	<button name="notices_btn" tool_tip="Notes de grup" />
+	<button name="info_btn" tool_tip="Més informació" />
+	<button name="profile_btn" tool_tip="Visualitza el perfil" />
 </panel>

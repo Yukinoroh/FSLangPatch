@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel name="teleport_history_item">
+	<panel.string name="DateFmt">
+		[day,datetime,utc]/[mthnum,datetime,utc]/[year,datetime,utc] [hour,datetime,utc]:[min,datetime,utc]
+	</panel.string>
+	<panel.string name="DateFmtAMPM">[dia,datahora,utc]/[mthnum,datetime,utc]/[any,datetime,utc], [hour12,datetime,utc]:[min,datetime,utc] [ampm,datetime,utc]</panel.string>
+	<button name="profile_btn" tool_tip="Mostra la informació de l'objecte" />
+</panel>

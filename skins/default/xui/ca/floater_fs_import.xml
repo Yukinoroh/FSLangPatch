@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="fs_import" title="Importació d'objectes">
 	<floater.string name="floater_title">Importació de [FILENAME]</floater.string>
 	<floater.string name="file_status">
@@ -21,9 +21,9 @@
 	<text name="author_text">per [AUTHOR] [GRID]</text>
 	<text name="client_text">Client : [CLIENT] v[VERSION]</text>
 	<text name="file_status_text">Selecciona un fitxer.</text>
-	<check_box name="do_not_attach" label="No enganxar cap objecte"/>
-	<check_box name="region_position" label="Restaurar les posicions en la regió"/>
-	<check_box name="upload_asset" label="Penjar"/>
-	<check_box name="temp_asset" label="Temporalment"/>
-	<button name="import_btn" label="Importar"/>
+	<check_box name="do_not_attach" label="No enganxar cap objecte" />
+	<check_box name="region_position" label="Restaurar les posicions en la regió" />
+	<check_box name="upload_asset" label="Penjar" />
+	<check_box name="temp_asset" label="Temporalment" />
+	<button name="import_btn" label="Importar" />
 </floater>

@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <strings>
 	<string name="SECOND_LIFE_GRID">
 		Graella de Second Life
 	</string>
 	<string name="SUPPORT_SITE">
 		Portal d'Assistència de Firestorm
-	</string>
-	<string name="StartupDetectingHardware">
-		Detectant el maquinari...
 	</string>
 	<string name="StartupLoading">
 		Carregant [APP_NAME]...
@@ -505,7 +502,7 @@ Si creus que es tracta d'un error, contacta amb support@secondlife.com.
 	<string name="TooltipTooManyWearables">
 		No pots portar una carpeta que contingui més de [AMOUNT] articles. Pots modificar aquest límit a Avançat &gt; Mostra els paràmetres de depuració &gt; WearFolderLimit.
 	</string>
-	<string name="TooltipPrice" value="[AMOUNT] L$:"/>
+	<string name="TooltipPrice" value="[AMOUNT] L$:" />
 	<string name="TooltipSLIcon">
 		Això és un enllaç a una pàgina del domini oficial SecondLife.com o LindenLab.com.
 	</string>
@@ -590,6 +587,7 @@ Si creus que es tracta d'un error, contacta amb support@secondlife.com.
 	<string name="TooltipCantCreateOutfit">
 		Un o més articles no es poden utilitzar en "Els meus conjunts".
 	</string>
+	<string name="TooltipCantMoveOutfitIntoOutfit">No es pot moure un vestit a un altre</string>
 	<string name="TooltipDragOntoOwnChild">
 		No es pot moure una carpeta al seu fill
 	</string>
@@ -656,7 +654,7 @@ Si creus que es tracta d'un error, contacta amb support@secondlife.com.
 	<string name="TooltipFSUrlEntryWear">
 		Fes clic per portar el contingut d'una carpeta d'inventari
 	</string>
-	<string name="CurrentURL" value=" URL actual: [CurrentURL]"/>
+	<string name="CurrentURL" value=" URL actual: [CurrentURL]" />
 	<string name="TooltipEmail">
 		Fes clic per compondre un missatge
 	</string>
@@ -729,6 +727,7 @@ poden ser adjuntats a les notes.
 	<string name="NoneFound">
 		No s'ha trobat cap resultat.
 	</string>
+	<string name="ServerUnavailable">Servei no disponible</string>
 	<string name="RetrievingData">
 		Extraient dades...
 	</string>
@@ -858,9 +857,6 @@ http://secondlife.com/support per ajudar-te  a resoldre aquest problema.
 	</string>
 	<string name="snapshot">
 		foto
-	</string>
-	<string name="lost and found">
-		Objectes perduts
 	</string>
 	<string name="targa image">
 		imatge targa
@@ -1258,7 +1254,7 @@ http://secondlife.com/support per ajudar-te  a resoldre aquest problema.
 	<string name="AgentNameSubst">
 		(Tu)
 	</string>
-	<string name="JoinAnExperience"/>
+	<string name="JoinAnExperience" />
 	<string name="SilentlyManageEstateAccess">
 		Suprimir les alertes en gestionar les llistes d'accés als dominis
 	</string>
@@ -1686,14 +1682,14 @@ http://secondlife.com/support per ajudar-te  a resoldre aquest problema.
 	<string name="InventoryOutboxNotMerchantTitle">
 		Tothom pot vendre articles al Marketplace.
 	</string>
-	<string name="InventoryOutboxNotMerchantTooltip"/>
+	<string name="InventoryOutboxNotMerchantTooltip" />
 	<string name="InventoryOutboxNotMerchant">
 		Per esdevenir venedor, has de [[MARKETPLACE_CREATE_STORE_URL] crear una botiga al Marketplace].
 	</string>
 	<string name="InventoryOutboxNoItemsTitle">
 		La teva bústia de sortida és buida.
 	</string>
-	<string name="InventoryOutboxNoItemsTooltip"/>
+	<string name="InventoryOutboxNoItemsTooltip" />
 	<string name="InventoryOutboxNoItems">
 		Per posar carpetes a la venda al [[MARKETPLACE_DASHBOARD_URL] Marketplace], arrossegueu-les a aquesta zona i fes clic a "Envia al Marketplace".
 	</string>
@@ -1820,53 +1816,53 @@ Si continues rebent aquest missatge, contacta amb l'assistència de Second Life 
 	<string name="Unconstrained">
 		Sense restriccions
 	</string>
-	<string name="no_transfer" value=" (no transferible)"/>
-	<string name="no_modify" value=" (no modificable)"/>
-	<string name="no_copy" value=" (no copiable)"/>
-	<string name="worn" value=" (portat)"/>
-	<string name="link" value=" (enllaç)"/>
-	<string name="broken_link" value=" (enllaç trencat)"/>
+	<string name="no_transfer" value=" (no transferible)" />
+	<string name="no_modify" value=" (no modificable)" />
+	<string name="no_copy" value=" (no copiable)" />
+	<string name="worn" value=" (portat)" />
+	<string name="link" value=" (enllaç)" />
+	<string name="broken_link" value=" (enllaç trencat)" />
 	<string name="LoadingContents">
 		carregant continguts...
 	</string>
 	<string name="NoContents">
 		Cap contingut
 	</string>
-	<string name="WornOnAttachmentPoint" value=" (portat a [ATTACHMENT_POINT])"/>
-	<string name="AttachmentErrorMessage" value="([ATTACHMENT_ERROR])"/>
-	<string name="ActiveGesture" value="[GESLABEL] (actiu)"/>
+	<string name="WornOnAttachmentPoint" value=" (portat a [ATTACHMENT_POINT])" />
+	<string name="AttachmentErrorMessage" value="([ATTACHMENT_ERROR])" />
+	<string name="ActiveGesture" value="[GESLABEL] (actiu)" />
 	<string name="PermYes">
 		Sí
 	</string>
 	<string name="PermNo">
 		No
 	</string>
-	<string name="Chat Message" value="Xat:"/>
-	<string name="Sound" value=" So:"/>
-	<string name="Wait" value=" --- Espera:"/>
-	<string name="AnimFlagStop" value=" Atura l'animació:"/>
-	<string name="AnimFlagStart" value=" Inicia l'animació:"/>
-	<string name="Wave" value=" Saludar amb la mà"/>
-	<string name="GestureActionNone" value="A triar"/>
-	<string name="HelloAvatar" value=" Hola, avatar!"/>
-	<string name="ViewAllGestures" value="  Mostra-ho tot &gt;&gt;"/>
-	<string name="GetMoreGestures" value="Més &gt;&gt;"/>
-	<string name="Animations" value=" Animacions,"/>
-	<string name="Calling Cards" value=" Targetes de visita,"/>
-	<string name="Clothing" value=" Roba,"/>
-	<string name="Gestures" value=" Gestos,"/>
-	<string name="Landmarks" value=" Punts de referència,"/>
+	<string name="Chat Message" value="Xat:" />
+	<string name="Sound" value=" So:" />
+	<string name="Wait" value=" --- Espera:" />
+	<string name="AnimFlagStop" value=" Atura l'animació:" />
+	<string name="AnimFlagStart" value=" Inicia l'animació:" />
+	<string name="Wave" value=" Saludar amb la mà" />
+	<string name="GestureActionNone" value="A triar" />
+	<string name="HelloAvatar" value=" Hola, avatar!" />
+	<string name="ViewAllGestures" value="  Mostra-ho tot &gt;&gt;" />
+	<string name="GetMoreGestures" value="Més &gt;&gt;" />
+	<string name="Animations" value=" Animacions," />
+	<string name="Calling Cards" value=" Targetes de visita," />
+	<string name="Clothing" value=" Roba," />
+	<string name="Gestures" value=" Gestos," />
+	<string name="Landmarks" value=" Punts de referència," />
 	<string name="Materials" value=" Materials," />
-	<string name="Notecards" value=" Notes,"/>
-	<string name="Objects" value=" Objectes,"/>
-	<string name="Scripts" value=" Scripts,"/>
-	<string name="Sounds" value=" Sons,"/>
-	<string name="Textures" value=" Textures,"/>
+	<string name="Notecards" value=" Notes," />
+	<string name="Objects" value=" Objectes," />
+	<string name="Scripts" value=" Scripts," />
+	<string name="Sounds" value=" Sons," />
+	<string name="Textures" value=" Textures," />
 	<string name="Settings" value=" Paràmetres," />
-	<string name="Snapshots" value=" Fotos,"/>
+	<string name="Snapshots" value=" Fotos," />
 	<string name="Folders" value=" Carpetes," />
-	<string name="No Filters" value="Sense "/>
-	<string name="Since Logoff" value="des de la desconnexió"/>
+	<string name="No Filters" value="Sense " />
+	<string name="Since Logoff" value="des de la desconnexió" />
 	<string name="Modifiable" value="Modificable" />
 	<string name="Copyable" value="Copiable" />
 	<string name="Transferable" value="Transferible" />
@@ -2405,17 +2401,17 @@ Si continues rebent aquest missatge, contacta amb l'assistència de Second Life 
 	<string name="GroupsNone">
 		cap
 	</string>
-	<string name="Group" value=" (grup)"/>
+	<string name="Group" value=" (grup)" />
 	<string name="Unknown">
 		(Desconegut)
 	</string>
-	<string name="SummaryForTheWeek" value="Resum de la setmana, començant el "/>
-	<string name="NextStipendDay" value=". Pròxima paga el "/>
+	<string name="SummaryForTheWeek" value="Resum de la setmana, començant el " />
+	<string name="NextStipendDay" value=". Pròxima paga el " />
 	<string name="GroupPlanningDate">
 		[day,datetime,utc]/[mthnum,datetime,utc]/[year,datetime,utc]
 	</string>
-	<string name="GroupIndividualShare" value="                      Grup    Part individual"/>
-	<string name="GroupColumn" value="Grup"/>
+	<string name="GroupIndividualShare" value="                      Grup    Part individual" />
+	<string name="GroupColumn" value="Grup" />
 	<string name="Balance">
 		Saldo
 	</string>
@@ -2538,7 +2534,7 @@ Si continues rebent aquest missatge, contacta amb l'assistència de Second Life 
 	</string>
 	<string name="ATTACH_RSHOULDER">
 		Espatlla D
-	</string>Y
+	</string>
 	<string name="ATTACH_LHAND">
 		Mà E
 	</string>
@@ -2752,9 +2748,9 @@ Si continues rebent aquest missatge, contacta amb l'assistència de Second Life 
 	<string name="RegionNoCovenantOtherOwner">
 		No hi ha cap reglament per a aquest domini. El terreny d'aquest domini és venut pel propietari. Per a més informació, contacta amb el propietari.
 	</string>
-	<string name="covenant_last_modified" value="Darrera modificació:"/>
-	<string name="none_text" value=" (cap)"/>
-	<string name="never_text" value=" (mai)"/>
+	<string name="covenant_last_modified" value="Darrera modificació:" />
+	<string name="none_text" value=" (cap)" />
+	<string name="never_text" value=" (mai)" />
 	<string name="GroupOwned">
 		Propietat del grup
 	</string>
@@ -2816,16 +2812,16 @@ Si continues rebent aquest missatge, contacta amb l'assistència de Second Life 
 		Carregant...
 	</string>
 	<string name="NoPicksText">
-		No has creat favorits.
+		No has creat favorits. Fes  clic al botó Nou per crear un favorit.
 	</string>
 	<string name="NoAvatarPicksText">
 		L'usuari no té favorits.
 	</string>
 	<string name="NoClassifiedsText">
-		No has creat anuncis. Fes  clic al botó Més de sota per crear un anunci.
+		No has creat anuncis classificats. Fes  clic al botó Nou per crear un anunci classificat.
 	</string>
 	<string name="NoAvatarClassifiedsText">
-		L'usuari no té anuncis
+		L'usuari no té anuncis classificats.
 	</string>
 	<string name="MultiPreviewTitle">
 		Previsualitza
@@ -3098,8 +3094,8 @@ Si continues rebent aquest missatge, contacta amb l'assistència de Second Life 
 	<string name=".">
 		.
 	</string>
-	<string name="&apos;">
-		&apos;
+	<string name="'">
+		'
 	</string>
 	<string name="---">
 		---
@@ -4840,6 +4836,8 @@ Si us plau, reinstal·la el visor des de [DOWNLOAD_URL] i contacta amb [SUPPORT_
 	<string name="inventory_folder_offered-im">
 		S'ha ofert la carpeta de l'inventari [ITEM_NAME]
 	</string>
+	<string name="bot_warning">Estàs xatejant amb un bot, [NAME]. No compartiu cap informació personal.
+Per obtenir més informació, visiteu https://second.life/scripted-agents.</string>
 	<string name="inventory_item_offered_rlv">
 		Article d'inventari ofert a [NAME]
 	</string>
@@ -5322,7 +5320,7 @@ de l'informe d'infracció
 	<string name="outfit_photo_verify_dimensions_error">
 		No es poden verificar les dimensions de la foto. Espera que la mida de la foto es mostri al selector.
 	</string>
-	<string name="words_separator" value=","/>
+	<string name="words_separator" value="," />
 	<string name="server_is_down">
 		Malgrat els nostres esforços, s'ha produït un error inesperat.
 
@@ -5980,6 +5978,12 @@ Prova amb el camí d'accés a l'editor entre cometes dobles
 	<string name="Command_Beacons_Label">
 		Balises
 	</string>
+	<string name="Command_Poser_Label">Instal·lador</string>
+	<string name="Command_Poser_Tooltip">Poseu el vostre avatar i els vostres objectes animats</string>
+	<string name="Command_Primfeed_Tooltip">Publica directament al teu compte de Primfeed.</string>
+	<string name="Command_Omnifilter_Label">Omnifiltre</string>
+	<string name="Command_AvatarAlign_Label">Alineació de l'avatar</string>
+	<string name="Command_FaceNearest_Label">De cara a l'avatar més proper</string>
 	<string name="Command_360_Capture_Tooltip">
 		Captura una imatge equirectangular de 360°.
 	</string>
@@ -6166,6 +6170,7 @@ Prova amb el camí d'accés a l'editor entre cometes dobles
 	<string name="Command_Beacons_Tooltip">
 		Mostra les balises
 	</string>
+	<string name="Command_Omnifilter_Tooltip">Editeu les regles de l'omnifiltre</string>
 	<string name="Toolbar_Bottom_Tooltip">
 		actualment a la barra d'eines de baix
 	</string>
@@ -6304,7 +6309,7 @@ Prova amb el camí d'accés a l'editor entre cometes dobles
 	<string name="MediaFilterMediaContentUrlAlwaysBlocked">
 		Els mitjans de l'URL [MEDIAURL] no es reproduiran mai.
 	</string>
-	 <string name="MediaFilterAudioContentBlocked">
+	<string name="MediaFilterAudioContentBlocked">
 		El flux d'àudio del domini [DOMAIN] ha estat bloquejat.
 	 </string>
 	<string name="MediaFilterAudioContentDomainAlwaysAllowed">
@@ -6584,14 +6589,12 @@ a la secció de Suport del lloc web SecondLife.com i informa d'aquest problema.
 	<string name="FSCmdLineTpOffered">
 		Teletransportació oferta a [NAME].
 	</string>
-
 	<string name="FSWithHavok">
 		amb suport de Havok
 	</string>
 	<string name="FSWithOpensim">
 		amb suport d'OpenSimulator
 	</string>
-
 	<string name="not_found">
 		'[TEXT]' no trobat
 	</string>
@@ -6723,7 +6726,6 @@ La teva posició actual: [AVATAR_POS]
 	<string name="fsbridge_error_wrongvm">
 		AVÍS: L'script del Pont utilitza l'antic LSO (Límit de memòria de 16 Ko) en lloc de la nova màquina virtual Mono (Límit de memòria de 64 Ko), la qual cosa crea una alta probabilitat de col·lisió entre piles i de fallada del pont per manca de memòria. Utilitza el menú Jo/Salut de l'avatar/Recrear el pont LSL de [APP_NAME] per recrear el pont. Si tornes a veure aquest missatge, prova-ho de nou en una altra regió.
 	</string>
-
 	<string name="FSAOEnabled">
 		Anul·lador d'Animacions de [APP_NAME] activat.
 	</string>
@@ -6742,7 +6744,6 @@ La teva posició actual: [AVATAR_POS]
 	<string name="FSAOStandsResumedScript">
 		Animacions de peu represes per un adjunt amb script.
 	</string>
-
 	<string name="QP Draw Distance">
 		Distància de visió
 	</string>
@@ -6770,7 +6771,6 @@ La teva posició actual: [AVATAR_POS]
 	<string name="QP Color Under Cursor">
 		Color sota el cursor
 	</string>
-
 	<string name="PS_T_Pose">
 		Posició T
 	</string>
@@ -6804,7 +6804,6 @@ La teva posició actual: [AVATAR_POS]
 	<string name="PS_Arms_upward_Legs_together">
 		Braços amunt, cames juntes
 	</string>
-
 	<string name="QP_WL_Region_Default">
 		Entorn compartit
 	</string>
@@ -6814,14 +6813,12 @@ La teva posició actual: [AVATAR_POS]
 	<string name="QP_WL_None">
 		Cap
 	</string>
-
 	<string name="GroupChatMuteNotice">
 		Silenci del xat de grup de [NAME].
 	</string>
 	<string name="IgnoredAdHocSession">
 		Has estat convidat a una conferència (ad-hoc) per [AVATAR_NAME], però el visor l'ha ignorat automàticament a causa de la teva configuració.
 	</string>
-
 	<string name="camera_no_focus">
 		La càmera no pot enfocar l'usuari [AVATARNAME] perquè està fora de la teva distància de visió.
 	</string>
@@ -6850,7 +6847,6 @@ La teva posició actual: [AVATAR_POS]
 		ha activat l'alerta d'edat. Edat: [AGE] dia(es)
 	</string>
 	<string name="avatar_age_not_available">n/d</string>
-
 	<string name="TotalScriptCountChangeIncrease">
 		El nombre total de scripts a la regió ha passat de [OLD_VALUE] a [NEW_VALUE] ([DIFFERENCE]).
 	</string>
@@ -6860,7 +6856,6 @@ La teva posició actual: [AVATAR_POS]
 	<string name="preproc_toggle_warning">
 		El canvi del preprocessador només tindrà efecte quan tanques i tornes a obrir aquest editor.
 	</string>
-
 	<string name="fs_preprocessor_starting">
 		Iniciant el preprocessador de [APP_NAME]...
 	</string>
@@ -6963,7 +6958,6 @@ La teva posició actual: [AVATAR_POS]
 	<string name="skin_defaults_starlight_navbar">
 		La visualització de la barra de navegació ha estat activada per defecte per a la sèrie de skins Starlight.
 	</string>
-
 	<string name="animation_explorer_seconds_ago">
 		fa [SECONDS] segons
 	</string>
@@ -6973,14 +6967,12 @@ La teva posició actual: [AVATAR_POS]
 	<string name="animation_explorer_unknown_priority">
 		desconeguda
 	</string>
-
 	<string name="FriendOnlineNotification">
 		està en línia.
 	</string>
 	<string name="FriendOfflineNotification">
 		està fora de línia.
 	</string>
-
 	<string name="Inbox_Folderview_New">
 		Nou
 	</string>
@@ -7038,7 +7030,6 @@ La teva posició actual: [AVATAR_POS]
 	<string name="Reqsysinfo_Reason">
 		La raó invocada és la següent: [REASON]
 	</string>
-
 	<string name="All Items">
 		Tots els elements
 	</string>
@@ -7048,14 +7039,13 @@ La teva posició actual: [AVATAR_POS]
 	<string name="Worn Items">
 		Elements portats
 	</string>
-
+	<string name="Favorites">Els meus preferits</string>
 	<string name="InvOfferGroupNoticeName">
 		Un membre del grup anomenat [NAME]
 	</string>
 	<string name="CallingCardOnlineLabelSuffix">
 		(en línia)
 	</string>
-
 	<string name="Pie_av_render_normally">
 		Normalment
 	</string>
@@ -7065,14 +7055,12 @@ La teva posició actual: [AVATAR_POS]
 	<string name="Pie_av_render_fully">
 		Completament
 	</string>
-
 	<string name="Nametag_Complexity_Label">
 		Complexitat: [COMPLEXITY]
 	</string>
 	<string name="Nametag_Texture_Area_Label">
 		Superfície de la textura: [TEXTURE_AREA] m²
 	</string>
-
 	<string name="font_unknown">
 		Font desconeguda
 	</string>
@@ -7104,11 +7092,9 @@ La teva posició actual: [AVATAR_POS]
 	<string name="FSAreaSearch_Cost_Label">
 		[COST] L$
 	</string>
-
 	<string name="ImportingWindlightBulk">
 		Important la configuració de Windlights...
 	</string>
-
 	<string name="FSObjectInventoryNoElements">
 		Cap element
 	</string>
@@ -7136,5 +7122,12 @@ La teva posició actual: [AVATAR_POS]
 	<string name="ImportSuccessful">
 		S'han processat amb èxit [COUNT] entrades.
 	</string>
+	<string name="Flood">Inundació</string>
+	<string name="Surface Only">Només superfície</string>
+	<string name="Raycast">Raycasting</string>
+	<string name="Very High">Molt alt</string>
+	<string name="Maximum">Màxim</string>
+	<string name="OmnifilterReplacement">Substitució de l'omnifiltre: [REPLACEMENT]</string>
+	<string name="FSAvatarAlignToggleMini">mini</string>
+	<string name="FSAvatarAlignToggleFull">Completa</string>
 </strings>
-

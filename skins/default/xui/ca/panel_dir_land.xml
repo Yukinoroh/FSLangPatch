@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel label="Venda de terrenys" name="panel_dir_land">
+	<string name="searching_text">
+		Cerca en curs...
+	</string>
+	<string name="not_found_text">
+		Cap resultat.
+	</string>
+	<string name="found_text">
+		[COUNT] trobat(s).
+	</string>
+	<text name="find">
+		Termes de cerca:
+	</text>
+	<combo_box name="type">
+		<combo_item name="AllTypes" label="Totes les categories" />
+		<combo_item name="Auction" label="Subhasta" />
+		<combo_item name="MainlandSales" label="En venda - Continent" />
+		<combo_item name="EstateSales" label="En venda - Domini" />
+	</combo_box>
+	<icon tool_tip="General" name="rating_icon_general" />
+	<icon tool_tip="Moderat" name="rating_icon_moderate" />
+	<icon tool_tip="Adult" name="rating_icon_adult" />
+	<check_box label="Preu ≤ " name="pricecheck" />
+	<check_box label="Àrea ≥ " name="areacheck" />
+	<button label="Cerca" name="Search" />
+	<scroll_list name="results">
+		<column label="Nom" name="name" />
+		<column label="Tipus" name="landtype" />
+		<column label="Preu L$" name="price" />
+		<column label="Àrea" name="area" />
+		<column label="L$/m²" name="per_meter" />
+	</scroll_list>
+	<button tool_tip="Pàgina anterior" name="prev_btn" />
+	<button tool_tip="Pàgina següent" name="next_btn" />
+</panel>

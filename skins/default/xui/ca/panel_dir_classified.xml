@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel label="Anuncis" name="panel_dir_classified">
+	<string name="searching_text">
+		Cerca en curs...
+	</string>
+	<string name="not_found_text">
+		Cap resultat.
+	</string>
+	<string name="found_text">
+		[COUNT] trobat(s).
+	</string>
+	<text name="find">
+		Termes de cerca:
+	</text>
+	<combo_box name="Category">
+		<combo_item name="AnyCategory" label="Totes les categories" />
+		<combo_item name="Shopping" label="Compres" />
+		<combo_item name="LandRental" label="Lloguer de terrenys" />
+		<combo_item name="PropertyRental" label="Lloguer immobiliari" />
+		<combo_item name="SpecialAttraction" label="Atracció especial" />
+		<combo_item name="NewProducts" label="Nous productes" />
+		<combo_item name="Employment" label="Feina" />
+		<combo_item name="Wanted" label="Es busca" />
+		<combo_item name="Service" label="Servei" />
+		<combo_item name="Personal" label="Personal" />
+	</combo_box>
+	<icon tool_tip="General" name="rating_icon_general" />
+	<icon tool_tip="Moderat" name="rating_icon_moderate" />
+	<icon tool_tip="Adult" name="rating_icon_adult" />
+	<scroll_list name="results">
+		<column label="Nom" name="name" width="225" />
+		<column label="Preu" name="price" width="55" />
+	</scroll_list>
+	<button tool_tip="Pàgina anterior" name="prev_btn" />
+	<button tool_tip="Pàgina següent" name="next_btn" />
+</panel>

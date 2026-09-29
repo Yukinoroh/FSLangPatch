@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<floater name="avatar_align_mini" title="Brúixola">
+	<panel name="pnl_toolbar">
+		<button name="btn_rotate_left_1" tool_tip="Gira el teu avatar 1° cap a l'esquerra" />
+		<button name="btn_rotate_right_1" tool_tip="Gira el teu avatar 1° cap a la dreta" />
+		<button name="btn_avatar" tool_tip="Gira't cap a l'avatar més proper" />
+	</panel>
+</floater>

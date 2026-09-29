@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <context_menu name="Outfit">
-	<menu_item_call label="Reemplaça el conjunt actual" name="wear_replace"/>
-	<menu_item_call label="Afegeix al conjunt actual" name="wear_add"/>
-	<menu_item_call label="Treu del conjunt actual" name="take_off"/>
-	<menu_item_call label="Edita el conjunt" name="edit"/>
-	<menu_item_call label="Canvia el nom del conjunt" name="rename"/>
-	<menu_item_call label="Elimina el conjunt" name="delete"/>
+	<menu_item_call label="Reemplaça el conjunt actual" name="wear_replace" />
+	<menu_item_call label="Afegeix al conjunt actual" name="wear_add" />
+	<menu_item_call label="Treu del conjunt actual" name="take_off" />
+	<menu_item_call label="Imatge..." name="thumbnail" />
+	<menu_item_call label="Afegeix als preferits" name="favorites_add" />
+	<menu_item_call label="Elimina dels preferits" name="favorites_remove" />
+	<menu_item_call label="Edita el conjunt" name="edit" />
+	<menu_item_call label="Canvia el nom del conjunt" name="rename" />
+	<menu_item_call label="Estalvia amb aquest vestit" name="save" />
+	<menu_item_call label="Elimina el conjunt" name="delete" />
 </context_menu>

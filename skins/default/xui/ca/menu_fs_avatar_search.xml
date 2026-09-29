@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <context_menu name="Avatar Context Menu">
 	<menu_item_call label="Mostra el perfil" name="View Profile" />
 	<menu_item_call label="Afegeix als amics" name="Add Friend" />

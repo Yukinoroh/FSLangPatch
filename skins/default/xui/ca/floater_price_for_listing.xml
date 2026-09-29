@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="price_for_listing" title="Publica un anunci classificat">
 	<text name="explanation_text">
          El vostre anunci classificat serà visible durant una setmana a partir del dia de la seva publicació.
@@ -7,8 +7,8 @@ La posició del vostre anunci a les llistes depèn de l'import que decidiu pagar
 
 Els anuncis més cars apareixeran primer a les llistes i als resultats de la cerca.
 	</text>
-	<text name="price_text" left="80" width="145">Import de l'anunci:</text>
+	<text name="price_text" left="80" width="325">Import de l'anunci:</text>
 	<text name="price_symbol">L$</text>
-	<button label="D'acord" name="set_price_btn"/>
-	<button label="Cancel·la" name="cancel_btn"/>
+	<button label="D'acord" name="set_price_btn" />
+	<button label="Cancel·la" name="cancel_btn" />
 </floater>

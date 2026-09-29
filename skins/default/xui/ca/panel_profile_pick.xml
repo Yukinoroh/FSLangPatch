@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="panel_pick_info">
 	<panel.string name="location_notice">
 		(actualització després de desar)
@@ -11,7 +11,7 @@
 			<text name="description_label">
 				Descripció:
 			</text>
-			<button name="btn_preview" tool_tip="Previsualització de la descripció del teu favorit"/>
+			<button name="btn_preview" tool_tip="Previsualització de la descripció del teu favorit" />
 			<text name="location_label">
 				Lloc:
 			</text>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="avatarrendersettings" title="Excepcions a la mostra de l'avatar">
 	<floater.string name="av_render_never">
 		Mai

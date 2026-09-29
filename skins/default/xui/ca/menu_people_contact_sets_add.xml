@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <toggleable_menu name="menu_people_contact_sets_add">
 	<menu_item_call label="Afegeix un conjunt..." name="add_set" />
 	<menu_item_call label="Afegeix un contacte..." name="add_contact" />

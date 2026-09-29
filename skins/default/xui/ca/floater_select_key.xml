@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater title="Selecció de tecla" name="modal container">
 	<floater.string name="keyboard">Teclat</floater.string>
 	<floater.string name="mouse">Botons del ratolí</floater.string>
@@ -13,8 +13,8 @@ La combinació [KEYSTR] està reservada pel menú.
 Prem una tecla o un botó del ratolí per seleccionar.
 Entrada permesa: [INPUT].
 	</text>
-	<check_box label="Aplica a tot" name="apply_all" tool_tip="El programa utilitza diferents combinacions de controls depenent del que estiguis fent al món; marcar aquesta opció aplicarà els teus canvis a totes les combinacions."/>
-	<button label="Esborra" name="SetEmpty"/>
-	<button label="Per defecte" name="Default" width="90"/>
-	<button label="Cancel·la" name="Cancel"/>
+	<check_box label="Aplica a tot" name="apply_all" tool_tip="El programa utilitza diferents combinacions de controls depenent del que estiguis fent al món; marcar aquesta opció aplicarà els teus canvis a totes les combinacions." />
+	<button label="Esborra" name="SetEmpty" />
+	<button label="Per defecte" name="Default" width="240" />
+	<button label="Cancel·la" name="Cancel" />
 </floater>

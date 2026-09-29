@@ -1,2 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<inventory_panel label="TOTS" name="All Items" tool_tip="Arrossegueu els articles aquí per a publicar-los a la llista"/>
+<?xml version='1.0' encoding='utf-8'?>
+<inventory_panel label="TOTS" name="All Items" tool_tip="Arrossegueu els articles aquí per a publicar-los a la llista" />

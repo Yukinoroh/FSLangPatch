@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel name="contact_sets_panel">
 	<panel.string name="empty_list">
 		Aquest conjunt és buit.
@@ -18,7 +18,9 @@
 	<button name="config_btn" tool_tip="Configuració del conjunt seleccionat" />
 	<button name="add_set_btn" tool_tip="Afegeix un nou conjunt de contactes" />
 	<button name="remove_set_btn" tool_tip="Elimina el conjunt de contactes seleccionat" />
+	<filter_editor label="Filtra persones" name="contact_sets_filter_input" />
 	<button label="Afegeix..." name="add_btn" tool_tip="Afegeix un avatar al conjunt de contactes actual" />
+	<button label="Mou..." name="move_btn" tool_tip="Mou aquest resident a un altre cercle" />
 	<button label="Elimina..." name="remove_btn" tool_tip="Elimina un avatar del conjunt de contactes actual" />
 	<button label="Perfil..." name="profile_btn" tool_tip="Obre el perfil de l'avatar" />
 	<button label="MI..." name="start_im_btn" tool_tip="Envia un missatge instantani (MI)" />

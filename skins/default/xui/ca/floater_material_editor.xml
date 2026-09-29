@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="material editor" title="[MATERIAL_NAME]">
 	<string name="no_upload_fee_string">sense comissió de pujada</string>
 	<string name="upload_fee_string">Comissió de pujada de L$[FEE]</string>
@@ -7,10 +7,10 @@
 		<text name="unsaved_changes">
 			Canvis no desats
 		</text>
-		<button label="Desa com a..." name="save_as"/>
+		<button label="Desa com a..." name="save_as" />
 		<text name="total_upload_fee">
 			Comissió total de pujada: L$[FEE]
 		</text>
-		<button label="Cancel·la" name="cancel"/>
+		<button label="Cancel·la" name="cancel" />
 	</panel>
 </floater>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="preview_anim">
 	<floater.string name="Title">
 		Animació: [NAME]
@@ -7,8 +7,10 @@
 		<text name="desc txt">
 			Descripció:
 		</text>
-		<button label="Reprodueix públicament" label_selected="Atura" name="Inworld" tool_tip="Reprodueix l'animació a l'avatar perquè la vegi tothom"/>
-		<button label="Reprodueix en local" label_selected="Atura" name="Locally" tool_tip="Reprodueix l'animació a l'avatar perquè només la vegis tu"/>
+		<line_editor name="desc" width="230" />
+		<button label="Reprodueix públicament" label_selected="Atura" name="Inworld" tool_tip="Reprodueix l'animació a l'avatar perquè la vegi tothom" />
+		<button label="Reprodueix en local" label_selected="Atura" name="Locally" tool_tip="Reprodueix l'animació a l'avatar perquè només la vegis tu" />
+		<button name="btn_expand" tool_tip="Amplieu per veure informació detallada sobre aquesta animació" />
 	</panel>
 	<panel name="advanced_info_panel">
 		<text name="AdvancedStatsLeft">

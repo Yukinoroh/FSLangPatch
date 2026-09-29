@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<floater name="floater_report_abuse" title="Informa d'un abús">
+	<floater.string name="Screenshot">
+		Instantània
+	</floater.string>
+	<floater.string name="chat_report_format">Hora: [MSG_TIME]
+Text: [MSG_DESCRIPTION]</floater.string>
+	<button tool_tip="Actualitza la captura de pantalla" name="refresh_screenshot" />
+	<check_box label="Utilitza aquesta instantània" name="screen_check" />
+	<text name="reporter_title">
+		Autor:
+	</text>
+	<text name="reporter_field">Loremipsum Dolorsitamut Longnamez</text>
+	<text name="sim_title">
+		Regió:
+	</text>
+	<text name="sim_field">
+		Nom de la regió
+	</text>
+	<text name="pos_title">
+		Coordenades:
+	</text>
+	<text name="pos_field">
+		{128.1, 128.1, 15.4}
+	</text>
+	<text name="select_object_label">
+		Fes clic al botó i després a l'objecte infractor:
+	</text>
+	<button name="pick_btn" tool_tip="Captura de l'objecte – defineix l'objecte com a subjecte d'aquest missatge" />
+	<text name="object_name_label">
+		Objecte:
+	</text>
+	<text name="object_name" width="180">Consetetur Sadipscing</text>
+	<text name="owner_name_label">
+		Propietari:
+	</text>
+	<text name="owner_name" width="180">Hendrerit Vulputate Kamawashi Nom llarg</text>
+	<combo_box name="category_combo" tool_tip="Categoria – tria la categoria que millor s'adapti al tipus d'infracció">
+		<combo_box.item label="Tria una categoria" name="Select_category" />
+		<combo_box.item label="Edat &gt; Jocs pedófils" name="Age__Age_play" />
+		<combo_box.item label="Atacs &gt; Tirs i estampides repetides en una regió segura" name="Assault__Safe_area" />
+		<combo_box.item label="Divulgació &gt; Informació personal sobre privadesa" name="Disclosure__Real_world_information" />
+		<combo_box.item label="Pertorbació de l'ordre públic &gt; Ús excessiu d'objectes amb guió" name="Disturbing_the_peace__Excessive_scripted_objects" />
+		<combo_box.item label="Pertorbació de l'ordre públic &gt; Abandonament massiu d'objectes" name="Disturbing_the_peace__Object_littering" />
+		<combo_box.item label="Pertorbació de l'ordre públic &gt; Spam repetitiu" name="Disturbing_the_peace__Repetitive_spam" />
+		<combo_box.item label="Frau &gt; L$ o monedes reals" name="Fraud__US$" />
+		<combo_box.item label="Assetjament &gt; Comportament nociu destinat a provocar interrupcions" name="Harassment__Solicting_inciting_others_to_violate_ToS" />
+		<combo_box.item label="Indecència &gt; Contingut o conducta deliberadament ofensiu" name="Indecency__Broadly_offensive_content_or_conduct" />
+		<combo_box.item label="Indecència &gt; Nom inadequat" name="Indecency__Inappropriate_avatar_name" />
+		<combo_box.item label="Indecència &gt; Contingut inadequat per a la classificació de la regió" name="Indecency__Mature_content_in_PG_region" />
+		<combo_box.item label="Intolerància" name="Intolerance" />
+		<combo_box.item label="Terreny &gt; Intrusió &gt; Objectes/textures" name="Land__Encroachment__Objects_textures" />
+		<combo_box.item label="Infracció de les regles de joc" name="Wagering_gambling" />
+	</combo_box>
+	<text name="abuser_name_title">
+		Nom de l'infractor:
+	</text>
+	<button label="Tria" name="select_abuser" tool_tip="Tria el nom de l'infractor de la llista" />
+	<text name="abuser_name_title2">
+		Ubicació de la infracció:
+	</text>
+	<text name="sum_title">
+		Resum:
+	</text>
+	<text name="dscr_title">
+		Detalls:
+	</text>
+	<text name="bug_aviso">Si us plau, sigueu el més específic possible</text>
+	<text name="incomplete_title">*No es revisaran els informes incomplets</text>
+	<button label="Denuncia un abús" label_selected="Signaler un abus" name="send_btn" />
+	<button label="Cancel·la" label_selected="Cancel·la" name="cancel_btn" />
+</floater>

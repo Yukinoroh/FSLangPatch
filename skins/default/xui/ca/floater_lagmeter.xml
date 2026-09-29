@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="floater_lagmeter" title="Indicador de lag">
 	<floater.string name="max_title_msg">Indicador de lag</floater.string>
 	<floater.string name="min_title_msg">Lag</floater.string>
@@ -30,15 +30,14 @@
 	<floater.string name="server_images_cause_msg">Causa possible: massa càlculs d'imatge </floater.string>
 	<floater.string name="server_generic_cause_msg">Causa possible: càrrega del simulador massa alta
 	</floater.string>
-	
-	<button name="client_lagmeter" tool_tip="Estat del lag del client"/>
+	<button name="client_lagmeter" tool_tip="Estat del lag del client" />
 	<text name="client">Client</text>
 	<text name="client_text">Normal</text>
-	<button name="network_lagmeter" tool_tip="Estat del lag de la xarxa"/>
+	<button name="network_lagmeter" tool_tip="Estat del lag de la xarxa" />
 	<text name="network">Xarxa</text>
 	<text name="network_text">Normal</text>
-	<button name="server_lagmeter" tool_tip="Estat del lag del servidor"/>
+	<button name="server_lagmeter" tool_tip="Estat del lag del servidor" />
 	<text name="server">Servidor</text>
 	<text name="server_text">Normal</text>
-	<button name="minimize" tool_tip="Minimitza/Maximitza la finestra"/>
+	<button name="minimize" tool_tip="Minimitza/Maximitza la finestra" />
 </floater>

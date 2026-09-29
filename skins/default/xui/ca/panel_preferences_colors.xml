@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Colors" name="colors_panel">
 	<tab_container label="Colors" name="tabs">
 		<panel label="Colors del Xat" name="tab-chat">
@@ -19,8 +19,12 @@
 			<text name="header_colors">Emissor:</text>
 			<text name="chat_name_label">Avatars</text>
 			<text name="object_name_header_label">Objectes</text>
-			<slider label="Factor Disminució de Color fora de l'abast del Xat:" label_width="340" width="490" name="FSBeyondNearbyChatColorDiminishFactor" tool_tip="El factor de disminució del color del missatge si el seu emissor no és a prop."/>
-			<check_box name="FSColorIMsDistinctly" label="Acolorir els IMs i el xat de grup de manera distintiva a la consola:"/>
+			<text name="mention_colors">Mencions al xat:</text>
+			<text name="font_mention_label">Policia</text>
+			<text name="resident_mention_label">Residents</text>
+			<text name="self_mention_label">Moi</text>
+			<slider label="Factor Disminució de Color fora de l'abast del Xat:" label_width="340" width="490" name="FSBeyondNearbyChatColorDiminishFactor" tool_tip="El factor de disminució del color del missatge si el seu emissor no és a prop." />
+			<check_box name="FSColorIMsDistinctly" label="Acolorir els IMs i el xat de grup de manera distintiva a la consola:" />
 			<panel name="im_color_panel">
 				<text name="console_im_label">IMs/Grups</text>
 			</panel>
@@ -33,15 +37,15 @@
 			<text name="linden_tag_label">Linden Lab</text>
 			<text name="match_tag_label">Coincidències</text>
 			<text name="mismatch_tag_label" width="120">No coincidències</text>
-			<check_box name="FSColorUsername" label="Acolorir els noms d'usuari" tool_tip="Mostra els noms d'usuari en un color diferent"/>
-			<check_box name="NameTagShowFriends" label="Acolorir les etiquetes dels amics o amigues" tool_tip="Mostra l'etiqueta dels amics d'un color diferent"/>
+			<check_box name="FSColorUsername" label="Acolorir els noms d'usuari" tool_tip="Mostra els noms d'usuari en un color diferent" />
+			<check_box name="NameTagShowFriends" label="Acolorir les etiquetes dels amics o amigues" tool_tip="Mostra l'etiqueta dels amics d'un color diferent" />
 			<text name="username_tag_label">Nom d'usuari</text>
 			<text name="bubble_chat">Etiquetes / Bombolla de conversa:</text>
-			<color_swatch name="background" tool_tip="Selecciona el color de les etiquetes"/>
-			<slider label="Opacitat" name="bubble_chat_opacity" tool_tip="Ajusta l'opacitat de les etiquetes"/>
-			<slider label="Alçat" name="FSNameTagZOffsetCorrection" tool_tip="Modifica l'alineació vertical de les etiquetes dels residents. 0 per defecte"/>
-			<check_box name="FSTagShowDistance" label="Mostra la distància al costat de l'etiqueta" tool_tip="Mostra la distància de l'avatar al costat de l'etiqueta"/>
-			<check_box name="FSTagShowDistanceColors" label="Acolorir les etiquetes segons la distància:"/>
+			<color_swatch name="background" tool_tip="Selecciona el color de les etiquetes" />
+			<slider label="Opacitat" name="bubble_chat_opacity" tool_tip="Ajusta l'opacitat de les etiquetes" />
+			<slider label="Alçat" name="FSNameTagZOffsetCorrection" tool_tip="Modifica l'alineació vertical de les etiquetes dels residents. 0 per defecte" />
+			<check_box name="FSTagShowDistance" label="Mostra la distància al costat de l'etiqueta" tool_tip="Mostra la distància de l'avatar al costat de l'etiqueta" />
+			<check_box name="FSTagShowDistanceColors" label="Acolorir les etiquetes segons la distància:" />
 			<panel name="distance_panel">
 				<text name="chat_distance_tag_label">A l'abast de la veu normal</text>
 				<text name="whisper_distance_tag_label">A l'abast del xiuxiueig</text>
@@ -52,31 +56,31 @@
 				<text name="client_tags_colors">Color segons el visor: (Només OpenSim/AuroraSim)</text>
 				<text name="whattagstoshow">Quines etiquetes vols veure?</text>
 				<combo_box name="ClientTagsVisibility">
-					<combo_box.item name="No Viewertags" label=" Cap"/>
-					<combo_box.item name="TPVD Viewer" label="Els 'Third-Party Viewers' oficials"/>
-					<combo_box.item name="All known Viewers" label="Tots els visors coneguts (definits per una llista)"/>
-					<combo_box.item name="All Viewers" label="Tots els visors"/>
+					<combo_box.item name="No Viewertags" label=" Cap" />
+					<combo_box.item name="TPVD Viewer" label="Els 'Third-Party Viewers' oficials" />
+					<combo_box.item name="All known Viewers" label="Tots els visors coneguts (definits per una llista)" />
+					<combo_box.item name="All Viewers" label="Tots els visors" />
 				</combo_box>
 				<text name="colorbasedonviewer">Color d'etiqueta per visor</text>
 				<combo_box name="ColorClienttags">
-					<combo_box.item name="Color not based on Viewer" label="No"/>
-					<combo_box.item name="Single color per Viewer" label="Un color per visor"/>
-					<combo_box.item name="Multiple colors per Viewer" label="Diversos colors per visor"/>
-					<combo_box.item name="Userdefined color" label="Colors definits per l'usuari"/>
+					<combo_box.item name="Color not based on Viewer" label="No" />
+					<combo_box.item name="Single color per Viewer" label="Un color per visor" />
+					<combo_box.item name="Multiple colors per Viewer" label="Diversos colors per visor" />
+					<combo_box.item name="Userdefined color" label="Colors definits per l'usuari" />
 				</combo_box>
 				<text name="listtodisplayviewertags_txt">Llista predef. d'etiquetes de visor?</text>
 				<combo_box name="UseLegacyClienttags">
-					<combo_box.item name="Don't use a list" label="No"/>
-					<combo_box.item name="Local Clienttags" label="Llista estàtica"/>
-					<combo_box.item name="Download Clienttags" label="Actualitza la llista a cada inici"/>
+					<combo_box.item name="Don't use a list" label="No" />
+					<combo_box.item name="Local Clienttags" label="Llista estàtica" />
+					<combo_box.item name="Download Clienttags" label="Actualitza la llista a cada inici" />
 				</combo_box>
 			</panel>
 		</panel>
 		<panel label="Minimapa" name="tab-minimap">
-			<slider label="Opacitat del fons:" label_width="180" width="485" name="FSMiniMapOpacity"/>
+			<slider label="Opacitat del fons:" label_width="180" width="485" name="FSMiniMapOpacity" />
 			<text name="netmap_pickradius_textbox">Opacitat i color del punt:</text>
 			<text name="netmap_pickradius_color_textbox">Color del punt:</text>
-			<color_swatch name="MapPickRadiusColor" tool_tip="Controla el color del punt al minimapa. La mida del punt es pot ajustar amb el paràmetre Mida del punt."/>
+			<color_swatch name="MapPickRadiusColor" tool_tip="Controla el color del punt al minimapa. La mida del punt es pot ajustar amb el paràmetre Mida del punt." />
 			<text name="netmap_pickradius_opacity_textbox" width="75">Opacitat:</text>
 			<text name="netmap_dots_textbox">Punts de referència al minimapa:</text>
 			<text name="MapAvatarSelfColor_label">Jo</text>
@@ -84,56 +88,58 @@
 			<text name="MapAvatarFriendColor_label">Amics</text>
 			<text name="MapAvatarLindenColor_label">Linden Lab</text>
 			<text name="MapAvatarMutedColor_label">Ignorats</text>
-			<check_box name="MiniMapChatRing" label="Mostra perímetres de xiuxiueig, veu normal i crit al minimapa:"/>
+			<check_box name="MiniMapChatRing" label="Mostra perímetres de xiuxiueig, veu normal i crit al minimapa:" />
 			<text name="netmap_whisperring_color_label">Xiuxiueig</text>
 			<text name="netmap_chatring_color_label">Veu normal</text>
 			<text name="netmap_shoutring_color_label">Crit</text>
 		</panel>
 		<panel label="Diversos" name="tab-misc">
 			<text name="effects_color_textbox">Feix de selecció:</text>
-			<text left="240" name="ScriptDialogFgLabel" width="300">Primer pla i fons dels diàlegs de scripts:</text>
+			<text left="240" name="ScriptDialogFgLabel" width="1020">Primer pla i fons dels diàlegs de scripts:</text>
 			<text name="floater_opacity">Opacitat de les finestres:</text>
-			<slider label="Actives:" name="active"/>
-			<slider label="Inactives:" name="inactive"/>
-			<slider label="Velocitat:" name="camera_movement"/>
+			<slider label="Actives:" name="active" />
+			<slider label="Inactives:" name="inactive" />
+			<slider label="Velocitat:" name="camera_movement" />
+			<check_box name="override_im_active_opacity_checkbox" label="Utilitzeu el valor d'opacitat actiu quan la finestra &quot;Converses&quot; estigui activa" />
 			<text name="console_opacity">Opacitat de la consola:</text>
-			<color_swatch name="console_background" tool_tip="Selecciona el color de la consola"/>
-			<slider label="Opacitat:" name="console_background_opacity" tool_tip="Ajusta l'opacitat del fons de la consola"/>
-			<slider label="Opacitat Fons Text Flotant:" name="FSHudTextBackgroundOpacity" tool_tip="Ajusta l'opacitat del fons del text flotant"/>
+			<color_swatch name="console_background" tool_tip="Selecciona el color de la consola" />
+			<slider label="Opacitat:" name="console_background_opacity" tool_tip="Ajusta l'opacitat del fons de la consola" />
+			<slider label="Opacitat Fons Text Flotant:" name="FSHudTextBackgroundOpacity" tool_tip="Ajusta l'opacitat del fons del text flotant" />
+			<slider label="Opacitat del fons del menú:" name="menu_background_alpha" tool_tip="Opacitat de fons dels menús contextuals i de la barra de menús (0,0 = totalment transparent, 1,0 = totalment opac)" />
 			<text name="preferences_search_label">Ressaltat de les preferències cercades:</text>
 			<text name="preferences_search_bg_label" width="75">Fons:</text>
-			<color_swatch name="preferences_search_bg_color" tool_tip="Selecciona el color de fons de les preferències ressaltades pels resultats de la cerca"/>
+			<color_swatch name="preferences_search_bg_color" tool_tip="Selecciona el color de fons de les preferències ressaltades pels resultats de la cerca" />
 			<text name="preferences_search_font_label" width="45">Font:</text>
-			<color_swatch name="preferences_search_font_color" tool_tip="Selecciona el color de la font de les preferències ressaltades pels resultats de la cerca"/>
+			<color_swatch name="preferences_search_font_color" tool_tip="Selecciona el color de la font de les preferències ressaltades pels resultats de la cerca" />
 			<text name="area_search_beacon_color_label" left="295">Color de la balisa de cerca per zona:</text>
-			<color_swatch name="area_search_beacon_color" left="400" tool_tip="Tria el color de la balisa de cerca per zona"/>
+			<color_swatch name="area_search_beacon_color" left="400" tool_tip="Tria el color de la balisa de cerca per zona" />
 			<text name="notecard_editor_color_label">
 				Colors de les notes:
 			</text>
 			<text name="notecard_editor_writable_text_color_label">
 				Text:
 			</text>
-			<color_swatch name="notecard_editor_writable_text_color" tool_tip="Color del text de la nota"/>
+			<color_swatch name="notecard_editor_writable_text_color" tool_tip="Color del text de la nota" />
 			<text width="35" name="notecard_editor_writable_bg_color_label">
 				Fons:
 			</text>
-			<color_swatch name="notecard_editor_writable_bg_color" tool_tip="Color de fons de la nota"/>
+			<color_swatch name="notecard_editor_writable_bg_color" tool_tip="Color de fons de la nota" />
 			<text left_pad="10" width="50" name="notecard_editor_writable_cursor_color_label">
 				Punter:
 			</text>
-			<color_swatch left_pad="25" name="notecard_editor_writable_cursor_color" tool_tip="Color del cursor a la nota"/>
+			<color_swatch left_pad="25" name="notecard_editor_writable_cursor_color" tool_tip="Color del cursor a la nota" />
 			<text name="notecard_editor_writable_selection_color_label">
 				Selecció:
 			</text>
-			<color_swatch name="notecard_editor_writable_selection_color" tool_tip="Color del text seleccionat a la nota"/>
-			<check_box name="FSScriptDialogNoTransparency" label="Mostra sempre els diàlegs de scripts sobre un fons opac"/>
-			<check_box name="FSGroupNotifyNoTransparency" label="Mostra sempre els avisos de grup amb un fons opac"/>
-			<check_box name="override_pie_color_checkbox" label="Ajusta el color de fons i l'opacitat dels menús circulars:"/>
+			<color_swatch name="notecard_editor_writable_selection_color" tool_tip="Color del text seleccionat a la nota" />
+			<check_box name="FSScriptDialogNoTransparency" label="Mostra sempre els diàlegs de scripts sobre un fons opac" />
+			<check_box name="FSGroupNotifyNoTransparency" label="Mostra sempre els avisos de grup amb un fons opac" />
+			<check_box name="override_pie_color_checkbox" label="Ajusta el color de fons i l'opacitat dels menús circulars:" />
 			<panel name="tab-colorize">
-				<color_swatch name="pie_bg_color_override" tool_tip="Selecciona el color de fons dels menús circulars"/>
-				<color_swatch name="pie_selected_color_override" tool_tip="Selecciona el color de ressaltat dels menús circulars"/>
-				<slider label="Opacitat:" label_width="80" name="pie_menu_opacity" tool_tip="Ajusta l'opacitat dels menús circulars"/>
-				<slider label="Degradat:" label_width="80" name="pie_menu_fade_out" tool_tip="Selecciona el nivell de degradat del color primari dels menús circulars"/>
+				<color_swatch name="pie_bg_color_override" tool_tip="Selecciona el color de fons dels menús circulars" />
+				<color_swatch name="pie_selected_color_override" tool_tip="Selecciona el color de ressaltat dels menús circulars" />
+				<slider label="Opacitat:" label_width="80" name="pie_menu_opacity" tool_tip="Ajusta l'opacitat dels menús circulars" />
+				<slider label="Degradat:" label_width="80" name="pie_menu_fade_out" tool_tip="Selecciona el nivell de degradat del color primari dels menús circulars" />
 			</panel>
 		</panel>
 	</tab_container>

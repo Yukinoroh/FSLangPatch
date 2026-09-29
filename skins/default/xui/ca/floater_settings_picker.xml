@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="settings picker" title="SELECCIONA: PARÀMETRES">
 	<floater.string name="pick title">
 		Selecciona:
@@ -20,11 +20,11 @@
 	</floater.string>
 	<layout_stack name="test_stack">
 		<layout_panel name="inv_list">
-			<filter_editor label="Filtra les textures" name="flt_inventory_search"/>
+			<filter_editor label="Filtra les textures" name="flt_inventory_search" />
 		</layout_panel>
 		<layout_panel name="temp">
-			<button label="D'acord" label_selected="D'acord" name="btn_select"/>
-			<button label="Cancel·la" label_selected="Cancel·la" name="btn_cancel"/>
+			<button label="D'acord" label_selected="D'acord" name="btn_select" />
+			<button label="Cancel·la" label_selected="Cancel·la" name="btn_cancel" />
 		</layout_panel>
 	</layout_stack>
 </floater>

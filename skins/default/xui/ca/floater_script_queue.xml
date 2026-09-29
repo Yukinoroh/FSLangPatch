@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="queue" title="RESTABLEIX EL PROGRÉS">
 	<floater.string name="Starting">
 		S'inicia [START] en [COUNT] objectes.
@@ -21,5 +21,5 @@
 	<floater.string name="LoadingObjInv">
 		S'està carregant l'inventari de: [OBJECT_NAME]
 	</floater.string>
-	<button label="Tanca" label_selected="Tanca" name="close"/>
+	<button label="Tanca" label_selected="Tanca" name="close" />
 </floater>

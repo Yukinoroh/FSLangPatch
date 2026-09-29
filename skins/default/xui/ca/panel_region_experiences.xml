@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <panel label="Experiències" name="Experiences">
 	<panel.string name="trusted_estate_text">
 Qualsevol experiència pot ser de primer pla.

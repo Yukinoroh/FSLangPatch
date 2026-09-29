@@ -1,24 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <floater name="floater_fs_contact_set_configure" title="Paràmetres del cercle">
 	<floater.string name="title">Paràmetres de [NAME]</floater.string>
 	<panel name="top_panel">
 		<text name="set_label">Paràmetres del cercle :</text>
-		<button name="rename_btn" label="Canviar el nom"/>
-		<color_swatch label="Color" name="set_swatch" tool_tip="Fes clic per obrir el selector de color"/>
-		<check_box label="Mostrar les notificacions" name="show_set_notifications"/>
+		<button name="rename_btn" label="Canviar el nom" />
+		<color_swatch label="Color" name="set_swatch" tool_tip="Fes clic per obrir el selector de color" />
+		<check_box label="Mostrar les notificacions" name="show_set_notifications" />
+		<check_box label="Ordena per estat en línia" name="sort_by_online_status" />
 	</panel>
 	<panel name="bottom_panel">
 		<text name="global_label">Parametres generals :</text>
-		<color_swatch label="Color per defecte" name="global_swatch" tool_tip="Fes clic per obrir el selector de color" width="105"/>
+		<color_swatch label="Color per defecte" name="global_swatch" tool_tip="Fes clic per obrir el selector de color" width="105" />
 		<text name="label_online">Notificacions de connecció i desconecció :</text>
-		<check_box label="Tots els meus amics, en miniatura" name="ChatOnlineNotification"/>
-		<check_box label="Tots els meus amics, en el xat de proximitat" name="OnlineOfflinetoNearbyChat"/>
-		<check_box label="Els meus amis dels cercles, en miniatura" name="FSContactSetsNotificationToast"/>
-		<check_box label="Els meus amis dels cercles, en el xat de proximitat" name="FSContactSetsNotificationNearbyChat"/>
+		<check_box label="Tots els meus amics, en miniatura" name="ChatOnlineNotification" />
+		<check_box label="Tots els meus amics, en el xat de proximitat" name="OnlineOfflinetoNearbyChat" />
+		<check_box label="Els meus amis dels cercles, en miniatura" name="FSContactSetsNotificationToast" />
+		<check_box label="Els meus amis dels cercles, en el xat de proximitat" name="FSContactSetsNotificationNearbyChat" />
 		<text name="label_colors">Colors personalitzats :</text>
-		<check_box label="Color dels punts del minimapa segons el seu cercle" name="FSContactSetsColorizeMiniMap"/>
-		<check_box label="Color dels noms flotants segons el seu cercle" name="FSContactSetsColorizeNameTag"/>
-		<check_box label="Color dels noms al radar segons el seu cercle" name="FSContactSetsColorizeRadar"/>
-		<check_box label="Color dels missatges de residents segons el seu cercle" name="FSContactSetsColorizeChat"/>
+		<check_box label="Color dels punts del minimapa segons el seu cercle" name="FSContactSetsColorizeMiniMap" />
+		<check_box label="Color dels noms flotants segons el seu cercle" name="FSContactSetsColorizeNameTag" />
+		<check_box label="Color dels noms al radar segons el seu cercle" name="FSContactSetsColorizeRadar" />
+		<check_box label="Color dels missatges de residents segons el seu cercle" name="FSContactSetsColorizeChat" />
+		<check_box label="Color de la llista d'amics en funció del cercle" name="FSContactSetsColorizeFriends" />
+	</panel>
+	<panel name="side_panel">
+		<check_box label="Personnaliser la réponse automatique de statut Occupé(e) pour ce cercle" name="set_autoresponse_busy_enabled" />
+		<check_box label="Personnaliser la réponse automatique pour ce cercle" name="set_autoresponse_mode_enabled" />
+		<check_box label="Personnaliser la réponse automatique aux non-amis pour ce cercle" name="set_autoresponse_nonfriends_enabled" />
 	</panel>
 </floater>
